@@ -479,7 +479,7 @@ a &lt;div&gt; is a **block-level-element** and a &lt;span&gt; is an **inline ele
 <h2>Q. What are optional closing tags?</h2>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 
-&lt;p>, <li>, <td>, <tr>, <th>, <html>, <body&gt;, etc. don&apos;t have to provide an end 
+&lt;p&gt;, &lt;li>, &lt;td>, &lt;tr>, &lt;th>, &lt;html>, &lt;body&gt;, etc. don&apos;t have to provide an end 
 tag. Whenever a browser hits a new tag it automatically end the previous tag. 
 
 <div align="right">
@@ -506,8 +506,8 @@ An example of a self closing tag is something like a line break (&lt;br /&gt;) o
 <h2>Q. Explain the difference between block elements and inline elements?</h2>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 
-* block elements &lt;h1>, <p>, <ul>, <ol>, <li&gt;,
-* inline elements &lt;span>, <a>, <strong>, <i>, <img&gt;
+* block elements &lt;h1>, &lt;p>, &lt;ul>, &lt;ol>, &lt;li&gt;,
+* inline elements &lt;span>, &lt;a>, &lt;strong>, &lt;i>, &lt;img&gt;
 
 <div align="right">
     <b><a href="#toc">↥ back to top</a></b>
@@ -527,7 +527,7 @@ For example: &lt;form&gt;, &lt;table&gt;,  &lt;article&gt;, &lt;aside&gt;, &lt;d
 </div>
 
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<h2>Q. What is the purpose of `main` element?</h2>
+<h2>Q. What is the purpose of <mark>main</mark> element?</h2>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 
 The HTML &lt;main&gt; element represents the dominant content of the &lt;body&gt; of a document. 
@@ -1500,12 +1500,18 @@ to decide whether to handle it in quirks mode or standards mode.
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 
 * Desktop first : 
-        General selectors and styles designed to make the site look good on DESKTOP screens defined globally. But they affect all devices, and must be overridden by max-width media queries targeting minimum screen size
+        General selectors and styles designed to make the site look good on DESKTOP 
+		screens defined globally. But they affect all devices, and must be overridden 
+		by max-width media queries targeting minimum screen size.
 
 * Mobile First : 
-        General selectors and styles designed to make the site look good on small MOBILE screens go here. But they affect all devices, and must be overridden by min-width media queries targeting maximum scrren size
+        General selectors and styles designed to make the site look good on small 
+		MOBILE screens go here. But they affect all devices, and must be overridden 
+		by min-width media queries targeting maximum screen size.
     
-    In desktop first approach the media queries will be written with respect to max-width whereas in mobile first approach media queries will be written with respect to min-width
+    In desktop first approach the media queries will be written with respect to 
+	max-width whereas in mobile first approach media queries will be written with 
+	respect to min-width.
 
 <div align="right">
     <b><a href="#toc">↥ back to top</a></b>
@@ -1514,7 +1520,9 @@ to decide whether to handle it in quirks mode or standards mode.
 <h2>Q. What are `data-` attributes good for?</h2>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 
-* The HTML5 data attribute lets you assign custom data to an element. When we want to store more information/data about the element when no suitable HTML5 element or attribute exists
+* The HTML5 data attribute lets you assign custom data to an element. When we want to 
+store more information/data about the element when no suitable HTML5 element or 
+attribute exists.
 
 <div align="right">
     <b><a href="#toc">↥ back to top</a></b>
@@ -1527,23 +1535,39 @@ to decide whether to handle it in quirks mode or standards mode.
 
 **1. JavaScript:**
 
-Typically JavaScript is used to handle work that will result in visual changes, whether it&apos;s jQuery&apos;s animate function, sorting a data set, or adding DOM elements to the page. It doesn&apos;t have to be JavaScript that triggers a visual change, though: CSS Animations, Transitions, and the Web Animations API are also commonly used.
+Typically JavaScript is used to handle work that will result in visual changes, 
+whether it&apos;s jQuery&apos;s animate function, sorting a data set, or adding 
+DOM elements to the page. It doesn&apos;t have to be JavaScript that triggers a 
+visual change, though: CSS Animations, Transitions, and the Web Animations API 
+are also commonly used.
 
 **2. Style:**
 
-This is the process of figuring out which CSS rules apply to which elements based on matching selectors, for example, .headline or .nav > .nav__item. From there, once rules are known, they are applied and the final styles for each element are calculated.
+This is the process of figuring out which CSS rules apply to which elements 
+based on matching selectors, for example, .headline or .nav > .nav__item. 
+From there, once rules are known, they are applied and the final styles for 
+each element are calculated.
 
 **3. Layout:**
 
-Once the browser knows which rules apply to an element it can begin to calculate how much space it takes up and where it is on screen. The web&apos;s layout model means that one element can affect others, for example the width of the &lt;body&gt; element typically affects its children&apos;s widths and so on all the way up and down the tree, so the process can be quite involved for the browser.
+Once the browser knows which rules apply to an element it can begin to calculate 
+how much space it takes up and where it is on screen. The web&apos;s layout model 
+means that one element can affect others, for example the width of the &lt;body&gt; 
+element typically affects its children&apos;s widths and so on all the way up and 
+down the tree, so the process can be quite involved for the browser.
 
 **4. Paint:**
 
-Painting is the process of filling in pixels. It involves drawing out text, colors, images, borders, and shadows, essentially every visual part of the elements. The drawing is typically done onto multiple surfaces, often called layers.
+Painting is the process of filling in pixels. It involves drawing out text, colors, 
+images, borders, and shadows, essentially every visual part of the elements. The 
+drawing is typically done onto multiple surfaces, often called layers.
 
 **5. Compositing:**
 
-Since the parts of the page were drawn into potentially multiple layers they need to be drawn to the screen in the correct order so that the page renders correctly. This is especially important for elements that overlap another, since a mistake could result in one element appearing over the top of another incorrectly.
+Since the parts of the page were drawn into potentially multiple layers they need 
+to be drawn to the screen in the correct order so that the page renders correctly. 
+This is especially important for elements that overlap another, since a mistake 
+could result in one element appearing over the top of another incorrectly.
 
 <div align="right">
     <b><a href="#toc">↥ back to top</a></b>
@@ -2222,11 +2246,16 @@ The following elements are not available in HTML5 anymore and their function is 
 <h2>Q. How you can Use Modernizr in HTML5?</h2>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 
-Modernizr is a JavaScript library that detects which HTML5 and CSS3 features visitor&apos;s browser supports. In detecting feature support, it allows developers to test for some of the new technologies and then provide fallbacks for browsers that do not support them. This is called **feature detection** and is much more efficient than browser sniffing.
+Modernizr is a JavaScript library that detects which HTML5 and CSS3 features visitor&apos;s 
+browser supports. In detecting feature support, it allows developers to test for some of 
+the new technologies and then provide fallbacks for browsers that do not support them. 
+This is called **feature detection** and is much more efficient than browser sniffing.
 
 **1. Using Modernizr with CSS:**
 
-By default, Modernizr sets classes for all of your tests on the root element (&lt;html&gt; for websites). This means adding the class for each feature when it is supported, and adding it with a no- prefix when it is not (e.g. `.feature` or `.no-feature`).
+By default, Modernizr sets classes for all of your tests on the root element (&lt;html&gt; 
+for websites). This means adding the class for each feature when it is supported, and 
+adding it with a no- prefix when it is not (e.g. `.feature` or `.no-feature`).
 
 ```css
 .no-cssgradients .header {
@@ -2257,34 +2286,49 @@ if (Modernizr.canvas) {
 <h2>Q. What is progressive rendering?</h2>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 
-Progressive Rendering is the technique of sequentially rendering portions of a webpage in the server and streaming it to the client in parts without waiting for the whole page to rendered.
+Progressive Rendering is the technique of sequentially rendering portions of a webpage in 
+the server and streaming it to the client in parts without waiting for the whole page to 
+rendered.
 
-It implies that once the important material is produced on the server, you may stream it to the client without having to wait for non-critical stuff to be displayed. It combines the advantages of both CSR (Client Side Rendering) and SSR (Server Side Rendering) (Server Side Rendering).
+It implies that once the important material is produced on the server, you may stream 
+it to the client without having to wait for non-critical stuff to be displayed. It 
+combines the advantages of both CSR (Client Side Rendering) and SSR (Server Side Rendering) 
+(Server Side Rendering).
 
 **1. Client Side Rendering:**
 
-Client Side Rendering (CSR) is a technique in which content is rendered in the browser using JavaScript. Instead of getting all the content from the HTML file itself, the server sends HTML with an empty body and script tags that contain links to JavaScript bundles that the browser will use to render the content.
+Client Side Rendering (CSR) is a technique in which content is rendered in the browser 
+using JavaScript. Instead of getting all the content from the HTML file itself, the 
+server sends HTML with an empty body and script tags that contain links to JavaScript 
+bundles that the browser will use to render the content.
 
 Typical page load behaviour in CSR —
 
 * Browser requests the server for HTML
 * Server sends HTML with script tags in head and no content in body
 * Browser parses the HTML and makes http requests to load the scripts
-* Once the scripts are loaded, the browser parses them and makes API requests and loads all the content asynchronously
+* Once the scripts are loaded, the browser parses them and makes API requests and loads 
+  all the content asynchronously
 
-Since the all the content starts loading only after loading the initial JavaScript, it takes a longer time to show any content on the page. If the user is on a slow network, the content is blocked for an even longer time due to lower bandwidth and higher latency.
+Since the all the content starts loading only after loading the initial JavaScript, it 
+takes a longer time to show any content on the page. If the user is on a slow network, 
+the content is blocked for an even longer time due to lower bandwidth and higher latency.
 
 **2. Server Side Rendering:**
 
-When rendering on the server side, the HTML is rendered on the server and sent to the client. The content that we need to display on the screen becomes available immediately after the HTML is parsed; hence, primary rendering of content is faster than CSR.
+When rendering on the server side, the HTML is rendered on the server and sent to the 
+client. The content that we need to display on the screen becomes available immediately 
+after the HTML is parsed; hence, primary rendering of content is faster than CSR.
 
 Typical page load behaviour in SSR —
 
 * Browser requests the server for HTML.
 * Server makes API requests (usually co-located) and renders the content in the server.
 * Once the page is ready, the server sends it to the browser.
-* The browser loads and parses the HTML and paints the content on the screen without waiting for the JavaScript bundle(s) to load.
-* Once the JavaScript bundle(s) are loaded, the browser hydrates interactivity to DOM elements, which is usually attaching event handlers and other interactive behaviours.
+* The browser loads and parses the HTML and paints the content on the screen without 
+  waiting for the JavaScript bundle(s) to load.
+* Once the JavaScript bundle(s) are loaded, the browser hydrates interactivity to DOM 
+  elements, which is usually attaching event handlers and other interactive behaviours.
 
 Since the APIs are usually co-located with the server, the content is loaded super fast (faster than CSR) and the HTML is sent to the browser. Initial JavaScript load doesn&apos;t block content load as the HTML sent by the server already has the content.
 
