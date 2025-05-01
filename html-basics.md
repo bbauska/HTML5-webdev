@@ -4669,8 +4669,11 @@ values represent the numerical values of the character in the ASCII character se
 example, a space is not acceptable in a URL and is replaced by a ‘%20’ or a ‘+’ sign 
 while encoding. Similarly, a $ sign is replaced by ‘%24’.</p>
 
-<p>For a complete list from W3 schools try <a href="https://www.w3schools.com/tags/ref_urlencode.ASP">
-HTML URL Encoding Reference</a>.</p>
+<h3>HTML URL &amp; Escape Character Reference Sites</h3>
+<ul>
+  <li><p><a href="https://www.w3schools.com/tags/ref_urlencode.ASP">HTML URL Encoding Reference</a></p></li>
+  <li><p><a href="https://mateam.net/html-escape-characters/">HTML Escape Characters</a></p></li>
+</ul>
 
 <h4>Syntax:</h4>
 <p>A web address follows these syntax rules:</p>
@@ -4685,9 +4688,12 @@ scheme://prefix.domain:port/path/filename
 <p><b>Scheme:</b> It specifies the protocol used for communication, such as 
 <b>“https://”</b> for secure communication or <b>“http://”</b> for unsecured 
 communication.<br/>
-<b>Prefix:</b> It is an optional subdomain or www indicating the location of the resource within the domain.<br>
-<b>Domain:</b> Identifies the website’s primary address, like “example.com”, indicating its unique location on the Internet.<br/>
-<b>Port:</b> Optional and signifies a specific endpoint for communication. Common values are 80 for HTTP and 443 for HTTPS.<br>
+<b>Prefix:</b> It is an optional subdomain or www indicating the location of the resource 
+  within the domain.<br>
+<b>Domain:</b> Identifies the website’s primary address, like “example.com”, indicating its 
+  unique location on the Internet.<br/>
+<b>Port:</b> Optional and signifies a specific endpoint for communication. Common values 
+  are 80 for HTTP and 443 for HTTPS.<br>
 <b>Path:</b> It specifies the location or directory on the server where the resource is located.<br/>
 <b>Filename:</b> It refers to the specific file or resource within the specified path.</p>
 
