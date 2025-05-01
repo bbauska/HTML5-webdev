@@ -4656,18 +4656,21 @@ and definition list. We have explained all three list types with examples.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h2 id="8-html-url">08. HTML URL</h2>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<p>A Uniform Resource Locator (URL) is simply the address of a website to access the website 
-content like www.geeksforgeeks.org. But certain characters are allowed to be used in the 
-URL like alphabets A-Z and a-z, numbers 0-9, and a few special characters. They can be 
-used as it is but the rest of the characters that are not in this list are used after 
-encoding them to a suitable form. URL Encoding is the process of converting the URL into 
-a valid format that is accepted by web browsers.</p>
+<p>A Uniform Resource Locator (URL) is simply the address of a website to access the 
+website content like <mark>www.geeksforgeeks.org</mark>. But certain characters are 
+allowed to be used in the URL like alphabets A-Z and a-z, numbers 0-9, and a few special 
+characters. They can be used as it is but the rest of the characters that are not in this 
+list are used after encoding them to a suitable form. URL Encoding is the process of 
+converting the URL into a valid format that is accepted by web browsers.</p>
 
-<p>URL Encoding takes place by replacing all the characters that are not allowed by a % 
-sign followed by two hexadecimal digits. These two hexadecimal values represent the 
-numerical values of the character in the ASCII character set. For example, a space is 
-not acceptable in a URL and is replaced by a ‘%20’ or a ‘+’ sign while encoding. 
-Similarly, a $ sign is replaced by ‘%24’.</p>
+<p>URL Encoding takes place by replacing all the characters that are not allowed by a 
+<mark>% (percent)</mark> sign followed by two hexadecimal digits. These two hexadecimal 
+values represent the numerical values of the character in the ASCII character set. For 
+example, a space is not acceptable in a URL and is replaced by a ‘%20’ or a ‘+’ sign 
+while encoding. Similarly, a $ sign is replaced by ‘%24’.</p>
+
+<p>For a complete list from W3 schools try <a href="https://www.w3schools.com/tags/ref_urlencode.ASP">
+HTML URL Encoding Reference</a>.</p>
 
 <h4>Syntax:</h4>
 <p>A web address follows these syntax rules:</p>
@@ -4676,19 +4679,17 @@ Similarly, a $ sign is replaced by ‘%24’.</p>
 scheme://prefix.domain:port/path/filename
 </pre>
 
-<h4>//Example</h4>
+<h4>Example</h4>
 <pre>https://www.geeksforgeeks.org/</pre>
 
-<p>Scheme: It specifies the protocol used for communication, such as “https://” for secure communication or “http://” for unsecured communication.
-Prefix: It is an optional subdomain or www indicating the location of the resource within the domain.
-Domain: Identifies the website’s primary address, like “example.com”, indicating its unique location on the Internet.
-Port: Optional and signifies a specific endpoint for communication. Common values are 80 for HTTP and 443 for HTTPS.
-Path:It specifies the location or directory on the server where the resource is located.
-Filename: It refers to the specific file or resource within the specified path.</p>
-
-<h4>Table of Content</h4>
-
-
+<p><b>Scheme:</b> It specifies the protocol used for communication, such as 
+<b>“https://”</b> for secure communication or <b>“http://”</b> for unsecured 
+communication.<br/>
+<b>Prefix:</b> It is an optional subdomain or www indicating the location of the resource within the domain.<br>
+<b>Domain:</b> Identifies the website’s primary address, like “example.com”, indicating its unique location on the Internet.<br/>
+<b>Port:</b> Optional and signifies a specific endpoint for communication. Common values are 80 for HTTP and 443 for HTTPS.<br>
+<b>Path:</b> It specifies the location or directory on the server where the resource is located.<br/>
+<b>Filename:</b> It refers to the specific file or resource within the specified path.</p>
 
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h2 id="9-html-svg">09. HTML SVG</h2>
