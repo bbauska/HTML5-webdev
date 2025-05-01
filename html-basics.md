@@ -100,19 +100,19 @@ work for browsers and search engines, as well as developers.</p>
 
 <p>HTML5 offers new semantic elements to define different parts of a web page:</p>
 
-* `<article>`
-* `<aside>`
-* `<details>`
-* `<figcaption>`
-* `<figure>`
-* `<footer>`
-* `<header>`
-* `<main>`
-* `<mark>`
-* `<nav>`
-* `<section>`
-* `<summary>`
-* `<time>`
+* &lt;article&gt;
+* &lt;aside&gt;
+* &lt;details&gt;
+* &lt;figcaption&gt;
+* &lt;figure&gt;
+* &lt;footer&gt;
+* &lt;header&gt;
+* &lt;main&gt;
+* &lt;mark&gt;
+* &lt;nav&gt;
+* &lt;section&gt;
+* &lt;summary&gt;
+* &lt;time&gt;
 
 <h4>Syntax:</h4>
 
@@ -194,8 +194,8 @@ and id names are case insensitive. In standards mode they are case sensitive.
 <h2>Q. What are the new form elements in HTML5?</h2>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 
-There are five new form elements in the HTML5 forms specification: `<datalist>`, `<output>`, 
-`<progress>`, and `<meter>`. 
+There are five new form elements in the HTML5 forms specification: &lt;datalist&gt;, &lt;output&gt;, 
+&lt;progress&gt;, and &lt;meter&gt;. 
 
 <h4>1. Datalist Tag</h4>
 
@@ -218,7 +218,7 @@ suggestions with the mouse.
 <h4>2. Meter Tag</h4>
 
 Indicates a numeric value that falls within a range. The tag supports a number of attributes:
-value: If you don&apos;t specify a value, the first numeric value inside the `<meter></meter>` 
+value: If you don&apos;t specify a value, the first numeric value inside the &lt;meter></meter&gt; 
 pair becomes the value.
 
 * **max**: The maximum possible value of the item.
@@ -457,7 +457,7 @@ expected to be modified through JavaScript code.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 
 The primary difference between div and span tag is their default behavior. By default, 
-a `<div>` is a **block-level-element** and a `<span>` is an **inline element**.
+a &lt;div&gt; is a **block-level-element** and a &lt;span&gt; is an **inline element**.
 
 <ul>
   <li><b>&lt;div&gt;</b> is a block level element which means it will render it on 
@@ -479,7 +479,7 @@ a `<div>` is a **block-level-element** and a `<span>` is an **inline element**.
 <h2>Q. What are optional closing tags?</h2>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 
-`<p>, <li>, <td>, <tr>, <th>, <html>, <body>`, etc. don&apos;t have to provide an end 
+&lt;p>, <li>, <td>, <tr>, <th>, <html>, <body&gt;, etc. don&apos;t have to provide an end 
 tag. Whenever a browser hits a new tag it automatically end the previous tag. 
 
 <div align="right">
@@ -493,8 +493,8 @@ tag. Whenever a browser hits a new tag it automatically end the previous tag.
 In HTML5 it is not strictly necessary to close certain HTML tags. The tags that aren&apos;t 
 required to have specific closing tags are called “self closing” tags.
 
-An example of a self closing tag is something like a line break (`<br />`) or the meta tag 
-(`<meta>`). This means that the following are both acceptable:
+An example of a self closing tag is something like a line break (&lt;br /&gt;) or the meta tag 
+(&lt;meta&gt;). This means that the following are both acceptable:
 
 ```html
 <meta charset="UTF-8">
@@ -506,8 +506,8 @@ An example of a self closing tag is something like a line break (`<br />`) or th
 <h2>Q. Explain the difference between block elements and inline elements?</h2>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 
-* block elements `<h1>, <p>, <ul>, <ol>, <li>`,
-* inline elements `<span>, <a>, <strong>, <i>, <img>`
+* block elements &lt;h1>, <p>, <ul>, <ol>, <li&gt;,
+* inline elements &lt;span>, <a>, <strong>, <i>, <img&gt;
 
 <div align="right">
     <b><a href="#toc">↥ back to top</a></b>
@@ -518,9 +518,9 @@ An example of a self closing tag is something like a line break (`<br />`) or th
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 
 * **Semantic elements**: clearly describes its meaning to both the browser and the developer.
-For example: `<form>`, `<table>`,  `<article>`, `<aside>`, `<details>`, `<figcaption>`, `<figure>`, `<footer>`, `<header>`, `<main>`, `<mark>`, `<nav>`, `<section>`, `<summary>`, `<time>` clearly defines its content.
+For example: &lt;form&gt;, &lt;table&gt;,  &lt;article&gt;, &lt;aside&gt;, &lt;details&gt;, &lt;figcaption&gt;, &lt;figure&gt;, &lt;footer&gt;, &lt;header&gt;, &lt;main&gt;, &lt;mark&gt;, &lt;nav&gt;, &lt;section&gt;, &lt;summary&gt;, &lt;time&gt; clearly defines its content.
   
-* **Non-semantic elements**: `<div>` and `<span>` tells nothing about its content.
+* **Non-semantic elements**: &lt;div&gt; and &lt;span&gt; tells nothing about its content.
 
 <div align="right">
     <b><a href="#toc">↥ back to top</a></b>
@@ -530,7 +530,7 @@ For example: `<form>`, `<table>`,  `<article>`, `<aside>`, `<details>`, `<figcap
 <h2>Q. What is the purpose of `main` element?</h2>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 
-The HTML `<main>` element represents the dominant content of the `<body>` of a document. 
+The HTML &lt;main&gt; element represents the dominant content of the &lt;body&gt; of a document. 
 The main content area consists of content that is directly related to or expands upon the 
 central topic of a document, or the central functionality of an application.
 
@@ -542,7 +542,7 @@ central topic of a document, or the central functionality of an application.
 </main>
 ```
 
-<i>Note: A document mustn&apos;t have more than one `<main>` element that doesn't have the hidden attribute specified.</i>
+<i>Note: A document mustn&apos;t have more than one &lt;main&gt; element that doesn't have the hidden attribute specified.</i>
 
 <div align="right">
     <b><a href="#toc">↥ back to top</a></b>
@@ -553,18 +553,18 @@ central topic of a document, or the central functionality of an application.
 &lt;nav&gt;, &lt;header&gt;, &lt;footer&gt; and how should each be used in structuring html markup?</h2>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 
-* `<header>` is used to contain introductory and navigational information about a section 
+* &lt;header&gt; is used to contain introductory and navigational information about a section 
 of the page. This can include the section heading, the author&apos;s name, time and date 
 of publication, table of contents, or other navigational information.
 
-* `<article>` is meant to house a self-contained composition that can logically be 
+* &lt;article&gt; is meant to house a self-contained composition that can logically be 
 independently recreated outside of the page without losing it&apos;s meaining. 
 Individual blog posts or news stories are good examples.
 
-* `<section>` is a flexible container for holding content that shares a common 
+* &lt;section&gt; is a flexible container for holding content that shares a common 
 informational theme or purpose.
 
-* `<footer>` is used to hold information that should appear at the end of a section 
+* &lt;footer&gt; is used to hold information that should appear at the end of a section 
 of content and contain additional information about the section. Author&apos;s name, 
 copyright information, and related links are typical examples of such content.
 
@@ -576,19 +576,19 @@ copyright information, and related links are typical examples of such content.
 <h2>Q. When should you use `section`, `div` or `article`?</h2>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 
-* `<section>`, group of content inside is related to a single theme, and should appear as 
+* &lt;section&gt;, group of content inside is related to a single theme, and should appear as 
 an entry in an outline of the page. It&apos;s a chunk of related content, like a subsection 
 of a long article, a major part of the page (eg the news section on the homepage), or a 
 page in a webapp&apos;s tabbed interface. A section normally has a heading (title) and 
 maybe a footer too.
 
-* `<article>`, represents a complete, or self-contained, composition in a document, 
+* &lt;article&gt;, represents a complete, or self-contained, composition in a document, 
 page, application, or site and that is, in principle, independently distributable or 
 reusable, e.g. in syndication. This could be a forum post, a magazine or newspaper 
 article, a blog entry, a user-submitted comment, an interactive widget or gadget, or 
 any other independent item of content.
 
-* `<div>`, on the other hand, does not convey any meaning, aside from any found in 
+* &lt;div&gt;, on the other hand, does not convey any meaning, aside from any found in 
 its class, lang and title attributes.
 
 <div align="right">
@@ -596,10 +596,10 @@ its class, lang and title attributes.
 </div>
 
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<h2>Q. Can a web page contain multiple `<header>` elements? What about `<footer>` elements?</h2>
+<h2>Q. Can a web page contain multiple &lt;header&gt; elements? What about &lt;footer&gt; elements?</h2>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 
-Yes, header elements can be used multiple times in documents. A `<header>` tag must be present for all articles, sections, and pages, although a `<footer>` tag is not necessary.
+Yes, header elements can be used multiple times in documents. A &lt;header&gt; tag must be present for all articles, sections, and pages, although a &lt;footer&gt; tag is not necessary.
 
 <h4>From W3C standards</h4>
 
@@ -630,15 +630,15 @@ Physical tags are used to indicate how a particular character is to be formatted
 
 |Tags      | Description                                                      |
 |----------|------------------------------------------------------------------|
-|`<sup>`   |Superscript is usually used for showing elements above base-line |
-|`<sub>`   |The subscript is used for alternate baseline.|
-|`<i>`     |An Italic tag is used to define a text with a special meaning. |
-|`<big>`   |Big tag increase the font size by 1 (Note: You can not use the big tag in HTML 5)|
-|`<small>` |A small tag defines the small text, and it is used while writing copyright.|
-|`<b>`     |Bold increases the importance of the text because bold tag covert the text into bold size.|
-|`<u>`     |It is used to underline the text.|
-|`<tt>`    |Teletype text gives the default font-family which is monospace.|
-|`<strike>`|It is an editing markup that tells the reader to ignore the text passage.|
+|&lt;sup&gt;   |Superscript is usually used for showing elements above base-line |
+|&lt;sub&gt;   |The subscript is used for alternate baseline.|
+|&lt;i&gt;     |An Italic tag is used to define a text with a special meaning. |
+|&lt;big&gt;   |Big tag increase the font size by 1 (Note: You can not use the big tag in HTML 5)|
+|&lt;small&gt; |A small tag defines the small text, and it is used while writing copyright.|
+|&lt;b&gt;     |Bold increases the importance of the text because bold tag covert the text into bold size.|
+|&lt;u&gt;     |It is used to underline the text.|
+|&lt;tt&gt;    |Teletype text gives the default font-family which is monospace.|
+|&lt;strike&gt;|It is an editing markup that tells the reader to ignore the text passage.|
 
 <h4>2. Logical Tags:</h4>
 
@@ -652,21 +652,21 @@ used for styling purposes as well as to give special importance to text content.
 
 |Tags       | Description                     |
 |-----------|---------------------------------|
-|`<abbr>`   |Defines the abbreviation of text.|
-|`<acronym>`|Defines the acronym.|
-|`<address>`|Contact information of a person or an organization.|
-|`<cite>`   |Defines citation. It displays the text in italic format.|
-|`<code>`   |Defines the piece of computer code.|
-|`<blockquote>`|Defines a long quotation.|
-|`<del>`    |Defines the deleted text and is used to mark a portion of text which has been deleted from the document.|
-|`<dfn>`    |Defines the definition element and is used to representing a defining instance in HTML.|
-|`<ins>`    |Defines inserted text.|
-|`<kbd>`    |Defines keyboard input text.|
-|`<pre>`    |Defines the block of preformatted text which preserves the text spaces, line breaks, tabs, and other formatting characters which are ignored by web browsers.|
-|`<q>`      |Defines the short quotation.|
-|`<samp>`   |Defines the sample output text from a computer program.|
-|`<strong>` |Defines strong text i.e. show the importance of the text.|
-|`<var>`    |Defines the variable in a mathematical equation or in the computer program.|
+|&lt;abbr&gt;   |Defines the abbreviation of text.|
+|&lt;acronym&gt;|Defines the acronym.|
+|&lt;address&gt;|Contact information of a person or an organization.|
+|&lt;cite&gt;   |Defines citation. It displays the text in italic format.|
+|&lt;code&gt;   |Defines the piece of computer code.|
+|&lt;blockquote&gt;|Defines a long quotation.|
+|&lt;del&gt;    |Defines the deleted text and is used to mark a portion of text which has been deleted from the document.|
+|&lt;dfn&gt;    |Defines the definition element and is used to representing a defining instance in HTML.|
+|&lt;ins&gt;    |Defines inserted text.|
+|&lt;kbd&gt;    |Defines keyboard input text.|
+|&lt;pre&gt;    |Defines the block of preformatted text which preserves the text spaces, line breaks, tabs, and other formatting characters which are ignored by web browsers.|
+|&lt;q&gt;      |Defines the short quotation.|
+|&lt;samp&gt;   |Defines the sample output text from a computer program.|
+|&lt;strong&gt; |Defines strong text i.e. show the importance of the text.|
+|&lt;var&gt;    |Defines the variable in a mathematical equation or in the computer program.|
 
 <div align="right">
     <b><a href="#toc">↥ back to top</a></b>
@@ -1314,7 +1314,7 @@ Explorer 5. This is essential in order to support websites that were built befor
 widespread adoption of web standards. In **Standards mode**, the behavior is described 
 by the HTML and CSS specifications. 
 
-For HTML documents, browsers use a `<!DOCTYPE html>` in the beginning of the document 
+For HTML documents, browsers use a &lt;!DOCTYPE html&gt; in the beginning of the document 
 to decide whether to handle it in quirks mode or standards mode.
 
 ```html
@@ -1535,7 +1535,7 @@ This is the process of figuring out which CSS rules apply to which elements base
 
 **3. Layout:**
 
-Once the browser knows which rules apply to an element it can begin to calculate how much space it takes up and where it is on screen. The web&apos;s layout model means that one element can affect others, for example the width of the `<body>` element typically affects its children&apos;s widths and so on all the way up and down the tree, so the process can be quite involved for the browser.
+Once the browser knows which rules apply to an element it can begin to calculate how much space it takes up and where it is on screen. The web&apos;s layout model means that one element can affect others, for example the width of the &lt;body&gt; element typically affects its children&apos;s widths and so on all the way up and down the tree, so the process can be quite involved for the browser.
 
 **4. Paint:**
 
@@ -1585,7 +1585,7 @@ If the CSS width property is set to 100%, the image will be responsive and scale
 
 **3. Show different Images depending on Browser Width:**
 
-The HTML `<picture>` element allows you to define different images for different browser window sizes.
+The HTML &lt;picture&gt; element allows you to define different images for different browser window sizes.
 
 ```html
 <picture>
@@ -2016,7 +2016,7 @@ There are following advantages of using SVG over other image formats like JPEG, 
 
 **2. Canvas:**
 
-Canvas is a HTML element is used to draw graphics on a web page. It is a  bitmap with an “immediate mode” graphics application programming interface (API) for drawing on it. The `<canvas>` element is only a container for graphics. In order to draw the graphics, you are supposed to use a script. Canvas has several strategies when it comes to drawing paths, boxes, circles, text & adding images.
+Canvas is a HTML element is used to draw graphics on a web page. It is a  bitmap with an “immediate mode” graphics application programming interface (API) for drawing on it. The &lt;canvas&gt; element is only a container for graphics. In order to draw the graphics, you are supposed to use a script. Canvas has several strategies when it comes to drawing paths, boxes, circles, text & adding images.
 
 **Example:**
 
@@ -2141,21 +2141,21 @@ The following elements are not available in HTML5 anymore and their function is 
 
 |Sl.No|Tags (Elements)  |    Description        |
 |-----|-----------------|----------------------|
-| 01. |`<acronym>`        |Defines an acronym|
-| 02. |`<applet>`        |Defines an applet|
-| 03. |`<basefont>`        |Defines an base font for the page.|
-| 04. |`<big>`            |Defines big text|
-| 05. |`<center>`        |Defines centered text|
-| 06. |`<dir>`            |Defines a directory list|
-| 07. |`<font>`            |Defines text font, size, and color|
-| 08. |`<frame>`        |Defines a frame|
-| 08. |`<frameset>`        |Defines a set of frames|
-| 10. |`<isindex>`        |Defines a single-line input field|
-| 11. |`<noframes>`        |Defines a noframe section|
-| 12. |`<s>`            |Defines strikethrough text|
-| 13. |`<strike>`        |Defines strikethrough text|
-| 14. |`<tt>`            |Defines teletype text|
-| 15. |`<u>`            |Defines underlined text|
+| 01. |&lt;acronym&gt;        |Defines an acronym|
+| 02. |&lt;applet&gt;        |Defines an applet|
+| 03. |&lt;basefont&gt;        |Defines an base font for the page.|
+| 04. |&lt;big&gt;            |Defines big text|
+| 05. |&lt;center&gt;        |Defines centered text|
+| 06. |&lt;dir&gt;            |Defines a directory list|
+| 07. |&lt;font&gt;            |Defines text font, size, and color|
+| 08. |&lt;frame&gt;        |Defines a frame|
+| 08. |&lt;frameset&gt;        |Defines a set of frames|
+| 10. |&lt;isindex&gt;        |Defines a single-line input field|
+| 11. |&lt;noframes&gt;        |Defines a noframe section|
+| 12. |&lt;s&gt;            |Defines strikethrough text|
+| 13. |&lt;strike&gt;        |Defines strikethrough text|
+| 14. |&lt;tt&gt;            |Defines teletype text|
+| 15. |&lt;u&gt;            |Defines underlined text|
 
 **2. Deprecated Attributes:**  
 
@@ -2226,7 +2226,7 @@ Modernizr is a JavaScript library that detects which HTML5 and CSS3 features vis
 
 **1. Using Modernizr with CSS:**
 
-By default, Modernizr sets classes for all of your tests on the root element (`<html>` for websites). This means adding the class for each feature when it is supported, and adding it with a no- prefix when it is not (e.g. `.feature` or `.no-feature`).
+By default, Modernizr sets classes for all of your tests on the root element (&lt;html&gt; for websites). This means adding the class for each feature when it is supported, and adding it with a no- prefix when it is not (e.g. `.feature` or `.no-feature`).
 
 ```css
 .no-cssgradients .header {
@@ -2315,7 +2315,7 @@ Iframes can include videos, maps, or entire web pages from other sources.
 
 <h3>Q. What is an iFrame and how does it work?</h3>
 
-The `<iframe>` HTML element represents a nested browsing context, embedding another HTML page into the current one. Each embedded browsing context has its own **session history** and **document**. The browsing context that embeds the others is called the parent browsing context. The topmost browsing context — the one with no parent — is usually the browser window, represented by the **Window** object.
+The &lt;iframe&gt; HTML element represents a nested browsing context, embedding another HTML page into the current one. Each embedded browsing context has its own **session history** and **document**. The browsing context that embeds the others is called the parent browsing context. The topmost browsing context — the one with no parent — is usually the browser window, represented by the **Window** object.
 
 <div align="right">
     <b><a href="#toc">↥ back to top</a></b>
@@ -2412,7 +2412,7 @@ It prevents the new page from being able to access the `window.opener` property 
 <h2>Q. How can you highlight text in HTML?</h2>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 
-The `<mark>` HTML element represents text which is marked or highlighted for reference or notation purposes, due to the marked passage&apos;s relevance or importance in the enclosing context.
+The &lt;mark&gt; HTML element represents text which is marked or highlighted for reference or notation purposes, due to the marked passage&apos;s relevance or importance in the enclosing context.
 
 **Example:**
 
@@ -2485,7 +2485,7 @@ The `alt` text attribute is a part of an image tag, and it provides a descriptio
 
 **5. Open Graph tags:**
 
-Open Graph (OG) tags are placed in the `<head>` section of a page and allow any webpage to become a rich object in social networks. OG tags let you control how the information about your page is represented when shared via social channels. This possibility may help you enhance the performance of your links on social media, thus driving more click-throughs and increasing conversions. In HTML, it can look like this:
+Open Graph (OG) tags are placed in the &lt;head&gt; section of a page and allow any webpage to become a rich object in social networks. OG tags let you control how the information about your page is represented when shared via social channels. This possibility may help you enhance the performance of your links on social media, thus driving more click-throughs and increasing conversions. In HTML, it can look like this:
 
 ```html
 <meta name="og:title" property="og:title" content="Your Open Graph Title Goes Here">
@@ -2509,7 +2509,7 @@ A canonical tag is a way of telling search engines that a specific URL represent
 
 **8. HTML5 semantic tags:**
 
-One of the most important features of HTML5 is its semantics tags. Semantic tags refers to syntax that makes the HTML more comprehensible by better defining the different sections and layout of web pages. It makes web pages more informative and adaptable, allowing browsers and search engines to better interpret content. For example, instead of using `<div id="header"></div>` you can use a `<header></hrader>` tag.
+One of the most important features of HTML5 is its semantics tags. Semantic tags refers to syntax that makes the HTML more comprehensible by better defining the different sections and layout of web pages. It makes web pages more informative and adaptable, allowing browsers and search engines to better interpret content. For example, instead of using &lt;div id="header"></div&gt; you can use a &lt;header></hrader&gt; tag.
 
 <p align="center">
     <img src="assets/images/semantic-tags.png" alt="HTML5 semantic tags" width="300px" />
@@ -2591,39 +2591,39 @@ The following lists all optional tags.
 
 |Tag            |Description  |
 |---------------|-------------|
-|`<area>`       |             |
-|`<base>`       |             |
-|`<body>`       |             |
-|`<br>`         |             |
-|`<caption>`    |             |
-|`<col>`        |             |
-|`<colgroup>`   |             |
-|`<dd>`         |             |
-|`<dt>`         |             |
-|`<embed>`      |             |
-|`<head>`       |             |
-|`<hr>`         |             |
-|`<html>`       |             |
-|`<img>`        |             |
-|`<input>`      |             |
-|`<li>`         |             |
-|`<link>`       |             |
-|`<meta>`       |             |  
-|`<optgroup>`   |             |
-|`<option>`     |             |
-|`<p>`          |             |
-|`<param>`      |             |
-|`<rp>`         |             |
-|`<rt>`         |             |
-|`<source>`     |             |
-|`<tbody>`      |             |
-|`<td>`         |             |
-|`<tfoot>`      |             |
-|`<th>`         |             |
-|`<thead>`      |             |
-|`<tr>`         |             |
-|`<track>`      |             |
-|`<wbr>`        |             |
+|&lt;area&gt;       |             |
+|&lt;base&gt;       |             |
+|&lt;body&gt;       |             |
+|&lt;br&gt;         |             |
+|&lt;caption&gt;    |             |
+|&lt;col&gt;        |             |
+|&lt;colgroup&gt;   |             |
+|&lt;dd&gt;         |             |
+|&lt;dt&gt;         |             |
+|&lt;embed&gt;      |             |
+|&lt;head&gt;       |             |
+|&lt;hr&gt;         |             |
+|&lt;html&gt;       |             |
+|&lt;img&gt;        |             |
+|&lt;input&gt;      |             |
+|&lt;li&gt;         |             |
+|&lt;link&gt;       |             |
+|&lt;meta&gt;       |             |  
+|&lt;optgroup&gt;   |             |
+|&lt;option&gt;     |             |
+|&lt;p&gt;          |             |
+|&lt;param&gt;      |             |
+|&lt;rp&gt;         |             |
+|&lt;rt&gt;         |             |
+|&lt;source&gt;     |             |
+|&lt;tbody&gt;      |             |
+|&lt;td&gt;         |             |
+|&lt;tfoot&gt;      |             |
+|&lt;th&gt;         |             |
+|&lt;thead&gt;      |             |
+|&lt;tr&gt;         |             |
+|&lt;track&gt;      |             |
+|&lt;wbr&gt;        |             |
 
 <div align="right">
     <b><a href="#toc">↥ back to top</a></b>
@@ -2680,7 +2680,7 @@ We can set text direction in HTML in one of two ways:
 <h2>Q. When is it appropriate to use the small element?</h2>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 
-The `<small>` HTML element represents side-comments and small print, like copyright and legal text, independent of its styled presentation. By default, it renders text within it one font-size smaller, such as from `small` to `x-small`.
+The &lt;small&gt; HTML element represents side-comments and small print, like copyright and legal text, independent of its styled presentation. By default, it renders text within it one font-size smaller, such as from `small` to `x-small`.
 
 **Example:**
 
@@ -2738,14 +2738,14 @@ The **lang** attribute specifies the language of the element&apos;s content.
     <b><a href="#toc">↥ back to top</a></b>
 </div>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<h2>Q. What is the difference between `<section>` and `<div>`?</h2>
+<h2>Q. What is the difference between &lt;section&gt; and &lt;div&gt;?</h2>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 
-The `<section>` tag creates independent sections within a webpage having logically connected content. And the `<div>` tag is an empty container specifying a division or a section.
+The &lt;section&gt; tag creates independent sections within a webpage having logically connected content. And the &lt;div&gt; tag is an empty container specifying a division or a section.
 
-**The `<section>` Element**
+<b>The &lt;section&gt; Element</b>
 
-According to the W3C specification, the `<section>` tag means that the content inside this element is grouped. In other words, the content relates to a single theme. It must be an entry in the outline of the page.
+According to the W3C specification, the &lt;section&gt; tag means that the content inside this element is grouped. In other words, the content relates to a single theme. It must be an entry in the outline of the page.
 
 **Example:**
 
@@ -2775,9 +2775,9 @@ According to the W3C specification, the `<section>` tag means that the content i
 </html>
 ```
 
-**The `<div>` Element**
+**The &lt;div&gt; Element**
 
-The `<div>` element only represents its child elements and doesn&apos;t have a special meaning. It can be used with the `lang`, `title`, and `class` attributes to add semantics that is common to a group of consecutive elements. This element can also be used in a `<dl>` tag and wrap groups of `<dt>` and `<dd>` elements.
+The &lt;div&gt; element only represents its child elements and doesn&apos;t have a special meaning. It can be used with the `lang`, `title`, and `class` attributes to add semantics that is common to a group of consecutive elements. This element can also be used in a &lt;dl&gt; tag and wrap groups of &lt;dt&gt; and &lt;dd&gt; elements.
 
 **Example:**
 
