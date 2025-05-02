@@ -49,30 +49,36 @@
 <p>The Extensible Hypertext Markup Language, or XHTML, has two important notes for front 
 end developers.</p>
 
-1) It needs to be well formed, meaning all elements need to be closed and nested correctly 
-  or you will return errors.
-2) Since it is more strict than HTML is requires less pre-processing by the browser, which 
-  may improve your sites performance.
-
+<ol type="1">
+  <li>It needs to be well formed, meaning all elements need to be closed and nested 
+    correctly or you will return errors.</li>
+  <li>Since it is more strict than HTML is requires less pre-processing by the browser, 
+    which may improve your sites performance.</li>
+</ol>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h2>Q. What are the building blocks of HTML5?</h2>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-
-* **Semantics**: allowing you to describe more precisely what your content is.
-* **Connectivity**: allowing you to communicate with the server in new and innovative ways.
-* **Offline and storage**: allowing webpages to store data on the client-side locally and 
-  operate offline more efficiently.
-* **Multimedia**: making video and audio first-class citizens in the Open Web.
-* **2D/3D graphics and effects**: allowing a much more diverse range of presentation options.
-* **Performance and integration**: providing greater speed optimization and better usage 
-  of computer hardware.
-* **Device access**: allowing for the usage of various input and output devices.
-* **Styling**: letting authors write more sophisticated themes.
+<ul>
+  <li><mark><b>Semantics</b></mark>: allowing you to describe more precisely what your 
+    content is.</li>
+  <li><mark><b>Connectivity</b></mark>: allowing you to communicate with the server in 
+    new and innovative ways.</li>
+  <li><mark><b>Offline and storage</b></mark>: allowing webpages to store data on the 
+    client-side locally and operate offline more efficiently.</li>
+  <li><mark><b>Multimedia</b></mark>: making video and audio first-class citizens in 
+    the Open Web.</li>
+  <li><mark><b>2D/3D graphics and effects</b></mark>: allowing a much more diverse 
+    range of presentation options.</li>
+  <li><mark><b>Performance and integration</b></mark>: providing greater speed 
+    optimization and better usage of computer hardware.</li>
+  <li><mark><b>Device access</b></mark>: allowing for the usage of various input 
+    and output devices.</li>
+  <li><mark><b>Styling</b></mark>: letting authors write more sophisticated themes.</li>
+</ul>
 
 <div align="right">
     <b><a href="#toc">↥ back to top</a></b>
 </div>
-
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h2>Q. What are the semantic tags available in html5?</h2>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -81,20 +87,21 @@ work for browsers and search engines, as well as developers.</p>
 
 <p>HTML5 offers new semantic elements to define different parts of a web page:</p>
 
-* &lt;article&gt;
-* &lt;aside&gt;
-* &lt;details&gt;
-* &lt;figcaption&gt;
-* &lt;figure&gt;
-* &lt;footer&gt;
-* &lt;header&gt;
-* &lt;main&gt;
-* &lt;mark&gt;
-* &lt;nav&gt;
-* &lt;section&gt;
-* &lt;summary&gt;
-* &lt;time&gt;
-
+<ul>
+  <li>&lt;article&gt;</li>
+  <li>&lt;aside&gt;</li>
+  <li>&lt;details&gt;</li>
+  <li>&lt;figcaption&gt;</li>
+  <li>&lt;figure&gt;</li>
+  <li>&lt;footer&gt;</li>
+  <li>&lt;header&gt;</li>
+  <li>&lt;main&gt;</li>
+  <li>&lt;mark&gt;</li>
+  <li>&lt;nav&gt;</li>
+  <li>&lt;section&gt;</li>
+  <li>&lt;summary&gt;</li>
+  <li>&lt;time&gt;</li>
+</ul>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h4>Syntax:</h4>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -127,35 +134,41 @@ work for browsers and search engines, as well as developers.</p>
 <div align="right">
     <b><a href="#toc">↥ back to top</a></b>
 </div>
-
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h2>Q. Why you would like to use semantic tag?</h2>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-
-* Search Engine Optimization, accessibility, repurposing, light code. 
-* Many visually impaired person rely on browser speech and semantic tag helps to interpret page content clearly.
-* Search engine needs to understand page content to rank and semantic tag helps.
-* Semantic code aids accessibility. Specially, many people whose eyes are not good rely on speech browsers to read pages to them. These programs cannot interpret pages very well unless they are clearly explained.
-* Help Search engines to better understand pages. Search engine need to understand what your content is about when rank you properly on search engines. Semantic code tends to improve your placement on search engines, as it is easier for the "search engine spiders" to understand.
-* It&apos;s easier to read and edit, which saves time and money during maintenance.
+<ul>
+  <li>Search Engine Optimization, accessibility, repurposing, light code.</li>
+  <li>Many visually impaired person rely on browser speech and semantic tag helps to 
+    interpret page content clearly.</li>
+  <li>Search engine needs to understand page content to rank and semantic tag helps.</li>
+  <li>Semantic code aids accessibility. Specially, many people whose eyes are not good 
+    rely on speech browsers to read pages to them. These programs cannot interpret 
+	pages very well unless they are clearly explained.</li>
+  <li>Help Search engines to better understand pages. Search engine need to understand 
+    what your content is about when rank you properly on search engines. Semantic code 
+	tends to improve your placement on search engines, as it is easier for the "search 
+	engine spiders" to understand.</li>
+  <li>It&apos;s easier to read and edit, which saves time and money during maintenance.</li>
+</ul>
 
 <div align="right">
     <b><a href="#toc">↥ back to top</a></b>
 </div>
-
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h2>Q. What does a &lt;DOCTYPE html&gt; do?</h2>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<p>A DOCTYPE is always associated to a <mark><b>DTD</b></mark> ( <mark><b>Document 
+Type Definition</b></mark> ). A DTD defines how documents of a certain type should be 
+structured (i.e. a <mark><b>button</b></mark> can contain a <mark><b>span</b></mark> 
+but not a <mark><b>div</b></mark>), whereas a DOCTYPE declares what DTD a document 
+supposedly respects (i.e. this document respects the HTML DTD). For webpages, the 
+DOCTYPE declaration is required. It is used to tell user agents what version of the 
+HTML specifications your document respects.</p>
 
-A DOCTYPE is always associated to a `DTD` ( **Document Type Definition** ). A DTD defines 
-how documents of a certain type should be structured (i.e. a `button` can contain a `span` 
-but not a `div`), whereas a DOCTYPE declares what DTD a document supposedly respects (i.e. 
-this document respects the HTML DTD). For webpages, the DOCTYPE declaration is required. 
-It is used to tell user agents what version of the HTML specifications your document respects. 
-
-Once a user agent has recognized a correct DOCTYPE, it will trigger the `no-quirks mode` 
-matching this DOCTYPE forreading the document. If a user agent doesn't recognize a correct 
-DOCTYPE, it will trigger the `quirks mode`.
+<p>Once a user agent has recognized a correct DOCTYPE, it will trigger the 
+<mark><b>no-quirks mode</b></mark> matching this DOCTYPE forreading the document. 
+If a user agent doesn't recognize a correct DOCTYPE, it will trigger the <mark>quirks mode</mark>.</p>
 
 <div align="right">
     <b><a href="#toc">↥ back to top</a></b>
@@ -2772,7 +2785,9 @@ One of the most important features of HTML5 is its semantics tags. Semantic tags
 
 The **value** property reflects the current text-content inside the input box, whereas the **value** attribute contains the initial text-content of the **value** attribute from the HTML source code
 
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 **Difference between HTML attributes and DOM properties:**
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 
 |Attribute                               |Property                |
 |----------------------------------------|------------------------|
@@ -2804,7 +2819,9 @@ The **value** property reflects the current text-content inside the input box, w
 
 Emulating the version tells the browser to use the DOCTYPE to determine how to render content. pages without a DOCTYPE will be rendered in quirks mode. Edge mode tells Windows Internet Explorer to display content in the highest mode available, which actually breaks the "lock-in" paradigm. With Internet Explorer 8, this is equivalent to IE8 mode.
 
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 **Setting the Meta Element:**
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 
 The meta element includes a content attribute that enables you to specify the mode that content is rendered in for the webpage, as the following table shows.
 
@@ -2893,7 +2910,9 @@ We can set text direction in HTML in one of two ways:
 * With the HTML **dir** attribute
 * With the CSS **direction** property
 
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 **Example:**
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 
 ```html
 <!-- Syntax -->
@@ -2903,7 +2922,7 @@ We can set text direction in HTML in one of two ways:
 <textarea dir="rtl"></textarea>
 ```
 
-**Attribute Values:**
+<h4>Attribute Values:</h4>
 
 |Value          |Description                |
 |---------------|---------------------------|
@@ -2921,7 +2940,9 @@ We can set text direction in HTML in one of two ways:
 
 The &lt;small&gt; HTML element represents side-comments and small print, like copyright and legal text, independent of its styled presentation. By default, it renders text within it one font-size smaller, such as from `small` to `x-small`.
 
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 **Example:**
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 
 ```html
 <!DOCTYPE html>
@@ -2951,7 +2972,9 @@ The &lt;small&gt; HTML element represents side-comments and small print, like co
 
 The **lang** attribute specifies the language of the element&apos;s content.
 
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 **Example:**
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 
 ```html
 <!DOCTYPE html>
@@ -2982,13 +3005,12 @@ The **lang** attribute specifies the language of the element&apos;s content.
 <p>The &lt;section&gt; tag creates independent sections within a webpage having logically 
 connected content. And the &lt;div&gt; tag is an empty container specifying a division or 
 a section.</p>
-
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h4>The <mark><b>&lt;section&gt;</b></mark> Element</h4>
-
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p>According to the W3C specification, the &lt;section&gt; tag means that the content inside 
 this element is grouped. In other words, the content relates to a single theme. It must be 
 an entry in the outline of the page.</p>
-
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h5>Example:</h5>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -3389,6 +3411,7 @@ Below are the global event attributes that can be added to HTML elements to defi
 </div>
 
 <p>cont'd</p>
+
 | Attribute      | Value  | Description |
 |----------------|--------|--------------------------------------------------------------------------|
 | ononline       | script | Script to be run when the browser starts to work online |
