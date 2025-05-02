@@ -1073,7 +1073,9 @@ button when they are offline.</p>
   changed from the server.</li>
 </ul>
 
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h5>Syntax:</h5>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 
 ```html
 <html manifest="example.appcache">
@@ -1147,7 +1149,7 @@ JavaScript to create a more engaging user experience.</p>
   data-columns="10"
   data-index-number="100"
   data-parent="cars"
->
+
   <h1>Electric Cars</h1>
 </article>
 ```
@@ -1190,7 +1192,9 @@ decorative purposes, in which case it should be left empty.
 
 The enctype attribute specifies how the form-data should be encoded when submitting it to the server.
 
-**Example:** 01
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<h5>Example: 01</h5>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 
 ```html
 <form action="fileupload.php" method="post" enctype="multipart/form-data"> 
@@ -1201,7 +1205,9 @@ The enctype attribute specifies how the form-data should be encoded when submitt
 </form>
 ```
 
-**Example:** 02
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<h5>Example: 02</h5>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 
 ```html
 <form action="/urlencoded?token=A87412B" method="POST" enctype="application/x-www-form-urlencoded">
@@ -1211,7 +1217,9 @@ The enctype attribute specifies how the form-data should be encoded when submitt
 </form>
 ```
 
-**Example:** 03
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<h5>Example: 03</h5>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 
 ```html
 <form action="action.do" method="get" enctype="text/plain">
@@ -1587,10 +1595,10 @@ attribute exists.
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h2>Q. Explain the difference between layout, painting and compositing?</h2>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-
 <img src="assets/lib/img/frame-full.jpg" alt="Browser Engine" />
-
-**1. JavaScript:**
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<h4>1. JavaScript:</h4>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 
 Typically JavaScript is used to handle work that will result in visual changes, 
 whether it&apos;s jQuery&apos;s animate function, sorting a data set, or adding 
@@ -1598,14 +1606,18 @@ DOM elements to the page. It doesn&apos;t have to be JavaScript that triggers a
 visual change, though: CSS Animations, Transitions, and the Web Animations API 
 are also commonly used.
 
-**2. Style:**
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<h4>2. Style:</h4>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 
 This is the process of figuring out which CSS rules apply to which elements 
 based on matching selectors, for example, .headline or .nav > .nav__item. 
 From there, once rules are known, they are applied and the final styles for 
 each element are calculated.
 
-**3. Layout:**
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<h4>3. Layout:</h4>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 
 Once the browser knows which rules apply to an element it can begin to calculate 
 how much space it takes up and where it is on screen. The web&apos;s layout model 
@@ -1613,13 +1625,17 @@ means that one element can affect others, for example the width of the &lt;body&
 element typically affects its children&apos;s widths and so on all the way up and 
 down the tree, so the process can be quite involved for the browser.
 
-**4. Paint:**
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<h4>4. Paint:</h4>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 
 Painting is the process of filling in pixels. It involves drawing out text, colors, 
 images, borders, and shadows, essentially every visual part of the elements. The 
 drawing is typically done onto multiple surfaces, often called layers.
 
-**5. Compositing:**
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<h4>5. Compositing:</h4>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 
 Since the parts of the page were drawn into potentially multiple layers they need 
 to be drawn to the screen in the correct order so that the page renders correctly. 
@@ -1650,13 +1666,17 @@ could result in one element appearing over the top of another incorrectly.
 
 Responsive Web Design is about using HTML and CSS to automatically resize, hide, shrink, or enlarge, a website, to make it look good on all devices (desktops, tablets, and phones).
 
-**1. Setting the viewport:**
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<h4>1. Setting the viewport:</h4>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 
 ```html
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 ```
 
-**2. Responsive Images:**
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<h4>2. Responsive Images:</h4>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 
 If the CSS width property is set to 100%, the image will be responsive and scale up and down
 
@@ -1664,7 +1684,9 @@ If the CSS width property is set to 100%, the image will be responsive and scale
 <img src="img.png" style="width:100%;">
 ```
 
-**3. Show different Images depending on Browser Width:**
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<h4>3. Show different Images depending on Browser Width:</h4>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 
 The HTML &lt;picture&gt; element allows you to define different images for different browser window sizes.
 
@@ -1677,7 +1699,9 @@ The HTML &lt;picture&gt; element allows you to define different images for diffe
 </picture>
 ```
 
-**4. Responsive Text Size:**
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<h4>4. Responsive Text Size:</h4>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 
 The text size can be set with a "vw" unit, which means the "viewport width". That way the text size will follow the size of the browser window.
 
@@ -1685,7 +1709,9 @@ The text size can be set with a "vw" unit, which means the "viewport width". Tha
 <h1 style="font-size:10vw">Hello World</h1>
 ```
 
-**5. Media Queries:**
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<h4>5. Media Queries:</h4>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 
 Using media queries you can define completely different styles for different browser sizes.
 
@@ -1713,17 +1739,17 @@ Using media queries you can define completely different styles for different bro
 </div>
 ```
 
-* Yes
+<p>Yes</p>
 
 <div align="right">
     <b><a href="#toc">↥ back to top</a></b>
 </div>
-
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h2>Q. List the API available in HTML5?</h2>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-
-**1. High Resolution Time API**
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<h4>1. High Resolution Time API</h4>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 
 The High Resolution Time API provides the current time in sub-millisecond resolution and such that it is not subject to system clock skew or adjustments.
 
@@ -1733,7 +1759,9 @@ It exposes only one method, that belongs to the `window.performance` object, cal
 var time = performance.now();
 ```
 
-**2. User Timing API**
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<h4>2. User Timing API</h4>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 
 It allows us to accurately measure and report the performance of a section of JavaScript code. It deals with two main concepts: mark and measure. The former represents an instant (timestamp), while the latter represents the time elapsed between two marks.
 
@@ -1746,7 +1774,9 @@ performance.mark("endFoo");
 performance.measure("durationFoo", "startFoo", "endFoo");
 ```
 
-**3. Network Information API**
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<h4>3. Network Information API</h4>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 
 This API belongs to the connection property of the `window.navigator` object. It exposes two read-only properties: `bandwidth` and `metered`. The former is a number representing an estimation of the current bandwidth, while the latter is a Boolean whose value is true if the user&apos;s connection is subject to limitation and bandwidth usage, and false otherwise.
 
@@ -1759,7 +1789,9 @@ This API belongs to the connection property of the `window.navigator` object. It
 | 05. |navigator.connection.effectiveType|Effective connection type  |
 | 06. |navigator.connection.saveData   |True if the user has requested a reduced data usage mode from the user agent ( saveData )|
 
-**4. Vibration API**
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<h4>4. Vibration API</h4>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 
 It exposes only one method, `vibrate()`, that belongs to the `window.navigator` object. This method accepts one parameter specifying the duration of the vibration in milliseconds. The parameter can be either an integer or an array of integers. In the second case, it&apos;s interpreted as alternating vibration times and pauses.
 
@@ -1768,7 +1800,9 @@ It exposes only one method, `vibrate()`, that belongs to the `window.navigator` 
 navigator.vibrate(2000);
 ```
 
-**5. Battery Status API**
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<h4>5. Battery Status API</h4>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 
 The Battery Status API exposes four properties (`charging`, `chargingTime`, `discharingTime`, and `level`) and four events. The properties specify if the battery is in charge, the seconds remaining until the battery is fully charged, the seconds remaining until the battery is fully discharged, and the current level of the battery. These properties belongs to the `battery` property of the `window.navigator` object.
 
@@ -1777,7 +1811,9 @@ The Battery Status API exposes four properties (`charging`, `chargingTime`, `dis
 var percentageLevel = navigator.battery.level * 100;
 ```
 
-**6. Page Visibility API**
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<h4>6. Page Visibility API</h4>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 
 The Page Visibility API enables us to determine the current visibility state of the page. The Page Visibility API is especially useful for saving resources and improving performance by letting a page avoid performing unnecessary tasks when the document isn&apos;t visible.
 
@@ -1786,7 +1822,9 @@ The Page Visibility API enables us to determine the current visibility state of 
 console.log('Page Visibility: '+document.hidden); 
 ```
 
-**7. Fullscreen API**
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<h4>7. Fullscreen API</h4>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 
 The Fullscreen API provides a way to request fullscreen display from the user, and exit this mode when desired. This API exposes two methods, `requestFullscreen()` and `exitFullscreen()`, allowing us to request an element to become fullscreen and to exit fullscreen.
 
@@ -1827,7 +1865,9 @@ if ("geolocation" in navigator) {
 }
 ```
 
-**Example**
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<h5>Example</h5>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 
 ```html
 <!DOCTYPE html>
@@ -1887,7 +1927,9 @@ if ("geolocation" in navigator) {
 
 The **WebSocket API** is an advanced technology that makes it possible to open a two-way interactive communication session between the user&apos;s browser and a server. With this API, you can send messages to a server and receive event-driven responses without having to poll the server for a reply.
 
-**Interfaces:**  
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<h5>Interfaces:</h5>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 
 |Sl.No|   API      | Description    |
 |-----|------------|----------------|
@@ -1895,7 +1937,9 @@ The **WebSocket API** is an advanced technology that makes it possible to open a
 | 02. |CloseEvent  |The event sent by the WebSocket object when the connection closes.   |
 | 03. |MessageEvent|The event sent by the WebSocket object when a message is received from the server.|
 
-Example
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<h5>Example</h5>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 
 ```javascript
  // Create WebSocket connection.
@@ -1915,14 +1959,15 @@ socket.addEventListener('message', function(event) {
 <div align="right">
     <b><a href="#toc">↥ back to top</a></b>
 </div>
-
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h2>Q. Explain about HTML Canvas?</h2>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 
 **canvas** is an HTML element which can be used to draw graphics via JavaScript. This can, for instance, be used to draw graphs, combine photos, or create animations.
 
-**1. Colors, Styles, and Shadows:**
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<h4>1. Colors, Styles, and Shadows:</h4>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 
 |  Property    |    Description                                                                 |
 |--------------|--------------------------------------------------------------------------------|
@@ -1933,7 +1978,9 @@ socket.addEventListener('message', function(event) {
 |shadowOffsetX | Sets or returns the horizontal distance of the shadow from the shape           |
 |shadowOffsetY | Sets or returns the vertical distance of the shadow from the shape             |
 
-**2. Line Styles:**
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<h4>2. Line Styles:</h4>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 
 |Property     |  Description                                                   |
 |------------|----------------------------------------------------------------|
@@ -1942,7 +1989,9 @@ socket.addEventListener('message', function(event) {
 |lineWidth     |Sets or returns the current line width                          |
 |miterLimit     |Sets or returns the maximum miter length                        |
 
-**3. Rectangles:**
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<h4>3. Rectangles:</h4>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
   
 |Method            |Description                                          |
 |---------------|-----------------------------------------------------|
@@ -1951,7 +2000,9 @@ socket.addEventListener('message', function(event) {
 |strokeRect()    |Draws a rectangle (no fill)                          |
 |clearRect()    |Clears the specified pixels within a given rectangle |
 
-**4. Paths:**
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<h4>4. Paths:</h4>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 
 | Method          |   Description                                                                                 |
 |-----------------|---------------------------------------------------------------------------------------------- |
@@ -1965,7 +2016,9 @@ socket.addEventListener('message', function(event) {
 |arc()              |Creates an arc/curve (used to create circles, or parts of circles)                             |
 |arcTo()          |Creates an arc/curve between two tangents                                                      |
 
-**5. Transformations:**
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<h4>5. Transformations:</h4>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 
 |Method            |Description                                                                |
 |---------------|-------------------------------------------------------------------------- |
@@ -1975,7 +2028,9 @@ socket.addEventListener('message', function(event) {
 |transform()    |Replaces the current transformation matrix for the drawing                 |
 |setTransform()    |Resets the current transform to the identity matrix. Then runs transform() |
 
-**6. Text:**
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<h4>6. Text:</h4>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 
 |Property        |Description                                                       |
 |---------------|----------------------------------------------------------------- |
@@ -1986,7 +2041,9 @@ socket.addEventListener('message', function(event) {
 |strokeText()    |Draws text on the canvas (no fill)                                |
 |measureText()    |Returns an object that contains the width of the specified text   |
 
-**Example 01:** HTML5 Canvas for Text
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<h4>Example 01: HTML5 Canvas for Text</h4>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 
 ```html
 <div>Text</div>
@@ -2002,7 +2059,9 @@ socket.addEventListener('message', function(event) {
 </script>
 ```
 
-**Example 02:** HTML5 Canvas for Straight Line
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<h4>Example 02: HTML5 Canvas for Straight Line</h4>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 
 ```html
 <div>Straight Line</div>
@@ -2018,7 +2077,9 @@ socket.addEventListener('message', function(event) {
 </script>
 ```
 
-**Example 03:** HTML5 Canvas for Rectangle
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<h4>Example 03: HTML5 Canvas for Rectangle</h4>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 
 ```html
 <div>Rectangle with Style</div>
@@ -2033,7 +2094,9 @@ socket.addEventListener('message', function(event) {
 </script>
 ```
 
-**Example 04:** HTML5 Canvas for Circle
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<h4>Example 04: HTML5 Canvas for Circle</h4>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 
 ```html
 <div>Circle</div>
@@ -2056,8 +2119,9 @@ socket.addEventListener('message', function(event) {
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h2>Q. What is difference between SVG and Canvas?</h2>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-
-**1. SVG:**
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<h4>1. SVG:</h4>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 
 The Scalable Vector Graphics (SVG) is an XML-based image format that is used to define two-dimensional vector based graphics for the web. Unlike raster image (e.g. .jpg, .gif, .png, etc.), a vector image can be scaled up or down to any extent without losing the image quality.
 
@@ -2069,7 +2133,9 @@ There are following advantages of using SVG over other image formats like JPEG, 
 * SVG content can be animated using the built-in animation elements.
 * SVG images can contain hyperlinks to other documents.
 
-**Example:**
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<h5>Example:</h5>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 
 ```html
 <!DOCTYPE html>
@@ -2095,11 +2161,15 @@ There are following advantages of using SVG over other image formats like JPEG, 
 </html>
 ```
 
-**2. Canvas:**
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<h4>2. Canvas:</h4>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 
 Canvas is a HTML element is used to draw graphics on a web page. It is a  bitmap with an “immediate mode” graphics application programming interface (API) for drawing on it. The &lt;canvas&gt; element is only a container for graphics. In order to draw the graphics, you are supposed to use a script. Canvas has several strategies when it comes to drawing paths, boxes, circles, text & adding images.
 
-**Example:**
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<h5>Example:</h5>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 
 ```html
 <!DOCTYPE html>
@@ -2119,7 +2189,9 @@ Canvas is a HTML element is used to draw graphics on a web page. It is a  bitmap
 </html>
 ```
 
-**Differences:**
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<h5>Differences:</h5>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 
 |SVG                    |Canvas                                         |
 |-----------------------|-----------------------------------------------|
@@ -2150,7 +2222,9 @@ HTML5 drag-and-drop uses the `DOM event model` and `drag events` inherited from 
 |Drop            |Drop It fires at the end of the drag operation.|
 |Dragend        |It fires when user releases the mouse button to complete the drag operation.|
 
-Example
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<h5>Example</h5>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 
 ```html
 <!DOCTYPE HTML>
@@ -2196,7 +2270,9 @@ At a high level, microdata consists of a group of name-value pairs
 * **itemscope**:- To create an item
 * **itemprop**:- To add a property to an item
 
-Example
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<h5>Example</h5>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 
 ```html
 <div itemscope>
@@ -2215,8 +2291,9 @@ Example
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h2>Q. What are the HTML tags which deprecated in HTML5?</h2>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-
-**1. Deprecated Tags:**
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<h4>1. Deprecated Tags:</h4>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 
 The following elements are not available in HTML5 anymore and their function is better handled by CSS.
 
@@ -2238,7 +2315,9 @@ The following elements are not available in HTML5 anymore and their function is 
 | 14. |&lt;tt&gt;            |Defines teletype text|
 | 15. |&lt;u&gt;            |Defines underlined text|
 
-**2. Deprecated Attributes:**  
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<h4>2. Deprecated Attributes:</h4>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 
 |Removed Attributes      |From the Elements     |
 |---------------------|----------------------|
@@ -2308,7 +2387,9 @@ browser supports. In detecting feature support, it allows developers to test for
 the new technologies and then provide fallbacks for browsers that do not support them. 
 This is called **feature detection** and is much more efficient than browser sniffing.
 
-**1. Using Modernizr with CSS:**
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<h4>1. Using Modernizr with CSS:</h4>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 
 By default, Modernizr sets classes for all of your tests on the root element (&lt;html&gt; 
 for websites). This means adding the class for each feature when it is supported, and 
@@ -2324,7 +2405,9 @@ adding it with a no- prefix when it is not (e.g. `.feature` or `.no-feature`).
 }
 ```
 
-**2. Using Modernizr with JavaScript:**
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<h4>2. Using Modernizr with JavaScript:</h4>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 
 Modernizr keeps track of the results of all of it&apos;s feature detections via the `Modernizr` object.
 
@@ -2342,17 +2425,18 @@ if (Modernizr.canvas) {
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h2>Q. What is progressive rendering?</h2>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-
-Progressive Rendering is the technique of sequentially rendering portions of a webpage in 
+<p>Progressive Rendering is the technique of sequentially rendering portions of a webpage in 
 the server and streaming it to the client in parts without waiting for the whole page to 
-rendered.
+rendered.</p>
 
-It implies that once the important material is produced on the server, you may stream 
+<p>It implies that once the important material is produced on the server, you may stream 
 it to the client without having to wait for non-critical stuff to be displayed. It 
 combines the advantages of both CSR (Client Side Rendering) and SSR (Server Side Rendering) 
-(Server Side Rendering).
+(Server Side Rendering).</p>
 
-**1. Client Side Rendering:**
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<h4>1. Client Side Rendering:</h4>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 
 Client Side Rendering (CSR) is a technique in which content is rendered in the browser 
 using JavaScript. Instead of getting all the content from the HTML file itself, the 
@@ -2371,7 +2455,9 @@ Since the all the content starts loading only after loading the initial JavaScri
 takes a longer time to show any content on the page. If the user is on a slow network, 
 the content is blocked for an even longer time due to lower bandwidth and higher latency.
 
-**2. Server Side Rendering:**
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<h4>2. Server Side Rendering:</h4>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 
 When rendering on the server side, the HTML is rendered on the server and sent to the 
 client. The content that we need to display on the screen becomes available immediately 
@@ -2397,7 +2483,7 @@ Since the APIs are usually co-located with the server, the content is loaded sup
     <b><a href="#toc">↥ back to top</a></b>
 </div>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<h2 id="7-html-iframe">7. HTML iFrame</h2>
+<h2 id="7-html-iframe">HTML iFrame</h2>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 
 HTML iFrames offer a powerful way to embed external content, such as videos, maps, or other webpages, directly into your own webpage. This article provides an in-depth exploration of HTML iframes, their syntax, and how they can be used to enhance your web development projects.
@@ -2405,27 +2491,34 @@ HTML iFrames offer a powerful way to embed external content, such as videos, map
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3>What are HTML Iframes?</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-An iframe is an HTML document embedded inside another HTML document. The <iframe> tag specifies the URL of the embedded content, allowing for seamless integration of external resources. This section will guide you through the syntax and attributes of the <iframe> tag, providing a solid foundation for your iframe usage.
-
-Syntax:
+<p>An iframe is an HTML document embedded inside another HTML document. The 
+<mark><b>&lt;iframe&gt;</b></mark>  
+tag specifies the URL of the embedded content, allowing for seamless integration of 
+external resources. This section will guide you through the syntax and attributes of 
+the <mark><b>&lt;iframe&gt;</b></mark> tag, providing a solid foundation for your 
+iframe usage.</p>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<h5>Syntax:</h5>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 
 ```html
 <iframe src="URL" title="description"></iframe>
 ```
 
-The src attribute specifies the URL of the document you want to embed.
-Iframes can include videos, maps, or entire web pages from other sources.
-
+<p>The src attribute specifies the URL of the document you want to embed.
+Iframes can include videos, maps, or entire web pages from other sources.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<h3>Q. What is an iFrame and how does it work?</h3>
+<h3>Q. What is an iframe and how does it work?</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-
-The &lt;iframe&gt; HTML element represents a nested browsing context, embedding another HTML page into the current one. Each embedded browsing context has its own **session history** and **document**. The browsing context that embeds the others is called the parent browsing context. The topmost browsing context — the one with no parent — is usually the browser window, represented by the **Window** object.
+<p>The &lt;iframe&gt; HTML element represents a nested browsing context, embedding another 
+HTML page into the current one. Each embedded browsing context has its own 
+**session history** and **document**. The browsing context that embeds the others is 
+called the parent browsing context. The topmost browsing context — the one with no 
+parent — is usually the browser window, represented by the **Window** object.</p>
 
 <div align="right">
     <b><a href="#toc">↥ back to top</a></b>
 </div>
-
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h4>Example</h4>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -2458,7 +2551,9 @@ The &lt;iframe&gt; HTML element represents a nested browsing context, embedding 
 </html>
 ```
 
-**The Iframe Tag Attributes:**
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<h4>The Iframe Tag Attributes:</h4>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 
 |Attribute       | Description                |
 |----------------|----------------------------|
@@ -2478,34 +2573,50 @@ The &lt;iframe&gt; HTML element represents a nested browsing context, embedding 
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h2>Q. Explain the use of rel="nofollow", rel="noreferrer", rel="noopener" attribute?</h2>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<h4>1. rel="nofollow"</h4>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<p>When `rel="nofollow"` tag is used, it instruct the search engines not to pass 
+any PageRank from one page to the other. It does not allow it to pass the authority 
+to the specific website. The main advantage of using this attribute is to control 
+the spam attack.</p>
 
-**1. rel="nofollow"**
+<p>There may be times, when you do not have control over what people publish on your 
+websites, for example some blog comments and some kind of forum posting.</p>
 
-When `rel="nofollow"` tag is used, it instruct the search engines not to pass any PageRank from one page to the other. It does not allow it to pass the authority to the specific website. The main advantage of using this attribute is to control the spam attack.
-
-There may be times, when you do not have control over what people publish on your websites, for example some blog comments and some kind of forum posting.
-
-**Example:**
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<h5>Example:</h5>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 
 ```html
 <a href="https://www.website.com" rel="nofollow">Link to yoursite.com</a>
 ```
 
-**2. rel="noreferrer"**
-
-Noreferrer is related to analytics and tracking. The referrer value shows the previous page where a user came from. By using the noreferrer attribute on a link, you are preventing other pages from seeing that traffic came from a click on your link.
-
-**Example:**
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<h4>2. rel="noreferrer"</h4>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<p>Noreferrer is related to analytics and tracking. The referrer value shows the 
+previous page where a user came from. By using the noreferrer attribute on a link, 
+you are preventing other pages from seeing that traffic came from a click on your 
+link.</p>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<h5>Example:</h5>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 
 ```html
 <a href="https://www.website.com" rel="noreferrer">Link to yoursite.com</a>
 ```
 
-**3. rel="noopener"**
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<h4>3. rel="noopener"</h4>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 
-It prevents the new page from being able to access the `window.opener` property and will make it run in a separate process. noopener tag works as a security fix which prevents malicious links to take control over an opened tab.
+<p>It prevents the new page from being able to access the `window.opener` property and 
+will make it run in a separate process. noopener tag works as a security fix which 
+prevents malicious links to take control over an opened tab.</p>
 
-**Example:**
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<h5>Example:</h5>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 
 ```html
 <a href="https://www.website.com" target="_blank" rel="noopener">Link to yoursite.com</a>
@@ -2514,14 +2625,15 @@ It prevents the new page from being able to access the `window.opener` property 
 <div align="right">
     <b><a href="#toc">↥ back to top</a></b>
 </div>
-
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h2>Q. How can you highlight text in HTML?</h2>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-
-The &lt;mark&gt; HTML element represents text which is marked or highlighted for reference or notation purposes, due to the marked passage&apos;s relevance or importance in the enclosing context.
-
-**Example:**
+<p>The &lt;mark&gt; HTML element represents text which is marked or highlighted for reference 
+or notation purposes, due to the marked passage&apos;s relevance or importance in the 
+enclosing context.</p>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<h5>Example:</h5>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 
 ```html
 <!DOCTYPE html>
@@ -2541,38 +2653,46 @@ The &lt;mark&gt; HTML element represents text which is marked or highlighted for
 <div align="right">
     <b><a href="#toc">↥ back to top</a></b>
 </div>
-
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h2>Q. How can I get indexed better by search engines?</h2>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-
-HTML tags are used to influence the way our pages appear in search results. With the help of certain tags, we can turn regular search snippets into rich snippets, and maybe even into featured snippets. And, as our search snippets get more advanced, they are able to secure better **Search Engine Results Pages (SERP)** positions and attract more traffic.
-
-Here are all the HTML tags that still matter:
-
+<p>HTML tags are used to influence the way our pages appear in search results. With the 
+help of certain tags, we can turn regular search snippets into rich snippets, and maybe 
+even into featured snippets. And, as our search snippets get more advanced, they are 
+able to secure better **Search Engine Results Pages (SERP)** positions and attract more 
+traffic.</p>
+<p>Here are all the HTML tags that still matter:</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h2 id="2-html-tags">2. HTML Tags</h2>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-
-**1. Title tag:**
-
-Title tags are used by search engines to determine the subject of a page and display it in SERP. As a rule of thumb, titles that are under 60 characters long will fit on most screens. In HTML, a title tag looks like this:
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<h5>1. Title tag:</h5>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<p>Title tags are used by search engines to determine the subject of a page and display it 
+in SERP. As a rule of thumb, titles that are under 60 characters long will fit on most 
+screens. In HTML, a title tag looks like this:</p>
 
 ```html
 <title>Your Title Goes Here</title>
 ```
 
-**2. Meta description tag:**
-
-Meta description is a short paragraph of text used to describe your page in search results. The function of meta description is similar to the title. It provides a little more detail about your page and it helps users decide whether to visit your page or not. In HTML, a meta description tag looks like this:
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<h5>2. Meta description tag:</h5>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<p>Meta description is a short paragraph of text used to describe your page in search results. 
+The function of meta description is similar to the title. It provides a little more detail 
+about your page and it helps users decide whether to visit your page or not. In HTML, a 
+meta description tag looks like this:</p>
 
 ```html
 <meta name="description" content="Your description goes here">
 ```
 
-**3. Heading tags:**
-
-Headings (H1-H6) are used to split your page into sections or chapters. Each heading is like a small title within the page. In HTML, a heading looks like this:
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<h5>3. Heading tags:</h5>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<p>Headings (H1-H6) are used to split your page into sections or chapters. Each heading is 
+like a small title within the page. In HTML, a heading looks like this:</p>
 
 ```html
 <h1>Your heading goes here</h1>
@@ -2581,16 +2701,22 @@ Headings (H1-H6) are used to split your page into sections or chapters. Each hea
 <div align="right">
     <b><a href="#toc">↥ back to top</a></b>
 </div>
-
-**4. Image alt attribute:**
-
-The `alt` text attribute is a part of an image tag, and it provides a description for an image. Alt text plays a major role in image optimization. It makes your images accessible both to search engines (by telling them what a particular image means) and to people (by displaying an alternative text in case a particular image cannot be loaded or by helping screen readers convey images). In HTML it may look like this:
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<h5>4. Image alt attribute:</h5>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<p>The <b><mark>alt</mark></b> text attribute is a part of an image tag, and it provides a 
+description for an image. Alt text plays a major role in image optimization. It makes your 
+images accessible both to search engines (by telling them what a particular image means) 
+and to people (by displaying an alternative text in case a particular image cannot be 
+loaded or by helping screen readers convey images). In HTML it may look like this:</p>
 
 ```html
 <img src="url" alt="Your image description goes here">
 ```
 
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 **5. Open Graph tags:**
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 
 Open Graph (OG) tags are placed in the &lt;head&gt; section of a page and allow any webpage to become a rich object in social networks. OG tags let you control how the information about your page is represented when shared via social channels. This possibility may help you enhance the performance of your links on social media, thus driving more click-throughs and increasing conversions. In HTML, it can look like this:
 
@@ -2598,7 +2724,9 @@ Open Graph (OG) tags are placed in the &lt;head&gt; section of a page and allow 
 <meta name="og:title" property="og:title" content="Your Open Graph Title Goes Here">
 ```
 
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 **6. Robots tag:**
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 
 A robots tag is an element in the HTML of a page that informs search engines which pages on your site should be indexed and which should not. Its functions are similar to robots.txt, but robots.txt gives suggestions. Whereas robots tags give instructions. In HTML, it can look like this:
 
@@ -2606,7 +2734,9 @@ A robots tag is an element in the HTML of a page that informs search engines whi
 <meta name="robots" content="index, follow">
 ```
 
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 **7. Canonical tag:**
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 
 A canonical tag is a way of telling search engines that a specific URL represents the master copy of a page. Using the canonical tag prevents problems caused by identical or "duplicate" content appearing on multiple URLs. Practically speaking, the canonical tag tells search engines which version of a URL you want to appear in search results. In HTML, it may look like this:
 
@@ -2614,8 +2744,9 @@ A canonical tag is a way of telling search engines that a specific URL represent
 <link href="URL" rel="canonical">
 ```
 
-**8. HTML5 semantic tags:**
-
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<h5>8. HTML5 semantic tags:</h5>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 One of the most important features of HTML5 is its semantics tags. Semantic tags refers to syntax that makes the HTML more comprehensible by better defining the different sections and layout of web pages. It makes web pages more informative and adaptable, allowing browsers and search engines to better interpret content. For example, instead of using &lt;div id="header"></div&gt; you can use a &lt;header></hrader&gt; tag.
 
 <p align="center">
@@ -2629,10 +2760,11 @@ One of the most important features of HTML5 is its semantics tags. Semantic tags
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h2>Q. What is the difference between an "attribute" and a "property" in HTML?</h2>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-
-Attributes are defined by HTML. Properties are accessed from DOM (Document Object Model) nodes.
-
-**Example:**
+<p>Attributes are defined by <mark><b>HTML</b></mark>. Properties are accessed from 
+<mark><b>DOM (Document Object Model)</b></mark> nodes.</p>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<h5>Example:</h5>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 
 ```html
 <input id="inputId" type="text" value="Hello World!" />
@@ -2857,7 +2989,9 @@ a section.</p>
 this element is grouped. In other words, the content relates to a single theme. It must be 
 an entry in the outline of the page.</p>
 
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h5>Example:</h5>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 
 ```html
 <!DOCTYPE html>
@@ -2885,14 +3019,17 @@ an entry in the outline of the page.</p>
 </html>
 ```
 
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h4>The <mark><b>&lt;div&gt;</b></mark> Element</h4>
-
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p>The &lt;div&gt; element only represents its child elements and doesn&apos;t have a special 
 meaning. It can be used with the `lang`, `title`, and `class` attributes to add semantics 
 that is common to a group of consecutive elements. This element can also be used in a 
 &lt;dl&gt; tag and wrap groups of &lt;dt&gt; and &lt;dd&gt; elements.</p>
 
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h5>Example:</h5>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 
 ```html
 <!DOCTYPE html>
@@ -2949,8 +3086,9 @@ Thus, many decisions about how to handle malformed documents are left up to the 
 <p>The <mark><b>srcset</b></mark> attribute allows to define a list of different image 
 resources along with size information so that browser can pick the most appropriate 
 image based on the actual device&apos;s resolution.</p>
-
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h5>Syntax:</h5>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 
 ```html
 <img 
@@ -2962,11 +3100,14 @@ image based on the actual device&apos;s resolution.</p>
 >
 ```
 
-**1. Using display density descriptor:**
-
-`srcset` provides a comma-separated list of image resources along with display density it should be used, for example1x, 2x etc.
-
-**Example:**
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<h4>1. Using display density descriptor:</h4>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<p><mark><b>srcset</b></mark> provides a comma-separated list of image resources along 
+with display density it should be used, for example1x, 2x etc.</p>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<h5>Example:</h5>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 
 ```html
 <img src="image.jpg" 
@@ -2975,11 +3116,13 @@ image based on the actual device&apos;s resolution.</p>
 />
 ```
 
-**2. Using width descriptor:**
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<h4>2. Using width descriptor:</h4>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 
 The syntax is similar to the display density descriptor, but instead of display density values, we provide the actual width of the image.
 
-**Example:**
+<h5>Example:</h5>
 
 ```html
 <img src="image.jpg" 
@@ -2992,12 +3135,13 @@ The syntax is similar to the display density descriptor, but instead of display 
 <div align="right">
     <b><a href="#toc">↥ back to top</a></b>
 </div>
-
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h2>Q. What is accessibility & ARIA role means in a web application?</h2>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-
-The **Accessible Rich Internet Applications (ARIA)** Suite, defines a way to make Web content and Web applications more accessible to people with disabilities. It especially helps with dynamic content and advanced user interface controls developed with HTML, JavaScript, and related technologies.
+<p>The <mark><b>Accessible Rich Internet Applications (ARIA)</b></mark> Suite, defines a 
+way to make Web content and Web applications more accessible to people with disabilities. 
+It especially helps with dynamic content and advanced user interface controls developed 
+with HTML, JavaScript, and related technologies.</p>
 
 Screen readers work with regular HTML, but adding ARIA can provide screen reader users with greater context and interactivity with the content on the page. ARIA has no effect on how elements are displayed or behave in browsers. It does not add new functionality, and is meant to act only as an extra descriptive layer for screen readers.
 
@@ -3369,7 +3513,6 @@ elements, but is most common in media elements, like &lt;audio&gt;, &lt;embed&gt
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h2 id="4-html-forms">04. Form Elements</h2>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-
 <p>The HTML &lt;form&gt; comprises several elements, each serving a unique purpose. For 
 instance, the &lt;label&gt; element is used to define labels for other &lt;form&gt; elements. 
 The &lt;input&gt; element, on the other hand, is versatile and can be used to capture 
@@ -3423,11 +3566,8 @@ data from users. Here are some commonly used input types:</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3>HTML Forms Example</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h4>1. Basic HTML Forms Example:</h4>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-
 <p><b>Example:</b> This HTML forms collects the user personal information such 
 as username and password with the button to submit the form.</p>
 
@@ -3452,6 +3592,7 @@ as username and password with the button to submit the form.</p>
 </html>
 ```
 
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h5>Output:</h5>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 04-02.  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -3626,11 +3767,9 @@ styling for input fields and submission button.</p>
   <li>novalidate: This Boolean attribute specifies that the form-data should not 
     be validated on submission.</li>
 </ol>
-
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h4>Features</h4>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-
 <ul>
   <li>Facilitates user input collection through various elements.</li>
   <li>Utilizes <form> tags to structure input elements.</li>
@@ -3651,9 +3790,8 @@ of the <form> element is crucial for creating effective and user-friendly forms.
 syntax, key attributes, and various form elements. By mastering HTML forms, you 
 can create more engaging, user-friendly, and accessible web applications.</p>
 <!- end of html-forms -->
-
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h2 id="5-html-tables">5. Tables</h2>
-
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3>What is an HTML Table?</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -3733,18 +3871,17 @@ between different types of data. Tables are also used to create databases.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3>Defining Tables in HTML</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-
 <p>An HTML table is defined with the "table" tag. Each table row is defined with 
 the "tr" tag. A table header is defined with the "th" tag. By default, table 
 headings are bold and centered. A table data/cell is defined with the "td" tag.</p>
-
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h4>Table Cells</h4>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p>Table Cell are the building blocks for defining the Table. It is denoted with 
 &lt;td&gt; as a start tag &amp; &lt;/td&gt; as a end tag.</p>
-
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h5>Syntax</h5>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 
 ```
 <td> Content...</td> 
@@ -3808,6 +3945,7 @@ The Headers are generally use to provide the Heading. The Table Headers can also
 </html>
 ```
 
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h5>Output:</h5>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 05-02. html table ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -3824,8 +3962,9 @@ The Headers are generally use to provide the Heading. The Table Headers can also
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p>A border is set using the CSS border property. If you do not specify a border 
 for the table, it will be displayed without borders.</p>
-
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h5>Syntax</h5>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 
 ```
 table, th, td {
@@ -3878,6 +4017,7 @@ table, th, td {
 </html>
 ```
 
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h5>Output:</h5>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 05-03. table with border ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -3893,8 +4033,9 @@ table, th, td {
 <h4>Adding Collapsed Borders in an HTML Table</h4>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p>For borders to collapse into one border, add the CSS border-collapse property.</p>
-
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h5>Syntax</h5>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 
 ```
  table, th, td {
@@ -3904,7 +4045,6 @@ table, th, td {
 ```
 
 <p><b>Example:</b> Addition of Collapsed Borders in HTML.</p>
-
 
 ```
 <!-- index.html -->
@@ -3950,6 +4090,7 @@ table, th, td {
 </html>
 ```
 
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h5>Output:</h5>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~ 05-04. table with collapsed borders ~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -3966,7 +4107,9 @@ table, th, td {
 <p>Cell padding specifies the space between the cell content and its borders. If 
 we do not specify a padding, the table cells will be displayed without padding.</p>
 
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h5>Syntax</h5>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 
 ```
 th, td {
@@ -4025,6 +4168,7 @@ th, td {
 </html>
 ```
 
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h5>Output:</h5>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 05-05. adding table cell padding ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -4105,6 +4249,7 @@ th {
 </html>
 ```
 
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h5>Output:</h5>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 05-06. text-align property ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -4119,11 +4264,11 @@ th {
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h4>Adding Border Spacing in an HTML Table</h4>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-
 <p>Border spacing specifies the space between the cells. To set the border-spacing 
 for a table, we must use the CSS border-spacing property.</p>
-
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h5>Syntax</h5>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 
 ```
 table {
@@ -4180,6 +4325,7 @@ table {
 </html>
 ```
 
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h5>Output:</h5>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 05-07. border spacing property ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -4238,6 +4384,7 @@ table {
 </html>
 ```
 
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h5>Output:</h5>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 05-08. use of colspan attribute ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -4298,6 +4445,7 @@ table {
 </html>
 ```
 
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h5>Output:</h5>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 05-09. use of rowspan attribute ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -4312,8 +4460,9 @@ table {
 <h4>Adding a Caption in an HTML Table</h4>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p>To add a caption to a table, we must use the "caption" tag.</p>
-
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h5>Syntax</h5>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 
 ```
 <table style="width:100%">
@@ -4376,6 +4525,7 @@ table {
 </html>
 ```
 
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h5>Output:</h5>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 05-10. adding caption using the tag ~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -4392,8 +4542,9 @@ table {
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p>A color can be added as a background in an HTML table using the "background-
 color" option.</p>
-
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h5>Syntax</h5>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 
 ```
 table#t01 {
@@ -4528,6 +4679,7 @@ potential of introducing errors.</p>
 </html>
 ```
 
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h5>Output:</h5>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 05-12. nested html table ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -4541,10 +4693,11 @@ potential of introducing errors.</p>
 
 <!-- end of html tables -->
 
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h2 id="6-html-">06. HTML Lists</h2>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p>An HTML list is a record of related information used to display the data or 
 any information on web pages in the ordered or unordered form.</p>
-
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3>HTML List Example</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -4582,6 +4735,7 @@ any information on web pages in the ordered or unordered form.</p>
 </html>
 ```
 
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h5>Output:</h5>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 06-01. html list ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -4627,7 +4781,9 @@ any information on web pages in the ordered or unordered form.</p>
 lists. An unordered list starts with the &lt;ul&gt; tag. Each list item starts with the 
 &lt;li&gt; tag.</p>
 
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h5>Syntax:</h5>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 
 ```
 <ul> list of items </ul>
@@ -4659,6 +4815,7 @@ lists. An unordered list starts with the &lt;ul&gt; tag. Each list item starts w
 </html>
 ```
 
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h5>Output:</h5>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 06-02. unordered list ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -4678,7 +4835,9 @@ lists. An unordered list starts with the &lt;ul&gt; tag. Each list item starts w
 ordered list starts with the &lt;ol&gt; tag. Each list item starts with the 
 "li" tag.</p>
 
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h5>Syntax:</h5>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 
 ```
 <ol>
@@ -4743,6 +4902,7 @@ control list counting & type attribute.</p>
 </html>
 ```
 
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h5>Output:</h5>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~ 06-03. ordered list with different list style ~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -4761,7 +4921,9 @@ control list counting & type attribute.</p>
 &lt;dl&gt; tag defines the description list, the &lt;dt&gt; tag defines the term name, 
 and the &lt;dd&gt; tag describes each term.</p>
 
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h5>Syntax:</h5>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 
 ```
 <dl> Contents... </dl>
@@ -4789,6 +4951,7 @@ article</i> for further details.</p>
 </html>
 ```
 
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h5>Output:</h5>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 06-04. description list ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -4805,7 +4968,6 @@ article</i> for further details.</p>
 <p>HTML lists provide a way to display a structured collection of items. In this 
 tutorial, we have explained three types of lists- ordered lists, unordered lists, 
 and definition list. We have explained all three list types with examples.</p>
-
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h2 id="7-html-iframes">07. HTML iFrames</h2>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -4823,7 +4985,6 @@ converting the URL into a valid format that is accepted by web browsers.</p>
 values represent the numerical values of the character in the ASCII character set. For 
 example, a space is not acceptable in a URL and is replaced by a ‘%20’ or a ‘+’ sign 
 while encoding. Similarly, a $ sign is replaced by ‘%24’.</p>
-
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3>HTML URL &amp; Escape Character Reference Sites</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -4835,11 +4996,9 @@ while encoding. Similarly, a $ sign is replaced by ‘%24’.</p>
 <h4>Syntax:</h4>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p>A web address follows these syntax rules:</p>
-
 <pre>
 scheme://prefix.domain:port/path/filename
 </pre>
-
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h4>Example</h4>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -4896,5 +5055,8 @@ communication.<br/>
 <h2 id="16-misc">16. Miscellaneous</h2>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 
+<h6>Last editted: 5/1/2025 +6pm</h6>
 
-
+<footer>The End...</footer>
+</body>
+</html>
