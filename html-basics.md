@@ -41,25 +41,6 @@
   <li><a href="#15-html-access">HTML Accessibility</a></li>
   <li><a href="#16-misc">Miscellaneous</a></li>
 </ol>
-<!--
-* [01. Introduction](#1-intro)
-* [02. HTML Tags](#2-html-tags)
-* [03. HTML Events](#3-html-events)
-* [04. HTML Forms](#4-html-forms)
-* [05. HTML Tables](#5-html-tables)
-* [06. HTML Lists](#6-html-lists)
-* [07. HTML Iframe](#7-html-iframe)
-* [08. HTML URL](#8-html-url)
-* [09. HTML SVG](#9-html-svg)
-* [10. HTML Canvas](#10-html-canvas)
-* [11. HTML Storage](#11-html-storage)
-* [12. HTML APIs](#12-html-apis)
-* [13. HTML Drag and Drop](#13-html-dragndrop)
-* [14. HTML Web Worker](#14-html-webworker)
-* [15. HTML Accessibility](#15-html-access)
-* [16. Miscellaneous](#16-misc)
--->
-<br/>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h2 id="1-intro">1. Introduction</h2>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -114,7 +95,9 @@ work for browsers and search engines, as well as developers.</p>
 * &lt;summary&gt;
 * &lt;time&gt;
 
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h4>Syntax:</h4>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 
 ```html
 <!DOCTYPE html> 
@@ -192,12 +175,14 @@ and id names are case insensitive. In standards mode they are case sensitive.
 
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h2>Q. What are the new form elements in HTML5?</h2>
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 
 There are five new form elements in the HTML5 forms specification: &lt;datalist&gt;, &lt;output&gt;, 
 &lt;progress&gt;, and &lt;meter&gt;. 
 
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h4>1. Datalist Tag</h4>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 
 Allows to attach a list of suggestions to a text input element. As soon as the user begins 
 to type in the text field, the list of suggestions appears and the user can choose from the 
@@ -215,7 +200,9 @@ suggestions with the mouse.
 </datalist>
 ```
 
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h4>2. Meter Tag</h4>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 
 Indicates a numeric value that falls within a range. The tag supports a number of attributes:
 value: If you don&apos;t specify a value, the first numeric value inside the &lt;meter></meter&gt; 
@@ -235,7 +222,9 @@ pair becomes the value.
 <p>Pollution Level: <meter low="60" high="80" max="100" value="85">Very High</meter></p>
 ```
 
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h4>3. Output Tag</h4>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 
 It indicates a section of the page that can be modified by a script (usually JavaScript).
 
@@ -247,7 +236,9 @@ It indicates a section of the page that can be modified by a script (usually Jav
 </form>
 ```
 
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h4>4. Progress Tag</h4>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 
 <p>Indicates how much of a task has been completed (often marked as a percentage). It is 
 expected to be modified through JavaScript code.</p>
@@ -278,7 +269,9 @@ expected to be modified through JavaScript code.</p>
     <b><a href="#toc">↥ back to top</a></b>
 </div>
 
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3 id="new-form-elements">List New form elements introduced in html5</h3>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 
 |Sl.No| Element     | Description   |
 |-----|-------------|---------------------------|
@@ -296,7 +289,9 @@ expected to be modified through JavaScript code.</p>
 | 12. |url          |Entering a URL.|
 | 13. |week         |Picking a specific week.|
 
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h4>Example:</h4>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 
 ```html
 <input type="color" value="#b97a57">
@@ -335,9 +330,9 @@ expected to be modified through JavaScript code.</p>
 <div align="right">
     <b><a href="#toc">↥ back to top</a></b>
 </div>
-
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h4>Example to create a HTML form with below constraints</h4>
-
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <ul>
   <li>Accept User Name, Email, Country and Subject,</li>
   <li>Validate the fields,</li>
@@ -389,7 +384,9 @@ expected to be modified through JavaScript code.</p>
 </head>
 <body>
 
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3>Contact Form</h3>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 
 <div class="container">
   <form name="contactForm" onsubmit="return validateForm()" method="post">
@@ -601,7 +598,9 @@ its class, lang and title attributes.
 
 Yes, header elements can be used multiple times in documents. A &lt;header&gt; tag must be present for all articles, sections, and pages, although a &lt;footer&gt; tag is not necessary.
 
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h4>From W3C standards</h4>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 
 ```html
 A header element is intended to usually contain the section's heading (an h1–h6 element or an hgroup 
@@ -622,11 +621,15 @@ documents, copyright data, and the like.
 <h2>Q. What are the physical tags and logical tags in HTML?</h2>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h4>1. Physical Tags:</h4>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 
 Physical tags are used to indicate how a particular character is to be formatted. Any physical style tag may contain any item allowed in text, including conventional text, images, line breaks, etc.
 
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h4>Example:</h4>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 
 |Tags      | Description                                                      |
 |----------|------------------------------------------------------------------|
@@ -640,7 +643,9 @@ Physical tags are used to indicate how a particular character is to be formatted
 |&lt;tt&gt;    |Teletype text gives the default font-family which is monospace.|
 |&lt;strike&gt;|It is an editing markup that tells the reader to ignore the text passage.|
 
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h4>2. Logical Tags:</h4>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 
 Logical tags are used to tell the browser what kind of text is written inside the tags. 
 Logical tags are also known as Structural tags because they specify the structure of the 
@@ -648,7 +653,9 @@ document. Logical tags are used to indicate to the visually impaired person that
 something more important in the text or to emphasize the text ie, logical tags can be 
 used for styling purposes as well as to give special importance to text content.
 
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h4>Example:</h4>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 
 |Tags       | Description                     |
 |-----------|---------------------------------|
@@ -758,13 +765,16 @@ HTML document, such as author, expiry date, a list of keywords, document author 
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h2>Q. What does async and defer refer in script tag?</h2>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h4>1. Async:</h4>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 
 Downloads the script file during HTML parsing and will pause the HTML parser to execute 
 it when it has finished downloading.
 
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h4>Example:</h4>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 
 ```html
 <!-- 
@@ -775,12 +785,16 @@ it when it has finished downloading.
 <script async src="https://google-analytics.com/analytics.js"></script>
 ```
 
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h4>2. Defer:</h4>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 
 Defer downloads the script file during HTML parsing and will only execute it after the 
 HTML parser has completed. Not all browsers support this.
 
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h4>Example:</h4>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 
 ```html
 <!-- 
@@ -798,7 +812,9 @@ script becomes ready after being fetched in parallel with the document parsing.
 The defer attribute tells the browser to only execute the script file once the HTML 
 document has been fully parsed.
 
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h4>Example:</h4>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 
 ```html
 <!-- 
@@ -820,7 +836,9 @@ The **localStorage** read-only property of the window interface allows you to ac
 Storage object for the Document&apos;s origin; the stored data is saved across browser 
 sessions.
 
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h4>Example:</h4>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 
 ```js
 // Store
@@ -842,7 +860,9 @@ The **sessionStorage** object is equal to the localStorage object, except that i
 the data for only one session. The data is deleted when the user closes the specific 
 browser tab.
 
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h4>Example:</h4>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 
 ```js
 // Save data to sessionStorage
@@ -937,7 +957,9 @@ document.cookie = "username=; expires=Thu, 01 Jan 1970 00:00:00 UTC; path=/;";
 
 Yes
 
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h4>Example:</h4>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 
 ```html
 <!DOCTYPE HTML>
@@ -982,11 +1004,15 @@ Exception: QuotaExceededError: Failed to execute 'setItem' on 'Storage':
 <h2>Q. Why to use IndexedDB instead of WebSQL in HTML5?</h2>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h4>1. WebSQL</h4>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 
 It is an API that is only supported in Chrome and Safari (and Android and iOS by extension). It provides an asynchronous, transactional interface to SQLite. Since 2010, it has been deprecated in favor of IndexedDB.
 
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h4>Advantages</h4>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 
 * Supported on major mobile browsers (Android Browser, Mobile Safari, Opera Mobile) as well as several desktop browsers (Chrome, Safari, Opera).
 * Good performance generally, being an asynchronous API. Database interaction won't lock up the user interface. (Synchronous API is also available for WebWorkers.)
@@ -994,18 +1020,24 @@ It is an API that is only supported in Chrome and Safari (and Android and iOS by
 * Robust, since it supports a transactional database model.
 * Easier to maintain integrity of data, due to rigid data structure.
 
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h4>Disadvantages</h4>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 
 * Deprecated. Will not be supported on IE or Firefox, and will probably be phased out from the other browsers at some stage.
 * Steep learning curve, requiring knowledge of relational databases and SQL.
 * Suffers from object-relational impedance mismatch.
 * Diminishes agility, as database schema must be defined upfront, with all records in a table matching the same structure.
 
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h4>2. IndexedDB</h4>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 
 It is the successor to both LocalStorage and WebSQL, designed to replace them as the “one true” browser database. It exposes an asynchronous API that supposedly avoids blocking the DOM, but as we&apos;ll see below, it doesn&apos;t necessarily live up to the hype. Browser support is extremely spotty, with only Chrome and Firefox having fully usable implementations.
 
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h4>Advantages</h4>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 
 * Good performance generally, being an asynchronous API. Database interaction won't lock up the user interface. (Synchronous API is also available for WebWorkers.)
 * Good search performance, since data can be indexed according to search keys.
@@ -1014,7 +1046,9 @@ It is the successor to both LocalStorage and WebSQL, designed to replace them as
 * Fairly easy learning curve, due to a simple data model.
 * Decent browser support: Chrome, Firefox, mobile FF, IE10.
 
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h4>Disadvantages</h4>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 
 * Very complex API resulting in large amounts of nested callbacks.
 
@@ -1087,7 +1121,9 @@ attribute. The data-* attributes gives us the ability to embed custom data attri
 on all HTML elements. The stored (custom) data can then be used in the page&apos;s 
 JavaScript to create a more engaging user experience.
 
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h4>Example:</h4>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 
 ```html
 <article
@@ -1185,7 +1221,9 @@ For the select element, the user is required to select one of the options you&ap
 given. For the datalist element, it is suggested that the user select one of the options 
 you&apos;ve given, but he can actually enter anything he wants in the input.
 
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h4>1. Select:</h4>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 
 ```html
 <select name="browser">
@@ -1197,7 +1235,9 @@ you&apos;ve given, but he can actually enter anything he wants in the input.
 </select>
 ```
 
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h4>2. Datalist:</h4>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 
 ```html
 <input type="text" list="browsers">
@@ -2345,7 +2385,9 @@ Since the APIs are usually co-located with the server, the content is loaded sup
 
 HTML iFrames offer a powerful way to embed external content, such as videos, maps, or other webpages, directly into your own webpage. This article provides an in-depth exploration of HTML iframes, their syntax, and how they can be used to enhance your web development projects.
 
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3>What are HTML Iframes?</h3>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 An iframe is an HTML document embedded inside another HTML document. The <iframe> tag specifies the URL of the embedded content, allowing for seamless integration of external resources. This section will guide you through the syntax and attributes of the <iframe> tag, providing a solid foundation for your iframe usage.
 
 Syntax:
@@ -2357,7 +2399,9 @@ Syntax:
 The src attribute specifies the URL of the document you want to embed.
 Iframes can include videos, maps, or entire web pages from other sources.
 
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3>Q. What is an iFrame and how does it work?</h3>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 
 The &lt;iframe&gt; HTML element represents a nested browsing context, embedding another HTML page into the current one. Each embedded browsing context has its own **session history** and **document**. The browsing context that embeds the others is called the parent browsing context. The topmost browsing context — the one with no parent — is usually the browser window, represented by the **Window** object.
 
@@ -2365,7 +2409,9 @@ The &lt;iframe&gt; HTML element represents a nested browsing context, embedding 
     <b><a href="#toc">↥ back to top</a></b>
 </div>
 
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h4>Example</h4>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 
 ```html
 <!DOCTYPE html>
@@ -3131,16 +3177,21 @@ While there are 35 aria properties and states the W3C defines and which you can 
 <h2 id="3-html-events">HTML Events</h2>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3>Types of Events</h3>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h4>There are muliple types; Window, Form, Keyboard, Mouse, Drag, Clipboard, 
 Media, &amp; Miscellaneous.</h4>
-
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h4 id="global-events">Global Event Attributes</h4>
 HTML has the ability to let events trigger actions in a browser, like starting a JavaScript when a user clicks on an element.
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 
 Below are the global event attributes that can be added to HTML elements to define event actions.
 
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h4 id="window-events">Window Event Attributes</h4>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p>Events triggered for the window object (applies to the &lt;body&gt; tag):</p>
 
 | Attribute      | Value  | Description |
@@ -3169,7 +3220,9 @@ Below are the global event attributes that can be added to HTML elements to defi
 | onstorage      | script | Script to be run when a Web Storage area is updated |
 | onunload       | script | Fires once a page has unloaded (or the browser window has been closed) |
 
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h4 id="form-events">Form Events</h4>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p>Events triggered by actions inside a HTML form (applies to almost all HTML elements, but is most used in form elements):</p>
 
 | Attribute      | Value  | Description |
@@ -3185,7 +3238,9 @@ Below are the global event attributes that can be added to HTML elements to defi
 | onselect       | script | Fires after some text has been selected in an element |
 | onsubmit       | script | Fires when a form is submitted |
 
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h4 id="keyboard-events">Keyboard Events</h4>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 
 | Attribute  | Value  | Description |
 |------------|--------|--------------------------------------------------------------------------|
@@ -3193,7 +3248,9 @@ Below are the global event attributes that can be added to HTML elements to defi
 | onkeypress | script | Fires when a user presses a key |
 | onkeyup    | script | Fires when a user releases a key |
 
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h4 id="mouse-events">Mouse Events</h4>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 
 | Attribute    | Value  | Description |
 |--------------|--------|--------------------------------------------------------------------------|
@@ -3207,7 +3264,9 @@ Below are the global event attributes that can be added to HTML elements to defi
 | onmousewheel | script | Deprecated. Use the onwheel attribute instead |
 | onwheel      | script | Fires when the mouse wheel rolls up or down over an element |
 
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h4 id="drag-events">Drag Events</h4>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 
 | Attribute    | Value  | Description |
 |--------------|--------|--------------------------------------------------------------------------|
@@ -3220,7 +3279,9 @@ Below are the global event attributes that can be added to HTML elements to defi
 | ondrop       | script | Script to be run when dragged element is being dropped |
 | onscroll     | script | Script to be run when an element's scrollbar is being scrolled |
 
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h4 id="clipboard-events">Clipboard Events</h4>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 
 | Attribute       | Value    | Description |
 |----------------|--------|--------------------------------------------------------------------------|
@@ -3228,7 +3289,9 @@ Below are the global event attributes that can be added to HTML elements to defi
 | oncut    | script    | Fires when the user cuts the content of an element |
 | onpaste  |   script   |  Fires when the user pastes some content in an element |
 
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h4 id="media-events">Media Events</h4>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 
 <p>Events triggered by medias like videos, images and audio (applies to all HTML 
 elements, but is most common in media elements, like &lt;audio&gt;, &lt;embed&gt;, &lt;img&gt;, 
@@ -3260,7 +3323,9 @@ elements, but is most common in media elements, like &lt;audio&gt;, &lt;embed&gt
 | onvolumechange |    script |    Script to be run each time the volume is changed which (includes setting the volume to "mute") |
 | onwaiting   |  script  |   Script to be run when the media has paused but is expected to resume (like when the media pauses to buffer more data) |
 
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h4 id="misc-events">Misc Events</h4>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 
 |Attribute       |Value    |Description |
 |----------------|--------|--------------------------------------------------------------------------|
@@ -3292,7 +3357,9 @@ Elements     | Descriptions |
 | &lt;option&gt;     | It is used to define options in a drop-down list. |
 | &lt;optgroup&gt; | It is used to define group-related options in a drop-down list. |
 
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3>Commonly Used Input Types in HTML Forms</h3>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 
 <div align="right">
     <b><a href="#toc">↥ back to top</a></b>
@@ -3318,9 +3385,13 @@ data from users. Here are some commonly used input types:</p>
 | &lt;input type="time"&gt;       | Allows the user to select a time. |
 | &lt;input type="file"&gt;       | Allows the user to select a file to upload. |
 
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3>HTML Forms Example</h3>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h4>1. Basic HTML Forms Example:</h4>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 
 <p><b>Example:</b> This HTML forms collects the user personal information such 
 as username and password with the button to submit the form.</p>
@@ -3357,7 +3428,9 @@ as username and password with the button to submit the form.</p>
   style="width:40%" >
 </p>  
 
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h4>2. HTML Forms Example:</h4>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 
 <p><b>Example:</b> This HTML form collects user personal information including 
 name, email, password, gender, date of birth, and address. It features proper 
@@ -3519,7 +3592,9 @@ styling for input fields and submission button.</p>
     be validated on submission.</li>
 </ol>
 
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h4>Features</h4>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 
 <ul>
   <li>Facilitates user input collection through various elements.</li>
@@ -3528,7 +3603,9 @@ styling for input fields and submission button.</p>
   <li>Supports client-side validation for enhanced user experience.</li>
 </ul>
 
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h4>Conclusion</h4>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 
 <p>In conclusion, HTML forms are a powerful tool for collecting user input on 
 the web. They provide a wide range of interactive controls, from text fields 
@@ -3542,13 +3619,16 @@ can create more engaging, user-friendly, and accessible web applications.</p>
 
 <h2 id="5-html-tables">5. Tables</h2>
 
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3>What is an HTML Table?</h3>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p>An HTML Table is an arrangement of data in rows and columns in tabular format. 
 Tables are useful for various tasks, such as presenting text information and 
 numerical data. A table is a useful tool for quickly and easily finding connections 
 between different types of data. Tables are also used to create databases.</p>
-
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3>HTML Table Code Example</h3>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 
 ```
 <!-- index.html -->
@@ -3585,7 +3665,9 @@ between different types of data. Tables are also used to create databases.</p>
     <b><a href="#toc">↥ back to top</a></b>
 </div>
 
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h4>Output</h4>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 05-01. simple html table ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center">
@@ -3596,7 +3678,9 @@ between different types of data. Tables are also used to create databases.</p>
   style="width:40%" >
 </p>  
 
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3>Tags used in HTML Tables</h3>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 
 | HTML Tags    | Descriptions |
 |--------------|-------------------------------------------------------------------------------------|
@@ -3611,13 +3695,17 @@ between different types of data. Tables are also used to create databases.</p>
 | &lt;col&gt;    | Defines attributes for table columns that can be applied to multiple columns at once. |
 | &lt;colgroup&gt; |    Groups together a set of columns in a table to which you can apply formatting or properties collectively. |
 
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3>Defining Tables in HTML</h3>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 
 <p>An HTML table is defined with the "table" tag. Each table row is defined with 
 the "tr" tag. A table header is defined with the "th" tag. By default, table 
 headings are bold and centered. A table data/cell is defined with the "td" tag.</p>
 
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h4>Table Cells</h4>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p>Table Cell are the building blocks for defining the Table. It is denoted with 
 &lt;td&gt; as a start tag &amp; &lt;/td&gt; as a end tag.</p>
 
@@ -3627,7 +3715,9 @@ headings are bold and centered. A table data/cell is defined with the "td" tag.<
 <td> Content...</td> 
 ```
 
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h4>Table Rows</h4>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p>The rows can be formed with the help of combination of Table Cells. It is 
 denoted by &lt;tr&gt; and &lt;/tr&gt; tag as a start & end tags.</p>
 
@@ -3637,7 +3727,9 @@ denoted by &lt;tr&gt; and &lt;/tr&gt; tag as a start & end tags.</p>
 <tr> Content...</tr> 
 ```
 
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h4>Table Headers</h4>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 The Headers are generally use to provide the Heading. The Table Headers can also be used to add the heading to the Table. This contains the <th> & </th> tags.
 
 <h5>Syntax</h5>
@@ -3692,7 +3784,9 @@ The Headers are generally use to provide the Heading. The Table Headers can also
   style="width:40%" >
 </p>
 
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h4>Adding a border to an HTML Table</h4>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p>A border is set using the CSS border property. If you do not specify a border 
 for the table, it will be displayed without borders.</p>
 
@@ -3760,7 +3854,9 @@ table, th, td {
   style="width:40%" >
 </p>
 
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h4>Adding Collapsed Borders in an HTML Table</h4>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p>For borders to collapse into one border, add the CSS border-collapse property.</p>
 
 <h5>Syntax</h5>
@@ -3829,8 +3925,9 @@ table, th, td {
   alt="Table with collapsed borders."
   style="width:40%" >
 </p>
-
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h4>Adding Cell Padding in an HTML Table</h4>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p>Cell padding specifies the space between the cell content and its borders. If 
 we do not specify a padding, the table cells will be displayed without padding.</p>
 
@@ -3904,7 +4001,9 @@ th, td {
   style="width:40%" >
 </p>
 
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h4>Adding Left Align Headings in an HTML Table</h4>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p>By default, the table headings are bold and centered. To left-align the table 
 headings, we must use the CSS text-align property.</p>
 
@@ -3982,7 +4081,9 @@ th {
   style="width:40%" >
 </p>
 
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h4>Adding Border Spacing in an HTML Table</h4>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 
 <p>Border spacing specifies the space between the cells. To set the border-spacing 
 for a table, we must use the CSS border-spacing property.</p>
@@ -4055,7 +4156,9 @@ table {
   style="width:40%" >
 </p>
 
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h4>Adding Cells that Span Many Columns in HTML Tables</h4>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p>To make a cell span more than one column, we must use the colspan attribute.</p>
 
 <p><b>Example:</b> Use of colspan attribute in HTML.</p>
@@ -4111,7 +4214,9 @@ table {
   style="width:40%" >
 </p>
 
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h4>Adding Cells that span many rows in HTML Tables</h4>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p>To make a cell span more than one row, we must use the rowspan attribute.</p>
 
 <p><b>Example:</b> Use of the rowspan attribute in HTML.</p>
@@ -4168,9 +4273,9 @@ table {
   alt="Use of rowspan attribute."
   style="width:40%" >
 </p>
-
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h4>Adding a Caption in an HTML Table</h4>
-
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p>To add a caption to a table, we must use the "caption" tag.</p>
 
 <h5>Syntax</h5>
@@ -4247,7 +4352,9 @@ table {
   style="width:40%" >
 </p>
 
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h4>Adding a Background Colour to the Table</h4>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p>A color can be added as a background in an HTML table using the "background-
 color" option.</p>
 
@@ -4351,8 +4458,9 @@ table#t01 {
   alt="Adding Background Color."
   style="width:40%" >
 </p>
-
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h4>Creating Nested Tables</h4>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p>Nesting tables simply means making a Table inside another Table. Nesting tables 
 can lead to complex tables layouts, which are visually interesting and have the 
 potential of introducing errors.</p>
@@ -4402,9 +4510,11 @@ potential of introducing errors.</p>
 <p>An HTML list is a record of related information used to display the data or 
 any information on web pages in the ordered or unordered form.</p>
 
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3>HTML List Example</h3>
-
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h4>Basic Implementation of HTML lists.</h4>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 
 ```
 <!DOCTYPE html>
@@ -4448,9 +4558,11 @@ any information on web pages in the ordered or unordered form.</p>
   style="width:40%" >
 </p>
 
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3>There are three types of lists in HTML:</h3>
-
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h4>Table of Content</h4>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 
 <ol>
   <li>HTML Unordered List or Bulleted List</li>
@@ -4458,7 +4570,9 @@ any information on web pages in the ordered or unordered form.</p>
   <li>HTML Description List</li>
 </ol>
 
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3>HTML List Tags</h3>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p>Here is the list of all lists tags HTML:</p>
 
 | Tag | Description |
@@ -4470,7 +4584,9 @@ any information on web pages in the ordered or unordered form.</p>
 | &lt;dt&gt; | Defines a term in a description list |
 | &lt;dd&gt; | Details the term in a description list |
 
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3>The HTML Unordered List or Bulleted List</h3>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 
 <p>The unordered list items are marked with bullets. It is also known as bulleted 
 lists. An unordered list starts with the &lt;ul&gt; tag. Each list item starts with the 
@@ -4519,7 +4635,9 @@ lists. An unordered list starts with the &lt;ul&gt; tag. Each list item starts w
   style="width:40%" >
 </p>
 
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3>HTML Ordered List</h3>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 
 <p>In an ordered list, all list items are marked with numbers by default. An 
 ordered list starts with the &lt;ol&gt; tag. Each list item starts with the 
@@ -4535,8 +4653,9 @@ ordered list starts with the &lt;ol&gt; tag. Each list item starts with the
 </ol>
 ```
 
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h4>Attributes:</h4>
-
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <ul>
   <li>compact: It defines the list should be compacted (compact attribute is not 
     supported in HTML5. Use CSS instead.).</li>
@@ -4600,8 +4719,9 @@ control list counting & type attribute.</p>
   style="width:40%" >
 </p>
 
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3>HTML Description List</h3>
-
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p>A description list is a list of terms, with a description of each term. The 
 &lt;dl&gt; tag defines the description list, the &lt;dt&gt; tag defines the term name, 
 and the &lt;dd&gt; tag describes each term.</p>
@@ -4644,9 +4764,9 @@ article</i> for further details.</p>
   alt="Description list."
   style="width:40%" >
 </p>
-
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h4>Conclusion</h4>
-
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p>HTML lists provide a way to display a structured collection of items. In this 
 tutorial, we have explained three types of lists- ordered lists, unordered lists, 
 and definition list. We have explained all three list types with examples.</p>
@@ -4669,20 +4789,25 @@ values represent the numerical values of the character in the ASCII character se
 example, a space is not acceptable in a URL and is replaced by a ‘%20’ or a ‘+’ sign 
 while encoding. Similarly, a $ sign is replaced by ‘%24’.</p>
 
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3>HTML URL &amp; Escape Character Reference Sites</h3>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <ul>
   <li><p><a href="https://www.w3schools.com/tags/ref_urlencode.ASP">HTML URL Encoding Reference</a></p></li>
   <li><p><a href="https://mateam.net/html-escape-characters/">HTML Escape Characters</a></p></li>
 </ul>
-
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h4>Syntax:</h4>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p>A web address follows these syntax rules:</p>
 
 <pre>
 scheme://prefix.domain:port/path/filename
 </pre>
 
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h4>Example</h4>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <pre>https://www.geeksforgeeks.org/</pre>
 
 <p><b>Scheme:</b> It specifies the protocol used for communication, such as 
