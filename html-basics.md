@@ -5042,13 +5042,13 @@ communication.<br/>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h2 id="9-html-svg">09. HTML SVG</h2>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-SVG stands for Scalable Vector Graphics.
+<h3>SVG stands for Scalable Vector Graphics.</h3>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<p>SVG defines vector-based graphics in XML format.</p>
 
-SVG defines vector-based graphics in XML format.
+<p>SVG graphics are scalable, and do not lose any quality if they are zoomed or resized.</p>
 
-SVG graphics are scalable, and do not lose any quality if they are zoomed or resized.
-
-SVG is supported by all major browsers.
+<p>SVG is supported by all major browsers.</p>
 
 ```
 <!DOCTYPE html>
@@ -5066,22 +5066,26 @@ SVG is supported by all major browsers.
 </html>
 ```
 
-<svg-001.png>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--svg-001.png-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<h3>What is SVG?</h3>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<p>SVG stands for Scalable Vector Graphics.</p>
+<p>SVG is used to define vector-based graphics for the Web.</p>
+<p>SVG defines graphics in XML format</p>
+<p>Each element and attribute in SVG files can be animated</p>
+<p>SVG is a W3C recommendation</p>
+<p>SVG integrates with other standards, such as CSS, DOM, XSL and JavaScript</p>
 
-What is SVG?
-SVG stands for Scalable Vector Graphics
-SVG is used to define vector-based graphics for the Web
-SVG defines graphics in XML format
-Each element and attribute in SVG files can be animated
-SVG is a W3C recommendation
-SVG integrates with other standards, such as CSS, DOM, XSL and JavaScript
-
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 Creating SVG Images
-SVG images can be created with any text editor, or with a drawing program, like Inkscape.
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<p>SVG images can be created with any text editor, or with a drawing program, like Inkscape.</p>
 
-For you to learn the concept and basics of SVG, this tutorial will just use plain text to teach you SVG.
+<p>For you to learn the concept and basics of SVG, this tutorial will just use plain text to teach you SVG.</p>
 
-The next page shows how to embed an SVG image directly into an HTML page!
+<p>The next page shows how to embed an SVG image directly into an HTML page!</p>
 
 ```
 <!DOCTYPE html>
@@ -5098,18 +5102,21 @@ The next page shows how to embed an SVG image directly into an HTML page!
 </html>
 ```
 
-<svg-002.png>
-
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--svg-002.png-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 SVG Code explanation:
-
-Start with the <svg> root element
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+Start with the &lt;svg&gt; root element
 The width and height of the SVG image is defined with the width and height attributes
 Since SVG is an XML dialect, always bind the namespace correctly with the xmlns attribute
 The namespace "http://www.w3.org/2000/svg" identifies SVG elements inside an HTML document
 The <circle> element is used to draw a circle
-The cx and cy attributes define the x and y coordinates of the center of the circle. If omitted, the circle's center is set to (0, 0)
+The cx and cy attributes define the x and y coordinates of the center of the circle. If omitted, 
+the circle's center is set to (0, 0)
 The r attribute defines the radius of the circle
-The stroke and stroke-width attributes control how the outline of a shape appears. We set the outline of the circle to a 4px green "border"
+The stroke and stroke-width attributes control how the outline of a shape appears. We set the 
+outline of the circle to a 4px green "border"
 The fill attribute refers to the color inside the circle. We set the fill color to yellow
 The closing </svg> tag closes the SVG image
 
@@ -5134,19 +5141,20 @@ Place all attribute values in SVG inside quotes (even if they are numbers)
 </html>
 ```
 
-<svg-003.png>
-
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--svg-003.png-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 SVG Code explanation:
-
-Start with the <svg> root element, define the width and height, and proper namespace
-The <rect> element is used to draw a rectangle
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+Start with the &lt;svg&gt; root element, define the width and height, and proper namespace
+The &lt;rect&gt; element is used to draw a rectangle
 The width and height of the rectangle is set to 100% of the width/height of the <svg> element
 Set the fill color of the rectangle to green
-The <circle> element is used to draw a circle
+The &lt;circle&gt; element is used to draw a circle
 The cx and cy attributes define the x and y coordinates of the center of the circle
 The r attribute defines the radius of the circle
 We set the fill color of the circle to yellow
-The <text> element is used to draw a text
+The &lt;text&gt; element is used to draw a text
 The x and y attributes define the x and y coordinates of the center of the text
 The font-size attribute defines the font size of the text
 The text-anchor attribute defines where we want the midpoint (of the text) to be
@@ -5154,32 +5162,40 @@ The fill attribute defines the color of the text
 Write "SVG" as the text to show
 Close the SVG image with </svg>
 
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 SVG Shapes
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 SVG has some predefined shape elements that can be used by developers:
 
-Rectangle <rect>
-Circle <circle>
-Ellipse <ellipse>
-Line <line>
-Polyline <polyline>
-Polygon <polygon>
-Path <path>
+Rectangle &lt;rect&gt;
+Circle &lt;circle&gt;
+Ellipse &lt;ellipse&gt;
+Line &lt;line&gt;
+Polyline &lt;polyline&gt;
+Polygon &lt;polygon&gt;
+Path &lt;path&gt;
+
 The following chapters will explain each element, starting with the <rect> element.
 
-SVG Rectangle - <rect>
-The <rect> element is used to create a rectangle and variations of a rectangle shape.
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+SVG Rectangle - &lt;rect&gt;
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+The &lt;rect&gt; element is used to create a rectangle and variations of a rectangle shape.
 
-The <rect> element has six basic attributes to position and shape the rectangle:
+The &lt;rect&gt; element has six basic attributes to position and shape the rectangle:
 
-Attribute	Description
-width	Required. The width of the rectangle
-height	Required. The height of the rectangle
-x	The x-position for the top-left corner of the rectangle
-y	The y-position for the top-left corner of the rectangle
-rx	The x radius of the corners of the rectangle (used to round the corners). Default is 0
-ry	The y radius of the corners of the rectangle (used to round the corners). Default is 0
+| Attribute | Description |
+|-----------|-------------|
+| width |	Required. The width of the rectangle |
+| height |	Required. The height of the rectangle |
+|x |	The x-position for the top-left corner of the rectangle |
+| y	 | The y-position for the top-left corner of the rectangle |
+| rx | The x radius of the corners of the rectangle (used to round the corners). Default is 0 |
+| ry | The y radius of the corners of the rectangle (used to round the corners). Default is 0 |
 
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 An SVG Rectangle
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 This example creates a rectangle with the six basic attributes and a fill color:
 
 ```
@@ -5188,16 +5204,23 @@ This example creates a rectangle with the six basic attributes and a fill color:
 </svg>
 ```
 
-<svg-004.png>
+<!--svg-004.png-->
 
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 Code explanation:
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 
-The width and height attributes of the <rect> element define the height and the width of the rectangle
-The x and y attributes defines the x- and y-position of the top-left corner of the rectangle (x="10" places the rectangle 10px from the left margin and y="10" places the rectangle 10px from the top margin) in the SVG canvas
-The rx and ry attributes defines the radius of the corners of the rectangle
-The fill attribute defines the fill color of the rectangle
+The width and height attributes of the <rect> element define the height and the width of 
+the rectangle.
+The x and y attributes defines the x- and y-position of the top-left corner of the rectangle 
+(x="10" places the rectangle 10px from the left margin and y="10" places the rectangle 10px 
+from the top margin) in the SVG canvas.
+The rx and ry attributes defines the radius of the corners of the rectangle.
+The fill attribute defines the fill color of the rectangle.
 
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 A Rectangle With Border
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 Let's look at another example that contains some new attributes:
 
 ```
@@ -5206,14 +5229,18 @@ Let's look at another example that contains some new attributes:
 </svg>
 ```
 
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 Code explanation:
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 
 The style attribute is used to define CSS properties for the rectangle
 The CSS fill property defines the fill color of the rectangle
 The CSS stroke-width property defines the width of the border of the rectangle
 The CSS stroke property defines the color of the border of the rectangle
 
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 A Rectangle With Opacity
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 Let's look at another example that contains some new attributes:
 
 ```
@@ -5223,16 +5250,18 @@ Let's look at another example that contains some new attributes:
 </svg>
 ```
 
-<svg-006.png>
-
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!-- svg-006.png -->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 Code explanation:
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 
 The CSS fill-opacity property defines the opacity of the fill color (legal range: 0 to 1)
 The CSS stroke-opacity property defines the opacity of the stroke color (legal range: 0 to 1)
 
-
-
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 Another Rectangle With Opacity
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 Define the opacity for the whole element:
 
 ```
@@ -5242,9 +5271,11 @@ Define the opacity for the whole element:
 </svg>
 ```
 
-<svg-007.png>
-
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--svg-007.png-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 Code explanation:
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 
 The CSS opacity property defines the opacity value for the whole element (legal range: 0 to 1)
 
@@ -5258,19 +5289,24 @@ Last example, create a rectangle with rounded corners:
 </svg>
 ```
 
-<svg-008.png>
-
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--svg-008.png-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 SVG Circle - <circle>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 The <circle> element is used to create a circle.
 
 The <circle> element has three basic attributes to position and set the size of the circle:
 
-Attribute	Description
-r	Required. The radius of the circle
-cx	The x-axis center of the circle. Default is 0
-cy	The y-axis center of the circle. Default is 0
+| Attribute |Description |
+|-----------|------------|
+|r |	Required. The radius of the circle |
+| cx | The x-axis center of the circle. Default is 0 |
+| cy | The y-axis center of the circle. Default is 0 |
 
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 An SVG Circle
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 The following example creates a circle:
 
 ```
@@ -5279,15 +5315,19 @@ The following example creates a circle:
 </svg>
 ```
 
-<svg-009.png>
-
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--svg-009.png-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 Code explanation:
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 
 The r attribute defines the radius of the circle
 The cx and cy attributes define the x- and y-axes center of the circle. If they are omitted, the circle's center is set to (0,0)
 The fill attribute defines the color of the circle
 
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 An SVG Circle with Border
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 The following example creates a circle with border:
 
 ```
@@ -5296,15 +5336,19 @@ The following example creates a circle with border:
 </svg>
 ```
 
-<svg-010.png>
-
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--svg-010.png-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 Code explanation:
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 
 The stroke attribute defines the color of the border around the circle
 The stroke-width attribute defines the width of the border around the circle
 
 
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 An SVG Circle with Opacity
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 The following example creates a circle with opacity:
 
 ```
@@ -5313,12 +5357,13 @@ The following example creates a circle with opacity:
 </svg>
 ```
 
-<svg-011.png>
-
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--svg-011.png-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 Code explanation:
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 
 The opacity attribute defines the opacity of the circle
-
 
 
 
