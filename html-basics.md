@@ -2728,7 +2728,7 @@ loaded or by helping screen readers convey images). In HTML it may look like thi
 ```
 
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-**5. Open Graph tags:**
+<h5>5. Open Graph tags:</h5>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 
 Open Graph (OG) tags are placed in the &lt;head&gt; section of a page and allow any webpage to become a rich object in social networks. OG tags let you control how the information about your page is represented when shared via social channels. This possibility may help you enhance the performance of your links on social media, thus driving more click-throughs and increasing conversions. In HTML, it can look like this:
@@ -2738,7 +2738,7 @@ Open Graph (OG) tags are placed in the &lt;head&gt; section of a page and allow 
 ```
 
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-**6. Robots tag:**
+<h5>6. Robots tag:</h5>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 
 A robots tag is an element in the HTML of a page that informs search engines which pages on your site should be indexed and which should not. Its functions are similar to robots.txt, but robots.txt gives suggestions. Whereas robots tags give instructions. In HTML, it can look like this:
@@ -2748,7 +2748,7 @@ A robots tag is an element in the HTML of a page that informs search engines whi
 ```
 
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-**7. Canonical tag:**
+<h5>7. Canonical tag:</h5>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 
 A canonical tag is a way of telling search engines that a specific URL represents the master copy of a page. Using the canonical tag prevents problems caused by identical or "duplicate" content appearing on multiple URLs. Practically speaking, the canonical tag tells search engines which version of a URL you want to appear in search results. In HTML, it may look like this:
@@ -2786,7 +2786,7 @@ One of the most important features of HTML5 is its semantics tags. Semantic tags
 The **value** property reflects the current text-content inside the input box, whereas the **value** attribute contains the initial text-content of the **value** attribute from the HTML source code
 
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-**Difference between HTML attributes and DOM properties:**
+<h3>Difference between HTML attributes and DOM properties:</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 
 |Attribute                               |Property                |
@@ -2820,7 +2820,7 @@ The **value** property reflects the current text-content inside the input box, w
 Emulating the version tells the browser to use the DOCTYPE to determine how to render content. pages without a DOCTYPE will be rendered in quirks mode. Edge mode tells Windows Internet Explorer to display content in the highest mode available, which actually breaks the "lock-in" paradigm. With Internet Explorer 8, this is equivalent to IE8 mode.
 
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-**Setting the Meta Element:**
+<h4>Setting the Meta Element:</h4>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 
 The meta element includes a content attribute that enables you to specify the mode that content is rendered in for the webpage, as the following table shows.
@@ -2845,41 +2845,41 @@ The meta element includes a content attribute that enables you to specify the mo
 
 The following lists all optional tags.
 
-|Tag            |Description  |
-|---------------|-------------|
-|&lt;area&gt;       |             |
-|&lt;base&gt;       |             |
-|&lt;body&gt;       |             |
-|&lt;br&gt;         |             |
-|&lt;caption&gt;    |             |
-|&lt;col&gt;        |             |
-|&lt;colgroup&gt;   |             |
-|&lt;dd&gt;         |             |
-|&lt;dt&gt;         |             |
-|&lt;embed&gt;      |             |
-|&lt;head&gt;       |             |
-|&lt;hr&gt;         |             |
-|&lt;html&gt;       |             |
-|&lt;img&gt;        |             |
-|&lt;input&gt;      |             |
-|&lt;li&gt;         |             |
-|&lt;link&gt;       |             |
-|&lt;meta&gt;       |             |  
-|&lt;optgroup&gt;   |             |
-|&lt;option&gt;     |             |
-|&lt;p&gt;          |             |
-|&lt;param&gt;      |             |
-|&lt;rp&gt;         |             |
-|&lt;rt&gt;         |             |
-|&lt;source&gt;     |             |
-|&lt;tbody&gt;      |             |
-|&lt;td&gt;         |             |
-|&lt;tfoot&gt;      |             |
-|&lt;th&gt;         |             |
-|&lt;thead&gt;      |             |
-|&lt;tr&gt;         |             |
-|&lt;track&gt;      |             |
-|&lt;wbr&gt;        |             |
+|Tag            |Description       |
+|---------------|------------------|
+|<b>&lt;area&gt;</b> | The &lt;area&gt; tag defines an area inside an image map (an image map is an image with clickable areas) |
+|<b>&lt;base&gt;</b> | The &lt;base&gt; tag specifies the base URL and/or target for all relative URLs in a document. |
+|<b>&lt;body&gt;</b> | The &lt;body&gt; tag in HTML is used to define the main content present inside an HTML page. |
+|<b>&lt;br&gt;</b>   | The &lt;br&gt; HTML element produces a line break in text (carriage-return). |
+|<b>&lt;caption&gt;</b> | The &lt;caption&gt; tag in HTML is used to provide a title or description for a &lt;table&gt; element. |
+|<b>&lt;col&gt;</b>   | The &lt;col&gt; tag defines attributes for table columns within the &lt;colgroup&gt; element, allowing styling and formatting of columns, such as width, alignment, and background color. |
+|<b>&lt;colgroup&gt;</b> | The &lt;colgroup&gt; element is used to style specific columns of a table. |
+|<b>&lt;dd&gt;</b>         | The &lt;dd&gt; tag in HTML is used to define a description or value in a description list, which is created using the &lt;dl&gt; (description list) tag. |
+|<b>&lt;dt&gt;</b>         | The &lt;dt&gt; tag in HTML is used to specify the description list. |
+|<b>&lt;embed&gt;</b>      | The &lt;embed&gt; tag defines a container for an external resource, such as a web page, a picture, a media player, or a plug-in application. |
+|<b>&lt;head&gt;</b>       | The &lt;head&gt; tag in HTML is an essential element used to define the head section of an HTML document. |
+|<b>&lt;hr&gt;</b>         | The &lt;hr&gt; tag in HTML is used to create a horizontal rule or line that visually separates content. |
+|<b>&lt;html&gt;</b>       | The &lt;html&gt; tag is the root element of an HTML document. It encapsulates the entire content of the page.|
+|<b>&lt;img&gt;</b>        | The HTML &lt;img&gt; tag is used to embed images in a web page. |
+|<b>&lt;input&gt;</b>      | The &lt;input&gt; tag in HTML is used to collect user input in web forms. It supports various input types such as text, password, checkboxes, radio buttons, and more. |
+|<b>&lt;li&gt;</b>         |             |
+|<b>&lt;link&gt;</b>       |             |
+|<b>&lt;meta&gt;</b>       |             |  
+|<b>&lt;optgroup&gt;</b>   |             |
+|<b>&lt;option&gt;</b>     |             |
+|<b>&lt;p&gt;</b>          |             |
+|<b>&lt;param&gt;</b>      |             |
+|<b>&lt;rp&gt;</b>         |             |
+|<b>&lt;rt&gt;</b>         |             |
+|<b>&lt;source&gt;</b>     |             |
+|<b>&lt;tbody&gt;</b>      |             |
+|<b>&lt;td&gt;</b>         |             |
+|<b>&lt;tfoot&gt;</b>      |             |
+|<b>&lt;th&gt;</b>         |             |
+|<b>&lt;thead&gt;</b>      |             |
+|<b>&lt;tr&gt;</b>         |             |
+|<b>&lt;track&gt;</b>      |             |
+|<b>&lt;wbr&gt;</b>        |             |
 
 <div align="right">
     <b><a href="#toc">↥ back to top</a></b>
