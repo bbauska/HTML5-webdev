@@ -225,8 +225,8 @@ pair becomes the value.
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h4>3. Output Tag</h4>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-
-It indicates a section of the page that can be modified by a script (usually JavaScript).
+<p>It indicates a section of the page that can be modified by a script (usually 
+JavaScript).</p>
 
 ```html
 <form oninput="result.value=parseInt(a.value)+parseInt(b.value)">
@@ -290,7 +290,7 @@ expected to be modified through JavaScript code.</p>
 | 13. |week         |Picking a specific week.|
 
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<h4>Example:</h4>
+<h5>Example:</h5>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 
 ```html
@@ -331,7 +331,7 @@ expected to be modified through JavaScript code.</p>
     <b><a href="#toc">↥ back to top</a></b>
 </div>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<h4>Example to create a HTML form with below constraints</h4>
+<h5>Example to create a HTML form with below constraints</h5>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <ul>
   <li>Accept User Name, Email, Country and Subject,</li>
@@ -383,11 +383,13 @@ expected to be modified through JavaScript code.</p>
 </style>
 </head>
 <body>
+```
 
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3>Contact Form</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 
+```
 <div class="container">
   <form name="contactForm" onsubmit="return validateForm()" method="post">
     <label for="fname">Name</label>
@@ -452,9 +454,8 @@ expected to be modified through JavaScript code.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h2>Q. What is the difference between `span` tag and `div` tag?</h2>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-
-The primary difference between div and span tag is their default behavior. By default, 
-a &lt;div&gt; is a **block-level-element** and a &lt;span&gt; is an **inline element**.
+<p>The primary difference between div and span tag is their default behavior. By default, 
+a &lt;div&gt; is a **block-level-element** and a &lt;span&gt; is an **inline element**.</p>
 
 <ul>
   <li><b>&lt;div&gt;</b> is a block level element which means it will render it on 
@@ -475,9 +476,9 @@ a &lt;div&gt; is a **block-level-element** and a &lt;span&gt; is an **inline ele
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h2>Q. What are optional closing tags?</h2>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-
-&lt;p&gt;, &lt;li>, &lt;td>, &lt;tr>, &lt;th>, &lt;html>, &lt;body&gt;, etc. don&apos;t have to provide an end 
-tag. Whenever a browser hits a new tag it automatically end the previous tag. 
+<p>&lt;p&gt;, &lt;li>, &lt;td>, &lt;tr>, &lt;th>, &lt;html>, &lt;body&gt;, etc. don&apos;t 
+have to provide an end tag. Whenever a browser hits a new tag it automatically end the 
+previous tag.</p>
 
 <div align="right">
     <b><a href="#toc">↥ back to top</a></b>
@@ -486,12 +487,11 @@ tag. Whenever a browser hits a new tag it automatically end the previous tag.
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h2>Q. What is a self closing tag?</h2>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<p>In HTML5 it is not strictly necessary to close certain HTML tags. The tags that aren&apos;t 
+required to have specific closing tags are called “self closing” tags.</p>
 
-In HTML5 it is not strictly necessary to close certain HTML tags. The tags that aren&apos;t 
-required to have specific closing tags are called “self closing” tags.
-
-An example of a self closing tag is something like a line break (&lt;br /&gt;) or the meta tag 
-(&lt;meta&gt;). This means that the following are both acceptable:
+<p>An example of a self closing tag is something like a line break (&lt;br /&gt;) or the meta tag 
+(&lt;meta&gt;). This means that the following are both acceptable:</p>
 
 ```html
 <meta charset="UTF-8">
@@ -502,34 +502,36 @@ An example of a self closing tag is something like a line break (&lt;br /&gt;) o
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h2>Q. Explain the difference between block elements and inline elements?</h2>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-
-* block elements &lt;h1>, &lt;p>, &lt;ul>, &lt;ol>, &lt;li&gt;,
-* inline elements &lt;span>, &lt;a>, &lt;strong>, &lt;i>, &lt;img&gt;
+<ul>
+  <li>block elements &lt;h1>, &lt;p>, &lt;ul>, &lt;ol>, &lt;li&gt;,</li>
+  <li>inline elements &lt;span>, &lt;a>, &lt;strong>, &lt;i>, &lt;img&gt;</li>
+</ul>
 
 <div align="right">
     <b><a href="#toc">↥ back to top</a></b>
 </div>
-
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h2>Q. What are semantic and non-semantic elements?</h2>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-
-* **Semantic elements**: clearly describes its meaning to both the browser and the developer.
-For example: &lt;form&gt;, &lt;table&gt;,  &lt;article&gt;, &lt;aside&gt;, &lt;details&gt;, &lt;figcaption&gt;, &lt;figure&gt;, &lt;footer&gt;, &lt;header&gt;, &lt;main&gt;, &lt;mark&gt;, &lt;nav&gt;, &lt;section&gt;, &lt;summary&gt;, &lt;time&gt; clearly defines its content.
-  
-* **Non-semantic elements**: &lt;div&gt; and &lt;span&gt; tells nothing about its content.
+<ul>
+  <li><b><mark>Semantic elements</mark></b>: clearly describes its meaning to both the 
+  browser and the developer.<br>
+  For example: &lt;form&gt;, &lt;table&gt;,  &lt;article&gt;, &lt;aside&gt;, &lt;details&gt;, 
+  &lt;figcaption&gt;, &lt;figure&gt;, &lt;footer&gt;, &lt;header&gt;, &lt;main&gt;, &lt;mark&gt;, 
+  &lt;nav&gt;, &lt;section&gt;, &lt;summary&gt;, &lt;time&gt; clearly defines its content.</li>
+  <li><b><mark>Non-semantic elements</mark></b>: &lt;div&gt; and &lt;span&gt; tells nothing 
+  about its content.</li>
+</ul>
 
 <div align="right">
-    <b><a href="#toc">↥ back to top</a></b>
+  <b><a href="#toc">↥ back to top</a></b>
 </div>
-
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h2>Q. What is the purpose of <mark>main</mark> element?</h2>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-
-The HTML &lt;main&gt; element represents the dominant content of the &lt;body&gt; of a document. 
-The main content area consists of content that is directly related to or expands upon the 
-central topic of a document, or the central functionality of an application.
+<p>The HTML &lt;main&gt; element represents the dominant content of the &lt;body&gt; of a 
+document. The main content area consists of content that is directly related to or expands 
+upon the central topic of a document, or the central functionality of an application.</p>
 
 ```html
 <main role="main">
@@ -539,65 +541,60 @@ central topic of a document, or the central functionality of an application.
 </main>
 ```
 
-<i>Note: A document mustn&apos;t have more than one &lt;main&gt; element that doesn't have the hidden attribute specified.</i>
+<p><i>Note: A document mustn&apos;t have more than one &lt;main&gt; element that doesn't 
+have the hidden attribute specified.</i></p>
 
 <div align="right">
     <b><a href="#toc">↥ back to top</a></b>
 </div>
-
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h2>Q. What are the semantic meanings for &lt;section&gt;, &lt;article&gt;, &lt;aside&gt;, 
 &lt;nav&gt;, &lt;header&gt;, &lt;footer&gt; and how should each be used in structuring html markup?</h2>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-
-* &lt;header&gt; is used to contain introductory and navigational information about a section 
-of the page. This can include the section heading, the author&apos;s name, time and date 
-of publication, table of contents, or other navigational information.
-
-* &lt;article&gt; is meant to house a self-contained composition that can logically be 
-independently recreated outside of the page without losing it&apos;s meaining. 
-Individual blog posts or news stories are good examples.
-
-* &lt;section&gt; is a flexible container for holding content that shares a common 
-informational theme or purpose.
-
-* &lt;footer&gt; is used to hold information that should appear at the end of a section 
-of content and contain additional information about the section. Author&apos;s name, 
-copyright information, and related links are typical examples of such content.
+<ul>
+  <li>&lt;header&gt; is used to contain introductory and navigational information about a section 
+    of the page. This can include the section heading, the author&apos;s name, time and date 
+    of publication, table of contents, or other navigational information.</li>
+  <li>&lt;article&gt; is meant to house a self-contained composition that can logically be 
+    independently recreated outside of the page without losing it&apos;s meaining. 
+    Individual blog posts or news stories are good examples.</li>
+  <li>&lt;section&gt; is a flexible container for holding content that shares a common 
+    informational theme or purpose.</li>
+  <li>&lt;footer&gt; is used to hold information that should appear at the end of a section 
+    of content and contain additional information about the section. Author&apos;s name, 
+    copyright information, and related links are typical examples of such content.</li>
+</ul>
 
 <div align="right">
     <b><a href="#toc">↥ back to top</a></b>
 </div>
-
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h2>Q. When should you use `section`, `div` or `article`?</h2>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-
-* &lt;section&gt;, group of content inside is related to a single theme, and should appear as 
-an entry in an outline of the page. It&apos;s a chunk of related content, like a subsection 
-of a long article, a major part of the page (eg the news section on the homepage), or a 
-page in a webapp&apos;s tabbed interface. A section normally has a heading (title) and 
-maybe a footer too.
-
-* &lt;article&gt;, represents a complete, or self-contained, composition in a document, 
-page, application, or site and that is, in principle, independently distributable or 
-reusable, e.g. in syndication. This could be a forum post, a magazine or newspaper 
-article, a blog entry, a user-submitted comment, an interactive widget or gadget, or 
-any other independent item of content.
-
-* &lt;div&gt;, on the other hand, does not convey any meaning, aside from any found in 
-its class, lang and title attributes.
+<ul>
+  <li><b><mark>&lt;section&gt;</mark></b>, group of content inside is related to a single 
+    theme, and should appear as an entry in an outline of the page. It&apos;s a chunk of 
+    related content, like a subsection of a long article, a major part of the page (eg 
+    the news section on the homepage), or a page in a webapp&apos;s tabbed interface. A 
+    section normally has a heading (title) and maybe a footer too.</li>
+  <li><b><mark>&lt;article&gt;</mark></b>, represents a complete, or self-contained, 
+    composition in a document, page, application, or site and that is, in principle, 
+    independently distributable or reusable, e.g. in syndication. This could be a forum 
+    post, a magazine or newspaper article, a blog entry, a user-submitted comment, an 
+    interactive widget or gadget, or any other independent item of content.</li>
+  <li><b><mark>&lt;div&gt;</mark></b>, on the other hand, does not convey any meaning, 
+    aside from any found in its class, lang and title attributes.</li>
+</ul>
 
 <div align="right">
     <b><a href="#toc">↥ back to top</a></b>
 </div>
-
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h2>Q. Can a web page contain multiple &lt;header&gt; elements? What about &lt;footer&gt; elements?</h2>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-
-Yes, header elements can be used multiple times in documents. A &lt;header&gt; tag must be present for all articles, sections, and pages, although a &lt;footer&gt; tag is not necessary.
-
+<p>Yes, header elements can be used multiple times in documents. A &lt;header&gt; tag 
+must be present for all articles, sections, and pages, although a &lt;footer&gt; tag 
+is not necessary.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h4>From W3C standards</h4>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -624,11 +621,11 @@ documents, copyright data, and the like.
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h4>1. Physical Tags:</h4>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-
-Physical tags are used to indicate how a particular character is to be formatted. Any physical style tag may contain any item allowed in text, including conventional text, images, line breaks, etc.
-
+<p>Physical tags are used to indicate how a particular character is to be formatted. Any 
+physical style tag may contain any item allowed in text, including conventional text, 
+images, line breaks, etc.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<h4>Example:</h4>
+<h5>Example:</h5>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 
 |Tags      | Description                                                      |
@@ -646,15 +643,13 @@ Physical tags are used to indicate how a particular character is to be formatted
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h4>2. Logical Tags:</h4>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-
-Logical tags are used to tell the browser what kind of text is written inside the tags. 
+<p>Logical tags are used to tell the browser what kind of text is written inside the tags. 
 Logical tags are also known as Structural tags because they specify the structure of the 
 document. Logical tags are used to indicate to the visually impaired person that there is 
 something more important in the text or to emphasize the text ie, logical tags can be 
-used for styling purposes as well as to give special importance to text content.
-
+used for styling purposes as well as to give special importance to text content.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<h4>Example:</h4>
+<h5>Example:</h5>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 
 |Tags       | Description                     |
@@ -681,28 +676,28 @@ used for styling purposes as well as to give special importance to text content.
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h2>Q. What is Character Encoding?</h2>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-
-Character encoding is a method of converting bytes into characters. To validate or 
+<p>Character encoding is a method of converting bytes into characters. To validate or 
 display an HTML document properly, a program must choose a proper character encoding. 
-This is specified in the tag:
+This is specified in the tag:</p>
 
 ```html
 <meta charset="utf-8"/>
 ```
 
-* **UTF-8**: A Unicode Translation Format that comes in 8-bit units that is, it comes in 
-bytes. A character in UTF8 can be from 1 to 4 bytes long, making UTF8 variable width.
+<ul>
+  <li><b><mark>UTF-8</mark></b>: A Unicode Translation Format that comes in 8-bit units 
+    that is, it comes in bytes. A character in UTF8 can be from 1 to 4 bytes long, making 
+	UTF8 variable width.</li>
+</ul>
 
 <div align="right">
     <b><a href="#toc">↥ back to top</a></b>
 </div>
-
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h2>Q. What is the purpose of meta tags?</h2>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-
-The META elements can be used to include name/value pairs describing properties of the 
-HTML document, such as author, expiry date, a list of keywords, document author etc.
+<p>The META elements can be used to include name/value pairs describing properties of the 
+HTML document, such as author, expiry date, a list of keywords, document author etc.</p>
 
 ```html
 <!DOCTYPE html>
@@ -761,19 +756,16 @@ HTML document, such as author, expiry date, a list of keywords, document author 
 <div align="right">
     <b><a href="#toc">↥ back to top</a></b>
 </div>
-
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<h2>Q. What does async and defer refer in script tag?</h2>
+<h2>Q. What does <mark><b>async</b></mark> and <mark><b>defer</b></mark> refer in script tag?</h2>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h4>1. Async:</h4>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-
-Downloads the script file during HTML parsing and will pause the HTML parser to execute 
-it when it has finished downloading.
-
+<p>Downloads the script file during HTML parsing and will pause the HTML parser to execute 
+it when it has finished downloading.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<h4>Example:</h4>
+<h5>Example:</h5>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 
 ```html
@@ -788,12 +780,10 @@ it when it has finished downloading.
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h4>2. Defer:</h4>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-
-Defer downloads the script file during HTML parsing and will only execute it after the 
-HTML parser has completed. Not all browsers support this.
-
+<p>Defer downloads the script file during HTML parsing and will only execute it after the 
+HTML parser has completed. Not all browsers support this.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<h4>Example:</h4>
+<h5>Example:</h5>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 
 ```html
@@ -804,16 +794,15 @@ HTML parser has completed. Not all browsers support this.
 <script defer src="myscript.js"></script>
 ```
 
-The async attribute is used to indicate to the browser that the script file can be 
+<p>The async attribute is used to indicate to the browser that the script file can be 
 executed asynchronously. The HTML parser does not need to pause at the point it 
 reaches the script tag to fetch and execute, the execution can happen whenever the 
-script becomes ready after being fetched in parallel with the document parsing.
+script becomes ready after being fetched in parallel with the document parsing.</p>
 
-The defer attribute tells the browser to only execute the script file once the HTML 
-document has been fully parsed.
-
+<p>The defer attribute tells the browser to only execute the script file once the HTML 
+document has been fully parsed.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<h4>Example:</h4>
+<h5>Example:</h5>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 
 ```html
@@ -827,17 +816,14 @@ document has been fully parsed.
 <div align="right">
     <b><a href="#toc">↥ back to top</a></b>
 </div>
-
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<h2>Q. What is local storage in html5?</h2>
+<h2>Q. What is <mark><b>localStorage</b></mark> in html5?</h2>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-
-The **localStorage** read-only property of the window interface allows you to access a 
-Storage object for the Document&apos;s origin; the stored data is saved across browser 
-sessions.
-
+<p>The <mark><b>localStorage</b></mark> read-only property of the window interface allows 
+you to access a Storage object for the Document&apos;s origin; the stored data is saved 
+across browser sessions.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<h4>Example:</h4>
+<h5>Example:</h5>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 
 ```js
@@ -851,17 +837,14 @@ localStorage.getItem("name"); // Kanti Ahluwalia
 <div align="right">
     <b><a href="#toc">↥ back to top</a></b>
 </div>
-
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<h2>Q. What is session storage in html5?</h2>
+<h2>Q. What is sessionStorage in html5?</h2>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-
-The **sessionStorage** object is equal to the localStorage object, except that it stores 
-the data for only one session. The data is deleted when the user closes the specific 
-browser tab.
-
+<p>The <mark><b>sessionStorage</b></mark> object is equal to the localStorage object, 
+except that it stores the data for only one session. The data is deleted when the user 
+closes the specific browser tab.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<h4>Example:</h4>
+<h5>Example:</h5>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 
 ```js
@@ -881,19 +864,19 @@ sessionStorage.clear();
 <div align="right">
     <b><a href="#toc">↥ back to top</a></b>
 </div>
-
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h2>Q. What is cookies in html5?</h2>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<p>A cookie is an amount of information that persists between a server-side and a client-side. 
+A web browser stores this information at the time of browsing.</p>
 
-A cookie is an amount of information that persists between a server-side and a client-side. 
-A web browser stores this information at the time of browsing.
-
-A cookie contains the information as a string generally in the form of a name-value pair 
+<p>A cookie contains the information as a string generally in the form of a name-value pair 
 separated by semi-colons. It maintains the state of a user and remembers the user&apos;s 
-information among all the web pages.
+information among all the web pages.</p>
 
-**Example 01:** Create a Cookies
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<h5>Example 01: Create a Cookie</h5>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 
 ```js
 // create a cookie
@@ -903,14 +886,18 @@ document.cookie = "username=Anjali Batta";
 document.cookie = "username=Anjali Batta; expires=Thu, 18 Dec 2022 12:00:00 UTC";
 ```
 
-**Example 02:** Cookie with expiry date
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<h5>Example 02: Cookie with expiry date</h5>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 
 ```js
 // cookie with expiry date
 document.cookie = "username=Anjali Batta; expires=Thu, 18 Dec 2022 12:00:00 UTC";
 ```
 
-**Example 03:** Read Cookie
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<h5>Example 03: Read Cookie</h5>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 
 ```js
 let myCookies = document.cookie;
@@ -918,13 +905,17 @@ let myCookies = document.cookie;
 console.log(myCookies);
 ```
 
-**Example 04:** Update Cookie
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<h5>Example 04: Update Cookie</h5>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 
 ```js
 document.cookie = "username=John Smith; expires=Thu, 18 Dec 2022 12:00:00 UTC; path=/";
 ```
 
-**Example 05:** Delete Cookie
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<h5>Example 05: Delete Cookie</h5>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 
 ```js
 document.cookie = "username=; expires=Thu, 01 Jan 1970 00:00:00 UTC; path=/;";
@@ -933,9 +924,9 @@ document.cookie = "username=; expires=Thu, 01 Jan 1970 00:00:00 UTC; path=/;";
 <div align="right">
     <b><a href="#toc">↥ back to top</a></b>
 </div>
-
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<h2>Q. Describe the difference between a cookie, sessionStorage and localStorage?</h2>
+<h2>Q. Describe the difference between a <mark>cookie</mark>, <mark>sessionStorage</mark> 
+and <mark>localStorage</mark>?</h2>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 
 |      | `cookie`  | `localStorage` | `sessionStorage` |
@@ -946,7 +937,12 @@ document.cookie = "username=; expires=Thu, 01 Jan 1970 00:00:00 UTC; path=/;";
 | Capacity (per domain) | 4kb        | 5MB            | 5MB              |
 | Accessibility  | Any window        | Any window     | Same tab         |
 
-*Note: If the user decides to clear browsing data via whatever mechanism provided by the browser, this will clear out any `cookie`, `localStorage`, or `sessionStorage` stored. It&apos;s important to keep this in mind when designing for local persistance, especially when comparing to alternatives such as server side storing in a database or similar (which of course will persist despite user actions).*
+<p><i>Note: If the user decides to clear browsing data via whatever mechanism provided by 
+the browser, this will clear out any <mark><b>cookie</b></mark>, <mark><b>localStorage</b></mark>, 
+or <mark><b>sessionStorage</b></mark> stored. 
+It&apos;s important to keep this in mind when designing for local persistance, especially 
+when comparing to alternatives such as server side storing in a database or similar (which 
+of course will persist despite user actions).</i></p>
 
 <div align="right">
     <b><a href="#toc">↥ back to top</a></b>
@@ -954,11 +950,9 @@ document.cookie = "username=; expires=Thu, 01 Jan 1970 00:00:00 UTC; path=/;";
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h2>Q. Does localStorage throw error after reaches maximum limits?</h2>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-
-Yes
-
+<p>Yes</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<h4>Example:</h4>
+<h5>Example:</h5>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 
 ```html
@@ -990,7 +984,7 @@ Yes
 </html>
 ```
 
-Output
+<h5>Output:</h5>
 
 ```js
 Exception: QuotaExceededError: Failed to execute 'setItem' on 'Storage': 
@@ -1003,72 +997,83 @@ Exception: QuotaExceededError: Failed to execute 'setItem' on 'Storage':
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h2>Q. Why to use IndexedDB instead of WebSQL in HTML5?</h2>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<h4>1. WebSQL</h4>
+<h3>1. WebSQL</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-
-It is an API that is only supported in Chrome and Safari (and Android and iOS by extension). It provides an asynchronous, transactional interface to SQLite. Since 2010, it has been deprecated in favor of IndexedDB.
-
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<h4>Advantages</h4>
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-
-* Supported on major mobile browsers (Android Browser, Mobile Safari, Opera Mobile) as well as several desktop browsers (Chrome, Safari, Opera).
-* Good performance generally, being an asynchronous API. Database interaction won't lock up the user interface. (Synchronous API is also available for WebWorkers.)
-* Good search performance, since data can be indexed according to search keys.
-* Robust, since it supports a transactional database model.
-* Easier to maintain integrity of data, due to rigid data structure.
-
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<h4>Disadvantages</h4>
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-
-* Deprecated. Will not be supported on IE or Firefox, and will probably be phased out from the other browsers at some stage.
-* Steep learning curve, requiring knowledge of relational databases and SQL.
-* Suffers from object-relational impedance mismatch.
-* Diminishes agility, as database schema must be defined upfront, with all records in a table matching the same structure.
-
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<h4>2. IndexedDB</h4>
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-
-It is the successor to both LocalStorage and WebSQL, designed to replace them as the “one true” browser database. It exposes an asynchronous API that supposedly avoids blocking the DOM, but as we&apos;ll see below, it doesn&apos;t necessarily live up to the hype. Browser support is extremely spotty, with only Chrome and Firefox having fully usable implementations.
-
+<p>It is an API that is only supported in Chrome and Safari (and Android and iOS by extension). 
+It provides an asynchronous, transactional interface to <mark>SQLite</mark>. Since 2010, it 
+has been deprecated in favor of <mark><b>IndexedDB</b></mark>.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h4>Advantages</h4>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-
-* Good performance generally, being an asynchronous API. Database interaction won't lock up the user interface. (Synchronous API is also available for WebWorkers.)
-* Good search performance, since data can be indexed according to search keys.
-* Supports versioning.
-* Robust, since it supports a transactional database model.
-* Fairly easy learning curve, due to a simple data model.
-* Decent browser support: Chrome, Firefox, mobile FF, IE10.
-
+<ul>
+  <li>Supported on major mobile browsers (Android Browser, Mobile Safari, Opera Mobile) as 
+    well as several desktop browsers (Chrome, Safari, Opera).</li>
+  <li>Good performance generally, being an asynchronous API. Database interaction won't 
+    lock up the user interface. (Synchronous API is also available for WebWorkers.)</li>
+  <li>Good search performance, since data can be indexed according to search keys.</li>
+  <li>Robust, since it supports a transactional database model.</li>
+  <li>Easier to maintain integrity of data, due to rigid data structure.</li>
+</ul>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h4>Disadvantages</h4>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-
-* Very complex API resulting in large amounts of nested callbacks.
+<ul>
+  <li>Deprecated. Will not be supported on IE or Firefox, and will probably be phased out 
+    from the other browsers at some stage.</li>
+  <li>Steep learning curve, requiring knowledge of relational databases and SQL.</li>
+  <li>Suffers from object-relational impedance mismatch.</li>
+  <li>Diminishes agility, as database schema must be defined upfront, with all records in a 
+    table matching the same structure.</li>
+</ul>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<h3>2. IndexedDB</h3>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<p>It is the successor to both <b>LocalStorage</b> and <b>WebSQL</b>, designed to replace 
+them as the “one true” browser database. It exposes an asynchronous API that supposedly 
+avoids blocking the DOM, but as we&apos;ll see below, it doesn&apos;t necessarily live 
+up to the hype. Browser support is extremely spotty, with only Chrome and Firefox having 
+fully usable implementations.</p>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<h4>Advantages</h4>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<ul>
+  <li>Good performance generally, being an asynchronous API. Database interaction won't lock 
+    up the user interface. (Synchronous API is also available for WebWorkers.)</li>
+  <li>Good search performance, since data can be indexed according to search keys.</li>
+  <li>Supports versioning.</li>
+  <li>Robust, since it supports a transactional database model.</li>
+  <li>Fairly easy learning curve, due to a simple data model.</li>
+  <li>Decent browser support: Chrome, Firefox, mobile FF, IE10.</li>
+</ul>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<h4>Disadvantages</h4>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<ul>
+  <li>Very complex API resulting in large amounts of nested callbacks.</li>
+</ul>
 
 <div align="right">
     <b><a href="#toc">↥ back to top</a></b>
 </div>
-
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h2>Q. Explain Application Cache in HTML5. OR What is a manifest file in HTML?</h2>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<p>HTML5 provides an application caching mechanism that lets web-based applications run 
+offline. Developers can use the Application Cache (AppCache) interface to specify 
+resources that the browser should cache and make available to offline users. 
+Applications that are cached load and work correctly even if users click the refresh 
+button when they are offline.</p>
 
-HTML5 provides an application caching mechanism that lets web-based applications run offline. Developers can use the Application Cache (AppCache) interface to specify resources that the browser should cache and make available to offline users. Applications that are cached load and work correctly even if users click the refresh button when they are offline.
+<p>Using an application cache gives an application the following benefits:</p>
+<ul>
+  <li><b><mark>Offline browsing</mark></b>: users can navigate a site even when they are offline.
+  <li><b><mark>Speed</mark></b>: cached resources are local, and therefore load faster.
+  <li><b><mark>Reduced server load</mark></b>: the browser only downloads resources that have 
+  changed from the server.</li>
+</ul>
 
-Using an application cache gives an application the following benefits:
-
-* **Offline browsing**: users can navigate a site even when they are offline.
-* **Speed**: cached resources are local, and therefore load faster.
-* **Reduced server load**: the browser only downloads resources that have changed from the server.
-
-Syntax:
+<h5>Syntax:</h5>
 
 ```html
 <html manifest="example.appcache">
@@ -1076,7 +1081,11 @@ Syntax:
 </html>
 ```
 
-*Note: Using the application caching feature described here is at this point highly discouraged; it&apos;s in the process of being removed from the Web platform. Use **Service Workers** instead. In fact as of Firefox 44, when AppCache is used to provide offline support for a page a warning message is now displayed in the console advising developers to use Service workers instead (bug 1204581).*
+<p><i>Note: Using the application caching feature described here is at this point highly 
+discouraged; it&apos;s in the process of being removed from the Web platform. Use 
+<mark><b>Service Workers</b></mark> instead. In fact as of Firefox 44, when AppCache is used to 
+provide offline support for a page a warning message is now displayed in the console 
+advising developers to use Service workers instead (bug 1204581).</i></p>
 
 <div align="right">
     <b><a href="#toc">↥ back to top</a></b>
@@ -1084,12 +1093,18 @@ Syntax:
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h2>Q. What is the purpose of cache busting and how can you achieve it?</h2>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<p>Browsers have a cache to temporarily store files on websites so they don&apos;t need 
+to be re-downloaded again when switching between pages or reloading the same page. The 
+server is set up to send headers that tell the browser to store the file for a given 
+amount of time. This greatly increases website speed and preserves bandwidth.</p>
 
-Browsers have a cache to temporarily store files on websites so they don&apos;t need to be re-downloaded again when switching between pages or reloading the same page. The server is set up to send headers that tell the browser to store the file for a given amount of time. This greatly increases website speed and preserves bandwidth.
+<p>However, it can cause problems when the website has been changed by developers because 
+the user's cache still references old files. This can either leave them with old 
+functionality or break a website if the cached CSS and JavaScript files are referencing 
+elements that no longer exist, have moved or have been renamed.</p>
 
-However, it can cause problems when the website has been changed by developers because the user's cache still references old files. This can either leave them with old functionality or break a website if the cached CSS and JavaScript files are referencing elements that no longer exist, have moved or have been renamed.
-
-**Cache busting** is the process of forcing the browser to download the new files. This is done by naming the file something different to the old file.
+<p><b><mark>Cache busting</mark></b> is the process of forcing the browser to download the 
+new files. This is done by naming the file something different to the old file.</p>
 
 A common technique to force the browser to re-download the file is to append a query string to the end of the file.
 
@@ -1098,7 +1113,7 @@ A common technique to force the browser to re-download the file is to append a q
 <script src="js/script.js?v=2"></script>
 ```
 
-The browser considers it a different file but prevents the need to change the file name.
+<p>The browser considers it a different file but prevents the need to change the file name.</p>
 
 <div align="right">
     <b><a href="#toc">↥ back to top</a></b>
@@ -1106,8 +1121,10 @@ The browser considers it a different file but prevents the need to change the fi
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h2>Q. What ARIA and screenreaders are, and how to make a website accessible?</h2>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-
-Screen readers are software programs that  provide assistive technologies that allow people with disabilities (such as no sight, sound or mouse-ing ability) to use web applications. You can make your sites more accessible by following ARIA standards such as semantic HTML, alt attributes and using [role=button] in the expected ways
+<p>Screen readers are software programs that  provide assistive technologies that allow 
+people with disabilities (such as no sight, sound or mouse-ing ability) to use web 
+applications. You can make your sites more accessible by following ARIA standards such 
+as semantic HTML, alt attributes and using [role=button] in the expected ways.</p>
 
 <div align="right">
     <b><a href="#toc">↥ back to top</a></b>
@@ -1116,13 +1133,12 @@ Screen readers are software programs that  provide assistive technologies that a
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h2>Q. How to use data- attribute in html5?</h2>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-Any attribute on any element whose attribute name starts with **data-** is a data 
-attribute. The data-* attributes gives us the ability to embed custom data attributes 
+<p>Any attribute on any element whose attribute name starts with <mark><b>data-</b></mark> 
+is a data attribute. The data-* attributes gives us the ability to embed custom data attributes 
 on all HTML elements. The stored (custom) data can then be used in the page&apos;s 
-JavaScript to create a more engaging user experience.
-
+JavaScript to create a more engaging user experience.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<h4>Example:</h4>
+<h5>Example:</h5>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 
 ```html
@@ -1147,7 +1163,8 @@ article.dataset.indexNumber; // "100"
 article.dataset.parent; // "cars"
 ```
 
-**&#9885; [Try this example on CodeSandbox](https://codesandbox.io/s/html-data-attribute-llxlkn?file=/script.js)**
+<p><b>&#9885; <a href="https://codesandbox.io/s/html-data-attribute-llxlkn?file=/script.js">
+Try this example on CodeSandbox</a></b></p>
 
 <div align="right">
     <b><a href="#toc">↥ back to top</a></b>
@@ -1541,17 +1558,17 @@ to decide whether to handle it in quirks mode or standards mode.
 
 * Desktop first : 
         General selectors and styles designed to make the site look good on DESKTOP 
-		screens defined globally. But they affect all devices, and must be overridden 
-		by max-width media queries targeting minimum screen size.
+        screens defined globally. But they affect all devices, and must be overridden 
+        by max-width media queries targeting minimum screen size.
 
 * Mobile First : 
         General selectors and styles designed to make the site look good on small 
-		MOBILE screens go here. But they affect all devices, and must be overridden 
-		by min-width media queries targeting maximum screen size.
+        MOBILE screens go here. But they affect all devices, and must be overridden 
+        by min-width media queries targeting maximum screen size.
     
     In desktop first approach the media queries will be written with respect to 
-	max-width whereas in mobile first approach media queries will be written with 
-	respect to min-width.
+    max-width whereas in mobile first approach media queries will be written with 
+    respect to min-width.
 
 <div align="right">
     <b><a href="#toc">↥ back to top</a></b>
@@ -2830,14 +2847,17 @@ The **lang** attribute specifies the language of the element&apos;s content.
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h2>Q. What is the difference between &lt;section&gt; and &lt;div&gt;?</h2>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<p>The &lt;section&gt; tag creates independent sections within a webpage having logically 
+connected content. And the &lt;div&gt; tag is an empty container specifying a division or 
+a section.</p>
 
-The &lt;section&gt; tag creates independent sections within a webpage having logically connected content. And the &lt;div&gt; tag is an empty container specifying a division or a section.
+<h4>The <mark><b>&lt;section&gt;</b></mark> Element</h4>
 
-<b>The &lt;section&gt; Element</b>
+<p>According to the W3C specification, the &lt;section&gt; tag means that the content inside 
+this element is grouped. In other words, the content relates to a single theme. It must be 
+an entry in the outline of the page.</p>
 
-According to the W3C specification, the &lt;section&gt; tag means that the content inside this element is grouped. In other words, the content relates to a single theme. It must be an entry in the outline of the page.
-
-**Example:**
+<h5>Example:</h5>
 
 ```html
 <!DOCTYPE html>
@@ -2865,11 +2885,14 @@ According to the W3C specification, the &lt;section&gt; tag means that the conte
 </html>
 ```
 
-**The &lt;div&gt; Element**
+<h4>The <mark><b>&lt;div&gt;</b></mark> Element</h4>
 
-The &lt;div&gt; element only represents its child elements and doesn&apos;t have a special meaning. It can be used with the `lang`, `title`, and `class` attributes to add semantics that is common to a group of consecutive elements. This element can also be used in a &lt;dl&gt; tag and wrap groups of &lt;dt&gt; and &lt;dd&gt; elements.
+<p>The &lt;div&gt; element only represents its child elements and doesn&apos;t have a special 
+meaning. It can be used with the `lang`, `title`, and `class` attributes to add semantics 
+that is common to a group of consecutive elements. This element can also be used in a 
+&lt;dl&gt; tag and wrap groups of &lt;dt&gt; and &lt;dd&gt; elements.</p>
 
-**Example:**
+<h5>Example:</h5>
 
 ```html
 <!DOCTYPE html>
@@ -2899,23 +2922,35 @@ The &lt;div&gt; element only represents its child elements and doesn&apos;t have
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h2>Q. Discuss the differences between an HTML specification and a browser&apos;s implementation thereof.</h2>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<p>HTML specifications such as HTML5 define a set of rules that a document must adhere to in 
+order to be "valid" according to that specification. In addition, a specification provides 
+instructions on how a browser must interpret and render such a document.</p>
 
-HTML specifications such as HTML5 define a set of rules that a document must adhere to in order to be "valid" according to that specification. In addition, a specification provides instructions on how a browser must interpret and render such a document.
+<p>A browser is said to "support" a specification if it handles valid documents according to 
+the rules of the specification. As of yet, no browser supports all aspects of the HTML5 
+specification (although all of the major browser support most of it), and as a result, 
+it is necessary for the developer to confirm whether the aspect they are making use of 
+will be supported by all of the browsers on which they hope to display their content. 
+This is why cross-browser support continues to be a headache for developers, despite 
+the improved specificiations.</p>
 
-A browser is said to "support" a specification if it handles valid documents according to the rules of the specification. As of yet, no browser supports all aspects of the HTML5 specification (although all of the major browser support most of it), and as a result, it is necessary for the developer to confirm whether the aspect they are making use of will be supported by all of the browsers on which they hope to display their content. This is why cross-browser support continues to be a headache for developers, despite the improved specificiations.
-
-In addition, while HTML5 defines some rules to follow for an invalid HTML5 document (i.e., one that contains syntactical errors), invalid documents may contain anything, and it is impossible for the specification to handle all possibilities comprehensively. Thus, many decisions about how to handle malformed documents are left up to the browser.
+<p>In addition, while HTML5 defines some rules to follow for an invalid HTML5 document 
+(i.e., one that contains syntactical errors), invalid documents may contain anything, 
+and it is impossible for the specification to handle all possibilities comprehensively. 
+Thus, many decisions about how to handle malformed documents are left up to the browser.</p>
 
 <div align="right">
     <b><a href="#toc">↥ back to top</a></b>
 </div>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<h2>Q. Why you would use a srcset attribute in an image tag? Explain the process the browser used when evaluating the content of this attribute.</h2>
+<h2>Q. Why you would use a <mark><b>srcset</b></mark> attribute in an image tag?</h2>
+<h4>Explain the process the browser used when evaluating the content of this attribute.</h4>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<p>The <mark><b>srcset</b></mark> attribute allows to define a list of different image 
+resources along with size information so that browser can pick the most appropriate 
+image based on the actual device&apos;s resolution.</p>
 
-The `srcset` attribute allows to define a list of different image resources along with size information so that browser can pick the most appropriate image based on the actual device&apos;s resolution.
-
-**Syntax:**
+<h5>Syntax:</h5>
 
 ```html
 <img 
