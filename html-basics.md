@@ -144,11 +144,11 @@ work for browsers and search engines, as well as developers.</p>
   <li>Search engine needs to understand page content to rank and semantic tag helps.</li>
   <li>Semantic code aids accessibility. Specially, many people whose eyes are not good 
     rely on speech browsers to read pages to them. These programs cannot interpret 
-	pages very well unless they are clearly explained.</li>
+    pages very well unless they are clearly explained.</li>
   <li>Help Search engines to better understand pages. Search engine need to understand 
     what your content is about when rank you properly on search engines. Semantic code 
-	tends to improve your placement on search engines, as it is easier for the "search 
-	engine spiders" to understand.</li>
+    tends to improve your placement on search engines, as it is easier for the "search 
+    engine spiders" to understand.</li>
   <li>It&apos;s easier to read and edit, which saves time and money during maintenance.</li>
 </ul>
 
@@ -700,7 +700,7 @@ This is specified in the tag:</p>
 <ul>
   <li><b><mark>UTF-8</mark></b>: A Unicode Translation Format that comes in 8-bit units 
     that is, it comes in bytes. A character in UTF8 can be from 1 to 4 bytes long, making 
-	UTF8 variable width.</li>
+    UTF8 variable width.</li>
 </ul>
 
 <div align="right">
@@ -942,11 +942,11 @@ document.cookie = "username=; expires=Thu, 01 Jan 1970 00:00:00 UTC; path=/;";
 and <mark>localStorage</mark>?</h2>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 
-|      | `cookie`  | `localStorage` | `sessionStorage` |
+|      | <mark>cookie</mark>  | <mark>localStorage</mark> | <mark>sessionStorage</mark> |
 |------|-----------|----------------|------------------|
-| Initiator        | Client or server. Server can use `Set-Cookie` header     | Client         | Client           |
+| Initiator        | Client or server. Server can use <mark>Set-Cookie</mark> header     | Client         | Client           |
 | Expiry           | Manually set                                             | Forever        | On tab close     |
-| Persistent across browser sessions | Depends on whether expiration is set | Yes            | No   | | Sent to server with every HTTP request | Cookies are automatically being sent via `Cookie` header | No    | No               |
+| Persistent across browser sessions | Depends on whether expiration is set | Yes            | No   | | Sent to server with every HTTP request | Cookies are automatically being sent via <mark>Cookie</mark> header | No    | No               |
 | Capacity (per domain) | 4kb        | 5MB            | 5MB              |
 | Accessibility  | Any window        | Any window     | Same tab         |
 
@@ -1185,11 +1185,11 @@ Try this example on CodeSandbox</a></b></p>
     <b><a href="#toc">↥ back to top</a></b>
 </div>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<h2>Q. What is the purpose of the `alt` attribute on images?</h2>
+<h2>Q. What is the purpose of the <mark>alt</mark> attribute on images?</h2>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 
-The `alt` attribute provides alternative information for an image if a user cannot view it. 
-The `alt` attribute should be used to describe any images except those which only serve a 
+The <mark>alt</mark> attribute provides alternative information for an image if a user cannot view it. 
+The <mark>alt</mark> attribute should be used to describe any images except those which only serve a 
 decorative purposes, in which case it should be left empty.
 
 ```html
@@ -1200,7 +1200,7 @@ decorative purposes, in which case it should be left empty.
     <b><a href="#toc">↥ back to top</a></b>
 </div>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<h2>Q. What does `enctype='multipart/form-data'` mean?</h2>
+<h2>Q. What does </mark>enctype='multipart/form-data'</mark> mean?</h2>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 
 The enctype attribute specifies how the form-data should be encoded when submitting it to the server.
@@ -1367,14 +1367,15 @@ document, or interacted with through event listeners.
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h2>Q. How does the browser rendering engine work?</h2>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<p>In order to render content the browser has to go through a series of steps:</p>
 
-In order to render content the browser has to go through a series of steps:
-
-* Document Object Model(DOM)
-* CSS object model(CSSOM)
-* Render Tree
-* Layout
-* Paint
+<ul>
+  <li>Document Object Model(DOM)</li>
+  <li>CSS object model(CSSOM)</li>
+  <li>Render Tree</li>
+  <li>Layout</li>
+  <li>Paint</li>
+</ul>
 
 <p align="center">
     <img src="assets/images/layers.png" alt="Browser Rendering Engine" />
@@ -1567,8 +1568,10 @@ to decide whether to handle it in quirks mode or standards mode.
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h2>Q. What does the lang attribute in html do?</h2>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-
-* Helps in styling pages by using them in css `:lang()` pseudo class Spelling and grammar checkers Languade detection by search engines
+<ul>
+  <li>Helps in styling pages by using them in css <mark>:lang()</mark> pseudo class Spelling and grammar 
+    checkers Languade detection by search engines.</li>
+</ul>
 
 <div align="right">
     <b><a href="#toc">↥ back to top</a></b>
@@ -1577,30 +1580,28 @@ to decide whether to handle it in quirks mode or standards mode.
 <h2>Q. What is desktop first and mobile first design approach?</h2>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 
-* Desktop first : 
-        General selectors and styles designed to make the site look good on DESKTOP 
-        screens defined globally. But they affect all devices, and must be overridden 
-        by max-width media queries targeting minimum screen size.
-
-* Mobile First : 
-        General selectors and styles designed to make the site look good on small 
-        MOBILE screens go here. But they affect all devices, and must be overridden 
-        by min-width media queries targeting maximum screen size.
-    
-    In desktop first approach the media queries will be written with respect to 
-    max-width whereas in mobile first approach media queries will be written with 
-    respect to min-width.
+<ul>
+  <li>Desktop first :<br>
+    General selectors and styles designed to make the site look good on DESKTOP 
+    screens defined globally. But they affect all devices, and must be overridden 
+    by max-width media queries targeting minimum screen size.</li>
+  <li>Mobile First :<br>
+    General selectors and styles designed to make the site look good on small 
+    MOBILE screens go here. But they affect all devices, and must be overridden 
+    by min-width media queries targeting maximum screen size.</li>
+</ul>
+<p>In desktop first approach the media queries will be written with respect to max-width whereas 
+in mobile first approach media queries will be written with respect to min-width.</p>
 
 <div align="right">
     <b><a href="#toc">↥ back to top</a></b>
 </div>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<h2>Q. What are `data-` attributes good for?</h2>
+<h2>Q. What are <mark>data-</mark> attributes good for?</h2>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-
-* The HTML5 data attribute lets you assign custom data to an element. When we want to 
+<p>The HTML5 data attribute lets you assign custom data to an element. When we want to 
 store more information/data about the element when no suitable HTML5 element or 
-attribute exists.
+attribute exists.</p>
 
 <div align="right">
     <b><a href="#toc">↥ back to top</a></b>
@@ -1700,8 +1701,8 @@ If the CSS width property is set to 100%, the image will be responsive and scale
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h4>3. Show different Images depending on Browser Width:</h4>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-
-The HTML &lt;picture&gt; element allows you to define different images for different browser window sizes.
+<p>The HTML &lt;picture&gt; element allows you to define different images for different 
+browser window sizes.</p>
 
 ```html
 <picture>
@@ -1715,8 +1716,8 @@ The HTML &lt;picture&gt; element allows you to define different images for diffe
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h4>4. Responsive Text Size:</h4>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-
-The text size can be set with a "vw" unit, which means the "viewport width". That way the text size will follow the size of the browser window.
+<p>The text size can be set with a "vw" unit, which means the "viewport width". That way 
+the text size will follow the size of the browser window.</p>
 
 ```html
 <h1 style="font-size:10vw">Hello World</h1>
@@ -1725,8 +1726,7 @@ The text size can be set with a "vw" unit, which means the "viewport width". Tha
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h4>5. Media Queries:</h4>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-
-Using media queries you can define completely different styles for different browser sizes.
+<p>Using media queries you can define completely different styles for different browser sizes.</p>
 
 ```css
 /* Use a media query to add a breakpoint at 800px: */
@@ -1763,10 +1763,13 @@ Using media queries you can define completely different styles for different bro
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h4>1. High Resolution Time API</h4>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<p>The High Resolution Time API provides the current time in sub-millisecond resolution and 
+such that it is not subject to system clock skew or adjustments.</p>
 
-The High Resolution Time API provides the current time in sub-millisecond resolution and such that it is not subject to system clock skew or adjustments.
-
-It exposes only one method, that belongs to the `window.performance` object, called `now()`. It returns a `DOMHighResTimeStamp` representing the current time in milliseconds. The timestamp is very accurate, with precision to a thousandth of a millisecond, allowing for accurate tests of the performance of our code.
+<p>It exposes only one method, that belongs to the <mark>window.performance</mark> object, 
+called <mark>now()</mark>. It returns a <mark>DOMHighResTimeStamp</mark> representing the 
+current time in milliseconds. The timestamp is very accurate, with precision to a thousandth 
+of a millisecond, allowing for accurate tests of the performance of our code.</p>
 
 ```javascript
 var time = performance.now();
@@ -1775,8 +1778,9 @@ var time = performance.now();
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h4>2. User Timing API</h4>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-
-It allows us to accurately measure and report the performance of a section of JavaScript code. It deals with two main concepts: mark and measure. The former represents an instant (timestamp), while the latter represents the time elapsed between two marks.
+<p>It allows us to accurately measure and report the performance of a section of JavaScript 
+code. It deals with two main concepts: mark and measure. The former represents an instant 
+(timestamp), while the latter represents the time elapsed between two marks.</p>
 
 ```javascript
 performance.mark("startFoo");
@@ -1791,7 +1795,7 @@ performance.measure("durationFoo", "startFoo", "endFoo");
 <h4>3. Network Information API</h4>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 
-This API belongs to the connection property of the `window.navigator` object. It exposes two read-only properties: `bandwidth` and `metered`. The former is a number representing an estimation of the current bandwidth, while the latter is a Boolean whose value is true if the user&apos;s connection is subject to limitation and bandwidth usage, and false otherwise.
+This API belongs to the connection property of the <mark>window.navigator</mark> object. It exposes two read-only properties: <mark>bandwidth</mark> and <mark>metered</mark>. The former is a number representing an estimation of the current bandwidth, while the latter is a Boolean whose value is true if the user&apos;s connection is subject to limitation and bandwidth usage, and false otherwise.
 
 |Sl.No| API                            | Description
 |-----|--------------------------------|--------------------------------------------------------------------|
@@ -1805,8 +1809,10 @@ This API belongs to the connection property of the `window.navigator` object. It
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h4>4. Vibration API</h4>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-
-It exposes only one method, `vibrate()`, that belongs to the `window.navigator` object. This method accepts one parameter specifying the duration of the vibration in milliseconds. The parameter can be either an integer or an array of integers. In the second case, it&apos;s interpreted as alternating vibration times and pauses.
+<p>It exposes only one method, <mark>vibrate()</mark>, that belongs to the <mark>window.navigator</mark> 
+object. This method accepts one parameter specifying the duration of the vibration in milliseconds. The 
+parameter can be either an integer or an array of integers. In the second case, it&apos;s interpreted 
+as alternating vibration times and pauses.</p>
 
 ```javascript
 // Vibrate once for 2 seconds
@@ -1816,8 +1822,12 @@ navigator.vibrate(2000);
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h4>5. Battery Status API</h4>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-
-The Battery Status API exposes four properties (`charging`, `chargingTime`, `discharingTime`, and `level`) and four events. The properties specify if the battery is in charge, the seconds remaining until the battery is fully charged, the seconds remaining until the battery is fully discharged, and the current level of the battery. These properties belongs to the `battery` property of the `window.navigator` object.
+<p>The Battery Status API exposes four properties (<mark>charging</mark>, <mark>chargingTime</mark>, 
+<mark>discharingTime</mark>, and <mark>level</mark>) and four events. The properties specify if 
+the battery is in charge, the seconds remaining until the battery is fully charged, the seconds 
+remaining until the battery is fully discharged, and the current level of the battery. These 
+properties belongs to the <mark>battery</mark> property of the <mark>window.navigator</mark> 
+object.</p>
 
 ```javascript
 // Retrieves the percentage of the current level of the device's battery
@@ -1827,8 +1837,10 @@ var percentageLevel = navigator.battery.level * 100;
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h4>6. Page Visibility API</h4>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-
-The Page Visibility API enables us to determine the current visibility state of the page. The Page Visibility API is especially useful for saving resources and improving performance by letting a page avoid performing unnecessary tasks when the document isn&apos;t visible.
+<p>The Page Visibility API enables us to determine the current visibility state of the 
+page. The Page Visibility API is especially useful for saving resources and improving 
+performance by letting a page avoid performing unnecessary tasks when the document 
+isn&apos;t visible.</p>
 
 ```javascript
 //document.hidden retuns true if page is not visible.
@@ -5186,10 +5198,10 @@ The &lt;rect&gt; element has six basic attributes to position and shape the rect
 
 | Attribute | Description |
 |-----------|-------------|
-| width |	Required. The width of the rectangle |
-| height |	Required. The height of the rectangle |
-|x |	The x-position for the top-left corner of the rectangle |
-| y	 | The y-position for the top-left corner of the rectangle |
+| width |    Required. The width of the rectangle |
+| height |    Required. The height of the rectangle |
+|x |    The x-position for the top-left corner of the rectangle |
+| y     | The y-position for the top-left corner of the rectangle |
 | rx | The x radius of the corners of the rectangle (used to round the corners). Default is 0 |
 | ry | The y radius of the corners of the rectangle (used to round the corners). Default is 0 |
 
@@ -5300,7 +5312,7 @@ The <circle> element has three basic attributes to position and set the size of 
 
 | Attribute |Description |
 |-----------|------------|
-|r |	Required. The radius of the circle |
+|r |    Required. The radius of the circle |
 | cx | The x-axis center of the circle. Default is 0 |
 | cy | The y-axis center of the circle. Default is 0 |
 
