@@ -5053,23 +5053,23 @@ communication.<br/>
 
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h2 id="9-html-svg">09. HTML SVG Basics</h2>
+<!-- geeks 4 geeks - https://www.geeksforgeeks.org/html-svg-basics/ -->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!-- W3 Schools tutorial for basic svg tag -->
 <h3>SVG stands for Scalable Vector Graphics.</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<p><a href="https://www.w3schools.com/graphics/svg_intro.asp">W3 SVG Tutorial</a></p>
-<p><a href="https://www.geeksforgeeks.org/html-svg-basics/">G4G Basic SVG</a></p>
-<p><a href="https://developer.mozilla.org/en-US/docs/Web/SVG/Guides/SVG_in_HTML">MDN's SVG in HTML</a></p>
-
+<ul>
+  <li><p><a href="https://www.geeksforgeeks.org/html-svg-basics/">Geeks 4 Geeks SVG</a></p></li>
+  <li><p><a href="https://www.w3schools.com/graphics/svg_intro.asp">W3 SVG Tutorial</a></p></li>
+  <li><p><a href="https://developer.mozilla.org/en-US/docs/Web/SVG/Guides/SVG_in_HTML">MDN's SVG in HTML</a></p>
+</ul>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p>SVG stands for Scalable Vector Graphics. It defines vector-based graphics in XML 
 format. SVG graphics do not lose any quality when zoomed or resized, and every element 
 and attribute in SVG files can be animated.</p>
-
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3>Advantages of SVG:</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-The advantages of using SVG over other image formats (like JPEG and GIF) are:
+<p>The advantages of using SVG over other image formats (like JPEG and GIF) are:</p>
 
 <ul>
   <li>SVG images scale without losing quality, making them perfect for responsive designs.</li>
@@ -5300,7 +5300,6 @@ using the ARIAL font family.</p>
 <p>The SVG &lt;a&gt; element creates a hyperlink within SVG graphics. It functions 
 similarly to the HTML <a> element. It links to external resources or other parts 
 of the SVG document.</p>
-
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h5>Syntax:</h5>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -5331,7 +5330,9 @@ of the SVG document.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3>Examples of SVG &lt;a&gt; Element</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<p><b>Example 1</b>: In this example we creates a green circle inside an SVG element. 
+<h5>Example 1:</h5>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<p>In this example we creates a green circle inside an SVG element. 
 It’s wrapped with an anchor (&lt;a&gt;) tag, making it a clickable link that redirects to 
 “geeksforgeeks.org” upon click.</p>
 
@@ -5367,8 +5368,11 @@ It’s wrapped with an anchor (&lt;a&gt;) tag, making it a clickable link that r
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!-- 09-image007.gif - SVG a tag example output -->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-
-Example 2: In this example we defines a green rectangle within an SVG element. It’s encapsulated by an anchor (<a>) tag, creating a clickable area that redirects to another tab at “geeksforgeeks.org” using target blank upon click.
+<h5>Example 2:</h5>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<p>In this example we defines a green rectangle within an SVG element. It’s encapsulated 
+by an anchor (&lt;a&gt;) tag, creating a clickable area that redirects to another tab at 
+“geeksforgeeks.org” using target blank upon click.</p>
 
 ```
 <!DOCTYPE html>
@@ -5494,12 +5498,15 @@ like in HTML canvas.</p>
 
 <p>The SVG &lt;animateMotion&gt; element let define how an element moves along a motion path.</p>
 
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h5>Syntax:</h5>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 
 ```
 <animateMotion values="" dur="" repeatCount="" path="" />
 ```
 
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h5>Attributes:</h5>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <ul>
@@ -5532,7 +5539,9 @@ like in HTML canvas.</p>
 </html>
 ```
 
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h5>Output:</h5>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!-- 09-image011.gif - infinity ball -->
 
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -5546,12 +5555,15 @@ and/or skewing.</p>
 
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h5>Syntax:</h5>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 
 ```
 <animateTransform attributeName=''transform''/>
 ```
 
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h5>Attribute:</h5>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <ul>
   <li><b>from</b>: Initial value of the attribute that will be modified during the animation.</li>
   <li><b>to</b>: Final value of the attribute that will be modified during the animation.</li>
@@ -5583,6 +5595,7 @@ and/or skewing.</p>
 </body> 
   
 </html> 
+```
 
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h5>Output:</h5>
@@ -5592,9 +5605,11 @@ and/or skewing.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3>SVG Circle</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-SVG Circle facilitates the <circle> element which can be utilized to create a circle. Basically, the  <circle> element wrapped inside the <svg> element.
-
+<p>SVG Circle facilitates the &lt;circle&gt; element which can be utilized to create a 
+circle. Basically, the &lt;circle&gt; element wrapped inside the &lt;svg&gt; element.</p>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h4>Syntax</h4>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 
 ```
 <svg>
@@ -5607,7 +5622,9 @@ SVG Circle facilitates the <circle> element which can be utilized to create a ci
 </svg>
 ```
 
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h4>Attributes</h4
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p>The below are the attributes that can be used with the &lt;svg&gt; element</p>
 <ul>
   <li>cx</b>: It defines the x-coordinate of the center of the circle.</li>
@@ -5619,7 +5636,9 @@ SVG Circle facilitates the <circle> element which can be utilized to create a ci
   <li><b>Default Behavior</b>: If no fill parameter is used, the circle is filled with a default color (generally black).</li>
 </ul>
 
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h4>Example 1:</h4>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p>In this example, we will implement code to see the SVG circle with the the help of above attributes.</p>
 
 ```
@@ -5666,10 +5685,14 @@ SVG Circle facilitates the <circle> element which can be utilized to create a ci
 </html>
 ```
 
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h5>Output:</h5>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!-- 09-image013.png - example svg circle from geeks 4 geeks -->
 
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h4>Example 2:</h4>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p>In this example, we will show an SVG circle in HTML with the help of JavaScript.</p>
 
 ```
@@ -5714,10 +5737,14 @@ SVG Circle facilitates the <circle> element which can be utilized to create a ci
 </html>
 ```
 
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h5>Output:</h5>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!-- 09-image014.png - black circle w/blue outside -->
 
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3>SVG &lt;clipPath&gt; Element</h3>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p>The &lt;clipPath&gt; SVG element is used to define a clipping path that is to be used 
 by the clip-path property. It works the same as clip-path in CSS. The clipPath element 
 is used to put some restriction on a region such that anything drawn outside that region 
@@ -5727,9 +5754,11 @@ will neither be visible nor be drawn.</p>
 
 
 
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 
-
-<!-- geeks 4 geeks - https://www.geeksforgeeks.org/html-svg-basics/
+<!-- W3 Schools tutorial for basic svg tag -->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!-- 09-image001.png - svg line drawing. -->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
