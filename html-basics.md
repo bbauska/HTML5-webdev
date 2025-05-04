@@ -5052,45 +5052,813 @@ communication.<br/>
 <b>Filename:</b> It refers to the specific file or resource within the specified path.</p>
 
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<h2 id="9-html-svg">09. HTML SVG</h2>
+<h2 id="9-html-svg">09. HTML SVG Basics</h2>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!-- W3 Schools tutorial for basic svg tag -->
 <h3>SVG stands for Scalable Vector Graphics.</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<p>SVG defines vector-based graphics in XML format.</p>
+<p><a href="https://www.w3schools.com/graphics/svg_intro.asp">W3 SVG Tutorial</a></p>
+<p><a href="https://www.geeksforgeeks.org/html-svg-basics/">G4G Basic SVG</a></p>
+<p><a href="https://developer.mozilla.org/en-US/docs/Web/SVG/Guides/SVG_in_HTML">MDN's SVG in HTML</a></p>
 
-<p>SVG graphics are scalable, and do not lose any quality if they are zoomed or resized.</p>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<p>SVG stands for Scalable Vector Graphics. It defines vector-based graphics in XML 
+format. SVG graphics do not lose any quality when zoomed or resized, and every element 
+and attribute in SVG files can be animated.</p>
 
-<p>SVG is supported by all major browsers.</p>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<h3>Advantages of SVG:</h3>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+The advantages of using SVG over other image formats (like JPEG and GIF) are:
+
+<ul>
+  <li>SVG images scale without losing quality, making them perfect for responsive designs.</li>
+  <li>SVG files are often smaller than bitmap images, reducing load times.</li>
+  <li>SVG images can be edited easily with text editors, allowing for quick changes.</li>
+  <li>SVG content is accessible to screen readers, enhancing web accessibility.</li>
+  <li>SVG supports CSS and JavaScript animations, allowing for interactive and dynamic graphics.</li>
+<ul>
+
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<h3>Differences between SVG and Canvas</h3>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+
+| SVG | Canvas |
+|----------------|--------------|
+| SVG is a language for describing 2D graphics in XML | Canvas draws 2D graphics, on the fly with JavaScript. |
+| If attributes of an SVG object are changed, the browser can automatically re-render the shape | Canvas is rendered pixel by pixel. In Canvas, once the graphic is drawn, it is forgotten by the browser. |
+| SVG is resolution-independent | CANVAS is resolution-dependent. |
+| SVG supports event handlers | CANVAS doesn’t have support for event handlers. |
+
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<h4>Example 1: Drawing a Line</h4>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<p>In this example we displays an SVG line on a webpage. It includes an &lt;h2&gt; header and 
+a blue line drawn diagonally within an SVG element.</p>
+
+```
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>HTML SVG</title>
+</head>
+
+<body>
+    <h2></h2>
+    <svg height="250" width="600">
+        <line x1="10" 
+              y1="10" 
+              x2="400" 
+              y2="400" 
+              style="stroke:rgb(0,0,255);stroke-width:3" />
+    </svg>
+</body>
+
+</html>
+```
+
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<h5>Output:</h5>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!-- 09-image001.png - SVG Line Drawing -->
+
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<h4>Example 2: Drawing a Circle</h4>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<p>In this example we uses the &lt;svg&gt; tag to draw a grey circle with a black border. 
+The circle has a center at (80, 80) and a radius of 50.</p>
+
+```
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>HTML SVG</title>
+</head>
+
+<body>
+    <!-- html svg tag is used here -->
+    <svg width="200" height="200">
+        <circle cx="80" cy="80" 
+                r="50" 
+                stroke="black" 
+                stroke-width="2" 
+                fill="grey" />
+    </svg>
+</body>
+
+</html>
+```
+
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<h5>Output</h5>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!-- 09-image002.png - SVG Circle Drawing -->
+
+
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<h4>Example 3: Drawing a Rectangle</h4>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<p>In this example we ses the &lt;svg&gt; tag to draw a blue rectangle with a black 
+border. The rectangle has a width of 400 and a height of 100.</p>
+
+```
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>HTML SVG</title>
+</head>
+
+<body>
+    <!-- html svg tag is used here -->
+    <svg width="400" height="100">
+        <rect width="400" height="100" 
+              style="fill: rgb(0, 0, 255);
+                    stroke-width: 10;
+                    stroke: rgb(0, 0, 0)" />
+    </svg>
+</body>
+
+</html>
+```
+
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<h5>Output:</h5>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<09-image003.png - SVG Rectangle Drawing -->
+
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<h4>Example 4: Drawing a Rounded Rectangle</h4>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<p>In this example we uses the &lt;svg&gt; tag to draw an orange rectangle with rounded 
+corners, a black border, and 50% opacity, positioned at coordinates (80, 20).</p>
+
+```
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>
+       HTML SVG
+    </title>
+</head>
+
+<body>
+    <!-- html svg tag is used here -->
+    <svg width="400" height="380">
+        <rect x="80" y="20" rx="20" 
+              ry="20" width="150" 
+              height="150" 
+              style="fill: orange;
+                      stroke: black;
+                      stroke-width: 2; 
+                      opacity: 0.5" />
+    </svg>
+</body>
+
+</html>
+```
+
+<h5>Output:</h5>
+<!-- 09-image004.png - SVG Rounded Rectangle Drawing -->
+
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<h4>Example 5: Drawing a Star</h4>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<p>In this example we uses the &lt;svg&gt; tag to draw a grey polygon with an orange 
+border. The polygon is defined by a series of points and has a 5-pixel stroke width.</p>
+
+```
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>HTML SVG</title>
+</head>
+
+<body>
+    <!-- html svg tag is used here -->
+    <svg width="300" height="200">
+        <polygon points="100,10 40,198 190,78 10,78 160,198" 
+                 style="fill: grey; stroke: orange; 
+                        stroke-width: 5; fill-rule: evenodd" />
+    </svg>
+</body>
+
+</html>
+```
+
+<h5>Output:</h5>
+<!-- 09-image005.png - SVG Star Drawing-->
+
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<h4>Example 6: Drawing a Logo</h4>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<p>In this example we create an ellipse filled with a linear gradient from white to 
+green. It also includes text overlaid in white with the content “GeeksforGeeks” 
+using the ARIAL font family.</p>
+
+```
+<!DOCTYPE html>
+<html>
+
+<body>
+    <!-- html svg tag is used here -->
+    <svg height="300" width="700">
+        <defs>
+            <linearGradient id="grad1" x1="0%" y1="0%" 
+                            x2="100%" y2="0%">
+                <stop offset="0%" 
+                      style="stop-color:white; 
+                             stop-opacity: 1" />
+                <stop offset="100%" 
+                      style="stop-color: green; 
+                             stop-opacity: 1" />
+            </linearGradient>
+        </defs>
+        <ellipse cx="200" cy="100" rx="120" 
+                 ry="80" fill="url(#grad1)" />
+        <text fill="#ffffff" font-size="22" 
+              font-family="ARIAL" x="120" y="110">
+            GeeksforGeeks
+        </text>
+    </svg>
+</body>
+  
+</html>
+```
+
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<h5>Output:</h5>
+<!-- 09-image006.png - GFG Logo using SVG -->
+
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<h3>SVG &lt;a&gt; Element</h3>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<p>The SVG &lt;a&gt; element creates a hyperlink within SVG graphics. It functions 
+similarly to the HTML <a> element. It links to external resources or other parts 
+of the SVG document.</p>
+
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<h5>Syntax:</h5>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+
+```
+<a href="" 
+   target="" 
+   type="" 
+   rel="" 
+   download="">
+</a>
+```
+
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<h4>SVG &lt;a&gt; Attributes</h4>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+
+| Name | Description |
+|--------|--------------------------|
+} href | It stands for hypertext reference and takes the link to the other documents. |
+| download | It instructs the browser to download a file. |
+| hreflang | It is the human language of the URL or in simple words the URL fragment that hyperlink point is the hreflang. |
+| rel | It tells the relationship between the target and source documents. |
+| target | It tells about where the webpage is to be displayed. |
+| type | It tells about the MIME type of the document linked with URL. |
+| ping It is the space-separated list of URLs. |
+
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<h3>Examples of SVG &lt;a&gt; Element</h3>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<p><b>Example 1</b>: In this example we creates a green circle inside an SVG element. 
+It’s wrapped with an anchor (&lt;a&gt;) tag, making it a clickable link that redirects to 
+“geeksforgeeks.org” upon click.</p>
+
+```
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <title>SVG a Tag</title>
+</head>
+
+<body>
+    <div style="width:300px; height:300px;">
+        <h2>
+            SVG &lt;a&gt; Tag
+        </h2>
+
+        <svg width="500" height="500">
+            <a href="http://geeksforgeeks.org">
+                <circle cx="150" cy="100" r="80" fill="green">
+                </circle>
+            </a>
+        </svg>
+    </div>
+</body>
+
+</html>
+```
+
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<h5>Output</h5>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!-- 09-image007.gif - SVG a tag example output -->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+
+Example 2: In this example we defines a green rectangle within an SVG element. It’s encapsulated by an anchor (<a>) tag, creating a clickable area that redirects to another tab at “geeksforgeeks.org” using target blank upon click.
+
+```
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>SVG a Element</title>
+</head>
+
+<body>
+    <div style="width:300px; height:300px;">
+        <h2>
+            &lt;a&gt; Tag SVG
+        </h2>
+        <svg width="500" height="500">
+            <a href="http://geeksforgeeks.org" target="_blank">
+                <rect x="80" y="30" 
+                      width="150" 
+                      height="80" 
+                      fill="green">
+                </rect>
+            </a>
+        </svg>
+    </div>
+</body>
+  
+</html>
+```
+
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<h5>Output:</h5>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!-- 09-image008.gif - SVG a tag example output -->
+
+
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<h3>SVG &lt;animate&gt; Element</h3>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<p>SVG stands for Scalable Vector Graphic. It can be used to make graphics and animations 
+like in HTML canvas.</p>
+
+<p>The &lt;animate&gt; SVG element is used to animate an attribute or property of an 
+element over time. It’s normally inserted inside the element which we want to animate.</p>
+
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<h5>Syntax:</h5>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+
+```
+<animate attributeName="" values="" dur="" repeatCount="" />
+```
+
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<h5>Attributes:</h5>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<ul>
+  <li><b>Animation Attributes</b>: Attributes used to give animation effects, exp timing attributes, event attributes, and value attributes, etc.</li>
+  <li><b>Global Attributes</b>: some global attributes used like core attributes and styling attributes, etc.</li>
+</ul>
+<p>Below given are a few examples of the above element:</p>
+
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<h5>Example 1:</h5>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+
+```
+<!DOCTYPE html>
+<html>
+
+<body>
+	<svg viewBox="0 0 50 50">
+		<rect width="10" height="10" fill="green">
+			<animate attributeName="rx" values="0;20;0"
+				dur="2s" repeatCount="10" />
+		</rect>
+	</svg>
+</body>
+
+</html>
+```
+
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<h5>Output:</h5>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!-- 09-image009.gif - svg animate - rectangle to circle -->
+
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<h5>Example 2:</h5>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+
+```
+<!DOCTYPE html>
+<html>
+ 
+<body>
+    <h1 style="color:green"> 
+        GeeksforGeeks 
+    </h1>  
+    <h2> 
+        SVG animate element 
+    </h2>  
+    <svg viewBox="0 0 50 50">
+        <rect width="7" height="7" fill="green">
+            <animate attributeType="CSS" attributeName="opacity" 
+           from="1" to="0" dur="4s" repeatCount="indefinite" />
+        </rect>
+    </svg>
+</body>
+ 
+</html>
+```
+
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<h5>Output:</h5>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!-- 09-image010 - svg animate - dark to light green -->
+
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<h3>SVG &lt;animateMotion&gt; Element</h3>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<p>SVG stands for Scalable Vector Graphic. It can be used to make graphics and animations 
+like in HTML canvas.</p>
+
+<p>The SVG &lt;animateMotion&gt; element let define how an element moves along a motion path.</p>
+
+<h5>Syntax:</h5>
+
+```
+<animateMotion values="" dur="" repeatCount="" path="" />
+```
+
+<h5>Attributes:</h5>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<ul>
+  <li><b>keyPoints</b>: This attribute indicates in the range [0, 1], how far is the object along the path for each keyTimes associated values.</li>
+  <li><b>path</b>: This attribute defines the path of the motion.</li>
+  <li><b>rotate</b>: This attribute defines a rotation applied to the element animated along a path, usually to make it point in the direction of the animation.</li>
+  <li><b>Animation Attributes</b>: Attributes used to give animation effects, exp timing attributes, event attributes, and value attributes, etc.</li>
+  <li>Global Attributes</b>: some global attributes used like core attributes and styling attributes, etc.</li>
+</ul>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<h5>Example:</h5>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+
+```
+<!DOCTYPE html> 
+<html> 
+  
+<body> 
+    <svg width="1200" height="1200"> 
+        <circle cx="60" cy="60" r="5" fill="green"> 
+            <animateMotion dur="10s" repeatCount="indefinite"
+          path="M20, 60 C20, 
+                -50 180, 150 180, 
+                 60 C180-60 20, 
+                 150 20, 60 z" /> 
+        </circle> 
+    </svg> 
+</body> 
+  
+</html>
+```
+
+<h5>Output:</h5>
+<!-- 09-image011.gif - infinity ball -->
+
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<h3>SVG &lt;animateTransform&gt; Element</h3>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<p>SVG stands for Scalable Vector Graphics. It defines vector-based graphics and animation like in HTML Canvas.</p>
+
+<p>The animateTransform element animates a transformation attribute on its target 
+element, thereby allowing animations to control translation, scaling, rotation, 
+and/or skewing.</p>
+
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<h5>Syntax:</h5>
+
+```
+<animateTransform attributeName=''transform''/>
+```
+
+<h5>Attribute:</h5>
+<ul>
+  <li><b>from</b>: Initial value of the attribute that will be modified during the animation.</li>
+  <li><b>to</b>: Final value of the attribute that will be modified during the animation.</li>
+  <li><b>type</b>: It defines the type of transformation, whose values change over time.</li>
+  <li><b>dur</b>: Duration of the animation.</li>
+  <li><b>repeatCount</b>: The number of times an animation will take place.</li>
+  <li><b>repeatDur</b>: The total duration for repeating an animation.</li>
+  <li><b>attributeName</b>: The name of the CSS property that is going to be animated.</li>
+</ul>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<h5>Example:</h5>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+
+```
+
+<!DOCTYPE html> 
+<html> 
+  
+<body> 
+    <svg width="120" height="120"> 
+  
+        <polygon points="60,30 90,90 30,90"> 
+            <animateTransform attributeName="transform"
+                attributeType="XML" type="rotate" 
+                from="0 60 70" to="360 60 70"
+                dur="10s" repeatCount="indefinite" /> 
+        </polygon> 
+    </svg> 
+</body> 
+  
+</html> 
+
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<h5>Output:</h5>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!-- 09-image012.gif - rotating rectangle -->
+
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<h3>SVG Circle</h3>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+SVG Circle facilitates the <circle> element which can be utilized to create a circle. Basically, the  <circle> element wrapped inside the <svg> element.
+
+<h4>Syntax</h4>
+
+```
+<svg>
+ <circle cx="10" 
+               cy="10" 
+               r="30" 
+               stroke="black" 
+               stroke-width="3" 
+               fill="red" />
+</svg>
+```
+
+<h4>Attributes</h4
+<p>The below are the attributes that can be used with the &lt;svg&gt; element</p>
+<ul>
+  <li>cx</b>: It defines the x-coordinate of the center of the circle.</li>
+  <li><b>cy</b>: It defines the y-coordinate of the center of the circle.</li>
+  <li><b>r</b>: It defines the radius of the circle.</li>
+  <li><b>fill</b>: It specifies the color used to fill the circle (in this case, yellow).</li>
+  <li><b>stroke-width</b>: It defines the width of the stroke (outline) of the circle.</li>
+  <li><b>stroke</b>: It specifies the color of the stroke.</li>
+  <li><b>Default Behavior</b>: If no fill parameter is used, the circle is filled with a default color (generally black).</li>
+</ul>
+
+<h4>Example 1:</h4>
+<p>In this example, we will implement code to see the SVG circle with the the help of above attributes.</p>
+
+```
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" 
+          content="width=device-width,
+                   initial-scale=1.0">
+    <title>SVG to HTML</title>
+    <link rel="stylesheet" 
+          href="style.css">
+</head>
+
+<body>
+    <div style="display: flex;
+                flex-direction: column;
+                justify-content: center; 
+                align-items: center;
+                height:100vh;">
+        <h1 style="color: green;">
+            GeeksforGeeks
+        </h1>
+        <p style="font-size: 20px">
+          SVG Circle
+          </p>
+
+        <svg width="200"
+             height="200" 
+             style="border: 2px solid black;">
+            <circle cx="95" 
+                    cy="95"
+                    r="70" 
+                    stroke="green" 
+                    stroke-width="5" 
+                    fill="yellowgreen" />
+        </svg>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
+```
+
+<h5>Output:</h5>
+<!-- 09-image013.png - example svg circle from geeks 4 geeks -->
+
+<h4>Example 2:</h4>
+<p>In this example, we will show an SVG circle in HTML with the help of JavaScript.</p>
+
+```
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" 
+          content="width=device-width,
+                   initial-scale=1.0">
+    <title>SVG to HTML</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div style="display: flex; 
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                height:100vh;">
+        <h1 style="color: green;">
+            GeeksforGeeks
+        </h1>
+        <p style="font-size: 20px">
+              SVG Circle
+          </p>
+
+        <svg width="200" 
+             height="200" 
+             style="border: 2px solid black;">
+            <circle cx="95" 
+                    cy="95" 
+                    r="70" 
+                    stroke="blue" 
+                    stroke-width="5" />
+        </svg>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
+```
+
+<h5>Output:</h5>
+<!-- 09-image014.png - black circle w/blue outside -->
+
+<h3>SVG &lt;clipPath&gt; Element</h3>
+<p>The &lt;clipPath&gt; SVG element is used to define a clipping path that is to be used 
+by the clip-path property. It works the same as clip-path in CSS. The clipPath element 
+is used to put some restriction on a region such that anything drawn outside that region 
+will neither be visible nor be drawn.</p>
+
+
+
+
+
+
+
+<!-- geeks 4 geeks - https://www.geeksforgeeks.org/html-svg-basics/
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!-- 09-image001.png - svg line drawing. -->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<h3>What is SVG?</h3>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<ul>
+  <li><p>SVG stands for Scalable Vector Graphics.</p></li>
+  <li><p>SVG is used to define vector-based graphics for the Web.</p></li>
+  <li><p>SVG defines graphics in XML format</p></li>
+  <li><p>Each element and attribute in SVG files can be animated</p></li>
+  <li><p>SVG is a W3C recommendation</p></li>
+  <li><p>SVG integrates with other standards, such as CSS, DOM, XSL and JavaScript</p></li>
+</ul>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<h4>The &lt;svg&gt; Element</h4>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<p>The HTML &lt;svg&gt; element is a container for SVG graphics.</p>
+
+<p>SVG has several methods for drawing paths, rectangles, circles, polygons, text, and 
+much more.</p>
+
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<h3>SVG Circle</h3>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<svg 09-w3-image001>
 
 ```
 <!DOCTYPE html>
 <html>
 <body>
 
-<h1>My first SVG</h1>
+<svg width="100" height="100">
+  <circle cx="50" cy="50" r="40" stroke="green" stroke-width="4" fill="yellow" />
+</svg>
 
-<svg width="100" height="100" xmlns="http://www.w3.org/2000/svg">
-   <circle cx="50" cy="50" r="40" stroke="green" stroke-width="4" fill="yellow" />
-   Sorry, your browser does not support inline SVG.
-</svg> 
- 
 </body>
 </html>
 ```
 
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--svg-001.png-->
+<h3>SVG Rectangle</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<h3>What is SVG?</h3>
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<p>SVG stands for Scalable Vector Graphics.</p>
-<p>SVG is used to define vector-based graphics for the Web.</p>
-<p>SVG defines graphics in XML format</p>
-<p>Each element and attribute in SVG files can be animated</p>
-<p>SVG is a W3C recommendation</p>
-<p>SVG integrates with other standards, such as CSS, DOM, XSL and JavaScript</p>
+<svg 09-w3-image002>
+
+```
+<svg width="400" height="120">
+  <rect x="10" y="10" width="200" height="100" stroke="red" stroke-width="6" fill="blue" />
+</svg>
+```
 
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<h3>SVG Rectangle with Opacity and Rounded Corners</h3>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<svg 09-w3-image003>
+
+```
+<svg width="400" height="180">
+  <rect x="50" y="20" rx="20" ry="20" width="150" height="150"
+  style="fill:red;stroke:black;stroke-width:5;opacity:0.5" />
+</svg>
+```
+
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<h3>SVG Star</h3>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<svg 09-w3-image004>
+
+```
+<svg width="300" height="200">
+  <polygon points="100,10 40,198 190,78 10,78 160,198"
+  style="fill:lime;stroke:purple;stroke-width:5;fill-rule:evenodd;" />
+</svg>
+```
+
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<h3>SVG Gradient Ellipse and Text</h3>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<svg 09-w3-image005>
+
+```
+<svg height="130" width="500">
+  <defs>
+    <linearGradient id="grad1">
+      <stop offset="0%" stop-color="yellow" />
+      <stop offset="100%" stop-color="red" />
+    </linearGradient>
+  </defs>
+  <ellipse cx="100" cy="70" rx="85" ry="55" fill="url(#grad1)" />
+  <text fill="#ffffff" font-size="45" font-family="Verdana" x="50" y="86">SVG</text>
+  Sorry, your browser does not support inline SVG.
+</svg>
+```
+
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<h3>Differences Between SVG and Canvas</h3>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+SVG is a language for describing 2D graphics in XML, while Canvas draws 2D graphics, on 
+the fly (with JavaScript).
+
+SVG is XML based, which means that every element is available within the SVG DOM. You 
+can attach JavaScript event handlers to SVG graphics.
+
+In SVG, each drawn shape is remembered as an object. If attributes of an SVG object are 
+changed, the browser can automatically re-render the shape.
+
+Canvas is rendered pixel by pixel. In canvas, once the graphic is drawn, it is forgotten 
+by the browser. If its position should be changed, the entire scene needs to be redrawn, 
+including any objects that might have been covered by the graphic.
+
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<h3>Comparison of SVG and Canvas</h3>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+The table below shows some important differences between Canvas and SVG:
+
+| SVG | Canvas |
+|------------------------|-----------------------------|
+| Resolution independent  | Resolution dependent |
+| Support for event handlers | No support for event handlers |
+| Good text rendering capabilities | Poor text rendering capabilities |
+| Slow rendering if complex | You can save the resulting image as .png or .jpg |
+| Not suited for game applications | Well suited for graphic-intensive games |
+
+
+
+
+
+
+
+
 Creating SVG Images
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p>SVG images can be created with any text editor, or with a drawing program, like Inkscape.</p>
@@ -5132,11 +5900,13 @@ outline of the circle to a 4px green "border"
 The fill attribute refers to the color inside the circle. We set the fill color to yellow
 The closing </svg> tag closes the SVG image
 
+<blockquote>
 Note: Since SVG is written in XML, remember this:
 
 All elements must be properly closed
 XML is case-sensitive, so write all SVG elements and attributes in same case. We prefer lower-case
 Place all attribute values in SVG inside quotes (even if they are numbers)
+</blockquote>
 
 ```
 <!DOCTYPE html>
@@ -5415,6 +6185,7 @@ The opacity attribute defines the opacity of the circle
 <h6>Date created: ~ 4/1/2025</h6>
 <h6>prior editted: 5/1/2025 +6pm</h6>
 <h6>Last editted: 5/2/2025 +11am</h6>
+<h6>Last editted: 5/4/2025 +12pm</h6>
 
 <footer>The End...</footer>
 </body>
