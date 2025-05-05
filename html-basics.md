@@ -7004,20 +7004,22 @@ including any objects that might have been covered by the graphic.
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--svg-002.png-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<h4>SVG Code explanation:</h4>
+<h5>SVG Code explanation:</h5>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<p>Start with the &lt;svg&gt; root element.</p>
-<p>The width and height of the SVG image is defined with the width and height attributes.</p>
-<p>Since SVG is an XML dialect, always bind the namespace correctly with the xmlns attribute.</p>
-<p>The namespace "http://www.w3.org/2000/svg" identifies SVG elements inside an HTML document.</p>
-<p>The &lt;circle&gt; element is used to draw a circle.</p>
-<p>The cx and cy attributes define the x and y coordinates of the center of the circle. If omitted, 
-the circle's center is set to (0, 0).</p>
-<p>The r attribute defines the radius of the circle.</p>
-<p>The stroke and stroke-width attributes control how the outline of a shape appears. We set the 
-outline of the circle to a 4px green "border".</p>
-<p>The fill attribute refers to the color inside the circle. We set the fill color to yellow.</p>
-<p>The closing &lt;/svg&gt; tag closes the SVG image.</p>
+<ul>
+  <li>Start with the &lt;svg&gt; root element.</li>
+  <li>The width and height of the SVG image is defined with the width and height attributes.</li>
+  <li>Since SVG is an XML dialect, always bind the namespace correctly with the xmlns attribute.</li>
+  <li>The namespace "http://www.w3.org/2000/svg" identifies SVG elements inside an HTML document.</li>
+  <li>The &lt;circle&gt; element is used to draw a circle.</li>
+  <li>The cx and cy attributes define the x and y coordinates of the center of the circle. If omitted, 
+    the circle's center is set to (0, 0).</li>
+  <li>The r attribute defines the radius of the circle.</li>
+  <li>The stroke and stroke-width attributes control how the outline of a shape appears. We set the 
+    outline of the circle to a 4px green "border".</li>
+  <li>The fill attribute refers to the color inside the circle. We set the fill color to yellow.</li>
+  <li>The closing &lt;/svg&gt; tag closes the SVG image.</li>
+</ul>
 
 <blockquote>
 Note: Since SVG is written in XML, remember this:
@@ -7045,45 +7047,47 @@ Place all attribute values in SVG inside quotes (even if they are numbers)
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--svg-003.png-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<h4>SVG Code explanation:</h4>
+<h5>SVG Code explanation:</h5>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<p>Start with the &lt;svg&gt; root element, define the width and height, and proper namespace.</p>
-<p>The &lt;rect&gt; element is used to draw a rectangle.</p>
-<p>The width and height of the rectangle is set to 100% of the width/height of the &lt;svg&gt; element.</p>
-<p>Set the fill color of the rectangle to green.</p>
-<p>The &lt;circle&gt; element is used to draw a circle.</p>
-<p>The cx and cy attributes define the x and y coordinates of the center of the circle.</p>
-<p>The r attribute defines the radius of the circle.</p>
-<p>We set the fill color of the circle to yellow.</p>
-<p>The &lt;text&gt; element is used to draw a text.</p>
-<p>The x and y attributes define the x and y coordinates of the center of the text.</p>
-<p>The font-size attribute defines the font size of the text.</p>
-<p>The text-anchor attribute defines where we want the midpoint (of the text) to be.</p>
-<p>The fill attribute defines the color of the text.</p>
-<p>Write "SVG" as the text to show.</p>
-<p>Close the SVG image with &lt;/svg&gt;.</p>
+<ul>
+  <li>Start with the <mark>&lt;svg&gt;</mark> root element, define the width and height, and proper namespace.</li>
+  <li>The <mark>&lt;rect&gt;</mark> element is used to draw a rectangle.</li>
+  <li>The width and height of the rectangle is set to 100% of the width/height of the <mark>&lt;svg&gt;</mark> element.</li>
+  <li>Set the fill color of the rectangle to green.</li>
+  <li>The <mark>&lt;circle&gt;</mark> element is used to draw a circle.</li>
+  <li>The <mark>cx</mark> and <mark>cy</mark> attributes define the x and y coordinates of the center of the circle.</li>
+  <li>The <mark>r</mark> attribute defines the radius of the circle.</li>
+  <li>We set the fill color of the circle to yellow.</li>
+  <li>The <mark>&lt;text&gt;</mark> element is used to draw a text.</li>
+  <li>The <mark>x</mark> and <mark>y</mark> attributes define the x and y coordinates of the center of the text.</li>
+  <li>The <mark>font-size</mark> attribute defines the font size of the text.</li>
+  <li>The <mark>text-anchor</mark> attribute defines where we want the midpoint (of the text) to be.</li>
+  <li>The <mark>fill</mark> attribute defines the color of the text.</li>
+  <li>Write "SVG" as the text to show.</li>
+  <li>Close the SVG image with <mark>&lt;/svg&gt;</mark>.</li>
+</ul>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h4>SVG Shapes</h4>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p>SVG has some predefined shape elements that can be used by developers:</p>
 
 <ul>
-  <li>Rectangle &lt;rect&gt;</li>
-  <li>Circle &lt;circle&gt;</li>
-  <li>Ellipse &lt;ellipse&gt;</li>
-  <li>Line &lt;line&gt;</li>
-  <li>Polyline &lt;polyline&gt;</li>
-  <li>Polygon &lt;polygon&gt;</li>
-  <li>Path &lt;path&gt;</li>
+  <li>Rectangle <mark>&lt;rect&gt;</mark></li>
+  <li>Circle <mark>&lt;circle&gt;</mark></li>
+  <li>Ellipse <mark>&lt;ellipse&gt;</mark></li>
+  <li>Line <mark>&lt;line&gt;</mark></li>
+  <li>Polyline <mark>&lt;polyline&gt;</mark></li>
+  <li>Polygon <mark>&lt;polygon&gt;</mark></li>
+  <li>Path <mark>&lt;path&gt;</mark></li>
 </ul>
 
-<p>The following chapters will explain each element, starting with the &lt;rect&gt; element.</p>
+<p>The following chapters will explain each element, starting with the <mark>&lt;rect&gt;</mark> element.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h4>SVG Rectangle - &lt;rect&gt;</h4>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<p>The &lt;rect&gt; element is used to create a rectangle and variations of a rectangle shape.</p>
+<p>The <mark>&lt;rect&gt;</mark> element is used to create a rectangle and variations of a rectangle shape.</p>
 
-<p>The &lt;rect&gt; element has six basic attributes to position and shape the rectangle:</p>
+<p>The <mark>&lt;rect&gt;</mark> element has six basic attributes to position and shape the rectangle:</p>
 
 | Attribute | Description |
 |-----------|-------------|
@@ -7108,16 +7112,18 @@ Place all attribute values in SVG inside quotes (even if they are numbers)
 <!--svg-004.png-->
 
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<h4></h4>
+<h5>Code explanation:</h5>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<p>The width and height attributes of the <rect> element define the height and the width of 
-the rectangle.</p>
-<p>The x and y attributes defines the x- and y-position of the top-left corner of the rectangle.</p>
-<p>(x="10" places the rectangle 10px from the left margin and y="10" places the rectangle 10px 
-from the top margin) in the SVG canvas.</p>
-<p>The rx and ry attributes defines the radius of the corners of the rectangle.</p>
-<p>The fill attribute defines the fill color of the rectangle.</p>
-
+<ul>
+  <li>The <mark>width</mark> and <mark>height</mark> attributes of the <mark>&lt;rect&gt;</mark> 
+    element define the height and the width of the rectangle.</li>
+  <li>The <mark>x</mark> and <mark>y</mark> attributes defines the x- and y-position of the 
+    top-left corner of the rectangle (x="10" places the rectangle 10px from the left margin 
+	and y="10" places the rectangle 10px from the top margin) in the SVG canvas.</li>
+  <li>The <mark>rx</mark> and <mark>ry</mark> attributes defines the radius of the 
+    corners of the rectangle.</li>
+  <li>The <mark>fill</mark> attribute defines the fill color of the rectangle.</li>
+</ul>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h4>A Rectangle With Border</h4>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -7132,10 +7138,12 @@ from the top margin) in the SVG canvas.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h5>Code explanation:</h5>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<p>The style attribute is used to define CSS properties for the rectangle.</p>
-<p>The CSS fill property defines the fill color of the rectangle.</p>
-<p>The CSS stroke-width property defines the width of the border of the rectangle.</p>
-<p>The CSS stroke property defines the color of the border of the rectangle.</p>
+<ul>
+  <li>The <mark>style</mark> attribute is used to define CSS properties for the rectangle.</li>
+  <li>The CSS <mark>fill</mark> property defines the fill color of the rectangle.</li>
+  <li>The CSS <mark>stroke-width</mark> property defines the width of the border of the rectangle.</li>
+  <li>The CSS <mark>stroke</mark> property defines the color of the border of the rectangle.</li>
+</ul>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h4>A Rectangle With Opacity</h4>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -7153,10 +7161,10 @@ from the top margin) in the SVG canvas.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h5>Code explanation:</h5>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-
-The CSS fill-opacity property defines the opacity of the fill color (legal range: 0 to 1)
-The CSS stroke-opacity property defines the opacity of the stroke color (legal range: 0 to 1)
-
+<ul>
+  <li>The CSS <mark>fill-opacity</mark> property defines the opacity of the fill color (legal range: 0 to 1)</li>
+  <li>The CSS <mark>stroke-opacity</mark> property defines the opacity of the stroke color (legal range: 0 to 1)</li>
+<ul>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h4>Another Rectangle With Opacity</h4>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -7174,7 +7182,10 @@ The CSS stroke-opacity property defines the opacity of the stroke color (legal r
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h5>Code explanation:</h5>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<p>The CSS opacity property defines the opacity value for the whole element (legal range: 0 to 1).</p>
+<ul>
+  <li>The CSS <mark>opacity</mark> property defines the opacity value for the whole 
+    element (legal range: 0 to 1).</li>
+</ul>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h4>A Rectangle With Rounded Corners</h4>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -7218,9 +7229,12 @@ The CSS stroke-opacity property defines the opacity of the stroke color (legal r
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h5>Code explanation:</h5>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<p>The r attribute defines the radius of the circle.</p>
-<p>The cx and cy attributes define the x- and y-axes center of the circle. If they are omitted, the circle's center is set to (0,0).</p>
-<p>The fill attribute defines the color of the circle.</p>
+<ul>
+  <li>The <mark>r</mark> attribute defines the radius of the circle.</li>
+  <li>The <mark>cx</mark> and <mark>cy</mark> attributes define the x- and y-axes center 
+    of the circle. If they are omitted, the circle's center is set to (0,0).</li>
+  <li>The <mark>fill</mark> attribute defines the color of the circle.</li>
+</ul>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h4>An SVG Circle with Border</h4>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -7237,8 +7251,10 @@ The CSS stroke-opacity property defines the opacity of the stroke color (legal r
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h5>Code explanation:</h5>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<p>The stroke attribute defines the color of the border around the circle.</p>
-<p>The stroke-width attribute defines the width of the border around the circle.</p>
+<ul>
+  <li>The <mark>stroke</mark> attribute defines the color of the border around the circle.</li>
+  <li>The <mark>stroke-width</mark> attribute defines the width of the border around the circle.</li>
+</ul>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h4>An SVG Circle with Opacity</h4>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -7255,8 +7271,9 @@ The CSS stroke-opacity property defines the opacity of the stroke color (legal r
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h5>Code explanation:</h5>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<p>The opacity attribute defines the opacity of the circle.</p>
-
+<ul>
+  <li>The <mark>opacity</mark> attribute defines the opacity of the circle.</li>
+</ul>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h2 id="10-html-canvas">10. HTML Canvas</h2>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -7291,9 +7308,9 @@ The CSS stroke-opacity property defines the opacity of the stroke color (legal r
 <h2 id="16-misc">16. Miscellaneous</h2>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <footer>
-  <h6>Date created: ~ 4/1/2025</h6>
-  <h6>prior editted: 5/1/2025 +6pm</h6>
-  <h6>Last editted: 5/2/2025 +11am</h6>
+  <h6>Date created: ~ 4/1/2025<br/>
+  <h6>Prior editted: 5/1/2025 +6pm<br/>
+  <h6>Last editted: 5/2/2025 +11am<br/>
   <h6>Last editted: 5/4/2025 +12pm</h6>
   <p>The End...</p>
 </footer>
