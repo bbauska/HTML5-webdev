@@ -7290,11 +7290,12 @@ The CSS stroke-opacity property defines the opacity of the stroke color (legal r
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h2 id="16-misc">16. Miscellaneous</h2>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<h6>Date created: ~ 4/1/2025</h6>
-<h6>prior editted: 5/1/2025 +6pm</h6>
-<h6>Last editted: 5/2/2025 +11am</h6>
-<h6>Last editted: 5/4/2025 +12pm</h6>
-
-<footer>The End...</footer>
+<footer>
+  <h6>Date created: ~ 4/1/2025</h6>
+  <h6>prior editted: 5/1/2025 +6pm</h6>
+  <h6>Last editted: 5/2/2025 +11am</h6>
+  <h6>Last editted: 5/4/2025 +12pm</h6>
+  <p>The End...</p>
+</footer>
 </body>
 </html>
