@@ -1121,7 +1121,8 @@ elements that no longer exist, have moved or have been renamed.</p>
 <p><b><mark>Cache busting</mark></b> is the process of forcing the browser to download the 
 new files. This is done by naming the file something different to the old file.</p>
 
-A common technique to force the browser to re-download the file is to append a query string to the end of the file.
+<p>A common technique to force the browser to re-download the file is to append a query 
+string to the end of the file.</p>
 
 ```html
 <!-- src="js/script.js" => src="js/script.js?v=2" -->
@@ -1187,10 +1188,9 @@ Try this example on CodeSandbox</a></b></p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h2>Q. What is the purpose of the <mark>alt</mark> attribute on images?</h2>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-
-The <mark>alt</mark> attribute provides alternative information for an image if a user cannot view it. 
-The <mark>alt</mark> attribute should be used to describe any images except those which only serve a 
-decorative purposes, in which case it should be left empty.
+<p>The <mark>alt</mark> attribute provides alternative information for an image if a user cannot view it.</p>
+<p>The <mark>alt</mark> attribute should be used to describe any images except those which only serve a 
+decorative purposes, in which case it should be left empty.</p>
 
 ```html
 <img src="pancakes.png" alt="Stack of blueberry pancakes with powdered sugar">
@@ -1294,8 +1294,8 @@ you&apos;ve given, but he can actually enter anything he wants in the input.
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h2>Q. Explain some of the pros and cons for CSS animations versus JavaScript animations?</h2>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-
-Regarding optimization and responsiveness the debate bounces back and forth but, the concept is:
+<p>Regarding optimization and responsiveness the debate bounces back and forth but, the 
+concept is:</p>
 
 * CSS animations allows the browser to choose where the animation processing is done, CPU or the GPU. (Central or Graphics Processing Unit)
 
@@ -1310,15 +1310,13 @@ Regarding optimization and responsiveness the debate bounces back and forth but,
 <div align="right">
     <b><a href="#toc">↥ back to top</a></b>
 </div>
-
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h2>Q. What does CORS stand for and what issue does it address?</h2>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-
-Cross-Origin Resource Sharing (CORS) is a W3C spec that allows cross-domain communication 
+<p>Cross-Origin Resource Sharing (CORS) is a W3C spec that allows cross-domain communication 
 from the browser. By building on top of the XMLHttpRequest object, CORS allows developers 
 to work with the same idioms as same-domain requests. CORS gives web servers cross-domain 
-access controls, which enable secure cross-domain data transfers.
+access controls, which enable secure cross-domain data transfers.</p>
 
 <div align="right">
     <b><a href="#toc">↥ back to top</a></b>
@@ -1326,40 +1324,36 @@ access controls, which enable secure cross-domain data transfers.
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h2>Q. Can you describe the difference between progressive enhancement and graceful degradation?</h2>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-
-* Graceful degradation is when you initially serve the best possible user experience, 
-  with all modern functionality, but use feature detection to “gracefully degrade” parts 
-  of your application with a fallback or polyfill.
-
-* Progressive enhancement ensures a page works at the lowest expected abilities of browsers. 
-  So if you have a JavaScript web application that enhances a persons ability to send 
-  information to a database with features like ajax – at the very least you need to provide 
-  the ability for a person to send that same information without JavaScript enabled. In this 
-  case a simple form with full-page refresh will do what you need.
+<ul>
+  <li>Graceful degradation is when you initially serve the best possible user experience, 
+    with all modern functionality, but use feature detection to “gracefully degrade” parts 
+    of your application with a fallback or polyfill.</li>
+  <li>Progressive enhancement ensures a page works at the lowest expected abilities of browsers. 
+    So if you have a JavaScript web application that enhances a persons ability to send 
+    information to a database with features like ajax – at the very least you need to provide 
+    the ability for a person to send that same information without JavaScript enabled. In this 
+    case a simple form with full-page refresh will do what you need.</li>
+</ul>
 
 <div align="right">
     <b><a href="#toc">↥ back to top</a></b>
 </div>
-
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h2>Q. What is the DOM? How does the DOM work?</h2>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-
-The DOM (Document Object Model) is a cross-platform API that treats HTML documents as a 
+<p>The DOM (Document Object Model) is a cross-platform API that treats HTML documents as a 
 tree structure consisting of nodes. These nodes (such as elements and text nodes) are 
 objects that can be programmatically manipulated and any visible changes made to them 
 are reflected live in the document. In a browser, this API is available to JavaScript 
 where DOM nodes can be manipulated to change their styles, contents, placement in the 
-document, or interacted with through event listeners.
-
-* The DOM was designed to be independent of any particular programming language, making 
-  the structural representation of the document available from a single, consistent API.
-
-* document.getElementById() and document.querySelector() are common functions for selecting DOM nodes.
-
-* Setting the innerHTML property to a new value runs the string through the HTML parser, 
-  offering an easy way to append dynamic HTML content to a node.
-
+document, or interacted with through event listeners.</p>
+<ul>
+  <li>The DOM was designed to be independent of any particular programming language, making 
+    the structural representation of the document available from a single, consistent API.</li>
+  <li>document.getElementById() and document.querySelector() are common functions for selecting DOM nodes.</li>
+  <li>Setting the innerHTML property to a new value runs the string through the HTML parser, 
+  offering an easy way to append dynamic HTML content to a node.</li>
+</ul>
 <div align="right">
     <b><a href="#toc">↥ back to top</a></b>
 </div>
@@ -1387,14 +1381,13 @@ document, or interacted with through event listeners.
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h2>Q. What is the difference between standards mode and quirks mode?</h2>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-
-In **Quirks mode**, layout emulates nonstandard behavior in Navigator 4 and Internet 
+<p>In <b>Quirks mode</b>, layout emulates nonstandard behavior in Navigator 4 and Internet 
 Explorer 5. This is essential in order to support websites that were built before the 
-widespread adoption of web standards. In **Standards mode**, the behavior is described 
-by the HTML and CSS specifications. 
+widespread adoption of web standards. In <b>Standards mode</b>, the behavior is described 
+by the HTML and CSS specifications.</p>
 
-For HTML documents, browsers use a &lt;!DOCTYPE html&gt; in the beginning of the document 
-to decide whether to handle it in quirks mode or standards mode.
+<p>For HTML documents, browsers use a &lt;!DOCTYPE html&gt; in the beginning of the document 
+to decide whether to handle it in quirks mode or standards mode.</p>
 
 ```html
 <!DOCTYPE html>
@@ -1415,35 +1408,37 @@ to decide whether to handle it in quirks mode or standards mode.
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h2>Q. What is Critical Rendering Path?</h2>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-
-* Constructing the DOM Tree
-* Constructing the CSSOM Tree
-* Running JavaScript - parser blocking resource
-* Creating the Render Tree
-* Generating the Layout
-* Painting
+<ul>
+  <li>Constructing the DOM Tree</li>
+  <li>Constructing the CSSOM Tree</li>
+  <li>Running JavaScript - parser blocking resource</li>
+  <li>Creating the Render Tree</li>
+  <li>Generating the Layout</li>
+  <li>Painting</li>
+</ul>
 
 <div align="right">
     <b><a href="#toc">↥ back to top</a></b>
 </div>
-
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h2>Q. What are the Benefits of Server Side Rendering (SSR) Over Client Side Rendering (CSR)?</h2>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-
-* We are using server side rendering for two reasons:
-    * performance benefit for our customers
-    * Consistent SEO performance
-
-* The main difference is that for SSR your server&apos;s response to the browser is the 
-  HTML of your page that is ready to be rendered, while for CSR the browser gets a pretty 
-  empty document with links to your javascript. That means for SSR your browser will start 
-  rendering the HTML from your server without having to wait for all the JavaScript to be 
-  downloaded and executed.
-    
-* for SSR, the user can start viewing the page while all of that is happening. For the CSR 
-  world, you need to wait for all of the above to happen and then have the virtual dom moved 
-  to the browser dom for the page to be viewable.
+<ul>
+  <li>We are using server side rendering for two reasons:
+    <ul>
+	  <li>performance benefit for our customers</li>
+	  <li>Consistent SEO performance</li>
+    </ul>
+  </li>
+  <li>The main difference is that for SSR your server&apos;s response to the browser is the 
+    HTML of your page that is ready to be rendered, while for CSR the browser gets a pretty 
+    empty document with links to your javascript. That means for SSR your browser will start 
+    rendering the HTML from your server without having to wait for all the JavaScript to be 
+    downloaded and executed.</li>
+  <li>for SSR, the user can start viewing the page while all of that is happening. For the CSR 
+    world, you need to wait for all of the above to happen and then have the virtual dom moved 
+    to the browser dom for the page to be viewable.</li>
+</ul>
 
 <div align="right">
     <b><a href="#toc">↥ back to top</a></b>
@@ -1579,7 +1574,6 @@ to decide whether to handle it in quirks mode or standards mode.
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h2>Q. What is desktop first and mobile first design approach?</h2>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-
 <ul>
   <li>Desktop first :<br>
     General selectors and styles designed to make the site look good on DESKTOP 
@@ -1613,48 +1607,39 @@ attribute exists.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h4>1. JavaScript:</h4>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-
-Typically JavaScript is used to handle work that will result in visual changes, 
+<p>Typically JavaScript is used to handle work that will result in visual changes, 
 whether it&apos;s jQuery&apos;s animate function, sorting a data set, or adding 
 DOM elements to the page. It doesn&apos;t have to be JavaScript that triggers a 
 visual change, though: CSS Animations, Transitions, and the Web Animations API 
-are also commonly used.
-
+are also commonly used.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h4>2. Style:</h4>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-
-This is the process of figuring out which CSS rules apply to which elements 
+<p>This is the process of figuring out which CSS rules apply to which elements 
 based on matching selectors, for example, .headline or .nav > .nav__item. 
 From there, once rules are known, they are applied and the final styles for 
-each element are calculated.
-
+each element are calculated.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h4>3. Layout:</h4>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-
-Once the browser knows which rules apply to an element it can begin to calculate 
+<p>Once the browser knows which rules apply to an element it can begin to calculate 
 how much space it takes up and where it is on screen. The web&apos;s layout model 
 means that one element can affect others, for example the width of the &lt;body&gt; 
 element typically affects its children&apos;s widths and so on all the way up and 
-down the tree, so the process can be quite involved for the browser.
-
+down the tree, so the process can be quite involved for the browser.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h4>4. Paint:</h4>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-
-Painting is the process of filling in pixels. It involves drawing out text, colors, 
+<p>Painting is the process of filling in pixels. It involves drawing out text, colors, 
 images, borders, and shadows, essentially every visual part of the elements. The 
-drawing is typically done onto multiple surfaces, often called layers.
-
+drawing is typically done onto multiple surfaces, often called layers.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h4>5. Compositing:</h4>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-
-Since the parts of the page were drawn into potentially multiple layers they need 
+<p>Since the parts of the page were drawn into potentially multiple layers they need 
 to be drawn to the screen in the correct order so that the page renders correctly. 
 This is especially important for elements that overlap another, since a mistake 
-could result in one element appearing over the top of another incorrectly.
+could result in one element appearing over the top of another incorrectly.</p>
 
 <div align="right">
     <b><a href="#toc">↥ back to top</a></b>
@@ -1677,9 +1662,8 @@ could result in one element appearing over the top of another incorrectly.
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h2>Q. How to make page responsive?</h2>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-
-Responsive Web Design is about using HTML and CSS to automatically resize, hide, shrink, or enlarge, a website, to make it look good on all devices (desktops, tablets, and phones).
-
+<p>Responsive Web Design is about using HTML and CSS to automatically resize, hide, shrink, 
+or enlarge, a website, to make it look good on all devices (desktops, tablets, and phones).</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h4>1. Setting the viewport:</h4>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -1691,8 +1675,7 @@ Responsive Web Design is about using HTML and CSS to automatically resize, hide,
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h4>2. Responsive Images:</h4>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-
-If the CSS width property is set to 100%, the image will be responsive and scale up and down
+<p>If the CSS width property is set to 100%, the image will be responsive and scale up and down.</p>
 
 ```html
 <img src="img.png" style="width:100%;">
@@ -1794,8 +1777,11 @@ performance.measure("durationFoo", "startFoo", "endFoo");
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h4>3. Network Information API</h4>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-
-This API belongs to the connection property of the <mark>window.navigator</mark> object. It exposes two read-only properties: <mark>bandwidth</mark> and <mark>metered</mark>. The former is a number representing an estimation of the current bandwidth, while the latter is a Boolean whose value is true if the user&apos;s connection is subject to limitation and bandwidth usage, and false otherwise.
+<p>This API belongs to the connection property of the <mark>window.navigator</mark> object. 
+It exposes two read-only properties: <mark>bandwidth</mark> and <mark>metered</mark>. The 
+former is a number representing an estimation of the current bandwidth, while the latter 
+is a Boolean whose value is true if the user&apos;s connection is subject to limitation 
+and bandwidth usage, and false otherwise.</p>
 
 |Sl.No| API                            | Description
 |-----|--------------------------------|--------------------------------------------------------------------|
@@ -1850,8 +1836,10 @@ console.log('Page Visibility: '+document.hidden);
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h4>7. Fullscreen API</h4>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-
-The Fullscreen API provides a way to request fullscreen display from the user, and exit this mode when desired. This API exposes two methods, `requestFullscreen()` and `exitFullscreen()`, allowing us to request an element to become fullscreen and to exit fullscreen.
+<p>The Fullscreen API provides a way to request fullscreen display from the user, and 
+exit this mode when desired. This API exposes two methods, <mark>requestFullscreen()</mark> 
+and <mark>exitFullscreen()</mark>, allowing us to request an element to become fullscreen 
+and to exit fullscreen.</p>
 
 ```javascript
 document.addEventListener("keypress", function(e) {
@@ -1877,10 +1865,11 @@ function toggleFullScreen() {
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h2>Q. How geolocation api works in html5?</h2>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<p>The Geolocation API allows the user to provide their location to web applications if 
+they so desire. For privacy reasons, the user is asked for permission to report location 
+information.</p>
 
-The Geolocation API allows the user to provide their location to web applications if they so desire. For privacy reasons, the user is asked for permission to report location information.
-
-The Geolocation API is published through the `navigator.geolocation` object.
+<p>The Geolocation API is published through the <mark>navigator.geolocation</mark> object.</p>
 
 ```javascript
 if ("geolocation" in navigator) {
@@ -1949,9 +1938,10 @@ if ("geolocation" in navigator) {
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h2>Q. What is the use of WebSocket API?</h2>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-
-The **WebSocket API** is an advanced technology that makes it possible to open a two-way interactive communication session between the user&apos;s browser and a server. With this API, you can send messages to a server and receive event-driven responses without having to poll the server for a reply.
-
+<p>The <b>WebSocket API</b> is an advanced technology that makes it possible to open a 
+two-way interactive communication session between the user&apos;s browser and a server. 
+With this API, you can send messages to a server and receive event-driven responses 
+without having to poll the server for a reply.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h5>Interfaces:</h5>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -2140,24 +2130,25 @@ socket.addEventListener('message', function(event) {
 <div align="right">
     <b><a href="#toc">↥ back to top</a></b>
 </div>
-
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h2>Q. What is difference between SVG and Canvas?</h2>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h4>1. SVG:</h4>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<p>The Scalable Vector Graphics (SVG) is an XML-based image format that is used to define 
+two-dimensional vector based graphics for the web. Unlike raster image (e.g. .jpg, .gif, 
+.png, etc.), a vector image can be scaled up or down to any extent without losing the 
+image quality.</p>
 
-The Scalable Vector Graphics (SVG) is an XML-based image format that is used to define two-dimensional vector based graphics for the web. Unlike raster image (e.g. .jpg, .gif, .png, etc.), a vector image can be scaled up or down to any extent without losing the image quality.
-
-There are following advantages of using SVG over other image formats like JPEG, GIF, PNG, etc.
-
-* SVG images can be searched, indexed, scripted, and compressed.
-* SVG images can be created and modified using JavaScript in real time.
-* SVG images can be printed with high quality at any resolution.
-* SVG content can be animated using the built-in animation elements.
-* SVG images can contain hyperlinks to other documents.
-
+<p>There are following advantages of using SVG over other image formats like JPEG, GIF, PNG, etc.</p>
+<ul>
+  <li>SVG images can be searched, indexed, scripted, and compressed.</li>
+  <li>SVG images can be created and modified using JavaScript in real time.</li>
+  <li>SVG images can be printed with high quality at any resolution.</li>
+  <li>SVG content can be animated using the built-in animation elements.</li>
+  <li>SVG images can contain hyperlinks to other documents.</li>
+</ul>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h5>Example:</h5>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -2189,9 +2180,11 @@ There are following advantages of using SVG over other image formats like JPEG, 
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h4>2. Canvas:</h4>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-
-Canvas is a HTML element is used to draw graphics on a web page. It is a  bitmap with an “immediate mode” graphics application programming interface (API) for drawing on it. The &lt;canvas&gt; element is only a container for graphics. In order to draw the graphics, you are supposed to use a script. Canvas has several strategies when it comes to drawing paths, boxes, circles, text & adding images.
-
+<p>Canvas is a HTML element is used to draw graphics on a web page. It is a bitmap with 
+an “immediate mode” graphics application programming interface (API) for drawing on it. 
+The &lt;canvas&gt; element is only a container for graphics. In order to draw the 
+graphics, you are supposed to use a script. Canvas has several strategies when it comes 
+to drawing paths, boxes, circles, text & adding images.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h5>Example:</h5>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -2234,8 +2227,10 @@ Canvas is a HTML element is used to draw graphics on a web page. It is a  bitmap
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h2>Q. Explain Drag and Drop in HTML5?</h2>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-
-HTML5 drag-and-drop uses the `DOM event model` and `drag events` inherited from `mouse events`. A typical drag operation begins when a user selects a draggable element, drags the element to a droppable element, and then releases the dragged element.
+<p>HTML5 drag-and-drop uses the <mark>DOM event model</mark> and <mark>drag events</mark> 
+inherited from <mark>mouse events</mark>. A typical drag operation begins when a user 
+selects a draggable element, drags the element to a droppable element, and then releases 
+the dragged element.</p>
 
 |Event            |Description                                                            |
 |---------------|-----------------------------------------------------------------------|
@@ -2285,16 +2280,20 @@ HTML5 drag-and-drop uses the `DOM event model` and `drag events` inherited from 
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h2>Q. Explain Microdata in HTML5?</h2>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<p>Microdata is a standardized way to provide additional semantics in web pages. Microdata 
+lets you define your own customized elements and start embedding custom properties in your 
+web pages. At a high level, microdata consists of a group of name-value pairs.</p>
 
-Microdata is a standardized way to provide additional semantics in web pages. Microdata lets you define your own customized elements and start embedding custom properties in your web pages. At a high level, microdata consists of a group of name-value pairs.
+<p>The groups are called <b>items</b>, and each name-value pair is a <b>property</b>. 
+Items and properties are represented by regular elements. Search engines benefit 
+greatly from direct access to this structured data because it allows search engines 
+to understand the information on web pages and provide more relevant results to users.</p>
 
-The groups are called **items**, and each name-value pair is a **property**. Items and properties are represented by regular elements. Search engines benefit greatly from direct access to this structured data because it allows search engines to understand the information on web pages and provide more 
-relevant results to users.
-
-At a high level, microdata consists of a group of name-value pairs
-* **itemscope**:- To create an item
-* **itemprop**:- To add a property to an item
-
+<p>At a high level, microdata consists of a group of name-value pairs</p>
+<ul>
+  <li><b>itemscope</b>:- To create an item</li>
+  <li><b>itemprop</b>:- To add a property to an item</li>
+</ul>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h5>Example</h5>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -2319,8 +2318,8 @@ At a high level, microdata consists of a group of name-value pairs
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h4>1. Deprecated Tags:</h4>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-
-The following elements are not available in HTML5 anymore and their function is better handled by CSS.
+<p>The following elements are not available in HTML5 anymore and their function is better 
+handled by CSS.</p>
 
 |Sl.No|Tags (Elements)  |    Description        |
 |-----|-----------------|----------------------|
@@ -2402,23 +2401,19 @@ The following elements are not available in HTML5 anymore and their function is 
 <div align="right">
     <b><a href="#toc">↥ back to top</a></b>
 </div>
-
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h2>Q. How you can Use Modernizr in HTML5?</h2>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-
-Modernizr is a JavaScript library that detects which HTML5 and CSS3 features visitor&apos;s 
+<p><mark>Modernizr</mark> is a JavaScript library that detects which HTML5 and CSS3 features visitor&apos;s 
 browser supports. In detecting feature support, it allows developers to test for some of 
 the new technologies and then provide fallbacks for browsers that do not support them. 
-This is called **feature detection** and is much more efficient than browser sniffing.
-
+This is called <b>feature detection</b> and is much more efficient than browser sniffing.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h4>1. Using Modernizr with CSS:</h4>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-
-By default, Modernizr sets classes for all of your tests on the root element (&lt;html&gt; 
+<p>By default, <mark>Modernizr</mark> sets classes for all of your tests on the root element (&lt;html&gt; 
 for websites). This means adding the class for each feature when it is supported, and 
-adding it with a no- prefix when it is not (e.g. `.feature` or `.no-feature`).
+adding it with a no- prefix when it is not (e.g. <mark>.feature</mark> or <mark>.no-feature</mark>).</p>
 
 ```css
 .no-cssgradients .header {
@@ -2433,8 +2428,8 @@ adding it with a no- prefix when it is not (e.g. `.feature` or `.no-feature`).
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h4>2. Using Modernizr with JavaScript:</h4>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-
-Modernizr keeps track of the results of all of it&apos;s feature detections via the `Modernizr` object.
+<p><mark>Modernizr</mark> keeps track of the results of all of it&apos;s feature detections via the 
+<mar>Modernizr</mark> object.
 
 ```javascript
 if (Modernizr.canvas) {
@@ -2458,47 +2453,47 @@ rendered.</p>
 it to the client without having to wait for non-critical stuff to be displayed. It 
 combines the advantages of both CSR (Client Side Rendering) and SSR (Server Side Rendering) 
 (Server Side Rendering).</p>
-
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h4>1. Client Side Rendering:</h4>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-
-Client Side Rendering (CSR) is a technique in which content is rendered in the browser 
+<p>Client Side Rendering (CSR) is a technique in which content is rendered in the browser 
 using JavaScript. Instead of getting all the content from the HTML file itself, the 
 server sends HTML with an empty body and script tags that contain links to JavaScript 
-bundles that the browser will use to render the content.
+bundles that the browser will use to render the content.</p>
 
-Typical page load behaviour in CSR —
+<p>Typical page load behaviour in CSR —</p>
+<ul>
+  <li>Browser requests the server for HTML,</li>
+  <li>Server sends HTML with script tags in head and no content in body,</li>
+  <li>Browser parses the HTML and makes http requests to load the scripts,</li>
+  <li>Once the scripts are loaded, the browser parses them and makes API requests and loads 
+  all the content asynchronously.</li>
+</ul>
 
-* Browser requests the server for HTML
-* Server sends HTML with script tags in head and no content in body
-* Browser parses the HTML and makes http requests to load the scripts
-* Once the scripts are loaded, the browser parses them and makes API requests and loads 
-  all the content asynchronously
-
-Since the all the content starts loading only after loading the initial JavaScript, it 
+<p>Since the all the content starts loading only after loading the initial JavaScript, it 
 takes a longer time to show any content on the page. If the user is on a slow network, 
-the content is blocked for an even longer time due to lower bandwidth and higher latency.
-
+the content is blocked for an even longer time due to lower bandwidth and higher latency.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h4>2. Server Side Rendering:</h4>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-
-When rendering on the server side, the HTML is rendered on the server and sent to the 
+<p>When rendering on the server side, the HTML is rendered on the server and sent to the 
 client. The content that we need to display on the screen becomes available immediately 
-after the HTML is parsed; hence, primary rendering of content is faster than CSR.
+after the HTML is parsed; hence, primary rendering of content is faster than CSR.</p>
 
-Typical page load behaviour in SSR —
+<p>Typical page load behaviour in SSR —</p>
+<ul>
+  <li>Browser requests the server for HTML.</li>
+  <li>Server makes API requests (usually co-located) and renders the content in the server.</li>
+  <li>Once the page is ready, the server sends it to the browser.</li>
+  <li>The browser loads and parses the HTML and paints the content on the screen without 
+    waiting for the JavaScript bundle(s) to load.</li>
+  <li>Once the JavaScript bundle(s) are loaded, the browser hydrates interactivity to DOM 
+    elements, which is usually attaching event handlers and other interactive behaviours.</li>
+</ul>
 
-* Browser requests the server for HTML.
-* Server makes API requests (usually co-located) and renders the content in the server.
-* Once the page is ready, the server sends it to the browser.
-* The browser loads and parses the HTML and paints the content on the screen without 
-  waiting for the JavaScript bundle(s) to load.
-* Once the JavaScript bundle(s) are loaded, the browser hydrates interactivity to DOM 
-  elements, which is usually attaching event handlers and other interactive behaviours.
-
-Since the APIs are usually co-located with the server, the content is loaded super fast (faster than CSR) and the HTML is sent to the browser. Initial JavaScript load doesn&apos;t block content load as the HTML sent by the server already has the content.
+<p>Since the APIs are usually co-located with the server, the content is loaded super fast 
+(faster than CSR) and the HTML is sent to the browser. Initial JavaScript load doesn&apos;t 
+block content load as the HTML sent by the server already has the content.</p>
 
 <p align="center">
     <img src="assets/images/progressive-rendering.png" alt="Progressive Rendering" width="500px" />
@@ -2510,9 +2505,10 @@ Since the APIs are usually co-located with the server, the content is loaded sup
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h2 id="7-html-iframe">HTML iFrame</h2>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-
-HTML iFrames offer a powerful way to embed external content, such as videos, maps, or other webpages, directly into your own webpage. This article provides an in-depth exploration of HTML iframes, their syntax, and how they can be used to enhance your web development projects.
-
+<p>HTML iFrames offer a powerful way to embed external content, such as videos, maps, or 
+other webpages, directly into your own webpage. This article provides an in-depth 
+exploration of HTML iframes, their syntax, and how they can be used to enhance your web 
+development projects.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3>What are HTML Iframes?</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -2537,9 +2533,9 @@ Iframes can include videos, maps, or entire web pages from other sources.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p>The &lt;iframe&gt; HTML element represents a nested browsing context, embedding another 
 HTML page into the current one. Each embedded browsing context has its own 
-**session history** and **document**. The browsing context that embeds the others is 
+<b>session history</b> and <b>document</b>. The browsing context that embeds the others is 
 called the parent browsing context. The topmost browsing context — the one with no 
-parent — is usually the browser window, represented by the **Window** object.</p>
+parent — is usually the browser window, represented by the <b>Window</b> object.</p>
 
 <div align="right">
     <b><a href="#toc">↥ back to top</a></b>
@@ -2590,7 +2586,8 @@ parent — is usually the browser window, represented by the **Window** object.<
 |src             |the address of the resource included in the iframe|
 |width           |sets the width of the iframe (if not specified, the default width is 300 pixels)|
 
-*Note: Because each browsing context is a complete document environment, every `&lt;iframe&gt;` in a page requires increased memory and other computing resources.*
+<i>Note: Because each browsing context is a complete document environment, every 
+`&lt;iframe&gt;` in a page requires increased memory and other computing resources.</i>
 
 <div align="right">
     <b><a href="#toc">↥ back to top</a></b>
@@ -2607,7 +2604,6 @@ the spam attack.</p>
 
 <p>There may be times, when you do not have control over what people publish on your 
 websites, for example some blog comments and some kind of forum posting.</p>
-
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h5>Example:</h5>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -2634,7 +2630,6 @@ link.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h4>3. rel="noopener"</h4>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-
 <p>It prevents the new page from being able to access the `window.opener` property and 
 will make it run in a separate process. noopener tag works as a security fix which 
 prevents malicious links to take control over an opened tab.</p>
@@ -2684,8 +2679,9 @@ enclosing context.</p>
 <p>HTML tags are used to influence the way our pages appear in search results. With the 
 help of certain tags, we can turn regular search snippets into rich snippets, and maybe 
 even into featured snippets. And, as our search snippets get more advanced, they are 
-able to secure better **Search Engine Results Pages (SERP)** positions and attract more 
+able to secure better <b>Search Engine Results Pages (SERP)</b> positions and attract more 
 traffic.</p>
+
 <p>Here are all the HTML tags that still matter:</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h2 id="2-html-tags">2. HTML Tags</h2>
@@ -2742,8 +2738,11 @@ loaded or by helping screen readers convey images). In HTML it may look like thi
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h5>5. Open Graph tags:</h5>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-
-Open Graph (OG) tags are placed in the &lt;head&gt; section of a page and allow any webpage to become a rich object in social networks. OG tags let you control how the information about your page is represented when shared via social channels. This possibility may help you enhance the performance of your links on social media, thus driving more click-throughs and increasing conversions. In HTML, it can look like this:
+<p>Open Graph (OG) tags are placed in the &lt;head&gt; section of a page and allow any 
+webpage to become a rich object in social networks. OG tags let you control how the 
+information about your page is represented when shared via social channels. This 
+possibility may help you enhance the performance of your links on social media, thus 
+driving more click-throughs and increasing conversions. In HTML, it can look like this:</p>
 
 ```html
 <meta name="og:title" property="og:title" content="Your Open Graph Title Goes Here">
@@ -2752,8 +2751,10 @@ Open Graph (OG) tags are placed in the &lt;head&gt; section of a page and allow 
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h5>6. Robots tag:</h5>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-
-A robots tag is an element in the HTML of a page that informs search engines which pages on your site should be indexed and which should not. Its functions are similar to robots.txt, but robots.txt gives suggestions. Whereas robots tags give instructions. In HTML, it can look like this:
+<p>A robots tag is an element in the HTML of a page that informs search engines which 
+pages on your site should be indexed and which should not. Its functions are similar 
+to robots.txt, but robots.txt gives suggestions. Whereas robots tags give instructions. 
+In HTML, it can look like this:</p>
 
 ```html
 <meta name="robots" content="index, follow">
@@ -2762,8 +2763,11 @@ A robots tag is an element in the HTML of a page that informs search engines whi
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h5>7. Canonical tag:</h5>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-
-A canonical tag is a way of telling search engines that a specific URL represents the master copy of a page. Using the canonical tag prevents problems caused by identical or "duplicate" content appearing on multiple URLs. Practically speaking, the canonical tag tells search engines which version of a URL you want to appear in search results. In HTML, it may look like this:
+<p>A canonical tag is a way of telling search engines that a specific URL represents the 
+master copy of a page. Using the canonical tag prevents problems caused by identical or 
+"duplicate" content appearing on multiple URLs. Practically speaking, the canonical tag 
+tells search engines which version of a URL you want to appear in search results. In 
+HTML, it may look like this:</p>
 
 ```html
 <link href="URL" rel="canonical">
@@ -2772,7 +2776,11 @@ A canonical tag is a way of telling search engines that a specific URL represent
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h5>8. HTML5 semantic tags:</h5>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-One of the most important features of HTML5 is its semantics tags. Semantic tags refers to syntax that makes the HTML more comprehensible by better defining the different sections and layout of web pages. It makes web pages more informative and adaptable, allowing browsers and search engines to better interpret content. For example, instead of using &lt;div id="header"></div&gt; you can use a &lt;header></hrader&gt; tag.
+<p>One of the most important features of HTML5 is its semantics tags. Semantic tags refers 
+to syntax that makes the HTML more comprehensible by better defining the different sections 
+and layout of web pages. It makes web pages more informative and adaptable, allowing 
+browsers and search engines to better interpret content. For example, instead of using 
+&lt;div id="header"&gt;&lt;/div&gt; you can use a &lt;header&gt;&lt;/hrader&gt; tag.</p>
 
 <p align="center">
     <img src="assets/images/semantic-tags.png" alt="HTML5 semantic tags" width="300px" />
@@ -2795,8 +2803,9 @@ One of the most important features of HTML5 is its semantics tags. Semantic tags
 <input id="inputId" type="text" value="Hello World!" />
 ```
 
-The **value** property reflects the current text-content inside the input box, whereas the **value** attribute contains the initial text-content of the **value** attribute from the HTML source code
-
+<p>The <b>value</b> property reflects the current text-content inside the input box, 
+whereas the <b>value</b> attribute contains the initial text-content of the 
+<b>value</b> attribute from the HTML source code.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3>Difference between HTML attributes and DOM properties:</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -2814,8 +2823,10 @@ The **value** property reflects the current text-content inside the input box, w
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h2>Q. How do you set IE compatibility mode?</h2>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-
-**X-UA-Compatible** is a document mode meta tag that allows to choose what version of Internet Explorer the page should be rendered as. It is used by Internet Explorer 8 to specify whether a page should be rendered as IE 7 (compatibility view) or IE 8 (standards view).
+<p><b>X-UA-Compatible</b> is a document mode meta tag that allows to choose what version 
+of Internet Explorer the page should be rendered as. It is used by Internet Explorer 8 
+to specify whether a page should be rendered as IE 7 (compatibility view) or IE 8 
+(standards view).</p>
 
 ```html
 <html>
@@ -2829,13 +2840,16 @@ The **value** property reflects the current text-content inside the input box, w
 </html>
 ```
 
-Emulating the version tells the browser to use the DOCTYPE to determine how to render content. pages without a DOCTYPE will be rendered in quirks mode. Edge mode tells Windows Internet Explorer to display content in the highest mode available, which actually breaks the "lock-in" paradigm. With Internet Explorer 8, this is equivalent to IE8 mode.
-
+<p>Emulating the version tells the browser to use the DOCTYPE to determine how to render 
+content. pages without a DOCTYPE will be rendered in quirks mode. Edge mode tells 
+Windows Internet Explorer to display content in the highest mode available, which 
+actually breaks the "lock-in" paradigm. With Internet Explorer 8, this is equivalent 
+to IE8 mode.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h4>Setting the Meta Element:</h4>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-
-The meta element includes a content attribute that enables you to specify the mode that content is rendered in for the webpage, as the following table shows.
+<p>The meta element includes a content attribute that enables you to specify the mode 
+that content is rendered in for the webpage, as the following table shows.</p>
 
 |Value          |Rendering mode                                              |
 |---------------|------------------------------------------------------------|
@@ -2850,12 +2864,10 @@ The meta element includes a content attribute that enables you to specify the mo
 <div align="right">
     <b><a href="#toc">↥ back to top</a></b>
 </div>
-
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h2>Q. What is an optional tag?</h2>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-
-The following lists all optional tags.
+<p>The following lists all optional tags.</p>
 
 |Tag            |Description       |
 |---------------|------------------|
@@ -2896,34 +2908,38 @@ The following lists all optional tags.
 <div align="right">
     <b><a href="#toc">↥ back to top</a></b>
 </div>
-
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h2>Q. What is an HTML preprocessor? Have you used different HTML templating languages before?</h2>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<p>A <b>HTML preprocessor</b> is a program that takes one type of data and converts it to 
+another one. In case of HTML and CSS, some of the more popular preprocessor languages 
+are Slim and Sass. Slim is processed into HTML and Sass is processed into CSS.</p>
 
-A **HTML preprocessor** is a program that takes one type of data and converts it to another one. In case of HTML and CSS, some of the more popular preprocessor languages are Slim and Sass. Slim is processed into HTML and Sass is processed into CSS.
+<p>No, but I heard about html template language like PUG (formerly Jade), Haml, ERB, 
+Slim, Handlebars, Jinja, Liquid etc which is HTML preprocessor this mean that it is 
+basically a language that will be converted to native html code.</p>
 
-No, but I heard about html template language like PUG (formerly Jade), Haml, ERB, Slim, Handlebars, Jinja, Liquid etc which is HTML preprocessor this mean that it is basically a language that will be converted to native html code.
-
-The typical usage is when you render something on the server side. The usual use-case is when you have to add dynamic content to your website, so when you fetch something from your database, you will have to replace some parts in your original template.
+<p>The typical usage is when you render something on the server side. The usual use-case 
+is when you have to add dynamic content to your website, so when you fetch something from 
+your database, you will have to replace some parts in your original template.</p>
 
 <div align="right">
     <b><a href="#toc">↥ back to top</a></b>
 </div>
-
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h2>Q. How do you change the direction of html text?</h2>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<p>The default text direction in HTML is left-to-right. However, when developing web 
+content and applications, we may need to set it to right-to-left, for instance, to 
+cater for languages such as Arabic, Hebrew, Pashto, Persian, Urdu, and Sindhi.</p>
 
-The default text direction in HTML is left-to-right. However, when developing web content and applications, we may need to set it to right-to-left, for instance, to cater for languages such as Arabic, Hebrew, Pashto, Persian, Urdu, and Sindhi.
-
-We can set text direction in HTML in one of two ways:
-
-* With the HTML **dir** attribute
-* With the CSS **direction** property
-
+<p>We can set text direction in HTML in one of two ways:</p>
+<ul>
+  <li>With the HTML <b>dir</b> attribute</li>
+  <li>With the CSS <b>direction</b> property</li>
+</ul>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-**Example:**
+<h5>Example:</h5>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 
 ```html
@@ -2934,7 +2950,9 @@ We can set text direction in HTML in one of two ways:
 <textarea dir="rtl"></textarea>
 ```
 
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h4>Attribute Values:</h4>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 
 |Value          |Description                |
 |---------------|---------------------------|
@@ -2945,15 +2963,15 @@ We can set text direction in HTML in one of two ways:
 <div align="right">
     <b><a href="#toc">↥ back to top</a></b>
 </div>
-
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h2>Q. When is it appropriate to use the small element?</h2>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-
-The &lt;small&gt; HTML element represents side-comments and small print, like copyright and legal text, independent of its styled presentation. By default, it renders text within it one font-size smaller, such as from `small` to `x-small`.
-
+<p>The &lt;small&gt; HTML element represents side-comments and small print, like 
+copyright and legal text, independent of its styled presentation. By default, it 
+renders text within it one font-size smaller, such as from <mark>small</mark> to 
+<mark>x-small</mark>.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-**Example:**
+<h5>Example:</h5>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 
 ```html
@@ -2981,11 +2999,9 @@ The &lt;small&gt; HTML element represents side-comments and small print, like co
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h2>Q. How do you serve a page with content in multiple languages?</h2>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-
-The **lang** attribute specifies the language of the element&apos;s content.
-
+<p>The <b>lang</b> attribute specifies the language of the element&apos;s content.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-**Example:**
+<h5>Example:</h5>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 
 ```html
@@ -3060,7 +3076,6 @@ an entry in the outline of the page.</p>
 meaning. It can be used with the `lang`, `title`, and `class` attributes to add semantics 
 that is common to a group of consecutive elements. This element can also be used in a 
 &lt;dl&gt; tag and wrap groups of &lt;dt&gt; and &lt;dd&gt; elements.</p>
-
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h5>Example:</h5>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -3115,8 +3130,10 @@ Thus, many decisions about how to handle malformed documents are left up to the 
 </div>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h2>Q. Why you would use a <mark><b>srcset</b></mark> attribute in an image tag?</h2>
-<h4>Explain the process the browser used when evaluating the content of this attribute.</h4>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<h4>Explain the process the browser used when evaluating the content of this attribute.</h4>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p>The <mark><b>srcset</b></mark> attribute allows to define a list of different image 
 resources along with size information so that browser can pick the most appropriate 
 image based on the actual device&apos;s resolution.</p>
@@ -3153,8 +3170,8 @@ with display density it should be used, for example1x, 2x etc.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h4>2. Using width descriptor:</h4>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-
-The syntax is similar to the display density descriptor, but instead of display density values, we provide the actual width of the image.
+<p>The syntax is similar to the display density descriptor, but instead of display 
+density values, we provide the actual width of the image.</p>
 
 <h5>Example:</h5>
 
@@ -3177,11 +3194,19 @@ way to make Web content and Web applications more accessible to people with disa
 It especially helps with dynamic content and advanced user interface controls developed 
 with HTML, JavaScript, and related technologies.</p>
 
-Screen readers work with regular HTML, but adding ARIA can provide screen reader users with greater context and interactivity with the content on the page. ARIA has no effect on how elements are displayed or behave in browsers. It does not add new functionality, and is meant to act only as an extra descriptive layer for screen readers.
+<p>Screen readers work with regular HTML, but adding ARIA can provide screen reader users 
+with greater context and interactivity with the content on the page. ARIA has no effect on 
+how elements are displayed or behave in browsers. It does not add new functionality, and 
+is meant to act only as an extra descriptive layer for screen readers.</p>
 
-Without WAI-ARIA certain functionality used in Web sites is not available to some users with disabilities, especially people who rely on screen readers and people who cannot use a mouse. WAI-ARIA addresses these accessibility challenges, for example, by defining ways for functionality to be provided to assistive technology. With WAI-ARIA, developers can make advanced Web applications accessible and usable to people with disabilities.
+<p>Without WAI-ARIA certain functionality used in Web sites is not available to some 
+users with disabilities, especially people who rely on screen readers and people who 
+cannot use a mouse. WAI-ARIA addresses these accessibility challenges, for example, 
+by defining ways for functionality to be provided to assistive technology. With 
+WAI-ARIA, developers can make advanced Web applications accessible and usable to 
+people with disabilities.</p>
 
-ARIA attributes are divided into two categories: roles, and states & properties.
+<p>ARIA attributes are divided into two categories: roles, and states & properties.</p>
 
 **ARIA Roles:**
 
@@ -3275,29 +3300,49 @@ Abstract aria roles are the basis of how the other ARIA roles are defined. These
 
 **ARIA States & Properties:**
 
-ARIA states and properties are often used to support ARIA roles that exist on a page. ARIA Properties often describe relationships with other elements, and for the most part, do not change once they&apos;re set.
+<p>ARIA states and properties are often used to support ARIA roles that exist on a page. 
+ARIA Properties often describe relationships with other elements, and for the most part, 
+do not change once they&apos;re set.</p>
 
-ARIA States are more dynamic and are typically updated with JavaScript as a user interacts with a page. Screen readers are notified when these states change, and can announce these changes to users after an interaction takes place.
+<p>ARIA States are more dynamic and are typically updated with JavaScript as a user 
+interacts with a page. Screen readers are notified when these states change, and can 
+announce these changes to users after an interaction takes place.</p>
 
-While there are 35 aria properties and states the W3C defines and which you can read more about on the W3C site, here are the ones we believe to most commonly used and practical for most web pages/applications.
+<p>While there are 35 aria properties and states the W3C defines and which you can 
+read more about on the W3C site, here are the ones we believe to most commonly used 
+and practical for most web pages/applications.</p>
 
-* **aria-activedescendant**: Identifies the currently active descendant of a composite widget. Use with autofill search suggestions.
-* **aria-autocomplete**: Indicates whether user input completion suggestions are provided. Use with autofill search suggestions.
-* **aria-checked (state)**: Indicates the current “checked” state of checkboxes, radio buttons, and other widgets. You can set this to true, false, or mixed state. 
-* **aria-controls**: Identifies the element (or elements) whose contents or presence are controlled by the current element.
-* **aria-describedby**: Identifies the element (or elements) that describes the object.
-* **aria-disabled (state)**: Indicates that the element is perceivable but disabled, so it is not editable or otherwise operable.
-* **aria-expanded (state)**: Indicates whether the element, or another grouping element it controls, is currently expanded or collapsed.
-* **aria-hidden (state)**: Indicates that the element and all of its descendants are not visible or perceivable to any user as implemented by the author.
-* **aria-invalid (state)**: Indicates the entered value does not conform to the format expected by the application.
-* **aria-label**: Defines a string value that labels the current element.
-* **aria-labelledby**: Identifies the element (or elements) that labels the current element.
-* **aria-live**: Indicates that an element is dynamic, changing, and will be updated, and describes the types of updates the user can expect from the live region.
-* **aria-owns**: Identifies an element (or elements) in order to define a visual, functional, or contextual parent/child  relationship between DOM elements where the DOM hierarchy cannot be used to represent the relationship.
-* **aria-pressed (state)**: Indicates the current “pressed” state of toggle buttons.
-* **aria-required**: Indicates that user input is required on the element before a form may be submitted.
-* **aria-selected (state)**: Indicates the current “selected” state of various widgets.
-
+<ul>
+  <li><b>aria-activedescendant</b>: Identifies the currently active descendant of a 
+    composite widget. Use with autofill search suggestions.</li>
+  <li><b>aria-autocomplete</b>: Indicates whether user input completion suggestions are 
+    provided. Use with autofill search suggestions.</li>
+  <li><b>aria-checked (state)</b>: Indicates the current “checked” state of checkboxes, 
+    radio buttons, and other widgets. You can set this to true, false, or mixed state.</li>
+  <li><b>aria-controls</b>: Identifies the element (or elements) whose contents or 
+    presence are controlled by the current element.</li>
+  <li><b>aria-describedby</b>: Identifies the element (or elements) that describes 
+    the object.</li>
+  <li><b>aria-disabled (state)</b>: Indicates that the element is perceivable but 
+    disabled, so it is not editable or otherwise operable.</li>
+  <li><b>aria-expanded (state)</b>: Indicates whether the element, or another grouping 
+    element it controls, is currently expanded or collapsed.</li>
+  <li><b>aria-hidden (state)</b>: Indicates that the element and all of its descendants 
+    are not visible or perceivable to any user as implemented by the author.</li>
+  <li><b>aria-invalid (state)</b>: Indicates the entered value does not conform to the 
+    format expected by the application.</li>
+  <li><b>aria-label</b>: Defines a string value that labels the current element.</li>
+  <li><b>aria-labelledby</b>: Identifies the element (or elements) that labels the 
+    current element.</li>
+  <li><b>aria-live</b>: Indicates that an element is dynamic, changing, and will be 
+    updated, and describes the types of updates the user can expect from the live region.</li>
+  <li><b>aria-owns</b>: Identifies an element (or elements) in order to define a visual, 
+    functional, or contextual parent/child  relationship between DOM elements where the 
+	DOM hierarchy cannot be used to represent the relationship.</li>
+  <li><b>aria-pressed (state)</b>: Indicates the current “pressed” state of toggle buttons.</li>
+  <li><b>aria-required</b>: Indicates that user input is required on the element before a form may be submitted.</li>
+  <li><b>aria-selected (state)</b>: Indicates the current “selected” state of various widgets.</li>
+</ul>
 <div align="right">
     <b><a href="#toc">↥ back to top</a></b>
 </div>
@@ -3385,23 +3430,21 @@ While there are 35 aria properties and states the W3C defines and which you can 
 <div align="right">
     <b><a href="#toc">↥ back to top</a></b>
 </div>
-
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h2 id="3-html-events">HTML Events</h2>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3>Types of Events</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<h4>There are muliple types; Window, Form, Keyboard, Mouse, Drag, Clipboard, 
-Media, &amp; Miscellaneous.</h4>
+<h4>There are muliple types; Window, Form, Keyboard, Mouse, Drag, Clipboard, Media, &amp; 
+Miscellaneous.</h4>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h4 id="global-events">Global Event Attributes</h4>
-HTML has the ability to let events trigger actions in a browser, like starting a JavaScript when a user clicks on an element.
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-
-Below are the global event attributes that can be added to HTML elements to define event actions.
-
+<p>HTML has the ability to let events trigger actions in a browser, like starting a 
+JavaScript when a user clicks on an element.</p>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<p>Below are the global event attributes that can be added to HTML elements to define 
+event actions.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h4 id="window-events">Window Event Attributes</h4>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -3437,7 +3480,8 @@ Below are the global event attributes that can be added to HTML elements to defi
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h4 id="form-events">Form Events</h4>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<p>Events triggered by actions inside a HTML form (applies to almost all HTML elements, but is most used in form elements):</p>
+<p>Events triggered by actions inside a HTML form (applies to almost all HTML elements, 
+but is most used in form elements):</p>
 
 | Attribute      | Value  | Description |
 |----------------|--------|--------------------------------------------------------------------------|
@@ -3506,7 +3550,6 @@ Below are the global event attributes that can be added to HTML elements to defi
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h4 id="media-events">Media Events</h4>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-
 <p>Events triggered by medias like videos, images and audio (applies to all HTML 
 elements, but is most common in media elements, like &lt;audio&gt;, &lt;embed&gt;, &lt;img&gt;, 
 &lt;object&gt;, and &lt;video&gt;).</p>
@@ -3573,7 +3616,6 @@ Elements     | Descriptions |
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3>Commonly Used Input Types in HTML Forms</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-
 <div align="right">
     <b><a href="#toc">↥ back to top</a></b>
 </div>
@@ -3638,11 +3680,9 @@ as username and password with the button to submit the form.</p>
   alt="Form 02."
   style="width:40%" >
 </p>  
-
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h4>2. HTML Forms Example:</h4>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-
 <p><b>Example:</b> This HTML form collects user personal information including 
 name, email, password, gender, date of birth, and address. It features proper 
 styling for input fields and submission button.</p>
@@ -3773,6 +3813,7 @@ styling for input fields and submission button.</p>
     </body>
 </html>
 ```
+
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 04-03.  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center">
@@ -3811,11 +3852,9 @@ styling for input fields and submission button.</p>
   <li>Defines actions for data submission upon form completion.</li>
   <li>Supports client-side validation for enhanced user experience.</li>
 </ul>
-
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h4>Conclusion</h4>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-
 <p>In conclusion, HTML forms are a powerful tool for collecting user input on 
 the web. They provide a wide range of interactive controls, from text fields 
 to checkboxes, radio buttons, and more. Understanding the syntax and attributes 
@@ -3875,7 +3914,6 @@ between different types of data. Tables are also used to create databases.</p>
 
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h4>Output</h4>
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 05-01. simple html table ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center">
@@ -3885,7 +3923,6 @@ between different types of data. Tables are also used to create databases.</p>
   alt="Simple HTML table."
   style="width:40%" >
 </p>  
-
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3>Tags used in HTML Tables</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -3937,9 +3974,11 @@ denoted by &lt;tr&gt; and &lt;/tr&gt; tag as a start & end tags.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h4>Table Headers</h4>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-The Headers are generally use to provide the Heading. The Table Headers can also be used to add the heading to the Table. This contains the <th> & </th> tags.
-
+<p>The Headers are generally use to provide the Heading. The Table Headers can also be 
+used to add the heading to the Table. This contains the &lt;th&gt; & &lt;/th&gt; tags.</p>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h5>Syntax</h5>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 
 ```
 <th> Content...</th> 
@@ -3991,7 +4030,6 @@ The Headers are generally use to provide the Heading. The Table Headers can also
   alt="HTML table."
   style="width:40%" >
 </p>
-
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h4>Adding a border to an HTML Table</h4>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -4063,7 +4101,6 @@ table, th, td {
   alt="Table with border."
   style="width:40%" >
 </p>
-
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h4>Adding Collapsed Borders in an HTML Table</h4>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -4141,7 +4178,6 @@ table, th, td {
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p>Cell padding specifies the space between the cell content and its borders. If 
 we do not specify a padding, the table cells will be displayed without padding.</p>
-
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h5>Syntax</h5>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -4214,14 +4250,14 @@ th, td {
   alt="Adding table cell padding."
   style="width:40%" >
 </p>
-
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h4>Adding Left Align Headings in an HTML Table</h4>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p>By default, the table headings are bold and centered. To left-align the table 
 headings, we must use the CSS text-align property.</p>
-
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h5>Syntax</h5>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 
 ```
 th {
@@ -4571,7 +4607,6 @@ table {
   alt="Adding Caption using the Tag."
   style="width:40%" >
 </p>
-
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h4>Adding a Background Colour to the Table</h4>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -4669,6 +4704,7 @@ table#t01 {
 </html>
 ```
 
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h5>Output:</h5>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 05-11. adding background color ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -4781,19 +4817,16 @@ any information on web pages in the ordered or unordered form.</p>
   alt="HTML List."
   style="width:40%" >
 </p>
-
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3>There are three types of lists in HTML:</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h4>Table of Content</h4>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-
 <ol>
   <li>HTML Unordered List or Bulleted List</li>
   <li>HTML Ordered List</li>
   <li>HTML Description List</li>
 </ol>
-
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3>HTML List Tags</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -4811,11 +4844,9 @@ any information on web pages in the ordered or unordered form.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3>The HTML Unordered List or Bulleted List</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-
 <p>The unordered list items are marked with bullets. It is also known as bulleted 
 lists. An unordered list starts with the &lt;ul&gt; tag. Each list item starts with the 
 &lt;li&gt; tag.</p>
-
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h5>Syntax:</h5>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -4861,15 +4892,12 @@ lists. An unordered list starts with the &lt;ul&gt; tag. Each list item starts w
   alt="Unordered List."
   style="width:40%" >
 </p>
-
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3>HTML Ordered List</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-
 <p>In an ordered list, all list items are marked with numbers by default. An 
 ordered list starts with the &lt;ol&gt; tag. Each list item starts with the 
 "li" tag.</p>
-
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h5>Syntax:</h5>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -4948,14 +4976,12 @@ control list counting & type attribute.</p>
   alt="Ordered list with different list style."
   style="width:40%" >
 </p>
-
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3>HTML Description List</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p>A description list is a list of terms, with a description of each term. The 
 &lt;dl&gt; tag defines the description list, the &lt;dt&gt; tag defines the term name, 
 and the &lt;dd&gt; tag describes each term.</p>
-
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h5>Syntax:</h5>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -5028,7 +5054,7 @@ while encoding. Similarly, a $ sign is replaced by ‘%24’.</p>
   <li><p><a href="https://mateam.net/html-escape-characters/">HTML Escape Characters</a></p></li>
 </ul>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<h4>Syntax:</h4>
+<h5>Syntax:</h5>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p>A web address follows these syntax rules:</p>
 <pre>
@@ -5050,7 +5076,6 @@ communication.<br/>
   are 80 for HTTP and 443 for HTTPS.<br>
 <b>Path:</b> It specifies the location or directory on the server where the resource is located.<br/>
 <b>Filename:</b> It refers to the specific file or resource within the specified path.</p>
-
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h2 id="9-html-svg">09. HTML SVG Basics</h2>
 <!-- geeks 4 geeks - https://www.geeksforgeeks.org/html-svg-basics/ -->
@@ -5070,7 +5095,6 @@ and attribute in SVG files can be animated.</p>
 <h3>Advantages of SVG:</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p>The advantages of using SVG over other image formats (like JPEG and GIF) are:</p>
-
 <ul>
   <li>SVG images scale without losing quality, making them perfect for responsive designs.</li>
   <li>SVG files are often smaller than bitmap images, reducing load times.</li>
@@ -5078,7 +5102,6 @@ and attribute in SVG files can be animated.</p>
   <li>SVG content is accessible to screen readers, enhancing web accessibility.</li>
   <li>SVG supports CSS and JavaScript animations, allowing for interactive and dynamic graphics.</li>
 <ul>
-
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3>Differences between SVG and Canvas</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -5121,8 +5144,16 @@ a blue line drawn diagonally within an SVG element.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h5>Output:</h5>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ svg 01 - svg line drawing ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<p align="center">
+<img class="displayed"
+  src="./images/09-image001.png"
+  title="SVG Line Drawing"
+  alt="SVG Line Drawing."
+  style="width:40%" >
+</p>
 <!-- 09-image001.png - SVG Line Drawing -->
-
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h4>Example 2: Drawing a Circle</h4>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -5154,9 +5185,16 @@ The circle has a center at (80, 80) and a radius of 50.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h5>Output</h5>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ svg 02 - svg circle drawing ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<p align="center">
+<img class="displayed"
+  src="./images/09-image002.png"
+  title="SVG Circle Drawing"
+  alt="SVG Circle Drawing."
+  style="width:40%" >
+</p>
 <!-- 09-image002.png - SVG Circle Drawing -->
-
-
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h4>Example 3: Drawing a Rectangle</h4>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -5187,8 +5225,16 @@ border. The rectangle has a width of 400 and a height of 100.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h5>Output:</h5>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<09-image003.png - SVG Rectangle Drawing -->
-
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ svg 03 - svg rectangle drawing ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<p align="center">
+<img class="displayed"
+  src="./images/09-image003.png"
+  title="SVG Rectangle Drawing"
+  alt="SVG Rectangle Drawing."
+  style="width:40%" >
+</p>
+<!-- 09-image003.png - SVG Rectangle Drawing -->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h4>Example 4: Drawing a Rounded Rectangle</h4>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -5221,9 +5267,18 @@ corners, a black border, and 50% opacity, positioned at coordinates (80, 20).</p
 </html>
 ```
 
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h5>Output:</h5>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~ svg 04 - svg rounded rectangle drawing ~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<p align="center">
+<img class="displayed"
+  src="./images/09-image004.png"
+  title="SVG Rounded Rectangle Drawing"
+  alt="SVG Rounded Rectangle Drawing."
+  style="width:40%" >
+</p>
 <!-- 09-image004.png - SVG Rounded Rectangle Drawing -->
-
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h4>Example 5: Drawing a Star</h4>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -5250,9 +5305,19 @@ border. The polygon is defined by a series of points and has a 5-pixel stroke wi
 </html>
 ```
 
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h5>Output:</h5>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ svg 05 - svg star drawing ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<p align="center">
+<img class="displayed"
+  src="./images/09-image005.png"
+  title="SVG Star Drawing"
+  alt="SVG Star Drawing."
+  style="width:40%" >
+</p>
 <!-- 09-image005.png - SVG Star Drawing-->
-
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h4>Example 6: Drawing a Logo</h4>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -5292,8 +5357,16 @@ using the ARIAL font family.</p>
 
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h5>Output:</h5>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~ svg 06 - greeks-for-greeks logo using svg ~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<p align="center">
+<img class="displayed"
+  src="./images/09-image006.png"
+  title="Greeks for Greeks logo using SVG"
+  alt="Greeks for Greeks logo using SVG."
+  style="width:40%" >
+</p>
 <!-- 09-image006.png - GFG Logo using SVG -->
-
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3>SVG &lt;a&gt; Element</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -5366,6 +5439,15 @@ It’s wrapped with an anchor (&lt;a&gt;) tag, making it a clickable link that r
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h5>Output</h5>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ svg 07 - svg a tag example ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<p align="center">
+<img class="displayed"
+  src="./images/09-image007.gif"
+  title="SVG a Tag Example"
+  alt="SVG a Tag Example."
+  style="width:40%" >
+</p>
 <!-- 09-image007.gif - SVG a tag example output -->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h5>Example 2:</h5>
@@ -5405,9 +5487,16 @@ by an anchor (&lt;a&gt;) tag, creating a clickable area that redirects to anothe
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h5>Output:</h5>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ svg 08 - svg a tag example ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<p align="center">
+<img class="displayed"
+  src="./images/09-image008.gif"
+  title="SVG a Tag Example"
+  alt="SVG a Tag Example."
+  style="width:40%" >
+</p>
 <!-- 09-image008.gif - SVG a tag example output -->
-
-
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3>SVG &lt;animate&gt; Element</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -5416,7 +5505,6 @@ like in HTML canvas.</p>
 
 <p>The &lt;animate&gt; SVG element is used to animate an attribute or property of an 
 element over time. It’s normally inserted inside the element which we want to animate.</p>
-
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h5>Syntax:</h5>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -5433,7 +5521,6 @@ element over time. It’s normally inserted inside the element which we want to 
   <li><b>Global Attributes</b>: some global attributes used like core attributes and styling attributes, etc.</li>
 </ul>
 <p>Below given are a few examples of the above element:</p>
-
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h5>Example 1:</h5>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -5458,7 +5545,6 @@ element over time. It’s normally inserted inside the element which we want to 
 <h5>Output:</h5>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!-- 09-image009.gif - svg animate - rectangle to circle -->
-
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h5>Example 2:</h5>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -5489,7 +5575,6 @@ element over time. It’s normally inserted inside the element which we want to 
 <h5>Output:</h5>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!-- 09-image010 - svg animate - dark to light green -->
-
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3>SVG &lt;animateMotion&gt; Element</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -5497,7 +5582,6 @@ element over time. It’s normally inserted inside the element which we want to 
 like in HTML canvas.</p>
 
 <p>The SVG &lt;animateMotion&gt; element let define how an element moves along a motion path.</p>
-
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h5>Syntax:</h5>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -5543,7 +5627,6 @@ like in HTML canvas.</p>
 <h5>Output:</h5>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!-- 09-image011.gif - infinity ball -->
-
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3>SVG &lt;animateTransform&gt; Element</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -5601,14 +5684,13 @@ and/or skewing.</p>
 <h5>Output:</h5>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!-- 09-image012.gif - rotating rectangle -->
-
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3>SVG Circle</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p>SVG Circle facilitates the &lt;circle&gt; element which can be utilized to create a 
 circle. Basically, the &lt;circle&gt; element wrapped inside the &lt;svg&gt; element.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<h4>Syntax</h4>
+<h5>Syntax</h5>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 
 ```
@@ -5633,13 +5715,14 @@ circle. Basically, the &lt;circle&gt; element wrapped inside the &lt;svg&gt; ele
   <li><b>fill</b>: It specifies the color used to fill the circle (in this case, yellow).</li>
   <li><b>stroke-width</b>: It defines the width of the stroke (outline) of the circle.</li>
   <li><b>stroke</b>: It specifies the color of the stroke.</li>
-  <li><b>Default Behavior</b>: If no fill parameter is used, the circle is filled with a default color (generally black).</li>
+  <li><b>Default Behavior</b>: If no fill parameter is used, the circle is filled with a 
+    default color (generally black).</li>
 </ul>
-
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<h4>Example 1:</h4>
+<h5>Example 1:</h5>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<p>In this example, we will implement code to see the SVG circle with the the help of above attributes.</p>
+<p>In this example, we will implement code to see the SVG circle with the the help of 
+above attributes.</p>
 
 ```
 <!DOCTYPE html>
@@ -5689,9 +5772,8 @@ circle. Basically, the &lt;circle&gt; element wrapped inside the &lt;svg&gt; ele
 <h5>Output:</h5>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!-- 09-image013.png - example svg circle from geeks 4 geeks -->
-
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<h4>Example 2:</h4>
+<h5>Example 2:</h5>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p>In this example, we will show an SVG circle in HTML with the help of JavaScript.</p>
 
@@ -5741,7 +5823,6 @@ circle. Basically, the &lt;circle&gt; element wrapped inside the &lt;svg&gt; ele
 <h5>Output:</h5>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!-- 09-image014.png - black circle w/blue outside -->
-
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3>SVG &lt;clipPath&gt; Element</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -5749,12 +5830,1020 @@ circle. Basically, the &lt;circle&gt; element wrapped inside the &lt;svg&gt; ele
 by the clip-path property. It works the same as clip-path in CSS. The clipPath element 
 is used to put some restriction on a region such that anything drawn outside that region 
 will neither be visible nor be drawn.</p>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<h5>Syntax</h5>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 
+```
+<clipPath> ... </clipPath>
+```
 
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<h5>Attributes</h5>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<p><b>clipPathUnits</b>: This attribute defines the coordinate system for the 
+&lt;clipPath&gt; element’s content. Below given are a few examples of the function 
+given above.</p>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<h5>Example 1:</h5>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 
+```
+<!DOCTYPE html>
+<html lang="en">
 
+<head>
+    <meta charset="UTF-8" />
+    <meta property="viewport" content=
+        "width=device-width, initial-scale=1.0" />
 
+    <title>SVG clipPath Element</title>
+
+    <style>
+        @keyframes animation1 {
+            from {
+                width: 4px;
+                height: 4px;
+            }
+
+            to {
+                width: 150px;
+                height: 150px;
+            }
+        }
+
+        rect {
+            animation: animation1 10s ease-in-out;
+        }
+    </style>
+</head>
+
+<body>
+    <div style="width: 300px; height: 300px;">
+
+        <h1 style="color: green;">
+            GeeksforGeeks
+        </h1>
+        <h2>
+            SVG clipPath Element
+        </h2>
+
+        <svg width="500" height="500" 
+            transform="translate(100, 0)">
+            <clipPath id="gfg">
+                <rect width="4" height="4"></rect>
+            </clipPath>
+            <path id="path" d="M10, 30 A20, 20, 0, 0,
+                         1, 50, 30 A20, 20, 0, 0, 1,
+                         90, 30 Q90, 60, 50, 90 Q10, 
+                         60, 10, 30 Z" />
+            <use fill="green" clip-path="url(#gfg)" 
+                href="#path" />
+        </svg>
+    </div>
+</body>
+
+</html>
+```
+
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<h5>Output:</h5>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!-- 09image015.gif - heart change black to green -->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<h5>Example 2:</h5>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+
+```
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta property="viewport" content=
+        "width=device-width, initial-scale=1.0" />
+
+    <title>SVG clipPath Element</title>
+
+    <style>
+        @keyframes star {
+            from {
+                r: 0
+            }
+
+            to {
+                r: 500px
+            }
+        }
+
+        #gfg circle {
+            animation: star 25s ease;
+        }
+    </style>
+</head>
+
+<body>
+    <div style="width:300px; height:300px;">
+        <h1 style="color:green">
+            GeeksforGeeks
+        </h1>
+
+        <h2>SVG clipPath Element</h2>
+
+        <svg width="500" height="500" 
+            transform="translate(60, -40)">
+            
+            <clipPath id="gfg">
+                <circle />
+            </clipPath>
+            
+            <path id="star" d="
+                M 85.000 105.000
+                L 105.000 119.641
+                L 102.321 95.000
+                L 125.000 85.000
+                L 102.321 75.000
+                L 105.000 50.359
+                L 85.000 65.000
+                L 65.000 50.359
+                L 67.679 75.000
+                L 45.000 85.000
+                L 67.679 95.000
+                L 65.000 119.641
+                z" />
+            <use clip-path="url(#gfg)" 
+                href="#star" fill="red" />
+        </svg>
+    </div>
+</body>
+
+</html>
+```
+
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<h5>Output</h5>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!-- 09-image016.gif - transform black star to red -->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<h3>SVG defs Element</h3>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<p>The &lt;defs&gt; in SVG is used whenever we want a particular element to render only 
+when required or when it is called. objects that are created inside <defs> element are 
+not rendered directly they are needed to be called by <use> element to render them on 
+the browser.</p>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<h5>Syntax:</h5>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+
+```
+<defs></defs>
+```
+
+<p><b>Property values:</b> It does not have any property values.</p>
+
+<p>Below given are a few examples of the above function.</p>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<h5>Example 1:</h5>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<p>When &lt;defs&gt; is not called thus it is not executed.</p>
+
+```
+<!DOCTYPE html> 
+<html lang="en"> 
+<head> 
+  <meta charset="UTF-8"> 
+  <meta name="viewport" 
+        content="width=device-width, initial-scale=1.0"> 
+  <title>Document</title> 
+</head> 
+<style> 
+  svg{ 
+    background-color: green; 
+  } 
+</style> 
+<body>  
+  <h2> 
+    No Output only svg of size 100*100 is visible<br> 
+    and no circle stroke will be rendered</h2> 
+  <svg width="100px" height="100px"> 
+      
+    <!--this defs code will not be  
+        executed as it is not called-->
+    <defs> 
+      <circle cx="50" cy="50" r="40" 
+              stroke="black"/> 
+    </defs> 
+  </svg> 
+</body> 
+</html> 
+```
+
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<h5>Output:</h5>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!-- 09-image017.png -->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<h5>Example 2:</h5>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+
+```
+<!DOCTYPE html> 
+<html lang="en"> 
+<head> 
+<meta charset="UTF-8"> 
+<meta name="viewport"
+		content="width=device-width, initial-scale=1.0"> 
+<title>Document</title> 
+</head> 
+<style> 
+svg{ 
+	background-color: green; 
+} 
+</style> 
+<body> 
+<svg width="100px" height="100px"> 
+	<defs> 
+	<circle id="ele" cx="50" cy="50"
+			r="40" stroke="black"
+			stroke-width="10"/> 
+	</defs> 
+	
+	<!-- this defs code will not be executed 
+		as it is not called using use -->
+	<defs> 
+	<circle id="ele" cx="50" cy="50"
+			r="40" stroke="black"/> 
+	</defs> 
+	<use xlink:href="#ele"
+		fill="url('#myGradient')" /> 
+</svg> 
+</body> 
+</html> 
+```
+
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<h5>Output:</h5>
+<!-- 09-image018.png -->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<h3>SVG &lt;desc&gt; Element</h3>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<p>The &lt;desc&gt; element in SVG is used to provide an accessible text description to 
+any of the available SVG elements whether it is a container or graphic element.</p>
+
+<p><b>Property Values</b>: It does not have any property values.</p>
+
+<p>Below given are a few examples of the function given above.</p>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<h5>Example 1:</h5>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<p>The text inside the desc element is given in a circle element.</p>
+
+```
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" path1tent=
+        "width=device-width, initial-scale=1.0">
+    <title>SVG desc Element</title>
+
+    <style>
+        svg {
+            width: 200px;
+            height: 200px;
+            color: #ffffff;
+            background-color: green;
+        }
+    </style>
+</head>
+
+<body>
+    <svg>
+        <circle cx="100" cy="100" r="80">
+            <desc>Geeks for geeks</desc>
+        </circle>
+    </svg>
+</body>
+
+</html>
+```
+
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<h5>Output:</h5>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<p>Please note that the text is not shown in the output.</p>
+<!-- 09-image019.png -->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<h5>Example 2:</h5>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<p>The text inside the desc is given in a rectangle element.</p>
+
+```
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" path1tent=
+        "width=device-width, initial-scale=1.0">
+    <title>SVG desc Element</title>
+
+    <style>
+        svg {
+            width: 200px;
+            height: 200px;
+            color: black;
+            background-color: green;
+        }
+    </style>
+</head>
+
+<body>
+    <svg>
+        <rect aria-describedby="info" 
+            width="180" height="100" 
+            x="10" y="50" fill="white" 
+            stroke="black">
+            <desc id="info">
+                Geeks for geeks
+            </desc>
+        </rect>
+    </svg>
+</body>
+
+</html>
+```
+
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<h5>Output:</h5>
+<!-- 09-image020.png -->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<h3>SVG Ellipse Element</h3>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<p>The SVG &lt;ellipse&gt; element is used to create an ellipse. The difference between circle and 
+ellipse is that an ellipse has an x and a y radius that differs from each other, while a 
+circle has equal x and y radius:</p>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<h5>Syntax:</h5>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+
+```
+<ellipse
+   cx="x-axis co-ordinate"
+   cy="y-axis co-ordinate"
+   
+   rx="length" 
+   ry="length" >    
+</ellipse>
+```
+
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<h5>Attributes:</h5>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<ul>
+  <li><b>cx:</b> x-axis co-ordinate of the center.</li>
+  <li><b>cy:</b> y-axis co-ordinate of the center.</li>
+  <li><b>rx:</b> x-axis radius of the ellipse.</li>
+  <li><b>ry:</b> y-axis radius of the ellipse.</li>
+</ul>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<h5>Example:</h5>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+
+```
+<html> 
+   <title>SVG Ellipse</title> 
+   <body> 
+      <svg width="400" height="400"> 
+            <ellipse cx="100" cy="100" rx="90" ry="50" 
+            stroke="black" stroke-width="2" fill="grey"> 
+                  
+            </ellipse> 
+      </svg> 
+     
+   </body> 
+</html>
+```
+
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<h5>Output:</h5>
+<!-- 09-image021.png -->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<h5>Example:</h5>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<p>Change the opacity.</h5>
+
+```
+<html> 
+   <title>SVG Ellipse</title> 
+   <body> 
+      <svg width="400" height="400"> 
+            <ellipse cx="100" cy="100" rx="90" ry="50" 
+            stroke="black" stroke-width="2" fill="grey"
+            opacity="0.5"> 
+                  
+            </ellipse> 
+      </svg> 
+     
+   </body> 
+</html>
+```
+
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<h5>Output:</h5>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!-- 09-image022.png -->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<h3>SVG &lt;feBlend&gt; Element</h3>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<p>SVG stands for Scalable Vector Graphic. It can be used to make graphics and animations 
+like in HTML canvas.</p>
+
+<p>&lt;feBlend&gt; element is used to combines two images or SVG fragments into a single 
+graphic. It executes a pixel-wise combination of two input SVG fragments or images.</p>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<h5>Syntax:</h5>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+
+```
+ <feBlend in="" in2="" mode=""/>
+```
+
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<h5>Attributes:</h5>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<ul>
+  <li><b>in</b> – It identifies input for the given filter primitive.</li>
+  <li><b>in2</b> – It identifies the second input for the given filter primitive. It 
+    takes on the same values as the ‘in’ attribute.</li>
+  <li><b>mode</b> –  It defines the blending mode on the <feBlend> filter primitive. 
+    If mode is not specified, the normal value is executed.</li>
+</ul>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<h5>Example 1:</h5>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+
+```
+<!DOCTYPE html> 
+<html> 
+
+<body> 
+	<svg width="200" height="200"> 
+		<defs> 
+			<filter id="spotlight"> 
+				<feFlood result="floodFill"
+					x="0" y="0" width="100%"
+					height="100%" flood-color="green"
+					flood-opacity="1" /> 
+
+				<feBlend in="FillPaint"
+					in2="floodFill" mode="multiply" /> 
+			</filter> 
+		</defs> 
+
+		<rect x="40" y="40" width="100"
+			height="100" style="stroke: #000000; 
+						fill: lightgreen; 
+						filter: url(#spotlight);" /> 
+
+		<rect x="40" y="40" width="100" height="100"
+			style="stroke: #000000; fill: green;" /> 
+
+		<g fill="#FFFFFF" stroke="black" font-size="10"
+			font-family="Verdana"> 
+
+			<text x="50" y="90">GeeksForGeeks</text> 
+		</g> 
+	</svg> 
+</body> 
+
+</html> 
+```
+
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<h5>Output:</h5>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!-- 09-image023.png -->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<h5>Example 2:</h5>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+
+```
+<!DOCTYPE html> 
+<html> 
+
+<body> 
+	<svg width="200" height="200"> 
+		<defs> 
+			<filter id="Screen"> 
+				<feBlend mode="screen"
+					in2="BackgroundImage"
+					in="SourceGraphic" /> 
+			</filter> 
+		</defs> 
+
+		<rect x="1" y="1" width="198"
+			height="118" style="stroke: #000000; 
+								fill: black; 
+								filter: url(#Screen);" /> 
+
+		<circle cx="100" cy="60" r="55"
+			stroke="black" stroke-width="3"
+			fill="Lightgreen" /> 
+
+		<g fill="#FFFFFF" stroke="Green"
+			font-size="10" c font-family="Verdana"> 
+			
+			<text x="60" y="62">GeeksForGeeks</text> 
+		</g> 
+	</svg> 
+</body> 
+
+</html> 
+```
+
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<h5>Output:</h5>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!-- 09-image024.png -->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<h3>SVG &lt;feComponentTransfer&gt; Element</h3>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<p>SVG stands for Scalable Vector Graphic. It can be used to make graphics and animations like in HTML canvas.</p>
+<p>&lt;feComponentTransfer&gt; element implements color manipulations on each color channel separately.</p>
+<p>The four color channel of this element are &lt;feFuncR&gt;, &lt;feFuncG&gt;,&lt;feFuncB&gt;, and 
+  &lt;feFuncA&gt;.</p>
+<p>While performing color manipulations the element should only have one child element of each type.</p>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<h5>Syntax:</h5>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+&lt;feComponentTransfer in=""&gt;
+
+----
+&lt;/feComponentTransfer&gt;
+
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<h5>Attributes :</h5>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<p>in – It store input for the given primitive.</p>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<h5>Example 1:</h5>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+
+```
+<html> 
+<title>SVG Filter</title> 
+<body> 
+		
+<svg width="640" height="550" viewBox="0 0 640 550"> 
+<defs> 
+	<filter id="new" filterUnits="objectBoundingBox" x="0%" y="0%" width="100%" height="100%"> 
+
+	<feComponentTransfer> 
+		<feFuncA type="table" tableValues="0 0 1 1"/> 
+		<feFuncB type="table" tableValues="0 1 0 1"/> 
+		<feFuncG type="table" tableValues="1 1 0 0"/> 
+		<feFuncR type="table" tableValues="0 0 1 0"/> 
+	</feComponentTransfer> 
+	
+	</filter> 
+</defs> 
+	
+<image x="10" y="10" width="280" height="350" preserveAspectRatio="true"
+					xlink:href="C:/Users/pc/Desktop/gfg/Capture25.png"/> 
+<image x="310" y="10" width="280" height="350" preserveAspectRatio="true"
+		filter="url(#new)" xlink:href="C:/Users/pc/Desktop/gfg/Capture25.png"/> 
+</svg> 
+
+	
+</body> 
+</html> 
+```
+
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<h5>Output:</h5>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!-- 09-image025.png -->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<h5>Example 2:</h5>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+
+```
+<html> 
+<title>SVG Filter</title> 
+<body> 
+		
+<svg width="640" height="550" viewBox="0 0 640 550"> 
+<defs> 
+	<filter id="new" filterUnits="objectBoundingBox" x="0%" y="0%" width="100%" height="100%"> 
+
+	
+		<feComponentTransfer in="BackgroundImage" result="A"> 
+		<feFuncA type="discrete" tableValues="0 0 1 1"/> 
+		<feFuncB type="discrete" tableValues="0.0 0.6 0.1 0.0"/> 
+		<feFuncG type="discrete" tableValues="1 0.5 0.5 0.5"/> 
+		<feFuncR type="discrete" tableValues="0.5 1 1 1.0"/> 
+		
+	</feComponentTransfer> 
+	
+	
+	</filter> 
+</defs> 
+	
+<image x="10" y="10" width="280" height="350" preserveAspectRatio="true"
+					xlink:href="C:/Users/pc/Desktop/gfg/Capture82.png"/> 
+<image x="310" y="10" width="280" height="350" preserveAspectRatio="true" filter="url(#new)"
+xlink:href="C:/Users/pc/Desktop/gfg/Capture82.png"/> 
+</svg> 
+
+	
+</body> 
+</html> 
+```
+
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<h5>Output:</h5>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!-- 09-image026.png -->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<h5>Example 3:</h5>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+
+```
+<html> 
+<title>SVG Filter</title> 
+<body> 
+		
+<svg width="640" height="550" viewBox="0 0 640 550"> 
+<defs> 
+	<filter id="new" filterUnits="objectBoundingBox" x="0%" y="0%" width="100%" height="100%"> 
+
+	
+		<feComponentTransfer in="BackgroundImage" result="A"> 
+		<feFuncA type="table" tableValues="0 0 1 1"/> 
+		<feFuncB type="discrete" tableValues="0 1 1 0"></feFuncB> 
+		<feFuncG type="gamma" amplitude="3" exponent="3" offset="0"></feFuncG> 
+		<feFuncR type="linear" slope="1.5" intercept="2"></feFuncR> 
+		
+	</feComponentTransfer> 
+	
+	
+	</filter> 
+</defs> 
+	
+<image x="10" y="10" width="280" height="350" preserveAspectRatio="true"
+					xlink:href="C:/Users/pc/Desktop/gfg/Capture26.png"/> 
+<image x="310" y="10" width="280" height="350" preserveAspectRatio="true" filter="url(#new)"
+xlink:href="C:/Users/pc/Desktop/gfg/Capture26.png"/> 
+</svg> 
+
+	
+</body> 
+</html> 
+```
+
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<h5>Output:</h5>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!-- 09-image027.png -->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<h3>SVG &lt;feConvolveMatrix&gt; Element</h3>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<p>SVG stands for Scalable Vector Graphic. It can be used to make graphics and animations 
+like in HTML canvas.</p>
+
+<p>The &lt;feConvolveMatrix&gt; SVG filter primitive changes pixels in the input image 
+with neighboring pixels to produce a resulting image.</p>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<h5>Syntax:</h5>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+
+```
+<feConvolveMatrix in="" order="" kernelMatrix="" divisor="" 
+    bias="" targetX="" targetY="" edgeMode="" kernelUnitLength=""
+    preserveAlpha="" />
+```
+
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<h5>Attributes:</h5>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<ul>
+  <li><b>in</b> – It stores input for the given primitive.</li>
+  <li><b>order</b> – It tests the size of the matrix to be used by the filter element. 
+    By default, it is  3 X 3.</li>
+  <li><b>kernelMatrix</b> – It defines the list of numbers that form the kernel matrix.</li>
+  <li><b>divisor</b> –  It defines the sum of values of the kernel matrix. By default, 
+    it is set to 1.</li>
+  <li><b>bias</b> – It sets the range of the filter.  By default, it is set to 0.</li>
+  <li><b>targetX</b> – It shifts the convolution matrix horizontally. (Range –  0 &lt;= 
+    targetX &lt; orderX).</li>
+  <li><b>targetY</b> –  It shifts the convolution matrix vertically.  (Range –  0 &lt;= 
+    targetY &lt; orderY).</li>
+  <li><b>kernelUnitLength</b> – It tells the intended distance between successive columns 
+    and rows in the kernelMatrix. The intended distance is represented in current filter 
+	units. The default value is 1.</li>
+  <li><b>preserveAlpha</b> – It value is either true or false. It indicates whether the 
+    convolution will only apply to the alpha and color channels. The default value is false.</li>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<h5>Example 1:</h5>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+
+```
+<!DOCTYPE html> 
+<html> 
+
+<body> 
+	<svg width="100%" height="220"> 
+		<defs> 
+			<filter id="convolve"> 
+				<feConvolveMatrix kernelMatrix= 
+					"1 5 -1 -1 0 4 0 0 -1" /> 
+			</filter> 
+		</defs> 
+
+		<rect x="40" y="40" width="100"
+			height="100"
+			filter: url(#convolve) style= 
+				"stroke: #000000; 
+				fill: darkgreen;" /> 
+
+		<g fill="#FFFFFF" stroke="black"
+			font-size="10" font-family="Verdana"> 
+
+			<text x="50" y="90"
+				filter="url(#convolve)"> 
+				GeeksForGeeks 
+			</text> 
+		</g> 
+	</svg> 
+</body> 
+
+</html> 
+```
+
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<h5>Output:</h5>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!-- 09-image028.png -->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<h5>Example 2:</h5>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+
+```
+<!DOCTYPE html> 
+<html> 
+<title>SVG Filter</title> 
+
+<body> 
+	<svg width="100%" height="220"> 
+		<defs> 
+			<filter id="convolve"> 
+				<feConvolveMatrix kernelMatrix
+				="-7 -10 -15 -10 10 -1 0 0 -1" /> 
+			</filter> 
+		</defs> 
+
+		<rect x="1" y="1" width="198"
+			height="118"
+			style="stroke: #000000; 
+					fill: none; 
+					filter: url(#convolve);" /> 
+
+		<circle cx="100" cy="60" r="55"
+			stroke="black" stroke-width="3"
+			fill="Lightgreen"
+			filter: url(#convolve) /> 
+
+		<g fill="#FFFFFF" stroke="black"
+			font-size="10" font-family="Verdana"> 
+			<text x="60" y="62" filter="url(#convolve)"> 
+				GeeksForGeeks</text> 
+		</g> 
+	</svg> 
+</body> 
+
+</html> 
+```
+
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<h5>Output:</h5>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!-- 09-image029.png -->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<h3>SVG feDiffuseLighting Element</h3>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<p>The SVG &lt;feDiffuseLighting&gt; filter primitive lights an image using the alpha 
+channel as a bump map. Using diffuse lighting the sides of the object facing the light 
+are brighter and the sides facing away are darker and in shadow.</p>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<h5>Syntax :</h5>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+
+```
+<feDiffuseLighting> Contents... </feDiffuseLighting>
+```
+
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<h5>Attributes:</h5>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<ul>
+  <li><b>in</b> —The in attribute identifies input for the given filter primitive.</li>
+  <li><b>surfaceScale</b> — It represents the height of the surface. Its value is multiplied by the alpha value. Default value is 1.</li>
+  <li><b>diffuseConstant</b> — It is a non-negative number whose default value is 1.</li>
+  <li><b>kernelUnitLength</b> — It tells the intended distance between successive columns and rows in the kernelMatrix. The intended distance is represented in current filter units. Default value is 1.</li>
+</ul>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<h5>Example 1:</h5>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+
+```
+<!DOCTYPE html> 
+<html> 
+
+<body> 
+	<svg viewBox="0 0 1000 1000"> 
+		<filter id="lightMe2"> 
+			<feDiffuseLighting in="SourceGraphic"
+				surfaceScale="1" diffuseConstant="2"
+				kernelUnitLength="2"> 
+
+				<fePointLight x="80" y="80" z="40" /> 
+
+				<feDistantLight azimuth="240"
+					elevation="20" /> 
+			</feDiffuseLighting> 
+
+			<feComposite in="SourceGraphic" in2="light"
+				operator="arithmetic" k1="1" k2="0"
+				k3="0" k4="0" /> 
+		</filter> 
+
+		<rect x="20" y="20" width="200" height="200"
+			fill="green"
+			style="filter: url(#lightMe2);" /> 
+	</svg> 
+</body> 
+
+</html>
+```
+
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<h5>Output:</h5>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!-- 09-image030.png -->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<h5>Example 2:</h5>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+
+```
+<!DOCTYPE html> 
+<html> 
+
+<body> 
+	<svg viewBox="0 0 1000 1000"> 
+		<filter id="lightMe3"> 
+			<feDiffuseLighting in="BackgroundImage"
+				surfaceScale="4" diffuseConstant="2"
+				kernelUnitLength="2"> 
+
+				<feSpotLight x="30" y="20" z="30"
+					limitingConeAngle="40"
+					pointsAtX="200" pointsAtY="200"
+					pointsAtZ="0" /> 
+
+				<fePointLight x="80" y="80" z="40" /> 
+			</feDiffuseLighting> 
+
+			<feComposite in="SourceGraphic"
+				in2="light" operator="arithmetic"
+				k1="1" k2="0" k3="0" k4="0" /> 
+		</filter> 
+
+		<rect x="20" y="20" width="200" height="200"
+			fill="blue"
+			style="filter: url(#lightMe3);" /> 
+	</svg> 
+</body> 
+
+</html>
+```
+
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<h5>Output:</h5>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!-- 09-image031.png -->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<h3>SVG &lt;feDisplacementMap&gt; Element</h3>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<p>SVG stands for Scalable Vector Graphic. It can be used to make graphics and animations 
+like in HTML canvas.</p>
+
+<p>The &lt;feDisplacementMap&gt; SVG filter primitive is use to spatially displace the 
+image content using a displacement map. It takes two inputs to produce one result. 
+The image content to displace is specified in the “in2” attribute. The content to 
+which displacement effect is applied is reserved in “in” attribute.</p>
+
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<h5>Syntax:</h5>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+
+```
+<feDisplacementMap in2="" in="" scale="" 
+    xChannelSelector="" yChannelSelector=""/>
+```
+	
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<h5>Attributes:</h5>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<ul>
+  <li><b>in</b> – It identifies input for the given filter primitive.</li>
+  <li><b>in2</b> – It identifies the second input for the given filter primitive. It 
+    works exactly like the in attribute.</li>
+  <li><b>scale</b> – It defines the displacement scale factor to be used on a 
+    &lt;feDisplacementMap&gt; filter primitive.</li>
+  <li><b>xChannelSelector</b> -It indicates which color channel from in2 to used to 
+    displace the pixels in ‘in’ along the x-axis.</li>
+  <li><b>yChannelSelector</b> – Itindicates which color channel from in2 to used to 
+    displace the pixels in ‘in’ along the y-axis.</li>
+</ul>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<h5>Example 1:</h5>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+
+```
+<!DOCTYPE html> 
+<html> 
+
+<body> 
+	<svg width="200" height="200"
+		viewBox="0 0 220 220"> 
+
+		<filter id="displacementFilter"> 
+
+			<feTurbulence type="turbulence"
+				baseFrequency="1"
+				numOctaves="2"
+				result="turbulence" /> 
+
+			<feDisplacementMap in2="turbulence"
+				in="SourceGraphic" scale="50"
+				xChannelSelector="R"
+				yChannelSelector="B" /> 
+		</filter> 
+
+		<circle cx="100" cy="100" r="100"
+			stroke="green" style= 
+			"filter: url(#displacementFilter)" /> 
+	</svg> 
+</body> 
+
+</html> 
+```
+
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<h5>Output:</h5>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!-- 09-image032.png -->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<h5>Example 2:</h5>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+
+```
+<!DOCTYPE html> 
+<html> 
+
+<body> 
+	<svg width="200" height="200"
+		viewBox="0 0 220 220"> 
+
+		<filter id="displacementFilter"> 
+
+			<feTurbulence type="turbulence"
+				baseFrequency="5" numOctaves="2"
+				result="turbulence" /> 
+
+			<feDisplacementMap in2="abc"
+				in="SourceGraphic" scale="200"
+				xChannelSelector="B"
+				yChannelSelector="R" /> 
+		</filter> 
+
+		<rect width="250" height="250" style
+		="filter: url(#displacementFilter)" /> 
+	</svg> 
+</body> 
+
+</html> 
+```
+
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<h5>Output:</h5>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!-- 09-image033.png -->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<h3>Next group goes here</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 
@@ -5871,7 +6960,7 @@ including any objects that might have been covered by the graphic.
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3>Comparison of SVG and Canvas</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-The table below shows some important differences between Canvas and SVG:
+<p>The table below shows some important differences between Canvas and SVG:</p>
 
 | SVG | Canvas |
 |------------------------|-----------------------------|
@@ -5888,6 +6977,7 @@ The table below shows some important differences between Canvas and SVG:
 
 
 
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 Creating SVG Images
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p>SVG images can be created with any text editor, or with a drawing program, like Inkscape.</p>
