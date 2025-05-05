@@ -1426,8 +1426,8 @@ to decide whether to handle it in quirks mode or standards mode.</p>
 <ul>
   <li>We are using server side rendering for two reasons:
     <ul>
-	  <li>performance benefit for our customers</li>
-	  <li>Consistent SEO performance</li>
+      <li>performance benefit for our customers</li>
+      <li>Consistent SEO performance</li>
     </ul>
   </li>
   <li>The main difference is that for SSR your server&apos;s response to the browser is the 
@@ -3338,7 +3338,7 @@ and practical for most web pages/applications.</p>
     updated, and describes the types of updates the user can expect from the live region.</li>
   <li><b>aria-owns</b>: Identifies an element (or elements) in order to define a visual, 
     functional, or contextual parent/child  relationship between DOM elements where the 
-	DOM hierarchy cannot be used to represent the relationship.</li>
+    DOM hierarchy cannot be used to represent the relationship.</li>
   <li><b>aria-pressed (state)</b>: Indicates the current “pressed” state of toggle buttons.</li>
   <li><b>aria-required</b>: Indicates that user input is required on the element before a form may be submitted.</li>
   <li><b>aria-selected (state)</b>: Indicates the current “selected” state of various widgets.</li>
@@ -4610,17 +4610,16 @@ table {
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h4>Adding a Background Colour to the Table</h4>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<p>A color can be added as a background in an HTML table using the "background-
-color" option.</p>
+<p>A color can be added as a background in an HTML table using the "background-color" option.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h5>Syntax</h5>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 
 ```
 table#t01 {
-            width: 100%;
-            background-color: #f2f2d1;
- }
+  width: 100%;
+  background-color: #f2f2d1;
+}
 ```
 
 <p><b>Example:</b> Addition of the Table background color in HTML.</p>
@@ -4631,25 +4630,25 @@ table#t01 {
 <html>
 
 <head>
-    <style>
-        table,
-        th,
-        td {
-            border: 1px solid black;
-            border-collapse: collapse;
-        }
+  <style>
+    table,
+    th,
+    td {
+      border: 1px solid black;
+      border-collapse: collapse;
+    }
 
-        th,
-        td {
-            padding: 5px;
-            text-align: left;
-        }
+    th,
+    td {
+      padding: 5px;
+      text-align: left;
+    }
 
-        table#t01 {
-            width: 100%;
-            background-color: #f2f2d1;
-        }
-    </style>
+    table#t01 {
+      width: 100%;
+      background-color: #f2f2d1;
+    }
+  </style>
 </head>
 
 <body>
@@ -4730,21 +4729,21 @@ potential of introducing errors.</p>
 <html>
 
 <body>
-    <table border=5 bordercolor=black>
-        <tr>
-            <td> First Column of Outer Table </td>
-            <td>
-                <table border=5 bordercolor=grey>
-                    <tr>
-                        <td> First row of Inner Table </td>
-                    </tr>
-                    <tr>
-                        <td> Second row of Inner Table </td>
-                    </tr>
-                </table>
-            </td>
-        </tr>
-    </table>
+  <table border=5 bordercolor=black>
+    <tr>
+      <td>First Column of Outer Table</td>
+      <td>
+        <table border=5 bordercolor=grey>
+          <tr>
+            <td>First row of Inner Table</td>
+          </tr>
+          <tr>
+            <td>Second row of Inner Table</td>
+          </tr>
+        </table>
+      </td>
+    </tr>
+  </table>
 </body>
 
 </html>
@@ -4761,9 +4760,7 @@ potential of introducing errors.</p>
   alt="Nested HTML table."
   style="width:40%" >
 </p>
-
 <!-- end of html tables -->
-
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h2 id="6-html-">06. HTML Lists</h2>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -4780,27 +4777,27 @@ any information on web pages in the ordered or unordered form.</p>
 <html>
 
 <head>
-    <title>GeeksforGeeks</title>
+  <title>GeeksforGeeks</title>
 </head>
 
 <body>
-    <h2>Welcome To GeeksforGeeks Learning</h2>
-    <h5>List of available courses</h5>
-    <ul>
-        <li>Data Structures & Algorithm</li>
-        <li>Web Technology</li>
-        <li>Aptitude & Logical Reasoning</li>
-        <li>Programming Languages</li>
-    </ul>
-    <h5>Data Structures topics</h5>
-    <ol>
-        <li>Array</li>
-        <li>Linked List</li>
-        <li>Stacks</li>
-        <li>Queues</li>
-        <li>Trees</li>
-        <li>Graphs</li>
-    </ol>
+  <h2>Welcome To GeeksforGeeks Learning</h2>
+  <h5>List of available courses</h5>
+  <ul>
+    <li>Data Structures & Algorithm</li>
+    <li>Web Technology</li>
+    <li>Aptitude & Logical Reasoning</li>
+    <li>Programming Languages</li>
+  </ul>
+  <h5>Data Structures topics</h5>
+  <ol>
+    <li>Array</li>
+    <li>Linked List</li>
+    <li>Stacks</li>
+    <li>Queues</li>
+    <li>Trees</li>
+    <li>Graphs</li>
+  </ol>
 </body>
 
 </html>
@@ -4862,20 +4859,20 @@ lists. An unordered list starts with the &lt;ul&gt; tag. Each list item starts w
   <li>type: It specifies which kind of marker is used in the list.</li>
 </ul>
 
-<p><b>Example:</b> This example describes the unordered list.</p>
+<p><b>Example:</b> This example describes the <b>unordered list</b>.</p>
 
 ```
 <!DOCTYPE html>
 <html>
 
 <body>
-    <h2>Grocery list</h2>
-    <ul>
-        <li>Bread</li>
-        <li>Eggs</li>
-        <li>Milk</li>
-        <li>Coffee</li>
-    </ul>
+  <h2>Grocery list</h2>
+  <ul>
+    <li>Bread</li>
+    <li>Eggs</li>
+    <li>Milk</li>
+    <li>Coffee</li>
+  </ul>
 </body>
 
 </html>
@@ -4904,9 +4901,9 @@ ordered list starts with the &lt;ol&gt; tag. Each list item starts with the
 
 ```
 <ol>
-   <li>Item1</li>
-   <li>Item2</li>
-   <li>Item3</li>
+  <li>Item1</li>
+  <li>Item2</li>
+  <li>Item3</li>
 </ol>
 ```
 
@@ -4930,36 +4927,36 @@ control list counting & type attribute.</p>
 <html>
 
 <head>
-    <title>HTML ol tag</title>
+  <title>HTML ol tag</title>
 </head>
 
 <body>
-    <h1 style="color: green">GeeksforGeeks</h1>
-    <h3>HTML ol tag</h3>
-    
-<p>reversed attribute</p>
+  <h1 style="color: green">GeeksforGeeks</h1>
+  <h3>HTML ol tag</h3>
 
-    <ol reversed>
-        <li>HTML</li>
-        <li>CSS</li>
-        <li>JS</li>
-    </ol>
-    
-<p>start attribute</p>
+  <p>reversed attribute</p>
 
-    <ol start="5">
-        <li>HTML</li>
-        <li>CSS</li>
-        <li>JS</li>
-    </ol>
+  <ol reversed>
+    <li>HTML</li>
+    <li>CSS</li>
+    <li>JS</li>
+  </ol>
     
-<p>type attribute</p>
+  <p>start attribute</p>
 
-    <ol type="i">
-        <li>HTML</li>
-        <li>CSS</li>
-        <li>JS</li>
-    </ol>
+  <ol start="5">
+    <li>HTML</li>
+    <li>CSS</li>
+    <li>JS</li>
+  </ol>
+    
+  <p>type attribute</p>
+
+  <ol type="i">
+    <li>HTML</li>
+    <li>CSS</li>
+    <li>JS</li>
+  </ol>
 </body>
 
 </html>
@@ -4993,20 +4990,20 @@ and the &lt;dd&gt; tag describes each term.</p>
 <p>Please refer to the <i>How to add description list of an element using HTML? 
 article</i> for further details.</p>
 
-<p><b>Example:</b> This example describes the HTML Description List.</p>
+<p><b>Example:</b> This example describes the HTML <b>Description List</b>.</p>
 
 ```
 <!DOCTYPE html>
 <html>
 
 <body>
-    <h2>A Description List</h2>
-    <dl> 
-        <dt>Coffee</dt>
-        <dd>- 500 gms</dd>
-        <dt>Milk</dt>
-        <dd>- 1 ltr Tetra Pack</dd>
-    </dl>
+  <h2>A Description List</h2>
+  <dl> 
+    <dt>Coffee</dt>
+    <dd>- 500 gms</dd>
+    <dt>Milk</dt>
+    <dd>- 1 ltr Tetra Pack</dd>
+  </dl>
 </body>
 
 </html>
@@ -5032,16 +5029,20 @@ and definition list. We have explained all three list types with examples.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h2 id="7-html-iframes">07. HTML iFrames</h2>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+
+
+
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h2 id="8-html-url">08. HTML URL</h2>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<p>A Uniform Resource Locator (URL) is simply the address of a website to access the 
+<p>A <b>Uniform Resource Locator (URL)</b> is simply the address of a website to access the 
 website content like <mark>www.geeksforgeeks.org</mark>. But certain characters are 
 allowed to be used in the URL like alphabets A-Z and a-z, numbers 0-9, and a few special 
-characters. They can be used as it is but the rest of the characters that are not in this 
+characters. They can be used as is but the rest of the characters that are not in this 
 list are used after encoding them to a suitable form. URL Encoding is the process of 
 converting the URL into a valid format that is accepted by web browsers.</p>
 
-<p>URL Encoding takes place by replacing all the characters that are not allowed by a 
+<p><b>URL Encoding</b> takes place by replacing all the characters that are not allowed by a 
 <mark>% (percent)</mark> sign followed by two hexadecimal digits. These two hexadecimal 
 values represent the numerical values of the character in the ASCII character set. For 
 example, a space is not acceptable in a URL and is replaced by a ‘%20’ or a ‘+’ sign 
@@ -5065,17 +5066,19 @@ scheme://prefix.domain:port/path/filename
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <pre>https://www.geeksforgeeks.org/</pre>
 
-<p><b>Scheme:</b> It specifies the protocol used for communication, such as 
-<b>“https://”</b> for secure communication or <b>“http://”</b> for unsecured 
-communication.<br/>
-<b>Prefix:</b> It is an optional subdomain or www indicating the location of the resource 
-  within the domain.<br>
-<b>Domain:</b> Identifies the website’s primary address, like “example.com”, indicating its 
-  unique location on the Internet.<br/>
-<b>Port:</b> Optional and signifies a specific endpoint for communication. Common values 
-  are 80 for HTTP and 443 for HTTPS.<br>
-<b>Path:</b> It specifies the location or directory on the server where the resource is located.<br/>
-<b>Filename:</b> It refers to the specific file or resource within the specified path.</p>
+<ul>
+  <li><b>Scheme:</b> It specifies the protocol used for communication, such as 
+    <b>“https://”</b> for secure communication or <b>“http://”</b> for unsecured 
+      communication.</li>
+  <li><b>Prefix:</b> It is an optional subdomain or www indicating the location of the resource 
+    within the domain.</li>
+  <li><b>Domain:</b> Identifies the website’s primary address, like “example.com”, indicating its 
+    unique location on the Internet.</li>
+  <li><b>Port:</b> Optional and signifies a specific endpoint for communication. Common values 
+    are 80 for HTTP and 443 for HTTPS.</li>
+  <li><b>Path:</b> It specifies the location or directory on the server where the resource is located.</li>
+  <li><b>Filename:</b> It refers to the specific file or resource within the specified path.</li>
+</ul>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h2 id="9-html-svg">09. HTML SVG Basics</h2>
 <!-- geeks 4 geeks - https://www.geeksforgeeks.org/html-svg-basics/ -->
@@ -5083,9 +5086,9 @@ communication.<br/>
 <h3>SVG stands for Scalable Vector Graphics.</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <ul>
-  <li><p><a href="https://www.geeksforgeeks.org/html-svg-basics/">Geeks 4 Geeks SVG</a></p></li>
+  <li><p><a href="https://www.geeksforgeeks.org/html-svg-basics/">Geeks 4 Geeks SVG Tutorial</a></p></li>
   <li><p><a href="https://www.w3schools.com/graphics/svg_intro.asp">W3 SVG Tutorial</a></p></li>
-  <li><p><a href="https://developer.mozilla.org/en-US/docs/Web/SVG/Guides/SVG_in_HTML">MDN's SVG in HTML</a></p>
+  <li><p><a href="https://developer.mozilla.org/en-US/docs/Web/SVG/Guides/SVG_in_HTML">MDN's SVG in HTML Tutorial</a></p>
 </ul>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p>SVG stands for Scalable Vector Graphics. It defines vector-based graphics in XML 
@@ -5124,18 +5127,18 @@ a blue line drawn diagonally within an SVG element.</p>
 <html>
 
 <head>
-    <title>HTML SVG</title>
+  <title>HTML SVG</title>
 </head>
 
 <body>
-    <h2></h2>
-    <svg height="250" width="600">
-        <line x1="10" 
-              y1="10" 
-              x2="400" 
-              y2="400" 
-              style="stroke:rgb(0,0,255);stroke-width:3" />
-    </svg>
+  <h2></h2>
+  <svg height="250" width="600">
+    <line x1="10" 
+      y1="10" 
+      x2="400" 
+      y2="400" 
+      style="stroke:rgb(0,0,255);stroke-width:3" />
+  </svg>
 </body>
 
 </html>
@@ -5157,26 +5160,26 @@ a blue line drawn diagonally within an SVG element.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h4>Example 2: Drawing a Circle</h4>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<p>In this example we uses the &lt;svg&gt; tag to draw a grey circle with a black border. 
-The circle has a center at (80, 80) and a radius of 50.</p>
+<p>In this example we uses the <mark>&lt;svg&gt;</mark> tag to draw a grey circle with a 
+black border. The circle has a center at (80, 80) and a radius of 50.</p>
 
 ```
 <!DOCTYPE html>
 <html>
 
 <head>
-    <title>HTML SVG</title>
+  <title>HTML SVG</title>
 </head>
 
 <body>
-    <!-- html svg tag is used here -->
-    <svg width="200" height="200">
-        <circle cx="80" cy="80" 
-                r="50" 
-                stroke="black" 
-                stroke-width="2" 
-                fill="grey" />
-    </svg>
+  <!-- html svg tag is used here -->
+  <svg width="200" height="200">
+    <circle cx="80" cy="80" 
+    r="50" 
+    stroke="black" 
+    stroke-width="2" 
+    fill="grey" />
+  </svg>
 </body>
 
 </html>
@@ -5370,8 +5373,8 @@ using the ARIAL font family.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3>SVG &lt;a&gt; Element</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<p>The SVG &lt;a&gt; element creates a hyperlink within SVG graphics. It functions 
-similarly to the HTML <a> element. It links to external resources or other parts 
+<p>The SVG <mark>&lt;a&gt;</mark> element creates a hyperlink within SVG graphics. It functions 
+similarly to the HTML <mark>&lt;a&gt;</mark> element. It links to external resources or other parts 
 of the SVG document.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h5>Syntax:</h5>
@@ -5530,12 +5533,12 @@ element over time. It’s normally inserted inside the element which we want to 
 <html>
 
 <body>
-	<svg viewBox="0 0 50 50">
-		<rect width="10" height="10" fill="green">
-			<animate attributeName="rx" values="0;20;0"
-				dur="2s" repeatCount="10" />
-		</rect>
-	</svg>
+  <svg viewBox="0 0 50 50">
+    <rect width="10" height="10" fill="green">
+      <animate attributeName="rx" values="0;20;0"
+        dur="2s" repeatCount="10" />
+    </rect>
+  </svg>
 </body>
 
 </html>
@@ -5563,20 +5566,20 @@ element over time. It’s normally inserted inside the element which we want to 
 <html>
  
 <body>
-    <h1 style="color:green"> 
-        GeeksforGeeks 
-    </h1>  
-    <h2> 
-        SVG animate element 
-    </h2>  
-    <svg viewBox="0 0 50 50">
-        <rect width="7" height="7" fill="green">
-            <animate attributeType="CSS" attributeName="opacity" 
-           from="1" to="0" dur="4s" repeatCount="indefinite" />
-        </rect>
-    </svg>
+  <h1 style="color:green">
+    GeeksforGeeks
+  </h1>
+  <h2>
+    SVG animate element
+  </h2>
+  <svg viewBox="0 0 50 50">
+    <rect width="7" height="7" fill="green">
+      <animate attributeType="CSS" attributeName="opacity"
+      from="1" to="0" dur="4s" repeatCount="indefinite" />
+    </rect>
+  </svg>
 </body>
- 
+
 </html>
 ```
 
@@ -5623,21 +5626,21 @@ like in HTML canvas.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 
 ```
-<!DOCTYPE html> 
-<html> 
-  
-<body> 
-    <svg width="1200" height="1200"> 
-        <circle cx="60" cy="60" r="5" fill="green"> 
-            <animateMotion dur="10s" repeatCount="indefinite"
-          path="M20, 60 C20, 
-                -50 180, 150 180, 
-                 60 C180-60 20, 
-                 150 20, 60 z" /> 
-        </circle> 
-    </svg> 
-</body> 
-  
+<!DOCTYPE html>
+<html>
+
+<body>
+  <svg width="1200" height="1200">
+    <circle cx="60" cy="60" r="5" fill="green">
+      <animateMotion dur="10s" repeatCount="indefinite"
+      path="M20, 60 C20,
+        -50 180, 150 180,
+        60 C180-60 20,
+        150 20, 60 z" />
+    </circle>
+  </svg>
+</body>
+
 </html>
 ```
 
@@ -5688,23 +5691,22 @@ and/or skewing.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 
 ```
-
-<!DOCTYPE html> 
-<html> 
+<!DOCTYPE html>
+<html>
   
-<body> 
-    <svg width="120" height="120"> 
+<body>
+  <svg width="120" height="120">
   
-        <polygon points="60,30 90,90 30,90"> 
-            <animateTransform attributeName="transform"
-                attributeType="XML" type="rotate" 
-                from="0 60 70" to="360 60 70"
-                dur="10s" repeatCount="indefinite" /> 
-        </polygon> 
-    </svg> 
-</body> 
+    <polygon points="60,30 90,90 30,90">
+      <animateTransform attributeName="transform"
+        attributeType="XML" type="rotate" 
+        from="0 60 70" to="360 60 70"
+        dur="10s" repeatCount="indefinite" />
+    </polygon>
+  </svg>
+</body>
   
-</html> 
+</html>
 ```
 
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -5731,12 +5733,12 @@ circle. Basically, the &lt;circle&gt; element wrapped inside the &lt;svg&gt; ele
 
 ```
 <svg>
- <circle cx="10" 
-               cy="10" 
-               r="30" 
-               stroke="black" 
-               stroke-width="3" 
-               fill="red" />
+  <circle cx="10" 
+    cy="10" 
+    r="30" 
+    stroke="black" 
+    stroke-width="3" 
+    fill="red" />
 </svg>
 ```
 
@@ -5765,40 +5767,40 @@ above attributes.</p>
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" 
-          content="width=device-width,
-                   initial-scale=1.0">
-    <title>SVG to HTML</title>
-    <link rel="stylesheet" 
-          href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" 
+    content="width=device-width,
+    initial-scale=1.0">
+  <title>SVG to HTML</title>
+  <link rel="stylesheet" 
+    href="style.css">
 </head>
 
 <body>
-    <div style="display: flex;
-                flex-direction: column;
-                justify-content: center; 
-                align-items: center;
-                height:100vh;">
-        <h1 style="color: green;">
-            GeeksforGeeks
-        </h1>
-        <p style="font-size: 20px">
-          SVG Circle
-          </p>
+  <div style="display: flex;
+    flex-direction: column;
+    justify-content: center; 
+    align-items: center;
+    height:100vh;">
+    <h1 style="color: green;">
+      GeeksforGeeks
+    </h1>
+    <p style="font-size: 20px">
+      SVG Circle
+    </p>
 
-        <svg width="200"
-             height="200" 
-             style="border: 2px solid black;">
-            <circle cx="95" 
-                    cy="95"
-                    r="70" 
-                    stroke="green" 
-                    stroke-width="5" 
-                    fill="yellowgreen" />
-        </svg>
-    </div>
-    <script src="script.js"></script>
+    <svg width="200"
+      height="200" 
+      style="border: 2px solid black;">
+      <circle cx="95" 
+        cy="95"
+        r="70" 
+        stroke="green" 
+        stroke-width="5" 
+        fill="yellowgreen" />
+    </svg>
+  </div>
+  <script src="script.js"></script>
 </body>
 
 </html>
@@ -5827,38 +5829,38 @@ above attributes.</p>
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" 
-          content="width=device-width,
-                   initial-scale=1.0">
-    <title>SVG to HTML</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" 
+    content="width=device-width,
+    initial-scale=1.0">
+  <title>SVG to HTML</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-    <div style="display: flex; 
-                flex-direction: column;
-                justify-content: center;
-                align-items: center;
-                height:100vh;">
-        <h1 style="color: green;">
-            GeeksforGeeks
-        </h1>
-        <p style="font-size: 20px">
-              SVG Circle
-          </p>
+  <div style="display: flex; 
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height:100vh;">
+    <h1 style="color: green;">
+      GeeksforGeeks
+    </h1>
+    <p style="font-size: 20px">
+      SVG Circle
+    </p>
 
-        <svg width="200" 
-             height="200" 
-             style="border: 2px solid black;">
-            <circle cx="95" 
-                    cy="95" 
-                    r="70" 
-                    stroke="blue" 
-                    stroke-width="5" />
-        </svg>
-    </div>
-    <script src="script.js"></script>
+    <svg width="200" 
+      height="200" 
+      style="border: 2px solid black;">
+      <circle cx="95" 
+              cy="95" 
+               r="70" 
+          stroke="blue" 
+        stroke-width="5" />
+    </svg>
+  </div>
+  <script src="script.js"></script>
 </body>
 
 </html>
@@ -5907,54 +5909,54 @@ given above.</p>
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8" />
-    <meta property="viewport" content=
-        "width=device-width, initial-scale=1.0" />
+  <meta charset="UTF-8" />
+  <meta property="viewport" content=
+    "width=device-width, initial-scale=1.0" />
 
-    <title>SVG clipPath Element</title>
+  <title>SVG clipPath Element</title>
 
-    <style>
-        @keyframes animation1 {
-            from {
-                width: 4px;
-                height: 4px;
-            }
+  <style>
+    @keyframes animation1 {
+      from {
+        width: 4px;
+        height: 4px;
+      }
 
-            to {
-                width: 150px;
-                height: 150px;
-            }
-        }
+      to {
+        width: 150px;
+        height: 150px;
+      }
+    }
 
-        rect {
-            animation: animation1 10s ease-in-out;
-        }
-    </style>
+    rect {
+      animation: animation1 10s ease-in-out;
+    }
+  </style>
 </head>
 
 <body>
-    <div style="width: 300px; height: 300px;">
+  <div style="width: 300px; height: 300px;">
 
-        <h1 style="color: green;">
-            GeeksforGeeks
-        </h1>
-        <h2>
-            SVG clipPath Element
-        </h2>
+    <h1 style="color: green;">
+      GeeksforGeeks
+    </h1>
+    <h2>
+      SVG clipPath Element
+    </h2>
 
-        <svg width="500" height="500" 
-            transform="translate(100, 0)">
-            <clipPath id="gfg">
-                <rect width="4" height="4"></rect>
-            </clipPath>
-            <path id="path" d="M10, 30 A20, 20, 0, 0,
-                         1, 50, 30 A20, 20, 0, 0, 1,
-                         90, 30 Q90, 60, 50, 90 Q10, 
-                         60, 10, 30 Z" />
-            <use fill="green" clip-path="url(#gfg)" 
-                href="#path" />
-        </svg>
-    </div>
+    <svg width="500" height="500" 
+      transform="translate(100, 0)">
+      <clipPath id="gfg">
+        <rect width="4" height="4"></rect>
+      </clipPath>
+      <path id="path" d="M10, 30 A20, 20, 0, 0,
+        1, 50, 30 A20, 20, 0, 0, 1,
+        90, 30 Q90, 60, 50, 90 Q10, 
+        60, 10, 30 Z" />
+      <use fill="green" clip-path="url(#gfg)" 
+        href="#path" />
+    </svg>
+  </div>
 </body>
 
 </html>
@@ -6006,38 +6008,38 @@ given above.</p>
 </head>
 
 <body>
-    <div style="width:300px; height:300px;">
-        <h1 style="color:green">
-            GeeksforGeeks
-        </h1>
+  <div style="width:300px; height:300px;">
+    <h1 style="color:green">
+      GeeksforGeeks
+    </h1>
 
-        <h2>SVG clipPath Element</h2>
+    <h2>SVG clipPath Element</h2>
 
-        <svg width="500" height="500" 
-            transform="translate(60, -40)">
-            
-            <clipPath id="gfg">
-                <circle />
-            </clipPath>
-            
-            <path id="star" d="
-                M 85.000 105.000
-                L 105.000 119.641
-                L 102.321 95.000
-                L 125.000 85.000
-                L 102.321 75.000
-                L 105.000 50.359
-                L 85.000 65.000
-                L 65.000 50.359
-                L 67.679 75.000
-                L 45.000 85.000
-                L 67.679 95.000
-                L 65.000 119.641
-                z" />
-            <use clip-path="url(#gfg)" 
-                href="#star" fill="red" />
-        </svg>
-    </div>
+    <svg width="500" height="500"
+      transform="translate(60, -40)">
+
+      <clipPath id="gfg">
+        <circle />
+      </clipPath>
+
+      <path id="star" d="
+        M 85.000 105.000
+        L 105.000 119.641
+        L 102.321 95.000
+        L 125.000 85.000
+        L 102.321 75.000
+        L 105.000 50.359
+        L 85.000 65.000
+        L 65.000 50.359
+        L 67.679 75.000
+        L 45.000 85.000
+        L 67.679 95.000
+        L 65.000 119.641
+        z" />
+      <use clip-path="url(#gfg)" 
+        href="#star" fill="red" />
+    </svg>
+  </div>
 </body>
 
 </html>
@@ -6059,10 +6061,10 @@ given above.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3>SVG defs Element</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<p>The &lt;defs&gt; in SVG is used whenever we want a particular element to render only 
-when required or when it is called. objects that are created inside <defs> element are 
-not rendered directly they are needed to be called by <use> element to render them on 
-the browser.</p>
+<p>The <mark>&lt;defs&gt;</mark> in SVG is used whenever we want a particular element to render only 
+when required or when it is called. objects that are created inside <mark>&lt;defs&gt;</mark> element 
+are not rendered directly they are needed to be called by <mark>&lt;use&gt;</mark> element to render 
+them on the browser.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h5>Syntax:</h5>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -6080,34 +6082,34 @@ the browser.</p>
 <p>When &lt;defs&gt; is not called thus it is not executed.</p>
 
 ```
-<!DOCTYPE html> 
-<html lang="en"> 
-<head> 
-  <meta charset="UTF-8"> 
-  <meta name="viewport" 
-        content="width=device-width, initial-scale=1.0"> 
-  <title>Document</title> 
-</head> 
-<style> 
-  svg{ 
-    background-color: green; 
-  } 
-</style> 
-<body>  
-  <h2> 
-    No Output only svg of size 100*100 is visible<br> 
-    and no circle stroke will be rendered</h2> 
-  <svg width="100px" height="100px"> 
-      
-    <!--this defs code will not be  
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport"
+        content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<style>
+  svg{
+    background-color: green;
+  }
+</style>
+<body>
+  <h2>
+    No Output only svg of size 100*100 is visible<br>
+    and no circle stroke will be rendered</h2>
+  <svg width="100px" height="100px">
+
+    <!--this defs code will not be
         executed as it is not called-->
-    <defs> 
-      <circle cx="50" cy="50" r="40" 
-              stroke="black"/> 
-    </defs> 
-  </svg> 
-</body> 
-</html> 
+    <defs>
+      <circle cx="50" cy="50" r="40"
+        stroke="black"/>
+    </defs>
+  </svg>
+</body>
+</html>
 ```
 
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -6128,36 +6130,36 @@ the browser.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 
 ```
-<!DOCTYPE html> 
-<html lang="en"> 
-<head> 
-<meta charset="UTF-8"> 
-<meta name="viewport"
-		content="width=device-width, initial-scale=1.0"> 
-<title>Document</title> 
-</head> 
-<style> 
-svg{ 
-	background-color: green; 
-} 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport"
+    content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<style>
+svg{
+  background-color: green;
+}
 </style> 
 <body> 
-<svg width="100px" height="100px"> 
-	<defs> 
-	<circle id="ele" cx="50" cy="50"
-			r="40" stroke="black"
-			stroke-width="10"/> 
-	</defs> 
-	
-	<!-- this defs code will not be executed 
-		as it is not called using use -->
-	<defs> 
-	<circle id="ele" cx="50" cy="50"
-			r="40" stroke="black"/> 
-	</defs> 
-	<use xlink:href="#ele"
-		fill="url('#myGradient')" /> 
-</svg> 
+  <svg width="100px" height="100px"> 
+    <defs> 
+      <circle id="ele" cx="50" cy="50"
+        r="40" stroke="black"
+        stroke-width="10"/> 
+    </defs> 
+
+    <!-- this defs code will not be executed 
+         as it is not called using use -->
+    <defs> 
+      <circle id="ele" cx="50" cy="50"
+        r="40" stroke="black"/> 
+    </defs> 
+    <use xlink:href="#ele"
+      fill="url('#myGradient')" /> 
+  </svg> 
 </body> 
 </html> 
 ```
@@ -6415,33 +6417,33 @@ graphic. It executes a pixel-wise combination of two input SVG fragments or imag
 <html> 
 
 <body> 
-	<svg width="200" height="200"> 
-		<defs> 
-			<filter id="spotlight"> 
-				<feFlood result="floodFill"
-					x="0" y="0" width="100%"
-					height="100%" flood-color="green"
-					flood-opacity="1" /> 
+    <svg width="200" height="200"> 
+        <defs> 
+            <filter id="spotlight"> 
+                <feFlood result="floodFill"
+                    x="0" y="0" width="100%"
+                    height="100%" flood-color="green"
+                    flood-opacity="1" /> 
 
-				<feBlend in="FillPaint"
-					in2="floodFill" mode="multiply" /> 
-			</filter> 
-		</defs> 
+                <feBlend in="FillPaint"
+                    in2="floodFill" mode="multiply" /> 
+            </filter> 
+        </defs> 
 
-		<rect x="40" y="40" width="100"
-			height="100" style="stroke: #000000; 
-						fill: lightgreen; 
-						filter: url(#spotlight);" /> 
+        <rect x="40" y="40" width="100"
+            height="100" style="stroke: #000000; 
+                        fill: lightgreen; 
+                        filter: url(#spotlight);" /> 
 
-		<rect x="40" y="40" width="100" height="100"
-			style="stroke: #000000; fill: green;" /> 
+        <rect x="40" y="40" width="100" height="100"
+            style="stroke: #000000; fill: green;" /> 
 
-		<g fill="#FFFFFF" stroke="black" font-size="10"
-			font-family="Verdana"> 
+        <g fill="#FFFFFF" stroke="black" font-size="10"
+            font-family="Verdana"> 
 
-			<text x="50" y="90">GeeksForGeeks</text> 
-		</g> 
-	</svg> 
+            <text x="50" y="90">GeeksForGeeks</text> 
+        </g> 
+    </svg> 
 </body> 
 
 </html> 
@@ -6469,30 +6471,30 @@ graphic. It executes a pixel-wise combination of two input SVG fragments or imag
 <html> 
 
 <body> 
-	<svg width="200" height="200"> 
-		<defs> 
-			<filter id="Screen"> 
-				<feBlend mode="screen"
-					in2="BackgroundImage"
-					in="SourceGraphic" /> 
-			</filter> 
-		</defs> 
+    <svg width="200" height="200"> 
+        <defs> 
+            <filter id="Screen"> 
+                <feBlend mode="screen"
+                    in2="BackgroundImage"
+                    in="SourceGraphic" /> 
+            </filter> 
+        </defs> 
 
-		<rect x="1" y="1" width="198"
-			height="118" style="stroke: #000000; 
-								fill: black; 
-								filter: url(#Screen);" /> 
+        <rect x="1" y="1" width="198"
+            height="118" style="stroke: #000000; 
+                                fill: black; 
+                                filter: url(#Screen);" /> 
 
-		<circle cx="100" cy="60" r="55"
-			stroke="black" stroke-width="3"
-			fill="Lightgreen" /> 
+        <circle cx="100" cy="60" r="55"
+            stroke="black" stroke-width="3"
+            fill="Lightgreen" /> 
 
-		<g fill="#FFFFFF" stroke="Green"
-			font-size="10" c font-family="Verdana"> 
-			
-			<text x="60" y="62">GeeksForGeeks</text> 
-		</g> 
-	</svg> 
+        <g fill="#FFFFFF" stroke="Green"
+            font-size="10" c font-family="Verdana"> 
+            
+            <text x="60" y="62">GeeksForGeeks</text> 
+        </g> 
+    </svg> 
 </body> 
 
 </html> 
@@ -6538,28 +6540,28 @@ graphic. It executes a pixel-wise combination of two input SVG fragments or imag
 <html> 
 <title>SVG Filter</title> 
 <body> 
-		
+        
 <svg width="640" height="550" viewBox="0 0 640 550"> 
 <defs> 
-	<filter id="new" filterUnits="objectBoundingBox" x="0%" y="0%" width="100%" height="100%"> 
+    <filter id="new" filterUnits="objectBoundingBox" x="0%" y="0%" width="100%" height="100%"> 
 
-	<feComponentTransfer> 
-		<feFuncA type="table" tableValues="0 0 1 1"/> 
-		<feFuncB type="table" tableValues="0 1 0 1"/> 
-		<feFuncG type="table" tableValues="1 1 0 0"/> 
-		<feFuncR type="table" tableValues="0 0 1 0"/> 
-	</feComponentTransfer> 
-	
-	</filter> 
+    <feComponentTransfer> 
+        <feFuncA type="table" tableValues="0 0 1 1"/> 
+        <feFuncB type="table" tableValues="0 1 0 1"/> 
+        <feFuncG type="table" tableValues="1 1 0 0"/> 
+        <feFuncR type="table" tableValues="0 0 1 0"/> 
+    </feComponentTransfer> 
+    
+    </filter> 
 </defs> 
-	
+    
 <image x="10" y="10" width="280" height="350" preserveAspectRatio="true"
-					xlink:href="C:/Users/pc/Desktop/gfg/Capture25.png"/> 
+                    xlink:href="C:/Users/pc/Desktop/gfg/Capture25.png"/> 
 <image x="310" y="10" width="280" height="350" preserveAspectRatio="true"
-		filter="url(#new)" xlink:href="C:/Users/pc/Desktop/gfg/Capture25.png"/> 
+        filter="url(#new)" xlink:href="C:/Users/pc/Desktop/gfg/Capture25.png"/> 
 </svg> 
 
-	
+    
 </body> 
 </html> 
 ```
@@ -6585,31 +6587,31 @@ graphic. It executes a pixel-wise combination of two input SVG fragments or imag
 <html> 
 <title>SVG Filter</title> 
 <body> 
-		
+        
 <svg width="640" height="550" viewBox="0 0 640 550"> 
 <defs> 
-	<filter id="new" filterUnits="objectBoundingBox" x="0%" y="0%" width="100%" height="100%"> 
+    <filter id="new" filterUnits="objectBoundingBox" x="0%" y="0%" width="100%" height="100%"> 
 
-	
-		<feComponentTransfer in="BackgroundImage" result="A"> 
-		<feFuncA type="discrete" tableValues="0 0 1 1"/> 
-		<feFuncB type="discrete" tableValues="0.0 0.6 0.1 0.0"/> 
-		<feFuncG type="discrete" tableValues="1 0.5 0.5 0.5"/> 
-		<feFuncR type="discrete" tableValues="0.5 1 1 1.0"/> 
-		
-	</feComponentTransfer> 
-	
-	
-	</filter> 
+    
+        <feComponentTransfer in="BackgroundImage" result="A"> 
+        <feFuncA type="discrete" tableValues="0 0 1 1"/> 
+        <feFuncB type="discrete" tableValues="0.0 0.6 0.1 0.0"/> 
+        <feFuncG type="discrete" tableValues="1 0.5 0.5 0.5"/> 
+        <feFuncR type="discrete" tableValues="0.5 1 1 1.0"/> 
+        
+    </feComponentTransfer> 
+    
+    
+    </filter> 
 </defs> 
-	
+    
 <image x="10" y="10" width="280" height="350" preserveAspectRatio="true"
-					xlink:href="C:/Users/pc/Desktop/gfg/Capture82.png"/> 
+                    xlink:href="C:/Users/pc/Desktop/gfg/Capture82.png"/> 
 <image x="310" y="10" width="280" height="350" preserveAspectRatio="true" filter="url(#new)"
 xlink:href="C:/Users/pc/Desktop/gfg/Capture82.png"/> 
 </svg> 
 
-	
+    
 </body> 
 </html> 
 ```
@@ -6635,31 +6637,31 @@ xlink:href="C:/Users/pc/Desktop/gfg/Capture82.png"/>
 <html> 
 <title>SVG Filter</title> 
 <body> 
-		
+        
 <svg width="640" height="550" viewBox="0 0 640 550"> 
 <defs> 
-	<filter id="new" filterUnits="objectBoundingBox" x="0%" y="0%" width="100%" height="100%"> 
+    <filter id="new" filterUnits="objectBoundingBox" x="0%" y="0%" width="100%" height="100%"> 
 
-	
-		<feComponentTransfer in="BackgroundImage" result="A"> 
-		<feFuncA type="table" tableValues="0 0 1 1"/> 
-		<feFuncB type="discrete" tableValues="0 1 1 0"></feFuncB> 
-		<feFuncG type="gamma" amplitude="3" exponent="3" offset="0"></feFuncG> 
-		<feFuncR type="linear" slope="1.5" intercept="2"></feFuncR> 
-		
-	</feComponentTransfer> 
-	
-	
-	</filter> 
+    
+        <feComponentTransfer in="BackgroundImage" result="A"> 
+        <feFuncA type="table" tableValues="0 0 1 1"/> 
+        <feFuncB type="discrete" tableValues="0 1 1 0"></feFuncB> 
+        <feFuncG type="gamma" amplitude="3" exponent="3" offset="0"></feFuncG> 
+        <feFuncR type="linear" slope="1.5" intercept="2"></feFuncR> 
+        
+    </feComponentTransfer> 
+    
+    
+    </filter> 
 </defs> 
-	
+    
 <image x="10" y="10" width="280" height="350" preserveAspectRatio="true"
-					xlink:href="C:/Users/pc/Desktop/gfg/Capture26.png"/> 
+                    xlink:href="C:/Users/pc/Desktop/gfg/Capture26.png"/> 
 <image x="310" y="10" width="280" height="350" preserveAspectRatio="true" filter="url(#new)"
 xlink:href="C:/Users/pc/Desktop/gfg/Capture26.png"/> 
 </svg> 
 
-	
+    
 </body> 
 </html> 
 ```
@@ -6712,9 +6714,10 @@ with neighboring pixels to produce a resulting image.</p>
     targetY &lt; orderY).</li>
   <li><b>kernelUnitLength</b> – It tells the intended distance between successive columns 
     and rows in the kernelMatrix. The intended distance is represented in current filter 
-	units. The default value is 1.</li>
+    units. The default value is 1.</li>
   <li><b>preserveAlpha</b> – It value is either true or false. It indicates whether the 
     convolution will only apply to the alpha and color channels. The default value is false.</li>
+</ul>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h5>Example 1:</h5>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -6724,29 +6727,29 @@ with neighboring pixels to produce a resulting image.</p>
 <html> 
 
 <body> 
-	<svg width="100%" height="220"> 
-		<defs> 
-			<filter id="convolve"> 
-				<feConvolveMatrix kernelMatrix= 
-					"1 5 -1 -1 0 4 0 0 -1" /> 
-			</filter> 
-		</defs> 
+    <svg width="100%" height="220"> 
+        <defs> 
+            <filter id="convolve"> 
+                <feConvolveMatrix kernelMatrix= 
+                    "1 5 -1 -1 0 4 0 0 -1" /> 
+            </filter> 
+        </defs> 
 
-		<rect x="40" y="40" width="100"
-			height="100"
-			filter: url(#convolve) style= 
-				"stroke: #000000; 
-				fill: darkgreen;" /> 
+        <rect x="40" y="40" width="100"
+            height="100"
+            filter: url(#convolve) style= 
+                "stroke: #000000; 
+                fill: darkgreen;" /> 
 
-		<g fill="#FFFFFF" stroke="black"
-			font-size="10" font-family="Verdana"> 
+        <g fill="#FFFFFF" stroke="black"
+            font-size="10" font-family="Verdana"> 
 
-			<text x="50" y="90"
-				filter="url(#convolve)"> 
-				GeeksForGeeks 
-			</text> 
-		</g> 
-	</svg> 
+            <text x="50" y="90"
+                filter="url(#convolve)"> 
+                GeeksForGeeks 
+            </text> 
+        </g> 
+    </svg> 
 </body> 
 
 </html> 
@@ -6775,31 +6778,31 @@ with neighboring pixels to produce a resulting image.</p>
 <title>SVG Filter</title> 
 
 <body> 
-	<svg width="100%" height="220"> 
-		<defs> 
-			<filter id="convolve"> 
-				<feConvolveMatrix kernelMatrix
-				="-7 -10 -15 -10 10 -1 0 0 -1" /> 
-			</filter> 
-		</defs> 
+    <svg width="100%" height="220"> 
+        <defs> 
+            <filter id="convolve"> 
+                <feConvolveMatrix kernelMatrix
+                ="-7 -10 -15 -10 10 -1 0 0 -1" /> 
+            </filter> 
+        </defs> 
 
-		<rect x="1" y="1" width="198"
-			height="118"
-			style="stroke: #000000; 
-					fill: none; 
-					filter: url(#convolve);" /> 
+        <rect x="1" y="1" width="198"
+            height="118"
+            style="stroke: #000000; 
+                    fill: none; 
+                    filter: url(#convolve);" /> 
 
-		<circle cx="100" cy="60" r="55"
-			stroke="black" stroke-width="3"
-			fill="Lightgreen"
-			filter: url(#convolve) /> 
+        <circle cx="100" cy="60" r="55"
+            stroke="black" stroke-width="3"
+            fill="Lightgreen"
+            filter: url(#convolve) /> 
 
-		<g fill="#FFFFFF" stroke="black"
-			font-size="10" font-family="Verdana"> 
-			<text x="60" y="62" filter="url(#convolve)"> 
-				GeeksForGeeks</text> 
-		</g> 
-	</svg> 
+        <g fill="#FFFFFF" stroke="black"
+            font-size="10" font-family="Verdana"> 
+            <text x="60" y="62" filter="url(#convolve)"> 
+                GeeksForGeeks</text> 
+        </g> 
+    </svg> 
 </body> 
 
 </html> 
@@ -6850,27 +6853,27 @@ are brighter and the sides facing away are darker and in shadow.</p>
 <html> 
 
 <body> 
-	<svg viewBox="0 0 1000 1000"> 
-		<filter id="lightMe2"> 
-			<feDiffuseLighting in="SourceGraphic"
-				surfaceScale="1" diffuseConstant="2"
-				kernelUnitLength="2"> 
+    <svg viewBox="0 0 1000 1000"> 
+        <filter id="lightMe2"> 
+            <feDiffuseLighting in="SourceGraphic"
+                surfaceScale="1" diffuseConstant="2"
+                kernelUnitLength="2"> 
 
-				<fePointLight x="80" y="80" z="40" /> 
+                <fePointLight x="80" y="80" z="40" /> 
 
-				<feDistantLight azimuth="240"
-					elevation="20" /> 
-			</feDiffuseLighting> 
+                <feDistantLight azimuth="240"
+                    elevation="20" /> 
+            </feDiffuseLighting> 
 
-			<feComposite in="SourceGraphic" in2="light"
-				operator="arithmetic" k1="1" k2="0"
-				k3="0" k4="0" /> 
-		</filter> 
+            <feComposite in="SourceGraphic" in2="light"
+                operator="arithmetic" k1="1" k2="0"
+                k3="0" k4="0" /> 
+        </filter> 
 
-		<rect x="20" y="20" width="200" height="200"
-			fill="green"
-			style="filter: url(#lightMe2);" /> 
-	</svg> 
+        <rect x="20" y="20" width="200" height="200"
+            fill="green"
+            style="filter: url(#lightMe2);" /> 
+    </svg> 
 </body> 
 
 </html>
@@ -6898,29 +6901,29 @@ are brighter and the sides facing away are darker and in shadow.</p>
 <html> 
 
 <body> 
-	<svg viewBox="0 0 1000 1000"> 
-		<filter id="lightMe3"> 
-			<feDiffuseLighting in="BackgroundImage"
-				surfaceScale="4" diffuseConstant="2"
-				kernelUnitLength="2"> 
+    <svg viewBox="0 0 1000 1000"> 
+        <filter id="lightMe3"> 
+            <feDiffuseLighting in="BackgroundImage"
+                surfaceScale="4" diffuseConstant="2"
+                kernelUnitLength="2"> 
 
-				<feSpotLight x="30" y="20" z="30"
-					limitingConeAngle="40"
-					pointsAtX="200" pointsAtY="200"
-					pointsAtZ="0" /> 
+                <feSpotLight x="30" y="20" z="30"
+                    limitingConeAngle="40"
+                    pointsAtX="200" pointsAtY="200"
+                    pointsAtZ="0" /> 
 
-				<fePointLight x="80" y="80" z="40" /> 
-			</feDiffuseLighting> 
+                <fePointLight x="80" y="80" z="40" /> 
+            </feDiffuseLighting> 
 
-			<feComposite in="SourceGraphic"
-				in2="light" operator="arithmetic"
-				k1="1" k2="0" k3="0" k4="0" /> 
-		</filter> 
+            <feComposite in="SourceGraphic"
+                in2="light" operator="arithmetic"
+                k1="1" k2="0" k3="0" k4="0" /> 
+        </filter> 
 
-		<rect x="20" y="20" width="200" height="200"
-			fill="blue"
-			style="filter: url(#lightMe3);" /> 
-	</svg> 
+        <rect x="20" y="20" width="200" height="200"
+            fill="blue"
+            style="filter: url(#lightMe3);" /> 
+    </svg> 
 </body> 
 
 </html>
@@ -6949,7 +6952,6 @@ like in HTML canvas.</p>
 image content using a displacement map. It takes two inputs to produce one result. 
 The image content to displace is specified in the “in2” attribute. The content to 
 which displacement effect is applied is reserved in “in” attribute.</p>
-
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h5>Syntax:</h5>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -6958,7 +6960,7 @@ which displacement effect is applied is reserved in “in” attribute.</p>
 <feDisplacementMap in2="" in="" scale="" 
     xChannelSelector="" yChannelSelector=""/>
 ```
-	
+    
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h5>Attributes:</h5>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -6982,26 +6984,26 @@ which displacement effect is applied is reserved in “in” attribute.</p>
 <html> 
 
 <body> 
-	<svg width="200" height="200"
-		viewBox="0 0 220 220"> 
+    <svg width="200" height="200"
+        viewBox="0 0 220 220"> 
 
-		<filter id="displacementFilter"> 
+        <filter id="displacementFilter"> 
 
-			<feTurbulence type="turbulence"
-				baseFrequency="1"
-				numOctaves="2"
-				result="turbulence" /> 
+            <feTurbulence type="turbulence"
+                baseFrequency="1"
+                numOctaves="2"
+                result="turbulence" /> 
 
-			<feDisplacementMap in2="turbulence"
-				in="SourceGraphic" scale="50"
-				xChannelSelector="R"
-				yChannelSelector="B" /> 
-		</filter> 
+            <feDisplacementMap in2="turbulence"
+                in="SourceGraphic" scale="50"
+                xChannelSelector="R"
+                yChannelSelector="B" /> 
+        </filter> 
 
-		<circle cx="100" cy="100" r="100"
-			stroke="green" style= 
-			"filter: url(#displacementFilter)" /> 
-	</svg> 
+        <circle cx="100" cy="100" r="100"
+            stroke="green" style= 
+            "filter: url(#displacementFilter)" /> 
+    </svg> 
 </body> 
 
 </html> 
@@ -7029,24 +7031,24 @@ which displacement effect is applied is reserved in “in” attribute.</p>
 <html> 
 
 <body> 
-	<svg width="200" height="200"
-		viewBox="0 0 220 220"> 
+    <svg width="200" height="200"
+        viewBox="0 0 220 220"> 
 
-		<filter id="displacementFilter"> 
+        <filter id="displacementFilter"> 
 
-			<feTurbulence type="turbulence"
-				baseFrequency="5" numOctaves="2"
-				result="turbulence" /> 
+            <feTurbulence type="turbulence"
+                baseFrequency="5" numOctaves="2"
+                result="turbulence" /> 
 
-			<feDisplacementMap in2="abc"
-				in="SourceGraphic" scale="200"
-				xChannelSelector="B"
-				yChannelSelector="R" /> 
-		</filter> 
+            <feDisplacementMap in2="abc"
+                in="SourceGraphic" scale="200"
+                xChannelSelector="B"
+                yChannelSelector="R" /> 
+        </filter> 
 
-		<rect width="250" height="250" style
-		="filter: url(#displacementFilter)" /> 
-	</svg> 
+        <rect width="250" height="250" style
+        ="filter: url(#displacementFilter)" /> 
+    </svg> 
 </body> 
 
 </html> 
@@ -7168,19 +7170,17 @@ much more.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3>Differences Between SVG and Canvas</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-SVG is a language for describing 2D graphics in XML, while Canvas draws 2D graphics, on 
-the fly (with JavaScript).
-
-SVG is XML based, which means that every element is available within the SVG DOM. You 
-can attach JavaScript event handlers to SVG graphics.
-
-In SVG, each drawn shape is remembered as an object. If attributes of an SVG object are 
-changed, the browser can automatically re-render the shape.
-
-Canvas is rendered pixel by pixel. In canvas, once the graphic is drawn, it is forgotten 
-by the browser. If its position should be changed, the entire scene needs to be redrawn, 
-including any objects that might have been covered by the graphic.
-
+<ul>
+  <li>SVG is a language for describing 2D graphics in XML, while Canvas draws 2D graphics, on 
+    the fly (with JavaScript).</li>
+  <li>SVG is XML based, which means that every element is available within the SVG DOM. You 
+    can attach JavaScript event handlers to SVG graphics.</li>
+  <li>In SVG, each drawn shape is remembered as an object. If attributes of an SVG object are 
+    changed, the browser can automatically re-render the shape.</li>
+  <li>Canvas is rendered pixel by pixel. In canvas, once the graphic is drawn, it is forgotten 
+    by the browser. If its position should be changed, the entire scene needs to be redrawn, 
+    including any objects that might have been covered by the graphic.</li>
+</ul>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3>Comparison of SVG and Canvas</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -7343,7 +7343,7 @@ Place all attribute values in SVG inside quotes (even if they are numbers)
     element define the height and the width of the rectangle.</li>
   <li>The <mark>x</mark> and <mark>y</mark> attributes defines the x- and y-position of the 
     top-left corner of the rectangle (x="10" places the rectangle 10px from the left margin 
-	and y="10" places the rectangle 10px from the top margin) in the SVG canvas.</li>
+    and y="10" places the rectangle 10px from the top margin) in the SVG canvas.</li>
   <li>The <mark>rx</mark> and <mark>ry</mark> attributes defines the radius of the 
     corners of the rectangle.</li>
   <li>The <mark>fill</mark> attribute defines the fill color of the rectangle.</li>
