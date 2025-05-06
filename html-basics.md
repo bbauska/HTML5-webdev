@@ -4422,35 +4422,35 @@ table {
 <html>
 
 <head>
-    <style>
-        table,
-        th,
-        td {
-            border: 1px solid black;
-            border-collapse: collapse;
-        }
+  <style>
+    table,
+    th,
+    td {
+      border: 1px solid black;
+      border-collapse: collapse;
+    }
 
-        th,
-        td {
-            padding: 5px;
-            text-align: left;
-        }
-    </style>
+    th,
+    td {
+      padding: 5px;
+      text-align: left;
+    }
+  </style>
 </head>
 
 <body>
-    <h2>Cell that spans two columns:</h2>
-    <table style="width:100%">
-        <tr>
-            <th>Name</th>
-            <th colspan="2">Telephone</th>
-        </tr>
-        <tr>
-            <td>Vikas Rawat</td>
-            <td>9125577854</td>
-            <td>8565557785</td>
-        </tr>
-    </table>
+  <h2>Cell that spans two columns:</h2>
+  <table style="width:100%">
+    <tr>
+      <th>Name</th>
+      <th colspan="2">Telephone</th>
+    </tr>
+    <tr>
+      <td>Vikas Rawat</td>
+      <td>9125577854</td>
+      <td>8565557785</td>
+    </tr>
+  </table>
 </body>
 
 </html>
@@ -4481,37 +4481,37 @@ table {
 <html>
 
 <head>
-    <style>
-        table,
-        th,
-        td {
-            border: 1px solid black;
-            border-collapse: collapse;
-        }
+  <style>
+    table,
+    th,
+    td {
+      border: 1px solid black;
+      border-collapse: collapse;
+    }
 
-        th,
-        td {
-            padding: 5px;
-            text-align: left;
-        }
-    </style>
+    th,
+    td {
+      padding: 5px;
+      text-align: left;
+    }
+  </style>
 </head>
 
 <body>
-    <h2>Cell that spans two rows:</h2>
-    <table style="width:100%">
-        <tr>
-            <th>Name:</th>
-            <td>Vikas Rawat</td>
-        </tr>
-        <tr>
-            <th rowspan="2">Telephone:</th>
-            <td>9125577854</td>
-        </tr>
-        <tr>
-            <td>8565557785</td>
-        </tr>
-    </table>
+  <h2>Cell that spans two rows:</h2>
+  <table style="width:100%">
+    <tr>
+      <th>Name:</th>
+      <td>Vikas Rawat</td>
+    </tr>
+    <tr>
+      <th rowspan="2">Telephone:</th>
+      <td>9125577854</td>
+    </tr>
+    <tr>
+      <td>8565557785</td>
+    </tr>
+  </table>
 </body>
 
 </html>
@@ -6355,18 +6355,16 @@ circle has equal x and y radius:</p>
 <p>Change the opacity.</h5>
 
 ```
-<html> 
-   <title>SVG Ellipse</title> 
-   <body> 
-      <svg width="400" height="400"> 
-            <ellipse cx="100" cy="100" rx="90" ry="50" 
-            stroke="black" stroke-width="2" fill="grey"
-            opacity="0.5"> 
-                  
-            </ellipse> 
-      </svg> 
-     
-   </body> 
+<html>
+  <title>SVG Ellipse</title>
+  <body>
+    <svg width="400" height="400">
+      <ellipse cx="100" cy="100" rx="90" ry="50"
+        stroke="black" stroke-width="2" fill="grey"
+        opacity="0.5">     
+      </ellipse>
+    </svg>
+  </body>
 </html>
 ```
 
@@ -6414,40 +6412,35 @@ graphic. It executes a pixel-wise combination of two input SVG fragments or imag
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 
 ```
-<!DOCTYPE html> 
-<html> 
+<!DOCTYPE html>
+<html>
 
-<body> 
-    <svg width="200" height="200"> 
-        <defs> 
-            <filter id="spotlight"> 
-                <feFlood result="floodFill"
-                    x="0" y="0" width="100%"
-                    height="100%" flood-color="green"
-                    flood-opacity="1" /> 
+<body>
+  <svg width="200" height="200">
+    <defs>
+      <filter id="spotlight">
+        <feFlood result="floodFill"
+          x="0" y="0" width="100%"
+          height="100%" flood-color="green"
+          flood-opacity="1" />
+        <feBlend in="FillPaint"
+          in2="floodFill" mode="multiply" />
+      </filter>
+    </defs>
+    <rect x="40" y="40" width="100"
+      height="100" style="stroke: #000000;
+      fill: lightgreen;
+      filter: url(#spotlight);" />
+    <rect x="40" y="40" width="100" height="100"
+      style="stroke: #000000; fill: green;" />
+    <g fill="#FFFFFF" stroke="black" font-size="10"
+      font-family="Verdana">
+      <text x="50" y="90">GeeksForGeeks</text>
+    </g>
+  </svg>
+</body>
 
-                <feBlend in="FillPaint"
-                    in2="floodFill" mode="multiply" /> 
-            </filter> 
-        </defs> 
-
-        <rect x="40" y="40" width="100"
-            height="100" style="stroke: #000000; 
-                        fill: lightgreen; 
-                        filter: url(#spotlight);" /> 
-
-        <rect x="40" y="40" width="100" height="100"
-            style="stroke: #000000; fill: green;" /> 
-
-        <g fill="#FFFFFF" stroke="black" font-size="10"
-            font-family="Verdana"> 
-
-            <text x="50" y="90">GeeksForGeeks</text> 
-        </g> 
-    </svg> 
-</body> 
-
-</html> 
+</html>
 ```
 
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -6472,30 +6465,26 @@ graphic. It executes a pixel-wise combination of two input SVG fragments or imag
 <html> 
 
 <body> 
-    <svg width="200" height="200"> 
-        <defs> 
-            <filter id="Screen"> 
-                <feBlend mode="screen"
-                    in2="BackgroundImage"
-                    in="SourceGraphic" /> 
-            </filter> 
-        </defs> 
-
-        <rect x="1" y="1" width="198"
-            height="118" style="stroke: #000000; 
-                                fill: black; 
-                                filter: url(#Screen);" /> 
-
-        <circle cx="100" cy="60" r="55"
-            stroke="black" stroke-width="3"
-            fill="Lightgreen" /> 
-
-        <g fill="#FFFFFF" stroke="Green"
-            font-size="10" c font-family="Verdana"> 
-            
-            <text x="60" y="62">GeeksForGeeks</text> 
-        </g> 
-    </svg> 
+  <svg width="200" height="200"> 
+    <defs> 
+      <filter id="Screen"> 
+        <feBlend mode="screen"
+          in2="BackgroundImage"
+          in="SourceGraphic" /> 
+      </filter> 
+    </defs> 
+    <rect x="1" y="1" width="198"
+      height="118" style="stroke: #000000; 
+      fill: black; 
+      filter: url(#Screen);" /> 
+    <circle cx="100" cy="60" r="55"
+      stroke="black" stroke-width="3"
+      fill="Lightgreen" /> 
+    <g fill="#FFFFFF" stroke="Green"
+      font-size="10" c font-family="Verdana"> 
+      <text x="60" y="62">GeeksForGeeks</text> 
+    </g> 
+  </svg> 
 </body> 
 
 </html> 
@@ -6538,33 +6527,29 @@ graphic. It executes a pixel-wise combination of two input SVG fragments or imag
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 
 ```
-<html> 
-<title>SVG Filter</title> 
-<body> 
-        
-<svg width="640" height="550" viewBox="0 0 640 550"> 
-<defs> 
-    <filter id="new" filterUnits="objectBoundingBox" x="0%" y="0%" width="100%" height="100%"> 
+<html>
+<title>SVG Filter</title>
+<body>
 
-    <feComponentTransfer> 
-        <feFuncA type="table" tableValues="0 0 1 1"/> 
-        <feFuncB type="table" tableValues="0 1 0 1"/> 
-        <feFuncG type="table" tableValues="1 1 0 0"/> 
-        <feFuncR type="table" tableValues="0 0 1 0"/> 
-    </feComponentTransfer> 
-    
-    </filter> 
-</defs> 
-    
-<image x="10" y="10" width="280" height="350" preserveAspectRatio="true"
-                    xlink:href="C:/Users/pc/Desktop/gfg/Capture25.png"/> 
-<image x="310" y="10" width="280" height="350" preserveAspectRatio="true"
-        filter="url(#new)" xlink:href="C:/Users/pc/Desktop/gfg/Capture25.png"/> 
-</svg> 
+  <svg width="640" height="550" viewBox="0 0 640 550">
+    <defs>
+      <filter id="new" filterUnits="objectBoundingBox" x="0%" y="0%" width="100%" height="100%">
+        <feComponentTransfer>
+          <feFuncA type="table" tableValues="0 0 1 1"/>
+          <feFuncB type="table" tableValues="0 1 0 1"/>
+          <feFuncG type="table" tableValues="1 1 0 0"/>
+          <feFuncR type="table" tableValues="0 0 1 0"/>
+        </feComponentTransfer>
+      </filter> 
+    </defs>
+    <image x="10" y="10" width="280" height="350" preserveAspectRatio="true"
+      xlink:href="C:/Users/pc/Desktop/gfg/Capture25.png"/> 
+    <image x="310" y="10" width="280" height="350" preserveAspectRatio="true"
+      filter="url(#new)" xlink:href="C:/Users/pc/Desktop/gfg/Capture25.png"/>
+  </svg>
 
-    
-</body> 
-</html> 
+</body>
+</html>
 ```
 
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -6585,36 +6570,30 @@ graphic. It executes a pixel-wise combination of two input SVG fragments or imag
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 
 ```
-<html> 
-<title>SVG Filter</title> 
-<body> 
-        
-<svg width="640" height="550" viewBox="0 0 640 550"> 
-<defs> 
-    <filter id="new" filterUnits="objectBoundingBox" x="0%" y="0%" width="100%" height="100%"> 
+<html>
+<title>SVG Filter</title>
+<body>
 
-    
-        <feComponentTransfer in="BackgroundImage" result="A"> 
-        <feFuncA type="discrete" tableValues="0 0 1 1"/> 
-        <feFuncB type="discrete" tableValues="0.0 0.6 0.1 0.0"/> 
-        <feFuncG type="discrete" tableValues="1 0.5 0.5 0.5"/> 
-        <feFuncR type="discrete" tableValues="0.5 1 1 1.0"/> 
-        
-    </feComponentTransfer> 
-    
-    
-    </filter> 
-</defs> 
-    
-<image x="10" y="10" width="280" height="350" preserveAspectRatio="true"
-                    xlink:href="C:/Users/pc/Desktop/gfg/Capture82.png"/> 
-<image x="310" y="10" width="280" height="350" preserveAspectRatio="true" filter="url(#new)"
-xlink:href="C:/Users/pc/Desktop/gfg/Capture82.png"/> 
-</svg> 
+  <svg width="640" height="550" viewBox="0 0 640 550">
+    <defs>
+      <filter id="new" filterUnits="objectBoundingBox" x="0%" y="0%" width="100%" height="100%">
+        <feComponentTransfer in="BackgroundImage" result="A">
+        <feFuncA type="discrete" tableValues="0 0 1 1"/>
+        <feFuncB type="discrete" tableValues="0.0 0.6 0.1 0.0"/>
+        <feFuncG type="discrete" tableValues="1 0.5 0.5 0.5"/>
+        <feFuncR type="discrete" tableValues="0.5 1 1 1.0"/>
+        </feComponentTransfer>
+      </filter>
+    </defs>
 
-    
-</body> 
-</html> 
+    <image x="10" y="10" width="280" height="350" preserveAspectRatio="true"
+      xlink:href="C:/Users/pc/Desktop/gfg/Capture82.png"/>
+    <image x="310" y="10" width="280" height="350" preserveAspectRatio="true" filter="url(#new)"
+      xlink:href="C:/Users/pc/Desktop/gfg/Capture82.png"/>
+  </svg>
+
+</body>
+</html>
 ```
 
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -6635,34 +6614,28 @@ xlink:href="C:/Users/pc/Desktop/gfg/Capture82.png"/>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 
 ```
-<html> 
-<title>SVG Filter</title> 
-<body> 
-        
-<svg width="640" height="550" viewBox="0 0 640 550"> 
-<defs> 
-    <filter id="new" filterUnits="objectBoundingBox" x="0%" y="0%" width="100%" height="100%"> 
+<html>
+<title>SVG Filter</title>
+<body>
 
-    
-        <feComponentTransfer in="BackgroundImage" result="A"> 
-        <feFuncA type="table" tableValues="0 0 1 1"/> 
-        <feFuncB type="discrete" tableValues="0 1 1 0"></feFuncB> 
-        <feFuncG type="gamma" amplitude="3" exponent="3" offset="0"></feFuncG> 
-        <feFuncR type="linear" slope="1.5" intercept="2"></feFuncR> 
-        
-    </feComponentTransfer> 
-    
-    
-    </filter> 
-</defs> 
-    
-<image x="10" y="10" width="280" height="350" preserveAspectRatio="true"
-                    xlink:href="C:/Users/pc/Desktop/gfg/Capture26.png"/> 
-<image x="310" y="10" width="280" height="350" preserveAspectRatio="true" filter="url(#new)"
-xlink:href="C:/Users/pc/Desktop/gfg/Capture26.png"/> 
-</svg> 
+  <svg width="640" height="550" viewBox="0 0 640 550">
+    <defs>
+      <filter id="new" filterUnits="objectBoundingBox" x="0%" y="0%" width="100%" height="100%">
+        <feComponentTransfer in="BackgroundImage" result="A">
+          <feFuncA type="table" tableValues="0 0 1 1"/>
+          <feFuncB type="discrete" tableValues="0 1 1 0"></feFuncB>
+          <feFuncG type="gamma" amplitude="3" exponent="3" offset="0"></feFuncG>
+          <feFuncR type="linear" slope="1.5" intercept="2"></feFuncR>
+        </feComponentTransfer>
+      </filter> 
+    </defs> 
 
-    
+    <image x="10" y="10" width="280" height="350" preserveAspectRatio="true"
+      xlink:href="C:/Users/pc/Desktop/gfg/Capture26.png"/>
+    <image x="310" y="10" width="280" height="350" preserveAspectRatio="true" filter="url(#new)"
+      xlink:href="C:/Users/pc/Desktop/gfg/Capture26.png"/>
+  </svg>
+
 </body> 
 </html> 
 ```
@@ -6898,34 +6871,34 @@ are brighter and the sides facing away are darker and in shadow.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 
 ```
-<!DOCTYPE html> 
-<html> 
+<!DOCTYPE html>
+<html>
 
-<body> 
-    <svg viewBox="0 0 1000 1000"> 
-        <filter id="lightMe3"> 
+<body>
+    <svg viewBox="0 0 1000 1000">
+        <filter id="lightMe3">
             <feDiffuseLighting in="BackgroundImage"
                 surfaceScale="4" diffuseConstant="2"
-                kernelUnitLength="2"> 
+                kernelUnitLength="2">
 
                 <feSpotLight x="30" y="20" z="30"
                     limitingConeAngle="40"
                     pointsAtX="200" pointsAtY="200"
-                    pointsAtZ="0" /> 
+                    pointsAtZ="0" />
 
-                <fePointLight x="80" y="80" z="40" /> 
-            </feDiffuseLighting> 
+                <fePointLight x="80" y="80" z="40" />
+            </feDiffuseLighting>
 
             <feComposite in="SourceGraphic"
                 in2="light" operator="arithmetic"
-                k1="1" k2="0" k3="0" k4="0" /> 
-        </filter> 
+                k1="1" k2="0" k3="0" k4="0" />
+        </filter>
 
         <rect x="20" y="20" width="200" height="200"
             fill="blue"
-            style="filter: url(#lightMe3);" /> 
-    </svg> 
-</body> 
+            style="filter: url(#lightMe3);" />
+    </svg>
+</body>
 
 </html>
 ```
@@ -6959,7 +6932,7 @@ which displacement effect is applied is reserved in “in” attribute.</p>
 
 ```
 <feDisplacementMap in2="" in="" scale="" 
-    xChannelSelector="" yChannelSelector=""/>
+  xChannelSelector="" yChannelSelector=""/>
 ```
     
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -6985,26 +6958,24 @@ which displacement effect is applied is reserved in “in” attribute.</p>
 <html> 
 
 <body> 
-    <svg width="200" height="200"
-        viewBox="0 0 220 220"> 
+  <svg width="200" height="200"
+    viewBox="0 0 220 220"> 
 
-        <filter id="displacementFilter"> 
+    <filter id="displacementFilter"> 
+      <feTurbulence type="turbulence"
+        baseFrequency="1"
+        numOctaves="2"
+        result="turbulence" /> 
+      <feDisplacementMap in2="turbulence"
+        in="SourceGraphic" scale="50"
+        xChannelSelector="R"
+        yChannelSelector="B" /> 
+    </filter> 
 
-            <feTurbulence type="turbulence"
-                baseFrequency="1"
-                numOctaves="2"
-                result="turbulence" /> 
-
-            <feDisplacementMap in2="turbulence"
-                in="SourceGraphic" scale="50"
-                xChannelSelector="R"
-                yChannelSelector="B" /> 
-        </filter> 
-
-        <circle cx="100" cy="100" r="100"
-            stroke="green" style= 
-            "filter: url(#displacementFilter)" /> 
-    </svg> 
+    <circle cx="100" cy="100" r="100"
+      stroke="green" style= 
+      "filter: url(#displacementFilter)" /> 
+  </svg> 
 </body> 
 
 </html> 
@@ -7028,28 +6999,28 @@ which displacement effect is applied is reserved in “in” attribute.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 
 ```
-<!DOCTYPE html> 
-<html> 
+<!DOCTYPE html>
+<html>
 
-<body> 
-    <svg width="200" height="200"
-        viewBox="0 0 220 220"> 
+<body>
+  <svg width="200" height="200"
+    viewBox="0 0 220 220">
 
-        <filter id="displacementFilter"> 
+    <filter id="displacementFilter"> 
 
-            <feTurbulence type="turbulence"
-                baseFrequency="5" numOctaves="2"
-                result="turbulence" /> 
+      <feTurbulence type="turbulence"
+        baseFrequency="5" numOctaves="2"
+        result="turbulence" /> 
 
-            <feDisplacementMap in2="abc"
-                in="SourceGraphic" scale="200"
-                xChannelSelector="B"
-                yChannelSelector="R" /> 
-        </filter> 
+      <feDisplacementMap in2="abc"
+        in="SourceGraphic" scale="200"
+        xChannelSelector="B"
+        yChannelSelector="R" /> 
+    </filter> 
 
-        <rect width="250" height="250" style
-        ="filter: url(#displacementFilter)" /> 
-    </svg> 
+    <rect width="250" height="250" style
+      ="filter: url(#displacementFilter)" /> 
+  </svg> 
 </body> 
 
 </html> 
@@ -7073,7 +7044,6 @@ which displacement effect is applied is reserved in “in” attribute.</p>
 <h3>Next group goes here</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-
 <!-- W3 Schools tutorial for basic svg tag -->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!-- 09-image001.png - svg line drawing. -->
