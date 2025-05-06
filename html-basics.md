@@ -1696,6 +1696,9 @@ browser window sizes.</p>
 </picture>
 ```
 
+<div align="right">
+    <b><a href="#toc">↥ back to top</a></b>
+</div>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h4>4. Responsive Text Size:</h4>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -1774,6 +1777,9 @@ performance.mark("endFoo");
 performance.measure("durationFoo", "startFoo", "endFoo");
 ```
 
+<div align="right">
+    <b><a href="#toc">↥ back to top</a></b>
+</div>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h4>3. Network Information API</h4>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -1805,6 +1811,9 @@ as alternating vibration times and pauses.</p>
 navigator.vibrate(2000);
 ```
 
+<div align="right">
+    <b><a href="#toc">↥ back to top</a></b>
+</div>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h4>5. Battery Status API</h4>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -1895,39 +1904,31 @@ if ("geolocation" in navigator) {
 </body>
 
 <script type="text/javascript">
-    /**
-        The Geolocation API allows the user to provide their location to web applications 
-        if they so desire. For privacy reasons, the user is asked for permission to report 
-        location information.
-    **/
-    function geoFindMe() {
-        var output = document.getElementById("out");
-
-        if (!navigator.geolocation){
-            output.innerHTML = "<p>Geolocation is not supported by your browser</p>";
-            return;
-        }
-
-        function success(position) {
-            var latitude  = position.coords.latitude;
-            var longitude = position.coords.longitude;
-
-            output.innerHTML = '<p>Latitude is ' + latitude + '° <br>Longitude is ' + longitude + '°</p>';
-
-            var img = new Image();
-            img.src = "https://maps.googleapis.com/maps/api/staticmap?center=" + latitude + "," + longitude + "&zoom=13&size=300x300&sensor=false";
-
-            output.appendChild(img);
-        }
-
-        function error() {
-            output.innerHTML = "Unable to retrieve your location";
-        }
-
-        output.innerHTML = "<p>Locating…</p>";
-
-        navigator.geolocation.getCurrentPosition(success, error); //function to get the current position of the device
-    }
+/**
+  The Geolocation API allows the user to provide their location to web applications 
+  if they so desire. For privacy reasons, the user is asked for permission to report 
+  location information.
+**/
+function geoFindMe() {
+  var output = document.getElementById("out");
+  if (!navigator.geolocation){
+    output.innerHTML = "<p>Geolocation is not supported by your browser</p>";
+    return;
+  }
+  function success(position) {
+    var latitude  = position.coords.latitude;
+    var longitude = position.coords.longitude;
+    output.innerHTML = '<p>Latitude is ' + latitude + '° <br>Longitude is ' + longitude + '°</p>';
+    var img = new Image();
+    img.src = "https://maps.googleapis.com/maps/api/staticmap?center=" + latitude + "," + longitude + "&zoom=13&size=300x300&sensor=false";
+    output.appendChild(img);
+  }
+  function error() {
+    output.innerHTML = "Unable to retrieve your location";
+  }
+  output.innerHTML = "<p>Locating…</p>";
+  navigator.geolocation.getCurrentPosition(success, error); //function to get the current position of the device
+}
 </script>
 </html>
 ```
@@ -1962,17 +1963,17 @@ const socket = new WebSocket('ws://localhost:8080/');
 
 // Connection opened
 socket.addEventListener('open', function(event) {
-    socket.send('Hello Server!');
+  socket.send('Hello Server!');
 });
 
 // Listen for messages
 socket.addEventListener('message', function(event) {
-    console.log('Message from server ', event.data);
+  console.log('Message from server ', event.data);
 });
 ```
 
 <div align="right">
-    <b><a href="#toc">↥ back to top</a></b>
+  <b><a href="#toc">↥ back to top</a></b>
 </div>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h2>Q. Explain about HTML Canvas?</h2>
@@ -2008,53 +2009,53 @@ socket.addEventListener('message', function(event) {
 <h4>3. Rectangles:</h4>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
   
-|Method            |Description                                          |
-|---------------|-----------------------------------------------------|
-|rect()            |Creates a rectangle                                  |
-|fillRect()        |Draws a "filled" rectangle                           |
-|strokeRect()    |Draws a rectangle (no fill)                          |
-|clearRect()    |Clears the specified pixels within a given rectangle |
+|Method       |Description                                          |
+|-------------|-----------------------------------------------------|
+|rect()       |Creates a rectangle                                  |
+|fillRect()   |Draws a "filled" rectangle                           |
+|strokeRect() |Draws a rectangle (no fill)                          |
+|clearRect()  |Clears the specified pixels within a given rectangle |
 
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h4>4. Paths:</h4>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 
-| Method          |   Description                                                                                 |
-|-----------------|---------------------------------------------------------------------------------------------- |
-|fill()              |Fills the current drawing (path)                                                               |
-|stroke()          |Actually draws the path you have defined                                                       |
-|beginPath()      |Begins a path, or resets the current path                                                      |
-|moveTo()          |Moves the path to the specified point in the canvas, without creating a line                   |
-|closePath()      |Creates a path from the current point back to the starting point                               |
-|lineTo()          |Adds a new point and creates a line to that point from the last specified point in the canvas  |
-|clip()              |Clips a region of any shape and size from the original canvas                                  |
-|arc()              |Creates an arc/curve (used to create circles, or parts of circles)                             |
-|arcTo()          |Creates an arc/curve between two tangents                                                      |
+| Method     |   Description                                                                                |
+|------------|----------------------------------------------------------------------------------------------|
+|fill()      |Fills the current drawing (path)                                                           |
+|stroke()    |Actually draws the path you have defined                                                     |
+|beginPath() |Begins a path, or resets the current path                                                     |
+|moveTo()    |Moves the path to the specified point in the canvas, without creating a line                 |
+|closePath() |Creates a path from the current point back to the starting point                              |
+|lineTo()    |Adds a new point and creates a line to that point from the last specified point in the canvas |
+|clip()      |Clips a region of any shape and size from the original canvas                              |
+|arc()       |Creates an arc/curve (used to create circles, or parts of circles)                          |
+|arcTo()     |Creates an arc/curve between two tangents                                                     |
 
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h4>5. Transformations:</h4>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 
-|Method            |Description                                                                |
-|---------------|-------------------------------------------------------------------------- |
+|Method         |Description                                                                |
+|---------------|---------------------------------------------------------------------------|
 |scale()        |Scales the current drawing bigger or smaller                               |
-|rotate()        |Rotates the current drawing                                                |
+|rotate()       |Rotates the current drawing                                                |
 |translate()    |Remaps the (0,0) position on the canvas                                    |
 |transform()    |Replaces the current transformation matrix for the drawing                 |
-|setTransform()    |Resets the current transform to the identity matrix. Then runs transform() |
+|setTransform() |Resets the current transform to the identity matrix. Then runs transform() |
 
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h4>6. Text:</h4>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 
-|Property        |Description                                                       |
-|---------------|----------------------------------------------------------------- |
-|font            |Sets or returns the current font properties for text content      |
-|textAlign        |Sets or returns the current alignment for text content            |
-|textBaseline    |Sets or returns the current text baseline used when drawing text  |
-|fillText()        |Draws "filled" text on the canvas                                 |
-|strokeText()    |Draws text on the canvas (no fill)                                |
-|measureText()    |Returns an object that contains the width of the specified text   |
+|Property      |Description                                                       |
+|--------------|----------------------------------------------------------------- |
+|font          |Sets or returns the current font properties for text content      |
+|textAlign     |Sets or returns the current alignment for text content            |
+|textBaseline  |Sets or returns the current text baseline used when drawing text  |
+|fillText()    |Draws "filled" text on the canvas                                 |
+|strokeText()  |Draws text on the canvas (no fill)                                |
+|measureText() |Returns an object that contains the width of the specified text   |
 
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h4>Example 01: HTML5 Canvas for Text</h4>
@@ -2065,12 +2066,12 @@ socket.addEventListener('message', function(event) {
 <canvas id="text" width="200" height="100" ></canvas>
 
 <script type="text/javascript">
-    // Text with style
-    var canvas = document.getElementById('text');
-    var context = canvas.getContext('2d');
-    context.font = '20pt Calibri';
-    context.fillStyle = 'blue';
-    context.fillText('Hello World!', 50, 50);
+  // Text with style
+  var canvas = document.getElementById('text');
+  var context = canvas.getContext('2d');
+  context.font = '20pt Calibri';
+  context.fillStyle = 'blue';
+  context.fillText('Hello World!', 50, 50);
 </script>
 ```
 
@@ -2083,12 +2084,12 @@ socket.addEventListener('message', function(event) {
 <canvas id="line" width="300" height="0" style="border: 1px solid #333;"></canvas>
 
 <script type="text/javascript">
-    // Straight Line
-    var canvas = document.getElementById("line");
-    var context = canvas.getContext("2d");
-    context.moveTo(50, 150);
-    context.lineTo(250, 50);
-    context.stroke();
+  // Straight Line
+  var canvas = document.getElementById("line");
+  var context = canvas.getContext("2d");
+  context.moveTo(50, 150);
+  context.lineTo(250, 50);
+  context.stroke();
 </script>
 ```
 
@@ -2101,11 +2102,11 @@ socket.addEventListener('message', function(event) {
 <canvas id="rectangle" width="300" height="200" style="border: 1px solid #999;"></canvas>
 
 <script type="text/javascript">
-    // Rectange with style
-    var canvas = document.getElementById("rectangle");
-    var context = canvas.getContext("2d");
-    context.fillStyle = "#FF0000";
-    context.fillRect(0, 0, 300, 200);
+  // Rectange with style
+  var canvas = document.getElementById("rectangle");
+  var context = canvas.getContext("2d");
+  context.fillStyle = "#FF0000";
+  context.fillRect(0, 0, 300, 200);
 </script>
 ```
 
@@ -2118,12 +2119,12 @@ socket.addEventListener('message', function(event) {
 <canvas id="circle">This browser does not support Canvas!</canvas>
 
 <script type="text/javascript">
-    // Circle
-    var canvas = document.getElementById("circle");
-    var context = canvas.getContext("2d");
-    context.beginPath();
-    context.arc(95, 50, 40, 0, 2 * Math.PI);
-    context.stroke();
+  // Circle
+  var canvas = document.getElementById("circle");
+  var context = canvas.getContext("2d");
+  context.beginPath();
+  context.arc(95, 50, 40, 0, 2 * Math.PI);
+  context.stroke();
 </script>
 ```
 
@@ -2156,24 +2157,24 @@ image quality.</p>
 ```html
 <!DOCTYPE html>
 <html>
-   <head>
-      <style>
-         #svgelem {
-            position: relative;
-            left: 50%;
-            -webkit-transform: translateX(-20%);
-            -ms-transform: translateX(-20%);
-            transform: translateX(-20%);
-         }
-      </style>
-      <title>HTML5 SVG</title>
-   </head>
-   <body>
-      <h2 align="center">HTML5 SVG Circle</h2>
-      <svg id="svgelem" height="200" xmlns="http://www.w3.org/2000/svg">
-         <circle id="bluecircle" cx="60" cy="60" r="50" fill="blue" />
-      </svg>
-   </body>
+  <head>
+    <style>
+      #svgelem {
+        position: relative;
+        left: 50%;
+        -webkit-transform: translateX(-20%);
+        -ms-transform: translateX(-20%);
+        transform: translateX(-20%);
+      }
+    </style>
+    <title>HTML5 SVG</title>
+  </head>
+  <body>
+    <h2 align="center">HTML5 SVG Circle</h2>
+    <svg id="svgelem" height="200" xmlns="http://www.w3.org/2000/svg">
+      <circle id="bluecircle" cx="60" cy="60" r="50" fill="blue" />
+    </svg>
+  </body>
 </html>
 ```
 
@@ -2192,18 +2193,18 @@ to drawing paths, boxes, circles, text & adding images.</p>
 ```html
 <!DOCTYPE html>
 <html>
-   <head>
-      <title>HTML5 Canvas Tag</title>
-   </head>
-   <body>
-      <canvas id="newCanvas" width="200" height="100" style="border:1px solid #000000;"></canvas>
-      <script>
-         var c = document.getElementById('newCanvas');
-         var ctx = c.getContext('2d');
-         ctx.fillStyle = '#7cce2b';
-         ctx.fillRect(0,0,300,100);
-      </script>
-   </body>
+  <head>
+    <title>HTML5 Canvas Tag</title>
+  </head>
+  <body>
+    <canvas id="newCanvas" width="200" height="100" style="border:1px solid #000000;"></canvas>
+    <script>
+      var c = document.getElementById('newCanvas');
+      var ctx = c.getContext('2d');
+      ctx.fillStyle = '#7cce2b';
+      ctx.fillRect(0,0,300,100);
+    </script>
+  </body>
 </html>
 ```
 
@@ -2223,7 +2224,6 @@ to drawing paths, boxes, circles, text & adding images.</p>
 <div align="right">
     <b><a href="#toc">↥ back to top</a></b>
 </div>
-
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h2>Q. Explain Drag and Drop in HTML5?</h2>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -2249,22 +2249,22 @@ the dragged element.</p>
 ```html
 <!DOCTYPE HTML>
 <html>
-   <head>
-   <script>
-        function allowDrop(ev) {
-            ev.preventDefault();
-        }
+  <head>
+  <script>
+    function allowDrop(ev) {
+      ev.preventDefault();
+    }
 
-        function drag(ev) {
-            ev.dataTransfer.setData("text", ev.target.id);
-        }
+    function drag(ev) {
+      ev.dataTransfer.setData("text", ev.target.id);
+    }
 
-        function drop(ev) {
-            ev.preventDefault();
-            var data = ev.dataTransfer.getData("text");
-            ev.target.appendChild(document.getElementById(data));
-        }
-    </script>
+    function drop(ev) {
+      ev.preventDefault();
+      var data = ev.dataTransfer.getData("text");
+      ev.target.appendChild(document.getElementById(data));
+    }
+  </script>
 </head>
 <body>
   <div id="div1" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
@@ -2274,9 +2274,8 @@ the dragged element.</p>
 ```
 
 <div align="right">
-    <b><a href="#toc">↥ back to top</a></b>
+  <b><a href="#toc">↥ back to top</a></b>
 </div>
-
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h2>Q. Explain Microdata in HTML5?</h2>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -2300,16 +2299,16 @@ to understand the information on web pages and provide more relevant results to 
 
 ```html
 <div itemscope>
-    <p>My name is <span itemprop="name">Elizabeth</span>.</p>
+  <p>My name is <span itemprop="name">Elizabeth</span>.</p>
 </div>
 
 <div itemscope>
-    <p>My name is <span itemprop="name">Daniel</span>.</p>
+  <p>My name is <span itemprop="name">Daniel</span>.</p>
 </div>
 ```
 
 <div align="right">
-    <b><a href="#toc">↥ back to top</a></b>
+  <b><a href="#toc">↥ back to top</a></b>
 </div>
 
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -2347,62 +2346,62 @@ handled by CSS.</p>
 |---------------------|----------------------|
 |rev                  |link, a|
 |charset              |link and a|
-|shape                  |a|
-|coords                  |a|
-|longdesc              |img and iframe.|
-|target                  |link|
-|nohref                  |area|
+|shape                |a|
+|coords               |a|
+|longdesc             |img and iframe.|
+|target               |link|
+|nohref               |area|
 |profile              |head|
 |version              |html|
-|name                  |img|
-|scheme                  |meta|
+|name                 |img|
+|scheme               |meta|
 |archive              |object|
 |classid              |object|
-|codebase              |object|
-|codetype              |object|
+|codebase             |object|
+|codetype             |object|
 |declare              |object|
 |standby              |object|
-|valuetype              |param|
-|type                  |param|
-|axis                  |td and t|
-|abbr                  |td and t|
-|scope                  |td|
-|align                  |caption, iframe, img, input, object, legend, table, hr, div, h1, h2, h3, h4, h5, h6, p, col, colgroup, tbody, td, tfoot, th, thead and tr.|
-|alink                  |body|
-|link                  |body|
-|vlink                  |body|
-|text                  |body|
-|background              |body|
+|valuetype            |param|
+|type                 |param|
+|axis                 |td and t|
+|abbr                 |td and t|
+|scope                |td|
+|align                |caption, iframe, img, input, object, legend, table, hr, div, h1, h2, h3, h4, h5, h6, p, col, colgroup, tbody, td, tfoot, th, thead and tr.|
+|alink                |body|
+|link                 |body|
+|vlink                |body|
+|text                 |body|
+|background           |body|
 |bgcolor              |table, tr, td, th and body.|
-|border                  |table and object.|
+|border               |table and object.|
 |cellpadding          |table|
 |cellspacing          |table|
-|char                  |col, colgroup, tbody, td, tfoot, th, thead and tr.|
-|charoff               |col, colgroup, tbody, td, tfoot, th, thead and tr.|
-|clear                  |br|
+|char                 |col, colgroup, tbody, td, tfoot, th, thead and tr.|
+|charoff              |col, colgroup, tbody, td, tfoot, th, thead and tr.|
+|clear                |br|
 |compact              |dl, menu, ol and ul.|
-|frame                  |table|
+|frame                |table|
 |compact              |dl, menu, ol and ul.|
-|frame                  |table|
+|frame                |table|
 |frameborder          |iframe|
-|hspace                  |img and object.|
-|vspace                  |img and object.|
-|marginheight          |iframe|
+|hspace               |img and object.|
+|vspace               |img and object.|
+|marginheight         |iframe|
 |marginwidth          |iframe|
 |noshade              |hr|
-|nowrap                  |td and th|
-|rules                  |table|
-|scrolling              |iframe|
-|size                  |hr|
-|type                  |li, ol and ul.|
-|valign                  |col, colgroup, tbody, td, tfoot, th, thead and tr|
-|width                  |hr, table, td, th, col, colgroup and pre.|
+|nowrap               |td and th|
+|rules                |table|
+|scrolling            |iframe|
+|size                 |hr|
+|type                 |li, ol and ul.|
+|valign               |col, colgroup, tbody, td, tfoot, th, thead and tr|
+|width                |hr, table, td, th, col, colgroup and pre.|
 
 <div align="right">
-    <b><a href="#toc">↥ back to top</a></b>
+  <b><a href="#toc">↥ back to top</a></b>
 </div>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<h2>Q. How you can Use Modernizr in HTML5?</h2>
+<h2>Q. How you can Use Modernizr in HTML5 (created: 2019)?</h2>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p><mark>Modernizr</mark> is a JavaScript library that detects which HTML5 and CSS3 features visitor&apos;s 
 browser supports. In detecting feature support, it allows developers to test for some of 
@@ -2429,18 +2428,18 @@ adding it with a no- prefix when it is not (e.g. <mark>.feature</mark> or <mark>
 <h4>2. Using Modernizr with JavaScript:</h4>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p><mark>Modernizr</mark> keeps track of the results of all of it&apos;s feature detections via the 
-<mar>Modernizr</mark> object.
+<mark>Modernizr</mark> object.
 
 ```javascript
 if (Modernizr.canvas) {
-    alert("This browser supports HTML5 canvas!");
+  alert("This browser supports HTML5 canvas!");
 } else {
-    alert("no canvas :(");
+  alert("no canvas :(");
 }
 ```
 
 <div align="right">
-    <b><a href="#toc">↥ back to top</a></b>
+  <b><a href="#toc">↥ back to top</a></b>
 </div>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h2>Q. What is progressive rendering?</h2>
@@ -2538,7 +2537,7 @@ called the parent browsing context. The topmost browsing context — the one wit
 parent — is usually the browser window, represented by the <b>Window</b> object.</p>
 
 <div align="right">
-    <b><a href="#toc">↥ back to top</a></b>
+  <b><a href="#toc">↥ back to top</a></b>
 </div>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h4>Example</h4>
@@ -2580,17 +2579,17 @@ parent — is usually the browser window, represented by the <b>Window</b> objec
 |----------------|----------------------------|
 |allow           |indicates what features the iframe is allowed to use (e.g. fullscreen, camera, autoplay)|
 |allowfullscreen |grants or denies permission for the iframe to appear in full-screen mode|
-|height           |sets the height of the iframe (if not specified, the default height is 150 pixels)|
+|height          |sets the height of the iframe (if not specified, the default height is 150 pixels)|
 |loading         |sets lazy loading or eager loading for the iframe|
 |referrerpolicy  |sets what referrer information should be sent in the request for the iframe|
 |src             |the address of the resource included in the iframe|
 |width           |sets the width of the iframe (if not specified, the default width is 300 pixels)|
 
 <i>Note: Because each browsing context is a complete document environment, every 
-`&lt;iframe&gt;` in a page requires increased memory and other computing resources.</i>
+<mark><b>&lt;iframe&gt;</b></mark> in a page requires increased memory and other computing resources.</i>
 
 <div align="right">
-    <b><a href="#toc">↥ back to top</a></b>
+  <b><a href="#toc">↥ back to top</a></b>
 </div>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h2>Q. Explain the use of rel="nofollow", rel="noreferrer", rel="noopener" attribute?</h2>
@@ -2643,7 +2642,7 @@ prevents malicious links to take control over an opened tab.</p>
 ```
 
 <div align="right">
-    <b><a href="#toc">↥ back to top</a></b>
+  <b><a href="#toc">↥ back to top</a></b>
 </div>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h2>Q. How can you highlight text in HTML?</h2>
@@ -2671,7 +2670,7 @@ enclosing context.</p>
 ```
 
 <div align="right">
-    <b><a href="#toc">↥ back to top</a></b>
+  <b><a href="#toc">↥ back to top</a></b>
 </div>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h2>Q. How can I get indexed better by search engines?</h2>
@@ -2720,7 +2719,7 @@ like a small title within the page. In HTML, a heading looks like this:</p>
 ```
 
 <div align="right">
-    <b><a href="#toc">↥ back to top</a></b>
+  <b><a href="#toc">↥ back to top</a></b>
 </div>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h5>4. Image alt attribute:</h5>
@@ -2783,11 +2782,11 @@ browsers and search engines to better interpret content. For example, instead of
 &lt;div id="header"&gt;&lt;/div&gt; you can use a &lt;header&gt;&lt;/hrader&gt; tag.</p>
 
 <p align="center">
-    <img src="assets/images/semantic-tags.png" alt="HTML5 semantic tags" width="300px" />
+  <img src="assets/images/semantic-tags.png" alt="HTML5 semantic tags" width="300px" />
 </p>
 
 <div align="right">
-    <b><a href="#toc">↥ back to top</a></b>
+  <b><a href="#toc">↥ back to top</a></b>
 </div>
 
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -2817,7 +2816,7 @@ whereas the <b>value</b> attribute contains the initial text-content of the
 |These are used to initialize the DOM properties.| No such job defined.|
 
 <div align="right">
-    <b><a href="#toc">↥ back to top</a></b>
+  <b><a href="#toc">↥ back to top</a></b>
 </div>
 
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -2830,13 +2829,13 @@ to specify whether a page should be rendered as IE 7 (compatibility view) or IE 
 
 ```html
 <html>
-   <head>
-      <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-      <title>My Web Page</title>
-   </head>
-   <body>
-      <p>Content goes here.</p>
-   </body>
+  <head>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>My Web Page</title>
+  </head>
+  <body>
+    <p>Content goes here.</p>
+  </body>
 </html>
 ```
 
@@ -2862,7 +2861,7 @@ that content is rendered in for the webpage, as the following table shows.</p>
 *Note: It is recommended that Web developers restrict their use of Edge mode to test pages and other non-production uses because of the possible unexpected results of rendering page content in future versions of Windows Internet Explorer.*
 
 <div align="right">
-    <b><a href="#toc">↥ back to top</a></b>
+  <b><a href="#toc">↥ back to top</a></b>
 </div>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h2>Q. What is an optional tag?</h2>
@@ -2924,7 +2923,7 @@ is when you have to add dynamic content to your website, so when you fetch somet
 your database, you will have to replace some parts in your original template.</p>
 
 <div align="right">
-    <b><a href="#toc">↥ back to top</a></b>
+  <b><a href="#toc">↥ back to top</a></b>
 </div>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h2>Q. How do you change the direction of html text?</h2>
@@ -2994,7 +2993,7 @@ renders text within it one font-size smaller, such as from <mark>small</mark> to
 ```
 
 <div align="right">
-    <b><a href="#toc">↥ back to top</a></b>
+  <b><a href="#toc">↥ back to top</a></b>
 </div>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h2>Q. How do you serve a page with content in multiple languages?</h2>
@@ -3025,7 +3024,7 @@ renders text within it one font-size smaller, such as from <mark>small</mark> to
 ```
 
 <div align="right">
-    <b><a href="#toc">↥ back to top</a></b>
+  <b><a href="#toc">↥ back to top</a></b>
 </div>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h2>Q. What is the difference between &lt;section&gt; and &lt;div&gt;?</h2>
@@ -3103,7 +3102,7 @@ that is common to a group of consecutive elements. This element can also be used
 ```
 
 <div align="right">
-    <b><a href="#toc">↥ back to top</a></b>
+  <b><a href="#toc">↥ back to top</a></b>
 </div>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h2>Q. Discuss the differences between an HTML specification and a browser&apos;s implementation thereof.</h2>
@@ -3126,7 +3125,7 @@ and it is impossible for the specification to handle all possibilities comprehen
 Thus, many decisions about how to handle malformed documents are left up to the browser.</p>
 
 <div align="right">
-    <b><a href="#toc">↥ back to top</a></b>
+  <b><a href="#toc">↥ back to top</a></b>
 </div>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h2>Q. Why you would use a <mark><b>srcset</b></mark> attribute in an image tag?</h2>
@@ -3177,14 +3176,14 @@ density values, we provide the actual width of the image.</p>
 
 ```html
 <img src="image.jpg" 
-     srcset="small.jpg 300w,
-             medium.jpg 600w,
-             large.jpg 900w"
+  srcset="small.jpg 300w,
+          medium.jpg 600w,
+          large.jpg 900w"
 />
 ```
 
 <div align="right">
-    <b><a href="#toc">↥ back to top</a></b>
+  <b><a href="#toc">↥ back to top</a></b>
 </div>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h2>Q. What is accessibility & ARIA role means in a web application?</h2>
@@ -3207,21 +3206,25 @@ WAI-ARIA, developers can make advanced Web applications accessible and usable to
 people with disabilities.</p>
 
 <p>ARIA attributes are divided into two categories: roles, and states & properties.</p>
-
-**ARIA Roles:**
-
-An ARIA role is added via a `role="<ROLE TYPE>"` attribute, and does not ever change for an element once it is set. There are four categories of ARIA roles:
-
-* landmark
-* document
-* widget
-* abstract
-
-**Landmark ARIA Roles:**
-
-Much like semantic HTML elements, landmark ARIA Roles are used to give users of assistive technology a better way to navigate and identify the different parts of a web page.
-
-**Example:**
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<h3>ARIA Roles:</h3>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<p>An ARIA role is added via a <mark><b>role="&lt;ROLE TYPE&gt;"</b></mark> attribute, and 
+does not ever change for an element once it is set. There are four categories of ARIA roles:</p>
+<ul>
+  <li>landmark</li>
+  <li>document</li>
+  <li>widget</li>
+  <li>abstract</li>
+</ul>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<h3>Landmark ARIA Roles:</h3>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<p>Much like semantic HTML elements, landmark ARIA Roles are used to give users of assistive 
+technology a better way to navigate and identify the different parts of a web page.</p>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<h5>Example:</h5>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 
 ```html
  <nav class='mobile-nav' role='navigation' aria-label='Mobile Menu'> List of Links </nav>
@@ -3240,7 +3243,9 @@ The different landmark roles you can use are as follows, copied from the W3C Wik
 * **search**: The search tool of a Web document.
 * **application**: A region declared as a web application, as opposed to a web document.
 
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 **Document ARIA Roles:**
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 
 Document roles describe the structure of the content on the page, as opposed to the structure of the whole page, which landmark roles describe. The roles in bold are the ones we think are the most common document aria roles, and the ones which are useful to think about including in your HTML.
 
@@ -3264,8 +3269,9 @@ Document roles describe the structure of the content on the page, as opposed to 
 * **separator**
 * **toolbar**
 
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 **Widget ARIA Roles:**
-
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 Widget Roles are used to describe what are often javascript-based interfaces, or the more complicated parts of your web page&apos;s interface. The roles that are starred are the ones we think are the most common elements widget aria roles, and the ones which are useful useful to think about including in your HTML.
 
 * **alert**: A message with important, and usually time-sensitive, information. 
@@ -3294,12 +3300,15 @@ Widget Roles are used to describe what are often javascript-based interfaces, or
 * **tooltip**
 * **treeitem**
 
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 **Abstract ARIA Roles:**
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 
 Abstract aria roles are the basis of how the other ARIA roles are defined. These are not to be used in HTML.
 
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 **ARIA States & Properties:**
-
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p>ARIA states and properties are often used to support ARIA roles that exist on a page. 
 ARIA Properties often describe relationships with other elements, and for the most part, 
 do not change once they&apos;re set.</p>
@@ -3690,127 +3699,119 @@ styling for input fields and submission button.</p>
 ```
 <!DOCTYPE html>
 <html>
-    <head>
-        <title>HTML Form</title>
-        <style>
-            body {
-                display: flex;
-                justify-content: center;
-                align-items: center;
-                height: 100vh;
-                margin: 0;
-                background-color: #f0f0f0;
-            }
+  <head>
+    <title>HTML Form</title>
+    <style>
+      body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        margin: 0;
+        background-color: #f0f0f0;
+      }
 
-            form {
-                width: 400px;
-                background-color: #fff;
-                padding: 20px;
-                border-radius: 8px;
-                box-shadow: 0 0 10px
-                    rgba(0, 0, 0, 0.1);
-            }
+      form {
+        width: 400px;
+        background-color: #fff;
+        padding: 20px;
+        border-radius: 8px;
+        box-shadow: 0 0 10px
+        rgba(0, 0, 0, 0.1);
+      }
 
-            fieldset {
-                border: 1px solid black;
-                padding: 10px;
-                margin: 0;
-            }
+      fieldset {
+        border: 1px solid black;
+        padding: 10px;
+        margin: 0;
+      }
 
-            legend {
-                font-weight: bold;
-                margin-bottom: 10px;
-            }
+      legend {
+        font-weight: bold;
+        margin-bottom: 10px;
+      }
 
-            label {
-                display: block;
-                margin-bottom: 5px;
-            }
+      label {
+        display: block;
+        margin-bottom: 5px;
+      }
 
-            input[type="text"],
-            input[type="email"],
-            input[type="password"],
-            textarea,
-            input[type="date"] {
-                width: calc(100% - 20px);
-                padding: 8px;
-                margin-bottom: 10px;
-                box-sizing: border-box;
-                border: 1px solid #ccc;
-                border-radius: 4px;
-            }
+      input[type="text"],
+      input[type="email"],
+      input[type="password"],
+      textarea,
+      input[type="date"] {
+        width: calc(100% - 20px);
+        padding: 8px;
+        margin-bottom: 10px;
+        box-sizing: border-box;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+      }
 
-            input[type="radio"] {
-                margin-left: 20px;
-            }
+      input[type="radio"] {
+        margin-left: 20px;
+      }
 
-            input[type="submit"] {
-                padding: 10px 20px;
-
-                border-radius: 5px;
-                cursor: pointer;
-            }
-        </style>
-    </head>
-    <body>
-        <form>
-            <fieldset>
-                <legend>
-                    User personal information
-                </legend>
-                <label
-                    >Enter your full name</label
-                >
-                <input type="text" name="name" />
-                <label>Enter your email</label>
-                <input
-                    type="email"
-                    name="email"
-                />
-                <label>Enter your password</label>
-                <input
-                    type="password"
-                    name="pass"
-                />
-                <label
-                    >Confirm your password</label
-                >
-                <input
-                    type="password"
-                    name="confirmPass"
-                />
-                <label>Enter your gender</label>
-                <input
-                    type="radio"
-                    name="gender"
-                    value="male"
-                />Male
-                <input
-                    type="radio"
-                    name="gender"
-                    value="female"
-                />Female
-                <input
-                    type="radio"
-                    name="gender"
-                    value="others"
-                />Others
-                <label
-                    >Enter your Date of
-                    Birth</label
-                >
-                <input type="date" name="dob" />
-                <label>Enter your Address:</label>
-                <textarea
-                    name="address"
-                ></textarea>
-                <input
-                    type="submit"
-                    value="submit"
-                />
-            </fieldset>
-        </form>
-    </body>
+      input[type="submit"] {
+        padding: 10px 20px;
+        border-radius: 5px;
+        cursor: pointer;
+      }
+    </style>
+  </head>
+  <body>
+    <form>
+      <fieldset>
+        <legend>
+          User personal information
+        </legend>
+        <label>Enter your full name</label>
+        <input type="text" name="name" />
+          <label>Enter your email</label>
+          <input
+            type="email"
+            name="email"
+          />
+          <label>Enter your password</label>
+          <input
+            type="password"
+            name="pass"
+          />
+          <label>Confirm your password</label>
+          <input
+            type="password"
+            name="confirmPass"
+          />
+          <label>Enter your gender</label>
+          <input
+            type="radio"
+            name="gender"
+            value="male"
+          />Male
+          <input
+              type="radio"
+              name="gender"
+              value="female"
+          />Female
+          <input
+            type="radio"
+            name="gender"
+            value="others"
+          />Others
+          <label>Enter your Date of Birth</label>
+          <input type="date" name="dob" />
+            <label>Enter your Address:</label>
+            <textarea
+              name="address">
+			</textarea>
+            <input
+              type="submit"
+              value="submit"
+            />
+      </fieldset>
+    </form>
+  </body>
 </html>
 ```
 
@@ -3883,33 +3884,33 @@ between different types of data. Tables are also used to create databases.</p>
 <html>
 
 <body>
-    <table>
-        <tr>
-            <th>Firstname</th>
-            <th>Lastname</th>
-            <th>Age</th>
-        </tr>
-        <tr>
-            <td>Priya</td>
-            <td>Sharma</td>
-            <td>24</td>
-        </tr>
-        <tr>
-            <td>Arun</td>
-            <td>Singh</td>
-            <td>32</td>
-        </tr>
-        <tr>
-            <td>Sam</td>
-            <td>Watson</td>
-            <td>41</td>
-        </tr>
-    </table>
+  <table>
+    <tr>
+      <th>Firstname</th>
+      <th>Lastname</th>
+      <th>Age</th>
+    </tr>
+    <tr>
+      <td>Priya</td>
+      <td>Sharma</td>
+      <td>24</td>
+    </tr>
+    <tr>
+      <td>Arun</td>
+      <td>Singh</td>
+      <td>32</td>
+    </tr>
+    <tr>
+      <td>Sam</td>
+      <td>Watson</td>
+      <td>41</td>
+    </tr>
+  </table>
 </body>
 ```
 
 <div align="right">
-    <b><a href="#toc">↥ back to top</a></b>
+  <b><a href="#toc">↥ back to top</a></b>
 </div>
 
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -3992,28 +3993,28 @@ used to add the heading to the Table. This contains the &lt;th&gt; & &lt;/th&gt;
 <html>
 
 <body>
-    <table>
-        <tr>
-            <th>Book Name</th>
-            <th>Author Name</th>
-            <th>Genre</th>
-        </tr>
-        <tr>
-            <td>The Book Thief</td>
-            <td>Markus Zusak</td>
-            <td>Historical Fiction</td>
-        </tr>
-        <tr>
-            <td>The Cruel Prince</td>
-            <td>Holly Black</td>
-            <td>Fantasy</td>
-        </tr>
-        <tr>
-            <td>The Silent Patient</td>
-            <td> Alex Michaelides</td>
-            <td>Psychological Fiction</td>
-        </tr>
-    </table>
+  <table>
+    <tr>
+      <th>Book Name</th>
+      <th>Author Name</th>
+      <th>Genre</th>
+    </tr>
+    <tr>
+      <td>The Book Thief</td>
+      <td>Markus Zusak</td>
+      <td>Historical Fiction</td>
+    </tr>
+    <tr>
+      <td>The Cruel Prince</td>
+      <td>Holly Black</td>
+      <td>Fantasy</td>
+    </tr>
+    <tr>
+      <td>The Silent Patient</td>
+      td>Alex Michaelides</td>
+      <td>Psychological Fiction</td>
+    </tr>
+  </table>
 </body>
 
 </html>
@@ -4041,7 +4042,7 @@ for the table, it will be displayed without borders.</p>
 
 ```
 table, th, td {
-      border: 1px solid black;
+  border: 1px solid black;
 }
 ```
 
@@ -4053,38 +4054,38 @@ table, th, td {
 <html>
 
 <head>
-    <style>
-        table,
-        th,
-        td {
-            border: 1px solid black;
-        }
-    </style>
+  <style>
+    table,
+    th,
+    td {
+      border: 1px solid black;
+    }
+  </style>
 </head>
 
 <body>
-    <table style="width:100%">
-        <tr>
-            <th>Firstname</th>
-            <th>Lastname</th>
-            <th>Age</th>
-        </tr>
-        <tr>
-            <td>Priya</td>
-            <td>Sharma</td>
-            <td>24</td>
-        </tr>
-        <tr>
-            <td>Arun</td>
-            <td>Singh</td>
-            <td>32</td>
-        </tr>
-        <tr>
-            <td>Sam</td>
-            <td>Watson</td>
-            <td>41</td>
-        </tr>
-    </table>
+  <table style="width:100%">
+    <tr>
+      <th>Firstname</th>
+      <th>Lastname</th>
+      <th>Age</th>
+    </tr>
+    <tr>
+      <td>Priya</td>
+      <td>Sharma</td>
+      <td>24</td>
+    </tr>
+    <tr>
+      <td>Arun</td>
+      <td>Singh</td>
+      <td>32</td>
+    </tr>
+    <tr>
+      <td>Sam</td>
+      <td>Watson</td>
+      <td>41</td>
+    </tr>
+  </table>
 </body>
 
 </html>
@@ -4110,10 +4111,10 @@ table, th, td {
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 
 ```
- table, th, td {
-       border: 1px solid black;
-       border-collapse: collapse;
-   }
+table, th, td {
+  border: 1px solid black;
+  border-collapse: collapse;
+}
 ```
 
 <p><b>Example:</b> Addition of Collapsed Borders in HTML.</p>
@@ -4124,39 +4125,39 @@ table, th, td {
 <html>
 
 <head>
-    <style>
+  <style>
     table,
     th,
     td {
         border: 1px solid black;
         border-collapse: collapse;
     }
-    </style>
+  </style>
 </head>
 
 <body>
-    <table style="width:100%">
-        <tr>
-            <th>Firstname</th>
-            <th>Lastname</th>
-            <th>Age</th>
-        </tr>
-        <tr>
-            <td>Priya</td>
-            <td>Sharma</td>
-            <td>24</td>
-        </tr>
-        <tr>
-            <td>Arun</td>
-            <td>Singh</td>
-            <td>32</td>
-        </tr>
-        <tr>
-            <td>Sam</td>
-            <td>Watson</td>
-            <td>41</td>
-        </tr>
-    </table>
+  <table style="width:100%">
+    <tr>
+      <th>Firstname</th>
+      <th>Lastname</th>
+      <th>Age</th>
+    </tr>
+    <tr>
+      <td>Priya</td>
+      <td>Sharma</td>
+      <td>24</td>
+    </tr>
+    <tr>
+      <td>Arun</td>
+      <td>Singh</td>
+      <td>32</td>
+    </tr>
+    <tr>
+      <td>Sam</td>
+      <td>Watson</td>
+      <td>41</td>
+    </tr>
+  </table>
 </body>
 
 </html>
@@ -4184,7 +4185,7 @@ we do not specify a padding, the table cells will be displayed without padding.<
 
 ```
 th, td {
-        padding: 20px;
+  padding: 20px;
 }
 ```
 
@@ -4196,44 +4197,44 @@ th, td {
 <html>
 
 <head>
-    <style>
+  <style>
     table,
     th,
     td {
-        border: 1px solid black;
-        border-collapse: collapse;
+      border: 1px solid black;
+      border-collapse: collapse;
     }
     
     th,
     td {
-        padding: 20px;
+      padding: 20px;
     }
-    </style>
+  </style>
 </head>
 
 <body>
-    <table style="width:100%">
-        <tr>
-            <th>Firstname</th>
-            <th>Lastname</th>
-            <th>Age</th>
-        </tr>
-        <tr>
-            <td>Priya</td>
-            <td>Sharma</td>
-            <td>24</td>
-        </tr>
-        <tr>
-            <td>Arun</td>
-            <td>Singh</td>
-            <td>32</td>
-        </tr>
-        <tr>
-            <td>Sam</td>
-            <td>Watson</td>
-            <td>41</td>
-        </tr>
-    </table>
+  <table style="width:100%">
+    <tr>
+      <th>Firstname</th>
+      <th>Lastname</th>
+      <th>Age</th>
+    </tr>
+    <tr>
+      <td>Priya</td>
+      <td>Sharma</td>
+      <td>24</td>
+    </tr>
+    <tr>
+      <td>Arun</td>
+      <td>Singh</td>
+      <td>32</td>
+    </tr>
+    <tr>
+      <td>Sam</td>
+      <td>Watson</td>
+      <td>41</td>
+    </tr>
+  </table>
 </body>
 
 </html>
@@ -4261,7 +4262,7 @@ headings, we must use the CSS text-align property.</p>
 
 ```
 th {
-      text-align: left;
+  text-align: left;
 }
 ```
 
@@ -4273,48 +4274,48 @@ th {
 <html>
 
 <head>
-    <style>
-        table,
-        th,
-        td {
-            border: 1px solid black;
-            border-collapse: collapse;
-        }
+  <style>
+    table,
+    th,
+    td {
+      border: 1px solid black;
+      border-collapse: collapse;
+    }
 
-        th,
-        td {
-            padding: 20px;
-        }
+    th,
+    td {
+      padding: 20px;
+    }
 
-        th {
-            text-align: left;
-        }
-    </style>
+    th {
+      text-align: left;
+    }
+  </style>
 </head>
 
 <body>
-    <table style="width:100%">
-        <tr>
-            <th>Firstname</th>
-            <th>Lastname</th>
-            <th>Age</th>
-        </tr>
-        <tr>
-            <td>Priya</td>
-            <td>Sharma</td>
-            <td>24</td>
-        </tr>
-        <tr>
-            <td>Arun</td>
-            <td>Singh</td>
-            <td>32</td>
-        </tr>
-        <tr>
-            <td>Sam</td>
-            <td>Watson</td>
-            <td>41</td>
-        </tr>
-    </table>
+  <table style="width:100%">
+    <tr>
+      <th>Firstname</th>
+      <th>Lastname</th>
+      <th>Age</th>
+    </tr>
+    <tr>
+      <td>Priya</td>
+      <td>Sharma</td>
+      <td>24</td>
+    </tr>
+    <tr>
+      <td>Arun</td>
+      <td>Singh</td>
+      <td>32</td>
+    </tr>
+    <tr>
+      <td>Sam</td>
+      <td>Watson</td>
+      <td>41</td>
+    </tr>
+  </table>
 </body>
 
 </html>
@@ -4343,7 +4344,7 @@ for a table, we must use the CSS border-spacing property.</p>
 
 ```
 table {
-      border-spacing: 5px;
+  border-spacing: 5px;
 }
 ```
 
@@ -4355,42 +4356,42 @@ table {
 <html>
 
 <head>
-    <style>
-        table,
-        th,
-        td {
-            border: 1px solid black;
-        }
+  <style>
+    table,
+    th,
+    td {
+      border: 1px solid black;
+    }
 
-        table {
-            border-spacing: 5px;
-        }
-    </style>
+    table {
+      border-spacing: 5px;
+    }
+  </style>
 </head>
 
 <body>
-    <table style="width:100%">
-        <tr>
-            <th>Firstname</th>
-            <th>Lastname</th>
-            <th>Age</th>
-        </tr>
-        <tr>
-            <td>Priya</td>
-            <td>Sharma</td>
-            <td>24</td>
-        </tr>
-        <tr>
-            <td>Arun</td>
-            <td>Singh</td>
-            <td>32</td>
-        </tr>
-        <tr>
-            <td>Sam</td>
-            <td>Watson</td>
-            <td>41</td>
-        </tr>
-    </table>
+  <table style="width:100%">
+    <tr>
+      <th>Firstname</th>
+      <th>Lastname</th>
+      <th>Age</th>
+    </tr>
+    <tr>
+      <td>Priya</td>
+      <td>Sharma</td>
+      <td>24</td>
+    </tr>
+    <tr>
+      <td>Arun</td>
+      <td>Singh</td>
+      <td>32</td>
+    </tr>
+    <tr>
+      <td>Sam</td>
+      <td>Watson</td>
+      <td>41</td>
+    </tr>
+  </table>
 </body>
 
 </html>
@@ -5404,7 +5405,7 @@ of the SVG document.</p>
 | ping | It is the space-separated list of URLs. |
 
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<h3>Examples of SVG &lt;a&gt; Element</h3>
+<h4>Examples of SVG &lt;a&gt; Element</h4>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h5>Example 1:</h5>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -5417,23 +5418,23 @@ It’s wrapped with an anchor (&lt;a&gt;) tag, making it a clickable link that r
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8" />
-    <title>SVG a Tag</title>
+  <meta charset="UTF-8" />
+  <title>SVG a Tag</title>
 </head>
 
 <body>
-    <div style="width:300px; height:300px;">
-        <h2>
-            SVG &lt;a&gt; Tag
-        </h2>
+  <div style="width:300px; height:300px;">
+    <h2>
+      SVG &lt;a&gt; Tag
+    </h2>
 
-        <svg width="500" height="500">
-            <a href="http://geeksforgeeks.org">
-                <circle cx="150" cy="100" r="80" fill="green">
-                </circle>
-            </a>
-        </svg>
-    </div>
+    <svg width="500" height="500">
+      <a href="http://geeksforgeeks.org">
+        <circle cx="150" cy="100" r="80" fill="green">
+        </circle>
+      </a>
+    </svg>
+  </div>
 </body>
 
 </html>
@@ -7536,6 +7537,7 @@ Place all attribute values in SVG inside quotes (even if they are numbers)
   <h6>Prior editted: 5/1/2025 +6pm<br/>
   <h6>Last editted: 5/2/2025 +11am<br/>
   <h6>Last editted: 5/4/2025 +12pm</h6>
+  <h6>Last editted: 5/6/2025 +12pm</h6>
   <p>The End...</p>
 </footer>
 </body>
