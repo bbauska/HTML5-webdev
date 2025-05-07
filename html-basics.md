@@ -7492,31 +7492,571 @@ Place all attribute values in SVG inside quotes (even if they are numbers)
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h2 id="12-html-apis">12. HTML APIs</h2>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-HTML APIs
-All browsers have a set of built-in Web APIs to support complex operations, and to help accessing data.
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<h2>12.  HTML APIs</h2>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<p>All browsers have a set of built-in Web APIs to support complex operations, and to help accessing data.</p>
 
-Here are some of the main HTML5 APIs:
+<p>Here are some of the main HTML5 APIs:</p>
 
-1. Geolocation API - This API is used to access the current location of a user (with latitude and longitude).
-
-2. Drag and Drop API - This API enables you to use drag-and-drop features in browsers.
-
-3. Web Storage API - This API has mechanisms to let browsers store key/value pairs (in a more intuitive way than cookies).
-
-4. Web Workers API - This API allows a JavaScript to run in the background, without affecting the performance of the page. Users can continue to do whatever they want: clicking, selecting things, etc., while the web worker runs in the background.
-
-5. Server-Sent Events API - This API allows a web page to automatically get updates from a server.
-
-6. Canvas API - This API lets you draw graphics, on the fly, via JavaScript.
+<ol>
+  <li>1. Geolocation API - This API is used to access the current location of a user (with latitude and longitude).</li>
+  <li>2. Drag and Drop API - This API enables you to use drag-and-drop features in browsers.</li>
+  <li>3. Web Storage API - This API has mechanisms to let browsers store key/value pairs (in a more intuitive way than cookies).</li>
+  <li>4. Web Workers API - This API allows a JavaScript to run in the background, without affecting the performance of the page. Users can continue to do whatever they want: clicking, selecting things, etc., while the web worker runs in the background.</li>
+  <li>5. Server-Sent Events API - This API allows a web page to automatically get updates from a server.</li>
+  <li>6. Canvas API - This API lets you draw graphics, on the fly, via JavaScript.</li>
+</ol>
 
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<h2 id="13-html-dragndrop">13. HTML Drag 'n Drop</h2>
+<h3>Third Party APIs</h3>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<p>Third party APIs are not built into your browser.</p>
+
+<p>To use these APIs, you will have to download the code from the Web.</p>
+
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<h4>Examples:</h4>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<ul>
+  <li>YouTube API - Allows you to display videos on a web site.</li>
+  <li>Twitter API - Allows you to display Tweets on a web site.</li>
+  <li>Facebook API - Allows you to display Facebook info on a web site.</li>
+</ul>
+
+<p><b>HTML Geolocation API</b> - The Geolocation API is used to access the user's current location.
+Since this can compromise privacy, the location is not available unless the user approves it.</p>
+
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<h4>Example</h4>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+
+```
+<script>
+const x = document.getElementById("demo");
+
+function getLocation() {
+  if (navigator.geolocation) {
+    navigator.geolocation.getCurrentPosition(success, error);
+  } else {
+    x.innerHTML = "Geolocation is not supported by this browser.";
+  }
+}
+
+function success(position) {
+  x.innerHTML = "Latitude: " + position.coords.latitude +
+  "<br>Longitude: " + position.coords.longitude;
+}
+
+function error() {
+  alert("Sorry, no position available.");
+}
+</script>
+```
+
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<h4>Example explained:</h4>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<ul>
+  <li>Check if Geolocation is supported</li>
+  <li>If Geolocation is supported, run the getCurrentPosition() method. If not, display a message to the user</li>
+  <li>The success() function outputs the user's location in latitude and longitude</li>
+  <li>The error() function alerts a text if the browser retrieves an error in getCurrentPosition()</li>
+</ul>
+
+<p>The second parameter of the getCurrentPosition() method is used to handle errors. It 
+specifies a function to run if it fails to get the user's location.</p>
+
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<h4>Example</h4>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+
+```
+function error(error) {
+  switch(error.code) {
+    case error.PERMISSION_DENIED:
+      x.innerHTML = "User denied the request for Geolocation."
+      break;
+    case error.POSITION_UNAVAILABLE:
+      x.innerHTML = "Location information is unavailable."
+      break;
+    case error.TIMEOUT:
+      x.innerHTML = "The request to get user location timed out."
+      break;
+    case error.UNKNOWN_ERROR:
+      x.innerHTML = "An unknown error occurred."
+      break;
+  }
+}
+```
+
+```
+<!DOCTYPE html>
+<html>
+<body>
+<h1>HTML Geolocation</h1>
+<p>Click the button to get your coordinates.</p>
+
+<button onclick="getLocation()">Try It</button>
+
+<p id="demo"></p>
+
+<script>
+const x = document.getElementById("demo");
+
+function getLocation() {
+  if (navigator.geolocation) {
+    navigator.geolocation.getCurrentPosition(success, error);
+  } else { 
+    x.innerHTML = "Geolocation is not supported by this browser.";
+  }
+}
+
+function success(position) {
+  x.innerHTML = "Latitude: " + position.coords.latitude + 
+  "<br>Longitude: " + position.coords.longitude;
+}
+
+function error(error) {
+  switch(error.code) {
+    case error.PERMISSION_DENIED:
+      x.innerHTML = "User denied the request for Geolocation."
+      break;
+    case error.POSITION_UNAVAILABLE:
+      x.innerHTML = "Location information is unavailable."
+      break;
+    case error.TIMEOUT:
+      x.innerHTML = "The request to get user location timed out."
+      break;
+    case error.UNKNOWN_ERROR:
+      x.innerHTML = "An unknown error occurred."
+      break;
+  }
+}
+</script>
+
+</body>
+</html>
+```
+
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<h3>Location-specific Information</h3>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<p>Geolocation is also very useful for location-specific information, like:</p>
+<ul>
+  <li>Up-to-date local information</li>
+  <li>Showing Points-of-interest near the user</li>
+  <li>Turn-by-turn navigation (GPS)</li>
+</ul>
+
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<h3>The getCurrentPosition() Method - Return Data</h3>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<p>The getCurrentPosition() method returns an object on success. The latitude, longitude and 
+accuracy properties are always returned. The other properties are returned if available:</p>
+
+
+| Property        | Returns |
+|-----------------|----------------------------------------------------|
+| coords.latitude | The latitude as a decimal number (always returned) |
+| coords.longitude | The longitude as a decimal number (always returned) |
+| coords.accuracy | The accuracy of position (always returned) |
+| coords.altitude | The altitude in meters above the mean sea level (returned if available) |
+| coords.altitudeAccuracy | The altitude accuracy of position (returned if available) |
+| coords.heading | The heading as degrees clockwise from North (returned if available) |
+| coords.speed | The speed in meters per second (returned if available) |
+| timestamp | The date/time of the response (returned if available) |
+
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<h3>Geolocation Object - Other interesting Methods</h3>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<p>The Geolocation object also has other interesting methods:</p>
+<ul>
+  <li><b>watchPosition()</b> - Returns the current location of the user and continues to return 
+    updated location as the user moves (like the GPS in a car).</li>
+  <li><b>clearWatch()</b> - Stops the watchPosition() method.</li>
+</ul>  
+<p>The example below shows the watchPosition() method. You need an accurate GPS device to test 
+this (like a smartphone):</p>
+
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<h4>Example</h4>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+
+```
+<script>
+const x = document.getElementById("demo");
+
+function getLocation() {
+  if (navigator.geolocation) {
+    navigator.geolocation.watchPosition(success, error);
+  } else {
+    x.innerHTML = "Geolocation is not supported by this browser.";
+  }
+}
+
+function success(position) {
+  x.innerHTML = "Latitude: " + position.coords.latitude +
+  "<br>Longitude: " + position.coords.longitude;
+}
+
+function error(error) {
+  switch(error.code) {
+    case error.PERMISSION_DENIED:
+      x.innerHTML = "User denied the request for Geolocation."
+      break;
+    case error.POSITION_UNAVAILABLE:
+      x.innerHTML = "Location information is unavailable."
+      break;
+    case error.TIMEOUT:
+      x.innerHTML = "The request to get user location timed out."
+      break;
+    case error.UNKNOWN_ERROR:
+      x.innerHTML = "An unknown error occurred."
+      break;
+  }
+}
+</script>
+```
+
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<h2>13.  HTML Drag and Drop API</h2>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<p>The HTML Drag and Drop API enables an element to be dragged and dropped.</p>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<h2>11.  HTML Web Storage API</h2>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+What is HTML Web Storage?
+With web storage, applications can store data locally within the user's browser.
+
+Before HTML5, application data had to be stored in cookies, included in every server request. Web storage is more secure, and large amounts of data can be stored locally, without affecting website performance.
+
+Unlike cookies, the storage limit is far larger (at least 5MB) and information is never transferred to the server.
+
+Web storage is per origin (per domain and protocol). All pages, from one origin, can store and access the same data.
+
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<h2>11.  Web Storage API Objects</h2>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<p>Web storage provides two objects for storing data in the browser:</p>
+<ul>
+  <li><b>window.localStorage</b> - stores data with no expiration date (data is not lost when the browser tab is closed)</li>
+  <li><b>window.sessionStorage</b> - stores data for one session (data is lost when the browser tab is closed)</li>
+</ul>
+
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<h4>Example</h4>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+
+```
+<script>
+const x = document.getElementById("result");
+if (typeof(Storage) !== "undefined") {
+  x.innerHTML = "Your browser supports Web storage!";
+} else {
+  x.innerHTML = "Sorry, no Web storage support!";
+}
+</script>
+```
+
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<h3>The localStorage Object</h3>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<p>The localStorage object stores the data with no expiration date. The data will not be lost 
+when the browser is closed, and will be available the next day, week, or year.</p>
+
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<h4>Example - Use <b>localStorage to set and retrieve name and value pairs:</h4>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<h4>Example explained:</h4>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<ul>
+  <li>Use the localStorage.setItem() method to create name/value pairs</li>
+  <li>Use the localStorage.getItem() method to retrieve the values set</li>
+  <li>Retrieve the value of "lastname" and insert it into an element with id="result"</li>
+  <li>Retrieve the value of "bgcolor" and insert it into the style backgroundColor of the element with id="result"</li>
+</ul>
+<p>The syntax for removing the "lastname" localStorage item is as follows:</p>
+<pre>localStorage.removeItem("lastname");</pre>
+
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<h3>Counting Clicks with localStorage</h3>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<p>The following example counts the number of times a user has clicked a button. In this 
+code the value string is converted to a number to be able to increase the counter:</p>
+
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<h4>Example</h4>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+
+```
+<script>
+function clickCounter() {
+  const x = document.getElementById("result");
+  if (typeof(Storage) !== "undefined") {
+    if (localStorage.clickcount) {
+      localStorage.clickcount = Number(localStorage.clickcount)+1;
+    } else {
+      localStorage.clickcount = 1;
+    }
+    x.innerHTML = "You have clicked the button " + localStorage.clickcount + " time(s)!";
+  } else {
+    x.innerHTML = "Sorry, no Web storage support!";
+  }
+}
+</script>
+```
+
+
+```
+<script>
+const x = document.getElementById("result");
+
+if (typeof(Storage) !== "undefined") {
+  // Store
+  localStorage.setItem("lastname", "Smith");
+  localStorage.setItem("bgcolor", "yellow");
+  // Retrieve
+  x.innerHTML = localStorage.getItem("lastname");
+  x.style.backgroundColor = localStorage.getItem("bgcolor");
+} else {
+  x.innerHTML = "Sorry, no Web storage support!";
+}
+</script>
+```
+
+
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<h3>The sessionStorage Object</h3>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+The sessionStorage object is equal to the localStorage object, except that it stores the data for only one session! The data is deleted when the user closes the specific browser tab.
+
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<h3>Counting Clicks with sessionStorage</h3>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+The following example counts the number of times a user has clicked a button, in the current session:
+
+<h4>Example</h4>
+
+```
+<script>
+function clickCounter() {
+  const x = document.getElementById("result");
+  if (typeof(Storage) !== "undefined") {
+    if (sessionStorage.clickcount) {
+      sessionStorage.clickcount = Number(sessionStorage.clickcount)+1;
+    } else {
+      sessionStorage.clickcount = 1;
+    }
+    x.innerHTML = "You have clicked the button " + sessionStorage.clickcount + " time(s) in this session!";
+  } else {
+    x.innerHTML = "Sorry, no Web storage support!";
+  }
+}
+</script>
+```
+
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<h2>14.  HTML Web Workers API</h2>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+A web worker is an external JavaScript file that runs in the background, without affecting the performance of the page.
+
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<h3>What is a Web Worker?</h3>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+When executing scripts in an HTML page, the page becomes unresponsive until the script is finished.
+
+A web worker is an external JavaScript file that runs in the background, independently of other scripts, without affecting the performance of the page. You can continue to do whatever you want: clicking, selecting things, etc., while the web worker runs in the background.
+
+Web workers are useful for heavy code that can't be run on the main thread, without causing long tasks that make the page unresponsive.
+
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<h4>Web Workers API Example</h4>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+The example below creates a simple web worker that count numbers in the background:
+
+<h4>Example</h4>
+
+```
+<!DOCTYPE html>
+<html>
+<body>
+
+<h1>Web Worker API</h1>
+
+<p>Count numbers: <output id="result"></output></p>
+<button onclick="startWorker()">Start Worker</button> 
+<button onclick="stopWorker()">Stop Worker</button>
+
+<script>
+let w;
+
+function startWorker() {
+  const x = document.getElementById("result");
+  if(typeof(Worker) !== "undefined") {
+    if(typeof(w) == "undefined") {
+      w = new Worker("demo_workers.js");
+    }
+    w.onmessage = function(event) {
+      x.innerHTML = event.data;
+    };
+  } else {
+    x.innerHTML = "Sorry! No Web Worker support.";
+  }
+}
+
+function stopWorker() { 
+  w.terminate();
+  w = undefined;
+}
+</script>
+
+</body>
+</html>
+```
+
+Check Web Worker API Support
+Before using web worker, we can quickly check browser support:
+
+<h4>Example</h4>
+
+```
+<script>
+const x = document.getElementById("result");
+if(typeof(Worker) !== "undefined") {
+  x.innerHTML = "Your browser support Web Workers!";
+} else {
+  x.innerHTML = "Sorry, your browser does not support Web Workers.";
+}
+</script>
+```
+
+Create a .js Web Worker File
+Now, let's create a web worker in an external JavaScript file.
+
+Here we create a script that counts. The script is stored in the "demo_workers.js" file:
+
+var i = 0;
+
+function timedCount() {
+  i = i + 1;
+  postMessage(i);
+  setTimeout("timedCount()",500);
+}
+
+timedCount();
+Note: The important part of the code above is the postMessage() method - which is used to post messages back to the HTML page.
+
+Create a Web Worker Object
+Once we have created the .js web worker file, we can call it from an HTML page.
+
+The following lines checks if a worker (w) already exists, if not - it creates a new web worker object and points to the .js file: "demo_workers.js":
+
+```
+if (typeof(w) == "undefined") {
+  w = new Worker("demo_workers.js");
+}
+```
+
+Then we can SEND and RETRIEVE messages from the web worker.
+
+Data is sent between web workers and the main thread via a system of messages - both sides send their messages using the postMessage() method, and respond to messages via the onmessage event handler.
+
+Add an onmessage event listener to the web worker object.
+
+```
+w.onmessage = function(event){
+  document.getElementById("result").innerHTML = event.data;
+};
+```
+
+Terminate a Web Worker
+When a web worker object is created, it will continue to listen for messages until it is terminated.
+
+To terminate a web worker object, and free browser/computer resources, use the terminate() method:
+
+```
+w.terminate();
+```
+
+Reuse the Web Worker
+If you set the web worker variable to undefined, after it has been terminated, you can reuse the worker/code:
+
+```
+w = undefined;
+```
+
+Full Web Worker Example
+We have already seen the Web Worker code in the .js file.
+
+Below is the full code for the HTML page:
+
+<h4>Example</h4>
+
+```
+<!DOCTYPE html>
+<html>
+<body>
+
+<p>Count numbers: <output id="result"></output></p>
+<button onclick="startWorker()">Start Worker</button>
+<button onclick="stopWorker()">Stop Worker</button>
+
+<script>
+let w;
+
+function startWorker() {
+  const x = document.getElementById("result");
+  if (typeof(Worker) !== "undefined") {
+    if (typeof(w) == "undefined") {
+      w = new Worker("demo_workers.js");
+    }
+    w.onmessage = function(event) {
+      x.innerHTML = event.data;
+    };
+  } else {
+    x.innerHTML = "Sorry! No Web Worker support.";
+  }
+}
+
+function stopWorker() {
+  w.terminate();
+  w = undefined;
+}
+</script>
+
+</body>
+</html>
+```
+
+<h3>Web Workers and the DOM</h3>
+<p>Since web workers are in external .js files, they do not have access to the following JavaScript objects:</p>
+
+<ul>
+  <li>The window object</li>
+  <li>The document object</li>
+  <li>The parent object</li>
+</ul>
+
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<h2>5.  HTML Server-Sent Events API</h2>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<h2>6.  Canvas API</h2>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 
 
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<h2 id="14-html-webworker">14. HTML Web Worker</h2>
+
+
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+
+
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+
+
+
 
 
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
