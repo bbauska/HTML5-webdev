@@ -1422,92 +1422,114 @@ to decide whether to handle it in quirks mode or standards mode.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h2>Q. Name 3 ways to decrease page load?</h2>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-
-1. LocalStorage 
-1. Caching resources 
-1. DNS-prefetch (sample below) 
-1. Keep resources on a CDN
-
+<ol>
+  <li>LocalStorage</li>
+  <li>Caching resources</li>
+  <li>DNS-prefetch (sample below)</li>
+  <li>Keep resources on a CDN</li>
+</ol>
 <div align="right">
     <b><a href="#toc">↥ back to top</a></b>
 </div>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h2>Q. Ways to improve website performance</h2>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<ul>
+  <li>Minimize HTTP Requests
+    <ul>
+      <li>Sites are mainly slow because of too many (or too large) HTTP requests. We can eliminate unnecessary request;
+	    <ul>
+          <li>combined files: js to a file, css to a file</li>
+          <li>CSS sprites: CSS Sprites are the preferred method for reducing the number of image requests. Combine your background images into a single image and use the CSS background-image and background-position properties to display the desired image segment.</li>
+        </ul>
+	  </li>
+	</ul>
+  </li>
+  <li>Use a Content Delivery Network CDN
+    <ul>
+      <li>A CDN is essentially many optimized servers around the world that deliver web content to users based on their geographic location. This means big performance improvements for site users. Because, say, if a person accessing your site in India, they will be retrieving web content from a server nearby</li>
+    </ul>
+  </li>
+  <li>Optimize Images:
+    <ul>
+	  <li>image sizes make a huge difference to site speed. The larger content/images, the slower the site. we could:
+	    <ul>
+		<li>Changing the resolution: reducing the “quality” of the image (and thereby the file size)</li>
+        <li>Compressing the picture: increasing the efficiency of image data storage</li>
+        <li>Cropping the picture: when cropping, you are cutting out unneeded areas and thus making the image smaller in size</li>
+        </ul>
+	  </li>
+    </ul>
+  </li>
+  <li>Put Scripts at the Bottom:
+    <ul>
+      <li>Javascript files can load after the rest of your page. The simplest solution is to place your external Javascript files at the bottom of your page, just before the close of your body tag. Now more of your site can load before your scripts. Another method that allows even more control is to use the defer or async attributes when placing external .js files on your site.
+        <ul>
+          <li>Async tags load the scripts while the rest of the page loads, but this means scripts can be loaded out of order. Basically, lighter files load first. This might be fine for some scripts, but can be disastrous for others.</li>
+          <li>The defer attribute loads your scripts after your content has finished loading. It also runs the scripts in order. Just make sure your scripts run so late without breaking your site.<li>
+        </ul>
+	  </li>
+	</ul>
+  </li>
+  <li>Add an Expires or a Cache-Control Header
+    <ul>
+	  <li>Web page designs are getting richer and richer, which means more scripts, stylesheets, images, and Flash in the page. A first-time visitor to your page may have to make several HTTP requests, but by using the Expires header you make those components cacheable. This avoids unnecessary HTTP requests on subsequent page views. Expires headers are most often used with images, but they should be used on all components including scripts, stylesheets, and Flash components.</li>
+    </ul>
+  </li>
+  <li>Gzip Components
+    <ul>
+      <li>Compression reduces response times by reducing the size of the HTTP response. Gzipping generally reduces the response size by about 70%.</li>
+    </ul>
+  </li>
+  <li>Put Stylesheets at the Top:
+    <ul>
+      <li>This is because putting stylesheets in the HEAD allows the page to render progressively.</li>
+    </ul>
+  </li>
+  <li>Avoid CSS Expressions</li>
+  <li>Use GET for AJAX Requests:
+    <ul>
+      <li>Ajax is that it provides instantaneous feedback to the user because it requests information asynchronously from the backend web server</li>
+    </ul>
+  </li>
+  <li>Make JavaScript and CSS External:
+    <ul>
+	  <li>Using external files in the real world generally produces faster pages because the JavaScript and CSS files are cached by the browser. JavaScript and CSS that are inlined in HTML documents get downloaded every time the HTML document is requested. This reduces the number of HTTP requests that are needed, but increases the size of the HTML document. On the other hand, if the JavaScript and CSS are in external files cached by the browser, the size of the HTML document is reduced without increasing the number of HTTP requests.</li>
+    </ul>
+  </li>
+  <li>Use get to ajax request:
+    <ul>
+	  <li>POST is implemented in the browsers as a two-step process: sending the headers first, then sending data. So it's best to use GET, which only takes one TCP packet to send (unless you have a lot of cookies).</li>
+	</ul>
+  </li>
+  <li>No 404s:
+    <ul>
+	  <li>HTTP requests are expensive so making an HTTP request and getting a useless response (i.e. 404 Not Found) is totally unnecessary and will slow down the user experience without any benefit.</li>
+    </ul>
+  </li>
+  <li>Reduce Cookie Size:
+    <ul>
+	  <li>HTTP cookies are used for a variety of reasons such as authentication and personalization. Information about cookies is exchanged in the HTTP headers between web servers and browsers. It's important to keep the size of cookies as low as possible to minimize the impact on the user's response time.</li>
+  </li>
+</ul>
 
-* Minimize HTTP Requests
-    * Sites are mainly slow because of too many (or too large) HTTP requests. We can eliminate unnecessary request;
-        * combined files: js to a file, css to a file
-        * CSS sprites: CSS Sprites are the preferred method for reducing the number of image requests. Combine your background images into a single image and use the CSS background-image and background-position properties to display the desired image segment.
-
-* Use a Content Delivery Network CDN
-
-    * A CDN is essentially many optimized servers around the world that deliver web content to users based on their geographic location. This means big performance improvements for site users. Because, say, if a person accessing your site in India, they will be retrieving web content from a server nearby
-
-* Optimize Images:
-
-    * image sizes make a huge difference to site speed. The larger content/images, the slower the site. we could:
-        * Changing the resolution: reducing the “quality” of the image (and thereby the file size)
-        * Compressing the picture: increasing the efficiency of image data storage
-        * Cropping the picture: when cropping, you are cutting out unneeded areas and thus making the image smaller in size
-
-* Put Scripts at the Bottom:
-
-    * Javascript files can load after the rest of your page. The simplest solution is to place your external Javascript files at the bottom of your page, just before the close of your body tag. Now more of your site can load before your scripts. Another method that allows even more control is to use the defer or async attributes when placing external .js files on your site.
-        
-        * Async tags load the scripts while the rest of the page loads, but this means scripts can be loaded out of order. Basically, lighter files load first. This might be fine for some scripts, but can be disastrous for others.
-        
-        * The defer attribute loads your scripts after your content has finished loading. It also runs the scripts in order. Just make sure your scripts run so late without breaking your site.
-
-* Add an Expires or a Cache-Control Header
-
-    * Web page designs are getting richer and richer, which means more scripts, stylesheets, images, and Flash in the page. A first-time visitor to your page may have to make several HTTP requests, but by using the Expires header you make those components cacheable. This avoids unnecessary HTTP requests on subsequent page views. Expires headers are most often used with images, but they should be used on all components including scripts, stylesheets, and Flash components.
-
-* Gzip Components
-
-    * Compression reduces response times by reducing the size of the HTTP response. Gzipping generally reduces the response size by about 70%.
-
-* Put Stylesheets at the Top:
-
-    * This is because putting stylesheets in the HEAD allows the page to render progressively.
-
-* Avoid CSS Expressions
-
-* Use GET for AJAX Requests:
-
-    * Ajax is that it provides instantaneous feedback to the user because it requests information asynchronously from the backend web server
-
-* Make JavaScript and CSS External:
-
-    *  Using external files in the real world generally produces faster pages because the JavaScript and CSS files are cached by the browser. JavaScript and CSS that are inlined in HTML documents get downloaded every time the HTML document is requested. This reduces the number of HTTP requests that are needed, but increases the size of the HTML document. On the other hand, if the JavaScript and CSS are in external files cached by the browser, the size of the HTML document is reduced without increasing the number of HTTP requests.
-
-* Use get to ajax request:
-
-    *  POST is implemented in the browsers as a two-step process: sending the headers first, then sending data. So it's best to use GET, which only takes one TCP packet to send (unless you have a lot of cookies).
-
-* No 404s:
-
-    * HTTP requests are expensive so making an HTTP request and getting a useless response (i.e. 404 Not Found) is totally unnecessary and will slow down the user experience without any benefit.
-
-* Reduce Cookie Size:
-
-    * HTTP cookies are used for a variety of reasons such as authentication and personalization. Information about cookies is exchanged in the HTTP headers between web servers and browsers. It's important to keep the size of cookies as low as possible to minimize the impact on the user's response time.
-
-* Reduce DNS Lookups
-* Minify JavaScript and CSS
-* Avoid Redirects
-* Remove Duplicate Scripts
-* Configure Etags
-* Make Ajax Cacheable
-* Post-load Components
-* Preload Components
-* Reduce the Number of DOM Elements
-* Minimize the Number of iframes
-* Minimize DOM Access
-* Optimize CSS Sprites
-* Don't Scale Images in HTML
-* Make favicon.ico Small and Cacheable
-* Avoid Empty Image src
+<ul>
+  <li>Reduce DNS Lookups</li>
+  <li>Minify JavaScript and CSS</li>
+  <li>Avoid Redirects</li>
+  <li>Remove Duplicate Scripts</li>
+  <li>Configure Etags</li>
+  <li>Make Ajax Cacheable</li>
+  <li>Post-load Components</li>
+  <li>Preload Components</li>
+  <li>Reduce the Number of DOM Elements</li>
+  <li>Minimize the Number of iframes</li>
+  <li>Minimize DOM Access</li>
+  <li>Optimize CSS Sprites</li>
+  <li>Don't Scale Images in HTML</li>
+  <li>Make favicon.ico Small and Cacheable</li>
+  <li>Avoid Empty Image src</li>
+</ul>
 
 <div align="right">
     <b><a href="#toc">↥ back to top</a></b>
@@ -1515,23 +1537,32 @@ to decide whether to handle it in quirks mode or standards mode.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h2>Q. Comparison of browsers engines like Chrome, Firefox, Internet explorer, Safari?</h2>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-
-* Chrome: 
-    * Layout rendering engine <b>Webkit**. 
-    * JavaScript engine <b>V8**
-
-* Firefox: 
-    * Layout rendering engine <b>Gecko**. 
-    * JavaScript engine <b>Spider monkey**
-        
-* Internet explorer: 
-    * Layout rendering engine <b>Trident**. 
-    * JavaScript  engine <b>Chakra**
-        
-* Safari:
-    * Layout rendering engine <b>Webkit**. 
-    * JavaScript engine JavascriptCore i.e <b>Nitro**
-
+<ul>
+  <li>Chrome: 
+    <ul>
+	  <li>Layout rendering engine <b>Webkit</b>.</li> 
+      <li>JavaScript engine <b>V8</b></li>
+	</ul>
+  </li>
+  <li>Firefox: 
+    <ul>
+      <li>Layout rendering engine <b>Gecko</b>.</li>
+      <li>JavaScript engine <b>Spider monkey</b></li>
+    </ul>
+  </li>
+  <li>Internet explorer: 
+    <ul>
+      <li>Layout rendering engine <b>Trident</b>.</li>
+      <li>JavaScript  engine <b>Chakra</b></li>
+	</ul>
+  </li>
+  <li>Safari:
+    <ul>
+      <li>Layout rendering engine <b>Webkit</b>.</li>
+      <li>JavaScript engine JavascriptCore i.e <b>Nitro</b></li>
+    </ul>
+  </li>
+</ul>
 <div align="right">
     <b><a href="#toc">↥ back to top</a></b>
 </div>
