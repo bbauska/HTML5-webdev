@@ -173,33 +173,27 @@ If a user agent doesn't recognize a correct DOCTYPE, it will trigger the <mark>q
 <div align="right">
     <b><a href="#toc">↥ back to top</a></b>
 </div>
-
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h2>Q. What happens when DOCTYPE is not given?</h2>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-
-The web page is rendered in quirks mode. The web browsers engines use quirks mode to support 
-older browsers which does not follow the <b>W3C specifications**. In quirks mode CSS class 
-and id names are case insensitive. In standards mode they are case sensitive.
+<p>The web page is rendered in quirks mode. The web browsers engines use quirks mode to support 
+older browsers which does not follow the <b>W3C specifications</b>. In quirks mode CSS class 
+and id names are case insensitive. In standards mode they are case sensitive.</p>
 
 <div align="right">
     <b><a href="#toc">↥ back to top</a></b>
 </div>
-
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h2>Q. What are the new form elements in HTML5?</h2>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-
-There are five new form elements in the HTML5 forms specification: &lt;datalist&gt;, &lt;output&gt;, 
-&lt;progress&gt;, and &lt;meter&gt;. 
-
+<p>There are five new form elements in the HTML5 forms specification: &lt;datalist&gt;, &lt;output&gt;, 
+&lt;progress&gt;, and &lt;meter&gt;. </p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h4>1. Datalist Tag</h4>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-
-Allows to attach a list of suggestions to a text input element. As soon as the user begins 
+<p>Allows to attach a list of suggestions to a text input element. As soon as the user begins 
 to type in the text field, the list of suggestions appears and the user can choose from the 
-suggestions with the mouse.
+suggestions with the mouse.</p>
 
 ```html
 <p>Enter your favorite browser name:</p>
@@ -216,22 +210,21 @@ suggestions with the mouse.
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h4>2. Meter Tag</h4>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-
-Indicates a numeric value that falls within a range. The tag supports a number of attributes:
+<p>Indicates a numeric value that falls within a range. The tag supports a number of attributes:
 value: If you don&apos;t specify a value, the first numeric value inside the &lt;meter></meter&gt; 
-pair becomes the value.
+pair becomes the value.</p>
 
-* <b>max**: The maximum possible value of the item.
-* <b>min**: The minimum possible value of the item.
-* <b>high**: If the value can be defined as a range, this is the high end of the range.
-* <b>low**: If the value can defined as a range, this is the low end of that range.
-* <b>optimum**: The optimal value of the element. 
+<ul>
+  <li><b>max</b>: The maximum possible value of the item.</li>
+  <li><b>min</b>: The minimum possible value of the item.</li>
+  <li><b>high</b>: If the value can be defined as a range, this is the high end of the range.</li>
+  <li><b>low</b>: If the value can defined as a range, this is the low end of that range.</li>
+  <li><b>optimum</b>: The optimal value of the element.</li>
+</ul>
 
 ```html
 <p>Disk Usage: <meter value="0.2">20%</meter></p>
-
 <p>Total Score: <meter value="6" min="0" max="10">6 out of 10</meter></p>
-
 <p>Pollution Level: <meter low="60" high="80" max="100" value="85">Very High</meter></p>
 ```
 
@@ -308,35 +301,23 @@ expected to be modified through JavaScript code.</p>
 
 ```html
 <input type="color" value="#b97a57">
-
 <input type="date" value="2020-06-08">
-
 <input type="datetime" value="2020-06-09T20:35:34.32">
-
 <input type="datetime-local" value="2020-06-09T22:41">
-
 <input type="email" value="robert@robertnyman.com">
-
 <input type="month" value="2020-06">
-
 <input type="number" value="4">
-
 <input type="range" value="15">
 
 <!-- Note: If not set, default attribute values are min="0", max="100", step="1". -->
-
 <input type="search" value="[Any search text]">
-
 <input type="tel" value="[Any numeric value]">
 
 <!-- Note: Most web browsers seem to let through any value at this time. -->
-
 <input type="time" value="22:38">
-
 <input type="url" value="https://www.google.com/">
 
 <!-- Note: requires a protocol like http://, ftp:// etc in the beginning. -->
-
 <input type="week" value="2020-W24">
 ```
 
@@ -360,40 +341,40 @@ expected to be modified through JavaScript code.</p>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<style>
-  body {font-family: Arial, Helvetica, sans-serif;}
-  * {box-sizing: border-box;}
+  <style>
+    body {font-family: Arial, Helvetica, sans-serif;}
+    * {box-sizing: border-box;}
 
-  input[type=text], input[type=email], select, textarea {
-    width: 100%;
-    padding: 12px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-    box-sizing: border-box;
-    margin-top: 6px;
-    margin-bottom: 16px;
-    resize: vertical;
-  }
+    input[type=text], input[type=email], select, textarea {
+      width: 100%;
+      padding: 12px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      box-sizing: border-box;
+      margin-top: 6px;
+      margin-bottom: 16px;
+      resize: vertical;
+    }
   
-  input[type=submit] {
-    background-color: #0e8af7;
-    color: white;
-    padding: 12px 20px;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
-  }
+    input[type=submit] {
+      background-color: #0e8af7;
+      color: white;
+      padding: 12px 20px;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+    }
   
-  input[type=submit]:hover {
-    background-color: #1181e3;
-  }
+    input[type=submit]:hover {
+      background-color: #1181e3;
+    }
   
-  .container {
-    border-radius: 5px;
-    background-color: #f2f2f2;
-    padding: 20px;
-  }
-</style>
+    .container {
+      border-radius: 5px;
+      background-color: #f2f2f2;
+      padding: 20px;
+    }
+  </style>
 </head>
 <body>
 ```
@@ -468,7 +449,7 @@ expected to be modified through JavaScript code.</p>
 <h2>Q. What is the difference between <mark><b>span` tag and <mark><b>div` tag?</h2>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p>The primary difference between div and span tag is their default behavior. By default, 
-a &lt;div&gt; is a <b>block-level-element** and a &lt;span&gt; is an <b>inline element**.</p>
+a &lt;div&gt; is a <b>block-level-element</b> and a &lt;span&gt; is an <b>inline element</b>.</p>
 
 <ul>
   <li><b>&lt;div&gt;</b> is a block level element which means it will render it on 
@@ -1975,7 +1956,7 @@ socket.addEventListener('message', function(event) {
 <h2>Q. Explain about HTML Canvas?</h2>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 
-<b>canvas** is an HTML element which can be used to draw graphics via JavaScript. This can, for instance, be used to draw graphs, combine photos, or create animations.
+<b>canvas</b> is an HTML element which can be used to draw graphics via JavaScript. This can, for instance, be used to draw graphs, combine photos, or create animations.
 
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h4>1. Colors, Styles, and Shadows:</h4>
@@ -3242,35 +3223,41 @@ The different landmark roles you can use are as follows, copied from the W3C Wik
   <li><b>application</b>: A region declared as a web application, as opposed to a web document.</li>
 </ul>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-**Document ARIA Roles:**
+<h3>Document ARIA Roles:</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<p>Document roles describe the structure of the content on the page, as opposed to the 
+structure of the whole page, which landmark roles describe. The roles in bold are the 
+ones we think are the most common document aria roles, and the ones which are useful 
+to think about including in your HTML.</p>
 
-Document roles describe the structure of the content on the page, as opposed to the structure of the whole page, which landmark roles describe. The roles in bold are the ones we think are the most common document aria roles, and the ones which are useful to think about including in your HTML.
-
-* **article**: A section of a page that consists of a composition that forms an independent part of a document, page, or site.
-* **columnheader**
-* **definition**: A definition of a term or concept.
-* **directory**
-* **document**
-* **group**: A set of user interface objects which are not intended to be included in a page summary or table of contents by assistive technologies.
-* **heading**: A heading for a section of the page.
-* **img**
-* **list**
-* **listitem**
-* **math**
-* **note**
-* **presentation**
-* **region**
-* **row**
-* **rowgroup**
-* **rowheader**
-* **separator**
-* **toolbar**
-
+<ul>
+  <li><b>article</b>: A section of a page that consists of a composition that forms an independent part of a document, page, or site.</li>
+  <li><b>columnheader</b></li>
+  <li><b>definition</b>: A definition of a term or concept.</li>
+  <li><b>directory</b></li>
+  <li><b>document</b></li>
+  <li><b>group</b>: A set of user interface objects which are not intended to be included in a page summary or table of contents by assistive technologies.</li>
+  <li><b>heading</b>: A heading for a section of the page.</li>
+  <li><b>img</b></li>
+  <li><b>list</b></li>
+  <li><b>listitem</b></li>
+  <li><b>math</b></li>
+  <li><b>note</b></li>
+  <li><b>presentation</b></li>
+  <li><b>region</b></li>
+  <li><b>row</b></li>
+  <li><b>rowgroup</b></li>
+  <li><b>rowheader</b></li>
+  <li><b>separator</b></li>
+  <li><b>toolbar</b></li>
+</ul>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-**Widget ARIA Roles:**
+<h3>Widget ARIA Roles:</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-Widget Roles are used to describe what are often javascript-based interfaces, or the more complicated parts of your web page&apos;s interface. The roles that are starred are the ones we think are the most common elements widget aria roles, and the ones which are useful useful to think about including in your HTML.
+<p>Widget Roles are used to describe what are often javascript-based interfaces, or the more 
+complicated parts of your web page&apos;s interface. The roles that are starred are the ones 
+we think are the most common elements widget aria roles, and the ones which are useful useful 
+to think about including in your HTML.</p>
 
 <ul>
   <li><b>alert</b>: A message with important, and usually time-sensitive, information.</li>
@@ -3300,13 +3287,11 @@ Widget Roles are used to describe what are often javascript-based interfaces, or
   <li><b>treeitem</b>: </li>
 </ul>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-**Abstract ARIA Roles:**
+<h3>Abstract ARIA Roles:</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-
-Abstract aria roles are the basis of how the other ARIA roles are defined. These are not to be used in HTML.
-
+<p>Abstract aria roles are the basis of how the other ARIA roles are defined. These are not to be used in HTML.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-**ARIA States & Properties:**
+<h3>ARIA States & Properties:</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p>ARIA states and properties are often used to support ARIA roles that exist on a page. 
 ARIA Properties often describe relationships with other elements, and for the most part, 
