@@ -7723,18 +7723,156 @@ function error(error) {
 <h2>13.  HTML Drag and Drop API</h2>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p>The HTML Drag and Drop API enables an element to be dragged and dropped.</p>
+
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<h4>HTML Drag and Drop API Example</h4>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<p>The example below is a simple drag and drop example:</p>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<h4>Example</h4>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+
+```
+<!DOCTYPE HTML>
+<html>
+<head>
+<script>
+function dragstartHandler(ev) {
+  ev.dataTransfer.setData("text", ev.target.id);
+}
+
+function dragoverHandler(ev) {
+  ev.preventDefault();
+}
+
+function dropHandler(ev) {
+  ev.preventDefault();
+  const data = ev.dataTransfer.getData("text");
+  ev.target.appendChild(document.getElementById(data));
+}
+</script>
+</head>
+<body>
+
+<div id="div1" ondrop="dropHandler(event)" ondragover="dragoverHandler(event)"></div>
+
+<img id="img1" src="img_logo.gif" draggable="true" ondragstart="dragstartHandler(event)" width="336" height="69">
+
+</body>
+</html>
+```
+
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<h4>Make an Element Draggable</h4>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<p>First of all: To make an element draggable, set the draggable attribute to true:</p>
+
+```
+<img id="img1" draggable="true">
+```
+
+<p>or:</p>
+
+```
+<p id="p1" draggable="true">Draggable text</p>
+```
+
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<h4>What to Drag - ondragstart and setData()</h4>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<p>Then, specify what should happen when the element is dragged.</p>
+
+<p>In the example above, the ondragstart attribute of the <img> element calls a function (dragstartHandler(ev)), that specifies what data to be dragged.</p>
+
+<p>The dataTransfer.setData() method sets the data type and the value of the dragged data:</p>
+
+```
+function dragstartHandler(ev) {
+  ev.dataTransfer.setData("text", ev.target.id);
+}
+```
+
+<p>In this case, the data type is "text" and the value is the id of the draggable element ("img1").</p>
+
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<h4>Where to Drop - ondragover</h4>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<p>The ondragover attrribute of the <div> element calls a function (dragoverHandler(ev)), that specifies where the dragged data can be dropped.</p>
+
+<p>By default, data/elements cannot be dropped in other elements. To allow a drop, we must prevent the default handling of the element.</p>
+
+<p>This is done by calling the preventDefault() method for the ondragover event:</p>
+
+```
+function dragoverHandler(ev) {
+  ev.preventDefault();
+}
+```
+
+<h4>Do the Drop - ondrop</h4>
+<p>When the dragged data is dropped, a drop event occurs.</p>
+
+<p>In the example above, the ondrop attribute of the <div> element calls a function, dropHandler(event):</p>
+
+```
+function dropHandler(ev) {
+  ev.preventDefault();
+  const data = ev.dataTransfer.getData("text");
+  ev.target.appendChild(document.getElementById(data));
+}
+```
+
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<h4>Code explained:</h4>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<ul>
+  <li>Call preventDefault() to prevent the browser default handling of the data (default is open as link on drop)</li>
+  <li>Get the dragged data with the dataTransfer.getData() method. This method will return any data that was set to the same type in the setData() method</li>
+  <li>The dragged data is the id of the dragged element ("img1")</li>
+  <li>Append the dragged element into the drop element</li>
+</ul>
+
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<h4>Example</h4>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<p>How to drag and drop an &lt;h1&gt; element to a &lt;div&gt; element:</p>
+
+```
+<script>
+function dragstartHandler(ev) {
+  ev.dataTransfer.setData("text", ev.target.id);
+}
+
+function dragoverHandler(ev) {
+  ev.preventDefault();
+}
+
+function dropHandler(ev) {
+  ev.preventDefault();
+  const data = ev.dataTransfer.getData("text");
+  ev.target.appendChild(document.getElementById(data));
+}
+</script>
+</head>
+<body>
+
+<div id="div1" ondrop="dropHandler(event)" ondragover="dragoverHandler(event)"></div>
+
+<h1 id="h1" draggable="true" ondragstart="dragstartHandler(event)">W3Schools.com</h1>
+```
+
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h2>11.  HTML Web Storage API</h2>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-What is HTML Web Storage?
-With web storage, applications can store data locally within the user's browser.
+<h3>What is HTML Web Storage?</h3>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<p>With web storage, applications can store data locally within the user's browser.</p>
 
-Before HTML5, application data had to be stored in cookies, included in every server request. Web storage is more secure, and large amounts of data can be stored locally, without affecting website performance.
+<p>Before HTML5, application data had to be stored in cookies, included in every server request. Web storage is more secure, and large amounts of data can be stored locally, without affecting website performance.</p>
 
-Unlike cookies, the storage limit is far larger (at least 5MB) and information is never transferred to the server.
+<p>Unlike cookies, the storage limit is far larger (at least 5MB) and information is never transferred to the server.</p>
 
-Web storage is per origin (per domain and protocol). All pages, from one origin, can store and access the same data.
-
+<p>Web storage is per origin (per domain and protocol). All pages, from one origin, can store and access the same data.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h2>11.  Web Storage API Objects</h2>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -7774,14 +7912,15 @@ when the browser is closed, and will be available the next day, week, or year.</
   <li>Use the localStorage.setItem() method to create name/value pairs</li>
   <li>Use the localStorage.getItem() method to retrieve the values set</li>
   <li>Retrieve the value of "lastname" and insert it into an element with id="result"</li>
-  <li>Retrieve the value of "bgcolor" and insert it into the style backgroundColor of the element with id="result"</li>
+  <li>Retrieve the value of "bgcolor" and insert it into the style backgroundColor 
+    of the element with id="result"</li>
 </ul>
 <p>The syntax for removing the "lastname" localStorage item is as follows:</p>
 <pre>localStorage.removeItem("lastname");</pre>
 
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3>Counting Clicks with localStorage</h3>
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p>The following example counts the number of times a user has clicked a button. In this 
 code the value string is converted to a number to be able to increase the counter:</p>
 
@@ -7807,6 +7946,10 @@ function clickCounter() {
 </script>
 ```
 
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<h4>sessionStorage Object</h4>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+
 
 ```
 <script>
@@ -7829,14 +7972,16 @@ if (typeof(Storage) !== "undefined") {
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3>The sessionStorage Object</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-The sessionStorage object is equal to the localStorage object, except that it stores the data for only one session! The data is deleted when the user closes the specific browser tab.
+<p>The sessionStorage object is equal to the localStorage object, except that it stores the data for only one session! The data is deleted when the user closes the specific browser tab.</p>
 
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3>Counting Clicks with sessionStorage</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-The following example counts the number of times a user has clicked a button, in the current session:
+<p>The following example counts the number of times a user has clicked a button, in the current session:</p>
 
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h4>Example</h4>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 
 ```
 <script>
@@ -7859,23 +8004,24 @@ function clickCounter() {
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h2>14.  HTML Web Workers API</h2>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-A web worker is an external JavaScript file that runs in the background, without affecting the performance of the page.
+<p>A web worker is an external JavaScript file that runs in the background, without affecting the performance of the page.</p>
 
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3>What is a Web Worker?</h3>
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-When executing scripts in an HTML page, the page becomes unresponsive until the script is finished.
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<p>When executing scripts in an HTML page, the page becomes unresponsive until the script is finished.</p>
 
-A web worker is an external JavaScript file that runs in the background, independently of other scripts, without affecting the performance of the page. You can continue to do whatever you want: clicking, selecting things, etc., while the web worker runs in the background.
+<p>A web worker is an external JavaScript file that runs in the background, independently of other scripts, without affecting the performance of the page. You can continue to do whatever you want: clicking, selecting things, etc., while the web worker runs in the background.</p>
 
-Web workers are useful for heavy code that can't be run on the main thread, without causing long tasks that make the page unresponsive.
-
+<p>Web workers are useful for heavy code that can't be run on the main thread, without causing long tasks that make the page unresponsive.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h4>Web Workers API Example</h4>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-The example below creates a simple web worker that count numbers in the background:
+<p>The example below creates a simple web worker that count numbers in the background:</p>
 
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h4>Example</h4>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 
 ```
 <!DOCTYPE html>
@@ -7915,10 +8061,14 @@ function stopWorker() {
 </html>
 ```
 
-Check Web Worker API Support
-Before using web worker, we can quickly check browser support:
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<h4>Check Web Worker API Support</h4>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<p>Before using web worker, we can quickly check browser support:</p>
 
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h4>Example</h4>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 
 ```
 <script>
@@ -7931,11 +8081,14 @@ if(typeof(Worker) !== "undefined") {
 </script>
 ```
 
-Create a .js Web Worker File
-Now, let's create a web worker in an external JavaScript file.
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<h4>Create a .js Web Worker File</h4>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<p>Now, let's create a web worker in an external JavaScript file.</p>
 
-Here we create a script that counts. The script is stored in the "demo_workers.js" file:
+<p>Here we create a script that counts. The script is stored in the "demo_workers.js" file:</p>
 
+```
 var i = 0;
 
 function timedCount() {
@@ -7945,12 +8098,17 @@ function timedCount() {
 }
 
 timedCount();
-Note: The important part of the code above is the postMessage() method - which is used to post messages back to the HTML page.
 
-Create a Web Worker Object
-Once we have created the .js web worker file, we can call it from an HTML page.
+```
 
-The following lines checks if a worker (w) already exists, if not - it creates a new web worker object and points to the .js file: "demo_workers.js":
+<p>Note: The important part of the code above is the postMessage() method - which is used to post messages back to the HTML page.</p>
+
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<h3>Create a Web Worker Object</h3>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<p>Once we have created the .js web worker file, we can call it from an HTML page.</p>
+
+<p>The following lines checks if a worker (w) already exists, if not - it creates a new web worker object and points to the .js file: "demo_workers.js":</p>
 
 ```
 if (typeof(w) == "undefined") {
@@ -7958,11 +8116,13 @@ if (typeof(w) == "undefined") {
 }
 ```
 
-Then we can SEND and RETRIEVE messages from the web worker.
+<p>Then we can SEND and RETRIEVE messages from the web worker.</p>
 
-Data is sent between web workers and the main thread via a system of messages - both sides send their messages using the postMessage() method, and respond to messages via the onmessage event handler.
+<p>Data is sent between web workers and the main thread via a system of messages - both 
+sides send their messages using the postMessage() method, and respond to messages via 
+the onmessage event handler.</p>
 
-Add an onmessage event listener to the web worker object.
+<p>Add an onmessage event listener to the web worker object.</p>
 
 ```
 w.onmessage = function(event){
@@ -7970,26 +8130,34 @@ w.onmessage = function(event){
 };
 ```
 
-Terminate a Web Worker
-When a web worker object is created, it will continue to listen for messages until it is terminated.
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<h3>Terminate a Web Worker</h3>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<p>When a web worker object is created, it will continue to listen for messages until it 
+is terminated.</p>
 
-To terminate a web worker object, and free browser/computer resources, use the terminate() method:
+<p>To terminate a web worker object, and free browser/computer resources, use the 
+terminate() method:</p>
 
 ```
 w.terminate();
 ```
 
-Reuse the Web Worker
-If you set the web worker variable to undefined, after it has been terminated, you can reuse the worker/code:
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<h3>Reuse the Web Worker</h3>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<p>If you set the web worker variable to undefined, after it has been terminated, you can reuse the worker/code:</p>
 
 ```
 w = undefined;
 ```
 
-Full Web Worker Example
-We have already seen the Web Worker code in the .js file.
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<h3>Full Web Worker Example</h3>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<p>We have already seen the Web Worker code in the .js file.</p>
 
-Below is the full code for the HTML page:
+<p>Below is the full code for the HTML page:</p>
 
 <h4>Example</h4>
 
@@ -8029,7 +8197,9 @@ function stopWorker() {
 </html>
 ```
 
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3>Web Workers and the DOM</h3>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p>Since web workers are in external .js files, they do not have access to the following JavaScript objects:</p>
 
 <ul>
@@ -8039,9 +8209,123 @@ function stopWorker() {
 </ul>
 
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<h2>5.  HTML Server-Sent Events API</h2>
+<h2>xx.  HTML Server-Sent Events API</h2>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<h2>6.  Canvas API</h2>
+<p>The Server-Sent Events (SSE) API enables pushing messages/updates from a server to 
+the web page via HTTP connection.</p>
+
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<h3>Server-Sent Events - One Way Messaging</h3>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<p>A server-sent event is when a web page automatically gets messages/updates from a server.</p>
+
+<p>Normally, a web page has to request data from the server, but with server-sent events, 
+the updates are pushed automatically.</p>
+
+<p>Examples: Facebook/Twitter updates, stock market updates, news feeds, sport results, etc.</p>
+
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<h3>Receive Server-Sent Event Notifications</h3>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<p>The EventSource object is used to receive server-sent event notifications:</p>
+
+<h4>Example</h4>
+
+```
+<script>
+const x = document.getElementById("result");
+// Check browser support for SSE
+if(typeof(EventSource) !== "undefined") {
+  var source = new EventSource("demo_sse.php");
+  source.onmessage = function(event) {
+    x.innerHTML += event.data + "<br>";
+  };
+} else {
+  x.innerHTML = "Sorry, no support for server-sent events.";
+}
+</script>
+```
+
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<h4>Example explained:</h4>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<ul>
+  <li>Create a new EventSource object, and specify the URL of the page sending the updates (in this example "demo_sse.php")</li>
+  <li>Each time an update is received, the onmessage event occurs</li>
+  <li>When an onmessage event occurs, put the received data into the element with id="result"</li>
+</ul>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<h4>Check Browser Support</h4>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<p>In the tryit example above there were some extra lines of code to check browser 
+support for server-sent events:</p>
+
+```
+if(typeof(EventSource) !== "undefined") {
+  // Yes! Server-sent events support!
+  // Some code.....
+} else {
+  // Sorry! No server-sent events support..
+}
+```
+
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<h4>Server-Side Code Example</h4>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<p>For the example above to work, you need a server capable of sending data updates (like 
+PHP or ASP).</p>
+
+<pThe server-side event stream syntax is simple. Set the "Content-Type" header to 
+"text/event-stream". Now you can start sending event streams.</p>
+
+<p>Code in PHP (demo_sse.php):</p>
+
+```
+<?php
+header('Content-Type: text/event-stream');
+header('Cache-Control: no-cache');
+
+$time = date('r');
+echo "data: The server time is: {$time}\n\n";
+flush();
+?>
+```
+
+<p>Code in ASP (VB) (demo_sse.asp):</p>
+
+```
+<%
+Response.ContentType = "text/event-stream"
+Response.Expires = -1
+Response.Write("data: The server time is: " & now())
+Response.Flush()
+%>
+```
+
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<h3>Code explained:</h3>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<ul>
+  <li>Set the "Content-Type" header to "text/event-stream"</li>
+  <li>Specify that the page should not cache</li>
+  <li>Output the data to send (Always start with "data: ")</li>
+  <li>Flush the output data back to the web page</li>
+</ul>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<h4>The EventSource Object</h4>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<p>In the examples above we used the onmessage event to get messages. But other events are also available:</p>
+
+| Events | Description     |
+|--------|-----------------|
+| onopen | When a connection to the server is opened |
+| onmessage | When a message is received |
+| onerror | When an error occurs |
+
+
+
+
+<h2>10.  Canvas API</h2>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
