@@ -444,9 +444,8 @@ expected to be modified through JavaScript code.</p>
 <div align="right">
     <b><a href="#toc">↥ back to top</a></b>
 </div>
-
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<h2>Q. What is the difference between <mark><b>span` tag and <mark><b>div` tag?</h2>
+<h2>Q. What is the difference between <mark><b>span</b></mark> tag and <mark><b>div</b></mark> tag?</h2>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p>The primary difference between div and span tag is their default behavior. By default, 
 a &lt;div&gt; is a <b>block-level-element</b> and a &lt;span&gt; is an <b>inline element</b>.</p>
@@ -477,7 +476,6 @@ previous tag.</p>
 <div align="right">
     <b><a href="#toc">↥ back to top</a></b>
 </div>
-
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h2>Q. What is a self closing tag?</h2>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -497,8 +495,8 @@ required to have specific closing tags are called “self closing” tags.</p>
 <h2>Q. Explain the difference between block elements and inline elements?</h2>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <ul>
-  <li>block elements &lt;h1>, &lt;p>, &lt;ul>, &lt;ol>, &lt;li&gt;,</li>
-  <li>inline elements &lt;span>, &lt;a>, &lt;strong>, &lt;i>, &lt;img&gt;</li>
+  <li>block elements &lt;h1&gt;, &lt;p&gt;, &lt;ul&gt;, &lt;ol&gt;, &lt;li&gt;,</li>
+  <li>inline elements &lt;span&gt;, &lt;a&gt;, &lt;strong&gt;, &lt;i&gt;, &lt;img&gt;</li>
 </ul>
 
 <div align="right">
