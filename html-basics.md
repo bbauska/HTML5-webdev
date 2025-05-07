@@ -109,26 +109,26 @@ work for browsers and search engines, as well as developers.</p>
 ```html
 <!DOCTYPE html> 
 
-<html>  
-   <head> 
-      <meta charset = "utf-8"/> 
-      <title>...</title> 
-   </head> 
-  
-   <body> 
-      <header>...</header> 
-      <nav>...</nav> 
-      
-      <article> 
-         <section> 
+<html>
+  <head>
+    <meta charset = "utf-8"/>
+    <title>...</title>
+  </head>
+
+  <body>
+    <header>...</header>
+    <nav>...</nav>
+
+    <article>
+      <section>
             ... 
-         </section> 
-      </article> 
-      <aside>...</aside> 
-      
-      <footer>...</footer> 
-   </body> 
-</html> 
+      </section>
+    </article>
+    <aside>...</aside>
+
+    <footer>...</footer>
+  </body>
+</html>
 ```
 
 <div align="right">
@@ -179,7 +179,7 @@ If a user agent doesn't recognize a correct DOCTYPE, it will trigger the <mark>q
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 
 The web page is rendered in quirks mode. The web browsers engines use quirks mode to support 
-older browsers which does not follow the **W3C specifications**. In quirks mode CSS class 
+older browsers which does not follow the <b>W3C specifications**. In quirks mode CSS class 
 and id names are case insensitive. In standards mode they are case sensitive.
 
 <div align="right">
@@ -205,11 +205,11 @@ suggestions with the mouse.
 <p>Enter your favorite browser name:</p>
 <input type="text" list="browsers" name="favorite_browser">
 <datalist id="browsers">
-    <option value="Firefox">
-    <option value="Chrome">    
-    <option value="Internet Explorer">
-    <option value="Opera">
-    <option value="Safari">
+  <option value="Firefox">
+  <option value="Chrome">    
+  <option value="Internet Explorer">
+  <option value="Opera">
+  <option value="Safari">
 </datalist>
 ```
 
@@ -221,11 +221,11 @@ Indicates a numeric value that falls within a range. The tag supports a number o
 value: If you don&apos;t specify a value, the first numeric value inside the &lt;meter></meter&gt; 
 pair becomes the value.
 
-* **max**: The maximum possible value of the item.
-* **min**: The minimum possible value of the item.
-* **high**: If the value can be defined as a range, this is the high end of the range.
-* **low**: If the value can defined as a range, this is the low end of that range.
-* **optimum**: The optimal value of the element. 
+* <b>max**: The maximum possible value of the item.
+* <b>min**: The minimum possible value of the item.
+* <b>high**: If the value can be defined as a range, this is the high end of the range.
+* <b>low**: If the value can defined as a range, this is the low end of that range.
+* <b>optimum**: The optimal value of the element. 
 
 ```html
 <p>Disk Usage: <meter value="0.2">20%</meter></p>
@@ -357,13 +357,13 @@ expected to be modified through JavaScript code.</p>
 <!DOCTYPE html>
 <html>
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <style>
   body {font-family: Arial, Helvetica, sans-serif;}
   * {box-sizing: border-box;}
-  
+
   input[type=text], input[type=email], select, textarea {
     width: 100%;
     padding: 12px;
@@ -426,7 +426,7 @@ expected to be modified through JavaScript code.</p>
     <input type="submit" value="Submit">
   </form>
 </div>
-<script>
+  <script>
     function validateForm() {
       let name = document.forms["contactForm"]["user_name"].value;
       let email = document.forms["contactForm"]["email"].value;
@@ -455,7 +455,7 @@ expected to be modified through JavaScript code.</p>
         return false;
       }
     }
-</script>
+  </script>
 </body>
 </html>
 ```
@@ -465,10 +465,10 @@ expected to be modified through JavaScript code.</p>
 </div>
 
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<h2>Q. What is the difference between `span` tag and `div` tag?</h2>
+<h2>Q. What is the difference between <mark><b>span` tag and <mark><b>div` tag?</h2>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p>The primary difference between div and span tag is their default behavior. By default, 
-a &lt;div&gt; is a **block-level-element** and a &lt;span&gt; is an **inline element**.</p>
+a &lt;div&gt; is a <b>block-level-element** and a &lt;span&gt; is an <b>inline element**.</p>
 
 <ul>
   <li><b>&lt;div&gt;</b> is a block level element which means it will render it on 
@@ -548,9 +548,9 @@ upon the central topic of a document, or the central functionality of an applica
 
 ```html
 <main role="main">
-    <p>Geckos are a group of usually small, usually nocturnal lizards. 
-       They are found on every continent except Australia.</p>
-    <p>Many species of gecko have adhesive toe pads which enable them to climb walls and even windows.</p>
+  <p>Geckos are a group of usually small, usually nocturnal lizards. 
+    They are found on every continent except Australia.</p>
+  <p>Many species of gecko have adhesive toe pads which enable them to climb walls and even windows.</p>
 </main>
 ```
 
@@ -582,7 +582,7 @@ have the hidden attribute specified.</i></p>
     <b><a href="#toc">↥ back to top</a></b>
 </div>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<h2>Q. When should you use `section`, `div` or `article`?</h2>
+<h2>Q. When should you use <mark><b>section</b></mark>, <mark><b>div</b></mark> or <mark><b>article</b></mark>?</h2>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <ul>
   <li><b><mark>&lt;section&gt;</mark></b>, group of content inside is related to a single 
@@ -611,12 +611,9 @@ is not necessary.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h4>From W3C standards</h4>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-
-```html
-A header element is intended to usually contain the section's heading (an h1–h6 element or an hgroup 
+<p>A header element is intended to usually contain the section's heading (an h1–h6 element or an hgroup 
 element), but this is not required. The header element can also be used to wrap a section's table of 
-contents, a search form, or any relevant logos.
-```
+contents, a search form, or any relevant logos.</p>
 
 ```html
 The footer element represents a footer for its nearest ancestor sectioning content or sectioning root 
@@ -971,27 +968,26 @@ of course will persist despite user actions).</i></p>
 ```html
 <!DOCTYPE HTML>
 <html>
-   <head>
-         <title>HTML5 localStorage</title>
-   </head>
-   <body>
-      <script type="text/javascript">
-        try{
-            if(window.localStorage){ // Check if the localStorage object exists
-            
-                var result = "";
-                var characters  = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789';
-                var charactersLength = characters.length;
-                for(var i = 0; i < 10000; i++){
-                    result += characters.charAt(Math.floor(Math.random() * charactersLength));
-                    localStorage.setItem("key"+i, result);
-                }  
-            } else {
-                alert("Sorry, your browser do not support localStorage.");
-            }
-        } catch(e) {
-            console.log('Exception: '+e);
+  <head>
+    <title>HTML5 localStorage</title>
+  </head>
+  <body>
+    <script type="text/javascript">
+      try {
+        if(window.localStorage){ // Check if the localStorage object exists
+          var result = "";
+          var characters  = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789';
+          var charactersLength = characters.length;
+          for(var i = 0; i < 10000; i++) {
+            result += characters.charAt(Math.floor(Math.random() * charactersLength));
+            localStorage.setItem("key"+i, result);
+          }
+        } else {
+          alert("Sorry, your browser do not support localStorage.");
         }
+      } catch(e) {
+        console.log('Exception: '+e);
+      }
       </script>
    </body>
 </html>
@@ -1211,10 +1207,10 @@ The enctype attribute specifies how the form-data should be encoded when submitt
 
 ```html
 <form action="fileupload.php" method="post" enctype="multipart/form-data"> 
-    <p>Please select the file you would like to upload.</p> 
-    <input type="file" name="upload"> 
-    <br> 
-    <input type="submit" value="Upload File">
+  <p>Please select the file you would like to upload.</p> 
+  <input type="file" name="upload"> 
+  <br> 
+  <input type="submit" value="Upload File">
 </form>
 ```
 
@@ -1224,9 +1220,9 @@ The enctype attribute specifies how the form-data should be encoded when submitt
 
 ```html
 <form action="/urlencoded?token=A87412B" method="POST" enctype="application/x-www-form-urlencoded">
-    <input type="text" name="username" value=""/>
-    <input type="text" name="password" value=""/>
-    <input type="submit" value="Submit" />
+  <input type="text" name="username" value=""/>
+  <input type="text" name="password" value=""/>
+  <input type="submit" value="Submit" />
 </form>
 ```
 
@@ -1236,9 +1232,9 @@ The enctype attribute specifies how the form-data should be encoded when submitt
 
 ```html
 <form action="action.do" method="get" enctype="text/plain">
-    Name: <input type="text" name="name" />
-    Phone: <input type="number" name="phone" />
-    <input type="submit" value="Submit" />
+  Name: <input type="text" name="name" />
+  Phone: <input type="number" name="phone" />
+  <input type="submit" value="Submit" />
 </form>
 ```
 
@@ -1542,20 +1538,20 @@ to decide whether to handle it in quirks mode or standards mode.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 
 * Chrome: 
-    * Layout rendering engine **Webkit**. 
-    * JavaScript engine **V8**
+    * Layout rendering engine <b>Webkit**. 
+    * JavaScript engine <b>V8**
 
 * Firefox: 
-    * Layout rendering engine **Gecko**. 
-    * JavaScript engine **Spider monkey**
+    * Layout rendering engine <b>Gecko**. 
+    * JavaScript engine <b>Spider monkey**
         
 * Internet explorer: 
-    * Layout rendering engine **Trident**. 
-    * JavaScript  engine **Chakra**
+    * Layout rendering engine <b>Trident**. 
+    * JavaScript  engine <b>Chakra**
         
 * Safari:
-    * Layout rendering engine **Webkit**. 
-    * JavaScript engine JavascriptCore i.e **Nitro**
+    * Layout rendering engine <b>Webkit**. 
+    * JavaScript engine JavascriptCore i.e <b>Nitro**
 
 <div align="right">
     <b><a href="#toc">↥ back to top</a></b>
@@ -1734,7 +1730,7 @@ the text size will follow the size of the browser window.</p>
 <img src="mypic.jpg" style="visibility: hidden" alt="My photo">
 
 <div style="display: none;">
-    <img src="mypic.jpg" alt="My photo">
+  <img src="mypic.jpg" alt="My photo">
 </div>
 ```
 
@@ -1895,12 +1891,12 @@ if ("geolocation" in navigator) {
 ```html
 <!DOCTYPE html>
 <html>
-    <head>
-         <title>Geolocation</title>
-    </head>
-   <body>
-    <p><button onclick="geoFindMe()">Show my location</button></p>
-    <div id="out"></div>
+<head>
+  <title>Geolocation</title>
+</head>
+<body>
+  <p><button onclick="geoFindMe()">Show my location</button></p>
+  <div id="out"></div>
 </body>
 
 <script type="text/javascript">
@@ -1958,7 +1954,7 @@ without having to poll the server for a reply.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 
 ```javascript
- // Create WebSocket connection.
+// Create WebSocket connection.
 const socket = new WebSocket('ws://localhost:8080/');
 
 // Connection opened
@@ -1979,7 +1975,7 @@ socket.addEventListener('message', function(event) {
 <h2>Q. Explain about HTML Canvas?</h2>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 
-**canvas** is an HTML element which can be used to draw graphics via JavaScript. This can, for instance, be used to draw graphs, combine photos, or create animations.
+<b>canvas** is an HTML element which can be used to draw graphics via JavaScript. This can, for instance, be used to draw graphs, combine photos, or create animations.
 
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h4>1. Colors, Styles, and Shadows:</h4>
@@ -2596,7 +2592,7 @@ parent — is usually the browser window, represented by the <b>Window</b> objec
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h4>1. rel="nofollow"</h4>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<p>When `rel="nofollow"` tag is used, it instruct the search engines not to pass 
+<p>When <mark><b>rel="nofollow"</b></mark> tag is used, it instruct the search engines not to pass 
 any PageRank from one page to the other. It does not allow it to pass the authority 
 to the specific website. The main advantage of using this attribute is to control 
 the spam attack.</p>
@@ -2629,7 +2625,7 @@ link.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h4>3. rel="noopener"</h4>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<p>It prevents the new page from being able to access the `window.opener` property and 
+<p>It prevents the new page from being able to access the <mark><b>window.opener</b></mark> property and 
 will make it run in a separate process. noopener tag works as a security fix which 
 prevents malicious links to take control over an opened tab.</p>
 
@@ -3072,7 +3068,7 @@ an entry in the outline of the page.</p>
 <h4>The <mark><b>&lt;div&gt;</b></mark> Element</h4>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p>The &lt;div&gt; element only represents its child elements and doesn&apos;t have a special 
-meaning. It can be used with the `lang`, `title`, and `class` attributes to add semantics 
+meaning. It can be used with the <mark><b>lang</b></mark>, <mark><b>title</b></mark>, and <mark><b>class</b></mark> attributes to add semantics 
 that is common to a group of consecutive elements. This element can also be used in a 
 &lt;dl&gt; tag and wrap groups of &lt;dt&gt; and &lt;dd&gt; elements.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -3230,19 +3226,21 @@ technology a better way to navigate and identify the different parts of a web pa
  <nav class='mobile-nav' role='navigation' aria-label='Mobile Menu'> List of Links </nav>
 ```
 
-While seeming redundant, is actually useful for screen readers. It wouldn&apos;t read the aria-label on this navigation, which is really helpful for giving greater context to visually impaired users, without the `role="navigation"`.
+<p>While seeming redundant, is actually useful for screen readers. It wouldn&apos;t read the 
+aria-label on this navigation, which is really helpful for giving greater context to visually 
+impaired users, without the <mark><b>role="navigation"</b></mark>.</p>
 
 The different landmark roles you can use are as follows, copied from the W3C Wiki Page:
-
-* **banner**: A region that contains the prime heading or internal title of a page.
-* **complementary**: Any section of the document that supports the main content, yet is separate and meaningful on its own.
-* **contentinfo**: A region that contains information about the parent document such as copyrights and links to privacy statements.
-* **form**: A region of the document that represents a collection of form-associated elements, some of which can represent editable values that can be submitted to a server for processing.
-* **main**: Main content in a document. In almost all cases a page will have only one `role=“main”`.
-* **navigation**: A collection of links suitable for use when navigating the document or related documents.
-* **search**: The search tool of a Web document.
-* **application**: A region declared as a web application, as opposed to a web document.
-
+<ul>
+  <li><b>banner</b>: A region that contains the prime heading or internal title of a page.</li>
+  <li><b>complementary</b>: Any section of the document that supports the main content, yet is separate and meaningful on its own.</li>
+  <li><b>contentinfo</b>: A region that contains information about the parent document such as copyrights and links to privacy statements.</li>
+  <li><b>form</b>: A region of the document that represents a collection of form-associated elements, some of which can represent editable values that can be submitted to a server for processing.</li>
+  <li><b>main</b>: Main content in a document. In almost all cases a page will have only one <mark><b>role=“main”</b></mark>.</li>
+  <li><b>navigation</b>: A collection of links suitable for use when navigating the document or related documents.</li>
+  <li><b>search</b>: The search tool of a Web document.</li>
+  <li><b>application</b>: A region declared as a web application, as opposed to a web document.</li>
+</ul>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 **Document ARIA Roles:**
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -3274,32 +3272,33 @@ Document roles describe the structure of the content on the page, as opposed to 
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 Widget Roles are used to describe what are often javascript-based interfaces, or the more complicated parts of your web page&apos;s interface. The roles that are starred are the ones we think are the most common elements widget aria roles, and the ones which are useful useful to think about including in your HTML.
 
-* **alert**: A message with important, and usually time-sensitive, information. 
-* **alertdialog**: A type of dialog that contains an alert message, where initial focus goes to an element within the dialog. 
-* **button**: An input that allows for user-triggered actions when clicked or pressed.
-* **checkbox**: A checkable input that has three possible values: true, false, or mixed.
-* **dialog**: A dialog is an application window that is designed to interrupt the current processing of an application in order to prompt the user to enter information or require a response. 
-* **gridcell**
-* **link**
-* **log**
-* **marquee**
-* **menuitem**
-* **menuitemcheckbox**
-* **menuitemradio**
-* **option**
-* **progressbar**
-* **radio**: A checkable input in a group of radio roles, only one of which can be checked at a time.
-* **scrollbar**
-* **slider**
-* **spinbutton**
-* **status**
-* **tab**: A grouping label providing a mechanism for selecting the tab content that is to be rendered to the user.
-* **tabpanel**: A container for the resources associated with a tab, where each tab is contained in a tablist.
-* **textbox**: Input that allows free-form text as its value.
-* **timer**
-* **tooltip**
-* **treeitem**
-
+<ul>
+  <li><b>alert</b>: A message with important, and usually time-sensitive, information.</li>
+  <li><b>alertdialog</b>: A type of dialog that contains an alert message, where initial focus goes to an element within the dialog.</li>
+  <li><b>button</b>: An input that allows for user-triggered actions when clicked or pressed.</li>
+  <li><b>checkbox</b>: A checkable input that has three possible values: true, false, or mixed.</li>
+  <li><b>dialog</b>: A dialog is an application window that is designed to interrupt the current processing of an application in order to prompt the user to enter information or require a response.</li>
+  <li><b>gridcell</b>: </li>
+  <li><b>link</b>: </li>
+  <li><b>log</b>: </li>
+  <li><b>marquee</b>: </li>
+  <li><b>menuitem</b>: </li>
+  <li><b>menuitemcheckbox</b>: </li>
+  <li><b>menuitemradio</b>: </li>
+  <li><b>option</b>: </li>
+  <li><b>progressbar</b>: </li>
+  <li><b>radio</b>: A checkable input in a group of radio roles, only one of which can be checked at a time.</li>
+  <li><b>scrollbar</b>: </li>
+  <li><b>slider</b>: </li>
+  <li><b>spinbutton</b>: </li>
+  <li><b>status</b>: </li>
+  <li><b>tab</b>: A grouping label providing a mechanism for selecting the tab content that is to be rendered to the user.</li>
+  <li><b>tabpanel</b>: A container for the resources associated with a tab, where each tab is contained in a tablist.</li>
+  <li><b>textbox</b>: Input that allows free-form text as its value.</li>
+  <li><b>timer</b>: </li>
+  <li><b>tooltip</b>: </li>
+  <li><b>treeitem</b>: </li>
+</ul>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 **Abstract ARIA Roles:**
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -4549,49 +4548,48 @@ table {
 <html>
 
 <head>
-    <style>
-        table,
-        th,
-        td {
-            border: 1px solid black;
-            border-collapse: collapse;
-        }
+  <style>
+    table,
+    th,
+    td {
+      border: 1px solid black;
+      border-collapse: collapse;
+    }
 
-        th,
-        td {
-            padding: 20px;
-        }
-
-        th {
-            text-align: left;
-        }
-    </style>
+    th,
+    td {
+      padding: 20px;
+    }
+    th {
+      text-align: left;
+    }
+  </style>
 </head>
 
 <body>
-    <table style="width:100%">
-        <caption>DETAILS</caption>
-        <tr>
-            <th>Firstname</th>
-            <th>Lastname</th>
-            <th>Age</th>
-        </tr>
-        <tr>
-            <td>Priya</td>
-            <td>Sharma</td>
-            <td>24</td>
-        </tr>
-        <tr>
-            <td>Arun</td>
-            <td>Singh</td>
-            <td>32</td>
-        </tr>
-        <tr>
-            <td>Sam</td>
-            <td>Watson</td>
-            <td>41</td>
-        </tr>
-    </table>
+  <table style="width:100%">
+    <caption>DETAILS</caption>
+    <tr>
+      <th>Firstname</th>
+      <th>Lastname</th>
+      <th>Age</th>
+    </tr>
+    <tr>
+      <td>Priya</td>
+      <td>Sharma</td>
+      <td>24</td>
+    </tr>
+    <tr>
+      <td>Arun</td>
+      <td>Singh</td>
+      <td>32</td>
+    </tr>
+    <tr>
+      <td>Sam</td>
+      <td>Watson</td>
+      <td>41</td>
+    </tr>
+  </table>
 </body>
 
 </html>
@@ -4653,52 +4651,52 @@ table#t01 {
 </head>
 
 <body>
-    <table style="width:100%">
-        <tr>
-            <th>Firstname</th>
-            <th>Lastname</th>
-            <th>Age</th>
-        </tr>
-        <tr>
-            <td>Priya</td>
-            <td>Sharma</td>
-            <td>24</td>
-        </tr>
-        <tr>
-            <td>Arun</td>
-            <td>Singh</td>
-            <td>32</td>
-        </tr>
-        <tr>
-            <td>Sam</td>
-            <td>Watson</td>
-            <td>41</td>
-        </tr>
-    </table>
-    <br />
-    <br />
-    <table id="t01">
-        <tr>
-            <th>Firstname</th>
-            <th>Lastname</th>
-            <th>Age</th>
-        </tr>
-        <tr>
-            <td>Priya</td>
-            <td>Sharma</td>
-            <td>24</td>
-        </tr>
-        <tr>
-            <td>Arun</td>
-            <td>Singh</td>
-            <td>32</td>
-        </tr>
-        <tr>
-            <td>Sam</td>
-            <td>Watson</td>
-            <td>41</td>
-        </tr>
-    </table>
+  <table style="width:100%">
+    <tr>
+      <th>Firstname</th>
+      <th>Lastname</th>
+      <th>Age</th>
+    </tr>
+    <tr>
+      <td>Priya</td>
+      <td>Sharma</td>
+      <td>24</td>
+    </tr>
+    <tr>
+      <td>Arun</td>
+      <td>Singh</td>
+      <td>32</td>
+    </tr>
+    <tr>
+      <td>Sam</td>
+      <td>Watson</td>
+      <td>41</td>
+    </tr>
+  </table>
+  <br />
+  <br />
+  <table id="t01">
+    <tr>
+      <th>Firstname</th>
+        <th>Lastname</th>
+      <th>Age</th>
+    </tr>
+    <tr>
+      <td>Priya</td>
+      <td>Sharma</td>
+      <td>24</td>
+    </tr>
+    <tr>
+      <td>Arun</td>
+      <td>Singh</td>
+      <td>32</td>
+    </tr>
+    <tr>
+      <td>Sam</td>
+      <td>Watson</td>
+      <td>41</td>
+    </tr>
+  </table>
 </body>
 
 </html>
@@ -5030,9 +5028,13 @@ and definition list. We have explained all three list types with examples.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h2 id="7-html-iframes">07. HTML iFrames</h2>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 
 
 
+
+
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h2 id="8-html-url">08. HTML URL</h2>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -5210,17 +5212,17 @@ border. The rectangle has a width of 400 and a height of 100.</p>
 <html>
 
 <head>
-    <title>HTML SVG</title>
+  <title>HTML SVG</title>
 </head>
 
 <body>
-    <!-- html svg tag is used here -->
-    <svg width="400" height="100">
-        <rect width="400" height="100" 
-              style="fill: rgb(0, 0, 255);
-                    stroke-width: 10;
-                    stroke: rgb(0, 0, 0)" />
-    </svg>
+  <!-- html svg tag is used here -->
+  <svg width="400" height="100">
+    <rect width="400" height="100" 
+      style="fill: rgb(0, 0, 255);
+      stroke-width: 10;
+      stroke: rgb(0, 0, 0)" />
+  </svg>
 </body>
 
 </html>
@@ -5250,22 +5252,22 @@ corners, a black border, and 50% opacity, positioned at coordinates (80, 20).</p
 <html>
 
 <head>
-    <title>
-       HTML SVG
-    </title>
+  <title>
+    HTML SVG
+  </title>
 </head>
 
 <body>
-    <!-- html svg tag is used here -->
-    <svg width="400" height="380">
-        <rect x="80" y="20" rx="20" 
-              ry="20" width="150" 
-              height="150" 
-              style="fill: orange;
-                      stroke: black;
-                      stroke-width: 2; 
-                      opacity: 0.5" />
-    </svg>
+  <!-- html svg tag is used here -->
+  <svg width="400" height="380">
+    <rect x="80" y="20" rx="20" 
+      ry="20" width="150" 
+      height="150" 
+      style="fill: orange;
+      stroke: black;
+      stroke-width: 2; 
+      opacity: 0.5" />
+  </svg>
 </body>
 
 </html>
@@ -5294,16 +5296,16 @@ border. The polygon is defined by a series of points and has a 5-pixel stroke wi
 <html>
 
 <head>
-    <title>HTML SVG</title>
+  <title>HTML SVG</title>
 </head>
 
 <body>
-    <!-- html svg tag is used here -->
-    <svg width="300" height="200">
-        <polygon points="100,10 40,198 190,78 10,78 160,198" 
-                 style="fill: grey; stroke: orange; 
-                        stroke-width: 5; fill-rule: evenodd" />
-    </svg>
+  <!-- html svg tag is used here -->
+  <svg width="300" height="200">
+    <polygon points="100,10 40,198 190,78 10,78 160,198" 
+      style="fill: grey; stroke: orange; 
+      stroke-width: 5; fill-rule: evenodd" />
+  </svg>
 </body>
 
 </html>
@@ -5334,26 +5336,26 @@ using the ARIAL font family.</p>
 <html>
 
 <body>
-    <!-- html svg tag is used here -->
-    <svg height="300" width="700">
-        <defs>
-            <linearGradient id="grad1" x1="0%" y1="0%" 
-                            x2="100%" y2="0%">
-                <stop offset="0%" 
-                      style="stop-color:white; 
-                             stop-opacity: 1" />
-                <stop offset="100%" 
-                      style="stop-color: green; 
-                             stop-opacity: 1" />
-            </linearGradient>
-        </defs>
-        <ellipse cx="200" cy="100" rx="120" 
-                 ry="80" fill="url(#grad1)" />
-        <text fill="#ffffff" font-size="22" 
-              font-family="ARIAL" x="120" y="110">
-            GeeksforGeeks
-        </text>
-    </svg>
+  <!-- html svg tag is used here -->
+  <svg height="300" width="700">
+    <defs>
+      <linearGradient id="grad1" x1="0%" y1="0%" 
+        x2="100%" y2="0%">
+        <stop offset="0%" 
+        style="stop-color:white; 
+        stop-opacity: 1" />
+        <stop offset="100%" 
+        style="stop-color: green; 
+        stop-opacity: 1" />
+      </linearGradient>
+    </defs>
+    <ellipse cx="200" cy="100" rx="120" 
+      ry="80" fill="url(#grad1)" />
+    <text fill="#ffffff" font-size="22" 
+      font-family="ARIAL" x="120" y="110">
+      GeeksforGeeks
+    </text>
+  </svg>
 </body>
   
 </html>
@@ -5383,10 +5385,10 @@ of the SVG document.</p>
 
 ```
 <a href="" 
-   target="" 
-   type="" 
-   rel="" 
-   download="">
+  target="" 
+  type="" 
+  rel="" 
+  download="">
 </a>
 ```
 
@@ -5469,20 +5471,20 @@ by an anchor (&lt;a&gt;) tag, creating a clickable area that redirects to anothe
 </head>
 
 <body>
-    <div style="width:300px; height:300px;">
-        <h2>
-            &lt;a&gt; Tag SVG
-        </h2>
-        <svg width="500" height="500">
-            <a href="http://geeksforgeeks.org" target="_blank">
-                <rect x="80" y="30" 
-                      width="150" 
-                      height="80" 
-                      fill="green">
-                </rect>
-            </a>
-        </svg>
-    </div>
+  <div style="width:300px; height:300px;">
+    <h2>
+      &lt;a&gt; Tag SVG
+    </h2>
+    <svg width="500" height="500">
+      <a href="http://geeksforgeeks.org" target="_blank">
+        <rect x="80" y="30" 
+          width="150" 
+          height="80" 
+          fill="green">
+        </rect>
+      </a>
+    </svg>
+  </div>
 </body>
   
 </html>
@@ -5697,7 +5699,6 @@ and/or skewing.</p>
   
 <body>
   <svg width="120" height="120">
-  
     <polygon points="60,30 90,90 30,90">
       <animateTransform attributeName="transform"
         attributeType="XML" type="rotate" 
@@ -5985,27 +5986,25 @@ given above.</p>
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8" />
-    <meta property="viewport" content=
-        "width=device-width, initial-scale=1.0" />
+  <meta charset="UTF-8" />
+  <meta property="viewport" content=
+    "width=device-width, initial-scale=1.0" />
 
-    <title>SVG clipPath Element</title>
+  <title>SVG clipPath Element</title>
 
-    <style>
-        @keyframes star {
-            from {
-                r: 0
-            }
-
-            to {
-                r: 500px
-            }
-        }
-
-        #gfg circle {
-            animation: star 25s ease;
-        }
-    </style>
+  <style>
+    @keyframes star {
+      from {
+        r: 0
+      }
+      to {
+        r: 500px
+      }
+    }
+    #gfg circle {
+      animation: star 25s ease;
+    }
+  </style>
 </head>
 
 <body>
@@ -6196,27 +6195,27 @@ any of the available SVG elements whether it is a container or graphic element.<
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" path1tent=
-        "width=device-width, initial-scale=1.0">
-    <title>SVG desc Element</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" path1tent=
+    "width=device-width, initial-scale=1.0">
+  <title>SVG desc Element</title>
 
-    <style>
-        svg {
-            width: 200px;
-            height: 200px;
-            color: #ffffff;
-            background-color: green;
-        }
-    </style>
+  <style>
+    svg {
+      width: 200px;
+      height: 200px;
+      color: #ffffff;
+      background-color: green;
+    }
+  </style>
 </head>
 
 <body>
-    <svg>
-        <circle cx="100" cy="100" r="80">
-            <desc>Geeks for geeks</desc>
-        </circle>
-    </svg>
+  <svg>
+    <circle cx="100" cy="100" r="80">
+      <desc>Geeks for geeks</desc>
+    </circle>
+  </svg>
 </body>
 
 </html>
@@ -6246,32 +6245,32 @@ any of the available SVG elements whether it is a container or graphic element.<
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" path1tent=
-        "width=device-width, initial-scale=1.0">
-    <title>SVG desc Element</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" path1tent=
+    "width=device-width, initial-scale=1.0">
+  <title>SVG desc Element</title>
 
-    <style>
-        svg {
-            width: 200px;
-            height: 200px;
-            color: black;
-            background-color: green;
-        }
-    </style>
+  <style>
+    svg {
+      width: 200px;
+      height: 200px;
+      color: black;
+      background-color: green;
+    }
+  </style>
 </head>
 
 <body>
-    <svg>
-        <rect aria-describedby="info" 
-            width="180" height="100" 
-            x="10" y="50" fill="white" 
-            stroke="black">
-            <desc id="info">
-                Geeks for geeks
-            </desc>
-        </rect>
-    </svg>
+  <svg>
+    <rect aria-describedby="info" 
+      width="180" height="100" 
+      x="10" y="50" fill="white" 
+      stroke="black">
+      <desc id="info">
+        Geeks for geeks
+      </desc>
+    </rect>
+  </svg>
 </body>
 
 </html>
@@ -6301,11 +6300,10 @@ circle has equal x and y radius:</p>
 
 ```
 <ellipse
-   cx="x-axis co-ordinate"
-   cy="y-axis co-ordinate"
-   
-   rx="length" 
-   ry="length" >    
+  cx="x-axis co-ordinate"
+  cy="y-axis co-ordinate" 
+  rx="length" 
+  ry="length" >    
 </ellipse>
 ```
 
@@ -6323,17 +6321,15 @@ circle has equal x and y radius:</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 
 ```
-<html> 
-   <title>SVG Ellipse</title> 
-   <body> 
-      <svg width="400" height="400"> 
-            <ellipse cx="100" cy="100" rx="90" ry="50" 
-            stroke="black" stroke-width="2" fill="grey"> 
-                  
-            </ellipse> 
-      </svg> 
-     
-   </body> 
+<html>
+  <title>SVG Ellipse</title>
+  <body>
+    <svg width="400" height="400">
+      <ellipse cx="100" cy="100" rx="90" ry="50" 
+        stroke="black" stroke-width="2" fill="grey">
+      </ellipse>
+    </svg> 
+  </body>
 </html>
 ```
 
@@ -6667,8 +6663,8 @@ with neighboring pixels to produce a resulting image.</p>
 
 ```
 <feConvolveMatrix in="" order="" kernelMatrix="" divisor="" 
-    bias="" targetX="" targetY="" edgeMode="" kernelUnitLength=""
-    preserveAlpha="" />
+  bias="" targetX="" targetY="" edgeMode="" kernelUnitLength=""
+  preserveAlpha="" />
 ```
 
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -6700,30 +6696,30 @@ with neighboring pixels to produce a resulting image.</p>
 <!DOCTYPE html> 
 <html> 
 
-<body> 
-    <svg width="100%" height="220"> 
-        <defs> 
-            <filter id="convolve"> 
-                <feConvolveMatrix kernelMatrix= 
-                    "1 5 -1 -1 0 4 0 0 -1" /> 
-            </filter> 
-        </defs> 
+<body>
+  <svg width="100%" height="220"> 
+    <defs> 
+      <filter id="convolve"> 
+        <feConvolveMatrix kernelMatrix= 
+          "1 5 -1 -1 0 4 0 0 -1" /> 
+      </filter> 
+    </defs> 
 
-        <rect x="40" y="40" width="100"
-            height="100"
-            filter: url(#convolve) style= 
-                "stroke: #000000; 
-                fill: darkgreen;" /> 
+    <rect x="40" y="40" width="100"
+      height="100"
+      filter: url(#convolve) style= 
+      "stroke: #000000; 
+      fill: darkgreen;" /> 
 
-        <g fill="#FFFFFF" stroke="black"
-            font-size="10" font-family="Verdana"> 
+    <g fill="#FFFFFF" stroke="black"
+      font-size="10" font-family="Verdana"> 
 
-            <text x="50" y="90"
-                filter="url(#convolve)"> 
-                GeeksForGeeks 
-            </text> 
-        </g> 
-    </svg> 
+      <text x="50" y="90"
+        filter="url(#convolve)"> 
+        GeeksForGeeks 
+      </text> 
+    </g> 
+  </svg> 
 </body> 
 
 </html> 
@@ -6751,32 +6747,32 @@ with neighboring pixels to produce a resulting image.</p>
 <html> 
 <title>SVG Filter</title> 
 
-<body> 
-    <svg width="100%" height="220"> 
-        <defs> 
-            <filter id="convolve"> 
-                <feConvolveMatrix kernelMatrix
-                ="-7 -10 -15 -10 10 -1 0 0 -1" /> 
-            </filter> 
-        </defs> 
+<body>
+  <svg width="100%" height="220"> 
+    <defs> 
+      <filter id="convolve"> 
+        <feConvolveMatrix kernelMatrix
+        ="-7 -10 -15 -10 10 -1 0 0 -1" /> 
+      </filter> 
+    </defs> 
 
-        <rect x="1" y="1" width="198"
-            height="118"
-            style="stroke: #000000; 
-                    fill: none; 
-                    filter: url(#convolve);" /> 
+    <rect x="1" y="1" width="198"
+      height="118"
+      style="stroke: #000000; 
+        fill: none; 
+        filter: url(#convolve);" /> 
 
-        <circle cx="100" cy="60" r="55"
-            stroke="black" stroke-width="3"
-            fill="Lightgreen"
-            filter: url(#convolve) /> 
+    <circle cx="100" cy="60" r="55"
+      stroke="black" stroke-width="3"
+      fill="Lightgreen"
+      filter: url(#convolve) /> 
 
-        <g fill="#FFFFFF" stroke="black"
-            font-size="10" font-family="Verdana"> 
-            <text x="60" y="62" filter="url(#convolve)"> 
-                GeeksForGeeks</text> 
-        </g> 
-    </svg> 
+    <g fill="#FFFFFF" stroke="black"
+      font-size="10" font-family="Verdana"> 
+      <text x="60" y="62" filter="url(#convolve)"> 
+        GeeksForGeeks</text> 
+    </g> 
+  </svg> 
 </body> 
 
 </html> 
@@ -6826,28 +6822,28 @@ are brighter and the sides facing away are darker and in shadow.</p>
 <!DOCTYPE html> 
 <html> 
 
-<body> 
-    <svg viewBox="0 0 1000 1000"> 
-        <filter id="lightMe2"> 
-            <feDiffuseLighting in="SourceGraphic"
-                surfaceScale="1" diffuseConstant="2"
-                kernelUnitLength="2"> 
+<body>
+  <svg viewBox="0 0 1000 1000"> 
+    <filter id="lightMe2"> 
+      <feDiffuseLighting in="SourceGraphic"
+        surfaceScale="1" diffuseConstant="2"
+        kernelUnitLength="2"> 
 
-                <fePointLight x="80" y="80" z="40" /> 
+        <fePointLight x="80" y="80" z="40" /> 
 
-                <feDistantLight azimuth="240"
-                    elevation="20" /> 
-            </feDiffuseLighting> 
+        <feDistantLight azimuth="240"
+          elevation="20" /> 
+      </feDiffuseLighting> 
 
-            <feComposite in="SourceGraphic" in2="light"
-                operator="arithmetic" k1="1" k2="0"
-                k3="0" k4="0" /> 
-        </filter> 
+      <feComposite in="SourceGraphic" in2="light"
+        operator="arithmetic" k1="1" k2="0"
+        k3="0" k4="0" /> 
+    </filter> 
 
-        <rect x="20" y="20" width="200" height="200"
-            fill="green"
-            style="filter: url(#lightMe2);" /> 
-    </svg> 
+    <rect x="20" y="20" width="200" height="200"
+      fill="green"
+      style="filter: url(#lightMe2);" /> 
+  </svg> 
 </body> 
 
 </html>
@@ -6875,29 +6871,29 @@ are brighter and the sides facing away are darker and in shadow.</p>
 <html>
 
 <body>
-    <svg viewBox="0 0 1000 1000">
-        <filter id="lightMe3">
-            <feDiffuseLighting in="BackgroundImage"
-                surfaceScale="4" diffuseConstant="2"
-                kernelUnitLength="2">
+  <svg viewBox="0 0 1000 1000">
+    <filter id="lightMe3">
+      <feDiffuseLighting in="BackgroundImage"
+        surfaceScale="4" diffuseConstant="2"
+        kernelUnitLength="2">
 
-                <feSpotLight x="30" y="20" z="30"
-                    limitingConeAngle="40"
-                    pointsAtX="200" pointsAtY="200"
-                    pointsAtZ="0" />
+        <feSpotLight x="30" y="20" z="30"
+          limitingConeAngle="40"
+          pointsAtX="200" pointsAtY="200"
+          pointsAtZ="0" />
 
-                <fePointLight x="80" y="80" z="40" />
-            </feDiffuseLighting>
+        <fePointLight x="80" y="80" z="40" />
+      </feDiffuseLighting>
 
-            <feComposite in="SourceGraphic"
-                in2="light" operator="arithmetic"
-                k1="1" k2="0" k3="0" k4="0" />
-        </filter>
+      <feComposite in="SourceGraphic"
+        in2="light" operator="arithmetic"
+        k1="1" k2="0" k3="0" k4="0" />
+    </filter>
 
-        <rect x="20" y="20" width="200" height="200"
-            fill="blue"
-            style="filter: url(#lightMe3);" />
-    </svg>
+    <rect x="20" y="20" width="200" height="200"
+      fill="blue"
+      style="filter: url(#lightMe3);" />
+  </svg>
 </body>
 
 </html>
@@ -7006,20 +7002,20 @@ which displacement effect is applied is reserved in “in” attribute.</p>
   <svg width="200" height="200"
     viewBox="0 0 220 220">
 
-    <filter id="displacementFilter"> 
+    <filter id="displacementFilter">
 
       <feTurbulence type="turbulence"
         baseFrequency="5" numOctaves="2"
-        result="turbulence" /> 
+        result="turbulence" />
 
       <feDisplacementMap in2="abc"
         in="SourceGraphic" scale="200"
         xChannelSelector="B"
-        yChannelSelector="R" /> 
-    </filter> 
+        yChannelSelector="R" />
+    </filter>
 
     <rect width="250" height="250" style
-      ="filter: url(#displacementFilter)" /> 
+      ="filter: url(#displacementFilter)" />
   </svg> 
 </body> 
 
