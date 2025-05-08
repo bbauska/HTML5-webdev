@@ -674,41 +674,53 @@ images, line breaks, etc.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <div role="region" tabindex="0">
   <table>
-    <caption>The EventSource Object</caption>
+    <caption>Physical Tags</caption>
     <thead>
       <tr>
-        <th>Event</th>
+        <th>Tags</th>
         <th>Description</th>
       </tr>
     </thead>
     <tbody>
       <tr>
-        <td></td>
-        <td></td>
+        <td>&lt;sup&gt;</td>
+        <td>Superscript is usually used for showing elements above base-line.</td>
       </tr>
       <tr>
-        <td></td>
-        <td></td>
+        <td>&lt;sub&gt;</td>
+        <td>The subscript is used for alternate baseline.</td>
       </tr>
       <tr>
-        <td></td>
-        <td></td>
+        <td>&lt;i&gt;</td>
+        <td>An Italic tag is used to define a text with a special meaning.</td>
+      </tr>
+      <tr>
+        <td>&lt;big&gt;</td>
+        <td>Big tag increase the font size by 1 (Note: You can not use the big tag in HTML 5).</td>
+      </tr>
+      <tr>
+        <td>&lt;small&gt;</td>
+        <td>A small tag defines the small text, and it is used while writing copyright.</td>
+      </tr>
+      <tr>
+        <td>&lt;b&gt;</td>
+        <td>Bold increases the importance of the text because bold tag covert the text into bold size.</td>
+      </tr>
+      <tr>
+        <td>&lt;u&gt;</td>
+        <td>It is used to underline the text.</td>
+      </tr>
+      <tr>
+        <td>&lt;tt&gt;</td>
+        <td>Teletype text gives the default font-family which is monospace.</td>
+      </tr>
+      <tr>
+        <td>&lt;strike&gt;</td>
+        <td>It is an editing markup that tells the reader to ignore the text passage.</td>
       </tr>
     </tbody>
   </table>
 </div>
-|Tags      | Description                                                      |
-|----------|------------------------------------------------------------------|
-|&lt;sup&gt;   |Superscript is usually used for showing elements above base-line |
-|&lt;sub&gt;   |The subscript is used for alternate baseline.|
-|&lt;i&gt;     |An Italic tag is used to define a text with a special meaning. |
-|&lt;big&gt;   |Big tag increase the font size by 1 (Note: You can not use the big tag in HTML 5)|
-|&lt;small&gt; |A small tag defines the small text, and it is used while writing copyright.|
-|&lt;b&gt;     |Bold increases the importance of the text because bold tag covert the text into bold size.|
-|&lt;u&gt;     |It is used to underline the text.|
-|&lt;tt&gt;    |Teletype text gives the default font-family which is monospace.|
-|&lt;strike&gt;|It is an editing markup that tells the reader to ignore the text passage.|
-
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h4>2. Logical Tags:</h4>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -1057,33 +1069,51 @@ and <mark>localStorage</mark>?</h2>
     <caption>The EventSource Object</caption>
     <thead>
       <tr>
-        <th>Event</th>
-        <th>Description</th>
+	    <th></th>
+        <th><mark>cookie</mark></th>
+        <th><mark>localStorage</mark></th>
+		<th><mark>sessionStorage</mark></th>
       </tr>
     </thead>
     <tbody>
       <tr>
-        <td></td>
-        <td></td>
+        <td>Initiator</td>
+        <td>Client or server. Server can use <mark>Set-Cookie</mark> header</td>
+        <td>Client</td>
+        <td>Client</td>
       </tr>
       <tr>
-        <td></td>
-        <td></td>
+        <td>Expiry</td>
+        <td>Manually set</td>
+        <td>Forever</td>
+        <td>On tab close.</td>
       </tr>
       <tr>
-        <td></td>
-        <td></td>
+        <td>Persistent across browser sessions</td>
+        <td>Depends on whether expiration is set</td>
+        <td>Yes</td>
+        <td>No</td>
       </tr>
+      <tr>
+        <td>Capacity (per domain)</td>
+        <td>4k</td>
+        <td>5mb</td>
+        <td>5mb</td>
+      </tr>
+      <tr>
+        <td>Accessibility</td>
+        <td>Any window</td>
+        <td>Same tab</td>
+        <td>Same tab</td>
+      </tr>
+	  <tr>
+	    <td>Sent to server with every HTTP request</td>
+		<td> Cookes are automatically being sent via <mark>Cookie</mark> header</td>
+		<td>No</td>
+		<td>No</td>
     </tbody>
   </table>
 </div>
-|      | <mark>cookie</mark>  | <mark>localStorage</mark> | <mark>sessionStorage</mark> |
-|------|-----------|----------------|------------------|
-| Initiator        | Client or server. Server can use <mark>Set-Cookie</mark> header     | Client         | Client           |
-| Expiry           | Manually set                                             | Forever        | On tab close     |
-| Persistent across browser sessions | Depends on whether expiration is set | Yes            | No   | | Sent to server with every HTTP request | Cookies are automatically being sent via <mark>Cookie</mark> header | No    | No               |
-| Capacity (per domain) | 4kb        | 5MB            | 5MB              |
-| Accessibility  | Any window        | Any window     | Same tab         |
 
 <p><i>Note: If the user decides to clear browsing data via whatever mechanism provided by 
 the browser, this will clear out any <mark><b>cookie</b></mark>, <mark><b>localStorage</b></mark>, 
@@ -7845,9 +7875,6 @@ Place all attribute values in SVG inside quotes (even if they are numbers)
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h2 id="12-html-apis">12. HTML APIs</h2>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<h2>12.  HTML APIs</h2>
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p>All browsers have a set of built-in Web APIs to support complex operations, and to help accessing data.</p>
 
 <p>Here are some of the main HTML5 APIs:</p>
@@ -8710,30 +8737,20 @@ Response.Flush()
     </thead>
     <tbody>
       <tr>
-        <td></td>
-        <td></td>
+        <td>onopen</td>
+        <td>When a connectoin to the server is opened.</td>
       </tr>
       <tr>
-        <td></td>
-        <td></td>
+        <td>onmessage</td>
+        <td>When a message is received.</td>
       </tr>
       <tr>
-        <td></td>
-        <td></td>
+        <td>onerror</td>
+        <td>When an error occurs.</td>
       </tr>
     </tbody>
   </table>
 </div>
-| Events | Description     |
-|--------|-----------------|
-| onopen | When a connection to the server is opened |
-| onmessage | When a message is received |
-| onerror | When an error occurs |
-
-
-
-
-<h2>10.  Canvas API</h2>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
