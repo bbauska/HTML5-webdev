@@ -1631,7 +1631,6 @@ to decide whether to handle it in quirks mode or standards mode.</p>
 <div align="right">
     <b><a href="#toc">↥ back to top</a></b>
 </div>
-
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h2>Q. Name 3 ways to decrease page load?</h2>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -3766,13 +3765,34 @@ but is most used in form elements):</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h4 id="keyboard-events">Keyboard Events</h4>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-
-| Attribute  | Value  | Description |
-|------------|--------|--------------------------------------------------------------------------|
-| onkeydown  | script | Fires when a user is pressing a key |
-| onkeypress | script | Fires when a user presses a key |
-| onkeyup    | script | Fires when a user releases a key |
-
+<div role="region" tabindex="0">
+<table>
+  <caption>Keyboard Events</caption>
+  <thead>
+    <tr>
+      <th>Attribute</th>
+      <th>Value</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>onkeydown</td>
+      <td>script</td>
+      <td>Fires when a user is pressing a key.</td>
+    </tr>
+    <tr>
+      <td>onkeypress</td>
+      <td>script</td>
+      <td>Fires when a user presses a key.</td>
+    </tr>
+    <tr>
+      <td>onkeyup</td>
+      <td>script</td>
+      <td>Fires when a user releases a key.</td>
+    </tr>
+  </tbody>
+</table>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h4 id="mouse-events">Mouse Events</h4>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -3807,13 +3827,34 @@ but is most used in form elements):</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h4 id="clipboard-events">Clipboard Events</h4>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-
-| Attribute       | Value    | Description |
-|----------------|--------|--------------------------------------------------------------------------|
-| oncopy    | script  |   Fires when the user copies the content of an element |
-| oncut    | script    | Fires when the user cuts the content of an element |
-| onpaste  |   script   |  Fires when the user pastes some content in an element |
-
+<div role="region" tabindex="0">
+<table>
+  <caption>Clipboard Events</caption>
+  <thead>
+    <tr>
+      <th>Attribute</th>
+      <th>Value</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>oncopy</td>
+      <td>script</td>
+      <td>Fires when the user copies the content of an element.</td>
+    </tr>
+    <tr>
+      <td>oncut</td>
+      <td>script</td>
+      <td>Fires when the user cuts the content of an element.</td>
+    </tr>
+    <tr>
+      <td>onpaste</td>
+      <td>script</td>
+      <td>Fires when the user pastes some content in an element.</td>
+    </tr>
+  </tbody>
+</table>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h4 id="media-events">Media Events</h4>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -3850,11 +3891,24 @@ elements, but is most common in media elements, like &lt;audio&gt;, &lt;embed&gt
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h4 id="misc-events">Misc Events</h4>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-
-|Attribute       |Value    |Description |
-|----------------|--------|--------------------------------------------------------------------------|
-| ontoggle | script | Fires when the user opens or closes the &lt;details&gt; element |
-
+<div role="region" tabindex="0">
+<table>
+  <caption>Miscellaneous Events</caption>
+  <thead>
+    <tr>
+      <th>Attribute</th>
+      <th>Value</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>ontoggle</td>
+      <td>script</td>
+      <td>Fires when the user opens or closes the &lt;details&gt; element.</td>
+    </tr>
+  </tbody>
+</table>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h2 id="4-html-forms">04. Form Elements</h2>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -3864,6 +3918,8 @@ The &lt;input&gt; element, on the other hand, is versatile and can be used to ca
 various types of input data such as text, password, email, and more, simply by 
 altering its type attribute. Now, let’s all the list of HTML Form Elements one 
 by one:</p>
+
+
 
 Elements     | Descriptions |
 |------------|------------------------------------------------------------------------------------|
@@ -3890,23 +3946,63 @@ Elements     | Descriptions |
 <p>In HTML forms, various input types are used to collect different types of 
 data from users. Here are some commonly used input types:</p>
 
-&lt;input type="text"&gt;
-
-| Input Type | Description |
-|------------|------------------------------------------------------------------------------------|
-| &lt;input type="text"&gt; | Defines a one-line text input field |
-| &lt;input type="password"&gt;   | Defines a password field |
-| &lt;input type="submit"&gt;     | Defines a submit button |
-| &lt;input type="reset"&gt;      | Defines a reset button |
-| &lt;input type="radio"&gt;      | Defines a radio button |
-| &lt;input type="email"&gt;      | Validates that the input is a valid email address. |
-| &lt;input type="number"&gt;     | Allows the user to enter a number. You can specify min, max, and step |
-|                                 | attributes for range. |
-| &lt;input type="checkbox"&gt;   | Used for checkboxes where the user can select multiple options. |
-| &lt;input type="date"&gt;       | Allows the user to select a date from a calendar. |
-| &lt;input type="time"&gt;       | Allows the user to select a time. |
-| &lt;input type="file"&gt;       | Allows the user to select a file to upload. |
-
+<div role="region" tabindex="0">
+  <table>
+    <caption>Commonly used input types in HTML forms</caption>
+    <thead>
+      <tr>
+        <th>Input Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>&lt;input type="text"&gt;</td>
+        <td>Defines a one-line text input field.</td>
+      </tr>
+      <tr>
+        <td>&lt;input type="password"&gt;</td>
+        <td>Defines a password field.</td>
+      </tr>
+      <tr>
+        <td>&lt;input type="submit"&gt;</td>
+        <td>Defines a submit button.</td>
+      </tr>
+      <tr>
+        <td>&lt;input type="reset"&gt;</td>
+        <td>Defines a reset button.</td>
+      </tr>
+      <tr>
+        <td>&lt;input type="radio"&gt; </td>
+        <td>Defines a radio button.</td>
+      </tr>
+      <tr>
+        <td>&lt;input type="email"&gt;</td>
+        <td>Validates that the input is a valid email address.</td>
+      </tr>
+      <tr>
+        <td>&lt;input type="number"&gt;</td>
+        <td>Allows the user to enter a number. You can specify min, max, and step attributes for range.</td>
+      </tr>
+      <tr>
+        <td>&lt;input type="checkbox"&gt;</td>
+        <td>Used for checkboxes where the user can select multiple options..</td>
+      </tr>
+      <tr>
+        <td>&lt;input type="date"&gt;</td>
+        <td>Allows the user to select a date from a calendar.</td>
+      </tr>
+      <tr>
+        <td>&lt;input type="time"&gt;</td>
+        <td>Allows the user to select a time.</td>
+      </tr>
+      <tr>
+        <td>&lt;input type="file"&gt;</td>
+        <td>Allows the user to select a file to upload.</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3>HTML Forms Example</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -5393,7 +5489,9 @@ scheme://prefix.domain:port/path/filename
 <h4>Example</h4>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <pre>https://www.geeksforgeeks.org/</pre>
-
+<div align="right">
+    <b><a href="#toc">↥ back to top</a></b>
+</div>
 <ul>
   <li><b>Scheme:</b> It specifies the protocol used for communication, such as 
     <b>“https://”</b> for secure communication or <b>“http://”</b> for unsecured 
@@ -5464,6 +5562,9 @@ and attribute in SVG files can be animated.</p>
         </tr>
     </tbody>
 </table>
+<div align="right">
+    <b><a href="#toc">↥ back to top</a></b>
+</div>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h4>Example 1: Drawing a Line</h4>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -5505,6 +5606,9 @@ a blue line drawn diagonally within an SVG element.</p>
   style="width:40%" >
 </p>
 <!-- 09-image001.png - SVG Line Drawing -->
+<div align="right">
+    <b><a href="#toc">↥ back to top</a></b>
+</div>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h4>Example 2: Drawing a Circle</h4>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -5546,6 +5650,9 @@ black border. The circle has a center at (80, 80) and a radius of 50.</p>
   style="width:40%" >
 </p>
 <!-- 09-image002.png - SVG Circle Drawing -->
+<div align="right">
+    <b><a href="#toc">↥ back to top</a></b>
+</div>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h4>Example 3: Drawing a Rectangle</h4>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -5586,6 +5693,9 @@ border. The rectangle has a width of 400 and a height of 100.</p>
   style="width:40%" >
 </p>
 <!-- 09-image003.png - SVG Rectangle Drawing -->
+<div align="right">
+    <b><a href="#toc">↥ back to top</a></b>
+</div>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h4>Example 4: Drawing a Rounded Rectangle</h4>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -5630,6 +5740,9 @@ corners, a black border, and 50% opacity, positioned at coordinates (80, 20).</p
   style="width:40%" >
 </p>
 <!-- 09-image004.png - SVG Rounded Rectangle Drawing -->
+<div align="right">
+    <b><a href="#toc">↥ back to top</a></b>
+</div>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h4>Example 5: Drawing a Star</h4>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -5669,6 +5782,9 @@ border. The polygon is defined by a series of points and has a 5-pixel stroke wi
   style="width:40%" >
 </p>
 <!-- 09-image005.png - SVG Star Drawing-->
+<div align="right">
+    <b><a href="#toc">↥ back to top</a></b>
+</div>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h4>Example 6: Drawing a Logo</h4>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -5718,6 +5834,9 @@ using the ARIAL font family.</p>
   style="width:40%" >
 </p>
 <!-- 09-image006.png - GFG Logo using SVG -->
+<div align="right">
+    <b><a href="#toc">↥ back to top</a></b>
+</div>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3>SVG &lt;a&gt; Element</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -5817,6 +5936,9 @@ It’s wrapped with an anchor (&lt;a&gt;) tag, making it a clickable link that r
 </html>
 ```
 
+<div align="right">
+    <b><a href="#toc">↥ back to top</a></b>
+</div>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h5>Output</h5>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -5878,6 +6000,9 @@ by an anchor (&lt;a&gt;) tag, creating a clickable area that redirects to anothe
   style="width:40%" >
 </p>
 <!-- 09-image008.gif - SVG a tag example output -->
+<div align="right">
+    <b><a href="#toc">↥ back to top</a></b>
+</div>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3>SVG &lt;animate&gt; Element</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -5935,6 +6060,9 @@ element over time. It’s normally inserted inside the element which we want to 
   style="width:40%" >
 </p>
 <!-- 09-image009.gif - svg animate - rectangle to circle -->
+<div align="right">
+    <b><a href="#toc">↥ back to top</a></b>
+</div>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h5>Example 2:</h5>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -5974,6 +6102,9 @@ element over time. It’s normally inserted inside the element which we want to 
   style="width:40%" >
 </p>
 <!-- 09-image010.gif - svg animate - dark to light green -->
+<div align="right">
+    <b><a href="#toc">↥ back to top</a></b>
+</div>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3>SVG &lt;animateMotion&gt; Element</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -6035,6 +6166,9 @@ like in HTML canvas.</p>
   style="width:40%" >
 </p>
 <!-- 09-image011.gif - infinity ball -->
+<div align="right">
+    <b><a href="#toc">↥ back to top</a></b>
+</div>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3>SVG &lt;animateTransform&gt; Element</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -6099,6 +6233,9 @@ and/or skewing.</p>
   style="width:40%" >
 </p>
 <!-- 09-image012.gif - rotating rectangle -->
+<div align="right">
+    <b><a href="#toc">↥ back to top</a></b>
+</div>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3>SVG Circle</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -6193,9 +6330,12 @@ above attributes.</p>
   src="./images/09-image013.png"
   title="Example SVG Circle from Geeks 4 Geeks"
   alt="Example SVG Circle from Geeks 4 Geeks."
-  style="width:40%" >
+  style="width:30%" >
 </p>
 <!-- 09-image013.png - example svg circle from geeks 4 geeks -->
+<div align="right">
+    <b><a href="#toc">↥ back to top</a></b>
+</div>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h5>Example 2:</h5>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -6253,9 +6393,12 @@ above attributes.</p>
   src="./images/09-image014.png"
   title="SVG Black Circle w/Blue Outer Circle"
   alt="SVG Black Circle w/Blue Outer Circle."
-  style="width:40%" >
+  style="width:30%" >
 </p>
 <!-- 09-image014.png - black circle w/blue outside -->
+<div align="right">
+    <b><a href="#toc">↥ back to top</a></b>
+</div>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3>SVG &lt;clipPath&gt; Element</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -6352,6 +6495,9 @@ given above.</p>
   style="width:40%" >
 </p>
 <!-- 09image015.gif - heart change black to green -->
+<div align="right">
+    <b><a href="#toc">↥ back to top</a></b>
+</div>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h5>Example 2:</h5>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -6433,6 +6579,9 @@ given above.</p>
   style="width:40%" >
 </p>
 <!-- 09-image016.gif - transform black star to red -->
+<div align="right">
+    <b><a href="#toc">↥ back to top</a></b>
+</div>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3>SVG defs Element</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -6500,6 +6649,9 @@ them on the browser.</p>
   style="width:40%" >
 </p>
 <!-- 09-image017.png -->
+<div align="right">
+    <b><a href="#toc">↥ back to top</a></b>
+</div>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h5>Example 2:</h5>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -6548,9 +6700,12 @@ svg{
   src="./images/09-image018.png"
   title="SVG "
   alt="SVG ."
-  style="width:40%" >
+  style="width:30%" >
 </p>
 <!-- 09-image018.png -->
+<div align="right">
+    <b><a href="#toc">↥ back to top</a></b>
+</div>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3>SVG &lt;desc&gt; Element</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -6607,9 +6762,12 @@ any of the available SVG elements whether it is a container or graphic element.<
   src="./images/09-image019.png"
   title="SVG "
   alt="SVG ."
-  style="width:40%" >
+  style="width:30%" >
 </p>
 <!-- 09-image019.png -->
+<div align="right">
+    <b><a href="#toc">↥ back to top</a></b>
+</div>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h5>Example 2:</h5>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -6663,6 +6821,9 @@ any of the available SVG elements whether it is a container or graphic element.<
   style="width:40%" >
 </p>
 <!-- 09-image020.png -->
+<div align="right">
+    <b><a href="#toc">↥ back to top</a></b>
+</div>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3>SVG Ellipse Element</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -6720,6 +6881,9 @@ circle has equal x and y radius:</p>
   style="width:40%" >
 </p>
 <!-- 09-image021.png -->
+<div align="right">
+    <b><a href="#toc">↥ back to top</a></b>
+</div>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h5>Example:</h5>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -6752,6 +6916,9 @@ circle has equal x and y radius:</p>
   style="width:40%" >
 </p>
 <!-- 09-image022.png -->
+<div align="right">
+    <b><a href="#toc">↥ back to top</a></b>
+</div>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3>SVG &lt;feBlend&gt; Element</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -6827,6 +6994,9 @@ graphic. It executes a pixel-wise combination of two input SVG fragments or imag
   style="width:40%" >
 </p>
 <!-- 09-image023.png -->
+<div align="right">
+    <b><a href="#toc">↥ back to top</a></b>
+</div>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h5>Example 2:</h5>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -6873,6 +7043,9 @@ graphic. It executes a pixel-wise combination of two input SVG fragments or imag
   alt="SVG ."
   style="width:40%" >
 </p><!-- 09-image024.png -->
+<div align="right">
+    <b><a href="#toc">↥ back to top</a></b>
+</div>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3>SVG &lt;feComponentTransfer&gt; Element</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -6936,6 +7109,9 @@ graphic. It executes a pixel-wise combination of two input SVG fragments or imag
   style="width:40%" >
 </p>
 <!-- 09-image025.png -->
+<div align="right">
+    <b><a href="#toc">↥ back to top</a></b>
+</div>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h5>Example 2:</h5>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -6980,6 +7156,9 @@ graphic. It executes a pixel-wise combination of two input SVG fragments or imag
   style="width:40%" >
 </p>
 <!-- 09-image026.png -->
+<div align="right">
+    <b><a href="#toc">↥ back to top</a></b>
+</div>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h5>Example 3:</h5>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -7024,6 +7203,9 @@ graphic. It executes a pixel-wise combination of two input SVG fragments or imag
   style="width:40%" >
 </p>
 <!-- 09-image027.png -->
+<div align="right">
+    <b><a href="#toc">↥ back to top</a></b>
+</div>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3>SVG &lt;feConvolveMatrix&gt; Element</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -7113,6 +7295,9 @@ with neighboring pixels to produce a resulting image.</p>
   style="width:40%" >
 </p>
 <!-- 09-image028.png -->
+<div align="right">
+    <b><a href="#toc">↥ back to top</a></b>
+</div>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h5>Example 2:</h5>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -7166,6 +7351,9 @@ with neighboring pixels to produce a resulting image.</p>
   style="width:40%" >
 </p>
 <!-- 09-image029.png -->
+<div align="right">
+    <b><a href="#toc">↥ back to top</a></b>
+</div>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3>SVG feDiffuseLighting Element</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -7237,6 +7425,9 @@ are brighter and the sides facing away are darker and in shadow.</p>
   style="width:40%" >
 </p>
 <!-- 09-image030.png -->
+<div align="right">
+    <b><a href="#toc">↥ back to top</a></b>
+</div>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h5>Example 2:</h5>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -7287,6 +7478,9 @@ are brighter and the sides facing away are darker and in shadow.</p>
   style="width:40%" >
 </p>
 <!-- 09-image031.png -->
+<div align="right">
+    <b><a href="#toc">↥ back to top</a></b>
+</div>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3>SVG &lt;feDisplacementMap&gt; Element</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -7365,6 +7559,9 @@ which displacement effect is applied is reserved in “in” attribute.</p>
   style="width:40%" >
 </p>
 <!-- 09-image032.png -->
+<div align="right">
+    <b><a href="#toc">↥ back to top</a></b>
+</div>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h5>Example 2:</h5>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -7410,6 +7607,9 @@ which displacement effect is applied is reserved in “in” attribute.</p>
   style="width:40%" >
 </p>
 <!-- 09-image033.png -->
+<div align="right">
+    <b><a href="#toc">↥ back to top</a></b>
+</div>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3>Next group goes here</h3>
@@ -7633,18 +7833,23 @@ Place all attribute values in SVG inside quotes (even if they are numbers)
 <h5>SVG Code explanation:</h5>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <ul>
-  <li>Start with the <mark>&lt;svg&gt;</mark> root element, define the width and height, and proper namespace.</li>
+  <li>Start with the <mark>&lt;svg&gt;</mark> root element, define the width and height, 
+    and proper namespace.</li>
   <li>The <mark>&lt;rect&gt;</mark> element is used to draw a rectangle.</li>
-  <li>The width and height of the rectangle is set to 100% of the width/height of the <mark>&lt;svg&gt;</mark> element.</li>
+  <li>The width and height of the rectangle is set to 100% of the width/height of the 
+    <mark>&lt;svg&gt;</mark> element.</li>
   <li>Set the fill color of the rectangle to green.</li>
   <li>The <mark>&lt;circle&gt;</mark> element is used to draw a circle.</li>
-  <li>The <mark>cx</mark> and <mark>cy</mark> attributes define the x and y coordinates of the center of the circle.</li>
+  <li>The <mark>cx</mark> and <mark>cy</mark> attributes define the x and y coordinates 
+    of the center of the circle.</li>
   <li>The <mark>r</mark> attribute defines the radius of the circle.</li>
   <li>We set the fill color of the circle to yellow.</li>
   <li>The <mark>&lt;text&gt;</mark> element is used to draw a text.</li>
-  <li>The <mark>x</mark> and <mark>y</mark> attributes define the x and y coordinates of the center of the text.</li>
+  <li>The <mark>x</mark> and <mark>y</mark> attributes define the x and y coordinates of 
+    the center of the text.</li>
   <li>The <mark>font-size</mark> attribute defines the font size of the text.</li>
-  <li>The <mark>text-anchor</mark> attribute defines where we want the midpoint (of the text) to be.</li>
+  <li>The <mark>text-anchor</mark> attribute defines where we want the midpoint (of the 
+    text) to be.</li>
   <li>The <mark>fill</mark> attribute defines the color of the text.</li>
   <li>Write "SVG" as the text to show.</li>
   <li>Close the SVG image with <mark>&lt;/svg&gt;</mark>.</li>
