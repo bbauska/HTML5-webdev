@@ -4266,7 +4266,6 @@ between different types of data. Tables are also used to create databases.</p>
 <div align="right">
   <b><a href="#toc">↥ back to top</a></b>
 </div>
-
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h4>Output</h4>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -9017,7 +9016,9 @@ Response.Flush()
 <h2 id="15-html-access">15. HTML Accessibility</h2>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 
-
+<div align="right">
+  <b><a href="#toc">↥ back to top</a></b>
+</div>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h2 id="16-misc">16. Miscellaneous</h2>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -9028,6 +9029,10 @@ Response.Flush()
   <h6>Last editted: 5/4/2025 +12pm</h6>
   <h6>Last editted: 5/6/2025 +12pm</h6>
   <p>The End...</p>
+  
+<div align="right">
+  <b><a href="#toc">↥ back to top</a></b>
+</div>
 </footer>
 </body>
 </html>
