@@ -4184,20 +4184,59 @@ between different types of data. Tables are also used to create databases.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3>Tags used in HTML Tables</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-
-| HTML Tags    | Descriptions |
-|--------------|-------------------------------------------------------------------------------------|
-| &lt;table&gt; | Defines the structure for organizing data in rows and columns within a web page. |
-| &lt;tr&gt;    | Represents a row within an HTML table, containing individual cells. |
-| &lt;th&gt;    | Shows a table header cell that typically holds titles or headings. |
-| &lt;td&gt;    | Represents a standard data cell, holding content or data. |
-| &lt;caption&gt;    | Provides a title or description for the entire table. |
-| &lt;thead&gt;    | Defines the header section of a table, often containing column labels. |
-| &lt;tbody&gt;    | Represents the main content area of a table, separating it from the header or footer. |
-| &lt;tfoot&gt;    | Specifies the footer section of a table, typically holding summaries or totals. |
-| &lt;col&gt;    | Defines attributes for table columns that can be applied to multiple columns at once. |
-| &lt;colgroup&gt; |    Groups together a set of columns in a table to which you can apply formatting or properties collectively. |
-
+<div role="region" tabindex="0">
+  <table>
+    <caption>Tags used in HTML Tables</caption>
+    <thead>
+      <tr>
+        <th>HTML Tag</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>&lt;table&gt;</td>
+        <td>Defines the structure for organizing data in rows and columns within a web page.</td>
+      </tr>
+      <tr>
+        <td>&lt;tr&gt;</td>
+        <td>Represents a row within an HTML table, containing individual cells.</td>
+      </tr>
+      <tr>
+        <td>&lt;th&gt;</td>
+        <td>Shows a table header cell that typically holds titles or headings.</td>
+      </tr>
+      <tr>
+        <td>&lt;td&gt;</td>
+        <td>Represents a standard data cell, holding content or data.</td>
+      </tr>
+      <tr>
+        <td>&lt;caption&gt;</td>
+        <td>Provides a title or description for the entire table.</td>
+      </tr>
+      <tr>
+        <td>&lt;thead&gt; </td>
+        <td>Defines the header section of a table, often containing column labels.</td>
+      </tr>
+      <tr>
+        <td>&lt;tbody&gt;</td>
+        <td>Represents the main content area of a table, separating it from the header or footer.</td>
+      </tr>
+      <tr>
+        <td>&lt;tfoot&gt;</td>
+        <td>Specifies the footer section of a table, typically holding summaries or totals.</td>
+      </tr>
+      <tr>
+        <td>&lt;col&gt;</td>
+        <td>Defines attributes for table columns that can be applied to multiple columns at once.</td>
+      </tr>
+      <tr>
+        <td>&lt;colgroup&gt;</td>
+        <td>Groups together a set of columns in a table to which you can apply formatting or properties collectively.</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3>Defining Tables in HTML</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
