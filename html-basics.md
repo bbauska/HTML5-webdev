@@ -8859,7 +8859,7 @@ function stopWorker() {
 </ul>
 
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<h2 id="html-serversent-events>xx.  HTML Server-Sent Events API</h2>
+<h2 id="html-serversent-events">xx.  HTML Server-Sent Events API</h2>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p>The Server-Sent Events (SSE) API enables pushing messages/updates from a server to 
 the web page via HTTP connection.</p>
