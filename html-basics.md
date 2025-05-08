@@ -672,7 +672,31 @@ images, line breaks, etc.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h5>Example:</h5>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-
+<div role="region" tabindex="0">
+  <table>
+    <caption>The EventSource Object</caption>
+    <thead>
+      <tr>
+        <th>Event</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+</div>
 |Tags      | Description                                                      |
 |----------|------------------------------------------------------------------|
 |&lt;sup&gt;   |Superscript is usually used for showing elements above base-line |
@@ -696,7 +720,31 @@ used for styling purposes as well as to give special importance to text content.
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h5>Example:</h5>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-
+<div role="region" tabindex="0">
+  <table>
+    <caption>The EventSource Object</caption>
+    <thead>
+      <tr>
+        <th>Event</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+</div>
 |Tags       | Description                     |
 |-----------|---------------------------------|
 |&lt;abbr&gt;   |Defines the abbreviation of text.|
@@ -973,7 +1021,31 @@ document.cookie = "username=; expires=Thu, 01 Jan 1970 00:00:00 UTC; path=/;";
 <h2>Q. Describe the difference between a <mark>cookie</mark>, <mark>sessionStorage</mark> 
 and <mark>localStorage</mark>?</h2>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-
+<div role="region" tabindex="0">
+  <table>
+    <caption>The EventSource Object</caption>
+    <thead>
+      <tr>
+        <th>Event</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+</div>
 |      | <mark>cookie</mark>  | <mark>localStorage</mark> | <mark>sessionStorage</mark> |
 |------|-----------|----------------|------------------|
 | Initiator        | Client or server. Server can use <mark>Set-Cookie</mark> header     | Client         | Client           |
@@ -1273,11 +1345,35 @@ The enctype attribute specifies how the form-data should be encoded when submitt
 </form>
 ```
 
-|Sl.No|Value                    |Description                        |
-|-----|-------------------------|-----------------------------------|
-| 01. |application/x-www-form-urlencoded  |    Default. All characters are encoded before sent (spaces are converted to "+" symbols, and special characters are converted to ASCII HEX values)|
-| 02. |multipart/form-data        |No characters are encoded. This value is required when you are using forms that have a file upload control |
-| 03.  |text/plain                |Spaces are converted to "+" symbols, but no special characters are encoded|
+<div role="region" tabindex="0">
+  <table>
+    <caption>The EventSource Object</caption>
+    <thead>
+      <tr>
+        <th>S1.No</th>
+		<th>Value</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>01.</td>
+        <td>application/x-www-form-urlencoded</td>
+        <td>Default. All characters are encoded before sent (spaces are converted to "+" symbols, and special characters are converted to ASCII HEX values).</td>
+      </tr>
+      <tr>
+        <td>02.</td>
+        <td>multipart/form-data</td>
+        <td>No characters are encoded. This value is required when you are using forms that have a file upload control.</td>
+      </tr>
+      <tr>
+        <td>03.</td>
+        <td>text/plain</td>
+        <td>Spaces are converted to "+" symbols, but no special characters are encoded.</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
 
 <div align="right">
     <b><a href="#toc">↥ back to top</a></b>
@@ -1709,14 +1805,45 @@ could result in one element appearing over the top of another incorrectly.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h2>Q. Explain about HTML Layout Engines used by browsers?</h2>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-
-|Engine          |Status   |Embedded in           |
-|-------------|-----------------|--------------|
-|WebKit          |Active    |Safari browser, plus all browsers hosted on the iOS App Store                        |
-|Blink          |Active    |Google Chrome and all other Chromium-based browsers like Opera and Microsoft Edge    |
-|Gecko          |Active    |Firefox browser and Thunderbird email client, plus forks like SeaMonkey and Waterfox |
-|EdgeHTML      |Discontinued      |formerly in the Microsoft Edge browser                                         |
-|Trident      |Discontinued      |Internet Explorer browser and Microsoft Outlook email client                   |
+<div role="region" tabindex="0">
+  <table>
+    <caption>HTML Layout Engines used by browsers</caption>
+    <thead>
+      <tr>
+        <th>Engine</th>
+        <th>Status</th>
+        <th>Embedded in</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>WebKit</td>
+        <td>Active</td>
+        <td>Safari browser, plus all browsers hosted on the iOS App Store.</td>
+      </tr>
+      <tr>
+        <td>Blink</td>
+        <td>Active</td>
+        <td>Google Chrome and all other Chromium-based browsers like Opera and Microsoft Edge.</td>
+      </tr>
+      <tr>
+        <td>Gecko</td>
+        <td>Active</td>
+        <td>Firefox browser and Thunderbird email client, plus forks like SeaMonkey and Waterfox</td>
+      </tr>
+      <tr>
+        <td>edgeHTML</td>
+        <td>Discontinued</td>
+        <td>formerly in the Microsoft Edge browser.</td>
+      </tr>
+      <tr>
+        <td>Trident</td>
+        <td>Discontinued</td>
+        <td>Internet Explorer browser and Microsoft Outlook email client.</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
 
 <div align="right">
     <b><a href="#toc">↥ back to top</a></b>
@@ -8541,7 +8668,31 @@ Response.Flush()
 <h4>The EventSource Object</h4>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p>In the examples above we used the onmessage event to get messages. But other events are also available:</p>
-
+<div role="region" tabindex="0">
+  <table>
+    <caption>The EventSource Object</caption>
+    <thead>
+      <tr>
+        <th>Event</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+</div>
 | Events | Description     |
 |--------|-----------------|
 | onopen | When a connection to the server is opened |
