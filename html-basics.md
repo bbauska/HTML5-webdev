@@ -8878,8 +8878,9 @@ the updates are pushed automatically.</p>
 <h3>Receive Server-Sent Event Notifications</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p>The EventSource object is used to receive server-sent event notifications:</p>
-
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h4>Example</h4>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 
 ```
 <script>
@@ -8900,7 +8901,8 @@ if(typeof(EventSource) !== "undefined") {
 <h4>Example explained:</h4>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <ul>
-  <li>Create a new EventSource object, and specify the URL of the page sending the updates (in this example "demo_sse.php")</li>
+  <li>Create a new EventSource object, and specify the URL of the page sending the updates (in 
+    this example "demo_sse.php")</li>
   <li>Each time an update is received, the onmessage event occurs</li>
   <li>When an onmessage event occurs, put the received data into the element with id="result"</li>
 </ul>
@@ -8953,7 +8955,7 @@ Response.Flush()
 ```
 
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<h3>Code explained:</h3>
+<h4>Code explained:</h4>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <ul>
   <li>Set the "Content-Type" header to "text/event-stream"</li>
