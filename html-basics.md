@@ -746,38 +746,38 @@ used for styling purposes as well as to give special importance to text content.
         <td>&lt;abbr&gt;</td>
         <td>Defines the abbreviation of text.</td>
       </tr>
-	  <tr>
-	    <td>&lt;acronym&gt;</td>
-		<td>Defines the acronym.</td>
-	  </tr>
-	  <tr>
-	    <td>&lt;address&gt;</td>
-		<td>Contact information of a person or an organization.</td>
-	  </tr>
-	  <tr>
-	    <td>&lt;cite&gt;</td>
-		<td>Defines citation. It displays the text in italic format.</td>
-	  </tr>
-	  <tr>
-	    <td>&lt;code&gt;</td>
-		<td>Defines the piece of computer code.</td>
-	  </tr>
-	  <tr>
-	    <td>&lt;blockquote&gt;</td>
-		<td>Defines a long quotation.</td>
-	  </tr>
-	  <tr>
-	    <td>&lt;del&gt;</td>
-		<td>Defines the deleted text and is used to mark a portion of text which has been deleted from the document.</td>
-	  </tr>
-	  <tr>
-	    <td>&lt;dfn&gt;</td>
-		<td>Defines the definition element and is used to representing a defining instance in HTML.</td>
-	  </tr>
-	  <tr>
-	    <td>&lt;ins&gt;</td>
-		<td>Defines inserted text.</td>
-	  </tr>
+      <tr>
+        <td>&lt;acronym&gt;</td>
+        <td>Defines the acronym.</td>
+      </tr>
+      <tr>
+        <td>&lt;address&gt;</td>
+        <td>Contact information of a person or an organization.</td>
+      </tr>
+      <tr>
+        <td>&lt;cite&gt;</td>
+        <td>Defines citation. It displays the text in italic format.</td>
+      </tr>
+      <tr>
+        <td>&lt;code&gt;</td>
+        <td>Defines the piece of computer code.</td>
+      </tr>
+      <tr>
+        <td>&lt;blockquote&gt;</td>
+        <td>Defines a long quotation.</td>
+      </tr>
+      <tr>
+        <td>&lt;del&gt;</td>
+        <td>Defines the deleted text and is used to mark a portion of text which has been deleted from the document.</td>
+      </tr>
+      <tr>
+        <td>&lt;dfn&gt;</td>
+        <td>Defines the definition element and is used to representing a defining instance in HTML.</td>
+      </tr>
+      <tr>
+        <td>&lt;ins&gt;</td>
+        <td>Defines inserted text.</td>
+      </tr>
       <tr>
         <td>&lt;kbd&gt; </td>
         <td>Defines keyboard input text.</td>
@@ -1069,10 +1069,10 @@ and <mark>localStorage</mark>?</h2>
     <caption>The EventSource Object</caption>
     <thead>
       <tr>
-	    <th></th>
+        <th></th>
         <th><mark>cookie</mark></th>
         <th><mark>localStorage</mark></th>
-		<th><mark>sessionStorage</mark></th>
+        <th><mark>sessionStorage</mark></th>
       </tr>
     </thead>
     <tbody>
@@ -1106,11 +1106,11 @@ and <mark>localStorage</mark>?</h2>
         <td>Same tab</td>
         <td>Same tab</td>
       </tr>
-	  <tr>
-	    <td>Sent to server with every HTTP request</td>
-		<td> Cookes are automatically being sent via <mark>Cookie</mark> header</td>
-		<td>No</td>
-		<td>No</td>
+      <tr>
+        <td>Sent to server with every HTTP request</td>
+        <td> Cookes are automatically being sent via <mark>Cookie</mark> header</td>
+        <td>No</td>
+        <td>No</td>
     </tbody>
   </table>
 </div>
@@ -1412,7 +1412,7 @@ The enctype attribute specifies how the form-data should be encoded when submitt
     <thead>
       <tr>
         <th>S1.No</th>
-		<th>Value</th>
+        <th>Value</th>
         <th>Description</th>
       </tr>
     </thead>
@@ -1651,12 +1651,12 @@ to decide whether to handle it in quirks mode or standards mode.</p>
   <li>Minimize HTTP Requests
     <ul>
       <li>Sites are mainly slow because of too many (or too large) HTTP requests. We can eliminate unnecessary request;
-	    <ul>
+        <ul>
           <li>combined files: js to a file, css to a file</li>
           <li>CSS sprites: CSS Sprites are the preferred method for reducing the number of image requests. Combine your background images into a single image and use the CSS background-image and background-position properties to display the desired image segment.</li>
         </ul>
-	  </li>
-	</ul>
+      </li>
+    </ul>
   </li>
   <li>Use a Content Delivery Network CDN
     <ul>
@@ -1665,13 +1665,13 @@ to decide whether to handle it in quirks mode or standards mode.</p>
   </li>
   <li>Optimize Images:
     <ul>
-	  <li>image sizes make a huge difference to site speed. The larger content/images, the slower the site. we could:
-	    <ul>
-		<li>Changing the resolution: reducing the “quality” of the image (and thereby the file size)</li>
-        <li>Compressing the picture: increasing the efficiency of image data storage</li>
-        <li>Cropping the picture: when cropping, you are cutting out unneeded areas and thus making the image smaller in size</li>
+      <li>image sizes make a huge difference to site speed. The larger content/images, the slower the site. we could:
+        <ul>
+          <li>Changing the resolution: reducing the “quality” of the image (and thereby the file size)</li>
+          <li>Compressing the picture: increasing the efficiency of image data storage</li>
+          <li>Cropping the picture: when cropping, you are cutting out unneeded areas and thus making the image smaller in size</li>
         </ul>
-	  </li>
+      </li>
     </ul>
   </li>
   <li>Put Scripts at the Bottom:
@@ -1681,12 +1681,12 @@ to decide whether to handle it in quirks mode or standards mode.</p>
           <li>Async tags load the scripts while the rest of the page loads, but this means scripts can be loaded out of order. Basically, lighter files load first. This might be fine for some scripts, but can be disastrous for others.</li>
           <li>The defer attribute loads your scripts after your content has finished loading. It also runs the scripts in order. Just make sure your scripts run so late without breaking your site.<li>
         </ul>
-	  </li>
-	</ul>
+      </li>
+    </ul>
   </li>
   <li>Add an Expires or a Cache-Control Header
     <ul>
-	  <li>Web page designs are getting richer and richer, which means more scripts, stylesheets, images, and Flash in the page. A first-time visitor to your page may have to make several HTTP requests, but by using the Expires header you make those components cacheable. This avoids unnecessary HTTP requests on subsequent page views. Expires headers are most often used with images, but they should be used on all components including scripts, stylesheets, and Flash components.</li>
+      <li>Web page designs are getting richer and richer, which means more scripts, stylesheets, images, and Flash in the page. A first-time visitor to your page may have to make several HTTP requests, but by using the Expires header you make those components cacheable. This avoids unnecessary HTTP requests on subsequent page views. Expires headers are most often used with images, but they should be used on all components including scripts, stylesheets, and Flash components.</li>
     </ul>
   </li>
   <li>Gzip Components
@@ -1707,22 +1707,23 @@ to decide whether to handle it in quirks mode or standards mode.</p>
   </li>
   <li>Make JavaScript and CSS External:
     <ul>
-	  <li>Using external files in the real world generally produces faster pages because the JavaScript and CSS files are cached by the browser. JavaScript and CSS that are inlined in HTML documents get downloaded every time the HTML document is requested. This reduces the number of HTTP requests that are needed, but increases the size of the HTML document. On the other hand, if the JavaScript and CSS are in external files cached by the browser, the size of the HTML document is reduced without increasing the number of HTTP requests.</li>
+      <li>Using external files in the real world generally produces faster pages because the JavaScript and CSS files are cached by the browser. JavaScript and CSS that are inlined in HTML documents get downloaded every time the HTML document is requested. This reduces the number of HTTP requests that are needed, but increases the size of the HTML document. On the other hand, if the JavaScript and CSS are in external files cached by the browser, the size of the HTML document is reduced without increasing the number of HTTP requests.</li>
     </ul>
   </li>
   <li>Use get to ajax request:
     <ul>
-	  <li>POST is implemented in the browsers as a two-step process: sending the headers first, then sending data. So it's best to use GET, which only takes one TCP packet to send (unless you have a lot of cookies).</li>
-	</ul>
+      <li>POST is implemented in the browsers as a two-step process: sending the headers first, then sending data. So it's best to use GET, which only takes one TCP packet to send (unless you have a lot of cookies).</li>
+    </ul>
   </li>
   <li>No 404s:
     <ul>
-	  <li>HTTP requests are expensive so making an HTTP request and getting a useless response (i.e. 404 Not Found) is totally unnecessary and will slow down the user experience without any benefit.</li>
+      <li>HTTP requests are expensive so making an HTTP request and getting a useless response (i.e. 404 Not Found) is totally unnecessary and will slow down the user experience without any benefit.</li>
     </ul>
   </li>
   <li>Reduce Cookie Size:
     <ul>
-	  <li>HTTP cookies are used for a variety of reasons such as authentication and personalization. Information about cookies is exchanged in the HTTP headers between web servers and browsers. It's important to keep the size of cookies as low as possible to minimize the impact on the user's response time.</li>
+      <li>HTTP cookies are used for a variety of reasons such as authentication and personalization. Information about cookies is exchanged in the HTTP headers between web servers and browsers. It's important to keep the size of cookies as low as possible to minimize the impact on the user's response time.</li>
+    </ul>
   </li>
 </ul>
 
@@ -1753,9 +1754,9 @@ to decide whether to handle it in quirks mode or standards mode.</p>
 <ul>
   <li>Chrome: 
     <ul>
-	  <li>Layout rendering engine <b>Webkit</b>.</li> 
+      <li>Layout rendering engine <b>Webkit</b>.</li> 
       <li>JavaScript engine <b>V8</b></li>
-	</ul>
+    </ul>
   </li>
   <li>Firefox: 
     <ul>
@@ -1767,7 +1768,7 @@ to decide whether to handle it in quirks mode or standards mode.</p>
     <ul>
       <li>Layout rendering engine <b>Trident</b>.</li>
       <li>JavaScript  engine <b>Chakra</b></li>
-	</ul>
+    </ul>
   </li>
   <li>Safari:
     <ul>
@@ -4061,7 +4062,7 @@ styling for input fields and submission button.</p>
             <label>Enter your Address:</label>
             <textarea
               name="address">
-			</textarea>
+            </textarea>
             <input
               type="submit"
               value="submit"
@@ -5431,7 +5432,7 @@ and attribute in SVG files can be animated.</p>
   <li>SVG images can be edited easily with text editors, allowing for quick changes.</li>
   <li>SVG content is accessible to screen readers, enhancing web accessibility.</li>
   <li>SVG supports CSS and JavaScript animations, allowing for interactive and dynamic graphics.</li>
-<ul>
+</ul>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3>Differences between SVG and Canvas</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -7536,14 +7537,14 @@ much more.</p>
       </tr>
     </thead>
     <tbody>
-	  <tr>
-	    <td>Resolution independent</td>
-	    <td>Resolution dependent.</td>
-	  </tr>
       <tr>
-	    <td>Support for event handlers</td>
-		<td>No support for event handlers.</td>
-	  </tr>
+        <td>Resolution independent</td>
+        <td>Resolution dependent.</td>
+      </tr>
+      <tr>
+        <td>Support for event handlers</td>
+        <td>No support for event handlers.</td>
+      </tr>
       <tr>
         <td>Good text rendering capabilities</td>
         <td>Poor text rendering capabilities.</td>
@@ -7773,7 +7774,7 @@ Place all attribute values in SVG inside quotes (even if they are numbers)
 <ul>
   <li>The CSS <mark>fill-opacity</mark> property defines the opacity of the fill color (legal range: 0 to 1)</li>
   <li>The CSS <mark>stroke-opacity</mark> property defines the opacity of the stroke color (legal range: 0 to 1)</li>
-<ul>
+</ul>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h4>Another Rectangle With Opacity</h4>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
