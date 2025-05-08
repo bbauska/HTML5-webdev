@@ -13,13 +13,7 @@
     target="_blank" rel="noopener noreferrer">JavaScript Basics</a></li>
 </ul>
 
-<!-- * *[HTML5 Events List](html5-events.md)* -->
-<!-- * *[HTML5 Tags](html5-tags.md)* -->
-<!-- * *[CSS Basics](https://github.com/learning-zone/css-basics)* -->
-<!-- * *[JavaScript Basics](https://github.com/learning-zone/javascript-basics)* -->
-
 <br/>
-<!-- ## [Table of Contents](#toc) -->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h2><a id="toc">Table of Contents</a></h2>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -278,23 +272,85 @@ expected to be modified through JavaScript code.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3 id="new-form-elements">List New form elements introduced in html5</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-
-|Sl.No| Element     | Description   |
-|-----|-------------|---------------------------|
-| 01. |color        |Gives the end user a native color picker to choose a color.|
-| 02. |date         |Offers a datepicker.|
-| 03. |datetime     |An element to choose both date and time.|
-| 04. |datetime-local |An element to choose both date and time, with local settings support.|
-| 05. |email        |A field for entering e-mail address(es).|
-| 06. |month       |Choose a full month.|
-| 07. |number       |Picking a number.|
-| 08. |range        |Offers a slider to set to a certain value/position.|
-| 09. |search       |A field for search queries.|
-| 10. |tel          |Choosing a telephone number.|
-| 11. |time         |Input a certain time.|
-| 12. |url          |Entering a URL.|
-| 13. |week         |Picking a specific week.|
-
+<div role="region" tabindex="0">
+  <table>
+    <caption>List New form elements introduced in html5</caption>
+    <thead>
+      <tr>
+        <th>S1.No</th>
+        <th>Element</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>01.</td>
+        <td>color</td>
+        <td>Gives the end user a native color picker to choose a color.</td>
+      </tr>
+      <tr>
+        <td>02.</td>
+        <td>date</td>
+        <td>Offers a datepicker.</td>
+      </tr>
+      <tr>
+        <td>03.</td>
+        <td>datetime</td>
+        <td>An element to choose both date and time.</td>
+      </tr>
+      <tr>
+        <td>04.</td>
+        <td>datetime-local</td>
+        <td>An element to choose both date and time, with local settings support.</td>
+      </tr>
+      <tr>
+        <td>05.</td>
+        <td>email</td>
+        <td>A field for entering e-mail address(es).</td>
+      </tr>
+      <tr>
+        <td>06.</td>
+        <td>month</td>
+        <td>Choose a full month.</td>
+      </tr>
+      <tr>
+        <td>07.</td>
+        <td>number</td>
+        <td>Picking a number.</td>
+      </tr>
+      <tr>
+        <td>08.</td>
+        <td>range</td>
+        <td>Offers a slider to set to a certain value/position.</td>
+      </tr>
+      <tr>
+        <td>09.</td>
+        <td>search</td>
+        <td>A field for search queries.</td>
+      </tr>
+      <tr>
+        <td>10.</td>
+        <td>tel</td>
+        <td>Choosing a telephone number.</td>
+      </tr>
+      <tr>
+        <td>11.</td>
+        <td>time</td>
+        <td>Input a certain time.</td>
+      </tr>
+      <tr>
+        <td>12.</td>
+        <td>url</td>
+        <td>Entering a URL.</td>
+      </tr>
+      <tr>
+        <td>13.</td>
+        <td>week</td>
+        <td>Picking a specific week.</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h5>Example:</h5>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -4841,16 +4897,43 @@ any information on web pages in the ordered or unordered form.</p>
 <h3>HTML List Tags</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p>Here is the list of all lists tags HTML:</p>
-
-| Tag | Description |
-|------|----------------------------------------|
-| &lt;ul&gt; | Defines an unordered list |
-| &lt;ol&gt; | Defines an ordered list |
-| &lt;li&gt; | Defines a list item |
-| &lt;dl&gt; | Defines a description list |
-| &lt;dt&gt; | Defines a term in a description list |
-| &lt;dd&gt; | Details the term in a description list |
-
+<div role="region" tabindex="0">
+<table>
+  <caption>HTML List Tags</caption>
+  <thead>
+    <tr>
+      <th>Tag</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>&lt;ul&gt; </td>
+      <td>Defines an unordered list.</td>
+    </tr>
+    <tr>
+      <td>&lt;ol&gt;</td>
+      <td>Defines an ordered list.</td>
+    </tr>
+    <tr>
+      <td>&lt;li&gt;</td>
+      <td>Defines a list item.</td>
+    </tr>
+    <tr>
+      <td>&lt;dl&gt;</td>
+      <td>Defines a description list.</td>
+    </tr>
+    <tr>
+      <td>&lt;dt&gt;</td>
+      <td>Defines a term in a description list.</td>
+    </tr>
+    <tr>
+      <td>&lt;dd&gt;</td>
+      <td>Details the term in a description list.</td>
+    </tr>
+    </tbody>
+</table>
+</div>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3>The HTML Unordered List or Bulleted List</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -5125,14 +5208,34 @@ and attribute in SVG files can be animated.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3>Differences between SVG and Canvas</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-
-| SVG | Canvas |
-|----------------|--------------|
-| SVG is a language for describing 2D graphics in XML | Canvas draws 2D graphics, on the fly with JavaScript. |
-| If attributes of an SVG object are changed, the browser can automatically re-render the shape | Canvas is rendered pixel by pixel. In Canvas, once the graphic is drawn, it is forgotten by the browser. |
-| SVG is resolution-independent | CANVAS is resolution-dependent. |
-| SVG supports event handlers | CANVAS doesn’t have support for event handlers. |
-
+<div role="region" tabindex="0">
+<table>
+    <caption>Differences between SVG and Canvas</caption>
+    <thead>
+        <tr>
+            <th>SVG</th>
+            <th>Canvas</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>SVG is a language for describing 2D graphics in XML</td>
+            <td>Canvas draws 2D graphics, on the fly with JavaScript.</td>
+        </tr>
+        <tr>
+            <td>If attributes of an SVG object are changed, the browser can automatically re-render the shape</td>
+            <td>Canvas is rendered pixel by pixel. In Canvas, once the graphic is drawn, it is forgotten by the browser.</td>
+        </tr>
+        <tr>
+            <td>SVG is resolution-independent</td>
+            <td>CANVAS is resolution-dependent.</td>
+        </tr>
+        <tr>
+            <td>SVG supports event handlers</td>
+            <td>CANVAS doesn’t have support for event handlers.</td>
+        </tr>
+    </tbody>
+</table>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h4>Example 1: Drawing a Line</h4>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -5409,17 +5512,47 @@ of the SVG document.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h4>SVG &lt;a&gt; Attributes</h4>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-
-| Name | Description |
-|--------|--------------------------|
-| href | It stands for hypertext reference and takes the link to the other documents. |
-| download | It instructs the browser to download a file. |
-| hreflang | It is the human language of the URL or in simple words the URL fragment that hyperlink point is the hreflang. |
-| rel | It tells the relationship between the target and source documents. |
-| target | It tells about where the webpage is to be displayed. |
-| type | It tells about the MIME type of the document linked with URL. |
-| ping | It is the space-separated list of URLs. |
-
+<div role="region" tabindex="0">
+<table>
+  <caption>SVG &lt;a&gt; Attributes</caption>
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>href</td>
+      <td>It stands for hypertext reference and take the link to the other documents.</td>
+    </tr>
+    <tr>
+      <td>download</td>
+      <td>It instructs the browser to download a file.</td>
+    </tr>
+    <tr>
+      <td>hreflang</td>
+      <td>It is the human language of the ULR or in simple words the URL fragment that hyperlink point is the hreflang</td>
+    </tr>
+    <tr>
+      <td>rel</td>
+      <td>It tells the relationship between the target and source documents.</td>
+    </tr>
+    <tr>
+      <td>target</td>
+      <td>It tells about where the webpage is to be displayed.</td>
+    </tr>
+    <tr>
+      <td>type</td>
+      <td>I tells about the MIME type of the doucment linked with URL.</td>
+    </tr>
+    <tr>
+      <td>ping</td>
+      <td>It is the space-separated list of URLs.</td>
+    </tr>
+  </tbody>
+</table>
+</div>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h4>Examples of SVG &lt;a&gt; Element</h4>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -7166,22 +7299,39 @@ much more.</p>
 <h3>Comparison of SVG and Canvas</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p>The table below shows some important differences between Canvas and SVG:</p>
-
-| SVG | Canvas |
-|------------------------|-----------------------------|
-| Resolution independent  | Resolution dependent |
-| Support for event handlers | No support for event handlers |
-| Good text rendering capabilities | Poor text rendering capabilities |
-| Slow rendering if complex | You can save the resulting image as .png or .jpg |
-| Not suited for game applications | Well suited for graphic-intensive games |
-
-
-
-
-
-
-
-
+<div role="region" tabindex="0">
+  <table>
+    <caption>Comparison of SVG and Canvas</caption>
+    <thead>
+      <tr>
+        <th>SVG</th>
+        <th>Canvas</th>
+      </tr>
+    </thead>
+    <tbody>
+	  <tr>
+	    <td>Resolution independent</td>
+	    <td>Resolution dependent.</td>
+	  </tr>
+      <tr>
+	    <td>Support for event handlers</td>
+		<td>No support for event handlers.</td>
+	  </tr>
+      <tr>
+        <td>Good text rendering capabilities</td>
+        <td>Poor text rendering capabilities.</td>
+      </tr>
+      <tr>
+        <td>Slow rendering if complex</td>
+        <td>You can save the resulting image as .png or .jpg.</td>
+      </tr>
+      <tr>
+        <td>Not suited for game applications</td>
+        <td>Well suited for graphic-intensive games.</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h4>Creating SVG Images</h4>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -7293,16 +7443,43 @@ Place all attribute values in SVG inside quotes (even if they are numbers)
 <p>The <mark>&lt;rect&gt;</mark> element is used to create a rectangle and variations of a rectangle shape.</p>
 
 <p>The <mark>&lt;rect&gt;</mark> element has six basic attributes to position and shape the rectangle:</p>
-
-| Attribute | Description |
-|-----------|-------------|
-| width |    Required. The width of the rectangle |
-| height |    Required. The height of the rectangle |
-|x |    The x-position for the top-left corner of the rectangle |
-| y     | The y-position for the top-left corner of the rectangle |
-| rx | The x radius of the corners of the rectangle (used to round the corners). Default is 0 |
-| ry | The y radius of the corners of the rectangle (used to round the corners). Default is 0 |
-
+<div role="region" tabindex="0">
+  <table>
+    <caption>SVG Rectangle - &lt;rect&gt;</caption>
+    <thead>
+      <tr>
+        <th>Attribute</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><b>width</b></td>
+        <td>Required. The width of the rectangle.</td>
+      </tr>
+      <tr>
+        <td><b>height</b></td>
+        <td>Required. The height of the rectangle.</td>
+      </tr>
+      <tr>
+        <td>x</td>
+        <td>The x-position for the top-left corner of the rectangle.</td>
+      </tr>
+      <tr>
+        <td>y</td>
+        <td>The y-position for the top-left corner of the rectangle.</td>
+      </tr>
+      <tr>
+        <td>rx</td>
+        <td>The x radius of the corners of the rectangle (used to round the corners). Default is 0.</td>
+      </tr>
+      <tr>
+        <td>ry</td>
+        <td>The y radius of the corners of the rectangle (used to round the corners). Default is 0.</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h4>An SVG Rectangle</h4>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -7411,13 +7588,31 @@ Place all attribute values in SVG inside quotes (even if they are numbers)
 <p>The &lt;circle&gt; element is used to create a circle.</p>
 
 <p>The &lt;circle&gt; element has three basic attributes to position and set the size of the circle:</p>
-
-| Attribute |Description |
-|-----------|------------|
-|r |    Required. The radius of the circle |
-| cx | The x-axis center of the circle. Default is 0 |
-| cy | The y-axis center of the circle. Default is 0 |
-
+<div role="region" tabindex="0">
+  <table>
+    <caption>SVG Rectangle - &lt;rect&gt;</caption>
+    <thead>
+      <tr>
+        <th>Attribute</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>r</td>
+        <td>Required. The radius of the circle.</td>
+      </tr>
+      <tr>
+        <td>cx</td>
+        <td>The x-axis center of the circle. Default is 0.</td>
+      </tr>
+      <tr>
+        <td>cy</td>
+        <td>The y-axis center of the circle. Default is 0.</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h4>An SVG Circle</h4>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -7648,25 +7843,56 @@ function error(error) {
   <li>Showing Points-of-interest near the user</li>
   <li>Turn-by-turn navigation (GPS)</li>
 </ul>
-
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3>The getCurrentPosition() Method - Return Data</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p>The getCurrentPosition() method returns an object on success. The latitude, longitude and 
 accuracy properties are always returned. The other properties are returned if available:</p>
-
-
-| Property        | Returns |
-|-----------------|----------------------------------------------------|
-| coords.latitude | The latitude as a decimal number (always returned) |
-| coords.longitude | The longitude as a decimal number (always returned) |
-| coords.accuracy | The accuracy of position (always returned) |
-| coords.altitude | The altitude in meters above the mean sea level (returned if available) |
-| coords.altitudeAccuracy | The altitude accuracy of position (returned if available) |
-| coords.heading | The heading as degrees clockwise from North (returned if available) |
-| coords.speed | The speed in meters per second (returned if available) |
-| timestamp | The date/time of the response (returned if available) |
-
+<div role="region" tabindex="0">
+  <table>
+    <caption>The getCurrentPosition() Method - Return Data</caption>
+    <thead>
+      <tr>
+        <th>Property</th>
+        <th>Returns</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>coords.latitude</td>
+        <td>The latitude as a decimal number (always returned)</td>
+      </tr>
+      <tr>
+        <td>coords.longitude </td>
+        <td>The longitude as a decimal number (always returned)</td>
+      </tr>
+      <tr>
+        <td>coords.accuracy</td>
+        <td>The accuracy of position (always returned)</td>
+      </tr>
+      <tr>
+        <td>coords.altitude </td>
+        <td>The altitude in meters above the mean sea level (returned if available)</td>
+      </tr>
+      <tr>
+        <td>coords.altitudeAccuracy</td>
+        <td>The altitude accuracy of position (returned if available)</td>
+      </tr>
+      <tr>
+        <td>coords.heading</td>
+        <td>The heading as degrees clockwise from North (returned if available)</td>
+      </tr>
+      <tr>
+        <td>coords.speed </td>
+        <td>The speed in meters per second (returned if available)</td>
+      </tr>
+      <tr>
+        <td>timestamp</td>
+        <td>The date/time of the response (returned if available).</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3>Geolocation Object - Other interesting Methods</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
