@@ -4220,7 +4220,7 @@ syntax, key attributes, and various form elements. By mastering HTML forms, you
 can create more engaging, user-friendly, and accessible web applications.</p>
 <!- end of html-forms -->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<h2 id="5-html-tables">5. Tables</h2>
+<h2 id="5-html-tables">05. Tables</h2>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3>What is an HTML Table?</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -5154,7 +5154,7 @@ potential of introducing errors.</p>
 </p>
 <!-- end of html tables -->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<h2 id="6-html-">06. HTML Lists</h2>
+<h2 id="6-html-lists">06. HTML Lists</h2>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p>An HTML list is a record of related information used to display the data or 
 any information on web pages in the ordered or unordered form.</p>
@@ -5448,13 +5448,11 @@ and definition list. We have explained all three list types with examples.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h2 id="7-html-iframes">07. HTML iFrames</h2>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 
 
 
 
 
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h2 id="8-html-url">08. HTML URL</h2>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -8138,7 +8136,6 @@ Place all attribute values in SVG inside quotes (even if they are numbers)
 <p>Third party APIs are not built into your browser.</p>
 
 <p>To use these APIs, you will have to download the code from the Web.</p>
-
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h4>Examples:</h4>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -8150,7 +8147,6 @@ Place all attribute values in SVG inside quotes (even if they are numbers)
 
 <p><b>HTML Geolocation API</b> - The Geolocation API is used to access the user's current location.
 Since this can compromise privacy, the location is not available unless the user approves it.</p>
-
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h4>Example</h4>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -8190,7 +8186,6 @@ function error() {
 
 <p>The second parameter of the getCurrentPosition() method is used to handle errors. It 
 specifies a function to run if it fails to get the user's location.</p>
-
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h4>Example</h4>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -8375,7 +8370,7 @@ function error(error) {
 ```
 
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<h2>13.  HTML Drag and Drop API</h2>
+<h2 id="13-html-dragndrop">13. HTML Drag and Drop API</h2>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p>The HTML Drag and Drop API enables an element to be dragged and dropped.</p>
 
@@ -8517,7 +8512,7 @@ function dropHandler(ev) {
 ```
 
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<h2>11.  HTML Web Storage API</h2>
+<h2>HTML Web Storage API</h2>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3>What is HTML Web Storage?</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -8529,7 +8524,7 @@ function dropHandler(ev) {
 
 <p>Web storage is per origin (per domain and protocol). All pages, from one origin, can store and access the same data.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<h2>11.  Web Storage API Objects</h2>
+<h2>Web Storage API Objects</h2>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p>Web storage provides two objects for storing data in the browser:</p>
 <ul>
@@ -8657,7 +8652,7 @@ function clickCounter() {
 ```
 
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<h2>14.  HTML Web Workers API</h2>
+<h2 id="14-html-webworker">14. HTML Web Workers API</h2>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p>A web worker is an external JavaScript file that runs in the background, without affecting the performance of the page.</p>
 
@@ -8864,7 +8859,7 @@ function stopWorker() {
 </ul>
 
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<h2>xx.  HTML Server-Sent Events API</h2>
+<h2 id="html-serversent-events>xx.  HTML Server-Sent Events API</h2>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p>The Server-Sent Events (SSE) API enables pushing messages/updates from a server to 
 the web page via HTTP connection.</p>
