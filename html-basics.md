@@ -722,46 +722,77 @@ used for styling purposes as well as to give special importance to text content.
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <div role="region" tabindex="0">
   <table>
-    <caption>The EventSource Object</caption>
+    <caption>Logical Tags</caption>
     <thead>
       <tr>
-        <th>Event</th>
+        <th>Tags</th>
         <th>Description</th>
       </tr>
     </thead>
     <tbody>
       <tr>
-        <td></td>
-        <td></td>
+        <td>&lt;abbr&gt;</td>
+        <td>Defines the abbreviation of text.</td>
+      </tr>
+	  <tr>
+	    <td>&lt;acronym&gt;</td>
+		<td>Defines the acronym.</td>
+	  </tr>
+	  <tr>
+	    <td>&lt;address&gt;</td>
+		<td>Contact information of a person or an organization.</td>
+	  </tr>
+	  <tr>
+	    <td>&lt;cite&gt;</td>
+		<td>Defines citation. It displays the text in italic format.</td>
+	  </tr>
+	  <tr>
+	    <td>&lt;code&gt;</td>
+		<td>Defines the piece of computer code.</td>
+	  </tr>
+	  <tr>
+	    <td>&lt;blockquote&gt;</td>
+		<td>Defines a long quotation.</td>
+	  </tr>
+	  <tr>
+	    <td>&lt;del&gt;</td>
+		<td>Defines the deleted text and is used to mark a portion of text which has been deleted from the document.</td>
+	  </tr>
+	  <tr>
+	    <td>&lt;dfn&gt;</td>
+		<td>Defines the definition element and is used to representing a defining instance in HTML.</td>
+	  </tr>
+	  <tr>
+	    <td>&lt;ins&gt;</td>
+		<td>Defines inserted text.</td>
+	  </tr>
+      <tr>
+        <td>&lt;kbd&gt; </td>
+        <td>Defines keyboard input text.</td>
       </tr>
       <tr>
-        <td></td>
-        <td></td>
+        <td>&lt;pre&gt;</td>
+        <td>Defines the block of preformatted text which preserves the text spaces, line breaks, tabs, and other formatting characters which are ignored by web browsers.</td>
       </tr>
       <tr>
-        <td></td>
-        <td></td>
+        <td>&lt;q&gt;</td>
+        <td>Defines the short quotation.</td>
+      </tr>
+      <tr>
+        <td>&lt;samp&gt;</td>
+        <td>Defines the sample output text from a computer program.</td>
+      </tr>
+      <tr>
+        <td>&lt;strong&gt;</td>
+        <td>Defines strong text i.e. show the importance of the text.</td>
+      </tr>
+      <tr>
+        <td>&lt;var&gt;</td>
+        <td>Defines the variable in a mathematical equation or in the computer program.</td>
       </tr>
     </tbody>
   </table>
 </div>
-|Tags       | Description                     |
-|-----------|---------------------------------|
-|&lt;abbr&gt;   |Defines the abbreviation of text.|
-|&lt;acronym&gt;|Defines the acronym.|
-|&lt;address&gt;|Contact information of a person or an organization.|
-|&lt;cite&gt;   |Defines citation. It displays the text in italic format.|
-|&lt;code&gt;   |Defines the piece of computer code.|
-|&lt;blockquote&gt;|Defines a long quotation.|
-|&lt;del&gt;    |Defines the deleted text and is used to mark a portion of text which has been deleted from the document.|
-|&lt;dfn&gt;    |Defines the definition element and is used to representing a defining instance in HTML.|
-|&lt;ins&gt;    |Defines inserted text.|
-|&lt;kbd&gt;    |Defines keyboard input text.|
-|&lt;pre&gt;    |Defines the block of preformatted text which preserves the text spaces, line breaks, tabs, and other formatting characters which are ignored by web browsers.|
-|&lt;q&gt;      |Defines the short quotation.|
-|&lt;samp&gt;   |Defines the sample output text from a computer program.|
-|&lt;strong&gt; |Defines strong text i.e. show the importance of the text.|
-|&lt;var&gt;    |Defines the variable in a mathematical equation or in the computer program.|
 
 <div align="right">
     <b><a href="#toc">↥ back to top</a></b>
