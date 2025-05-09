@@ -1645,11 +1645,11 @@ to decide whether to handle it in quirks mode or standards mode.</p>
 <h2>Q. Ways to improve website performance</h2>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <ul>
-  <li>Minimize HTTP Requests
+  <li><b><mark>Minimize HTTP Requests</mark></b>
     <ul>
       <li>Sites are mainly slow because of too many (or too large) HTTP requests. We can eliminate unnecessary request;
         <ul>
-          <li>combined files: js to a file, css to a file</li>
+          <li>Combine files: js to a file, css to a file.</li>
           <li>CSS sprites: CSS Sprites are the preferred method for reducing the number of image requests. 
 		    Combine your background images into a single image and use the CSS background-image and 
 			background-position properties to display the desired image segment.</li>
@@ -1657,7 +1657,7 @@ to decide whether to handle it in quirks mode or standards mode.</p>
       </li>
     </ul>
   </li>
-  <li>Use a Content Delivery Network CDN
+  <li><b><mark>Use a Content Delivery Network CDN</mark></b>
     <ul>
       <li>A CDN is essentially many optimized servers around the world that deliver web content to users 
 	    based on their geographic location. This means big performance improvements for site users. 
@@ -1665,7 +1665,7 @@ to decide whether to handle it in quirks mode or standards mode.</p>
 		from a server nearby</li>
     </ul>
   </li>
-  <li>Optimize Images:
+  <li><b><mark>Optimize Images:</mark></b>
     <ul>
       <li>image sizes make a huge difference to site speed. The larger content/images, the slower the site. we could:
         <ul>
@@ -1677,7 +1677,7 @@ to decide whether to handle it in quirks mode or standards mode.</p>
       </li>
     </ul>
   </li>
-  <li>Put Scripts at the Bottom:
+  <li><b><mark>Put Scripts at the Bottom:</mark></b>
     <ul>
       <li>Javascript files can load after the rest of your page. The simplest solution is to place 
 	    your external Javascript files at the bottom of your page, just before the close of your 
@@ -1695,7 +1695,7 @@ to decide whether to handle it in quirks mode or standards mode.</p>
       </li>
     </ul>
   </li>
-  <li>Add an Expires or a Cache-Control Header
+  <li><b><mark>Add an Expires or a Cache-Control Header</mark></b>
     <ul>
       <li>Web page designs are getting richer and richer, which means more scripts, stylesheets, 
 	    images, and Flash in the page. A first-time visitor to your page may have to make several 
@@ -1705,38 +1705,38 @@ to decide whether to handle it in quirks mode or standards mode.</p>
 		and Flash components.</li>
     </ul>
   </li>
-  <li>Gzip Components
+  <li><b><mark>Gzip Components</mark></b>
     <ul>
       <li>Compression reduces response times by reducing the size of the HTTP response. Gzipping generally reduces the response size by about 70%.</li>
     </ul>
   </li>
-  <li>Put Stylesheets at the Top:
+  <li><b><mark>Put Stylesheets at the Top:</mark></b>
     <ul>
       <li>This is because putting stylesheets in the HEAD allows the page to render progressively.</li>
     </ul>
   </li>
-  <li>Avoid CSS Expressions</li>
-  <li>Use GET for AJAX Requests:
+  <li><b><mark>Avoid CSS Expressions</mark></b></li>
+  <li><b><mark>Use GET for AJAX Requests:</mark></b>
     <ul>
       <li>Ajax is that it provides instantaneous feedback to the user because it requests information asynchronously from the backend web server</li>
     </ul>
   </li>
-  <li>Make JavaScript and CSS External:
+  <li><b><mark>Make JavaScript and CSS External:</mark></b>
     <ul>
       <li>Using external files in the real world generally produces faster pages because the JavaScript and CSS files are cached by the browser. JavaScript and CSS that are inlined in HTML documents get downloaded every time the HTML document is requested. This reduces the number of HTTP requests that are needed, but increases the size of the HTML document. On the other hand, if the JavaScript and CSS are in external files cached by the browser, the size of the HTML document is reduced without increasing the number of HTTP requests.</li>
     </ul>
   </li>
-  <li>Use get to ajax request:
+  <li><b><mark>Use get to ajax request:</mark></b>
     <ul>
       <li>POST is implemented in the browsers as a two-step process: sending the headers first, then sending data. So it's best to use GET, which only takes one TCP packet to send (unless you have a lot of cookies).</li>
     </ul>
   </li>
-  <li>No 404s:
+  <li><b><mark>No 404s:</mark></b>
     <ul>
       <li>HTTP requests are expensive so making an HTTP request and getting a useless response (i.e. 404 Not Found) is totally unnecessary and will slow down the user experience without any benefit.</li>
     </ul>
   </li>
-  <li>Reduce Cookie Size:
+  <li><b><mark>Reduce Cookie Size:</mark></b>
     <ul>
       <li>HTTP cookies are used for a variety of reasons such as authentication and personalization. Information about cookies is exchanged in the HTTP headers between web servers and browsers. It's important to keep the size of cookies as low as possible to minimize the impact on the user's response time.</li>
     </ul>
@@ -1744,21 +1744,31 @@ to decide whether to handle it in quirks mode or standards mode.</p>
 </ul>
 
 <ul>
-  <li>Reduce DNS Lookups</li>
-  <li>Minify JavaScript and CSS</li>
-  <li>Avoid Redirects</li>
-  <li>Remove Duplicate Scripts</li>
-  <li>Configure Etags</li>
-  <li>Make Ajax Cacheable</li>
-  <li>Post-load Components</li>
-  <li>Preload Components</li>
-  <li>Reduce the Number of DOM Elements</li>
-  <li>Minimize the Number of iframes</li>
-  <li>Minimize DOM Access</li>
-  <li>Optimize CSS Sprites</li>
-  <li>Don't Scale Images in HTML</li>
-  <li>Make favicon.ico Small and Cacheable</li>
-  <li>Avoid Empty Image src</li>
+  <li><b><mark>Reduce DNS Lookups</mark></b>
+    <ul>
+	<li>This can be achieved through various strategies, including;
+      <ul>
+        <li>using a fast DNS provider,</li>
+        <li>reducing the number of hostnames, and<li>
+		<li>leveraging DNS caching and prefetching.</li>
+	  </ul>
+	</li>
+    </ul>
+  </li>
+  <li><b><mark>Minify JavaScript and CSS</mark></b></li>
+  <li><b><mark>Avoid Redirects</mark></b></li>
+  <li><b><mark>Remove Duplicate Scripts</mark></b></li>
+  <li><b><mark>Configure Etags</mark></b></li>
+  <li><b><mark>Make Ajax Cacheable</mark></b></li>
+  <li><b><mark>Post-load Components</mark></b></li>
+  <li><b><mark>Preload Components</mark></b></li>
+  <li><b><mark>Reduce the Number of DOM Elements</mark></b></li>
+  <li><b><mark>Minimize the Number of iframes</mark></b></li>
+  <li><b><mark>Minimize DOM Access</mark></b></li>
+  <li><b><mark>Optimize CSS Sprites</mark></b></li>
+  <li><b><mark>Don't Scale Images in HTML</mark></b></li>
+  <li><b><mark>Make favicon.ico Small and Cacheable</mark></b></li>
+  <li><b><mark>Avoid Empty Image src</mark></b></li>
 </ul>
 
 <div align="right">
