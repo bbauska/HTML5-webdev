@@ -3715,146 +3715,364 @@ event actions.</p>
 <h4 id="window-events">Window Event Attributes</h4>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p>Events triggered for the window object (applies to the &lt;body&gt; tag):</p>
-
-| Attribute      | Value  | Description |
-|----------------|--------|--------------------------------------------------------------------------|
-| onafterprint   | script | Script to be run after the document is printed |
-| onbeforeprint  | script | Script to be run before the document is printed |
-| onbeforeunload | script | Script to be run when the document is about to be unloaded |
-| onerror        | script | Script to be run when an error occurs |
-| onhashchange   | script | Script to be run when there has been changes to the anchor part of the a URL |
-| onload         | script | Fires after the page is finished loading |
-| onmessage      | script | Script to be run when the message is triggered |
-| onoffline      | script | Script to be run when the browser starts to work offline |
+<div role="region" tabindex="0">
+  <table>
+    <caption>Window Event Attributes</caption>
+    <thead>
+      <tr>
+        <th>Attribute</th>
+        <th>Value</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>onafterprint</td>
+        <td>script</td>
+        <td>Script to be run after the document is printed.</td>
+      </tr>
+      <tr>
+        <td>onbeforeprint</td>
+        <td>script</td>
+        <td>Script to be run before the document is printed .</td>
+      </tr>
+      <tr>
+        <td>onbeforeunload</td>
+        <td>script</td>
+        <td>Script to be run when the document is about to be unloaded.</td>
+      </tr>
+      <tr>
+        <td>onerror</td>
+        <td>script</td>
+        <td>Script to be run when an error occurs.</td>
+      </tr>
+        <td>onhashchange</td>
+        <td>script</td>
+        <td>Script to be run when there has been changes to the anchor part of the a URL.</td>
+      </tr>
+      <tr>
+        <td>onload</td>
+        <td>script</td>
+        <td>Fires after the page is finished loading .</td>
+      </tr>
+      <tr>
+        <td>onmessage</td>
+        <td>script</td>
+        <td>Script to be run when the message is triggered.</td>
+      </tr>
+	  <tr>
+        <td>onoffline</td>
+        <td>script</td>
+        <td>Script to be run when the browser starts to work offline.</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
 
 <div align="right">
     <b><a href="#toc">↥ back to top</a></b>
 </div>
 
 <p>cont'd</p>
-
-| Attribute      | Value  | Description |
-|----------------|--------|--------------------------------------------------------------------------|
-| ononline       | script | Script to be run when the browser starts to work online |
-| onpagehide     | script | Script to be run when a user navigates away from a page |
-| onpageshow     | script | Script to be run when a user navigates to a page |
-| onpopstate     | script | Script to be run when the window's history changes |
-| onresize       | script | Fires when the browser window is resized |
-| onstorage      | script | Script to be run when a Web Storage area is updated |
-| onunload       | script | Fires once a page has unloaded (or the browser window has been closed) |
-
+<div role="region" tabindex="0">
+  <table>
+    <caption>Form Events</caption>
+    <thead>
+      <tr>
+        <th>Attribute</th>
+        <th>Value</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>ononline</td>
+        <td>script</td>
+        <td>Script to be run when the browser starts to work online.</td>
+      </tr>
+      <tr>
+        <td>onpagehide</td>
+        <td>script</td>
+        <td>Script to be run when a user navigates away from a page.</td>
+      </tr>
+      <tr>
+        <td>onpageshow</td>
+        <td>script</td>
+        <td>Script to be run when a user navigates to a page.</td>
+      </tr>
+        <td>onpopstate</td>
+        <td>script</td>
+        <td>Script to be run when the window's history changes.</td>
+      </tr>
+      <tr>
+        <td>onresize</td>
+        <td>script</td>
+        <td>Fires when the browser window is resized.</td>
+      </tr>
+      <tr>
+        <td>onstorage</td>
+        <td>script</td>
+        <td>Script to be run when a Web Storage area is updated.</td>
+      </tr>
+	  <tr>
+        <td>onunload</td>
+        <td>script</td>
+        <td>Fires once a page has unloaded (or the browser window has been closed).</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h4 id="form-events">Form Events</h4>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p>Events triggered by actions inside a HTML form (applies to almost all HTML elements, 
 but is most used in form elements):</p>
 
-| Attribute      | Value  | Description |
-|----------------|--------|--------------------------------------------------------------------------|
-| onblur         | script | Fires the moment that the element loses focus |
-| onchange       | script | Fires the moment when the value of the element is changed |
-| oncontextmenu  | script | Script to be run when a context menu is triggered |
-| onfocus        | script | Fires the moment when the element gets focus |
-| oninput        | script | Script to be run when an element gets user input |
-| oninvalid      | script | Script to be run when an element is invalid |
-| onreset        | script | Fires when the Reset button in a form is clicked |
-| onsearch       | script | Fires when the user writes something in a search field (for &lt;input="search"&gt;) |
-| onselect       | script | Fires after some text has been selected in an element |
-| onsubmit       | script | Fires when a form is submitted |
-
+<div role="region" tabindex="0">
+  <table>
+    <caption>Form Events</caption>
+    <thead>
+      <tr>
+        <th>Attribute</th>
+        <th>Value</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>onblur</td>
+        <td>script</td>
+        <td>Fires the moment that the element loses focus.</td>
+      </tr>
+      <tr>
+        <td>onchange</td>
+        <td>script</td>
+        <td>Fires the moment when the value of the element is changed.</td>
+      </tr>
+      <tr>
+        <td>oncontextmenu</td>
+        <td>script</td>
+        <td>Script to be run when a context menu is triggered.</td>
+      </tr>
+        <td>onfocus</td>
+        <td>script</td>
+        <td>Fires the moment when the element gets focus.</td>
+      </tr>
+      <tr>
+        <td>oninput</td>
+        <td>script</td>
+        <td>Script to be run when an element gets user input.</td>
+      </tr>
+      <tr>
+        <td>oninvalid</td>
+        <td>script</td>
+        <td>Script to be run when an element is invalid.</td>
+      </tr>
+        <td>onreset</td>
+        <td>script</td>
+        <td>Fires when the Reset button in a form is clicked.</td>
+      </tr>
+      <tr>
+        <td>onsearch</td>
+        <td>script</td>
+        <td>Fires when the user writes something in a search field (for &lt;input="search"&gt;).</td>
+      </tr>
+      <tr>
+        <td>onselect</td>
+        <td>script</td>
+        <td>Fires after some text has been selected in an element.</td>
+      </tr>
+      <tr>
+        <td>onsubmit</td>
+        <td>script</td>
+        <td>Fires when a form is submitted.</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h4 id="keyboard-events">Keyboard Events</h4>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <div role="region" tabindex="0">
-<table>
-  <caption>Keyboard Events</caption>
-  <thead>
-    <tr>
-      <th>Attribute</th>
-      <th>Value</th>
-      <th>Description</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td>onkeydown</td>
-      <td>script</td>
-      <td>Fires when a user is pressing a key.</td>
-    </tr>
-    <tr>
-      <td>onkeypress</td>
-      <td>script</td>
-      <td>Fires when a user presses a key.</td>
-    </tr>
-    <tr>
-      <td>onkeyup</td>
-      <td>script</td>
-      <td>Fires when a user releases a key.</td>
-    </tr>
-  </tbody>
-</table>
+  <table>
+    <caption>Keyboard Events</caption>
+    <thead>
+      <tr>
+        <th>Attribute</th>
+        <th>Value</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>onkeydown</td>
+        <td>script</td>
+        <td>Fires when a user is pressing a key.</td>
+      </tr>
+      <tr>
+        <td>onkeypress</td>
+        <td>script</td>
+        <td>Fires when a user presses a key.</td>
+      </tr>
+      <tr>
+        <td>onkeyup</td>
+        <td>script</td>
+        <td>Fires when a user releases a key.</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h4 id="mouse-events">Mouse Events</h4>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-
-| Attribute    | Value  | Description |
-|--------------|--------|--------------------------------------------------------------------------|
-| onclick      | script | Fires on a mouse click on the element |
-| ondblclick   | script | Fires on a mouse double-click on the element |
-| onmousedown  | script | Fires when a mouse button is pressed down on an element |
-| onmousemove  | script | Fires when the mouse pointer is moving while it is over an element |
-| onmouseout   | script | Fires when the mouse pointer moves out of an element |
-| onmouseover  | script | Fires when the mouse pointer moves over an element |
-| onmouseup    | script | Fires when a mouse button is released over an element |
-| onmousewheel | script | Deprecated. Use the onwheel attribute instead |
-| onwheel      | script | Fires when the mouse wheel rolls up or down over an element |
-
+<div role="region" tabindex="0">
+  <table>
+    <caption>Clipboard Mouse Events</caption>
+    <thead>
+      <tr>
+        <th>Attribute</th>
+        <th>Value</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>onclick</td>
+        <td>script</td>
+        <td>Fires on a mouse click on the element.</td>
+      </tr>
+      <tr>
+        <td>ondblclick</td>
+        <td>script</td>
+        <td>Fires on a mouse double-click on the element.</td>
+      </tr>
+      <tr>
+        <td>onmousedown</td>
+        <td>script</td>
+        <td>Fires when a mouse button is pressed down on an element.</td>
+      </tr>
+      <tr>
+        <td>onmousemove</td>
+        <td>script</td>
+        <td>Fires when the mouse pointer is moving while it is over an element.</td>
+      </tr>
+      <tr>
+        <td>onmouseout</td>
+        <td>script</td>
+        <td>Fires when the mouse pointer moves over an element.</td>
+      </tr>
+      <tr>
+        <td>onmouseover</td>
+        <td>script</td>
+        <td>.</td>
+      </tr>
+      <tr>
+        <td>onmouseup</td>
+        <td>script</td>
+        <td>Fires when a mouse button is released over an element.</td>
+      </tr>
+      <tr>
+        <td>onmousewheel</td>
+        <td>script</td>
+        <td>Deprecated. Use the onwheel attribute instead.</td>
+      </tr>
+      <tr>
+        <td>onwheel</td>
+        <td>script</td>
+        <td>Fires when the mouse wheel rolls up or down over an element.</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h4 id="drag-events">Drag Events</h4>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-
-| Attribute    | Value  | Description |
-|--------------|--------|--------------------------------------------------------------------------|
-| ondrag       | script | Script to be run when an element is dragged |
-| ondragend    | script | Script to be run at the end of a drag operation |
-| ondragenter  | script | Script to be run when an element has been dragged to a valid drop target |
-| ondragleave  | script | Script to be run when an element leaves a valid drop target |
-| ondragover   | script | Script to be run when an element is being dragged over a valid drop target |
-| ondragstart  | script | Script to be run at the start of a drag operation |
-| ondrop       | script | Script to be run when dragged element is being dropped |
-| onscroll     | script | Script to be run when an element's scrollbar is being scrolled |
-
+<div role="region" tabindex="0">
+  <table>
+    <caption>Clipboard Events</caption>
+    <thead>
+      <tr>
+        <th>Attribute</th>
+        <th>Value</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>ondragd</td>
+        <td>script</td>
+        <td>Script to be run when an element is dragged.</td>
+      </tr>
+      <tr>
+        <td>ondragend</td>
+        <td>script</td>
+        <td>Script to be run at the end of a drag operation.</td>
+      </tr>
+      <tr>
+        <td>ondragenter</td>
+        <td>script</td>
+        <td>Script to be run when an element has been dragged to a valid drop target.</td>
+      </tr>
+      <tr>
+        <td>ondragleave</td>
+        <td>script</td>
+        <td>Script to be run when an element leaves a valid drop target.</td>
+      </tr>
+      <tr>
+        <td>ondragover</td>
+        <td>script</td>
+        <td>Script to be run when an element is being dragged over a valid drop target.</td>
+      </tr>
+      <tr>
+        <td>ondragstart</td>
+        <td>script</td>
+        <td>Script to be run at the start of a drag operation.</td>
+      </tr>
+      <tr>
+        <td>ondrop</td>
+        <td>script</td>
+        <td>Script to be run when dragged element is being dropped.</td>
+      </tr>
+      <tr>
+        <td>onscroll</td>
+        <td>script</td>
+        <td>Script to be run when an element's scrollbar is being scrolled.</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h4 id="clipboard-events">Clipboard Events</h4>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <div role="region" tabindex="0">
-<table>
-  <caption>Clipboard Events</caption>
-  <thead>
-    <tr>
-      <th>Attribute</th>
-      <th>Value</th>
-      <th>Description</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td>oncopy</td>
-      <td>script</td>
-      <td>Fires when the user copies the content of an element.</td>
-    </tr>
-    <tr>
-      <td>oncut</td>
-      <td>script</td>
-      <td>Fires when the user cuts the content of an element.</td>
-    </tr>
-    <tr>
-      <td>onpaste</td>
-      <td>script</td>
-      <td>Fires when the user pastes some content in an element.</td>
-    </tr>
-  </tbody>
-</table>
+  <table>
+    <caption>Clipboard Events</caption>
+    <thead>
+      <tr>
+        <th>Attribute</th>
+        <th>Value</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>oncopy</td>
+        <td>script</td>
+        <td>Fires when the user copies the content of an element.</td>
+      </tr>
+      <tr>
+        <td>oncut</td>
+        <td>script</td>
+        <td>Fires when the user cuts the content of an element.</td>
+      </tr>
+      <tr>
+        <td>onpaste</td>
+        <td>script</td>
+        <td>Fires when the user pastes some content in an element.</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h4 id="media-events">Media Events</h4>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -4239,6 +4457,7 @@ between different types of data. Tables are also used to create databases.</p>
 
 <body>
   <table>
+    <caption>HTML Table Code Example</caption>
     <tr>
       <th>Firstname</th>
       <th>Lastname</th>
@@ -4386,6 +4605,7 @@ used to add the heading to the Table. This contains the &lt;th&gt; & &lt;/th&gt;
 
 <body>
   <table>
+    <caption>HTML Table Tags</caption>
     <tr>
       <th>Book Name</th>
       <th>Author Name</th>
@@ -5221,41 +5441,41 @@ any information on web pages in the ordered or unordered form.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p>Here is the list of all lists tags HTML:</p>
 <div role="region" tabindex="0">
-<table>
-  <caption>HTML List Tags</caption>
-  <thead>
-    <tr>
-      <th>Tag</th>
-      <th>Description</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td>&lt;ul&gt; </td>
-      <td>Defines an unordered list.</td>
-    </tr>
-    <tr>
-      <td>&lt;ol&gt;</td>
-      <td>Defines an ordered list.</td>
-    </tr>
-    <tr>
-      <td>&lt;li&gt;</td>
-      <td>Defines a list item.</td>
-    </tr>
-    <tr>
-      <td>&lt;dl&gt;</td>
-      <td>Defines a description list.</td>
-    </tr>
-    <tr>
-      <td>&lt;dt&gt;</td>
-      <td>Defines a term in a description list.</td>
-    </tr>
-    <tr>
-      <td>&lt;dd&gt;</td>
-      <td>Details the term in a description list.</td>
-    </tr>
+  <table>
+    <caption>HTML List Tags</caption>
+    <thead>
+      <tr>
+        <th>Tag</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>&lt;ul&gt; </td>
+        <td>Defines an unordered list.</td>
+      </tr>
+      <tr>
+        <td>&lt;ol&gt;</td>
+        <td>Defines an ordered list.</td>
+      </tr>
+      <tr>
+        <td>&lt;li&gt;</td>
+        <td>Defines a list item.</td>
+      </tr>
+      <tr>
+        <td>&lt;dl&gt;</td>
+        <td>Defines a description list.</td>
+      </tr>
+      <tr>
+        <td>&lt;dt&gt;</td>
+        <td>Defines a term in a description list.</td>
+      </tr>
+      <tr>
+        <td>&lt;dd&gt;</td>
+        <td>Details the term in a description list.</td>
+      </tr>
     </tbody>
-</table>
+  </table>
 </div>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3>The HTML Unordered List or Bulleted List</h3>
@@ -5532,33 +5752,33 @@ and attribute in SVG files can be animated.</p>
 <h3>Differences between SVG and Canvas</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <div role="region" tabindex="0">
-<table>
+  <table>
     <caption>Differences between SVG and Canvas</caption>
     <thead>
-        <tr>
-            <th>SVG</th>
-            <th>Canvas</th>
-        </tr>
+      <tr>
+        <th>SVG</th>
+        <th>Canvas</th>
+      </tr>
     </thead>
     <tbody>
-        <tr>
-            <td>SVG is a language for describing 2D graphics in XML</td>
-            <td>Canvas draws 2D graphics, on the fly with JavaScript.</td>
-        </tr>
-        <tr>
-            <td>If attributes of an SVG object are changed, the browser can automatically re-render the shape</td>
-            <td>Canvas is rendered pixel by pixel. In Canvas, once the graphic is drawn, it is forgotten by the browser.</td>
-        </tr>
-        <tr>
-            <td>SVG is resolution-independent</td>
-            <td>CANVAS is resolution-dependent.</td>
-        </tr>
-        <tr>
-            <td>SVG supports event handlers</td>
-            <td>CANVAS doesn’t have support for event handlers.</td>
-        </tr>
+      <tr>
+        <td>SVG is a language for describing 2D graphics in XML</td>
+        <td>Canvas draws 2D graphics, on the fly with JavaScript.</td>
+      </tr>
+      <tr>
+        <td>If attributes of an SVG object are changed, the browser can automatically re-render the shape</td>
+        <td>Canvas is rendered pixel by pixel. In Canvas, once the graphic is drawn, it is forgotten by the browser.</td>
+      </tr>
+      <tr>
+        <td>SVG is resolution-independent</td>
+        <td>CANVAS is resolution-dependent.</td>
+      </tr>
+      <tr>
+        <td>SVG supports event handlers</td>
+        <td>CANVAS doesn’t have support for event handlers.</td>
+      </tr>
     </tbody>
-</table>
+  </table>
 <div align="right">
     <b><a href="#toc">↥ back to top</a></b>
 </div>
@@ -5857,45 +6077,45 @@ of the SVG document.</p>
 <h4>SVG &lt;a&gt; Attributes</h4>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <div role="region" tabindex="0">
-<table>
-  <caption>SVG &lt;a&gt; Attributes</caption>
-  <thead>
-    <tr>
-      <th>Name</th>
-      <th>Description</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td>href</td>
-      <td>It stands for hypertext reference and take the link to the other documents.</td>
-    </tr>
-    <tr>
-      <td>download</td>
-      <td>It instructs the browser to download a file.</td>
-    </tr>
-    <tr>
-      <td>hreflang</td>
-      <td>It is the human language of the ULR or in simple words the URL fragment that hyperlink point is the hreflang</td>
-    </tr>
-    <tr>
-      <td>rel</td>
-      <td>It tells the relationship between the target and source documents.</td>
-    </tr>
-    <tr>
-      <td>target</td>
-      <td>It tells about where the webpage is to be displayed.</td>
-    </tr>
-    <tr>
-      <td>type</td>
-      <td>I tells about the MIME type of the doucment linked with URL.</td>
-    </tr>
-    <tr>
-      <td>ping</td>
-      <td>It is the space-separated list of URLs.</td>
-    </tr>
-  </tbody>
-</table>
+  <table>
+    <caption>SVG &lt;a&gt; Attributes</caption>
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>href</td>
+        <td>It stands for hypertext reference and take the link to the other documents.</td>
+      </tr>
+      <tr>
+        <td>download</td>
+        <td>It instructs the browser to download a file.</td>
+      </tr>
+      <tr>
+        <td>hreflang</td>
+        <td>It is the human language of the ULR or in simple words the URL fragment that hyperlink point is the hreflang</td>
+      </tr>
+      <tr>
+        <td>rel</td>
+        <td>It tells the relationship between the target and source documents.</td>
+      </tr>
+      <tr>
+        <td>target</td>
+        <td>It tells about where the webpage is to be displayed.</td>
+      </tr>
+      <tr>
+        <td>type</td>
+        <td>I tells about the MIME type of the doucment linked with URL.</td>
+      </tr>
+      <tr>
+        <td>ping</td>
+        <td>It is the space-separated list of URLs.</td>
+      </tr>
+    </tbody>
+  </table>
 </div>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h4>Examples of SVG &lt;a&gt; Element</h4>
