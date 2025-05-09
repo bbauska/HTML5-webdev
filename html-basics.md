@@ -36,7 +36,7 @@
   <li><a href="#16-misc">Miscellaneous</a></li>
 </ol>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<h2 id="1-intro">1. Introduction</h2>
+<h2 id="1-intro">01. Introduction</h2>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h2>Q. What is difference between HTML and XHTML?</h2>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -2642,29 +2642,100 @@ to understand the information on web pages and provide more relevant results to 
 <p>The following elements are not available in HTML5 anymore and their function is better 
 handled by CSS.</p>
 
-|Sl.No|Tags (Elements)  |    Description        |
-|-----|-----------------|----------------------|
-| 01. |&lt;acronym&gt;        |Defines an acronym|
-| 02. |&lt;applet&gt;        |Defines an applet|
-| 03. |&lt;basefont&gt;        |Defines an base font for the page.|
-| 04. |&lt;big&gt;            |Defines big text|
-| 05. |&lt;center&gt;        |Defines centered text|
-| 06. |&lt;dir&gt;            |Defines a directory list|
-| 07. |&lt;font&gt;            |Defines text font, size, and color|
-| 08. |&lt;frame&gt;        |Defines a frame|
-| 08. |&lt;frameset&gt;        |Defines a set of frames|
-| 10. |&lt;isindex&gt;        |Defines a single-line input field|
-| 11. |&lt;noframes&gt;        |Defines a noframe section|
-| 12. |&lt;s&gt;            |Defines strikethrough text|
-| 13. |&lt;strike&gt;        |Defines strikethrough text|
-| 14. |&lt;tt&gt;            |Defines teletype text|
-| 15. |&lt;u&gt;            |Defines underlined text|
-
+<div role="region" tabindex="0">
+  <table>
+    <caption>Deprecated Tags</caption>
+    <thead>
+      <tr>
+        <th>S1.No</th>
+        <th>Tags (Elements)</th>
+		<td>Description</td>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>01.</td>
+        <td>&lt;acronym&gt;</td>
+        <td>Defines an acronym.</td>
+      </tr>
+      <tr>
+        <td>02.</td>
+        <td>&lt;applet&gt;</td>
+        <td>Defines an applet.</td>
+      </tr>
+      <tr>
+        <td>03.</td>
+        <td>&lt;basefont&gt;</td>
+        <td>Defines an base font for the page.</td>
+      </tr>
+      <tr>
+        <td>04.</td>
+        <td>&lt;big&gt;</td>
+        <td>Defines big text.</td>
+      </tr>
+      <tr>
+        <td>05.</td>
+        <td>&lt;center&gt;</td>
+        <td>Defines centered text.</td>
+      </tr>
+      <tr>
+        <td>06.</td>
+        <td>&lt;dir&gt;</td>
+        <td>Defines a directory list.</td>
+      </tr>
+      <tr>
+        <td>07.</td>
+        <td>&lt;font&gt;</td>
+        <td>Defines text font, size, and color.</td>
+      </tr>
+      <tr>
+        <td>08.</td>
+        <td>&lt;frame&gt;</td>
+        <td>Defines a frame.</td>
+      </tr>
+      <tr>
+        <td>09.</td>
+        <td>&lt;frameset&gt;</td>
+        <td>Defines a set of frames.</td>
+      </tr>
+      <tr>
+        <td>10.</td>
+        <td>&lt;isindex&gt;</td>
+        <td>Defines a single-line input field.</td>
+      </tr>
+      <tr>
+        <td>11.</td>
+        <td>&lt;noframes&gt;</td>
+        <td>Defines a noframe section.</td>
+      </tr>
+      <tr>
+        <td>12.</td>
+        <td>&lt;s&gt;</td>
+        <td>Defines strikethrough text.</td>
+      </tr>
+      <tr>
+        <td>13.</td>
+        <td>&lt;strike&gt;</td>
+        <td>Defines strikethrough text.</td>
+      </tr>
+      <tr>
+        <td>14.</td>
+        <td>&lt;tt&gt;</td>
+        <td>Degines teletype text.</td>
+      </tr>
+      <tr>
+        <td>15.</td>
+        <td>&lt;u&gt;</td>
+        <td>Defins underlined text.</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h4>2. Deprecated Attributes:</h4>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 
-|Removed Attributes      |From the Elements     |
+|Removed Attributes   |From the Elements     |
 |---------------------|----------------------|
 |rev                  |link, a|
 |charset              |link and a|
@@ -2824,7 +2895,7 @@ block content load as the HTML sent by the server already has the content.</p>
   <b><a href="#toc">↥ back to top</a></b>
 </div>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<h2 id="7-html-iframe">HTML iFrame</h2>
+<h2 id="7-html-iframe">07.  HTML iFrame</h2>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p>HTML iFrames offer a powerful way to embed external content, such as videos, maps, or 
 other webpages, directly into your own webpage. This article provides an in-depth 
@@ -3130,12 +3201,31 @@ whereas the <b>value</b> attribute contains the initial text-content of the
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3>Difference between HTML attributes and DOM properties:</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-
-|Attribute                               |Property                |
-|----------------------------------------|------------------------|
-|Attributes are defined by HTML.         |Properties are defined by the DOM.|
-|The value of an attribute is constant.  |The value of a property is variable.|
-|These are used to initialize the DOM properties.| No such job defined.|
+<div role="region" tabindex="0">
+  <table>
+    <caption>Difference between HTML attributes and DOM properties</caption>
+    <thead>
+      <tr>
+        <th>Attribute</th>
+        <th>Property</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>Attributes are defined by HTML.</td>
+        <td>Properties are defined by the DOM.</td>
+      </tr>
+      <tr>
+        <td>The value of an attribute is constant.</td>
+        <td>The value of a property is variable.</td>
+      </tr>
+      <tr>
+        <td>These are used to initialize the DOM properties.</td>
+        <td>No such job defined.</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
 
 <div align="right">
   <b><a href="#toc">↥ back to top</a></b>
@@ -3788,7 +3878,7 @@ and practical for most web pages/applications.</p>
   <b><a href="#toc">↥ back to top</a></b>
 </div>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<h2 id="3-html-events">HTML Events</h2>
+<h2 id="3-html-events">03.  HTML Events</h2>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3>Types of Events</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -6535,10 +6625,13 @@ like in HTML canvas.</p>
 <h5>Attributes:</h5>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <ul>
-  <li><b>keyPoints</b>: This attribute indicates in the range [0, 1], how far is the object along the path for each keyTimes associated values.</li>
+  <li><b>keyPoints</b>: This attribute indicates in the range [0, 1], how far is the object along 
+    the path for each keyTimes associated values.</li>
   <li><b>path</b>: This attribute defines the path of the motion.</li>
-  <li><b>rotate</b>: This attribute defines a rotation applied to the element animated along a path, usually to make it point in the direction of the animation.</li>
-  <li><b>Animation Attributes</b>: Attributes used to give animation effects, exp timing attributes, event attributes, and value attributes, etc.</li>
+  <li><b>rotate</b>: This attribute defines a rotation applied to the element animated along a path, 
+    usually to make it point in the direction of the animation.</li>
+  <li><b>Animation Attributes</b>: Attributes used to give animation effects, exp timing attributes, 
+    event attributes, and value attributes, etc.</li>
   <li>Global Attributes</b>: some global attributes used like core attributes and styling attributes, etc.</li>
 </ul>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -8521,12 +8614,38 @@ Place all attribute values in SVG inside quotes (even if they are numbers)
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h2 id="10-html-canvas">10. HTML Canvas</h2>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+Using <canvas>, here's how you might draw a black box with rounded corners and a 2-pixel white
+stroke:
 
+```
+function draw() {
+  var canvas = document.getElementById('draw-in-me');
+  if (canvas.getContext) {
+    var ctx = canvas.getContext('2d');
+    ctx.beginPath();
+    ctx.moveTo(120.0, 32.0);
+    ctx.bezierCurveTo(120.0, 36.4, 116.4, 40.0, 112.0, 40.0);
+    ctx.lineTo(8.0, 40.0);
+    ctx.bezierCurveTo(3.6, 40.0, 0.0, 36.4, 0.0, 32.0);
+    ctx.lineTo(0.0, 8.0);
+    ctx.bezierCurveTo(0.0, 3.6, 3.6, 0.0, 8.0, 0.0);
+    ctx.lineTo(112.0, 0.0);
+    ctx.bezierCurveTo(116.4, 0.0, 120.0, 3.6, 120.0, 8.0);
+    ctx.lineTo(120.0, 32.0);
+    ctx.closePath();
+    ctx.fill();
+    ctx.lineWidth = 2.0;
+    ctx.strokeStyle = "rgb(255, 255, 255)";
+    ctx.stroke();
+  }
+}
+window.onload = draw;
+```
 
+<!-- image 10-image001.png -->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h2 id="11-html-storage">11. HTML Storage</h2>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-
 
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h2 id="12-html-apis">12. HTML APIs</h2>
@@ -8543,7 +8662,6 @@ Place all attribute values in SVG inside quotes (even if they are numbers)
   <li>5. Server-Sent Events API - This API allows a web page to automatically get updates from a server.</li>
   <li>6. Canvas API - This API lets you draw graphics, on the fly, via JavaScript.</li>
 </ol>
-
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3>Third Party APIs</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -8742,7 +8860,6 @@ accuracy properties are always returned. The other properties are returned if av
 </ul>  
 <p>The example below shows the watchPosition() method. You need an accurate GPS device to test 
 this (like a smartphone):</p>
-
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h4>Example</h4>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -8787,7 +8904,6 @@ function error(error) {
 <h2 id="13-html-dragndrop">13. HTML Drag and Drop API</h2>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p>The HTML Drag and Drop API enables an element to be dragged and dropped.</p>
-
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h4>HTML Drag and Drop API Example</h4>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -8895,7 +9011,6 @@ function dropHandler(ev) {
   <li>The dragged data is the id of the dragged element ("img1")</li>
   <li>Append the dragged element into the drop element</li>
 </ul>
-
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h4>Example</h4>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -8945,7 +9060,6 @@ function dropHandler(ev) {
   <li><b>window.localStorage</b> - stores data with no expiration date (data is not lost when the browser tab is closed)</li>
   <li><b>window.sessionStorage</b> - stores data for one session (data is lost when the browser tab is closed)</li>
 </ul>
-
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h4>Example</h4>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -8966,7 +9080,6 @@ if (typeof(Storage) !== "undefined") {
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p>The localStorage object stores the data with no expiration date. The data will not be lost 
 when the browser is closed, and will be available the next day, week, or year.</p>
-
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h4>Example - Use <b>localStorage to set and retrieve name and value pairs:</h4>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -8981,13 +9094,11 @@ when the browser is closed, and will be available the next day, week, or year.</
 </ul>
 <p>The syntax for removing the "lastname" localStorage item is as follows:</p>
 <pre>localStorage.removeItem("lastname");</pre>
-
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3>Counting Clicks with localStorage</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p>The following example counts the number of times a user has clicked a button. In this 
 code the value string is converted to a number to be able to increase the counter:</p>
-
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h4>Example</h4>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -9032,17 +9143,15 @@ if (typeof(Storage) !== "undefined") {
 </script>
 ```
 
-
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3>The sessionStorage Object</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<p>The sessionStorage object is equal to the localStorage object, except that it stores the data for only one session! The data is deleted when the user closes the specific browser tab.</p>
-
+<p>The sessionStorage object is equal to the localStorage object, except that it stores the data 
+for only one session! The data is deleted when the user closes the specific browser tab.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3>Counting Clicks with sessionStorage</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p>The following example counts the number of times a user has clicked a button, in the current session:</p>
-
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h4>Example</h4>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -9068,21 +9177,23 @@ function clickCounter() {
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h2 id="14-html-webworker">14. HTML Web Workers API</h2>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<p>A web worker is an external JavaScript file that runs in the background, without affecting the performance of the page.</p>
-
+<p>A web worker is an external JavaScript file that runs in the background, without affecting the 
+performance of the page.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3>What is a Web Worker?</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p>When executing scripts in an HTML page, the page becomes unresponsive until the script is finished.</p>
 
-<p>A web worker is an external JavaScript file that runs in the background, independently of other scripts, without affecting the performance of the page. You can continue to do whatever you want: clicking, selecting things, etc., while the web worker runs in the background.</p>
+<p>A web worker is an external JavaScript file that runs in the background, independently of other 
+scripts, without affecting the performance of the page. You can continue to do whatever you want: 
+clicking, selecting things, etc., while the web worker runs in the background.</p>
 
-<p>Web workers are useful for heavy code that can't be run on the main thread, without causing long tasks that make the page unresponsive.</p>
+<p>Web workers are useful for heavy code that can't be run on the main thread, without causing long 
+tasks that make the page unresponsive.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h4>Web Workers API Example</h4>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p>The example below creates a simple web worker that count numbers in the background:</p>
-
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h4>Example</h4>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -9271,13 +9382,11 @@ function stopWorker() {
   <li>The document object</li>
   <li>The parent object</li>
 </ul>
-
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h2 id="html-serversent-events">xx.  HTML Server-Sent Events API</h2>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p>The Server-Sent Events (SSE) API enables pushing messages/updates from a server to 
 the web page via HTTP connection.</p>
-
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3>Server-Sent Events - One Way Messaging</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -9287,7 +9396,6 @@ the web page via HTTP connection.</p>
 the updates are pushed automatically.</p>
 
 <p>Examples: Facebook/Twitter updates, stock market updates, news feeds, sport results, etc.</p>
-
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3>Receive Server-Sent Event Notifications</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -9407,21 +9515,36 @@ Response.Flush()
   </table>
 </div>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--
+<div role="region" tabindex="0">
+  <table>
+    <caption>Caption</caption>
+    <thead>
+      <tr>
+        <th>tableHead</th>
+        <th>tableDesc</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td></td>
+        <td>.</td>
+      </tr>
+      <tr>
+        <td></td>
+        <td>.</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 
-
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 
-
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-
-
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-
-
-
-
 
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h2 id="15-html-access">15. HTML Accessibility</h2>
