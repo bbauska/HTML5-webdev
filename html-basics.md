@@ -2329,14 +2329,35 @@ This can, for instance, be used to draw graphs, combine photos, or create animat
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h4>2. Line Styles:</h4>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-
-|Property     |  Description                                                   |
-|------------|----------------------------------------------------------------|
-|<mark>lineCap</mark>    |Sets or returns the style of the end caps for a line.            |
-|<mark>lineJoin</mark>   |Sets or returns the type of corner created, when two lines meet. |
-|<mark>lineWidth</mark>  |Sets or returns the current line width.                          |
-|<mark>miterLimit</mark> |Sets or returns the maximum miter length.                        |
-
+<div role="region" tabindex="0">
+  <table>
+    <caption>Line styles</caption>
+    <thead>
+      <tr>
+        <th>tableHead</th>
+        <th>tableDesc</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><b><mark>lineCap</mark></b></td>
+        <td>Sets or returns the style of the end caps for a line.</td>
+      </tr>
+      <tr>
+        <td><b><mark>lineJoin</mark></b></td>
+        <td>Sets or returns the type of corner created, when two lines meet.</td>
+      </tr>
+      <tr>
+        <td><b><mark>lineWidth</mark></b></td>
+        <td>Sets or returns the current line width.</td>
+      </tr>
+      <tr>
+        <td><b><mark>miterLimit</mark></b></td>
+        <td>Sets or returns the maximum miter length..</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h4>3. Rectangles:</h4>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -2557,23 +2578,57 @@ to drawing paths, boxes, circles, text & adding images.</p>
   <b><a href="#toc">↥ back to top</a></b>
 </div>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<h2>Q. Explain Drag and Drop in HTML5?</h2>
+<h2>Q. Explain Drag 'n Drop in HTML5?</h2>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p>HTML5 drag-and-drop uses the <mark>DOM event model</mark> and <mark>drag events</mark> 
 inherited from <mark>mouse events</mark>. A typical drag operation begins when a user 
 selects a draggable element, drags the element to a droppable element, and then releases 
 the dragged element.</p>
-
-|Event            |Description                                                            |
-|---------------|-----------------------------------------------------------------------|
-|Drag            |It fires every time when the mouse is moved while the object is being dragged.|
-|Dragstart        |It is a very initial stage. It fires when the user starts dragging object.|
-|Dragenter        |It fires when the user moves his/her mouse cursur over the target element.|
-|Dragover        |This event is fired when the mouse moves over an element.|
-|Dragleave        |This event is fired when the mouse leaves an element.|
-|Drop            |Drop It fires at the end of the drag operation.|
-|Dragend        |It fires when user releases the mouse button to complete the drag operation.|
-
+<div role="region" tabindex="0">
+  <table>
+    <caption>Event Drag 'n Drop</caption>
+    <thead>
+      <tr>
+        <th>Event</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><b><mark>Drag</mark></b></td>
+        <td>It fires every time when the mouse is moved while the object is being dragged.</td>
+      </tr>
+      <tr>
+        <td><b><mark>Dragstart</mark></b></td>
+        <td>It is a very initial stage. It fires when the user starts dragging object.</td>
+      </tr>
+      <tr>
+        <td><b><mark>Dragstart</mark></b></td>
+        <td>It is a very initial stage. It fires when the user starts dragging object.</td>
+      </tr>
+      <tr>
+        <td><b><mark>Dragenter</mark></b></td>
+        <td>It fires when the user moves his/her mouse cursur over the target element.</td>
+      </tr>
+      <tr>
+        <td><b><mark>Dragover</mark></b></td>
+        <td>This event is fired when the mouse moves over an element.</td>
+      </tr>
+      <tr>
+        <td><b><mark>Dragleave</mark></b></td>
+        <td>This event is fired when the mouse leaves an element.</td>
+      </tr>
+      <tr>
+        <td><b><mark>Drop</mark></b></td>
+        <td>Drop It fires at the end of the drag operation.</td>
+      </tr>
+      <tr>
+        <td><b><mark>Dragend</mark></b></td>
+        <td>It fires when user releases the mouse button to complete the drag operation.</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h5>Example</h5>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -2976,16 +3031,47 @@ parent — is usually the browser window, represented by the <b>Window</b> objec
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h4>The Iframe Tag Attributes:</h4>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-
-|Attribute       | Description                |
-|----------------|----------------------------|
-|allow           |indicates what features the iframe is allowed to use (e.g. fullscreen, camera, autoplay).|
-|allowfullscreen |grants or denies permission for the iframe to appear in full-screen mode.|
-|height          |sets the height of the iframe (if not specified, the default height is 150 pixels).|
-|loading         |sets lazy loading or eager loading for the iframe.|
-|referrerpolicy  |sets what referrer information should be sent in the request for the iframe.|
-|src             |the address of the resource included in the iframe.|
-|width           |sets the width of the iframe (if not specified, the default width is 300 pixels.|
+<div role="region" tabindex="0">
+  <table>
+    <caption>iFrame Tag Attributes</caption>
+    <thead>
+      <tr>
+        <th>Attribute</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><b><mark>allow</mark></b></td>
+        <td>Indicates what features the iframe is allowed to use (e.g. fullscreen, camera, autoplay).</td>
+      </tr>
+      <tr>
+        <td><b><mark>allowfullscreen</mark></b></td>
+        <td>Grants or denies permission for the iframe to appear in full-screen mode.</td>
+      </tr>
+      <tr>
+        <td><b><mark>height</mark></b></td>
+        <td>Sets the height of the iframe (if not specified, the default height is 150 pixels).</td>
+      </tr>
+      <tr>
+        <td><b><mark>loading</mark></b></td>
+        <td>Sets lazy loading or eager loading for the iframe.</td>
+      </tr>
+      <tr>
+        <td><b><mark>referrerpolicy</mark></b></td>
+        <td>Sets what referrer information should be sent in the request for the iframe.</td>
+      </tr>
+      <tr>
+        <td><b><mark>src</mark></b></td>
+        <td>The address of the resource included in the iframe.</td>
+      </tr>
+      <tr>
+        <td><b><mark>width</mark></b></td>
+        <td>Sets the width of the iframe (if not specified, the default width is 300 pixels.</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
 
 <i>Note: Because each browsing context is a complete document environment, every 
 <mark><b>&lt;iframe&gt;</b></mark> in a page requires increased memory and other computing resources.</i>
@@ -3267,14 +3353,39 @@ to IE8 mode.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p>The meta element includes a content attribute that enables you to specify the mode 
 that content is rendered in for the webpage, as the following table shows.</p>
-
-|Value          |Rendering mode                                              |
-|---------------|------------------------------------------------------------|
-|IE=edge        |Display content in the highest mode available               |
-|IE=9           |Use the Windows Internet Explorer 9 standards rendering mode|
-|IE=8           |Use the Internet Explorer 8 standards rendering mode        |
-|IE=7           |Use the Windows Internet Explorer 7 standards rendering mode|
-|IE=5           |Use the Microsoft Internet Explorer 5 standards rendering mode|
+<div role="region" tabindex="0">
+  <table>
+    <caption>Caption</caption>
+    <thead>
+      <tr>
+        <th>Value</th>
+        <th>Rendering mode</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><b><mark>IE=edge</mark></b></td>
+        <td>Display content in the highest mode available.</td>
+      </tr>
+      <tr>
+        <td><b><mark>IE=9</mark></b></td>
+        <td>Use the Internet Explorer 9 standards rendering mode.</td>
+      </tr>
+      <tr>
+        <td><b><mark>IE=8</mark></b></td>
+        <td>Use the Windows Internet Explorer 8 standards rendering mode.</td>
+      </tr>
+      <tr>
+        <td><b><mark>IE=7</mark></b></td>
+        <td>Use the Windows Internet Explorer 7 standards rendering mode.</td>
+      </tr>
+      <tr>
+        <td><b><mark>IE=5</mark></b></td>
+        <td>Use the Microsoft Internet Explorer 5 standards rendering mode.</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
 
 <p><i>Note: It is recommended that Web developers restrict their use of Edge mode to test pages and 
 other non-production uses because of the possible unexpected results of rendering page content in 
@@ -9530,11 +9641,11 @@ Response.Flush()
     </thead>
     <tbody>
       <tr>
-        <td></td>
+        <td><b><mark></mark></b></td>
         <td>.</td>
       </tr>
       <tr>
-        <td></td>
+        <td><b><mark></mark></b></td>
         <td>.</td>
       </tr>
     </tbody>
