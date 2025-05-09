@@ -71,7 +71,7 @@ end developers.</p>
 </ul>
 
 <div align="right">
-    <b><a href="#toc">↥ back to top</a></b>
+  <b><a href="#toc">↥ back to top</a></b>
 </div>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h2>Q. What are the semantic tags available in html5?</h2>
@@ -126,7 +126,7 @@ work for browsers and search engines, as well as developers.</p>
 ```
 
 <div align="right">
-    <b><a href="#toc">↥ back to top</a></b>
+  <b><a href="#toc">↥ back to top</a></b>
 </div>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h2>Q. Why you would like to use semantic tag?</h2>
@@ -147,7 +147,7 @@ work for browsers and search engines, as well as developers.</p>
 </ul>
 
 <div align="right">
-    <b><a href="#toc">↥ back to top</a></b>
+  <b><a href="#toc">↥ back to top</a></b>
 </div>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h2>Q. What does a &lt;DOCTYPE html&gt; do?</h2>
@@ -165,7 +165,7 @@ HTML specifications your document respects.</p>
 If a user agent doesn't recognize a correct DOCTYPE, it will trigger the <mark>quirks mode</mark>.</p>
 
 <div align="right">
-    <b><a href="#toc">↥ back to top</a></b>
+  <b><a href="#toc">↥ back to top</a></b>
 </div>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h2>Q. What happens when DOCTYPE is not given?</h2>
@@ -175,7 +175,7 @@ older browsers which does not follow the <b>W3C specifications</b>. In quirks mo
 and id names are case insensitive. In standards mode they are case sensitive.</p>
 
 <div align="right">
-    <b><a href="#toc">↥ back to top</a></b>
+  <b><a href="#toc">↥ back to top</a></b>
 </div>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h2>Q. What are the new form elements in HTML5?</h2>
@@ -266,9 +266,8 @@ expected to be modified through JavaScript code.</p>
 ```
 
 <div align="right">
-    <b><a href="#toc">↥ back to top</a></b>
+  <b><a href="#toc">↥ back to top</a></b>
 </div>
-
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3 id="new-form-elements">List New form elements introduced in html5</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -378,7 +377,7 @@ expected to be modified through JavaScript code.</p>
 ```
 
 <div align="right">
-    <b><a href="#toc">↥ back to top</a></b>
+  <b><a href="#toc">↥ back to top</a></b>
 </div>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h5>Example to create a HTML form with below constraints</h5>
@@ -498,7 +497,7 @@ expected to be modified through JavaScript code.</p>
 ```
 
 <div align="right">
-    <b><a href="#toc">↥ back to top</a></b>
+  <b><a href="#toc">↥ back to top</a></b>
 </div>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h2>Q. What is the difference between <mark><b>span</b></mark> tag and <mark><b>div</b></mark> tag?</h2>
@@ -519,18 +518,17 @@ a &lt;div&gt; is a <b>block-level-element</b> and a &lt;span&gt; is an <b>inline
 ```
 
 <div align="right">
-    <b><a href="#toc">↥ back to top</a></b>
+  <b><a href="#toc">↥ back to top</a></b>
 </div>
-
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h2>Q. What are optional closing tags?</h2>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<p>&lt;p&gt;, &lt;li>, &lt;td>, &lt;tr>, &lt;th>, &lt;html>, &lt;body&gt;, etc. don&apos;t 
+<p>&lt;p&gt;, &lt;li&gt;, &lt;td&gt;, &lt;tr&gt;, &lt;th&gt;, &lt;html&gt;, &lt;body&gt;, etc. don&apos;t 
 have to provide an end tag. Whenever a browser hits a new tag it automatically end the 
 previous tag.</p>
 
 <div align="right">
-    <b><a href="#toc">↥ back to top</a></b>
+  <b><a href="#toc">↥ back to top</a></b>
 </div>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h2>Q. What is a self closing tag?</h2>
@@ -556,7 +554,7 @@ required to have specific closing tags are called “self closing” tags.</p>
 </ul>
 
 <div align="right">
-    <b><a href="#toc">↥ back to top</a></b>
+  <b><a href="#toc">↥ back to top</a></b>
 </div>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h2>Q. What are semantic and non-semantic elements?</h2>
@@ -593,7 +591,7 @@ upon the central topic of a document, or the central functionality of an applica
 have the hidden attribute specified.</i></p>
 
 <div align="right">
-    <b><a href="#toc">↥ back to top</a></b>
+  <b><a href="#toc">↥ back to top</a></b>
 </div>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h2>Q. What are the semantic meanings for &lt;section&gt;, &lt;article&gt;, &lt;aside&gt;, 
@@ -614,7 +612,7 @@ have the hidden attribute specified.</i></p>
 </ul>
 
 <div align="right">
-    <b><a href="#toc">↥ back to top</a></b>
+  <b><a href="#toc">↥ back to top</a></b>
 </div>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h2>Q. When should you use <mark><b>section</b></mark>, <mark><b>div</b></mark> or <mark><b>article</b></mark>?</h2>
@@ -635,7 +633,7 @@ have the hidden attribute specified.</i></p>
 </ul>
 
 <div align="right">
-    <b><a href="#toc">↥ back to top</a></b>
+  <b><a href="#toc">↥ back to top</a></b>
 </div>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h2>Q. Can a web page contain multiple &lt;header&gt; elements? What about &lt;footer&gt; elements?</h2>
@@ -657,7 +655,7 @@ documents, copyright data, and the like.
 ```
 
 <div align="right">
-    <b><a href="#toc">↥ back to top</a></b>
+  <b><a href="#toc">↥ back to top</a></b>
 </div>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h2>Q. What are the physical tags and logical tags in HTML?</h2>
@@ -807,7 +805,7 @@ used for styling purposes as well as to give special importance to text content.
 </div>
 
 <div align="right">
-    <b><a href="#toc">↥ back to top</a></b>
+  <b><a href="#toc">↥ back to top</a></b>
 </div>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h2>Q. What is Character Encoding?</h2>
@@ -827,7 +825,7 @@ This is specified in the tag:</p>
 </ul>
 
 <div align="right">
-    <b><a href="#toc">↥ back to top</a></b>
+  <b><a href="#toc">↥ back to top</a></b>
 </div>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h2>Q. What is the purpose of meta tags?</h2>
@@ -890,7 +888,7 @@ HTML document, such as author, expiry date, a list of keywords, document author 
 ```
 
 <div align="right">
-    <b><a href="#toc">↥ back to top</a></b>
+  <b><a href="#toc">↥ back to top</a></b>
 </div>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h2>Q. What does <mark><b>async</b></mark> and <mark><b>defer</b></mark> refer in script tag?</h2>
@@ -950,7 +948,7 @@ document has been fully parsed.</p>
 ```
 
 <div align="right">
-    <b><a href="#toc">↥ back to top</a></b>
+  <b><a href="#toc">↥ back to top</a></b>
 </div>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h2>Q. What is <mark><b>localStorage</b></mark> in html5?</h2>
@@ -971,7 +969,7 @@ localStorage.getItem("name"); // Kanti Ahluwalia
 ```
 
 <div align="right">
-    <b><a href="#toc">↥ back to top</a></b>
+  <b><a href="#toc">↥ back to top</a></b>
 </div>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h2>Q. What is sessionStorage in html5?</h2>
@@ -998,7 +996,7 @@ sessionStorage.clear();
 ```
 
 <div align="right">
-    <b><a href="#toc">↥ back to top</a></b>
+  <b><a href="#toc">↥ back to top</a></b>
 </div>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h2>Q. What is cookies in html5?</h2>
@@ -1058,7 +1056,7 @@ document.cookie = "username=; expires=Thu, 01 Jan 1970 00:00:00 UTC; path=/;";
 ```
 
 <div align="right">
-    <b><a href="#toc">↥ back to top</a></b>
+  <b><a href="#toc">↥ back to top</a></b>
 </div>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h2>Q. Describe the difference between a <b><mark>cookie</mark></b>, <b><mark>sessionStorage</mark></b> 
@@ -1066,7 +1064,7 @@ and <b><mark>localStorage</mark></b>?</h2>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <div role="region" tabindex="0">
   <table>
-    <caption>The EventSource Object</caption>
+    <caption>The difference between cookies, localStorage, and sessionStorage</caption>
     <thead>
       <tr>
         <th></th>
@@ -1123,7 +1121,7 @@ when comparing to alternatives such as server side storing in a database or simi
 of course will persist despite user actions).</i></p>
 
 <div align="right">
-    <b><a href="#toc">↥ back to top</a></b>
+  <b><a href="#toc">↥ back to top</a></b>
 </div>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h2>Q. Does localStorage throw error after reaches maximum limits?</h2>
@@ -1169,7 +1167,7 @@ Exception: QuotaExceededError: Failed to execute 'setItem' on 'Storage':
 ```
 
 <div align="right">
-    <b><a href="#toc">↥ back to top</a></b>
+  <b><a href="#toc">↥ back to top</a></b>
 </div>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h2>Q. Why to use IndexedDB instead of WebSQL in HTML5?</h2>
@@ -1231,7 +1229,7 @@ fully usable implementations.</p>
 </ul>
 
 <div align="right">
-    <b><a href="#toc">↥ back to top</a></b>
+  <b><a href="#toc">↥ back to top</a></b>
 </div>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h2>Q. Explain Application Cache in HTML5. OR What is a manifest file in HTML?</h2>
@@ -1267,7 +1265,7 @@ provide offline support for a page a warning message is now displayed in the con
 advising developers to use Service workers instead (bug 1204581).</i></p>
 
 <div align="right">
-    <b><a href="#toc">↥ back to top</a></b>
+  <b><a href="#toc">↥ back to top</a></b>
 </div>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h2>Q. What is the purpose of cache busting and how can you achieve it?</h2>
@@ -1296,7 +1294,7 @@ string to the end of the file.</p>
 <p>The browser considers it a different file but prevents the need to change the file name.</p>
 
 <div align="right">
-    <b><a href="#toc">↥ back to top</a></b>
+  <b><a href="#toc">↥ back to top</a></b>
 </div>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h2>Q. What ARIA and screenreaders are, and how to make a website accessible?</h2>
@@ -1307,7 +1305,7 @@ applications. You can make your sites more accessible by following ARIA standard
 as semantic HTML, alt attributes and using [role=button] in the expected ways.</p>
 
 <div align="right">
-    <b><a href="#toc">↥ back to top</a></b>
+  <b><a href="#toc">↥ back to top</a></b>
 </div>
 
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -1347,7 +1345,7 @@ article.dataset.parent; // "cars"
 Try this example on CodeSandbox</a></b></p>
 
 <div align="right">
-    <b><a href="#toc">↥ back to top</a></b>
+  <b><a href="#toc">↥ back to top</a></b>
 </div>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h2>Q. What is the purpose of the <mark>alt</mark> attribute on images?</h2>
@@ -1361,7 +1359,7 @@ decorative purposes, in which case it should be left empty.</p>
 ```
 
 <div align="right">
-    <b><a href="#toc">↥ back to top</a></b>
+  <b><a href="#toc">↥ back to top</a></b>
 </div>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h2>Q. What does </mark>enctype='multipart/form-data'</mark> mean?</h2>
@@ -1438,7 +1436,7 @@ The enctype attribute specifies how the form-data should be encoded when submitt
 </div>
 
 <div align="right">
-    <b><a href="#toc">↥ back to top</a></b>
+  <b><a href="#toc">↥ back to top</a></b>
 </div>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h2>Q. What is difference between Select and Datalist?</h2>
@@ -1476,7 +1474,7 @@ you&apos;ve given, but he can actually enter anything he wants in the input.</p>
 ```
 
 <div align="right">
-    <b><a href="#toc">↥ back to top</a></b>
+  <b><a href="#toc">↥ back to top</a></b>
 </div>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h2>Q. Explain some of the pros and cons for CSS animations versus JavaScript animations?</h2>
@@ -1497,7 +1495,7 @@ concept is:</p>
 * CSS animations being declarative are not programmable therefore limited in capability.
 
 <div align="right">
-    <b><a href="#toc">↥ back to top</a></b>
+  <b><a href="#toc">↥ back to top</a></b>
 </div>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h2>Q. What does CORS stand for and what issue does it address?</h2>
@@ -1508,7 +1506,7 @@ to work with the same idioms as same-domain requests. CORS gives web servers cro
 access controls, which enable secure cross-domain data transfers.</p>
 
 <div align="right">
-    <b><a href="#toc">↥ back to top</a></b>
+  <b><a href="#toc">↥ back to top</a></b>
 </div>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h2>Q. Can you describe the difference between progressive enhancement and graceful degradation?</h2>
@@ -1525,7 +1523,7 @@ access controls, which enable secure cross-domain data transfers.</p>
 </ul>
 
 <div align="right">
-    <b><a href="#toc">↥ back to top</a></b>
+  <b><a href="#toc">↥ back to top</a></b>
 </div>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h2>Q. What is the DOM? How does the DOM work?</h2>
@@ -1544,9 +1542,8 @@ document, or interacted with through event listeners.</p>
   offering an easy way to append dynamic HTML content to a node.</li>
 </ul>
 <div align="right">
-    <b><a href="#toc">↥ back to top</a></b>
+  <b><a href="#toc">↥ back to top</a></b>
 </div>
-
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h2>Q. How does the browser rendering engine work?</h2>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -1561,11 +1558,11 @@ document, or interacted with through event listeners.</p>
 </ul>
 
 <p align="center">
-    <img src="assets/images/layers.png" alt="Browser Rendering Engine" />
+  <img src="assets/images/layers.png" alt="Browser Rendering Engine" />
 </p>
 
 <div align="right">
-    <b><a href="#toc">↥ back to top</a></b>
+  <b><a href="#toc">↥ back to top</a></b>
 </div>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h2>Q. What is the difference between standards mode and quirks mode?</h2>
@@ -1591,7 +1588,7 @@ to decide whether to handle it in quirks mode or standards mode.</p>
 ```
 
 <div align="right">
-    <b><a href="#toc">↥ back to top</a></b>
+  <b><a href="#toc">↥ back to top</a></b>
 </div>
 
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -1607,7 +1604,7 @@ to decide whether to handle it in quirks mode or standards mode.</p>
 </ul>
 
 <div align="right">
-    <b><a href="#toc">↥ back to top</a></b>
+  <b><a href="#toc">↥ back to top</a></b>
 </div>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h2>Q. What are the Benefits of Server Side Rendering (SSR) Over Client Side Rendering (CSR)?</h2>
@@ -1630,7 +1627,7 @@ to decide whether to handle it in quirks mode or standards mode.</p>
 </ul>
 
 <div align="right">
-    <b><a href="#toc">↥ back to top</a></b>
+  <b><a href="#toc">↥ back to top</a></b>
 </div>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h2>Q. Name 3 ways to decrease page load?</h2>
@@ -1642,7 +1639,7 @@ to decide whether to handle it in quirks mode or standards mode.</p>
   <li>Keep resources on a CDN</li>
 </ol>
 <div align="right">
-    <b><a href="#toc">↥ back to top</a></b>
+  <b><a href="#toc">↥ back to top</a></b>
 </div>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h2>Q. Ways to improve website performance</h2>
@@ -1765,7 +1762,7 @@ to decide whether to handle it in quirks mode or standards mode.</p>
 </ul>
 
 <div align="right">
-    <b><a href="#toc">↥ back to top</a></b>
+  <b><a href="#toc">↥ back to top</a></b>
 </div>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h2>Q. Comparison of browsers engines like Chrome, Firefox, Internet explorer, Safari?</h2>
@@ -1797,7 +1794,7 @@ to decide whether to handle it in quirks mode or standards mode.</p>
   </li>
 </ul>
 <div align="right">
-    <b><a href="#toc">↥ back to top</a></b>
+  <b><a href="#toc">↥ back to top</a></b>
 </div>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h2>Q. What does the lang attribute in html do?</h2>
@@ -1808,7 +1805,7 @@ to decide whether to handle it in quirks mode or standards mode.</p>
 </ul>
 
 <div align="right">
-    <b><a href="#toc">↥ back to top</a></b>
+  <b><a href="#toc">↥ back to top</a></b>
 </div>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h2>Q. What is desktop first and mobile first design approach?</h2>
@@ -1827,7 +1824,7 @@ to decide whether to handle it in quirks mode or standards mode.</p>
 in mobile first approach media queries will be written with respect to min-width.</p>
 
 <div align="right">
-    <b><a href="#toc">↥ back to top</a></b>
+  <b><a href="#toc">↥ back to top</a></b>
 </div>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h2>Q. What are <mark>data-</mark> attributes good for?</h2>
@@ -1837,7 +1834,7 @@ store more information/data about the element when no suitable HTML5 element or
 attribute exists.</p>
 
 <div align="right">
-    <b><a href="#toc">↥ back to top</a></b>
+  <b><a href="#toc">↥ back to top</a></b>
 </div>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h2>Q. Explain the difference between layout, painting and compositing?</h2>
@@ -1881,7 +1878,7 @@ This is especially important for elements that overlap another, since a mistake
 could result in one element appearing over the top of another incorrectly.</p>
 
 <div align="right">
-    <b><a href="#toc">↥ back to top</a></b>
+  <b><a href="#toc">↥ back to top</a></b>
 </div>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h2>Q. Explain about HTML Layout Engines used by browsers?</h2>
@@ -1927,7 +1924,7 @@ could result in one element appearing over the top of another incorrectly.</p>
 </div>
 
 <div align="right">
-    <b><a href="#toc">↥ back to top</a></b>
+  <b><a href="#toc">↥ back to top</a></b>
 </div>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h2>Q. How to make page responsive?</h2>
@@ -1967,7 +1964,7 @@ browser window sizes.</p>
 ```
 
 <div align="right">
-    <b><a href="#toc">↥ back to top</a></b>
+  <b><a href="#toc">↥ back to top</a></b>
 </div>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h4>4. Responsive Text Size:</h4>
@@ -1994,7 +1991,7 @@ the text size will follow the size of the browser window.</p>
 ```
 
 <div align="right">
-    <b><a href="#toc">↥ back to top</a></b>
+  <b><a href="#toc">↥ back to top</a></b>
 </div>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h2>Q. Does the following trigger http request at the time of page load?</h2>
@@ -2011,7 +2008,7 @@ the text size will follow the size of the browser window.</p>
 <p>Yes</p>
 
 <div align="right">
-    <b><a href="#toc">↥ back to top</a></b>
+  <b><a href="#toc">↥ back to top</a></b>
 </div>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h2>Q. List the API available in HTML5?</h2>
@@ -2048,7 +2045,7 @@ performance.measure("durationFoo", "startFoo", "endFoo");
 ```
 
 <div align="right">
-    <b><a href="#toc">↥ back to top</a></b>
+  <b><a href="#toc">↥ back to top</a></b>
 </div>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h4>3. Network Information API</h4>
@@ -2060,7 +2057,7 @@ is a Boolean whose value is true if the user&apos;s connection is subject to lim
 and bandwidth usage, and false otherwise.</p>
 <div role="region" tabindex="0">
   <table>
-    <caption>Attribute Values</caption>
+    <caption>Attribute Values: Network Information API</caption>
     <thead>
       <tr>
         <th>S1.No</th>
@@ -2116,7 +2113,7 @@ navigator.vibrate(2000);
 ```
 
 <div align="right">
-    <b><a href="#toc">↥ back to top</a></b>
+  <b><a href="#toc">↥ back to top</a></b>
 </div>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h4>5. Battery Status API</h4>
@@ -2173,7 +2170,7 @@ function toggleFullScreen() {
 ```
 
 <div align="right">
-    <b><a href="#toc">↥ back to top</a></b>
+  <b><a href="#toc">↥ back to top</a></b>
 </div>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h2>Q. How geolocation api works in html5?</h2>
@@ -2238,7 +2235,7 @@ function geoFindMe() {
 ```
 
 <div align="right">
-    <b><a href="#toc">↥ back to top</a></b>
+  <b><a href="#toc">↥ back to top</a></b>
 </div>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h2>Q. What is the use of WebSocket API?</h2>
@@ -2252,7 +2249,7 @@ without having to poll the server for a reply.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <div role="region" tabindex="0">
   <table>
-    <caption>Attribute Values</caption>
+    <caption>Attribute Values: Interfaces</caption>
     <thead>
       <tr>
         <th>S1.No</th>
@@ -2454,7 +2451,7 @@ This can, for instance, be used to draw graphs, combine photos, or create animat
 ```
 
 <div align="right">
-    <b><a href="#toc">↥ back to top</a></b>
+  <b><a href="#toc">↥ back to top</a></b>
 </div>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h2>Q. What is difference between SVG and Canvas?</h2>
@@ -2547,7 +2544,7 @@ to drawing paths, boxes, circles, text & adding images.</p>
 |Better scalability. Can be printed with high quality at any resolution. Pixelation does not occur    |Poor scalability. Not suitable for printing on higher resolution. Pixelation may occur |
 
 <div align="right">
-    <b><a href="#toc">↥ back to top</a></b>
+  <b><a href="#toc">↥ back to top</a></b>
 </div>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h2>Q. Explain Drag and Drop in HTML5?</h2>
@@ -2824,7 +2821,7 @@ block content load as the HTML sent by the server already has the content.</p>
 </p>
 
 <div align="right">
-    <b><a href="#toc">↥ back to top</a></b>
+  <b><a href="#toc">↥ back to top</a></b>
 </div>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h2 id="7-html-iframe">HTML iFrame</h2>
@@ -3230,7 +3227,7 @@ that content is rendered in for the webpage, as the following table shows.</p>
 |<b>&lt;wbr&gt;</b>        |             |
 
 <div align="right">
-    <b><a href="#toc">↥ back to top</a></b>
+  <b><a href="#toc">↥ back to top</a></b>
 </div>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h2>Q. What is an HTML preprocessor? Have you used different HTML templating languages before?</h2>
@@ -3304,7 +3301,7 @@ cater for languages such as Arabic, Hebrew, Pashto, Persian, Urdu, and Sindhi.</
 </div>
 
 <div align="right">
-    <b><a href="#toc">↥ back to top</a></b>
+  <b><a href="#toc">↥ back to top</a></b>
 </div>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h2>Q. When is it appropriate to use the small element?</h2>
@@ -3704,7 +3701,7 @@ and practical for most web pages/applications.</p>
   <li><b>aria-selected (state)</b>: Indicates the current “selected” state of various widgets.</li>
 </ul>
 <div align="right">
-    <b><a href="#toc">↥ back to top</a></b>
+  <b><a href="#toc">↥ back to top</a></b>
 </div>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h2>Q. Create a traffic signal light in html?</h2>
@@ -3788,7 +3785,7 @@ and practical for most web pages/applications.</p>
 ```
 
 <div align="right">
-    <b><a href="#toc">↥ back to top</a></b>
+  <b><a href="#toc">↥ back to top</a></b>
 </div>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h2 id="3-html-events">HTML Events</h2>
@@ -3864,10 +3861,9 @@ event actions.</p>
 </div>
 
 <div align="right">
-    <b><a href="#toc">↥ back to top</a></b>
+  <b><a href="#toc">↥ back to top</a></b>
 </div>
 
-<p>cont'd</p>
 <div role="region" tabindex="0">
   <table>
     <caption>Form Events</caption>
@@ -4356,7 +4352,7 @@ Elements     | Descriptions |
 <h3>Commonly Used Input Types in HTML Forms</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <div align="right">
-    <b><a href="#toc">↥ back to top</a></b>
+  <b><a href="#toc">↥ back to top</a></b>
 </div>
 
 <p>In HTML forms, various input types are used to collect different types of 
@@ -5905,7 +5901,7 @@ scheme://prefix.domain:port/path/filename
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <pre>https://www.geeksforgeeks.org/</pre>
 <div align="right">
-    <b><a href="#toc">↥ back to top</a></b>
+  <b><a href="#toc">↥ back to top</a></b>
 </div>
 <ul>
   <li><b>Scheme:</b> It specifies the protocol used for communication, such as 
@@ -5978,7 +5974,7 @@ and attribute in SVG files can be animated.</p>
     </tbody>
   </table>
 <div align="right">
-    <b><a href="#toc">↥ back to top</a></b>
+  <b><a href="#toc">↥ back to top</a></b>
 </div>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h4>Example 1: Drawing a Line</h4>
@@ -6022,7 +6018,7 @@ a blue line drawn diagonally within an SVG element.</p>
 </p>
 <!-- 09-image001.png - SVG Line Drawing -->
 <div align="right">
-    <b><a href="#toc">↥ back to top</a></b>
+  <b><a href="#toc">↥ back to top</a></b>
 </div>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h4>Example 2: Drawing a Circle</h4>
@@ -6066,7 +6062,7 @@ black border. The circle has a center at (80, 80) and a radius of 50.</p>
 </p>
 <!-- 09-image002.png - SVG Circle Drawing -->
 <div align="right">
-    <b><a href="#toc">↥ back to top</a></b>
+  <b><a href="#toc">↥ back to top</a></b>
 </div>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h4>Example 3: Drawing a Rectangle</h4>
@@ -6109,7 +6105,7 @@ border. The rectangle has a width of 400 and a height of 100.</p>
 </p>
 <!-- 09-image003.png - SVG Rectangle Drawing -->
 <div align="right">
-    <b><a href="#toc">↥ back to top</a></b>
+  <b><a href="#toc">↥ back to top</a></b>
 </div>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h4>Example 4: Drawing a Rounded Rectangle</h4>
@@ -8438,7 +8434,7 @@ Place all attribute values in SVG inside quotes (even if they are numbers)
 <p>The &lt;circle&gt; element has three basic attributes to position and set the size of the circle:</p>
 <div role="region" tabindex="0">
   <table>
-    <caption>SVG Rectangle - &lt;rect&gt;</caption>
+    <caption>SVG Circle - &lt;circle&gt;</caption>
     <thead>
       <tr>
         <th>Attribute</th>
@@ -9443,6 +9439,7 @@ Response.Flush()
   <h6>Last editted: 5/2/2025 +11am<br/>
   <h6>Last editted: 5/4/2025 +12pm</h6>
   <h6>Last editted: 5/6/2025 +12pm</h6>
+  <h6>Last editted: 5/9/2025 +9am</h6>
   <p>The End...</p>
   
 <div align="right">
