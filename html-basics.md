@@ -1061,8 +1061,8 @@ document.cookie = "username=; expires=Thu, 01 Jan 1970 00:00:00 UTC; path=/;";
     <b><a href="#toc">↥ back to top</a></b>
 </div>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<h2>Q. Describe the difference between a <mark>cookie</mark>, <mark>sessionStorage</mark> 
-and <mark>localStorage</mark>?</h2>
+<h2>Q. Describe the difference between a <b><mark>cookie</mark></b>, <b><mark>sessionStorage</mark></b> 
+and <b><mark>localStorage</mark></b>?</h2>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <div role="region" tabindex="0">
   <table>
@@ -1311,10 +1311,10 @@ as semantic HTML, alt attributes and using [role=button] in the expected ways.</
 </div>
 
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<h2>Q. How to use data- attribute in html5?</h2>
+<h2>Q. How to use <b>data-</b> attribute in html5?</h2>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p>Any attribute on any element whose attribute name starts with <mark><b>data-</b></mark> 
-is a data attribute. The data-* attributes gives us the ability to embed custom data attributes 
+is a data attribute. The <b>data-*</b> attributes gives us the ability to embed custom data attributes 
 on all HTML elements. The stored (custom) data can then be used in the page&apos;s 
 JavaScript to create a more engaging user experience.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -1352,8 +1352,8 @@ Try this example on CodeSandbox</a></b></p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h2>Q. What is the purpose of the <mark>alt</mark> attribute on images?</h2>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<p>The <mark>alt</mark> attribute provides alternative information for an image if a user cannot view it.</p>
-<p>The <mark>alt</mark> attribute should be used to describe any images except those which only serve a 
+<p>The <b><mark>alt</mark></b> attribute provides alternative information for an image if a user cannot view it.</p>
+<p>The <b><mark>alt</mark></b> attribute should be used to describe any images except those which only serve a 
 decorative purposes, in which case it should be left empty.</p>
 
 ```html
@@ -1420,7 +1420,8 @@ The enctype attribute specifies how the form-data should be encoded when submitt
       <tr>
         <td>01.</td>
         <td>application/x-www-form-urlencoded</td>
-        <td>Default. All characters are encoded before sent (spaces are converted to "+" symbols, and special characters are converted to ASCII HEX values).</td>
+        <td>Default. All characters are encoded before sent (spaces are converted to "+" symbols, and 
+		  special characters are converted to ASCII HEX values).</td>
       </tr>
       <tr>
         <td>02.</td>
@@ -1442,11 +1443,9 @@ The enctype attribute specifies how the form-data should be encoded when submitt
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h2>Q. What is difference between Select and Datalist?</h2>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-
-For the select element, the user is required to select one of the options you&apos;ve 
+<p>For the select element, the user is required to select one of the options you&apos;ve 
 given. For the datalist element, it is suggested that the user select one of the options 
-you&apos;ve given, but he can actually enter anything he wants in the input.
-
+you&apos;ve given, but he can actually enter anything he wants in the input.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h4>1. Select:</h4>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -1485,13 +1484,15 @@ you&apos;ve given, but he can actually enter anything he wants in the input.
 <p>Regarding optimization and responsiveness the debate bounces back and forth but, the 
 concept is:</p>
 
-* CSS animations allows the browser to choose where the animation processing is done, CPU or the GPU. (Central or Graphics Processing Unit)
+* CSS animations allows the browser to choose where the animation processing is done, CPU or the GPU. 
+  (Central or Graphics Processing Unit)
 
 * That said, adding many layers to a document will eventually have a performance hit.
 
 * JS animation means more code for the user to download and for the developer to maintain.
 
-* Applying multiple animation types on an element is harder with CSS since all transforming power is in one property transform
+* Applying multiple animation types on an element is harder with CSS since all transforming power is 
+  in one property transform
 
 * CSS animations being declarative are not programmable therefore limited in capability.
 
@@ -1652,14 +1653,19 @@ to decide whether to handle it in quirks mode or standards mode.</p>
       <li>Sites are mainly slow because of too many (or too large) HTTP requests. We can eliminate unnecessary request;
         <ul>
           <li>combined files: js to a file, css to a file</li>
-          <li>CSS sprites: CSS Sprites are the preferred method for reducing the number of image requests. Combine your background images into a single image and use the CSS background-image and background-position properties to display the desired image segment.</li>
+          <li>CSS sprites: CSS Sprites are the preferred method for reducing the number of image requests. 
+		    Combine your background images into a single image and use the CSS background-image and 
+			background-position properties to display the desired image segment.</li>
         </ul>
       </li>
     </ul>
   </li>
   <li>Use a Content Delivery Network CDN
     <ul>
-      <li>A CDN is essentially many optimized servers around the world that deliver web content to users based on their geographic location. This means big performance improvements for site users. Because, say, if a person accessing your site in India, they will be retrieving web content from a server nearby</li>
+      <li>A CDN is essentially many optimized servers around the world that deliver web content to users 
+	    based on their geographic location. This means big performance improvements for site users. 
+		Because, say, if a person accessing your site in India, they will be retrieving web content 
+		from a server nearby</li>
     </ul>
   </li>
   <li>Optimize Images:
@@ -1668,24 +1674,38 @@ to decide whether to handle it in quirks mode or standards mode.</p>
         <ul>
           <li>Changing the resolution: reducing the “quality” of the image (and thereby the file size)</li>
           <li>Compressing the picture: increasing the efficiency of image data storage</li>
-          <li>Cropping the picture: when cropping, you are cutting out unneeded areas and thus making the image smaller in size</li>
+          <li>Cropping the picture: when cropping, you are cutting out unneeded areas and thus making 
+		    the image smaller in size</li>
         </ul>
       </li>
     </ul>
   </li>
   <li>Put Scripts at the Bottom:
     <ul>
-      <li>Javascript files can load after the rest of your page. The simplest solution is to place your external Javascript files at the bottom of your page, just before the close of your body tag. Now more of your site can load before your scripts. Another method that allows even more control is to use the defer or async attributes when placing external .js files on your site.
+      <li>Javascript files can load after the rest of your page. The simplest solution is to place 
+	    your external Javascript files at the bottom of your page, just before the close of your 
+		body tag. Now more of your site can load before your scripts. Another method that allows 
+		even more control is to use the defer or async attributes when placing external .js files 
+		on your site.
         <ul>
-          <li>Async tags load the scripts while the rest of the page loads, but this means scripts can be loaded out of order. Basically, lighter files load first. This might be fine for some scripts, but can be disastrous for others.</li>
-          <li>The defer attribute loads your scripts after your content has finished loading. It also runs the scripts in order. Just make sure your scripts run so late without breaking your site.<li>
+          <li>Async tags load the scripts while the rest of the page loads, but this means scripts 
+		    can be loaded out of order. Basically, lighter files load first. This might be fine for 
+			some scripts, but can be disastrous for others.</li>
+          <li>The defer attribute loads your scripts after your content has finished loading. It also 
+		    runs the scripts in order. Just make sure your scripts run so late without breaking your 
+			site.</li>
         </ul>
       </li>
     </ul>
   </li>
   <li>Add an Expires or a Cache-Control Header
     <ul>
-      <li>Web page designs are getting richer and richer, which means more scripts, stylesheets, images, and Flash in the page. A first-time visitor to your page may have to make several HTTP requests, but by using the Expires header you make those components cacheable. This avoids unnecessary HTTP requests on subsequent page views. Expires headers are most often used with images, but they should be used on all components including scripts, stylesheets, and Flash components.</li>
+      <li>Web page designs are getting richer and richer, which means more scripts, stylesheets, 
+	    images, and Flash in the page. A first-time visitor to your page may have to make several 
+		HTTP requests, but by using the Expires header you make those components cacheable. This 
+		avoids unnecessary HTTP requests on subsequent page views. Expires headers are most often 
+		used with images, but they should be used on all components including scripts, stylesheets, 
+		and Flash components.</li>
     </ul>
   </li>
   <li>Gzip Components
@@ -2254,7 +2274,7 @@ without having to poll the server for a reply.</p>
       <tr>
         <td>03.</td>
         <td>MessageEvent</td>
-        <td>MessageEvent|The event sent by the WebSocket object when a message is received from the server.</td>
+        <td>The event sent by the WebSocket object when a message is received from the server.</td>
       </tr>
     </tbody>
   </table>
@@ -2284,9 +2304,8 @@ socket.addEventListener('message', function(event) {
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h2>Q. Explain about HTML Canvas?</h2>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-
-<b>canvas</b> is an HTML element which can be used to draw graphics via JavaScript. This can, for instance, be used to draw graphs, combine photos, or create animations.
-
+<p><b>canvas</b> is an HTML element which can be used to draw graphics via JavaScript. 
+This can, for instance, be used to draw graphs, combine photos, or create animations.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h4>1. Colors, Styles, and Shadows:</h4>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -4155,32 +4174,135 @@ but is most used in form elements):</p>
 elements, but is most common in media elements, like &lt;audio&gt;, &lt;embed&gt;, &lt;img&gt;, 
 &lt;object&gt;, and &lt;video&gt;).</p>
 
-|Attribute       |Value    |Description |
-|----------------|--------|--------------------------------------------------------------------------|
-| onabort    | script |    Script to be run on abort |
-| oncanplay    | script |    Script to be run when a file is ready to start playing (when it has buffered enough to begin) |
-| oncanplaythrough |  script |    Script to be run when a file can be played all the way to the end without pausing for buffering |
-| oncuechange    | script |    Script to be run when the cue changes in a <track> element |
-| ondurationchange |    script |    Script to be run when the length of the media changes |
-| onemptied   |  script  |   Script to be run when something bad happens and the file is suddenly unavailable (like unexpectedly disconnects) |
-| onended    | script  |   Script to be run when the media has reach the end (a useful event for messages like "thanks for listening") |
-| onerror    | script  |   Script to be run when an error occurs when the file is being loaded |
-| onloadeddata  |   script |    Script to be run when media data is loaded |
-| onloadedmetadata |    script |    Script to be run when meta data (like dimensions and duration) are loaded |
-| onloadstart    | script  |   Script to be run just as the file begins to load before anything is actually loaded |
-| onpause  |   script |    Script to be run when the media is paused either by the user or programmatically |
-| onplay   |  script  |   Script to be run when the media is ready to start playing |
-| onplaying  |   script |    Script to be run when the media actually has started playing |
-| onprogress   |  script  |   Script to be run when the browser is in the process of getting the media data |
-| onratechange   |  script |    Script to be run each time the playback rate changes (like when a user switches to a slow motion or fast forward mode) |
-| onseeked   |  script  |   Script to be run when the seeking attribute is set to false indicating that seeking has ended |
-| onseeking   |  script   |  Script to be run when the seeking attribute is set to true indicating that seeking is active |
-| onstalled  |   script |    Script to be run when the browser is unable to fetch the media data for whatever reason |
-| onsuspend |    script   |  Script to be run when fetching the media data is stopped before it is completely loaded for whatever reason |
-| ontimeupdate |    script  |   Script to be run when the playing position has changed (like when the user fast forwards to a different point in the media) |
-| onvolumechange |    script |    Script to be run each time the volume is changed which (includes setting the volume to "mute") |
-| onwaiting   |  script  |   Script to be run when the media has paused but is expected to resume (like when the media pauses to buffer more data) |
-
+<div role="region" tabindex="0">
+  <table>
+    <caption>Media Events</caption>
+    <thead>
+      <tr>
+        <th>Attribute</th>
+        <th>Value</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>onabort</td>
+        <td>script</td>
+        <td>Script to be run on abort.</td>
+      </tr>
+      <tr>
+        <td>oncanplay</td>
+        <td>script</td>
+        <td>Script to be run when a file is ready to start playing (when it has buffered enough to begin).</td>
+      </tr>
+      <tr>
+        <td>oncaplaythrough</td>
+        <td>script</td>
+        <td>Script to be run when a file can be played all the way to the end without pausing for buffering.</td>
+      </tr>
+      <tr>
+        <td>oncuechange</td>
+        <td>script</td>
+        <td>Script to be run when the cue changes in a &lt;track&gt; element.</td>
+      </tr>
+      <tr>
+        <td>ondurationchange</td>
+        <td>script</td>
+        <td>Script to be run when the length of the media changes.</td>
+      </tr>
+      <tr>
+        <td>onemptied</td>
+        <td>script</td>
+        <td>Script to be run when something bad happens and the file is suddenly unavailable (like unexpectedly disconnects).</td>
+      </tr>
+      <tr>
+        <td>onended</td>
+        <td>script</td>
+        <td>Script to be run when the media has reach the end (a useful event for messages like "thanks for listening").</td>
+      </tr>
+      <tr>
+        <td>onerror</td>
+        <td>script</td>
+        <td>Script to be run when an error occurs when the file is being loaded.</td>
+      </tr>
+      <tr>
+        <td>onloadeddata</td>
+        <td>script</td>
+        <td>Script to be run when media data is loaded.</td>
+      </tr>
+      <tr>
+        <td>onloadedmetadata</td>
+        <td>script</td>
+        <td>Script to be run when meta data (like dimensions and duration) are loaded.</td>
+      </tr>
+      <tr>
+        <td>onloadstart</td>
+        <td>script</td>
+        <td>Script to be run just as the file begins to load before anything is actually loaded.</td>
+      </tr>
+      <tr>
+        <td>onpause</td>
+        <td>script</td>
+        <td>Script to be run when the media is paused either by the user or programmatically.</td>
+      </tr>
+      <tr>
+        <td>onplay</td>
+        <td>script</td>
+        <td>Script to be run when the media is ready to start playing.</td>
+      </tr>
+      <tr>
+        <td>onplaying</td>
+        <td>script</td>
+        <td>Script to be run when the media actually has started playing.</td>
+      </tr>
+      <tr>
+        <td>onprogress</td>
+        <td>script</td>
+        <td>Script to be run when the browser is in the process of getting the media data.</td>
+      </tr>
+      <tr>
+        <td>onratechange</td>
+        <td>script</td>
+        <td>Script to be run each time the playback rate changes (like when a user switches to a slow motion or fast forward mode).</td>
+      </tr>
+      <tr>
+        <td>onseeked</td>
+        <td>script</td>
+        <td>Script to be run when the seeking attribute is set to false indicating that seeking has ended.</td>
+      </tr>
+      <tr>
+        <td>onseeking</td>
+        <td>script</td>
+        <td>Script to be run when the seeking attribute is set to true indicating that seeking is active.</td>
+      </tr>
+      <tr>
+        <td>onstalled</td>
+        <td>script</td>
+        <td>Script to be run when the browser is unable to fetch the media data for whatever reason.</td>
+      </tr>
+      <tr>
+        <td>onsuspend</td>
+        <td>script</td>
+        <td>Script to be run when fetching the media data is stopped before it is completely loaded for whatever reason.</td>
+      </tr>
+      <tr>
+        <td>ontimeupdate</td>
+        <td>script</td>
+        <td>Script to be run when the playing position has changed (like when the user fast forwards to a different point in the media).</td>
+      </tr>
+      <tr>
+        <td>onvolumechange</td>
+        <td>script</td>
+        <td>Script to be run each time the volume is changed which (includes setting the volume to "mute").</td>
+      </tr>
+      <tr>
+        <td>onwaiting</td>
+        <td>script</td>
+        <td>Script to be run when the media has paused but is expected to resume (like when the media pauses to buffer more data).</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h4 id="misc-events">Misc Events</h4>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
