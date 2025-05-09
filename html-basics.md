@@ -3202,12 +3202,31 @@ cater for languages such as Arabic, Hebrew, Pashto, Persian, Urdu, and Sindhi.</
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h4>Attribute Values:</h4>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-
-|Value          |Description                |
-|---------------|---------------------------|
-|ltr            |Default. Left-to-right text direction|
-|rtl            |Right-to-left text direction|
-|auto           |Let the browser figure out the text direction, based on the content|
+<div role="region" tabindex="0">
+  <table>
+    <caption>Attribute Values</caption>
+    <thead>
+      <tr>
+        <th>Value</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>ltr</td>
+        <td>Default. Left-to-right text direction.</td>
+      </tr>
+      <tr>
+        <td>rtl</td>
+        <td>Right-to-left text direction.</td>
+      </tr>
+      <tr>
+        <td>auto</td>
+        <td>Let the browser figure out the text direction, based on the content.</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
 
 <div align="right">
     <b><a href="#toc">↥ back to top</a></b>
@@ -4110,23 +4129,24 @@ elements, but is most common in media elements, like &lt;audio&gt;, &lt;embed&gt
 <h4 id="misc-events">Misc Events</h4>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <div role="region" tabindex="0">
-<table>
-  <caption>Miscellaneous Events</caption>
-  <thead>
-    <tr>
-      <th>Attribute</th>
-      <th>Value</th>
-      <th>Description</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td>ontoggle</td>
-      <td>script</td>
-      <td>Fires when the user opens or closes the &lt;details&gt; element.</td>
-    </tr>
-  </tbody>
-</table>
+  <table>
+    <caption>Miscellaneous Events</caption>
+    <thead>
+      <tr>
+        <th>Attribute</th>
+        <th>Value</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>ontoggle</td>
+        <td>script</td>
+        <td>Fires when the user opens or closes the &lt;details&gt; element.</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h2 id="4-html-forms">04. Form Elements</h2>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
