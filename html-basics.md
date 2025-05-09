@@ -2038,16 +2038,50 @@ It exposes two read-only properties: <mark>bandwidth</mark> and <mark>metered</m
 former is a number representing an estimation of the current bandwidth, while the latter 
 is a Boolean whose value is true if the user&apos;s connection is subject to limitation 
 and bandwidth usage, and false otherwise.</p>
-
-|Sl.No| API                            | Description
-|-----|--------------------------------|--------------------------------------------------------------------|
-| 01. |navigator.connection.type       |Network Type                               |
-| 02. |navigator.connection.downlink   |Effective bandwidth estimate ( downlink )                               |
-| 03. |navigator.connection.rtt        |Effective round-trip time estimate ( rtt )                                |
-| 04. |navigator.connection.downlinkMax|Upper bound on the downlink speed of the first network hop ( downlinkMax )|
-| 05. |navigator.connection.effectiveType|Effective connection type  |
-| 06. |navigator.connection.saveData   |True if the user has requested a reduced data usage mode from the user agent ( saveData )|
-
+<div role="region" tabindex="0">
+  <table>
+    <caption>Attribute Values</caption>
+    <thead>
+      <tr>
+        <th>S1.No</th>
+        <th>API</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>01.</td>
+        <td>navigator.connection.type</td>
+        <td>Network Type</td>
+      </tr>
+      <tr>
+        <td>02.</td>
+        <td>navigator.connection.downlink</td>
+        <td>Effective bandwidth estimate ( downlink )</td>
+      </tr>
+      <tr>
+        <td>03.</td>
+        <td>navigator.connection.rtt</td>
+        <td>Effective round-trip time estimate ( rtt )</td>
+      </tr>
+      <tr>
+        <td>04.</td>
+        <td>navigator.connection.downlinkMax</td>
+        <td>Upper bound on the downlink speed of the first network hop ( downlinkMax )</td>
+      </tr>
+      <tr>
+        <td>05.</td>
+        <td>navigator.connection.effectiveType</td>
+        <td>Effective connection type</td>
+      </tr>
+      <tr>
+        <td>06.</td>
+        <td>navigator.connection.saveData</td>
+        <td>True if the user has requested a reduced data usage mode from the user agent ( saveData )</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h4>4. Vibration API</h4>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -2196,13 +2230,35 @@ without having to poll the server for a reply.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h5>Interfaces:</h5>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-
-|Sl.No|   API      | Description    |
-|-----|------------|----------------|
-| 01. |WebSocket   |The primary interface for connecting to a WebSocket server and then sending and receiving data on the connection.|   
-| 02. |CloseEvent  |The event sent by the WebSocket object when the connection closes.   |
-| 03. |MessageEvent|The event sent by the WebSocket object when a message is received from the server.|
-
+<div role="region" tabindex="0">
+  <table>
+    <caption>Attribute Values</caption>
+    <thead>
+      <tr>
+        <th>S1.No</th>
+        <th>API</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>01.</td>
+        <td>WebSocket</td>
+        <td>The primary interface for connecting to a WebSocket server and then sending and receiving data on the connection.</td>
+      </tr>
+      <tr>
+        <td>02.</td>
+        <td>CloseEvent</td>
+        <td>The event sent by the WebSocket object when the connection closes.</td>
+      </tr>
+      <tr>
+        <td>03.</td>
+        <td>MessageEvent</td>
+        <td>MessageEvent|The event sent by the WebSocket object when a message is received from the server.</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h5>Example</h5>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
