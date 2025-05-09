@@ -2309,12 +2309,12 @@ This can, for instance, be used to draw graphs, combine photos, or create animat
 
 |  Property    |    Description                                                                 |
 |--------------|--------------------------------------------------------------------------------|
-|fillStyle       | Sets or returns the color, gradient, or pattern used to fill the drawing       |
-|strokeStyle   | Sets or returns the color, gradient, or pattern used for strokes               |
-|shadowColor   | Sets or returns the color to use for shadows                                   |
-|shadowBlur       | Sets or returns the blur level for shadows                                     |
-|shadowOffsetX | Sets or returns the horizontal distance of the shadow from the shape           |
-|shadowOffsetY | Sets or returns the vertical distance of the shadow from the shape             |
+|<mark>fillStyle</mark>       | Sets or returns the color, gradient, or pattern used to fill the drawing       |
+|<mark>strokeStyle</mark>   | Sets or returns the color, gradient, or pattern used for strokes               |
+|<mark>shadowColor</mark>   | Sets or returns the color to use for shadows                                   |
+|<mark>shadowBlur</mark>       | Sets or returns the blur level for shadows                                     |
+|<mark>shadowOffsetX</mark> | Sets or returns the horizontal distance of the shadow from the shape           |
+|<mark>shadowOffsetY</mark> | Sets or returns the vertical distance of the shadow from the shape             |
 
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h4>2. Line Styles:</h4>
@@ -2322,10 +2322,10 @@ This can, for instance, be used to draw graphs, combine photos, or create animat
 
 |Property     |  Description                                                   |
 |------------|----------------------------------------------------------------|
-|lineCap     |Sets or returns the style of the end caps for a line            |
-|lineJoin     |Sets or returns the type of corner created, when two lines meet |
-|lineWidth     |Sets or returns the current line width                          |
-|miterLimit     |Sets or returns the maximum miter length                        |
+|<mark>lineCap</mark>    |Sets or returns the style of the end caps for a line            |
+|<mark>lineJoin</mark>   |Sets or returns the type of corner created, when two lines meet |
+|<mark>lineWidth</mark>  |Sets or returns the current line width                          |
+|<mark>miterLimit</mark> |Sets or returns the maximum miter length                        |
 
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h4>3. Rectangles:</h4>
@@ -2333,10 +2333,10 @@ This can, for instance, be used to draw graphs, combine photos, or create animat
   
 |Method       |Description                                          |
 |-------------|-----------------------------------------------------|
-|rect()       |Creates a rectangle                                  |
-|fillRect()   |Draws a "filled" rectangle                           |
-|strokeRect() |Draws a rectangle (no fill)                          |
-|clearRect()  |Clears the specified pixels within a given rectangle |
+|<mark>rect()</mark>       |Creates a rectangle                                  |
+|<mark>fillRect()</mark>   |Draws a "filled" rectangle                           |
+|<mark>strokeRect()</mark> |Draws a rectangle (no fill)                          |
+|<mark>clearRect()</mark>  |Clears the specified pixels within a given rectangle |
 
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h4>4. Paths:</h4>
@@ -2344,15 +2344,15 @@ This can, for instance, be used to draw graphs, combine photos, or create animat
 
 | Method     |   Description                                                                                |
 |------------|----------------------------------------------------------------------------------------------|
-|fill()      |Fills the current drawing (path)                                                           |
-|stroke()    |Actually draws the path you have defined                                                     |
-|beginPath() |Begins a path, or resets the current path                                                     |
-|moveTo()    |Moves the path to the specified point in the canvas, without creating a line                 |
-|closePath() |Creates a path from the current point back to the starting point                              |
-|lineTo()    |Adds a new point and creates a line to that point from the last specified point in the canvas |
-|clip()      |Clips a region of any shape and size from the original canvas                              |
-|arc()       |Creates an arc/curve (used to create circles, or parts of circles)                          |
-|arcTo()     |Creates an arc/curve between two tangents                                                     |
+|<mark>fill()</mark>      |Fills the current drawing (path)                                                           |
+|<mark>stroke()</mark>    |Actually draws the path you have defined                                                     |
+|<mark>beginPath()</mark> |Begins a path, or resets the current path                                                     |
+|<mark>moveTo()</mark>    |Moves the path to the specified point in the canvas, without creating a line                 |
+|<mark>closePath()</mark> |Creates a path from the current point back to the starting point                              |
+|<mark>lineTo()</mark>    |Adds a new point and creates a line to that point from the last specified point in the canvas |
+|<mark>clip()</mark>      |Clips a region of any shape and size from the original canvas                              |
+|<mark>arc()</mark>       |Creates an arc/curve (used to create circles, or parts of circles)                          |
+|<mark>arcTo()</mark>     |Creates an arc/curve between two tangents                                                     |
 
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h4>5. Transformations:</h4>
@@ -2360,11 +2360,11 @@ This can, for instance, be used to draw graphs, combine photos, or create animat
 
 |Method         |Description                                                                |
 |---------------|---------------------------------------------------------------------------|
-|scale()        |Scales the current drawing bigger or smaller                               |
-|rotate()       |Rotates the current drawing                                                |
-|translate()    |Remaps the (0,0) position on the canvas                                    |
-|transform()    |Replaces the current transformation matrix for the drawing                 |
-|setTransform() |Resets the current transform to the identity matrix. Then runs transform() |
+|<mark>scale()</mark>        |Scales the current drawing bigger or smaller                               |
+|<mark>rotate()</mark>       |Rotates the current drawing                                                |
+|<mark>translate()</mark>    |Remaps the (0,0) position on the canvas                                    |
+|<mark>transform()</mark>    |Replaces the current transformation matrix for the drawing                 |
+|<mark>setTransform()</mark> |Resets the current transform to the identity matrix. Then runs transform() |
 
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h4>6. Text:</h4>
@@ -2372,12 +2372,12 @@ This can, for instance, be used to draw graphs, combine photos, or create animat
 
 |Property      |Description                                                       |
 |--------------|----------------------------------------------------------------- |
-|font          |Sets or returns the current font properties for text content      |
-|textAlign     |Sets or returns the current alignment for text content            |
-|textBaseline  |Sets or returns the current text baseline used when drawing text  |
-|fillText()    |Draws "filled" text on the canvas                                 |
-|strokeText()  |Draws text on the canvas (no fill)                                |
-|measureText() |Returns an object that contains the width of the specified text   |
+|<mark>font</mark>          |Sets or returns the current font properties for text content      |
+|<mark>textAlign</mark>     |Sets or returns the current alignment for text content            |
+|<mark>textBaseline</mark>  |Sets or returns the current text baseline used when drawing text  |
+|<mark>fillText()</mark>    |Draws "filled" text on the canvas                                 |
+|<mark>strokeText()</mark>  |Draws text on the canvas (no fill)                                |
+|<mark>measureText()</mark> |Returns an object that contains the width of the specified text   |
 
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h4>Example 01: HTML5 Canvas for Text</h4>
