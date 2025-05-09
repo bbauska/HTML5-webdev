@@ -2309,12 +2309,12 @@ This can, for instance, be used to draw graphs, combine photos, or create animat
 
 |  Property    |    Description                                                                 |
 |--------------|--------------------------------------------------------------------------------|
-|<mark>fillStyle</mark>       | Sets or returns the color, gradient, or pattern used to fill the drawing       |
-|<mark>strokeStyle</mark>   | Sets or returns the color, gradient, or pattern used for strokes               |
-|<mark>shadowColor</mark>   | Sets or returns the color to use for shadows                                   |
-|<mark>shadowBlur</mark>       | Sets or returns the blur level for shadows                                     |
-|<mark>shadowOffsetX</mark> | Sets or returns the horizontal distance of the shadow from the shape           |
-|<mark>shadowOffsetY</mark> | Sets or returns the vertical distance of the shadow from the shape             |
+|<mark>fillStyle</mark>       | Sets or returns the color, gradient, or pattern used to fill the drawing. |
+|<mark>strokeStyle</mark>   | Sets or returns the color, gradient, or pattern used for strokes.     |
+|<mark>shadowColor</mark>   | Sets or returns the color to use for shadows.                         |
+|<mark>shadowBlur</mark>       | Sets or returns the blur level for shadows.                        |
+|<mark>shadowOffsetX</mark> | Sets or returns the horizontal distance of the shadow from the shape. |
+|<mark>shadowOffsetY</mark> | Sets or returns the vertical distance of the shadow from the shape.   |
 
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h4>2. Line Styles:</h4>
@@ -2322,10 +2322,10 @@ This can, for instance, be used to draw graphs, combine photos, or create animat
 
 |Property     |  Description                                                   |
 |------------|----------------------------------------------------------------|
-|<mark>lineCap</mark>    |Sets or returns the style of the end caps for a line            |
-|<mark>lineJoin</mark>   |Sets or returns the type of corner created, when two lines meet |
-|<mark>lineWidth</mark>  |Sets or returns the current line width                          |
-|<mark>miterLimit</mark> |Sets or returns the maximum miter length                        |
+|<mark>lineCap</mark>    |Sets or returns the style of the end caps for a line.            |
+|<mark>lineJoin</mark>   |Sets or returns the type of corner created, when two lines meet. |
+|<mark>lineWidth</mark>  |Sets or returns the current line width.                          |
+|<mark>miterLimit</mark> |Sets or returns the maximum miter length.                        |
 
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h4>3. Rectangles:</h4>
@@ -2333,10 +2333,10 @@ This can, for instance, be used to draw graphs, combine photos, or create animat
   
 |Method       |Description                                          |
 |-------------|-----------------------------------------------------|
-|<mark>rect()</mark>       |Creates a rectangle                                  |
-|<mark>fillRect()</mark>   |Draws a "filled" rectangle                           |
-|<mark>strokeRect()</mark> |Draws a rectangle (no fill)                          |
-|<mark>clearRect()</mark>  |Clears the specified pixels within a given rectangle |
+|<mark>rect()</mark>       |Creates a rectangle.                                  |
+|<mark>fillRect()</mark>   |Draws a "filled" rectangle.                           |
+|<mark>strokeRect()</mark> |Draws a rectangle (no fill).                          |
+|<mark>clearRect()</mark>  |Clears the specified pixels within a given rectangle. |
 
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h4>4. Paths:</h4>
@@ -2344,15 +2344,15 @@ This can, for instance, be used to draw graphs, combine photos, or create animat
 
 | Method     |   Description                                                                                |
 |------------|----------------------------------------------------------------------------------------------|
-|<mark>fill()</mark>      |Fills the current drawing (path)                                                           |
-|<mark>stroke()</mark>    |Actually draws the path you have defined                                                     |
-|<mark>beginPath()</mark> |Begins a path, or resets the current path                                                     |
-|<mark>moveTo()</mark>    |Moves the path to the specified point in the canvas, without creating a line                 |
-|<mark>closePath()</mark> |Creates a path from the current point back to the starting point                              |
+|<mark>fill()</mark>      |Fills the current drawing (path).                                                |
+|<mark>stroke()</mark>    |Actually draws the path you have defined.                                        |
+|<mark>beginPath()</mark> |Begins a path, or resets the current path.                                       |
+|<mark>moveTo()</mark>    |Moves the path to the specified point in the canvas, without creating a line.    |
+|<mark>closePath()</mark> |Creates a path from the current point back to the starting point.                |
 |<mark>lineTo()</mark>    |Adds a new point and creates a line to that point from the last specified point in the canvas |
-|<mark>clip()</mark>      |Clips a region of any shape and size from the original canvas                              |
-|<mark>arc()</mark>       |Creates an arc/curve (used to create circles, or parts of circles)                          |
-|<mark>arcTo()</mark>     |Creates an arc/curve between two tangents                                                     |
+|<mark>clip()</mark>      |Clips a region of any shape and size from the original canvas.      |
+|<mark>arc()</mark>       |Creates an arc/curve (used to create circles, or parts of circles). |
+|<mark>arcTo()</mark>     |Creates an arc/curve between two tangents.                          |
 
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h4>5. Transformations:</h4>
@@ -2360,11 +2360,11 @@ This can, for instance, be used to draw graphs, combine photos, or create animat
 
 |Method         |Description                                                                |
 |---------------|---------------------------------------------------------------------------|
-|<mark>scale()</mark>        |Scales the current drawing bigger or smaller                               |
-|<mark>rotate()</mark>       |Rotates the current drawing                                                |
-|<mark>translate()</mark>    |Remaps the (0,0) position on the canvas                                    |
-|<mark>transform()</mark>    |Replaces the current transformation matrix for the drawing                 |
-|<mark>setTransform()</mark> |Resets the current transform to the identity matrix. Then runs transform() |
+|<mark>scale()</mark>        |Scales the current drawing bigger or smaller. |
+|<mark>rotate()</mark>       |Rotates the current drawing. |
+|<mark>translate()</mark>    |Remaps the (0,0) position on the canvas. |
+|<mark>transform()</mark>    |Replaces the current transformation matrix for the drawing. |
+|<mark>setTransform()</mark> |Resets the current transform to the identity matrix. Then runs transform(). |
 
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h4>6. Text:</h4>
@@ -2372,12 +2372,12 @@ This can, for instance, be used to draw graphs, combine photos, or create animat
 
 |Property      |Description                                                       |
 |--------------|----------------------------------------------------------------- |
-|<mark>font</mark>          |Sets or returns the current font properties for text content      |
-|<mark>textAlign</mark>     |Sets or returns the current alignment for text content            |
-|<mark>textBaseline</mark>  |Sets or returns the current text baseline used when drawing text  |
-|<mark>fillText()</mark>    |Draws "filled" text on the canvas                                 |
-|<mark>strokeText()</mark>  |Draws text on the canvas (no fill)                                |
-|<mark>measureText()</mark> |Returns an object that contains the width of the specified text   |
+|<mark>font</mark>          |Sets or returns the current font properties for text content.      |
+|<mark>textAlign</mark>     |Sets or returns the current alignment for text content.            |
+|<mark>textBaseline</mark>  |Sets or returns the current text baseline used when drawing text.  |
+|<mark>fillText()</mark>    |Draws "filled" text on the canvas.                                 |
+|<mark>strokeText()</mark>  |Draws text on the canvas (no fill).                               |
+|<mark>measureText()</mark> |Returns an object that contains the width of the specified text.  |
 
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h4>Example 01: HTML5 Canvas for Text</h4>
@@ -2536,10 +2536,10 @@ to drawing paths, boxes, circles, text & adding images.</p>
 
 |SVG                    |Canvas                                         |
 |-----------------------|-----------------------------------------------|
-|Vector based (composed of shapes)    |Raster based (composed of pixel)
-|Multiple graphical elements, which become the part of the page's DOM tree|    Single element similar to <img> in behavior. Canvas diagram can be saved to PNG or JPG format|
-|Modified through script and CSS    |Modified through script only
-|Good text rendering capabilities    |Poor text rendering capabilities
+|Vector based (composed of shapes)    |Raster based (composed of pixel) |
+|Multiple graphical elements, which become the part of the page's DOM tree|Single element similar to &lt;img&gt; in behavior. Canvas diagram can be saved to PNG or JPG format|
+|Modified through script and CSS    |Modified through script only |
+|Good text rendering capabilities    |Poor text rendering capabilities |
 |Give better performance with smaller number of objects or larger surface, or both    |Give better performance with larger number of objects or smaller surface, or both|
 |Better scalability. Can be printed with high quality at any resolution. Pixelation does not occur    |Poor scalability. Not suitable for printing on higher resolution. Pixelation may occur |
 
@@ -2632,7 +2632,6 @@ to understand the information on web pages and provide more relevant results to 
 <div align="right">
   <b><a href="#toc">↥ back to top</a></b>
 </div>
-
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h2>Q. What are the HTML tags which deprecated in HTML5?</h2>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -2970,13 +2969,13 @@ parent — is usually the browser window, represented by the <b>Window</b> objec
 
 |Attribute       | Description                |
 |----------------|----------------------------|
-|allow           |indicates what features the iframe is allowed to use (e.g. fullscreen, camera, autoplay)|
-|allowfullscreen |grants or denies permission for the iframe to appear in full-screen mode|
-|height          |sets the height of the iframe (if not specified, the default height is 150 pixels)|
-|loading         |sets lazy loading or eager loading for the iframe|
-|referrerpolicy  |sets what referrer information should be sent in the request for the iframe|
-|src             |the address of the resource included in the iframe|
-|width           |sets the width of the iframe (if not specified, the default width is 300 pixels)|
+|allow           |indicates what features the iframe is allowed to use (e.g. fullscreen, camera, autoplay).|
+|allowfullscreen |grants or denies permission for the iframe to appear in full-screen mode.|
+|height          |sets the height of the iframe (if not specified, the default height is 150 pixels).|
+|loading         |sets lazy loading or eager loading for the iframe.|
+|referrerpolicy  |sets what referrer information should be sent in the request for the iframe.|
+|src             |the address of the resource included in the iframe.|
+|width           |sets the width of the iframe (if not specified, the default width is 300 pixels.|
 
 <i>Note: Because each browsing context is a complete document environment, every 
 <mark><b>&lt;iframe&gt;</b></mark> in a page requires increased memory and other computing resources.</i>
@@ -3025,7 +3024,6 @@ link.</p>
 <p>It prevents the new page from being able to access the <mark><b>window.opener</b></mark> property and 
 will make it run in a separate process. noopener tag works as a security fix which 
 prevents malicious links to take control over an opened tab.</p>
-
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h5>Example:</h5>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -3181,7 +3179,6 @@ browsers and search engines to better interpret content. For example, instead of
 <div align="right">
   <b><a href="#toc">↥ back to top</a></b>
 </div>
-
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h2>Q. What is the difference between an "attribute" and a "property" in HTML?</h2>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -3230,7 +3227,6 @@ whereas the <b>value</b> attribute contains the initial text-content of the
 <div align="right">
   <b><a href="#toc">↥ back to top</a></b>
 </div>
-
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h2>Q. How do you set IE compatibility mode?</h2>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -3270,7 +3266,9 @@ that content is rendered in for the webpage, as the following table shows.</p>
 |IE=7           |Use the Windows Internet Explorer 7 standards rendering mode|
 |IE=5           |Use the Microsoft Internet Explorer 5 standards rendering mode|
 
-*Note: It is recommended that Web developers restrict their use of Edge mode to test pages and other non-production uses because of the possible unexpected results of rendering page content in future versions of Windows Internet Explorer.*
+<p><i>Note: It is recommended that Web developers restrict their use of Edge mode to test pages and 
+other non-production uses because of the possible unexpected results of rendering page content in 
+future versions of Windows Internet Explorer.</i></p>
 
 <div align="right">
   <b><a href="#toc">↥ back to top</a></b>
@@ -4422,21 +4420,19 @@ altering its type attribute. Now, let’s all the list of HTML Form Elements one
 by one:</p>
 
 
-
-Elements     | Descriptions |
+| Elements     | Descriptions |
 |------------|------------------------------------------------------------------------------------|
-| &lt;label&gt;    | It defines labels for &lt;form&gt; elements. |
-| &lt;input&gt;    | It is used to get input data from the form in various types such as text, password, |
-|            | email, etc by changing its type. |
-| &lt;button&gt;   | It defines a clickable button to control other elements or execute a functionality. |
-| &lt;select&gt;   | It is used to create a drop-down list. |
-| &lt;textarea&gt; | It is used to get input long text content. |
-| &lt;fieldset&gt; | It is used to draw a box around other form elements and group the related data. |
-| &lt;legend&gt;     | It defines a caption for fieldset elements. |
-| &lt;datalist&gt; | It is used to specify pre-defined list options for input controls. |
-| &lt;output&gt;     | It displays the output of performed calculations. |
-| &lt;option&gt;     | It is used to define options in a drop-down list. |
-| &lt;optgroup&gt; | It is used to define group-related options in a drop-down list. |
+| <mark>&lt;label&gt;</mark>    | It defines labels for &lt;form&gt; elements. |
+| <mark>&lt;input&gt;</mark>    | It is used to get input data from the form in various types such as text, password, email, etc by changing its type. |
+| <mark>&lt;button&gt;</mark>   | It defines a clickable button to control other elements or execute a functionality. |
+| <mark>&lt;select&gt;</mark>   | It is used to create a drop-down list. |
+| <mark>&lt;textarea&gt;</mark> | It is used to get input long text content. |
+| <mark>&lt;fieldset&gt;</mark> | It is used to draw a box around other form elements and group the related data. |
+| <mark>&lt;legend&gt;</mark>   | It defines a caption for fieldset elements. |
+| <mark>&lt;datalist&gt;</mark> | It is used to specify pre-defined list options for input controls. |
+| <mark>&lt;output&gt;</mark>   | It displays the output of performed calculations. |
+| <mark>&lt;option&gt;</mark>   | It is used to define options in a drop-down list. |
+| <mark>&lt;optgroup&gt;</mark> | It is used to define group-related options in a drop-down list. |
 
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3>Commonly Used Input Types in HTML Forms</h3>
@@ -4517,7 +4513,7 @@ as username and password with the button to submit the form.</p>
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<title>Html Forms</title>
+  <title>Html Forms</title>
 </head>
 <body>
   <h2>HTML Forms</h2>
@@ -5228,7 +5224,6 @@ th {
   alt="text-align property."
   style="width:40%" >
 </p>
-
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h4>Adding Border Spacing in an HTML Table</h4>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -5304,7 +5299,6 @@ table {
   alt="Border spacing property."
   style="width:40%" >
 </p>
-
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h4>Adding Cells that Span Many Columns in HTML Tables</h4>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -5363,7 +5357,6 @@ table {
   alt="Use of colspan attribute."
   style="width:40%" >
 </p>
-
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h4>Adding Cells that span many rows in HTML Tables</h4>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -6242,7 +6235,7 @@ corners, a black border, and 50% opacity, positioned at coordinates (80, 20).</p
 </p>
 <!-- 09-image004.png - SVG Rounded Rectangle Drawing -->
 <div align="right">
-    <b><a href="#toc">↥ back to top</a></b>
+  <b><a href="#toc">↥ back to top</a></b>
 </div>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h4>Example 5: Drawing a Star</h4>
@@ -6284,7 +6277,7 @@ border. The polygon is defined by a series of points and has a 5-pixel stroke wi
 </p>
 <!-- 09-image005.png - SVG Star Drawing-->
 <div align="right">
-    <b><a href="#toc">↥ back to top</a></b>
+  <b><a href="#toc">↥ back to top</a></b>
 </div>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h4>Example 6: Drawing a Logo</h4>
@@ -6336,7 +6329,7 @@ using the ARIAL font family.</p>
 </p>
 <!-- 09-image006.png - GFG Logo using SVG -->
 <div align="right">
-    <b><a href="#toc">↥ back to top</a></b>
+  <b><a href="#toc">↥ back to top</a></b>
 </div>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3>SVG &lt;a&gt; Element</h3>
@@ -6438,7 +6431,7 @@ It’s wrapped with an anchor (&lt;a&gt;) tag, making it a clickable link that r
 ```
 
 <div align="right">
-    <b><a href="#toc">↥ back to top</a></b>
+  <b><a href="#toc">↥ back to top</a></b>
 </div>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h5>Output</h5>
@@ -6502,7 +6495,7 @@ by an anchor (&lt;a&gt;) tag, creating a clickable area that redirects to anothe
 </p>
 <!-- 09-image008.gif - SVG a tag example output -->
 <div align="right">
-    <b><a href="#toc">↥ back to top</a></b>
+  <b><a href="#toc">↥ back to top</a></b>
 </div>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3>SVG &lt;animate&gt; Element</h3>
@@ -6562,7 +6555,7 @@ element over time. It’s normally inserted inside the element which we want to 
 </p>
 <!-- 09-image009.gif - svg animate - rectangle to circle -->
 <div align="right">
-    <b><a href="#toc">↥ back to top</a></b>
+  <b><a href="#toc">↥ back to top</a></b>
 </div>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h5>Example 2:</h5>
@@ -6604,7 +6597,7 @@ element over time. It’s normally inserted inside the element which we want to 
 </p>
 <!-- 09-image010.gif - svg animate - dark to light green -->
 <div align="right">
-    <b><a href="#toc">↥ back to top</a></b>
+  <b><a href="#toc">↥ back to top</a></b>
 </div>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3>SVG &lt;animateMotion&gt; Element</h3>
@@ -6671,7 +6664,7 @@ like in HTML canvas.</p>
 </p>
 <!-- 09-image011.gif - infinity ball -->
 <div align="right">
-    <b><a href="#toc">↥ back to top</a></b>
+  <b><a href="#toc">↥ back to top</a></b>
 </div>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3>SVG &lt;animateTransform&gt; Element</h3>
@@ -6738,7 +6731,7 @@ and/or skewing.</p>
 </p>
 <!-- 09-image012.gif - rotating rectangle -->
 <div align="right">
-    <b><a href="#toc">↥ back to top</a></b>
+  <b><a href="#toc">↥ back to top</a></b>
 </div>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3>SVG Circle</h3>
@@ -6838,7 +6831,7 @@ above attributes.</p>
 </p>
 <!-- 09-image013.png - example svg circle from geeks 4 geeks -->
 <div align="right">
-    <b><a href="#toc">↥ back to top</a></b>
+  <b><a href="#toc">↥ back to top</a></b>
 </div>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h5>Example 2:</h5>
@@ -6901,7 +6894,7 @@ above attributes.</p>
 </p>
 <!-- 09-image014.png - black circle w/blue outside -->
 <div align="right">
-    <b><a href="#toc">↥ back to top</a></b>
+  <b><a href="#toc">↥ back to top</a></b>
 </div>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3>SVG &lt;clipPath&gt; Element</h3>
@@ -7000,7 +6993,7 @@ given above.</p>
 </p>
 <!-- 09image015.gif - heart change black to green -->
 <div align="right">
-    <b><a href="#toc">↥ back to top</a></b>
+  <b><a href="#toc">↥ back to top</a></b>
 </div>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h5>Example 2:</h5>
@@ -7084,7 +7077,7 @@ given above.</p>
 </p>
 <!-- 09-image016.gif - transform black star to red -->
 <div align="right">
-    <b><a href="#toc">↥ back to top</a></b>
+  <b><a href="#toc">↥ back to top</a></b>
 </div>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3>SVG defs Element</h3>
@@ -7154,7 +7147,7 @@ them on the browser.</p>
 </p>
 <!-- 09-image017.png -->
 <div align="right">
-    <b><a href="#toc">↥ back to top</a></b>
+  <b><a href="#toc">↥ back to top</a></b>
 </div>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h5>Example 2:</h5>
@@ -7208,7 +7201,7 @@ svg{
 </p>
 <!-- 09-image018.png -->
 <div align="right">
-    <b><a href="#toc">↥ back to top</a></b>
+  <b><a href="#toc">↥ back to top</a></b>
 </div>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3>SVG &lt;desc&gt; Element</h3>
@@ -7270,7 +7263,7 @@ any of the available SVG elements whether it is a container or graphic element.<
 </p>
 <!-- 09-image019.png -->
 <div align="right">
-    <b><a href="#toc">↥ back to top</a></b>
+  <b><a href="#toc">↥ back to top</a></b>
 </div>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h5>Example 2:</h5>
@@ -7326,7 +7319,7 @@ any of the available SVG elements whether it is a container or graphic element.<
 </p>
 <!-- 09-image020.png -->
 <div align="right">
-    <b><a href="#toc">↥ back to top</a></b>
+  <b><a href="#toc">↥ back to top</a></b>
 </div>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3>SVG Ellipse Element</h3>
@@ -7386,7 +7379,7 @@ circle has equal x and y radius:</p>
 </p>
 <!-- 09-image021.png -->
 <div align="right">
-    <b><a href="#toc">↥ back to top</a></b>
+  <b><a href="#toc">↥ back to top</a></b>
 </div>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h5>Example:</h5>
@@ -7421,7 +7414,7 @@ circle has equal x and y radius:</p>
 </p>
 <!-- 09-image022.png -->
 <div align="right">
-    <b><a href="#toc">↥ back to top</a></b>
+  <b><a href="#toc">↥ back to top</a></b>
 </div>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3>SVG &lt;feBlend&gt; Element</h3>
@@ -7499,7 +7492,7 @@ graphic. It executes a pixel-wise combination of two input SVG fragments or imag
 </p>
 <!-- 09-image023.png -->
 <div align="right">
-    <b><a href="#toc">↥ back to top</a></b>
+  <b><a href="#toc">↥ back to top</a></b>
 </div>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h5>Example 2:</h5>
@@ -7548,7 +7541,7 @@ graphic. It executes a pixel-wise combination of two input SVG fragments or imag
   style="width:40%" >
 </p><!-- 09-image024.png -->
 <div align="right">
-    <b><a href="#toc">↥ back to top</a></b>
+  <b><a href="#toc">↥ back to top</a></b>
 </div>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3>SVG &lt;feComponentTransfer&gt; Element</h3>
@@ -7614,7 +7607,7 @@ graphic. It executes a pixel-wise combination of two input SVG fragments or imag
 </p>
 <!-- 09-image025.png -->
 <div align="right">
-    <b><a href="#toc">↥ back to top</a></b>
+  <b><a href="#toc">↥ back to top</a></b>
 </div>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h5>Example 2:</h5>
@@ -7661,7 +7654,7 @@ graphic. It executes a pixel-wise combination of two input SVG fragments or imag
 </p>
 <!-- 09-image026.png -->
 <div align="right">
-    <b><a href="#toc">↥ back to top</a></b>
+  <b><a href="#toc">↥ back to top</a></b>
 </div>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h5>Example 3:</h5>
@@ -7708,7 +7701,7 @@ graphic. It executes a pixel-wise combination of two input SVG fragments or imag
 </p>
 <!-- 09-image027.png -->
 <div align="right">
-    <b><a href="#toc">↥ back to top</a></b>
+  <b><a href="#toc">↥ back to top</a></b>
 </div>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3>SVG &lt;feConvolveMatrix&gt; Element</h3>
@@ -7800,7 +7793,7 @@ with neighboring pixels to produce a resulting image.</p>
 </p>
 <!-- 09-image028.png -->
 <div align="right">
-    <b><a href="#toc">↥ back to top</a></b>
+  <b><a href="#toc">↥ back to top</a></b>
 </div>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h5>Example 2:</h5>
@@ -7856,7 +7849,7 @@ with neighboring pixels to produce a resulting image.</p>
 </p>
 <!-- 09-image029.png -->
 <div align="right">
-    <b><a href="#toc">↥ back to top</a></b>
+  <b><a href="#toc">↥ back to top</a></b>
 </div>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3>SVG feDiffuseLighting Element</h3>
@@ -7930,7 +7923,7 @@ are brighter and the sides facing away are darker and in shadow.</p>
 </p>
 <!-- 09-image030.png -->
 <div align="right">
-    <b><a href="#toc">↥ back to top</a></b>
+  <b><a href="#toc">↥ back to top</a></b>
 </div>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h5>Example 2:</h5>
@@ -7983,7 +7976,7 @@ are brighter and the sides facing away are darker and in shadow.</p>
 </p>
 <!-- 09-image031.png -->
 <div align="right">
-    <b><a href="#toc">↥ back to top</a></b>
+  <b><a href="#toc">↥ back to top</a></b>
 </div>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3>SVG &lt;feDisplacementMap&gt; Element</h3>
@@ -8064,7 +8057,7 @@ which displacement effect is applied is reserved in “in” attribute.</p>
 </p>
 <!-- 09-image032.png -->
 <div align="right">
-    <b><a href="#toc">↥ back to top</a></b>
+  <b><a href="#toc">↥ back to top</a></b>
 </div>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h5>Example 2:</h5>
@@ -8112,7 +8105,7 @@ which displacement effect is applied is reserved in “in” attribute.</p>
 </p>
 <!-- 09-image033.png -->
 <div align="right">
-    <b><a href="#toc">↥ back to top</a></b>
+  <b><a href="#toc">↥ back to top</a></b>
 </div>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
