@@ -2361,55 +2361,164 @@ This can, for instance, be used to draw graphs, combine photos, or create animat
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h4>3. Rectangles:</h4>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-  
-|Method       |Description                                          |
-|-------------|-----------------------------------------------------|
-|<mark>rect()</mark>       |Creates a rectangle.                                  |
-|<mark>fillRect()</mark>   |Draws a "filled" rectangle.                           |
-|<mark>strokeRect()</mark> |Draws a rectangle (no fill).                          |
-|<mark>clearRect()</mark>  |Clears the specified pixels within a given rectangle. |
+ <div role="region" tabindex="0">
+  <table>
+    <caption>Rectangles</caption>
+    <thead>
+      <tr>
+        <th>tableHead</th>
+        <th>tableDesc</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><b><mark>rect()</mark></b></td>
+        <td>Creates a rectangle.</td>
+      </tr>
+      <tr>
+        <td><b><mark>fillRect()</mark></b></td>
+        <td>Draw a "filled" rectangle.</td>
+      </tr>
+      <tr>
+        <td><b><mark>strokeRect()</mark></b></td>
+        <td>Draws a rectangle (no fill).</td>
+      </tr>
+      <tr>
+        <td><b><mark>clearRect()</mark></b></td>
+        <td>Clears the specified pixels within a given rectangle.</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
 
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h4>4. Paths:</h4>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-
-| Method     |   Description                                                                                |
-|------------|----------------------------------------------------------------------------------------------|
-|<mark>fill()</mark>      |Fills the current drawing (path).                                                |
-|<mark>stroke()</mark>    |Actually draws the path you have defined.                                        |
-|<mark>beginPath()</mark> |Begins a path, or resets the current path.                                       |
-|<mark>moveTo()</mark>    |Moves the path to the specified point in the canvas, without creating a line.    |
-|<mark>closePath()</mark> |Creates a path from the current point back to the starting point.                |
-|<mark>lineTo()</mark>    |Adds a new point and creates a line to that point from the last specified point in the canvas |
-|<mark>clip()</mark>      |Clips a region of any shape and size from the original canvas.      |
-|<mark>arc()</mark>       |Creates an arc/curve (used to create circles, or parts of circles). |
-|<mark>arcTo()</mark>     |Creates an arc/curve between two tangents.                          |
-
+<div role="region" tabindex="0">
+  <table>
+    <caption>Paths</caption>
+    <thead>
+      <tr>
+        <th><b><mark>Method</mark></b></th>
+        <th><b><mark>Description</mark></b></th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><b><mark>fill()</mark></b></td>
+        <td>Fills the current drawing (path).</td>
+      </tr>
+      <tr>
+        <td><b><mark>stroke()</mark></b></td>
+        <td>Actually draws the path you have defined.</td>
+      </tr>
+      <tr>
+        <td><b><mark>beginPath()</mark></b></td>
+        <td>Begins a path, or resets the current path.</td>
+      </tr>
+      <tr>
+        <td><b><mark>moveTo()</mark></b></td>
+        <td>Moves the path to the specified point in the canvas, without creating a line.</td>
+      </tr>
+      <tr>
+        <td><b><mark>closePath()</mark></b></td>
+        <td>Creates a path from the current point back to the starting point.</td>
+      </tr>
+      <tr>
+        <td><b><mark>lineTo()</mark></b></td>
+        <td>Adds a new point and creates a line to that point from the last specified point in the canvas.</td>
+      </tr>
+      <tr>
+        <td><b><mark>clip()</mark></b></td>
+        <td>Clips a region of any shape and size from the original canvas.</td>
+      </tr>
+      <tr>
+        <td><b><mark>arc()</mark></b></td>
+        <td>Creates an arc/curve (used to create circles, or parts of circles).</td>
+      </tr>
+      <tr>
+        <td><b><mark>arcTo()</mark></b></td>
+        <td>Creates an arc/curve between two tangents.</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h4>5. Transformations:</h4>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-
-|Method         |Description                                                                |
-|---------------|---------------------------------------------------------------------------|
-|<mark>scale()</mark>        |Scales the current drawing bigger or smaller. |
-|<mark>rotate()</mark>       |Rotates the current drawing. |
-|<mark>translate()</mark>    |Remaps the (0,0) position on the canvas. |
-|<mark>transform()</mark>    |Replaces the current transformation matrix for the drawing. |
-|<mark>setTransform()</mark> |Resets the current transform to the identity matrix. Then runs transform(). |
-
+ <div role="region" tabindex="0">
+  <table>
+    <caption>Transformations</caption>
+    <thead>
+      <tr>
+        <th>Method</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><b><mark>scale()</mark></b></td>
+        <td>Scales the current drawing bigger or smaller.</td>
+      </tr>
+      <tr>
+        <td><b><mark>rotate()</mark></b></td>
+        <td>Rotates the current drawing.</td>
+      </tr>
+      <tr>
+        <td><b><mark>translate()</mark></b></td>
+        <td>Remaps the (0,0) position on the canvas.</td>
+      </tr>
+      <tr>
+        <td><b><mark>transform()</mark></b></td>
+        <td>Replaces the current transformation matrix for the drawing.</td>
+      </tr>
+      <tr>
+        <td><b><mark>setTransform()</mark></b></td>
+        <td>Resets the current transform to the identity matrix. Then runs transform().</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h4>6. Text:</h4>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-
-|Property      |Description                                                       |
-|--------------|----------------------------------------------------------------- |
-|<mark>font</mark>          |Sets or returns the current font properties for text content.      |
-|<mark>textAlign</mark>     |Sets or returns the current alignment for text content.            |
-|<mark>textBaseline</mark>  |Sets or returns the current text baseline used when drawing text.  |
-|<mark>fillText()</mark>    |Draws "filled" text on the canvas.                                 |
-|<mark>strokeText()</mark>  |Draws text on the canvas (no fill).                               |
-|<mark>measureText()</mark> |Returns an object that contains the width of the specified text.  |
-
+ <div role="region" tabindex="0">
+  <table>
+    <caption>Text</caption>
+    <thead>
+      <tr>
+        <th>Property</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><b><mark>font</mark></b></td>
+        <td>Sets or returns the current font properties for text content.</td>
+      </tr>
+      <tr>
+        <td><b><mark>textAlign</mark></b></td>
+        <td>Sets or returns the current alignment for text content.</td>
+      </tr>
+      <tr>
+        <td><b><mark>textBaseline</mark></b></td>
+        <td>Sets or returns the current text baseline used when drawing text.</td>
+      </tr>
+      <tr>
+        <td><b><mark>fillText()</mark></b></td>
+        <td>Draws "filled" text on the canvas.</td>
+      </tr>
+      <tr>
+        <td><b><mark>strokeText()</mark></b></td>
+        <td>Draws text on the canvas (no fill).</td>
+      </tr>
+      <tr>
+        <td><b><mark>measureText()</mark></b></td>
+        <td>Returns an object that contain the width of the specified text.</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h4>Example 01: HTML5 Canvas for Text</h4>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -2564,16 +2673,43 @@ to drawing paths, boxes, circles, text & adding images.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h5>Differences:</h5>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-
-|SVG                    |Canvas                                         |
-|-----------------------|-----------------------------------------------|
-|Vector based (composed of shapes)    |Raster based (composed of pixel) |
-|Multiple graphical elements, which become the part of the page's DOM tree|Single element similar to &lt;img&gt; in behavior. Canvas diagram can be saved to PNG or JPG format|
-|Modified through script and CSS    |Modified through script only |
-|Good text rendering capabilities    |Poor text rendering capabilities |
-|Give better performance with smaller number of objects or larger surface, or both    |Give better performance with larger number of objects or smaller surface, or both|
-|Better scalability. Can be printed with high quality at any resolution. Pixelation does not occur    |Poor scalability. Not suitable for printing on higher resolution. Pixelation may occur |
-
+<div role="region" tabindex="0">
+  <table>
+    <caption>Differences</caption>
+    <thead>
+      <tr>
+        <th>SVG</th>
+        <th>Canvas</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>Vector based (composed of shapes)</td>
+        <td>Raster based (composed of pixel)</td>
+      </tr>
+      <tr>
+        <td>Multiple graphical elements, which become the part of the page's DOM tree.</td>
+        <td>Single element similar to &lt;img&gt; in behavior. Canvas diagram can be saved to PNG or JPG format.</td>
+      </tr>
+      <tr>
+        <td>Modified through script and CSS.</td>
+        <td>Modified through script only.</td>
+      </tr>
+      <tr>
+        <td>Good text rendering capabilities.</td>
+        <td>Poor text rendering capabilities.</td>
+      </tr>
+      <tr>
+        <td>Give better performance with smaller number of objects or larger surface, or both.</td>
+        <td>Give better performance with larger number of objects or smaller surface, or both.</td>
+      </tr>
+      <tr>
+        <td>Better scalability. Can be printed with high quality at any resolution. Pixelation does not occur.</td>
+        <td>Poor scalability. Not suitable for printing on higher resolution. Pixelation may occur.</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
 <div align="right">
   <b><a href="#toc">↥ back to top</a></b>
 </div>
@@ -9632,14 +9768,18 @@ Response.Flush()
 <!--
 <div role="region" tabindex="0">
   <table>
-    <caption>Caption</caption>
+    <caption>Caption goes here</caption>
     <thead>
       <tr>
-        <th>tableHead</th>
-        <th>tableDesc</th>
+        <th><b><mark></mark></b></th>
+        <th><b><mark></mark></b></th>
       </tr>
     </thead>
     <tbody>
+      <tr>
+        <td><b><mark></mark></b></td>
+        <td>.</td>
+      </tr>
       <tr>
         <td><b><mark></mark></b></td>
         <td>.</td>
