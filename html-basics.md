@@ -3630,15 +3630,15 @@ cater for languages such as Arabic, Hebrew, Pashto, Persian, Urdu, and Sindhi.</
     </thead>
     <tbody>
       <tr>
-        <td>ltr</td>
+        <td><b><mark>ltr</mark></b></td>
         <td>Default. Left-to-right text direction.</td>
       </tr>
       <tr>
-        <td>rtl</td>
+        <td><b><mark>rtl</mark></b></td>
         <td>Right-to-left text direction.</td>
       </tr>
       <tr>
-        <td>auto</td>
+        <td><b><mark>auto</mark></b></td>
         <td>Let the browser figure out the text direction, based on the content.</td>
       </tr>
     </tbody>
@@ -3651,9 +3651,9 @@ cater for languages such as Arabic, Hebrew, Pashto, Persian, Urdu, and Sindhi.</
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h2>Q. When is it appropriate to use the small element?</h2>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<p>The &lt;small&gt; HTML element represents side-comments and small print, like 
+<p>The <b><mark>&lt;small&gt;</mark></b> HTML element represents side-comments and small print, like 
 copyright and legal text, independent of its styled presentation. By default, it 
-renders text within it one font-size smaller, such as from <b><mark>small</mark><b> to 
+renders text within it one font-size smaller, such as from <b><mark>small</mark></b> to 
 <b><mark>x-small</mark></b>.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h5>Example:</h5>
@@ -3684,7 +3684,7 @@ renders text within it one font-size smaller, such as from <b><mark>small</mark>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h2>Q. How do you serve a page with content in multiple languages?</h2>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<p>The <b>lang</b> attribute specifies the language of the element&apos;s content.</p>
+<p>The <b><mark>lang</mark></b> attribute specifies the language of the element&apos;s content.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h5>Example:</h5>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -3697,14 +3697,14 @@ renders text within it one font-size smaller, such as from <b><mark>small</mark>
     <title>HTML5 Multilanguage Page</title>
   </head>
   <body>
-      <h2>English</h2>
-      <p lang="en">This is demo text</p>
+    <h2>English</h2>
+    <p lang="en">This is demo text</p>
      
-      <h2>French</h2>
-      <p lang="fr">Ceci est un texte de démonstration</p>
+    <h2>French</h2>
+    <p lang="fr">Ceci est un texte de démonstration</p>
      
-      <h2>Spanish</h2>
-      <p lang="es">Este es un texto de demostración</p>
+    <h2>Spanish</h2>
+    <p lang="es">Este es un texto de demostración</p>
   </body>
 </html>
 ```
@@ -3713,15 +3713,15 @@ renders text within it one font-size smaller, such as from <b><mark>small</mark>
   <b><a href="#toc">↥ back to top</a></b>
 </div>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<h2>Q. What is the difference between &lt;section&gt; and &lt;div&gt;?</h2>
+<h2>Q. What is the difference between <b><mark>&lt;section&gt;</mark></b> and <b><mark>&lt;div&gt;</mark></b>?</h2>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<p>The &lt;section&gt; tag creates independent sections within a webpage having logically 
-connected content. And the &lt;div&gt; tag is an empty container specifying a division or 
+<p>The <b><mark>&lt;section&gt;</mark></b> tag creates independent sections within a webpage having logically 
+connected content. And the <b><mark>&lt;div&gt;</mark></b> tag is an empty container specifying a division or 
 a section.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h4>The <b><mark>&lt;section&gt;</mark></b> Element</h4>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<p>According to the W3C specification, the &lt;section&gt; tag means that the content inside 
+<p>According to the W3C specification, the <b><mark>&lt;section&gt;</mark></b> tag means that the content inside 
 this element is grouped. In other words, the content relates to a single theme. It must be 
 an entry in the outline of the page.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -4163,41 +4163,41 @@ event actions.</p>
     </thead>
     <tbody>
       <tr>
-        <td>onafterprint</td>
+        <td><b><mark>onafterprint</mark></b></td>
         <td>script</td>
         <td>Script to be run after the document is printed.</td>
       </tr>
       <tr>
-        <td>onbeforeprint</td>
+        <td><b><mark>onbeforeprint</mark></b></td>
         <td>script</td>
         <td>Script to be run before the document is printed .</td>
       </tr>
       <tr>
-        <td>onbeforeunload</td>
+        <td><b><mark>onbeforeunload</mark></b></td>
         <td>script</td>
         <td>Script to be run when the document is about to be unloaded.</td>
       </tr>
       <tr>
-        <td>onerror</td>
+        <td><b><mark>onerror</mark></b></td>
         <td>script</td>
         <td>Script to be run when an error occurs.</td>
       </tr>
-        <td>onhashchange</td>
+        <td><b><mark>onhashchange</mark></b></td>
         <td>script</td>
         <td>Script to be run when there has been changes to the anchor part of the a URL.</td>
       </tr>
       <tr>
-        <td>onload</td>
+        <td><b><mark>onload</mark></b></td>
         <td>script</td>
         <td>Fires after the page is finished loading .</td>
       </tr>
       <tr>
-        <td>onmessage</td>
+        <td><b><mark>onmessage</mark></b></td>
         <td>script</td>
         <td>Script to be run when the message is triggered.</td>
       </tr>
       <tr>
-        <td>onoffline</td>
+        <td><b><mark>onoffline</mark></b></td>
         <td>script</td>
         <td>Script to be run when the browser starts to work offline.</td>
       </tr>
@@ -4221,36 +4221,36 @@ event actions.</p>
     </thead>
     <tbody>
       <tr>
-        <td>ononline</td>
+        <td><b><mark>ononline</mark></b></td>
         <td>script</td>
         <td>Script to be run when the browser starts to work online.</td>
       </tr>
       <tr>
-        <td>onpagehide</td>
+        <td><b><mark>onpagehide</mark></b></td>
         <td>script</td>
         <td>Script to be run when a user navigates away from a page.</td>
       </tr>
       <tr>
-        <td>onpageshow</td>
+        <td><b><mark>onpageshow</mark></b></td>
         <td>script</td>
         <td>Script to be run when a user navigates to a page.</td>
       </tr>
-        <td>onpopstate</td>
+        <td><b><mark>onpopstate</mark></b></td>
         <td>script</td>
         <td>Script to be run when the window's history changes.</td>
       </tr>
       <tr>
-        <td>onresize</td>
+        <td><b><mark>onresize</mark></b></td>
         <td>script</td>
         <td>Fires when the browser window is resized.</td>
       </tr>
       <tr>
-        <td>onstorage</td>
+        <td><b><mark>onstorage</mark></b></td>
         <td>script</td>
         <td>Script to be run when a Web Storage area is updated.</td>
       </tr>
       <tr>
-        <td>onunload</td>
+        <td><b><mark>onunload</mark></b></td>
         <td>script</td>
         <td>Fires once a page has unloaded (or the browser window has been closed).</td>
       </tr>
@@ -4275,50 +4275,50 @@ but is most used in form elements):</p>
     </thead>
     <tbody>
       <tr>
-        <td>onblur</td>
+        <td><b><mark>onblur</mark></b></td>
         <td>script</td>
         <td>Fires the moment that the element loses focus.</td>
       </tr>
       <tr>
-        <td>onchange</td>
+        <td><b><mark>onchange</mark></b></td>
         <td>script</td>
         <td>Fires the moment when the value of the element is changed.</td>
       </tr>
       <tr>
-        <td>oncontextmenu</td>
+        <td><b><mark>oncontextmenu</mark></b></td>
         <td>script</td>
         <td>Script to be run when a context menu is triggered.</td>
       </tr>
-        <td>onfocus</td>
+        <td><b><mark>onfocus</mark></b></td>
         <td>script</td>
         <td>Fires the moment when the element gets focus.</td>
       </tr>
       <tr>
-        <td>oninput</td>
+        <td><b><mark>oninput</mark></b></td>
         <td>script</td>
         <td>Script to be run when an element gets user input.</td>
       </tr>
       <tr>
-        <td>oninvalid</td>
+        <td><b><mark>oninvalid</mark></b></td>
         <td>script</td>
         <td>Script to be run when an element is invalid.</td>
       </tr>
-        <td>onreset</td>
+        <td><b><mark>onreset</mark></b></td>
         <td>script</td>
         <td>Fires when the Reset button in a form is clicked.</td>
       </tr>
       <tr>
-        <td>onsearch</td>
+        <td><b><mark>onsearch</mark></b></td>
         <td>script</td>
         <td>Fires when the user writes something in a search field (for &lt;input="search"&gt;).</td>
       </tr>
       <tr>
-        <td>onselect</td>
+        <td><b><mark>onselect</mark></b></td>
         <td>script</td>
         <td>Fires after some text has been selected in an element.</td>
       </tr>
       <tr>
-        <td>onsubmit</td>
+        <td><b><mark>onsubmit</mark></b></td>
         <td>script</td>
         <td>Fires when a form is submitted.</td>
       </tr>
@@ -4340,17 +4340,17 @@ but is most used in form elements):</p>
     </thead>
     <tbody>
       <tr>
-        <td>onkeydown</td>
+        <td><b><mark>onkeydown</mark></b></td>
         <td>script</td>
         <td>Fires when a user is pressing a key.</td>
       </tr>
       <tr>
-        <td>onkeypress</td>
+        <td><b><mark>onkeypress</mark></b></td>
         <td>script</td>
         <td>Fires when a user presses a key.</td>
       </tr>
       <tr>
-        <td>onkeyup</td>
+        <td><b><mark>onkeyup</mark></b></td>
         <td>script</td>
         <td>Fires when a user releases a key.</td>
       </tr>
@@ -4372,47 +4372,47 @@ but is most used in form elements):</p>
     </thead>
     <tbody>
       <tr>
-        <td>onclick</td>
+        <td><b><mark>onclick</mark></b></td>
         <td>script</td>
         <td>Fires on a mouse click on the element.</td>
       </tr>
       <tr>
-        <td>ondblclick</td>
+        <td><b><mark>ondblclick</mark></b></td>
         <td>script</td>
         <td>Fires on a mouse double-click on the element.</td>
       </tr>
       <tr>
-        <td>onmousedown</td>
+        <td><b><mark>onmousedown</mark></b></td>
         <td>script</td>
         <td>Fires when a mouse button is pressed down on an element.</td>
       </tr>
       <tr>
-        <td>onmousemove</td>
+        <td><b><mark>onmousemove</mark></b></td>
         <td>script</td>
         <td>Fires when the mouse pointer is moving while it is over an element.</td>
       </tr>
       <tr>
-        <td>onmouseout</td>
+        <td><b><mark>onmouseout</mark></b></td>
         <td>script</td>
         <td>Fires when the mouse pointer moves over an element.</td>
       </tr>
       <tr>
-        <td>onmouseover</td>
+        <td><b><mark>onmouseover</mark></b></td>
         <td>script</td>
         <td>The onmouseover event occurs when the mouse pointer enters an element.</td>
       </tr>
       <tr>
-        <td>onmouseup</td>
+        <td><b><mark>onmouseup</mark></b></td>
         <td>script</td>
         <td>Fires when a mouse button is released over an element.</td>
       </tr>
       <tr>
-        <td>onmousewheel</td>
+        <td><b><mark>onmousewheel</mark></b></td>
         <td>script</td>
         <td>Deprecated. Use the onwheel attribute instead.</td>
       </tr>
       <tr>
-        <td>onwheel</td>
+        <td><b><mark>onwheel</mark></b></td>
         <td>script</td>
         <td>Fires when the mouse wheel rolls up or down over an element.</td>
       </tr>
@@ -4434,42 +4434,42 @@ but is most used in form elements):</p>
     </thead>
     <tbody>
       <tr>
-        <td>ondragd</td>
+        <td><b><mark>ondragd</mark></b></td>
         <td>script</td>
         <td>Script to be run when an element is dragged.</td>
       </tr>
       <tr>
-        <td>ondragend</td>
+        <td><b><mark>ondragend</mark></b></td>
         <td>script</td>
         <td>Script to be run at the end of a drag operation.</td>
       </tr>
       <tr>
-        <td>ondragenter</td>
+        <td><b><mark>ondragenter</mark></b></td>
         <td>script</td>
         <td>Script to be run when an element has been dragged to a valid drop target.</td>
       </tr>
       <tr>
-        <td>ondragleave</td>
+        <td><b><mark>ondragleave</mark></b></td>
         <td>script</td>
         <td>Script to be run when an element leaves a valid drop target.</td>
       </tr>
       <tr>
-        <td>ondragover</td>
+        <td><b><mark>ondragover</mark></b></td>
         <td>script</td>
         <td>Script to be run when an element is being dragged over a valid drop target.</td>
       </tr>
       <tr>
-        <td>ondragstart</td>
+        <td><b><mark>ondragstart</mark></b></td>
         <td>script</td>
         <td>Script to be run at the start of a drag operation.</td>
       </tr>
       <tr>
-        <td>ondrop</td>
+        <td><b><mark>ondrop</mark></b></td>
         <td>script</td>
         <td>Script to be run when dragged element is being dropped.</td>
       </tr>
       <tr>
-        <td>onscroll</td>
+        <td><b><mark>onscroll</mark></b></td>
         <td>script</td>
         <td>Script to be run when an element's scrollbar is being scrolled.</td>
       </tr>
@@ -4491,17 +4491,17 @@ but is most used in form elements):</p>
     </thead>
     <tbody>
       <tr>
-        <td>oncopy</td>
+        <td><b><mark>oncopy</mark></b></td>
         <td>script</td>
         <td>Fires when the user copies the content of an element.</td>
       </tr>
       <tr>
-        <td>oncut</td>
+        <td><b><mark>oncut</mark></b></td>
         <td>script</td>
         <td>Fires when the user cuts the content of an element.</td>
       </tr>
       <tr>
-        <td>onpaste</td>
+        <td><b><mark>onpaste</mark></b></td>
         <td>script</td>
         <td>Fires when the user pastes some content in an element.</td>
       </tr>
@@ -4527,117 +4527,117 @@ elements, but is most common in media elements, like &lt;audio&gt;, &lt;embed&gt
     </thead>
     <tbody>
       <tr>
-        <td>onabort</td>
+        <td><b><mark>onabort</mark></b></td>
         <td>script</td>
         <td>Script to be run on abort.</td>
       </tr>
       <tr>
-        <td>oncanplay</td>
+        <td><b><mark>oncanplay</mark></b></td>
         <td>script</td>
         <td>Script to be run when a file is ready to start playing (when it has buffered enough to begin).</td>
       </tr>
       <tr>
-        <td>oncaplaythrough</td>
+        <td><b><mark>oncaplaythrough</mark></b></td>
         <td>script</td>
         <td>Script to be run when a file can be played all the way to the end without pausing for buffering.</td>
       </tr>
       <tr>
-        <td>oncuechange</td>
+        <td><b><mark>oncuechange</mark></b></td>
         <td>script</td>
         <td>Script to be run when the cue changes in a &lt;track&gt; element.</td>
       </tr>
       <tr>
-        <td>ondurationchange</td>
+        <td><b><mark>ondurationchange</mark></b></td>
         <td>script</td>
         <td>Script to be run when the length of the media changes.</td>
       </tr>
       <tr>
-        <td>onemptied</td>
+        <td><b><mark>onemptied</mark></b></td>
         <td>script</td>
         <td>Script to be run when something bad happens and the file is suddenly unavailable (like unexpectedly disconnects).</td>
       </tr>
       <tr>
-        <td>onended</td>
+        <td><b><mark>onended</mark></b></td>
         <td>script</td>
         <td>Script to be run when the media has reach the end (a useful event for messages like "thanks for listening").</td>
       </tr>
       <tr>
-        <td>onerror</td>
+        <td><b><mark>onerror</mark></b></td>
         <td>script</td>
         <td>Script to be run when an error occurs when the file is being loaded.</td>
       </tr>
       <tr>
-        <td>onloadeddata</td>
+        <td><b><mark>onloadeddata</mark></b></td>
         <td>script</td>
         <td>Script to be run when media data is loaded.</td>
       </tr>
       <tr>
-        <td>onloadedmetadata</td>
+        <td><b><mark>onloadedmetadata</mark></b></td>
         <td>script</td>
         <td>Script to be run when meta data (like dimensions and duration) are loaded.</td>
       </tr>
       <tr>
-        <td>onloadstart</td>
+        <td><b><mark>onloadstart</mark></b></td>
         <td>script</td>
         <td>Script to be run just as the file begins to load before anything is actually loaded.</td>
       </tr>
       <tr>
-        <td>onpause</td>
+        <td><b><mark>onpause</mark></b></td>
         <td>script</td>
         <td>Script to be run when the media is paused either by the user or programmatically.</td>
       </tr>
       <tr>
-        <td>onplay</td>
+        <td><b><mark>onplay</mark></b></td>
         <td>script</td>
         <td>Script to be run when the media is ready to start playing.</td>
       </tr>
       <tr>
-        <td>onplaying</td>
+        <td><b><mark>onplaying</mark></b></td>
         <td>script</td>
         <td>Script to be run when the media actually has started playing.</td>
       </tr>
       <tr>
-        <td>onprogress</td>
+        <td><b><mark>onprogress</mark></b></td>
         <td>script</td>
         <td>Script to be run when the browser is in the process of getting the media data.</td>
       </tr>
       <tr>
-        <td>onratechange</td>
+        <td><b><mark>onratechange</mark></b></td>
         <td>script</td>
         <td>Script to be run each time the playback rate changes (like when a user switches to a slow motion or fast forward mode).</td>
       </tr>
       <tr>
-        <td>onseeked</td>
+        <td><b><mark>onseeked</mark></b></td>
         <td>script</td>
         <td>Script to be run when the seeking attribute is set to false indicating that seeking has ended.</td>
       </tr>
       <tr>
-        <td>onseeking</td>
+        <td><b><mark>onseeking</mark></b></td>
         <td>script</td>
         <td>Script to be run when the seeking attribute is set to true indicating that seeking is active.</td>
       </tr>
       <tr>
-        <td>onstalled</td>
+        <td><b><mark>onstalled</mark></b></td>
         <td>script</td>
         <td>Script to be run when the browser is unable to fetch the media data for whatever reason.</td>
       </tr>
       <tr>
-        <td>onsuspend</td>
+        <td><b><mark>onsuspend</mark></b></td>
         <td>script</td>
         <td>Script to be run when fetching the media data is stopped before it is completely loaded for whatever reason.</td>
       </tr>
       <tr>
-        <td>ontimeupdate</td>
+        <td><b><mark>ontimeupdate</mark></b></td>
         <td>script</td>
         <td>Script to be run when the playing position has changed (like when the user fast forwards to a different point in the media).</td>
       </tr>
       <tr>
-        <td>onvolumechange</td>
+        <td><b><mark>onvolumechange</mark></b></td>
         <td>script</td>
         <td>Script to be run each time the volume is changed which (includes setting the volume to "mute").</td>
       </tr>
       <tr>
-        <td>onwaiting</td>
+        <td><b><mark>onwaiting</mark></b></td>
         <td>script</td>
         <td>Script to be run when the media has paused but is expected to resume (like when the media pauses to buffer more data).</td>
       </tr>
