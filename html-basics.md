@@ -502,13 +502,13 @@ expected to be modified through JavaScript code.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h2>Q. What is the difference between <b><mark>span</mark></b> tag and <b><mark>div</mark></b> tag?</h2>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<p>The primary difference between div and span tag is their default behavior. By default, 
-a &lt;div&gt; is a <b>block-level-element</b> and a &lt;span&gt; is an <b>inline element</b>.</p>
+<p>The primary difference between <b><mark>div</mark></b> and <b><mark>span</mark></b> tag is their default behavior. By default, 
+a <b><mark>&lt;div&gt;</mark></b> is a <b>block-level-element</b> and a <b><mark>&lt;span&gt;</mark></b> is an <b>inline element</b>.</p>
 
 <ul>
-  <li><b>&lt;div&gt;</b> is a block level element which means it will render it on 
+  <li><b><mark>&lt;div&gt;</mark></b> is a block level element which means it will render it on 
     it&apos;s own line with a width of a 100% of the parent element.</li>
-  <li><b>&lt;span&gt;</b> is an inline element which means it will render on the same 
+  <li><b><mark>&lt;span&gt;</mark></b> is an inline element which means it will render on the same 
     line as the previous element, if it is also an inline element, and it's width 
     will be determined by it&apos;s content.</li>
 </ul>
@@ -523,9 +523,10 @@ a &lt;div&gt; is a <b>block-level-element</b> and a &lt;span&gt; is an <b>inline
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h2>Q. What are optional closing tags?</h2>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<p>&lt;p&gt;, &lt;li&gt;, &lt;td&gt;, &lt;tr&gt;, &lt;th&gt;, &lt;html&gt;, &lt;body&gt;, etc. don&apos;t 
-have to provide an end tag. Whenever a browser hits a new tag it automatically end the 
-previous tag.</p>
+<p><b><mark>&lt;p&gt;</mark></b>, <b><mark>&lt;li&gt;</mark></b>, <b><mark>&lt;td&gt;</mark></b>, 
+<b><mark>&lt;tr&gt;</mark></b>, <b><mark>&lt;th&gt;</mark></b>, <b><mark>&lt;html&gt;</mark></b>, 
+<b><mark>&lt;body&gt;</mark></b>, etc. don&apos;t have to provide an end tag. Whenever a browser 
+hits a new tag it automatically end the previous tag.</p>
 
 <div align="right">
   <b><a href="#toc">↥ back to top</a></b>
@@ -549,8 +550,8 @@ required to have specific closing tags are called “self closing” tags.</p>
 <h2>Q. Explain the difference between block elements and inline elements?</h2>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <ul>
-  <li>block elements &lt;h1&gt;, &lt;p&gt;, &lt;ul&gt;, &lt;ol&gt;, &lt;li&gt;,</li>
-  <li>inline elements &lt;span&gt;, &lt;a&gt;, &lt;strong&gt;, &lt;i&gt;, &lt;img&gt;</li>
+  <li>block elements <b><mark>&lt;h1&gt;</mark></b>, <b><mark>&lt;p&gt;</mark></b>, <b><mark>&lt;ul&gt;</mark></b>, <b><mark>&lt;ol&gt;</mark></b>, <b><mark>&lt;li&gt;</mark></b>,</li>
+  <li>inline elements <b><mark>&lt;span&gt;</mark></b>, <b><mark>&lt;a&gt;</mark></b>, <b><mark>&lt;strong&gt;</mark></b>, <b><mark>&lt;i&gt;</mark></b>, <b><mark>&lt;img&gt;</mark></b></li>
 </ul>
 
 <div align="right">
@@ -562,10 +563,10 @@ required to have specific closing tags are called “self closing” tags.</p>
 <ul>
   <li><b><mark>Semantic elements</mark></b>: clearly describes its meaning to both the 
   browser and the developer.<br>
-  For example: &lt;form&gt;, &lt;table&gt;,  &lt;article&gt;, &lt;aside&gt;, &lt;details&gt;, 
-  &lt;figcaption&gt;, &lt;figure&gt;, &lt;footer&gt;, &lt;header&gt;, &lt;main&gt;, &lt;mark&gt;, 
-  &lt;nav&gt;, &lt;section&gt;, &lt;summary&gt;, &lt;time&gt; clearly defines its content.</li>
-  <li><b><mark>Non-semantic elements</mark></b>: &lt;div&gt; and &lt;span&gt; tells nothing 
+  For example: <b><mark>&lt;form&gt;</mark></b>, <b><mark>&lt;table&gt;</mark></b>, <b><mark>&lt;article&gt;</mark></b>, <b><mark>&lt;aside&gt;</mark></b>, <b><mark>&lt;details&gt;</mark></b>, 
+  <b><mark>&lt;figcaption&gt;</mark></b>, <b><mark>&lt;figure&gt;</mark></b>, <b><mark>&lt;footer&gt;</mark></b>, <b><mark>&lt;header&gt;</mark></b>, <b><mark>&lt;main&gt;</mark></b>, <b><mark>&lt;mark&gt;</mark></b>, 
+  <b><mark>&lt;nav&gt;</mark></b>, <b><mark>&lt;section&gt;</mark></b>, <b><mark>&lt;summary&gt;</mark></b>, <b><mark>&lt;time&gt</mark></b>; clearly defines its content.</li>
+  <li><b><mark>Non-semantic elements</mark></b>: <b><mark>&lt;div&gt;</mark></b> and <b><mark>&lt;span&gt;</mark></b> tells nothing 
   about its content.</li>
 </ul>
 
@@ -575,7 +576,7 @@ required to have specific closing tags are called “self closing” tags.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h2>Q. What is the purpose of <b><mark>main</mark></b> element?</h2>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<p>The HTML &lt;main&gt; element represents the dominant content of the &lt;body&gt; of a 
+<p>The HTML <b><mark>&lt;main&gt;</mark></b> element represents the dominant content of the <b><mark>&lt;body&gt;</mark></b> of a 
 document. The main content area consists of content that is directly related to or expands 
 upon the central topic of a document, or the central functionality of an application.</p>
 
@@ -587,26 +588,26 @@ upon the central topic of a document, or the central functionality of an applica
 </main>
 ```
 
-<p><i>Note: A document mustn&apos;t have more than one &lt;main&gt; element that doesn't 
+<p><i>Note: A document mustn&apos;t have more than one <b><mark>&lt;main&gt;</mark></b> element that doesn't 
 have the hidden attribute specified.</i></p>
 
 <div align="right">
   <b><a href="#toc">↥ back to top</a></b>
 </div>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<h2>Q. What are the semantic meanings for &lt;section&gt;, &lt;article&gt;, &lt;aside&gt;, 
-&lt;nav&gt;, &lt;header&gt;, &lt;footer&gt; and how should each be used in structuring html markup?</h2>
+<h2>Q. What are the semantic meanings for <b><mark>&lt;section&gt;</mark></b>, <b><mark>&lt;article&gt;</mark></b>, <b><mark>&lt;aside&gt;</mark></b>, 
+<b><mark>&lt;nav&gt;</mark></b>, <b><mark>&lt;header&gt;</mark></b>, <b><mark>&lt;footer&gt;</mark></b> and how should each be used in structuring html markup?</h2>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <ul>
-  <li>&lt;header&gt; is used to contain introductory and navigational information about a section 
+  <li><b><mark>&lt;header&gt;</mark></b> is used to contain introductory and navigational information about a section 
     of the page. This can include the section heading, the author&apos;s name, time and date 
     of publication, table of contents, or other navigational information.</li>
-  <li>&lt;article&gt; is meant to house a self-contained composition that can logically be 
+  <li><b><mark>&lt;article&gt;</mark></b> is meant to house a self-contained composition that can logically be 
     independently recreated outside of the page without losing it&apos;s meaining. 
     Individual blog posts or news stories are good examples.</li>
-  <li>&lt;section&gt; is a flexible container for holding content that shares a common 
+  <li><b><mark>&lt;section&gt;</mark></b> is a flexible container for holding content that shares a common 
     informational theme or purpose.</li>
-  <li>&lt;footer&gt; is used to hold information that should appear at the end of a section 
+  <li><b><mark>&lt;footer&gt;</mark></b> is used to hold information that should appear at the end of a section 
     of content and contain additional information about the section. Author&apos;s name, 
     copyright information, and related links are typical examples of such content.</li>
 </ul>
@@ -638,8 +639,8 @@ have the hidden attribute specified.</i></p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h2>Q. Can a web page contain multiple &lt;header&gt; elements? What about &lt;footer&gt; elements?</h2>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<p>Yes, header elements can be used multiple times in documents. A &lt;header&gt; tag 
-must be present for all articles, sections, and pages, although a &lt;footer&gt; tag 
+<p>Yes, header elements can be used multiple times in documents. A <b><mark>&lt;header&gt;</mark></b> tag 
+must be present for all articles, sections, and pages, although a <b><mark>&lt;footer&gt;</mark></b> tag 
 is not necessary.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h4>From W3C standards</h4>
@@ -972,9 +973,9 @@ localStorage.getItem("name"); // Kanti Ahluwalia
   <b><a href="#toc">↥ back to top</a></b>
 </div>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<h2>Q. What is sessionStorage in html5?</h2>
+<h2>Q. What is <b><mark>sessionStorage</mark></b> in html5?</h2>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<p>The <b><mark>sessionStorage</mark></b> object is equal to the localStorage object, 
+<p>The <b><mark>sessionStorage</mark></b> object is equal to the <b><mark>localStorage</mark></b> object, 
 except that it stores the data for only one session. The data is deleted when the user 
 closes the specific browser tab.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -999,7 +1000,7 @@ sessionStorage.clear();
   <b><a href="#toc">↥ back to top</a></b>
 </div>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<h2>Q. What is cookies in html5?</h2>
+<h2>Q. What are cookies in html5?</h2>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p>A cookie is an amount of information that persists between a server-side and a client-side. 
 A web browser stores this information at the time of browsing.</p>
@@ -9816,9 +9817,10 @@ Response.Flush()
   <h6>Date created: ~ 4/1/2025<br/>
   <h6>Prior editted: 5/1/2025 +6pm<br/>
   <h6>Last editted: 5/2/2025 +11am<br/>
-  <h6>Last editted: 5/4/2025 +12pm</h6>
-  <h6>Last editted: 5/6/2025 +12pm</h6>
-  <h6>Last editted: 5/9/2025 +9am</h6>
+  <h6>Last editted: 5/4/2025 +12pm<br/>
+  <h6>Last editted: 5/6/2025 +12pm<br/>
+  <h6>Last editted: 5/9/2025 +9am<br/>
+  <h6>Last editted: 5/11/2025 +11am</h6>
   <p>The End...</p>
   
 <div align="right">
