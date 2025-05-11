@@ -1,4 +1,4 @@
-# HTML5-Template - All HTML5 stem to stern.
+# HTML5-WebDev - All HTML5 stem to stern.
 
 # [HTML5 Boilerplate](https://html5boilerplate.com/)
 
