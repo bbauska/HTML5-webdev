@@ -4236,84 +4236,46 @@ class="sourceCode html"><code class="sourceCode html"><span id="cb68-1"><a href=
 <h4>The Iframe Tag Attributes:</h4>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <div role="region" tabindex="0">
-<table>
-<caption>
-iFrame Tag Attributes
-</caption>
-<thead>
-<tr>
-<th>
-Attribute
-</th>
-<th>
-Description
-</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>
-<b><mark>allow</mark></b>
-</td>
-<td>
-Indicates what features the iframe is allowed to use (e.g. fullscreen,
-camera, autoplay).
-</td>
-</tr>
-<tr>
-<td>
-<b><mark>allowfullscreen</mark></b>
-</td>
-<td>
-Grants or denies permission for the iframe to appear in full-screen
-mode.
-</td>
-</tr>
-<tr>
-<td>
-<b><mark>height</mark></b>
-</td>
-<td>
-Sets the height of the iframe (if not specified, the default height is
-150 pixels).
-</td>
-</tr>
-<tr>
-<td>
-<b><mark>loading</mark></b>
-</td>
-<td>
-Sets lazy loading or eager loading for the iframe.
-</td>
-</tr>
-<tr>
-<td>
-<b><mark>referrerpolicy</mark></b>
-</td>
-<td>
-Sets what referrer information should be sent in the request for the
-iframe.
-</td>
-</tr>
-<tr>
-<td>
-<b><mark>src</mark></b>
-</td>
-<td>
-The address of the resource included in the iframe.
-</td>
-</tr>
-<tr>
-<td>
-<b><mark>width</mark></b>
-</td>
-<td>
-Sets the width of the iframe (if not specified, the default width is 300
-pixels.
-</td>
-</tr>
-</tbody>
-</table>
+  <table>
+    <caption>iFrame Tag Attributes</caption>
+      <thead>
+        <tr>
+		  <th>Attribute</th>
+          <th>Description</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td><b><mark>allow</mark></b></td>
+          <td>Indicates what features the iframe is allowed to use (e.g. fullscreen, 
+		    camera, autoplay).</td>
+        </tr>
+        <tr>
+          <td><b><mark>allowfullscreen</mark></b></td>
+          <td>Grants or denies permission for the iframe to appear in full-screen mode.</td>
+        </tr>
+        <tr>
+          <td><b><mark>height</mark></b></td>
+          <td>Sets the height of the iframe (if not specified, the default height is 150 pixels).</td>
+        </tr>
+        <tr>
+          <td><b><mark>loading</mark></b></td>
+          <td>Sets lazy loading or eager loading for the iframe.</td>
+        </tr>
+        <tr>
+          <td><b><mark>referrerpolicy</mark></b></td>
+          <td>Sets what referrer information should be sent in the request for the iframe.</td>
+        </tr>
+        <tr>
+          <td><b><mark>src</mark></b></td>
+          <td>The address of the resource included in the iframe.</td>
+        </tr>
+        <tr>
+          <td><b><mark>width</mark></b></td>
+          <td>Sets the width of the iframe (if not specified, the default width is 300 pixels.</td>
+      </tr>
+    </tbody>
+  </table>
 </div>
 <p><i>Note: Because each browsing context is a complete document
 environment, every <mark><b>&lt;iframe&gt;</b></mark> in a page requires
@@ -12213,13 +12175,8 @@ if(typeof(Worker) !== &quot;undefined&quot;) {
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h4>Create a .js Web Worker File</h4>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<p>
-Now, let’s create a web worker in an external JavaScript file.
-</p>
-<p>
-Here we create a script that counts. The script is stored in the
-“demo_workers.js” file:
-</p>
+<p>Now, let’s create a web worker in an external JavaScript file.</p>
+<p>Here we create a script that counts. The script is stored in the “demo_workers.js” file:</p>
 <pre><code>var i = 0;
 
 function timedCount() {
@@ -12230,71 +12187,49 @@ function timedCount() {
 
 timedCount();
 </code></pre>
-<p>
-Note: The important part of the code above is the postMessage() method -
-which is used to post messages back to the HTML page.
-</p>
+<p>Note: The important part of the code above is the postMessage() method -
+which is used to post messages back to the HTML page.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3>Create a Web Worker Object</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<p>
-Once we have created the .js web worker file, we can call it from an
-HTML page.
-</p>
-<p>
-The following lines checks if a worker (w) already exists, if not - it
+<p>Once we have created the .js web worker file, we can call it from an
+HTML page.</p>
+<p>The following lines checks if a worker (w) already exists, if not - it
 creates a new web worker object and points to the .js file:
-“demo_workers.js”:
-</p>
+“demo_workers.js”:</p>
 <pre><code>if (typeof(w) == &quot;undefined&quot;) {
   w = new Worker(&quot;demo_workers.js&quot;);
 }</code></pre>
-<p>
-Then we can SEND and RETRIEVE messages from the web worker.
-</p>
-<p>
-Data is sent between web workers and the main thread via a system of
+<p>Then we can SEND and RETRIEVE messages from the web worker.</p>
+<p>Data is sent between web workers and the main thread via a system of
 messages - both sides send their messages using the postMessage()
-method, and respond to messages via the onmessage event handler.
-</p>
-<p>
-Add an onmessage event listener to the web worker object.
-</p>
+method, and respond to messages via the onmessage event handler.</p>
+<p>Add an onmessage event listener to the web worker object.</p>
 <pre><code>w.onmessage = function(event){
   document.getElementById(&quot;result&quot;).innerHTML = event.data;
 };</code></pre>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3>Terminate a Web Worker</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<p>
-When a web worker object is created, it will continue to listen for
-messages until it is terminated.
-</p>
-<p>
-To terminate a web worker object, and free browser/computer resources,
-use the terminate() method:
-</p>
+<p>When a web worker object is created, it will continue to listen for
+messages until it is terminated.</p>
+<p>To terminate a web worker object, and free browser/computer resources,
+use the terminate() method:</p>
 <pre><code>w.terminate();</code></pre>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3>Reuse the Web Worker</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<p>
-If you set the web worker variable to undefined, after it has been
-terminated, you can reuse the worker/code:
-</p>
+<p>If you set the web worker variable to undefined, after it has been
+terminated, you can reuse the worker/code:</p>
 <pre><code>w = undefined;</code></pre>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3>Full Web Worker Example</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<p>
-We have already seen the Web Worker code in the .js file.
-</p>
-<p>
-Below is the full code for the HTML page:
-</p>
-<h4>
-Example
-</h4>
+<p>We have already seen the Web Worker code in the .js file.</p>
+<p>Below is the full code for the HTML page:</p>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<h4>Example</h4>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <pre><code>&lt;!DOCTYPE html&gt;
 &lt;html&gt;
 &lt;body&gt;
@@ -12331,20 +12266,12 @@ function stopWorker() {
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3>Web Workers and the DOM</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<p>
-Since web workers are in external .js files, they do not have access to
-the following JavaScript objects:
-</p>
+<p>Since web workers are in external .js files, they do not have access to
+the following JavaScript objects:</p>
 <ul>
-<li>
-The window object
-</li>
-<li>
-The document object
-</li>
-<li>
-The parent object
-</li>
+  <li>The window object</li>
+  <li>The document object</li>
+  <li>The parent object</li>
 </ul>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h2 id="html-serversent-events">
@@ -12352,33 +12279,21 @@ The parent object
 <li>HTML Server-Sent Events API
 </h2>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<p>
-The Server-Sent Events (SSE) API enables pushing messages/updates from a
-server to the web page via HTTP connection.
-</p>
+<p>The Server-Sent Events (SSE) API enables pushing messages/updates from a server to the web 
+page via HTTP connection.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3>Server-Sent Events - One Way Messaging</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<p>
-A server-sent event is when a web page automatically gets
-messages/updates from a server.
-</p></li>
+<p>A server-sent event is when a web page automatically gets
+messages/updates from a server.</p></li>
 </ol>
-<p>
-Normally, a web page has to request data from the server, but with
-server-sent events, the updates are pushed automatically.
-</p>
-<p>
-Examples: Facebook/Twitter updates, stock market updates, news feeds,
-sport results, etc.
-</p>
+<p>Normally, a web page has to request data from the server, but with
+server-sent events, the updates are pushed automatically.</p>
+<p>Examples: Facebook/Twitter updates, stock market updates, news feeds, sport results, etc.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3>Receive Server-Sent Event Notifications</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<p>
-The EventSource object is used to receive server-sent event
-notifications:
-</p>
+<p>The EventSource object is used to receive server-sent event notifications:</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h4>Example</h4>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -12398,25 +12313,16 @@ if(typeof(EventSource) !== &quot;undefined&quot;) {
 <h4>Example explained:</h4>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <ul>
-<li>
-Create a new EventSource object, and specify the URL of the page sending
-the updates (in this example “demo_sse.php”)
-</li>
-<li>
-Each time an update is received, the onmessage event occurs
-</li>
-<li>
-When an onmessage event occurs, put the received data into the element
-with id=“result”
-</li>
+  <li>Create a new EventSource object, and specify the URL of the page sending the updates 
+    (in this example “demo_sse.php”)</li>
+  <li>Each time an update is received, the onmessage event occurs</li>
+  <li>When an onmessage event occurs, put the received data into the element with id=“result”</li>
 </ul>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h4>Check Browser Support</h4>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<p>
-In the tryit example above there were some extra lines of code to check
-browser support for server-sent events:
-</p>
+<p>In the tryit example above there were some extra lines of code to check
+browser support for server-sent events:</p>
 <pre><code>if(typeof(EventSource) !== &quot;undefined&quot;) {
   // Yes! Server-sent events support!
   // Some code.....
@@ -12426,17 +12332,12 @@ browser support for server-sent events:
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h4>Server-Side Code Example</h4>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<p>
-For the example above to work, you need a server capable of sending data
-updates (like PHP or ASP).
-</p>
-&lt;pThe server-side event stream syntax is simple. Set the
-“Content-Type” header to “text/event-stream”. Now you can start sending
-event streams.
-</p>
-<p>
-Code in PHP (demo_sse.php):
-</p>
+<p>For the example above to work, you need a server capable of sending data
+updates (like PHP or ASP).</p>
+<p>The server-side event stream syntax is simple. Set the “Content-Type” header to 
+“text/event-stream”. Now you can start sending event streams.</p>
+<p>Code in PHP (demo_sse.php):</p>
+
 <pre><code>&lt;?php
 header(&#39;Content-Type: text/event-stream&#39;);
 header(&#39;Cache-Control: no-cache&#39;);
@@ -12445,9 +12346,7 @@ $time = date(&#39;r&#39;);
 echo &quot;data: The server time is: {$time}\n\n&quot;;
 flush();
 ?&gt;</code></pre>
-<p>
-Code in ASP (VB) (demo_sse.asp):
-</p>
+<p>Code in ASP (VB) (demo_sse.asp):</p>
 <pre><code>&lt;%
 Response.ContentType = &quot;text/event-stream&quot;
 Response.Expires = -1
@@ -12458,70 +12357,39 @@ Response.Flush()
 <h4>Code explained:</h4>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <ul>
-<li>
-Set the “Content-Type” header to “text/event-stream”
-</li>
-<li>
-Specify that the page should not cache
-</li>
-<li>
-Output the data to send (Always start with “data:”)
-</li>
-<li>
-Flush the output data back to the web page
-</li>
+  <li>Set the “Content-Type” header to “text/event-stream”</li>
+  <li>Specify that the page should not cache</li>
+  <li>Output the data to send (Always start with “data:”)</li>
+<li>Flush the output data back to the web page</li>
 </ul>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<h4>
-The EventSource Object
-</h4>
+<h4>The EventSource Object</h4>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<p>
-In the examples above we used the onmessage event to get messages. But
-other events are also available:
-</p>
+<p>In the examples above we used the onmessage event to get messages. But other events are also available:</p>
 <div role="region" tabindex="0">
 <table>
-<caption>
-The EventSource Object
-</caption>
-<thead>
-<tr>
-<th>
-Event
-</th>
-<th>
-Description
-</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>
-onopen
-</td>
-<td>
-When a connectoin to the server is opened.
-</td>
-</tr>
-<tr>
-<td>
-onmessage
-</td>
-<td>
-When a message is received.
-</td>
-</tr>
-<tr>
-<td>
-onerror
-</td>
-<td>
-When an error occurs.
-</td>
-</tr>
-</tbody>
-</table>
+  <caption>The EventSource Object</caption>
+    <thead>
+      <tr>
+        <th>Event</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>onopen</td>
+        <td>When a connectoin to the server is opened.</td>
+      </tr>
+      <tr>
+        <td>onmessage</td>
+        <td>When a message is received.</td>
+      </tr>
+      <tr>
+        <td>onerror</td>
+        <td>When an error occurs.</td>
+      </tr>
+    </tbody>
+  </table>
 </div>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--
@@ -12565,28 +12433,18 @@ When an error occurs.
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h2 id="16-misc">
 <ol start="16" type="1">
-<li>Miscellaneous
+  <li>Miscellaneous
 </h2>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <footer>
-<h6>
-Date created: ~ 4/1/2025<br/>
-<h6>
-Prior editted: 5/1/2025 +6pm<br/>
-<h6>
-Last editted: 5/2/2025 +11am<br/>
-<h6>
-Last editted: 5/4/2025 +12pm
-</h6>
-<h6>
-Last editted: 5/6/2025 +12pm
-</h6>
-<h6>
-Last editted: 5/9/2025 +9am
-</h6>
-<p>
-The End…
-</p></li>
+<h6>Date created: ~ 4/1/2025<br/>
+<h6>Prior editted: 5/1/2025 +6pm<br/>
+<h6>Last editted: 5/2/2025 +11am<br/>
+<h6>Last editted: 5/4/2025 +12pm</h6>
+<h6>Last editted: 5/6/2025 +12pm</h6>
+<h6>Last editted: 5/9/2025 +9am</h6>
+<p>The End…</p>
+</li>
 </ol>
 </footer>
 </body>
