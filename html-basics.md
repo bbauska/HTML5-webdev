@@ -53,21 +53,21 @@ end developers.</p>
 <h2>Q. What are the building blocks of HTML5?</h2>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <ul>
-  <li><mark><b>Semantics</b></mark>: allowing you to describe more precisely what your 
+  <li><b><mark>Semantics</mark></b>: allowing you to describe more precisely what your 
     content is.</li>
-  <li><mark><b>Connectivity</b></mark>: allowing you to communicate with the server in 
+  <li><b><mark>Connectivity</mark></b>: allowing you to communicate with the server in 
     new and innovative ways.</li>
-  <li><mark><b>Offline and storage</b></mark>: allowing webpages to store data on the 
+  <li><b><mark>Offline and storage</mark></b>: allowing webpages to store data on the 
     client-side locally and operate offline more efficiently.</li>
-  <li><mark><b>Multimedia</b></mark>: making video and audio first-class citizens in 
+  <li><b><mark>Multimedia</mark></b>: making video and audio first-class citizens in 
     the Open Web.</li>
-  <li><mark><b>2D/3D graphics and effects</b></mark>: allowing a much more diverse 
+  <li><b><mark>2D/3D graphics and effects</mark></b>: allowing a much more diverse 
     range of presentation options.</li>
-  <li><mark><b>Performance and integration</b></mark>: providing greater speed 
+  <li><b><mark>Performance and integration</mark></b>: providing greater speed 
     optimization and better usage of computer hardware.</li>
-  <li><mark><b>Device access</b></mark>: allowing for the usage of various input 
+  <li><b><mark>Device access</mark></b>: allowing for the usage of various input 
     and output devices.</li>
-  <li><mark><b>Styling</b></mark>: letting authors write more sophisticated themes.</li>
+  <li><b><mark>Styling</mark></b>: letting authors write more sophisticated themes.</li>
 </ul>
 
 <div align="right">
@@ -152,16 +152,16 @@ work for browsers and search engines, as well as developers.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h2>Q. What does a &lt;DOCTYPE html&gt; do?</h2>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<p>A DOCTYPE is always associated to a <mark><b>DTD</b></mark> ( <mark><b>Document 
-Type Definition</b></mark> ). A DTD defines how documents of a certain type should be 
-structured (i.e. a <mark><b>button</b></mark> can contain a <mark><b>span</b></mark> 
-but not a <mark><b>div</b></mark>), whereas a DOCTYPE declares what DTD a document 
+<p>A DOCTYPE is always associated to a <b><mark>DTD</mark></b> ( <b><mark>Document 
+Type Definition</mark></b> ). A DTD defines how documents of a certain type should be 
+structured (i.e. a <b><mark>button</mark></b> can contain a <b><mark>span</mark></b> 
+but not a <b><mark>div</mark></b>), whereas a DOCTYPE declares what DTD a document 
 supposedly respects (i.e. this document respects the HTML DTD). For webpages, the 
 DOCTYPE declaration is required. It is used to tell user agents what version of the 
 HTML specifications your document respects.</p>
 
 <p>Once a user agent has recognized a correct DOCTYPE, it will trigger the 
-<mark><b>no-quirks mode</b></mark> matching this DOCTYPE forreading the document. 
+<b><mark>no-quirks mode</mark></b> matching this DOCTYPE forreading the document. 
 If a user agent doesn't recognize a correct DOCTYPE, it will trigger the <mark>quirks mode</mark>.</p>
 
 <div align="right">
@@ -500,7 +500,7 @@ expected to be modified through JavaScript code.</p>
   <b><a href="#toc">↥ back to top</a></b>
 </div>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<h2>Q. What is the difference between <mark><b>span</b></mark> tag and <mark><b>div</b></mark> tag?</h2>
+<h2>Q. What is the difference between <b><mark>span</mark></b> tag and <b><mark>div</mark></b> tag?</h2>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p>The primary difference between div and span tag is their default behavior. By default, 
 a &lt;div&gt; is a <b>block-level-element</b> and a &lt;span&gt; is an <b>inline element</b>.</p>
@@ -573,7 +573,7 @@ required to have specific closing tags are called “self closing” tags.</p>
   <b><a href="#toc">↥ back to top</a></b>
 </div>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<h2>Q. What is the purpose of <mark>main</mark> element?</h2>
+<h2>Q. What is the purpose of <b><mark>main</mark></b> element?</h2>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p>The HTML &lt;main&gt; element represents the dominant content of the &lt;body&gt; of a 
 document. The main content area consists of content that is directly related to or expands 
@@ -615,7 +615,7 @@ have the hidden attribute specified.</i></p>
   <b><a href="#toc">↥ back to top</a></b>
 </div>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<h2>Q. When should you use <mark><b>section</b></mark>, <mark><b>div</b></mark> or <mark><b>article</b></mark>?</h2>
+<h2>Q. When should you use <b><mark>section</mark></b>, <b><mark>div</mark></b> or <b><mark>article</mark></b>?</h2>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <ul>
   <li><b><mark>&lt;section&gt;</mark></b>, group of content inside is related to a single 
@@ -891,7 +891,7 @@ HTML document, such as author, expiry date, a list of keywords, document author 
   <b><a href="#toc">↥ back to top</a></b>
 </div>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<h2>Q. What does <mark><b>async</b></mark> and <mark><b>defer</b></mark> refer in script tag?</h2>
+<h2>Q. What does <b><mark>async</mark></b> and <b><mark>defer</mark></b> refer in script tag?</h2>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h4>1. Async:</h4>
@@ -951,9 +951,9 @@ document has been fully parsed.</p>
   <b><a href="#toc">↥ back to top</a></b>
 </div>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<h2>Q. What is <mark><b>localStorage</b></mark> in html5?</h2>
+<h2>Q. What is <b><mark>localStorage</mark></b> in html5?</h2>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<p>The <mark><b>localStorage</b></mark> read-only property of the window interface allows 
+<p>The <b><mark>localStorage</mark></b> read-only property of the window interface allows 
 you to access a Storage object for the Document&apos;s origin; the stored data is saved 
 across browser sessions.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -974,7 +974,7 @@ localStorage.getItem("name"); // Kanti Ahluwalia
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h2>Q. What is sessionStorage in html5?</h2>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<p>The <mark><b>sessionStorage</b></mark> object is equal to the localStorage object, 
+<p>The <b><mark>sessionStorage</mark></b> object is equal to the localStorage object, 
 except that it stores the data for only one session. The data is deleted when the user 
 closes the specific browser tab.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -1068,15 +1068,15 @@ and <b><mark>localStorage</mark></b>?</h2>
     <thead>
       <tr>
         <th></th>
-        <th><mark>cookie</mark></th>
-        <th><mark>localStorage</mark></th>
-        <th><mark>sessionStorage</mark></th>
+        <th><b><mark>cookie</mark></b></th>
+        <th><b><mark>localStorage</mark></b></th>
+        <th><b><mark>sessionStorage</mark></b></th>
       </tr>
     </thead>
     <tbody>
       <tr>
         <td>Initiator</td>
-        <td>Client or server. Server can use <mark>Set-Cookie</mark> header</td>
+        <td>Client or server. Server can use <b><mark>Set-Cookie</mark></b> header</td>
         <td>Client</td>
         <td>Client</td>
       </tr>
@@ -1106,7 +1106,7 @@ and <b><mark>localStorage</mark></b>?</h2>
       </tr>
       <tr>
         <td>Sent to server with every HTTP request</td>
-        <td> Cookes are automatically being sent via <mark>Cookie</mark> header</td>
+        <td> Cookes are automatically being sent via <b><mark>Cookie</mark></b> header</td>
         <td>No</td>
         <td>No</td>
     </tbody>
@@ -1114,8 +1114,8 @@ and <b><mark>localStorage</mark></b>?</h2>
 </div>
 
 <p><i>Note: If the user decides to clear browsing data via whatever mechanism provided by 
-the browser, this will clear out any <mark><b>cookie</b></mark>, <mark><b>localStorage</b></mark>, 
-or <mark><b>sessionStorage</b></mark> stored. 
+the browser, this will clear out any <b><mark>cookie</mark></b>, <b><mark>localStorage</mark></b>, 
+or <b><mark>sessionStorage</mark></b> stored. 
 It&apos;s important to keep this in mind when designing for local persistance, especially 
 when comparing to alternatives such as server side storing in a database or similar (which 
 of course will persist despite user actions).</i></p>
@@ -1176,8 +1176,8 @@ Exception: QuotaExceededError: Failed to execute 'setItem' on 'Storage':
 <h3>1. WebSQL</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p>It is an API that is only supported in Chrome and Safari (and Android and iOS by extension). 
-It provides an asynchronous, transactional interface to <mark>SQLite</mark>. Since 2010, it 
-has been deprecated in favor of <mark><b>IndexedDB</b></mark>.</p>
+It provides an asynchronous, transactional interface to <b><mark>SQLite</mark></b>. Since 2010, it 
+has been deprecated in favor of <b><mark>IndexedDB</mark></b>.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h4>Advantages</h4>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -1260,7 +1260,7 @@ button when they are offline.</p>
 
 <p><i>Note: Using the application caching feature described here is at this point highly 
 discouraged; it&apos;s in the process of being removed from the Web platform. Use 
-<mark><b>Service Workers</b></mark> instead. In fact as of Firefox 44, when AppCache is used to 
+<b><mark>Service Workers</mark></b> instead. In fact as of Firefox 44, when AppCache is used to 
 provide offline support for a page a warning message is now displayed in the console 
 advising developers to use Service workers instead (bug 1204581).</i></p>
 
@@ -1311,7 +1311,7 @@ as semantic HTML, alt attributes and using [role=button] in the expected ways.</
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h2>Q. How to use <b>data-</b> attribute in html5?</h2>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<p>Any attribute on any element whose attribute name starts with <mark><b>data-</b></mark> 
+<p>Any attribute on any element whose attribute name starts with <b><mark>data-</mark></b> 
 is a data attribute. The <b>data-*</b> attributes gives us the ability to embed custom data attributes 
 on all HTML elements. The stored (custom) data can then be used in the page&apos;s 
 JavaScript to create a more engaging user experience.</p>
@@ -1348,7 +1348,7 @@ Try this example on CodeSandbox</a></b></p>
   <b><a href="#toc">↥ back to top</a></b>
 </div>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<h2>Q. What is the purpose of the <mark>alt</mark> attribute on images?</h2>
+<h2>Q. What is the purpose of the <b><mark>alt</mark></b> attribute on images?</h2>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p>The <b><mark>alt</mark></b> attribute provides alternative information for an image if a user cannot view it.</p>
 <p>The <b><mark>alt</mark></b> attribute should be used to describe any images except those which only serve a 
@@ -1419,7 +1419,7 @@ The enctype attribute specifies how the form-data should be encoded when submitt
         <td>01.</td>
         <td>application/x-www-form-urlencoded</td>
         <td>Default. All characters are encoded before sent (spaces are converted to "+" symbols, and 
-		  special characters are converted to ASCII HEX values).</td>
+          special characters are converted to ASCII HEX values).</td>
       </tr>
       <tr>
         <td>02.</td>
@@ -1651,8 +1651,8 @@ to decide whether to handle it in quirks mode or standards mode.</p>
         <ul>
           <li>Combine files: js to a file, css to a file.</li>
           <li>CSS sprites: CSS Sprites are the preferred method for reducing the number of image requests. 
-		    Combine your background images into a single image and use the CSS background-image and 
-			background-position properties to display the desired image segment.</li>
+            Combine your background images into a single image and use the CSS background-image and 
+            background-position properties to display the desired image segment.</li>
         </ul>
       </li>
     </ul>
@@ -1660,9 +1660,9 @@ to decide whether to handle it in quirks mode or standards mode.</p>
   <li><b><mark>Use a Content Delivery Network CDN</mark></b>
     <ul>
       <li>A CDN is essentially many optimized servers around the world that deliver web content to users 
-	    based on their geographic location. This means big performance improvements for site users. 
-		Because, say, if a person accessing your site in India, they will be retrieving web content 
-		from a server nearby</li>
+        based on their geographic location. This means big performance improvements for site users. 
+        Because, say, if a person accessing your site in India, they will be retrieving web content 
+        from a server nearby</li>
     </ul>
   </li>
   <li><b><mark>Optimize Images:</mark></b>
@@ -1672,7 +1672,7 @@ to decide whether to handle it in quirks mode or standards mode.</p>
           <li>Changing the resolution: reducing the “quality” of the image (and thereby the file size)</li>
           <li>Compressing the picture: increasing the efficiency of image data storage</li>
           <li>Cropping the picture: when cropping, you are cutting out unneeded areas and thus making 
-		    the image smaller in size</li>
+            the image smaller in size</li>
         </ul>
       </li>
     </ul>
@@ -1680,17 +1680,17 @@ to decide whether to handle it in quirks mode or standards mode.</p>
   <li><b><mark>Put Scripts at the Bottom:</mark></b>
     <ul>
       <li>Javascript files can load after the rest of your page. The simplest solution is to place 
-	    your external Javascript files at the bottom of your page, just before the close of your 
-		body tag. Now more of your site can load before your scripts. Another method that allows 
-		even more control is to use the defer or async attributes when placing external .js files 
-		on your site.
+        your external Javascript files at the bottom of your page, just before the close of your 
+        body tag. Now more of your site can load before your scripts. Another method that allows 
+        even more control is to use the defer or async attributes when placing external .js files 
+        on your site.
         <ul>
           <li>Async tags load the scripts while the rest of the page loads, but this means scripts 
-		    can be loaded out of order. Basically, lighter files load first. This might be fine for 
-			some scripts, but can be disastrous for others.</li>
+            can be loaded out of order. Basically, lighter files load first. This might be fine for 
+            some scripts, but can be disastrous for others.</li>
           <li>The defer attribute loads your scripts after your content has finished loading. It also 
-		    runs the scripts in order. Just make sure your scripts run so late without breaking your 
-			site.</li>
+            runs the scripts in order. Just make sure your scripts run so late without breaking your 
+            site.</li>
         </ul>
       </li>
     </ul>
@@ -1698,11 +1698,11 @@ to decide whether to handle it in quirks mode or standards mode.</p>
   <li><b><mark>Add an Expires or a Cache-Control Header</mark></b>
     <ul>
       <li>Web page designs are getting richer and richer, which means more scripts, stylesheets, 
-	    images, and Flash in the page. A first-time visitor to your page may have to make several 
-		HTTP requests, but by using the Expires header you make those components cacheable. This 
-		avoids unnecessary HTTP requests on subsequent page views. Expires headers are most often 
-		used with images, but they should be used on all components including scripts, stylesheets, 
-		and Flash components.</li>
+        images, and Flash in the page. A first-time visitor to your page may have to make several 
+        HTTP requests, but by using the Expires header you make those components cacheable. This 
+        avoids unnecessary HTTP requests on subsequent page views. Expires headers are most often 
+        used with images, but they should be used on all components including scripts, stylesheets, 
+        and Flash components.</li>
     </ul>
   </li>
   <li><b><mark>Gzip Components</mark></b>
@@ -1746,13 +1746,13 @@ to decide whether to handle it in quirks mode or standards mode.</p>
 <ul>
   <li><b><mark>Reduce DNS Lookups</mark></b>
     <ul>
-	<li>This can be achieved through various strategies, including;
+    <li>This can be achieved through various strategies, including;
       <ul>
         <li>using a fast DNS provider,</li>
-        <li>reducing the number of hostnames, and<li>
-		<li>leveraging DNS caching and prefetching.</li>
-	  </ul>
-	</li>
+        <li>reducing the number of hostnames, and</li>
+        <li>leveraging DNS caching and prefetching.</li>
+      </ul>
+    </li>
     </ul>
   </li>
   <li><b><mark>Minify JavaScript and CSS</mark></b></li>
@@ -1810,7 +1810,7 @@ to decide whether to handle it in quirks mode or standards mode.</p>
 <h2>Q. What does the lang attribute in html do?</h2>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <ul>
-  <li>Helps in styling pages by using them in css <mark>:lang()</mark> pseudo class Spelling and grammar 
+  <li>Helps in styling pages by using them in css <b><mark>:lang()</mark></b> pseudo class Spelling and grammar 
     checkers Languade detection by search engines.</li>
 </ul>
 
@@ -1837,7 +1837,7 @@ in mobile first approach media queries will be written with respect to min-width
   <b><a href="#toc">↥ back to top</a></b>
 </div>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<h2>Q. What are <mark>data-</mark> attributes good for?</h2>
+<h2>Q. What are <b><mark>data-</mark></b> attributes good for?</h2>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p>The HTML5 data attribute lets you assign custom data to an element. When we want to 
 store more information/data about the element when no suitable HTML5 element or 
@@ -2029,8 +2029,8 @@ the text size will follow the size of the browser window.</p>
 <p>The High Resolution Time API provides the current time in sub-millisecond resolution and 
 such that it is not subject to system clock skew or adjustments.</p>
 
-<p>It exposes only one method, that belongs to the <mark>window.performance</mark> object, 
-called <mark>now()</mark>. It returns a <mark>DOMHighResTimeStamp</mark> representing the 
+<p>It exposes only one method, that belongs to the <b><mark>window.performance</mark></b> object, 
+called <b><mark>now()</mark></b>. It returns a <b><mark>DOMHighResTimeStamp</mark></b> representing the 
 current time in milliseconds. The timestamp is very accurate, with precision to a thousandth 
 of a millisecond, allowing for accurate tests of the performance of our code.</p>
 
@@ -2060,8 +2060,8 @@ performance.measure("durationFoo", "startFoo", "endFoo");
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h4>3. Network Information API</h4>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<p>This API belongs to the connection property of the <mark>window.navigator</mark> object. 
-It exposes two read-only properties: <mark>bandwidth</mark> and <mark>metered</mark>. The 
+<p>This API belongs to the connection property of the <b><mark>window.navigator</mark></b> object. 
+It exposes two read-only properties: <b><mark>bandwidth</mark></b> and <b><mark>metered</mark></b>. The 
 former is a number representing an estimation of the current bandwidth, while the latter 
 is a Boolean whose value is true if the user&apos;s connection is subject to limitation 
 and bandwidth usage, and false otherwise.</p>
@@ -2112,7 +2112,7 @@ and bandwidth usage, and false otherwise.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h4>4. Vibration API</h4>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<p>It exposes only one method, <mark>vibrate()</mark>, that belongs to the <mark>window.navigator</mark> 
+<p>It exposes only one method, <b><mark>vibrate()</mark></b>, that belongs to the <b><mark>window.navigator</mark></b> 
 object. This method accepts one parameter specifying the duration of the vibration in milliseconds. The 
 parameter can be either an integer or an array of integers. In the second case, it&apos;s interpreted 
 as alternating vibration times and pauses.</p>
@@ -2128,11 +2128,11 @@ navigator.vibrate(2000);
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h4>5. Battery Status API</h4>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<p>The Battery Status API exposes four properties (<mark>charging</mark>, <mark>chargingTime</mark>, 
-<mark>discharingTime</mark>, and <mark>level</mark>) and four events. The properties specify if 
+<p>The Battery Status API exposes four properties (<b><mark>charging</mark></b>, <b><mark>chargingTime</mark></b>, 
+<b><mark>discharingTime</mark></b>, and <b><mark>level</mark></b>) and four events. The properties specify if 
 the battery is in charge, the seconds remaining until the battery is fully charged, the seconds 
 remaining until the battery is fully discharged, and the current level of the battery. These 
-properties belongs to the <mark>battery</mark> property of the <mark>window.navigator</mark> 
+properties belongs to the <b><mark>battery</mark></b> property of the <b><mark>window.navigator</mark></b> 
 object.</p>
 
 ```javascript
@@ -2157,8 +2157,8 @@ console.log('Page Visibility: '+document.hidden);
 <h4>7. Fullscreen API</h4>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p>The Fullscreen API provides a way to request fullscreen display from the user, and 
-exit this mode when desired. This API exposes two methods, <mark>requestFullscreen()</mark> 
-and <mark>exitFullscreen()</mark>, allowing us to request an element to become fullscreen 
+exit this mode when desired. This API exposes two methods, <b><mark>requestFullscreen()</mark></b> 
+and <b><mark>exitFullscreen()</mark></b>, allowing us to request an element to become fullscreen 
 and to exit fullscreen.</p>
 
 ```javascript
@@ -2189,7 +2189,7 @@ function toggleFullScreen() {
 they so desire. For privacy reasons, the user is asked for permission to report location 
 information.</p>
 
-<p>The Geolocation API is published through the <mark>navigator.geolocation</mark> object.</p>
+<p>The Geolocation API is published through the <b><mark>navigator.geolocation</mark></b> object.</p>
 
 ```javascript
 if ("geolocation" in navigator) {
@@ -2319,12 +2319,12 @@ This can, for instance, be used to draw graphs, combine photos, or create animat
 
 |  Property    |    Description                                                                 |
 |--------------|--------------------------------------------------------------------------------|
-|<mark>fillStyle</mark>       | Sets or returns the color, gradient, or pattern used to fill the drawing. |
-|<mark>strokeStyle</mark>   | Sets or returns the color, gradient, or pattern used for strokes.     |
-|<mark>shadowColor</mark>   | Sets or returns the color to use for shadows.                         |
-|<mark>shadowBlur</mark>       | Sets or returns the blur level for shadows.                        |
-|<mark>shadowOffsetX</mark> | Sets or returns the horizontal distance of the shadow from the shape. |
-|<mark>shadowOffsetY</mark> | Sets or returns the vertical distance of the shadow from the shape.   |
+|<b><mark>fillStyle</mark></b>       | Sets or returns the color, gradient, or pattern used to fill the drawing. |
+|<b><mark>strokeStyle</mark></b>   | Sets or returns the color, gradient, or pattern used for strokes.     |
+|<b><mark>shadowColor</mark></b>   | Sets or returns the color to use for shadows.                         |
+|<b><mark>shadowBlur</mark></b>       | Sets or returns the blur level for shadows.                        |
+|<b><mark>shadowOffsetX</mark></b> | Sets or returns the horizontal distance of the shadow from the shape. |
+|<b><mark>shadowOffsetY</mark></b> | Sets or returns the vertical distance of the shadow from the shape.   |
 
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h4>2. Line Styles:</h4>
@@ -2716,8 +2716,8 @@ to drawing paths, boxes, circles, text & adding images.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h2>Q. Explain Drag 'n Drop in HTML5?</h2>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<p>HTML5 drag-and-drop uses the <mark>DOM event model</mark> and <mark>drag events</mark> 
-inherited from <mark>mouse events</mark>. A typical drag operation begins when a user 
+<p>HTML5 drag-and-drop uses the <b><mark>DOM event model</mark></b> and <b><mark>drag events</mark></b> 
+inherited from <b><mark>mouse events</mark></b>. A typical drag operation begins when a user 
 selects a draggable element, drags the element to a droppable element, and then releases 
 the dragged element.</p>
 <div role="region" tabindex="0">
@@ -2849,7 +2849,7 @@ handled by CSS.</p>
       <tr>
         <th>S1.No</th>
         <th>Tags (Elements)</th>
-		<td>Description</td>
+        <td>Description</td>
       </tr>
     </thead>
     <tbody>
@@ -2996,16 +2996,16 @@ handled by CSS.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h2>Q. How you can Use Modernizr in HTML5 (created: 2019)?</h2>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<p><mark>Modernizr</mark> is a JavaScript library that detects which HTML5 and CSS3 features visitor&apos;s 
+<p><b><mark>Modernizr</mark></b> is a JavaScript library that detects which HTML5 and CSS3 features visitor&apos;s 
 browser supports. In detecting feature support, it allows developers to test for some of 
 the new technologies and then provide fallbacks for browsers that do not support them. 
 This is called <b>feature detection</b> and is much more efficient than browser sniffing.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h4>1. Using Modernizr with CSS:</h4>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<p>By default, <mark>Modernizr</mark> sets classes for all of your tests on the root element (&lt;html&gt; 
+<p>By default, <b><mark>Modernizr</mark></b> sets classes for all of your tests on the root element (&lt;html&gt; 
 for websites). This means adding the class for each feature when it is supported, and 
-adding it with a no- prefix when it is not (e.g. <mark>.feature</mark> or <mark>.no-feature</mark>).</p>
+adding it with a no- prefix when it is not (e.g. <b><mark>.feature</mark></b> or <b><mark>.no-feature</mark></b>).</p>
 
 ```css
 .no-cssgradients .header {
@@ -3020,8 +3020,8 @@ adding it with a no- prefix when it is not (e.g. <mark>.feature</mark> or <mark>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h4>2. Using Modernizr with JavaScript:</h4>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<p><mark>Modernizr</mark> keeps track of the results of all of it&apos;s feature detections via the 
-<mark>Modernizr</mark> object.
+<p><b><mark>Modernizr</mark></b> keeps track of the results of all of it&apos;s feature detections via the 
+<b><mark>Modernizr</mark></b> object.
 
 ```javascript
 if (Modernizr.canvas) {
@@ -3105,10 +3105,10 @@ development projects.</p>
 <h3>What are HTML Iframes?</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p>An iframe is an HTML document embedded inside another HTML document. The 
-<mark><b>&lt;iframe&gt;</b></mark>  
+<b><mark>&lt;iframe&gt;</mark></b>
 tag specifies the URL of the embedded content, allowing for seamless integration of 
 external resources. This section will guide you through the syntax and attributes of 
-the <mark><b>&lt;iframe&gt;</b></mark> tag, providing a solid foundation for your 
+the <b><mark>&lt;iframe&gt;</mark></b> tag, providing a solid foundation for your 
 iframe usage.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h5>Syntax:</h5>
@@ -3210,7 +3210,7 @@ parent — is usually the browser window, represented by the <b>Window</b> objec
 </div>
 
 <i>Note: Because each browsing context is a complete document environment, every 
-<mark><b>&lt;iframe&gt;</b></mark> in a page requires increased memory and other computing resources.</i>
+<b><mark>&lt;iframe&gt;</mark></b> in a page requires increased memory and other computing resources.</i>
 
 <div align="right">
   <b><a href="#toc">↥ back to top</a></b>
@@ -3220,7 +3220,7 @@ parent — is usually the browser window, represented by the <b>Window</b> objec
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h4>1. rel="nofollow"</h4>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<p>When <mark><b>rel="nofollow"</b></mark> tag is used, it instruct the search engines not to pass 
+<p>When <b><mark>rel="nofollow"</mark></b> tag is used, it instruct the search engines not to pass 
 any PageRank from one page to the other. It does not allow it to pass the authority 
 to the specific website. The main advantage of using this attribute is to control 
 the spam attack.</p>
@@ -3253,7 +3253,7 @@ link.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h4>3. rel="noopener"</h4>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<p>It prevents the new page from being able to access the <mark><b>window.opener</b></mark> property and 
+<p>It prevents the new page from being able to access the <b><mark>window.opener</mark></b> property and 
 will make it run in a separate process. noopener tag works as a security fix which 
 prevents malicious links to take control over an opened tab.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -3286,8 +3286,8 @@ enclosing context.</p>
   <body>
     <p>Search results for "salamander":</p>
     <hr>
-    <p>Several species of <mark>salamander</mark> inhabit the temperate rainforest of the Pacific Northwest.</p>
-    <p>Most <mark>salamander</mark>s are nocturnal, and hunt for insects, worms, and other small creatures.</p>
+    <p>Several species of <b><mark>salamander</mark></b> inhabit the temperate rainforest of the Pacific Northwest.</p>
+    <p>Most <b><mark>salamander</mark></b>s are nocturnal, and hunt for insects, worms, and other small creatures.</p>
   </body>
 </html>
 ```
@@ -3414,8 +3414,8 @@ browsers and search engines to better interpret content. For example, instead of
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h2>Q. What is the difference between an "attribute" and a "property" in HTML?</h2>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<p>Attributes are defined by <mark><b>HTML</b></mark>. Properties are accessed from 
-<mark><b>DOM (Document Object Model)</b></mark> nodes.</p>
+<p>Attributes are defined by <b><mark>HTML</mark></b>. Properties are accessed from 
+<b><mark>DOM (Document Object Model)</mark></b> nodes.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h5>Example:</h5>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -3653,8 +3653,8 @@ cater for languages such as Arabic, Hebrew, Pashto, Persian, Urdu, and Sindhi.</
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p>The &lt;small&gt; HTML element represents side-comments and small print, like 
 copyright and legal text, independent of its styled presentation. By default, it 
-renders text within it one font-size smaller, such as from <mark>small</mark> to 
-<mark>x-small</mark>.</p>
+renders text within it one font-size smaller, such as from <b><mark>small</mark><b> to 
+<b><mark>x-small</mark></b>.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h5>Example:</h5>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -3719,7 +3719,7 @@ renders text within it one font-size smaller, such as from <mark>small</mark> to
 connected content. And the &lt;div&gt; tag is an empty container specifying a division or 
 a section.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<h4>The <mark><b>&lt;section&gt;</b></mark> Element</h4>
+<h4>The <b><mark>&lt;section&gt;</mark></b> Element</h4>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p>According to the W3C specification, the &lt;section&gt; tag means that the content inside 
 this element is grouped. In other words, the content relates to a single theme. It must be 
@@ -3755,10 +3755,10 @@ an entry in the outline of the page.</p>
 ```
 
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<h4>The <mark><b>&lt;div&gt;</b></mark> Element</h4>
+<h4>The <b><mark>&lt;div&gt;</mark></b> Element</h4>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p>The &lt;div&gt; element only represents its child elements and doesn&apos;t have a special 
-meaning. It can be used with the <mark><b>lang</b></mark>, <mark><b>title</b></mark>, and <mark><b>class</b></mark> attributes to add semantics 
+meaning. It can be used with the <b><mark>lang</mark></b>, <b><mark>title</mark></b>, and <b><mark>class</mark></b> attributes to add semantics 
 that is common to a group of consecutive elements. This element can also be used in a 
 &lt;dl&gt; tag and wrap groups of &lt;dt&gt; and &lt;dd&gt; elements.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -3814,12 +3814,12 @@ Thus, many decisions about how to handle malformed documents are left up to the 
   <b><a href="#toc">↥ back to top</a></b>
 </div>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<h2>Q. Why you would use a <mark><b>srcset</b></mark> attribute in an image tag?</h2>
+<h2>Q. Why you would use a <b><mark>srcset</mark></b> attribute in an image tag?</h2>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h4>Explain the process the browser used when evaluating the content of this attribute.</h4>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<p>The <mark><b>srcset</b></mark> attribute allows to define a list of different image 
+<p>The <b><mark>srcset</mark></b> attribute allows to define a list of different image 
 resources along with size information so that browser can pick the most appropriate 
 image based on the actual device&apos;s resolution.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -3839,7 +3839,7 @@ image based on the actual device&apos;s resolution.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h4>1. Using display density descriptor:</h4>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<p><mark><b>srcset</b></mark> provides a comma-separated list of image resources along 
+<p><b><mark>srcset</mark></b> provides a comma-separated list of image resources along 
 with display density it should be used, for example1x, 2x etc.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h5>Example:</h5>
@@ -3874,7 +3874,7 @@ density values, we provide the actual width of the image.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h2>Q. What is accessibility & ARIA role means in a web application?</h2>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<p>The <mark><b>Accessible Rich Internet Applications (ARIA)</b></mark> Suite, defines a 
+<p>The <b><mark>Accessible Rich Internet Applications (ARIA)</mark></b> Suite, defines a 
 way to make Web content and Web applications more accessible to people with disabilities. 
 It especially helps with dynamic content and advanced user interface controls developed 
 with HTML, JavaScript, and related technologies.</p>
@@ -3895,7 +3895,7 @@ people with disabilities.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3>ARIA Roles:</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<p>An ARIA role is added via a <mark><b>role="&lt;ROLE TYPE&gt;"</b></mark> attribute, and 
+<p>An ARIA role is added via a <b><mark>role="&lt;ROLE TYPE&gt;"</mark></b> attribute, and 
 does not ever change for an element once it is set. There are four categories of ARIA roles:</p>
 <ul>
   <li>landmark</li>
@@ -3918,7 +3918,7 @@ technology a better way to navigate and identify the different parts of a web pa
 
 <p>While seeming redundant, is actually useful for screen readers. It wouldn&apos;t read the 
 aria-label on this navigation, which is really helpful for giving greater context to visually 
-impaired users, without the <mark><b>role="navigation"</b></mark>.</p>
+impaired users, without the <b><mark>role="navigation"</mark></b>.</p>
 
 The different landmark roles you can use are as follows, copied from the W3C Wiki Page:
 <ul>
@@ -3926,7 +3926,7 @@ The different landmark roles you can use are as follows, copied from the W3C Wik
   <li><b>complementary</b>: Any section of the document that supports the main content, yet is separate and meaningful on its own.</li>
   <li><b>contentinfo</b>: A region that contains information about the parent document such as copyrights and links to privacy statements.</li>
   <li><b>form</b>: A region of the document that represents a collection of form-associated elements, some of which can represent editable values that can be submitted to a server for processing.</li>
-  <li><b>main</b>: Main content in a document. In almost all cases a page will have only one <mark><b>role=“main”</b></mark>.</li>
+  <li><b>main</b>: Main content in a document. In almost all cases a page will have only one <b><mark>role=“main”</mark></b>.</li>
   <li><b>navigation</b>: A collection of links suitable for use when navigating the document or related documents.</li>
   <li><b>search</b>: The search tool of a Web document.</li>
   <li><b>application</b>: A region declared as a web application, as opposed to a web document.</li>
@@ -3957,7 +3957,7 @@ to think about including in your HTML.</p>
   <li><b>row</b>: An element with role="row" is a row of cells within a tabular structure. A row contains one or more cells, grid cells or column headers, and possibly a row header, within a grid, table or treegrid, and optionally within a rowgroup.</li>
   <li><b>rowgroup</b>: An element with role="rowgroup" is a group of rows within a tabular structure. A rowgroup contains one or more rows of cells, grid cells, column headers, or row headers within a grid, table or treegrid.</li>
   <li><b>rowheader</b>: An element with role="rowheader" is a cell containing header information for a row within a tabular structure of a grid, table or treegrid.</li>
-  <li><b>separator</b>: The separator role indicates the element is a divider that separates and distinguishes sections of content or groups of menuitems. The implicit ARIA role of the native thematic break <hr> element is separator.</li>
+  <li><b>separator</b>: The separator role indicates the element is a divider that separates and distinguishes sections of content or groups of menuitems. The implicit ARIA role of the native thematic break &lt;hr&gt; element is separator.</li>
   <li><b>toolbar</b>: The toolbar role defines the containing element as a collection of commonly used function buttons or controls represented in a compact visual form.</li>
 </ul>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -4093,7 +4093,7 @@ and practical for most web pages/applications.</p>
         
         const red = document.getElementById("red");
         const yellow = document.getElementById("yellow");
-    const green = document.getElementById("green");
+        const green = document.getElementById("green");
       
         green.style.opacity = 1;
       
@@ -4196,7 +4196,7 @@ event actions.</p>
         <td>script</td>
         <td>Script to be run when the message is triggered.</td>
       </tr>
-	  <tr>
+      <tr>
         <td>onoffline</td>
         <td>script</td>
         <td>Script to be run when the browser starts to work offline.</td>
@@ -4249,7 +4249,7 @@ event actions.</p>
         <td>script</td>
         <td>Script to be run when a Web Storage area is updated.</td>
       </tr>
-	  <tr>
+      <tr>
         <td>onunload</td>
         <td>script</td>
         <td>Fires once a page has unloaded (or the browser window has been closed).</td>
@@ -4399,7 +4399,7 @@ but is most used in form elements):</p>
       <tr>
         <td>onmouseover</td>
         <td>script</td>
-        <td>.</td>
+        <td>The onmouseover event occurs when the mouse pointer enters an element.</td>
       </tr>
       <tr>
         <td>onmouseup</td>
@@ -6211,14 +6211,14 @@ and definition list. We have explained all three list types with examples.</p>
 <h2 id="8-html-url">08. HTML URL</h2>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p>A <b>Uniform Resource Locator (URL)</b> is simply the address of a website to access the 
-website content like <mark>www.geeksforgeeks.org</mark>. But certain characters are 
+website content like <b><mark>www.geeksforgeeks.org</mark></b>. But certain characters are 
 allowed to be used in the URL like alphabets A-Z and a-z, numbers 0-9, and a few special 
 characters. They can be used as is but the rest of the characters that are not in this 
 list are used after encoding them to a suitable form. URL Encoding is the process of 
 converting the URL into a valid format that is accepted by web browsers.</p>
 
 <p><b>URL Encoding</b> takes place by replacing all the characters that are not allowed by a 
-<mark>% (percent)</mark> sign followed by two hexadecimal digits. These two hexadecimal 
+<b><mark>% (percent)</mark></b> sign followed by two hexadecimal digits. These two hexadecimal 
 values represent the numerical values of the character in the ASCII character set. For 
 example, a space is not acceptable in a URL and is replaced by a ‘%20’ or a ‘+’ sign 
 while encoding. Similarly, a $ sign is replaced by ‘%24’.</p>
@@ -6363,7 +6363,7 @@ a blue line drawn diagonally within an SVG element.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h4>Example 2: Drawing a Circle</h4>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<p>In this example we uses the <mark>&lt;svg&gt;</mark> tag to draw a grey circle with a 
+<p>In this example we use the <b><mark>&lt;svg&gt;</mark></b> tag to draw a grey circle with a 
 black border. The circle has a center at (80, 80) and a radius of 50.</p>
 
 ```
@@ -6591,8 +6591,8 @@ using the ARIAL font family.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3>SVG &lt;a&gt; Element</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<p>The SVG <mark>&lt;a&gt;</mark> element creates a hyperlink within SVG graphics. It functions 
-similarly to the HTML <mark>&lt;a&gt;</mark> element. It links to external resources or other parts 
+<p>The SVG <b><mark>&lt;a&gt;</mark></b> element creates a hyperlink within SVG graphics. It functions 
+similarly to the HTML <b><mark>&lt;a&gt;</mark></b> element. It links to external resources or other parts 
 of the SVG document.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h5>Syntax:</h5>
@@ -7339,9 +7339,9 @@ given above.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3>SVG defs Element</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<p>The <mark>&lt;defs&gt;</mark> in SVG is used whenever we want a particular element to render only 
-when required or when it is called. objects that are created inside <mark>&lt;defs&gt;</mark> element 
-are not rendered directly they are needed to be called by <mark>&lt;use&gt;</mark> element to render 
+<p>The <b><mark>&lt;defs&gt;</mark></b> in SVG is used whenever we want a particular element to render only 
+when required or when it is called. objects that are created inside <b><mark>&lt;defs&gt;</mark></b> element 
+are not rendered directly they are needed to be called by <b><mark>&lt;use&gt;</mark></b> element to render 
 them on the browser.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h5>Syntax:</h5>
@@ -7686,7 +7686,7 @@ graphic. It executes a pixel-wise combination of two input SVG fragments or imag
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 
 ```
- <feBlend in="" in2="" mode=""/>
+<feBlend in="" in2="" mode=""/>
 ```
 
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -7743,8 +7743,8 @@ graphic. It executes a pixel-wise combination of two input SVG fragments or imag
 <p align="center">
 <img class="displayed"
   src="./images/09-image023.png"
-  title="SVG "
-  alt="SVG ."
+  title="Text within green square with dark green border" 
+  alt="Text within green square with dark green border."
   style="width:40%" >
 </p>
 <!-- 09-image023.png -->
@@ -7793,10 +7793,11 @@ graphic. It executes a pixel-wise combination of two input SVG fragments or imag
 <p align="center">
 <img class="displayed"
   src="./images/09-image024.png"
-  title="SVG "
-  alt="SVG ."
+  title="Text within light green filled circle within black rectangle."
+  alt="Text within light green filled circle within black rectangle."
   style="width:40%" >
-</p><!-- 09-image024.png -->
+</p>
+<!-- 09-image024.png -->
 <div align="right">
   <b><a href="#toc">↥ back to top</a></b>
 </div>
@@ -7811,10 +7812,11 @@ graphic. It executes a pixel-wise combination of two input SVG fragments or imag
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h5>Syntax:</h5>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-&lt;feComponentTransfer in=""&gt;
 
-----
+<pre><code>
+&lt;feComponentTransfer in=""&gt;
 &lt;/feComponentTransfer&gt;
+</code></pre>
 
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h5>Attributes :</h5>
@@ -7858,8 +7860,8 @@ graphic. It executes a pixel-wise combination of two input SVG fragments or imag
 <p align="center">
 <img class="displayed"
   src="./images/09-image025.png"
-  title="SVG "
-  alt="SVG ."
+  title="Example SVG. Backward G, forward G in lime green with blue square, border in lime green"
+  alt="Backward/forward G in green lettering with black bordered square."
   style="width:40%" >
 </p>
 <!-- 09-image025.png -->
@@ -7901,12 +7903,12 @@ graphic. It executes a pixel-wise combination of two input SVG fragments or imag
 <h5>Output:</h5>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~~~~~~ svg 26 -  svg  ~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~ svg 26 two images text in circle in blob in rectangle (svg) ~~~~~~~~~~~~~~~~-->
 <p align="center">
 <img class="displayed"
   src="./images/09-image026.png"
-  title="SVG "
-  alt="SVG ."
+  title="Two images with text in circle within rectangle"
+  alt="Two images with text in circle within rectangle."
   style="width:40%" >
 </p>
 <!-- 09-image026.png -->
@@ -7952,8 +7954,8 @@ graphic. It executes a pixel-wise combination of two input SVG fragments or imag
 <p align="center">
 <img class="displayed"
   src="./images/09-image027.png"
-  title="SVG "
-  alt="SVG ."
+  title="Red square with blue outside trim with shadow &amp; red shadowed square in yellow square"
+  alt="Red square with blue outside trim with shadow &amp; red shadowed square in yellow square."
   style="width:40%" >
 </p>
 <!-- 09-image027.png -->
@@ -8044,8 +8046,8 @@ with neighboring pixels to produce a resulting image.</p>
 <p align="center">
 <img class="displayed"
   src="./images/09-image028.png"
-  title="SVG "
-  alt="SVG ."
+  title="Black letter 'GeeksForGeeks' within green square with black border"
+  alt="Black letter 'GeeksForGeeks' within green square with black border."
   style="width:40%" >
 </p>
 <!-- 09-image028.png -->
@@ -8100,8 +8102,8 @@ with neighboring pixels to produce a resulting image.</p>
 <p align="center">
 <img class="displayed"
   src="./images/09-image029.png"
-  title="SVG "
-  alt="SVG ."
+  title="Black lettered 'GeeksForGeeks' in circle green filled within rectangle with gray trim"
+  alt="Black lettered 'GeeksForGeeks' in circle green filled within rectangle with gray trim."
   style="width:40%" >
 </p>
 <!-- 09-image029.png -->
@@ -8174,8 +8176,8 @@ are brighter and the sides facing away are darker and in shadow.</p>
 <p align="center">
 <img class="displayed"
   src="./images/09-image030.png"
-  title="SVG "
-  alt="SVG ."
+  title="Square shading light to dark green"
+  alt="Square shading light to dark green."
   style="width:40%" >
 </p>
 <!-- 09-image030.png -->
@@ -8227,8 +8229,8 @@ are brighter and the sides facing away are darker and in shadow.</p>
 <p align="center">
 <img class="displayed"
   src="./images/09-image031.png"
-  title="SVG "
-  alt="SVG ."
+  title="Dark blue figure within black square"
+  alt="Dark blue figure within black square."
   style="width:40%" >
 </p>
 <!-- 09-image031.png -->
@@ -8308,8 +8310,8 @@ which displacement effect is applied is reserved in “in” attribute.</p>
 <p align="center">
 <img class="displayed"
   src="./images/09-image032.png"
-  title="SVG "
-  alt="SVG ."
+  title="Black shaded circle"
+  alt="Black shaded circle."
   style="width:40%" >
 </p>
 <!-- 09-image032.png -->
@@ -8356,8 +8358,8 @@ which displacement effect is applied is reserved in “in” attribute.</p>
 <p align="center">
 <img class="displayed"
   src="./images/09-image033.png"
-  title="SVG "
-  alt="SVG ."
+  title="Black square in bottom-right of black shaded square"
+  alt="Black square in bottom-right of black shaded square."
   style="width:40%" >
 </p>
 <!-- 09-image033.png -->
@@ -8587,26 +8589,26 @@ Place all attribute values in SVG inside quotes (even if they are numbers)
 <h5>SVG Code explanation:</h5>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <ul>
-  <li>Start with the <mark>&lt;svg&gt;</mark> root element, define the width and height, 
+  <li>Start with the <b><mark>&lt;svg&gt;</mark></b> root element, define the width and height, 
     and proper namespace.</li>
-  <li>The <mark>&lt;rect&gt;</mark> element is used to draw a rectangle.</li>
+  <li>The <b><mark>&lt;rect&gt;</mark></b> element is used to draw a rectangle.</li>
   <li>The width and height of the rectangle is set to 100% of the width/height of the 
-    <mark>&lt;svg&gt;</mark> element.</li>
+    <b><mark>&lt;svg&gt;</mark></b> element.</li>
   <li>Set the fill color of the rectangle to green.</li>
-  <li>The <mark>&lt;circle&gt;</mark> element is used to draw a circle.</li>
-  <li>The <mark>cx</mark> and <mark>cy</mark> attributes define the x and y coordinates 
+  <li>The <b><mark>&lt;circle&gt;</mark></b> element is used to draw a circle.</li>
+  <li>The <b><mark>cx</mark></b> and <b><mark>cy</mark></b> attributes define the x and y coordinates 
     of the center of the circle.</li>
-  <li>The <mark>r</mark> attribute defines the radius of the circle.</li>
+  <li>The <b><mark>r</mark></b> attribute defines the radius of the circle.</li>
   <li>We set the fill color of the circle to yellow.</li>
-  <li>The <mark>&lt;text&gt;</mark> element is used to draw a text.</li>
-  <li>The <mark>x</mark> and <mark>y</mark> attributes define the x and y coordinates of 
+  <li>The <b><mark>&lt;text&gt;</mark></b> element is used to draw a text.</li>
+  <li>The <b><mark>x</mark></b> and <b><mark>y</mark></b> attributes define the x and y coordinates of 
     the center of the text.</li>
-  <li>The <mark>font-size</mark> attribute defines the font size of the text.</li>
-  <li>The <mark>text-anchor</mark> attribute defines where we want the midpoint (of the 
+  <li>The <b><mark>font-size</mark></b> attribute defines the font size of the text.</li>
+  <li>The <b><mark>text-anchor</mark></b> attribute defines where we want the midpoint (of the 
     text) to be.</li>
-  <li>The <mark>fill</mark> attribute defines the color of the text.</li>
+  <li>The <b><mark>fill</mark></b> attribute defines the color of the text.</li>
   <li>Write "SVG" as the text to show.</li>
-  <li>Close the SVG image with <mark>&lt;/svg&gt;</mark>.</li>
+  <li>Close the SVG image with <b><mark>&lt;/svg&gt;</mark></b>.</li>
 </ul>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h4>SVG Shapes</h4>
@@ -8614,22 +8616,22 @@ Place all attribute values in SVG inside quotes (even if they are numbers)
 <p>SVG has some predefined shape elements that can be used by developers:</p>
 
 <ul>
-  <li>Rectangle <mark>&lt;rect&gt;</mark></li>
-  <li>Circle <mark>&lt;circle&gt;</mark></li>
-  <li>Ellipse <mark>&lt;ellipse&gt;</mark></li>
-  <li>Line <mark>&lt;line&gt;</mark></li>
-  <li>Polyline <mark>&lt;polyline&gt;</mark></li>
-  <li>Polygon <mark>&lt;polygon&gt;</mark></li>
-  <li>Path <mark>&lt;path&gt;</mark></li>
+  <li>Rectangle <b><mark>&lt;rect&gt;</mark></b></li>
+  <li>Circle <b><mark>&lt;circle&gt;</mark></b></li>
+  <li>Ellipse <b><mark>&lt;ellipse&gt;</mark></b></li>
+  <li>Line <b><mark>&lt;line&gt;</mark></b></li>
+  <li>Polyline <b><mark>&lt;polyline&gt;</mark></b></li>
+  <li>Polygon <b><mark>&lt;polygon&gt;</mark></b></li>
+  <li>Path <b><mark>&lt;path&gt;</mark></b></li>
 </ul>
 
-<p>The following chapters will explain each element, starting with the <mark>&lt;rect&gt;</mark> element.</p>
+<p>The following chapters will explain each element, starting with the <b><mark>&lt;rect&gt;</mark></b> element.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h4>SVG Rectangle - &lt;rect&gt;</h4>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<p>The <mark>&lt;rect&gt;</mark> element is used to create a rectangle and variations of a rectangle shape.</p>
+<p>The <b><mark>&lt;rect&gt;</mark></b> element is used to create a rectangle and variations of a rectangle shape.</p>
 
-<p>The <mark>&lt;rect&gt;</mark> element has six basic attributes to position and shape the rectangle:</p>
+<p>The <b><mark>&lt;rect&gt;</mark></b> element has six basic attributes to position and shape the rectangle:</p>
 <div role="region" tabindex="0">
   <table>
     <caption>SVG Rectangle - &lt;rect&gt;</caption>
@@ -8684,14 +8686,14 @@ Place all attribute values in SVG inside quotes (even if they are numbers)
 <h5>Code explanation:</h5>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <ul>
-  <li>The <mark>width</mark> and <mark>height</mark> attributes of the <mark>&lt;rect&gt;</mark> 
+  <li>The <b><mark>width</mark></b> and <b><mark>height</mark></b> attributes of the <b><mark>&lt;rect&gt;</mark></b> 
     element define the height and the width of the rectangle.</li>
-  <li>The <mark>x</mark> and <mark>y</mark> attributes defines the x- and y-position of the 
+  <li>The <b><mark>x</mark></b> and <b><mark>y</mark></b> attributes defines the x- and y-position of the 
     top-left corner of the rectangle (x="10" places the rectangle 10px from the left margin 
     and y="10" places the rectangle 10px from the top margin) in the SVG canvas.</li>
-  <li>The <mark>rx</mark> and <mark>ry</mark> attributes defines the radius of the 
+  <li>The <b><mark>rx</mark></b> and <b><mark>ry</mark></b> attributes defines the radius of the 
     corners of the rectangle.</li>
-  <li>The <mark>fill</mark> attribute defines the fill color of the rectangle.</li>
+  <li>The <b><mark>fill</mark></b> attribute defines the fill color of the rectangle.</li>
 </ul>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h4>A Rectangle With Border</h4>
@@ -8708,10 +8710,10 @@ Place all attribute values in SVG inside quotes (even if they are numbers)
 <h5>Code explanation:</h5>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <ul>
-  <li>The <mark>style</mark> attribute is used to define CSS properties for the rectangle.</li>
-  <li>The CSS <mark>fill</mark> property defines the fill color of the rectangle.</li>
-  <li>The CSS <mark>stroke-width</mark> property defines the width of the border of the rectangle.</li>
-  <li>The CSS <mark>stroke</mark> property defines the color of the border of the rectangle.</li>
+  <li>The <b><mark>style</mark></b> attribute is used to define CSS properties for the rectangle.</li>
+  <li>The CSS <b><mark>fill</mark></b> property defines the fill color of the rectangle.</li>
+  <li>The CSS <b><mark>stroke-width</mark></b> property defines the width of the border of the rectangle.</li>
+  <li>The CSS <b><mark>stroke</mark></b> property defines the color of the border of the rectangle.</li>
 </ul>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h4>A Rectangle With Opacity</h4>
@@ -8731,8 +8733,8 @@ Place all attribute values in SVG inside quotes (even if they are numbers)
 <h5>Code explanation:</h5>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <ul>
-  <li>The CSS <mark>fill-opacity</mark> property defines the opacity of the fill color (legal range: 0 to 1)</li>
-  <li>The CSS <mark>stroke-opacity</mark> property defines the opacity of the stroke color (legal range: 0 to 1)</li>
+  <li>The CSS <b><mark>fill-opacity</mark></b> property defines the opacity of the fill color (legal range: 0 to 1)</li>
+  <li>The CSS <b><mark>stroke-opacity</mark></b> property defines the opacity of the stroke color (legal range: 0 to 1)</li>
 </ul>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h4>Another Rectangle With Opacity</h4>
@@ -8752,7 +8754,7 @@ Place all attribute values in SVG inside quotes (even if they are numbers)
 <h5>Code explanation:</h5>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <ul>
-  <li>The CSS <mark>opacity</mark> property defines the opacity value for the whole 
+  <li>The CSS <b><mark>opacity</mark></b> property defines the opacity value for the whole 
     element (legal range: 0 to 1).</li>
 </ul>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -8817,10 +8819,10 @@ Place all attribute values in SVG inside quotes (even if they are numbers)
 <h5>Code explanation:</h5>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <ul>
-  <li>The <mark>r</mark> attribute defines the radius of the circle.</li>
-  <li>The <mark>cx</mark> and <mark>cy</mark> attributes define the x- and y-axes center 
+  <li>The <b><mark>r</mark></b> attribute defines the radius of the circle.</li>
+  <li>The <b><mark>cx</mark></b> and <b><mark>cy</mark></b> attributes define the x- and y-axes center 
     of the circle. If they are omitted, the circle's center is set to (0,0).</li>
-  <li>The <mark>fill</mark> attribute defines the color of the circle.</li>
+  <li>The <b><mark>fill</mark></b> attribute defines the color of the circle.</li>
 </ul>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h4>An SVG Circle with Border</h4>
@@ -8839,8 +8841,8 @@ Place all attribute values in SVG inside quotes (even if they are numbers)
 <h5>Code explanation:</h5>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <ul>
-  <li>The <mark>stroke</mark> attribute defines the color of the border around the circle.</li>
-  <li>The <mark>stroke-width</mark> attribute defines the width of the border around the circle.</li>
+  <li>The <b><mark>stroke</mark></b> attribute defines the color of the border around the circle.</li>
+  <li>The <b><mark>stroke-width</mark></b> attribute defines the width of the border around the circle.</li>
 </ul>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h4>An SVG Circle with Opacity</h4>
@@ -8859,7 +8861,7 @@ Place all attribute values in SVG inside quotes (even if they are numbers)
 <h5>Code explanation:</h5>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <ul>
-  <li>The <mark>opacity</mark> attribute defines the opacity of the circle.</li>
+  <li>The <b><mark>opacity</mark></b> attribute defines the opacity of the circle.</li>
 </ul>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h2 id="10-html-canvas">10. HTML Canvas</h2>
