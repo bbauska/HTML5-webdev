@@ -15,8 +15,8 @@ There are hundreds of semantic tags available to help describe the meaning of yo
 | <b><mark>&lt;article&gt;</mark></b> | An independent, self-contained block of content such as a blog post or product. |
 | <b><mark>&lt;section&gt;</mark></b> | A standalone section of the document that is often used within the body and  article elements. |
 | <b><mark>&lt;details&gt;</mark></b> | A collapsed section of content that can be expanded if the user wishes to view it. |
-| <b><mark>&lt;summary&gt;</mark></b> | Specifies the summary or caption of a &lt;details&gt; element. |
-| <b><mark>&lt;h1&gt;&lt;h2&gt;&lt;h3&gt;&lt;h4&gt;&lt;h5&gt;&lt;h6&gt;</mark></b> | Headings on the web page. <b><mark>&lt;h1&gt;</mark></b> indicates the most important heading whereas &lt;h6&gt; indicates the least important. |
+| <b><mark>&lt;summary&gt;</mark></b> | Specifies the summary or caption of a <b><mark>&lt;details&gt;</mark></b> element. |
+| <b><mark>&lt;h1&gt;&lt;h2&gt;&lt;h3&gt;&lt;h4&gt;&lt;h5&gt;&lt;h6&gt;</mark></b> | Headings on the web page. <b><mark>&lt;h1&gt;</mark></b> indicates the most important heading whereas <b><mark>&lt;h6&gt;</mark></b> indicates the least important. |
 
 <h2>Content tags</h2>
 
@@ -44,7 +44,7 @@ There are hundreds of semantic tags available to help describe the meaning of yo
 | <b><mark>&lt;abbr&gt;</mark></b> | Specifies that the containing text is an abbreviation or acronym. |
 | <b><mark>&lt;b&gt;</mark></b> | Bolds the containing text. When used to indicate importance use <b><mark>&lt;strong&gt;</mark></b> instead. |
 | <b><mark>&lt;br&gt;</mark></b> | A line break. Moves the subsequent text to a new line. |
-| <b><mark>&lt;cite&gt;</mark></b> | Defines the title of creative work (for example a book, poem, song, movie, painting or sculpture). The text in the &lt;cite&gt; element is usually rendered in italics.  |
+| <b><mark>&lt;cite&gt;</mark></b> | Defines the title of creative work (for example a book, poem, song, movie, painting or sculpture). The text in the <b><mark>&lt;cite&gt;</mark></b> element is usually rendered in italics. |
 | <b><mark>&lt;code&gt;</mark></b> | Indicates that the containing text is a block of computer code. |
 | <b><mark>&lt;data&gt;</mark></b> | Indicates machine-readable data. |
 | <b><mark>&lt;em&gt;</mark></b> | Emphasizes the containing text. |
@@ -81,10 +81,10 @@ There are hundreds of semantic tags available to help describe the meaning of yo
 | Tag      | Description |
 |--------------|-----------------------------------------------------------------------------------|
 | <b><mark>&lt;table&gt;</mark></b>  | Defines a table element to display table data within a web page.  |
-| <b><mark>&lt;thead&gt;</mark></b> | Represents the header content of a table. Typically contains one &lt;tr&gt; element. |
-| <b><mark>&lt;tbody&gt;</mark></b> | Represents the main content of a table. Contains one or more &lt;tr&gt; elements.  |
-| <b><mark>&lt;tfoot&gt;</mark></b> | Represents the footer content of a table. Typically contains one &lt;tr&gt; element.  |
-| <b><mark>&lt;tr&gt;</mark></b> | Represents a row in a table. Contains one or more &lt;td&gt; elements when used within &lt;tbody&gt; or &lt;tfoot&gt;. When used within &lt;thead&gt;, contains one or more &lt;th&gt; elements. |
+| <b><mark>&lt;thead&gt;</mark></b> | Represents the header content of a table. Typically contains one <b><mark>&lt;tr&gt;</mark></b> element. |
+| <b><mark>&lt;tbody&gt;</mark></b> | Represents the main content of a table. Contains one or more <b><mark>&lt;tr&gt;</mark></b> elements.  |
+| <b><mark>&lt;tfoot&gt;</mark></b> | Represents the footer content of a table. Typically contains one <b><mark>&lt;tr&gt;</mark></b> element.  |
+| <b><mark>&lt;tr&gt;</mark></b> | Represents a row in a table. Contains one or more <b><mark>&lt;td&gt;</mark></b> elements when used within <b><mark>&lt;tbody&gt;</mark></b> or <b><mark>&lt;tfoot&gt;</mark></b>. When used within <b><mark>&lt;thead&gt;</mark></b>, contains one or more <b><mark>&lt;th&gt;</mark></b> elements. |
 | <b><mark>&lt;td&gt;</mark></b> | Represents a cell in a table. Contains the text content of the cell.  |
 | <b><mark>&lt;th&gt;</mark></b> | Defines a header cell of a table. Contains the text content of the header.  |
 | <b><mark>&lt;caption&gt;</mark></b> | Defines the caption of a table element.  |
