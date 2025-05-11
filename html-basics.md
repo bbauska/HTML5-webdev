@@ -3552,24 +3552,24 @@ future versions of Windows Internet Explorer.</i></p>
 |<b>&lt;html&gt;</b>       | The &lt;html&gt; tag is the root element of an HTML document. It encapsulates the entire content of the page.|
 |<b>&lt;img&gt;</b>        | The HTML &lt;img&gt; tag is used to embed images in a web page. |
 |<b>&lt;input&gt;</b>      | The &lt;input&gt; tag in HTML is used to collect user input in web forms. It supports various input types such as text, password, checkboxes, radio buttons, and more. |
-|<b>&lt;li&gt;</b>         |             |
-|<b>&lt;link&gt;</b>       |             |
-|<b>&lt;meta&gt;</b>       |             |  
-|<b>&lt;optgroup&gt;</b>   |             |
-|<b>&lt;option&gt;</b>     |             |
-|<b>&lt;p&gt;</b>          |             |
-|<b>&lt;param&gt;</b>      |             |
-|<b>&lt;rp&gt;</b>         |             |
-|<b>&lt;rt&gt;</b>         |             |
-|<b>&lt;source&gt;</b>     |             |
-|<b>&lt;tbody&gt;</b>      |             |
-|<b>&lt;td&gt;</b>         |             |
-|<b>&lt;tfoot&gt;</b>      |             |
-|<b>&lt;th&gt;</b>         |             |
-|<b>&lt;thead&gt;</b>      |             |
-|<b>&lt;tr&gt;</b>         |             |
-|<b>&lt;track&gt;</b>      |             |
-|<b>&lt;wbr&gt;</b>        |             |
+|<b>&lt;li&gt;</b>         | The &lt;li&gt; tag is used inside ordered lists(&lt;ol&gt;), unordered lists (&lt;ul&gt;), and in menu lists (&lt;menu&gt;). |
+|<b>&lt;link&gt;</b>       | HTML &lt;link&gt; tags help define relationships between resources on your website. |
+|<b>&lt;meta&gt;</b>       | The &lt;meta&gt; tag defines metadata about an HTML document. Metadata is data (information) about data. |
+|<b>&lt;optgroup&gt;</b>   | The &lt;optgroup&gt; tag defines a group of options within a dropdown list defined by the &lt;select&gt; element. |
+|<b>&lt;option&gt;</b>     | The &lt;option&gt; tag defines an option in a select list. &lt;option&gt; elements go inside a &lt;select&gt;, &lt;optgroup&gt;, or &lt;datalist&gt; element. |
+|<b>&lt;p&gt;</b>          | The &lt;p&gt; tag defines a paragraph. |
+|<b>&lt;param&gt;</b>      | The &lt;param&gt; tag is used to define parameters for an &lt;object&gt; element.            |
+|<b>&lt;rp&gt;</b>         | The &lt;rp&gt; tag can be used to provide parentheses around a ruby text, to be shown by browsers that do not support ruby annotations.            |
+|<b>&lt;rt&gt;</b>         | The &lt;rt&gt; tag defines an explanation or pronunciation of characters (for East Asian typography) in a ruby annotation.            |
+|<b>&lt;source&gt;</b>     | The &lt;source&gt; tag is used to specify multiple media resources for media elements, such as &lt;video&gt;, &lt;audio&gt;, and &lt;picture&gt;. |
+|<b>&lt;tbody&gt;</b>      | The &lt;tbody&gt; tag is used to group the body content in an HTML table. |
+|<b>&lt;td&gt;</b>         | The &lt;td&gt; tag defines a standard data cell in an HTML table. |
+|<b>&lt;tfoot&gt;</b>      | The &lt;tfoot&gt; tag is used to group footer content in an HTML table.            |
+|<b>&lt;th&gt;</b>         | The &lt;th&gt; tag defines a header cell in an HTML table.            |
+|<b>&lt;thead&gt;</b>      | The &lt;thead&gt; tag is used to group header content in an HTML table. |
+|<b>&lt;tr&gt;</b>         | The &lt;tr&gt; tag defines a row in an HTML table.            |
+|<b>&lt;track&gt;</b>      | The &lt;track&gt; tag specifies text tracks for <audio> or <video> elements. |
+|<b>&lt;wbr&gt;</b>        | The &lt;wbr&gt; (Word Break Opportunity) tag specifies where in a text it would be ok to add a line-break.  |
 
 <div align="right">
   <b><a href="#toc">↥ back to top</a></b>
@@ -3941,24 +3941,24 @@ to think about including in your HTML.</p>
 
 <ul>
   <li><b>article</b>: A section of a page that consists of a composition that forms an independent part of a document, page, or site.</li>
-  <li><b>columnheader</b></li>
+  <li><b>columnheader</b>: The columnheader value of the ARIA role attribute identifies an element as being a cell in a row contains header information for a column, similar to the native <th> element with column scope.</li>
   <li><b>definition</b>: A definition of a term or concept.</li>
-  <li><b>directory</b></li>
-  <li><b>document</b></li>
+  <li><b>directory</b>: The directory role was for a list of references to members of a group, such as a static table of contents.</li>
+  <li><b>document</b>: The document role is for focusable content within complex composite widgets or applications for which assistive technologies can switch reading context back to a reading mode.</li>
   <li><b>group</b>: A set of user interface objects which are not intended to be included in a page summary or table of contents by assistive technologies.</li>
   <li><b>heading</b>: A heading for a section of the page.</li>
-  <li><b>img</b></li>
-  <li><b>list</b></li>
-  <li><b>listitem</b></li>
-  <li><b>math</b></li>
-  <li><b>note</b></li>
-  <li><b>presentation</b></li>
-  <li><b>region</b></li>
-  <li><b>row</b></li>
-  <li><b>rowgroup</b></li>
-  <li><b>rowheader</b></li>
-  <li><b>separator</b></li>
-  <li><b>toolbar</b></li>
+  <li><b>img</b></li>: The ARIA img role can be used to identify multiple elements inside page content that should be considered as a single image. These elements could be images, code snippets, text, emojis, or other content that can be combined to deliver information in a visual manner.</li>
+  <li><b>list</b>: The ARIA list role can be used to identify a list of items. It is normally used in conjunction with the listitem role, which is used to identify a list item contained inside the list.</li>
+  <li><b>listitem</b>: The ARIA listitem role can be used to identify an item inside a list of items. It is normally used in conjunction with the list role, which is used to identify a list container.</li>
+  <li><b>math</b>: The math role indicates that the content represents a mathematical expression.</li>
+  <li><b>note</b>: A note role suggests a section whose content is parenthetic or ancillary to the main content.</li>
+  <li><b>presentation</b>: The presentation role and its synonym none remove an element's implicit ARIA semantics from being exposed to the accessibility tree.</li>
+  <li><b>region</b>: The region role is used to identify document areas the author deems significant. It is a generic landmark available to aid in navigation when none of the other landmark roles are appropriate.</li>
+  <li><b>row</b>: An element with role="row" is a row of cells within a tabular structure. A row contains one or more cells, grid cells or column headers, and possibly a row header, within a grid, table or treegrid, and optionally within a rowgroup.</li>
+  <li><b>rowgroup</b>: An element with role="rowgroup" is a group of rows within a tabular structure. A rowgroup contains one or more rows of cells, grid cells, column headers, or row headers within a grid, table or treegrid.</li>
+  <li><b>rowheader</b>: An element with role="rowheader" is a cell containing header information for a row within a tabular structure of a grid, table or treegrid.</li>
+  <li><b>separator</b>: The separator role indicates the element is a divider that separates and distinguishes sections of content or groups of menuitems. The implicit ARIA role of the native thematic break <hr> element is separator.</li>
+  <li><b>toolbar</b>: The toolbar role defines the containing element as a collection of commonly used function buttons or controls represented in a compact visual form.</li>
 </ul>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3>Widget ARIA Roles:</h3>
@@ -3974,26 +3974,26 @@ to think about including in your HTML.</p>
   <li><b>button</b>: An input that allows for user-triggered actions when clicked or pressed.</li>
   <li><b>checkbox</b>: A checkable input that has three possible values: true, false, or mixed.</li>
   <li><b>dialog</b>: A dialog is an application window that is designed to interrupt the current processing of an application in order to prompt the user to enter information or require a response.</li>
-  <li><b>gridcell</b>: </li>
-  <li><b>link</b>: </li>
-  <li><b>log</b>: </li>
-  <li><b>marquee</b>: </li>
-  <li><b>menuitem</b>: </li>
-  <li><b>menuitemcheckbox</b>: </li>
-  <li><b>menuitemradio</b>: </li>
-  <li><b>option</b>: </li>
-  <li><b>progressbar</b>: </li>
+  <li><b>gridcell</b>: The gridcell role is used to make a cell in a grid or treegrid. It is intended to mimic the functionality of the HTML <td> element for table-style grouping of information.</li>
+  <li><b>link</b>: A link widget provides an interactive reference to a resource. The target resource can be either external or local; i.e., either outside or within the current page or application.</li>
+  <li><b>log</b>: The log role is used to identify an element that creates a live region where new information is added in a meaningful order and old information may disappear.</li>
+  <li><b>marquee</b>: A marquee is a type of live region containing non-essential information which changes frequently.</li>
+  <li><b>menuitem</b>: The menuitem role indicates the element is an option in a set of choices contained by a menu or menubar.</li>
+  <li><b>menuitemcheckbox</b>: A menuitemcheckbox is a menuitem with a checkable state whose possible values are true, false, or mixed.</li>
+  <li><b>menuitemradio</b>: A menuitemradio is checkable menuitem in a set of elements with the same role, only one of which can be checked at a time.</li>
+  <li><b>option</b>: The option role is used for selectable items in a listbox.</li>
+  <li><b>progressbar</b>: The progressbar role defines an element that displays the progress status for tasks that take a long time.</li>
   <li><b>radio</b>: A checkable input in a group of radio roles, only one of which can be checked at a time.</li>
-  <li><b>scrollbar</b>: </li>
-  <li><b>slider</b>: </li>
-  <li><b>spinbutton</b>: </li>
-  <li><b>status</b>: </li>
+  <li><b>scrollbar</b>: A scrollbar is a graphical object that controls the scrolling of content within a viewing area.</li>
+  <li><b>slider</b>: The slider role defines an input where the user selects a value from within a given range.</li>
+  <li><b>spinbutton</b>: The spinbutton role defines a type of range that expects the user to select a value from among discrete choices.</li>
+  <li><b>status</b>: The status role defines a live region containing advisory information for the user that is not important enough to be an alert.</li>
   <li><b>tab</b>: A grouping label providing a mechanism for selecting the tab content that is to be rendered to the user.</li>
   <li><b>tabpanel</b>: A container for the resources associated with a tab, where each tab is contained in a tablist.</li>
   <li><b>textbox</b>: Input that allows free-form text as its value.</li>
-  <li><b>timer</b>: </li>
-  <li><b>tooltip</b>: </li>
-  <li><b>treeitem</b>: </li>
+  <li><b>timer</b>: The timer role indicates to assistive technologies that an element is a numerical counter listing the amount of elapsed time from a starting point or the remaining time until an end point. Assistive technologies will not announce updates to a timer as it has an implicit aria-live value of off.</li>
+  <li><b>tooltip</b>: A tooltip is a contextual text bubble that displays a description for an element that appears on pointer hover or keyboard focus.</li>
+  <li><b>treeitem</b>: A treeitem is an item in a tree.</li>
 </ul>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3>Abstract ARIA Roles:</h3>
