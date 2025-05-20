@@ -9499,16 +9499,16 @@ tasks that make the page unresponsive.</p>
 &lt;!DOCTYPE html&gt;
 &lt;html&gt;
 &lt;body&gt;
-<br>
+
 &lt;h1&gt;Web Worker API&lt;/h1&gt;
 <br>
 &lt;p&gt;Count numbers: &lt;output id="result"&gt;&lt;/output&gt;&lt;/p&gt;
 &lt;button onclick="startWorker()"&gt;Start Worker&lt;/button&gt; 
 &lt;button onclick="stopWorker()"&gt;Stop Worker&lt;/button&gt;
-<br>
+
 &lt;script&gt;
 let w;
-<br>
+
 function startWorker() {
   const x = document.getElementById("result");
   if(typeof(Worker) !== "undefined") {
@@ -9522,13 +9522,13 @@ function startWorker() {
     x.innerHTML = "Sorry! No Web Worker support.";
   }
 }
-<br>
+
 function stopWorker() { 
   w.terminate();
   w = undefined;
 }
 &lt;/script&gt;
-<br>
+
 &lt;/body&gt;
 &lt;/html&gt;
 </pre>
@@ -9559,15 +9559,15 @@ if(typeof(Worker) !== "undefined") {
 
 <pre>
 var i = 0;
-<br>
+
 function timedCount() {
   i = i + 1;
   postMessage(i);
   setTimeout("timedCount()",500);
 }
-<br>
+
 timedCount();
-<br>
+
 </pre>
 
 <p>Note: The important part of the code above is the postMessage() method - which is used to post messages back to the HTML page.</p>
@@ -9630,14 +9630,14 @@ w = undefined;
 &lt;!DOCTYPE html&gt;
 &lt;html&gt;
 &lt;body&gt;
-<br>
+
 &lt;p&gt;Count numbers: &lt;output id="result"&gt;&lt;/output&gt;&lt;/p&gt;
 &lt;button onclick="startWorker()"&gt;Start Worker&lt;/button&gt;
 &lt;button onclick="stopWorker()"&gt;Stop Worker&lt;/button&gt;
-<br>
+
 &lt;script&gt;
 let w;
-<br>
+
 function startWorker() {
   const x = document.getElementById("result");
   if (typeof(Worker) !== "undefined") {
@@ -9651,13 +9651,13 @@ function startWorker() {
     x.innerHTML = "Sorry! No Web Worker support.";
   }
 }
-<br>
+
 function stopWorker() {
   w.terminate();
   w = undefined;
 }
 &lt;/script&gt;
-<br>
+
 &lt;/body&gt;
 &lt;/html&gt;
 </pre>
@@ -9722,15 +9722,14 @@ if(typeof(EventSource) !== "undefined") {
 <p>In the tryit example above there were some extra lines of code to check browser 
 support for server-sent events:</p>
 
-```
+<pre>
 if(typeof(EventSource) !== "undefined") {
   // Yes! Server-sent events support!
   // Some code.....
 } else {
   // Sorry! No server-sent events support..
 }
-```
-
+</pre>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h4>Server-Side Code Example</h4>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -9746,7 +9745,7 @@ PHP or ASP).</p>
 &lt;?php
 header('Content-Type: text/event-stream');
 header('Cache-Control: no-cache');
-<br>
+
 $time = date('r');
 echo "data: The server time is: {$time}\n\n";
 flush();
@@ -9755,15 +9754,14 @@ flush();
 
 <p>Code in ASP (VB) (demo_sse.asp):</p>
 
-```
-<%
+<pre>
+&lt;%
 Response.ContentType = "text/event-stream"
 Response.Expires = -1
 Response.Write("data: The server time is: " & now())
 Response.Flush()
-%>
-```
-
+%&gt;
+</pre>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h4>Code explained:</h4>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
