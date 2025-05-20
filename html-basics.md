@@ -8807,13 +8807,12 @@ Place all attribute values in SVG inside quotes (even if they are numbers)
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p>Define the opacity for the whole element:</p>
 
-```
-<svg width="300" height="170" xmlns="http://www.w3.org/2000/svg">
-  <rect width="150" height="150" x="10" y="10"
-  style="fill:blue;stroke:pink;stroke-width:5;opacity:0.5" />
+<pre>
+&lt;svg width="300" height="170" xmlns="http://www.w3.org/2000/svg"&gt;
+  &lt;rect width="150" height="150" x="10" y="10"
+  style="fill:blue;stroke:pink;stroke-width:5;opacity:0.5" /&gt;
 </svg>
-```
-
+</pre>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--svg-007.png-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -8828,13 +8827,12 @@ Place all attribute values in SVG inside quotes (even if they are numbers)
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p>Last example, create a rectangle with rounded corners:</p>
 
-```
-<svg width="300" height="170" xmlns="http://www.w3.org/2000/svg">
-  <rect width="150" height="150" x="10" y="10" rx="20" ry="20"
-  style="fill:red;stroke:black;stroke-width:5;opacity:0.5" />
+<pre>
+&lt;svg width="300" height="170" xmlns="http://www.w3.org/2000/svg"&gt;
+  &lt;rect width="150" height="150" x="10" y="10" rx="20" ry="20"
+  style="fill:red;stroke:black;stroke-width:5;opacity:0.5" /&gt;
 </svg>
-```
-
+</pre>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--svg-008.png-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -8873,12 +8871,11 @@ Place all attribute values in SVG inside quotes (even if they are numbers)
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p>The following example creates a circle:</p>
 
-```
-<svg height="100" width="100" xmlns="http://www.w3.org/2000/svg">
-  <circle r="45" cx="50" cy="50" fill="red" />
+<pre>
+&lt;svg height="100" width="100" xmlns="http://www.w3.org/2000/svg"&gt;
+  &lt;circle r="45" cx="50" cy="50" fill="red" /&gt;
 </svg>
-```
-
+</pre>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--svg-009.png-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -8895,12 +8892,11 @@ Place all attribute values in SVG inside quotes (even if they are numbers)
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p>The following example creates a circle with border:</p>
 
-```
-<svg height="100" width="100" xmlns="http://www.w3.org/2000/svg">
-  <circle r="45" cx="50" cy="50" fill="red" stroke="green" stroke-width="3" />
-</svg>
-```
-
+<pre>
+&lt;svg height="100" width="100" xmlns="http://www.w3.org/2000/svg"&gt;
+  &lt;circle r="45" cx="50" cy="50" fill="red" stroke="green" stroke-width="3" /&gt;
+&lt;/svg&gt;
+</pre>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--svg-010.png-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -8915,12 +8911,11 @@ Place all attribute values in SVG inside quotes (even if they are numbers)
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p>The following example creates a circle with opacity:</p>
 
-```
-<svg height="100" width="100" xmlns="http://www.w3.org/2000/svg">
-  <circle r="45" cx="50" cy="50" fill="red" stroke="green" stroke-width="3" opacity="0.5" />
-</svg>
-```
-
+<pre>
+&lt;svg height="100" width="100" xmlns="http://www.w3.org/2000/svg"&gt;
+  &lt;circle r="45" cx="50" cy="50" fill="red" stroke="green" stroke-width="3" opacity="0.5" /&gt;
+&lt;/svg&gt;
+</pre>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--svg-011.png-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -8935,7 +8930,7 @@ Place all attribute values in SVG inside quotes (even if they are numbers)
 Using <canvas>, here's how you might draw a black box with rounded corners and a 2-pixel white
 stroke:
 
-```
+<pre>
 function draw() {
   var canvas = document.getElementById('draw-in-me');
   if (canvas.getContext) {
@@ -8958,7 +8953,7 @@ function draw() {
   }
 }
 window.onload = draw;
-```
+</pre>
 
 <!-- image 10-image001.png -->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -9001,10 +8996,10 @@ Since this can compromise privacy, the location is not available unless the user
 <h4>Example</h4>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 
-```
-<script>
+<pre>
+&lt;script&gt;
 const x = document.getElementById("demo");
-
+<br>
 function getLocation() {
   if (navigator.geolocation) {
     navigator.geolocation.getCurrentPosition(success, error);
@@ -9012,18 +9007,17 @@ function getLocation() {
     x.innerHTML = "Geolocation is not supported by this browser.";
   }
 }
-
+<br>
 function success(position) {
   x.innerHTML = "Latitude: " + position.coords.latitude +
   "<br>Longitude: " + position.coords.longitude;
 }
-
+<br>
 function error() {
   alert("Sorry, no position available.");
 }
-</script>
-```
-
+&lt;/script&gt;
+</pre>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h4>Example explained:</h4>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -9040,7 +9034,7 @@ specifies a function to run if it fails to get the user's location.</p>
 <h4>Example</h4>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 
-```
+<pre>
 function error(error) {
   switch(error.code) {
     case error.PERMISSION_DENIED:
@@ -9057,20 +9051,20 @@ function error(error) {
       break;
   }
 }
-```
+</pre>
 
-```
-<!DOCTYPE html>
-<html>
-<body>
-<h1>HTML Geolocation</h1>
-<p>Click the button to get your coordinates.</p>
+<pre>
+&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+&lt;body&gt;
+&lt;h1&gt;HTML Geolocation&lt;/h1&gt;
+&lt;p&gt;Click the button to get your coordinates.&lt;/p&gt;
 
-<button onclick="getLocation()">Try It</button>
+&lt;button onclick="getLocation()"&gt;Try It&lt;/button&gt;
 
-<p id="demo"></p>
+&lt;p id="demo"&gt;&lt;/p&gt;
 
-<script>
+&lt;script&gt;
 const x = document.getElementById("demo");
 
 function getLocation() {
@@ -9083,7 +9077,7 @@ function getLocation() {
 
 function success(position) {
   x.innerHTML = "Latitude: " + position.coords.latitude + 
-  "<br>Longitude: " + position.coords.longitude;
+  "&lt;br&gt;Longitude: " + position.coords.longitude;
 }
 
 function error(error) {
@@ -9102,11 +9096,11 @@ function error(error) {
       break;
   }
 }
-</script>
+&lt;/script&gt;
 
-</body>
-</html>
-```
+&lt;/body&gt;
+&lt;/html&gt;
+</pre>
 
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3>Location-specific Information</h3>
@@ -9182,10 +9176,10 @@ this (like a smartphone):</p>
 <h4>Example</h4>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 
-```
-<script>
+<pre>
+&lt;script&gt;
 const x = document.getElementById("demo");
-
+<br>
 function getLocation() {
   if (navigator.geolocation) {
     navigator.geolocation.watchPosition(success, error);
@@ -9193,12 +9187,12 @@ function getLocation() {
     x.innerHTML = "Geolocation is not supported by this browser.";
   }
 }
-
+<br>
 function success(position) {
   x.innerHTML = "Latitude: " + position.coords.latitude +
   "<br>Longitude: " + position.coords.longitude;
 }
-
+<br>
 function error(error) {
   switch(error.code) {
     case error.PERMISSION_DENIED:
@@ -9215,9 +9209,8 @@ function error(error) {
       break;
   }
 }
-</script>
-```
-
+&lt;/script&gt;
+</pre>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h2 id="13-html-dragndrop">13. HTML Drag and Drop API</h2>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -9230,51 +9223,49 @@ function error(error) {
 <h4>Example</h4>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 
-```
-<!DOCTYPE HTML>
-<html>
-<head>
-<script>
+<pre>
+&lt;!DOCTYPE HTML&gt;
+&lt;html&gt;
+&lt;head&gt;
+&lt;script&gt;
 function dragstartHandler(ev) {
   ev.dataTransfer.setData("text", ev.target.id);
 }
-
+<br>
 function dragoverHandler(ev) {
   ev.preventDefault();
 }
-
+<br>
 function dropHandler(ev) {
   ev.preventDefault();
   const data = ev.dataTransfer.getData("text");
   ev.target.appendChild(document.getElementById(data));
 }
-</script>
-</head>
-<body>
-
-<div id="div1" ondrop="dropHandler(event)" ondragover="dragoverHandler(event)"></div>
-
-<img id="img1" src="img_logo.gif" draggable="true" ondragstart="dragstartHandler(event)" width="336" height="69">
-
-</body>
-</html>
-```
-
+&lt;/script&gt;
+&lt;/head&gt;
+&lt;body&gt;
+<br>
+&lt;div id="div1" ondrop="dropHandler(event)" ondragover="dragoverHandler(event)"&gt;&lt;/div&gt;
+<br>
+&lt;img id="img1" src="img_logo.gif" draggable="true" ondragstart="dragstartHandler(event)" width="336" height="69"&gt;
+<br>
+&lt;/body&gt;
+&lt;/html&gt;
+</pre>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h4>Make an Element Draggable</h4>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p>First of all: To make an element draggable, set the draggable attribute to true:</p>
 
-```
-<img id="img1" draggable="true">
-```
+<pre>
+&lt;img id="img1" draggable="true"&gt;
+</pre>
 
 <p>or:</p>
 
-```
-<p id="p1" draggable="true">Draggable text</p>
-```
-
+<pre>
+&lt;p id="p1" draggable="true"&gt;Draggable text&lt;/p&gt;
+</pre>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h4>What to Drag - ondragstart and setData()</h4>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -9284,11 +9275,11 @@ function dropHandler(ev) {
 
 <p>The dataTransfer.setData() method sets the data type and the value of the dragged data:</p>
 
-```
+<pre>
 function dragstartHandler(ev) {
   ev.dataTransfer.setData("text", ev.target.id);
 }
-```
+</pre>
 
 <p>In this case, the data type is "text" and the value is the id of the draggable element ("img1").</p>
 
@@ -9301,25 +9292,24 @@ function dragstartHandler(ev) {
 
 <p>This is done by calling the preventDefault() method for the ondragover event:</p>
 
-```
+<pre>
 function dragoverHandler(ev) {
   ev.preventDefault();
 }
-```
+</pre>
 
 <h4>Do the Drop - ondrop</h4>
 <p>When the dragged data is dropped, a drop event occurs.</p>
 
 <p>In the example above, the ondrop attribute of the <div> element calls a function, dropHandler(event):</p>
 
-```
+<pre>
 function dropHandler(ev) {
   ev.preventDefault();
   const data = ev.dataTransfer.getData("text");
   ev.target.appendChild(document.getElementById(data));
 }
-```
-
+</pre>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h4>Code explained:</h4>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -9334,8 +9324,8 @@ function dropHandler(ev) {
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p>How to drag and drop an &lt;h1&gt; element to a &lt;div&gt; element:</p>
 
-```
-<script>
+<pre>
+&lt;script&gt;
 function dragstartHandler(ev) {
   ev.dataTransfer.setData("text", ev.target.id);
 }
@@ -9349,15 +9339,14 @@ function dropHandler(ev) {
   const data = ev.dataTransfer.getData("text");
   ev.target.appendChild(document.getElementById(data));
 }
-</script>
-</head>
-<body>
+&lt;/script&gt;
+&lt;/head&gt;
+&lt;body&gt;
 
-<div id="div1" ondrop="dropHandler(event)" ondragover="dragoverHandler(event)"></div>
+&lt;div id="div1" ondrop="dropHandler(event)" ondragover="dragoverHandler(event)"&gt;&lt;/div&gt;
 
-<h1 id="h1" draggable="true" ondragstart="dragstartHandler(event)">W3Schools.com</h1>
-```
-
+&lt;h1 id="h1" draggable="true" ondragstart="dragstartHandler(event)"&gt;W3Schools.com&lt;/h1&gt;
+</pre>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h2>HTML Web Storage API</h2>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -9381,18 +9370,16 @@ function dropHandler(ev) {
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h4>Example</h4>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-
-```
-<script>
+<pre>
+&lt;script&gt;
 const x = document.getElementById("result");
 if (typeof(Storage) !== "undefined") {
   x.innerHTML = "Your browser supports Web storage!";
 } else {
   x.innerHTML = "Sorry, no Web storage support!";
 }
-</script>
-```
-
+&lt;/script&gt;
+</pre>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3>The localStorage Object</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -9420,9 +9407,8 @@ code the value string is converted to a number to be able to increase the counte
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h4>Example</h4>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-
-```
-<script>
+<pre>
+&lt;script&gt;
 function clickCounter() {
   const x = document.getElementById("result");
   if (typeof(Storage) !== "undefined") {
@@ -9436,18 +9422,15 @@ function clickCounter() {
     x.innerHTML = "Sorry, no Web storage support!";
   }
 }
-</script>
-```
-
+&lt;/script&gt;
+</pre>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h4>sessionStorage Object</h4>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-
-
-```
-<script>
+<pre>
+&lt;script&gt;
 const x = document.getElementById("result");
-
+<br>
 if (typeof(Storage) !== "undefined") {
   // Store
   localStorage.setItem("lastname", "Smith");
@@ -9458,9 +9441,8 @@ if (typeof(Storage) !== "undefined") {
 } else {
   x.innerHTML = "Sorry, no Web storage support!";
 }
-</script>
-```
-
+&lt;/script&gt;
+</pre>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3>The sessionStorage Object</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -9473,9 +9455,8 @@ for only one session! The data is deleted when the user closes the specific brow
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h4>Example</h4>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-
-```
-<script>
+<pre>
+&lt;script&gt;
 function clickCounter() {
   const x = document.getElementById("result");
   if (typeof(Storage) !== "undefined") {
@@ -9489,9 +9470,8 @@ function clickCounter() {
     x.innerHTML = "Sorry, no Web storage support!";
   }
 }
-</script>
-```
-
+&lt;/script&gt;
+</pre>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h2 id="14-html-webworker">14. HTML Web Workers API</h2>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -9515,21 +9495,20 @@ tasks that make the page unresponsive.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h4>Example</h4>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-
-```
-<!DOCTYPE html>
-<html>
-<body>
-
-<h1>Web Worker API</h1>
-
-<p>Count numbers: <output id="result"></output></p>
-<button onclick="startWorker()">Start Worker</button> 
-<button onclick="stopWorker()">Stop Worker</button>
-
-<script>
+<pre>
+&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+&lt;body&gt;
+<br>
+&lt;h1&gt;Web Worker API&lt;/h1&gt;
+<br>
+&lt;p&gt;Count numbers: &lt;output id="result"&gt;&lt;/output&gt;&lt;/p&gt;
+&lt;button onclick="startWorker()"&gt;Start Worker&lt;/button&gt; 
+&lt;button onclick="stopWorker()"&gt;Stop Worker&lt;/button&gt;
+<br>
+&lt;script&gt;
 let w;
-
+<br>
 function startWorker() {
   const x = document.getElementById("result");
   if(typeof(Worker) !== "undefined") {
@@ -9543,36 +9522,33 @@ function startWorker() {
     x.innerHTML = "Sorry! No Web Worker support.";
   }
 }
-
+<br>
 function stopWorker() { 
   w.terminate();
   w = undefined;
 }
-</script>
-
-</body>
-</html>
-```
-
+&lt;/script&gt;
+<br>
+&lt;/body&gt;
+&lt;/html&gt;
+</pre>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h4>Check Web Worker API Support</h4>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p>Before using web worker, we can quickly check browser support:</p>
-
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h4>Example</h4>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-
-```
-<script>
+<pre>
+<script&gt;
 const x = document.getElementById("result");
 if(typeof(Worker) !== "undefined") {
   x.innerHTML = "Your browser support Web Workers!";
 } else {
   x.innerHTML = "Sorry, your browser does not support Web Workers.";
 }
-</script>
-```
+</script&gt;
+</pre>
 
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h4>Create a .js Web Worker File</h4>
@@ -9581,21 +9557,20 @@ if(typeof(Worker) !== "undefined") {
 
 <p>Here we create a script that counts. The script is stored in the "demo_workers.js" file:</p>
 
-```
+<pre>
 var i = 0;
-
+<br>
 function timedCount() {
   i = i + 1;
   postMessage(i);
   setTimeout("timedCount()",500);
 }
-
+<br>
 timedCount();
-
-```
+<br>
+</pre>
 
 <p>Note: The important part of the code above is the postMessage() method - which is used to post messages back to the HTML page.</p>
-
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3>Create a Web Worker Object</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -9603,11 +9578,11 @@ timedCount();
 
 <p>The following lines checks if a worker (w) already exists, if not - it creates a new web worker object and points to the .js file: "demo_workers.js":</p>
 
-```
+<pre>
 if (typeof(w) == "undefined") {
   w = new Worker("demo_workers.js");
 }
-```
+</pre>
 
 <p>Then we can SEND and RETRIEVE messages from the web worker.</p>
 
@@ -9617,12 +9592,11 @@ the onmessage event handler.</p>
 
 <p>Add an onmessage event listener to the web worker object.</p>
 
-```
+<pre>
 w.onmessage = function(event){
   document.getElementById("result").innerHTML = event.data;
 };
-```
-
+</pre>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3>Terminate a Web Worker</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -9632,19 +9606,17 @@ is terminated.</p>
 <p>To terminate a web worker object, and free browser/computer resources, use the 
 terminate() method:</p>
 
-```
+<pre>
 w.terminate();
-```
-
+</pre>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3>Reuse the Web Worker</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p>If you set the web worker variable to undefined, after it has been terminated, you can reuse the worker/code:</p>
 
-```
+<pre>
 w = undefined;
-```
-
+</pre>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3>Full Web Worker Example</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -9654,18 +9626,18 @@ w = undefined;
 
 <h4>Example</h4>
 
-```
-<!DOCTYPE html>
-<html>
-<body>
-
-<p>Count numbers: <output id="result"></output></p>
-<button onclick="startWorker()">Start Worker</button>
-<button onclick="stopWorker()">Stop Worker</button>
-
-<script>
+<pre>
+&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+&lt;body&gt;
+<br>
+&lt;p&gt;Count numbers: &lt;output id="result"&gt;&lt;/output&gt;&lt;/p&gt;
+&lt;button onclick="startWorker()"&gt;Start Worker&lt;/button&gt;
+&lt;button onclick="stopWorker()"&gt;Stop Worker&lt;/button&gt;
+<br>
+&lt;script&gt;
 let w;
-
+<br>
 function startWorker() {
   const x = document.getElementById("result");
   if (typeof(Worker) !== "undefined") {
@@ -9679,16 +9651,16 @@ function startWorker() {
     x.innerHTML = "Sorry! No Web Worker support.";
   }
 }
-
+<br>
 function stopWorker() {
   w.terminate();
   w = undefined;
 }
-</script>
-
-</body>
-</html>
-```
+&lt;/script&gt;
+<br>
+&lt;/body&gt;
+&lt;/html&gt;
+</pre>
 
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3>Web Workers and the DOM</h3>
@@ -9721,9 +9693,8 @@ the updates are pushed automatically.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h4>Example</h4>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-
-```
-<script>
+<pre>
+&lt;script&gt;
 const x = document.getElementById("result");
 // Check browser support for SSE
 if(typeof(EventSource) !== "undefined") {
@@ -9734,9 +9705,8 @@ if(typeof(EventSource) !== "undefined") {
 } else {
   x.innerHTML = "Sorry, no support for server-sent events.";
 }
-</script>
-```
-
+&lt;/script&gt;
+</pre>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h4>Example explained:</h4>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -9772,16 +9742,16 @@ PHP or ASP).</p>
 
 <p>Code in PHP (demo_sse.php):</p>
 
-```
-<?php
+<pre>
+&lt;?php
 header('Content-Type: text/event-stream');
 header('Cache-Control: no-cache');
-
+<br>
 $time = date('r');
 echo "data: The server time is: {$time}\n\n";
 flush();
-?>
-```
+?&gt;
+</pre>
 
 <p>Code in ASP (VB) (demo_sse.asp):</p>
 
@@ -9833,42 +9803,6 @@ Response.Flush()
   </table>
 </div>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--
-<div role="region" tabindex="0">
-  <table>
-    <caption>Caption goes here</caption>
-    <thead>
-      <tr>
-        <th><b><mark></mark></b></th>
-        <th><b><mark></mark></b></th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><b><mark></mark></b></td>
-        <td>.</td>
-      </tr>
-      <tr>
-        <td><b><mark></mark></b></td>
-        <td>.</td>
-      </tr>
-      <tr>
-        <td><b><mark></mark></b></td>
-        <td>.</td>
-      </tr>
-    </tbody>
-  </table>
-</div>
--->
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h2 id="15-html-access">15. HTML Accessibility</h2>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <div align="right">
@@ -9878,13 +9812,14 @@ Response.Flush()
 <h2 id="16-misc">16. Miscellaneous</h2>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <footer>
-  <h6>Date created: ~ 4/1/2025<br/>
-  <h6>Prior editted: 5/1/2025 +6pm<br/>
-  <h6>Last editted: 5/2/2025 +11am<br/>
-  <h6>Last editted: 5/4/2025 +12pm</h6>
-  <h6>Last editted: 5/6/2025 +12pm</h6>
-  <h6>Last editted: 5/9/2025 +9am</h6>
-  <h6>Last editted: 5/11/2025 +3pm</h6>
+  <h6>Date created: ~ 4/1/2025<br>
+  Prior editted: 5/1/2025 +6pm<br>
+  Last editted: 5/2/2025 +11am<br>
+  Last editted: 5/4/2025 +12pm<br>
+  Last editted: 5/6/2025 +12pm<br>
+  Last editted: 5/9/2025 +9am<br>
+  Last editted: 5/11/2025 +3pm<br>
+  Last editted: 5/20/2025 +1am</h6>
   <p>The End...</p>
   
 <div align="right">
