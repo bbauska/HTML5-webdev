@@ -9501,7 +9501,7 @@ tasks that make the page unresponsive.</p>
 &lt;body&gt;
 
 &lt;h1&gt;Web Worker API&lt;/h1&gt;
-<br>
+
 &lt;p&gt;Count numbers: &lt;output id="result"&gt;&lt;/output&gt;&lt;/p&gt;
 &lt;button onclick="startWorker()"&gt;Start Worker&lt;/button&gt; 
 &lt;button onclick="stopWorker()"&gt;Stop Worker&lt;/button&gt;
@@ -9540,16 +9540,15 @@ function stopWorker() {
 <h4>Example</h4>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <pre>
-<script&gt;
+&lt;script&gt;
 const x = document.getElementById("result");
 if(typeof(Worker) !== "undefined") {
   x.innerHTML = "Your browser support Web Workers!";
 } else {
   x.innerHTML = "Sorry, your browser does not support Web Workers.";
 }
-</script&gt;
+&lt;/script&gt;
 </pre>
-
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h4>Create a .js Web Worker File</h4>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
