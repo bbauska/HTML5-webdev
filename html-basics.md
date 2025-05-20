@@ -1849,7 +1849,7 @@ attribute exists.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h2>Q. Explain the difference between layout, painting and compositing?</h2>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<img src="assets/lib/img/frame-full.jpg" alt="Browser Engine" />
+<!-- <img src="assets/lib/img/frame-full.jpg" alt="Browser Engine" />  -->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h4>1. JavaScript:</h4>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -3431,9 +3431,11 @@ and layout of web pages. It makes web pages more informative and adaptable, allo
 browsers and search engines to better interpret content. For example, instead of using 
 &lt;div id="header"&gt;&lt;/div&gt; you can use a &lt;header&gt;&lt;/hrader&gt; tag.</p>
 
-<p align="center">
-  <img src="assets/images/semantic-tags.png" alt="HTML5 semantic tags" width="300px" />
-</p>
+<pre>
+&lt;p align="center"&gt;
+  &lt;img src="assets/images/semantic-tags.png" alt="HTML5 semantic tags" width="300px" /&gt;
+&lt;/p&gt;
+</pre>
 
 <div align="right">
   <b><a href="#toc">↥ back to top</a></b>
@@ -3447,9 +3449,9 @@ browsers and search engines to better interpret content. For example, instead of
 <h5>Example:</h5>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 
-```html
-<input id="inputId" type="text" value="Hello World!" />
-```
+<pre>
+&lt;input id="inputId" type="text" value="Hello World!" /&gt;
+</pre>
 
 <p>The <b>value</b> property reflects the current text-content inside the input box, 
 whereas the <b>value</b> attribute contains the initial text-content of the 
@@ -3494,17 +3496,17 @@ of Internet Explorer the page should be rendered as. It is used by Internet Expl
 to specify whether a page should be rendered as IE 7 (compatibility view) or IE 8 
 (standards view).</p>
 
-```html
-<html>
-  <head>
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <title>My Web Page</title>
-  </head>
-  <body>
-    <p>Content goes here.</p>
-  </body>
-</html>
-```
+<pre>
+&lt;html&gt;
+  &lt;head&gt;
+    &lt;meta http-equiv="X-UA-Compatible" content="IE=edge" /&gt;
+    &lt;title&gt;My Web Page&lt;/title&gt;
+  &lt;/head&gt;
+  &lt;body&gt;
+    &lt;p&gt;Content goes here.&lt;/p&gt;
+  &lt;/body&gt;
+&lt;/html&gt;
+</pre>
 
 <p>Emulating the version tells the browser to use the DOCTYPE to determine how to render 
 content. pages without a DOCTYPE will be rendered in quirks mode. Edge mode tells 
@@ -5255,12 +5257,11 @@ for the table, it will be displayed without borders.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h5>Syntax</h5>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-
-```
+<pre>
 table, th, td {
   border: 1px solid black;
 }
-```
+</pre>
 
 <p><b>Example:</b> Addition of the border to the HTML Table.</p>
 
@@ -5325,14 +5326,12 @@ table, th, td {
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h5>Syntax</h5>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-
-```
+<pre>
 table, th, td {
   border: 1px solid black;
   border-collapse: collapse;
 }
-```
-
+</pre>
 <p><b>Example:</b> Addition of Collapsed Borders in HTML.</p>
 
 ```
@@ -5398,12 +5397,11 @@ we do not specify a padding, the table cells will be displayed without padding.<
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h5>Syntax</h5>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-
-```
+<pre>
 th, td {
   padding: 20px;
 }
-```
+</pre>
 
 <p><b>Example:</b> Addition of Table cell padding in HTML.</p>
 
@@ -5476,11 +5474,11 @@ headings, we must use the CSS text-align property.</p>
 <h5>Syntax</h5>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 
-```
+<pre>
 th {
   text-align: left;
 }
-```
+</pre>
 
 <p><b>Example:</b> Explains the text-align property where the text is aligned to the left.</p>
 
@@ -5556,12 +5554,11 @@ for a table, we must use the CSS border-spacing property.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h5>Syntax</h5>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-
-```
+<pre>
 table {
   border-spacing: 5px;
 }
-```
+</pre>
 
 <p><b>Example:</b> Explains the border space property to make the space between the Table cells.</p>
 
@@ -5827,13 +5824,12 @@ table {
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h5>Syntax</h5>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-
-```
+<pre>
 table#t01 {
   width: 100%;
   background-color: #f2f2d1;
 }
-```
+</pre>
 
 <p><b>Example:</b> Addition of the Table background color in HTML.</p>
 
@@ -6088,9 +6084,9 @@ lists. An unordered list starts with the &lt;ul&gt; tag. Each list item starts w
 <h5>Syntax:</h5>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 
-```
-<ul> list of items </ul>
-```
+<pre>
+&lt;ul&gt; list of items &lt;/ul&gt;
+</pre>
 
 <p><b>Attribute:</b> This tag contains two attributes which are listed below:</p>
 
@@ -6223,9 +6219,9 @@ and the &lt;dd&gt; tag describes each term.</p>
 <h5>Syntax:</h5>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 
-```
-<dl> Contents... </dl>
-```
+<pre>
+&lt;dl&gt; Contents... &lt;/dl&gt;
+</pre>
 
 <p>Please refer to the <i>How to add description list of an element using HTML? 
 article</i> for further details.</p>
@@ -6664,16 +6660,14 @@ of the SVG document.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h5>Syntax:</h5>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-
-```
-<a href="" 
+<pre>
+&lt;a href="" 
   target="" 
   type="" 
   rel="" 
-  download="">
-</a>
-```
-
+  download=""&gt;
+&lt;/a&gt;
+</pre>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h4>SVG &lt;a&gt; Attributes</h4>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -6832,11 +6826,9 @@ element over time. It’s normally inserted inside the element which we want to 
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h5>Syntax:</h5>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-
-```
-<animate attributeName="" values="" dur="" repeatCount="" />
-```
-
+<pre>
+&lt;animate attributeName="" values="" dur="" repeatCount="" /&gt;
+</pre>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h5>Attributes:</h5>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -6933,11 +6925,9 @@ like in HTML canvas.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h5>Syntax:</h5>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-
-```
-<animateMotion values="" dur="" repeatCount="" path="" />
-```
-
+<pre>
+&lt;animateMotion values="" dur="" repeatCount="" path="" /&gt;
+</pre>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h5>Attributes:</h5>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -7002,11 +6992,9 @@ and/or skewing.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h5>Syntax:</h5>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-
-```
-<animateTransform attributeName=''transform''/>
-```
-
+<pre>
+&lt;animateTransform attributeName=''transform''/&gt;
+</pre>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h5>Attribute:</h5>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -8163,12 +8151,12 @@ with neighboring pixels to produce a resulting image.</p>
 <h5>Output:</h5>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~~~~~~ svg 29 -  svg  ~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~ 09-image029. geeks 4 geeks circle in rectangle ~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center">
 <img class="displayed"
   src="./images/09-image029.png"
-  title="SVG "
-  alt="SVG ."
+  title="Geeks 4 Geeks in circle within rectangle"
+  alt="Geeks 4 Geeks in circle within rectangle."
   style="width:40%" >
 </p>
 <!-- 09-image029.png -->
@@ -8240,12 +8228,12 @@ are brighter and the sides facing away are darker and in shadow.</p>
 <h5>Output:</h5>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~~~~~~ svg 30 -  svg  ~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~ 09-image030. green square  ~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center">
 <img class="displayed"
   src="./images/09-image030.png"
-  title="SVG "
-  alt="SVG ."
+  title="Green square"
+  alt="Green square."
   style="width:40%" >
 </p>
 <!-- 09-image030.png -->
@@ -8293,7 +8281,7 @@ are brighter and the sides facing away are darker and in shadow.</p>
 <h5>Output:</h5>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~~~~~~ svg 31 -  svg  ~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~ 09-image031 - blue on black ~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center">
 <img class="displayed"
   src="./images/09-image031.png"
@@ -8374,12 +8362,12 @@ which displacement effect is applied is reserved in “in” attribute.</p>
 <h5>Output:</h5>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~~~~~~ svg 32 -  svg  ~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~ 09-image032.png - svg black blob  ~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center">
 <img class="displayed"
   src="./images/09-image032.png"
-  title="SVG "
-  alt="SVG ."
+  title="SVG black blob"
+  alt="SVG black blob."
   style="width:40%" >
 </p>
 <!-- 09-image032.png -->
@@ -8422,12 +8410,12 @@ which displacement effect is applied is reserved in “in” attribute.</p>
 <h5>Output:</h5>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~~~~~~ svg 33 -  svg  ~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~ 09-image033 - black bottom right square ~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center">
 <img class="displayed"
   src="./images/09-image033.png"
-  title="SVG "
-  alt="SVG ."
+  title="Black bottom  right square with SVG"
+  alt="Black bottom  right square with SVG."
   style="width:40%" >
 </p>
 <!-- 09-image033.png -->
