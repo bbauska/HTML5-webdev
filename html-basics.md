@@ -3785,9 +3785,10 @@ an entry in the outline of the page.</p>
 <h4>The <mark><b>&lt;div&gt;</b></mark> Element</h4>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p>The &lt;div&gt; element only represents its child elements and doesn&apos;t have a special 
-meaning. It can be used with the <mark><b>lang</b></mark>, <mark><b>title</b></mark>, and <mark><b>class</b></mark> attributes to add semantics 
-that is common to a group of consecutive elements. This element can also be used in a 
-&lt;dl&gt; tag and wrap groups of &lt;dt&gt; and &lt;dd&gt; elements.</p>
+meaning. It can be used with the <mark><b>lang</b></mark>, <mark><b>title</b></mark>, and 
+<mark><b>class</b></mark> attributes to add semantics that is common to a group of consecutive 
+elements. This element can also be used in a &lt;dl&gt; tag and wrap groups of &lt;dt&gt; and 
+&lt;dd&gt; elements.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h5>Example:</h5>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -3852,17 +3853,15 @@ image based on the actual device&apos;s resolution.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h5>Syntax:</h5>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-
-```html
-<img 
+<pre>
+&lt;img 
    srcset=" 
       url size, 
       url size, 
       url size " 
     src="default url" 
->
-```
-
+&gt;
+</pre>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h4>1. Using display density descriptor:</h4>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -3871,14 +3870,12 @@ with display density it should be used, for example1x, 2x etc.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h5>Example:</h5>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-
-```html
-<img src="image.jpg" 
+<pre>
+&lt;img src="image.jpg" 
      srcset="image.jpg,
              image_2x.jpg 2x"
-/>
-```
-
+/&gt;
+</pre>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h4>2. Using width descriptor:</h4>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -3887,13 +3884,13 @@ density values, we provide the actual width of the image.</p>
 
 <h5>Example:</h5>
 
-```html
-<img src="image.jpg" 
+<pre>
+&lt;img src="image.jpg" 
   srcset="small.jpg 300w,
           medium.jpg 600w,
           large.jpg 900w"
-/>
-```
+/&gt;
+</pre>
 
 <div align="right">
   <b><a href="#toc">↥ back to top</a></b>
@@ -3938,10 +3935,9 @@ technology a better way to navigate and identify the different parts of a web pa
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h5>Example:</h5>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-
-```html
- <nav class='mobile-nav' role='navigation' aria-label='Mobile Menu'> List of Links </nav>
-```
+<pre>
+  &lt;nav class='mobile-nav' role='navigation' aria-label='Mobile Menu'> List of Links &lt;/nav&gt;
+</pre>
 
 <p>While seeming redundant, is actually useful for screen readers. It wouldn&apos;t read the 
 aria-label on this navigation, which is really helpful for giving greater context to visually 
@@ -3950,11 +3946,17 @@ impaired users, without the <mark><b>role="navigation"</b></mark>.</p>
 The different landmark roles you can use are as follows, copied from the W3C Wiki Page:
 <ul>
   <li><b>banner</b>: A region that contains the prime heading or internal title of a page.</li>
-  <li><b>complementary</b>: Any section of the document that supports the main content, yet is separate and meaningful on its own.</li>
-  <li><b>contentinfo</b>: A region that contains information about the parent document such as copyrights and links to privacy statements.</li>
-  <li><b>form</b>: A region of the document that represents a collection of form-associated elements, some of which can represent editable values that can be submitted to a server for processing.</li>
-  <li><b>main</b>: Main content in a document. In almost all cases a page will have only one <mark><b>role=“main”</b></mark>.</li>
-  <li><b>navigation</b>: A collection of links suitable for use when navigating the document or related documents.</li>
+  <li><b>complementary</b>: Any section of the document that supports the main content, 
+    yet is separate and meaningful on its own.</li>
+  <li><b>contentinfo</b>: A region that contains information about the parent document 
+    such as copyrights and links to privacy statements.</li>
+  <li><b>form</b>: A region of the document that represents a collection of form-associated 
+    elements, some of which can represent editable values that can be submitted to a server 
+	for processing.</li>
+  <li><b>main</b>: Main content in a document. In almost all cases a page will have only one 
+    <mark><b>role=“main”</b></mark>.</li>
+  <li><b>navigation</b>: A collection of links suitable for use when navigating the document 
+    or related documents.</li>
   <li><b>search</b>: The search tool of a Web document.</li>
   <li><b>application</b>: A region declared as a web application, as opposed to a web document.</li>
 </ul>
@@ -4079,14 +4081,14 @@ and practical for most web pages/applications.</p>
 <h2>Q. Create a traffic signal light in html?</h2>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 
-```html
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8">
-    <title>Traffic Signal
-    </title>
-    <style>
+<pre>
+&lt;!DOCTYPE html&gt;
+&lt;html lang="en"&gt;
+  &lt;head&gt;
+    &lt;meta charset="UTF-8"&gt;
+    &lt;title&gt;Traffic Signal
+    &lt;/title&gt;
+    &lt;style&gt;
       #green{
         background-color: green;
     width: 100px;
@@ -4108,14 +4110,14 @@ and practical for most web pages/applications.</p>
     border-radius: 50%;
     border: 2px solid #333;
       }
-    </style>
-  </head>
-  <body onload="timer;">
-      <div id="red"></div>
-      <div id="yellow"></div>
-      <div id="green"></div>
+    &lt;/style&gt;
+  &lt;/head&gt;
+  &lt;body onload="timer;"&gt;
+      &lt;div id="red"&gt;&lt;/div&gt;
+      &lt;div id="yellow"&gt;&lt;/div&gt;
+      &lt;div id="green"&gt;&lt;/div&gt;
       
-    <script>
+    &lt;script&gt;
       function startTrafficSignal() {
         
         const red = document.getElementById("red");
@@ -4151,10 +4153,10 @@ and practical for most web pages/applications.</p>
       }, 12000);
       
       startTrafficSignal();
-    </script>
-  </body>
-</html>
-```
+    &lt;/script&gt;
+  &lt;/body&gt;
+&lt;/html&gt;
+</pre>
 
 <div align="right">
   <b><a href="#toc">↥ back to top</a></b>
@@ -5171,11 +5173,9 @@ headings are bold and centered. A table data/cell is defined with the "td" tag.<
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h5>Syntax</h5>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-
-```
-<td> Content...</td> 
-```
-
+<pre>
+&lt;td&gt; Content...&lt;/td&gt;
+</pre>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h4>Table Rows</h4>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -5184,10 +5184,9 @@ denoted by &lt;tr&gt; and &lt;/tr&gt; tag as a start & end tags.</p>
 
 <h5>Syntax</h5>
 
-```
-<tr> Content...</tr> 
-```
-
+<pre>
+&lt;tr&gt; Content...&lt;/tr&gt;
+</pre>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h4>Table Headers</h4>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -5197,9 +5196,9 @@ used to add the heading to the Table. This contains the &lt;th&gt; & &lt;/th&gt;
 <h5>Syntax</h5>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 
-```
-<th> Content...</th> 
-```
+<pre>
+&lt;th&gt; Content...&lt;/th&gt;
+</pre>
 
 <p><b>Example 1:</b> Creating a simple table in HTML using a table tag.</p>
 
@@ -8195,9 +8194,12 @@ are brighter and the sides facing away are darker and in shadow.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <ul>
   <li><b>in</b> —The in attribute identifies input for the given filter primitive.</li>
-  <li><b>surfaceScale</b> — It represents the height of the surface. Its value is multiplied by the alpha value. Default value is 1.</li>
+  <li><b>surfaceScale</b> — It represents the height of the surface. Its value is 
+    multiplied by the alpha value. Default value is 1.</li>
   <li><b>diffuseConstant</b> — It is a non-negative number whose default value is 1.</li>
-  <li><b>kernelUnitLength</b> — It tells the intended distance between successive columns and rows in the kernelMatrix. The intended distance is represented in current filter units. Default value is 1.</li>
+  <li><b>kernelUnitLength</b> — It tells the intended distance between successive columns 
+    and rows in the kernelMatrix. The intended distance is represented in current filter 
+	units. Default value is 1.</li>
 </ul>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h5>Example 1:</h5>
@@ -8799,8 +8801,10 @@ Place all attribute values in SVG inside quotes (even if they are numbers)
 <h5>Code explanation:</h5>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <ul>
-  <li>The CSS <mark>fill-opacity</mark> property defines the opacity of the fill color (legal range: 0 to 1)</li>
-  <li>The CSS <mark>stroke-opacity</mark> property defines the opacity of the stroke color (legal range: 0 to 1)</li>
+  <li>The CSS <mark>fill-opacity</mark> property defines the opacity of the fill color 
+    (legal range: 0 to 1)</li>
+  <li>The CSS <mark>stroke-opacity</mark> property defines the opacity of the stroke 
+    color (legal range: 0 to 1)</li>
 </ul>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h4>Another Rectangle With Opacity</h4>
@@ -8968,10 +8972,14 @@ window.onload = draw;
 <p>Here are some of the main HTML5 APIs:</p>
 
 <ol>
-  <li>1. Geolocation API - This API is used to access the current location of a user (with latitude and longitude).</li>
+  <li>1. Geolocation API - This API is used to access the current location of a user 
+    (with latitude and longitude).</li>
   <li>2. Drag and Drop API - This API enables you to use drag-and-drop features in browsers.</li>
-  <li>3. Web Storage API - This API has mechanisms to let browsers store key/value pairs (in a more intuitive way than cookies).</li>
-  <li>4. Web Workers API - This API allows a JavaScript to run in the background, without affecting the performance of the page. Users can continue to do whatever they want: clicking, selecting things, etc., while the web worker runs in the background.</li>
+  <li>3. Web Storage API - This API has mechanisms to let browsers store key/value 
+    pairs (in a more intuitive way than cookies).</li>
+  <li>4. Web Workers API - This API allows a JavaScript to run in the background, 
+    without affecting the performance of the page. Users can continue to do whatever 
+	they want: clicking, selecting things, etc., while the web worker runs in the background.</li>
   <li>5. Server-Sent Events API - This API allows a web page to automatically get updates from a server.</li>
   <li>6. Canvas API - This API lets you draw graphics, on the fly, via JavaScript.</li>
 </ol>
@@ -9271,7 +9279,8 @@ function dropHandler(ev) {
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p>Then, specify what should happen when the element is dragged.</p>
 
-<p>In the example above, the ondragstart attribute of the <img> element calls a function (dragstartHandler(ev)), that specifies what data to be dragged.</p>
+<p>In the example above, the ondragstart attribute of the <img> element calls a function 
+(dragstartHandler(ev)), that specifies what data to be dragged.</p>
 
 <p>The dataTransfer.setData() method sets the data type and the value of the dragged data:</p>
 
@@ -9286,9 +9295,11 @@ function dragstartHandler(ev) {
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h4>Where to Drop - ondragover</h4>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<p>The ondragover attrribute of the <div> element calls a function (dragoverHandler(ev)), that specifies where the dragged data can be dropped.</p>
+<p>The ondragover attrribute of the <div> element calls a function (dragoverHandler(ev)), 
+that specifies where the dragged data can be dropped.</p>
 
-<p>By default, data/elements cannot be dropped in other elements. To allow a drop, we must prevent the default handling of the element.</p>
+<p>By default, data/elements cannot be dropped in other elements. To allow a drop, we must 
+prevent the default handling of the element.</p>
 
 <p>This is done by calling the preventDefault() method for the ondragover event:</p>
 
@@ -9314,8 +9325,10 @@ function dropHandler(ev) {
 <h4>Code explained:</h4>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <ul>
-  <li>Call preventDefault() to prevent the browser default handling of the data (default is open as link on drop)</li>
-  <li>Get the dragged data with the dataTransfer.getData() method. This method will return any data that was set to the same type in the setData() method</li>
+  <li>Call preventDefault() to prevent the browser default handling of the data (default 
+    is open as link on drop)</li>
+  <li>Get the dragged data with the dataTransfer.getData() method. This method will return 
+    any data that was set to the same type in the setData() method</li>
   <li>The dragged data is the id of the dragged element ("img1")</li>
   <li>Append the dragged element into the drop element</li>
 </ul>
@@ -9354,18 +9367,24 @@ function dropHandler(ev) {
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p>With web storage, applications can store data locally within the user's browser.</p>
 
-<p>Before HTML5, application data had to be stored in cookies, included in every server request. Web storage is more secure, and large amounts of data can be stored locally, without affecting website performance.</p>
+<p>Before HTML5, application data had to be stored in cookies, included in every server 
+request. Web storage is more secure, and large amounts of data can be stored locally, 
+without affecting website performance.</p>
 
-<p>Unlike cookies, the storage limit is far larger (at least 5MB) and information is never transferred to the server.</p>
+<p>Unlike cookies, the storage limit is far larger (at least 5MB) and information is never 
+transferred to the server.</p>
 
-<p>Web storage is per origin (per domain and protocol). All pages, from one origin, can store and access the same data.</p>
+<p>Web storage is per origin (per domain and protocol). All pages, from one origin, can 
+store and access the same data.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h2>Web Storage API Objects</h2>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p>Web storage provides two objects for storing data in the browser:</p>
 <ul>
-  <li><b>window.localStorage</b> - stores data with no expiration date (data is not lost when the browser tab is closed)</li>
-  <li><b>window.sessionStorage</b> - stores data for one session (data is lost when the browser tab is closed)</li>
+  <li><b>window.localStorage</b> - stores data with no expiration date (data is not lost 
+    when the browser tab is closed)</li>
+  <li><b>window.sessionStorage</b> - stores data for one session (data is lost when the 
+    browser tab is closed)</li>
 </ul>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h4>Example</h4>
@@ -9569,13 +9588,15 @@ timedCount();
 
 </pre>
 
-<p>Note: The important part of the code above is the postMessage() method - which is used to post messages back to the HTML page.</p>
+<p>Note: The important part of the code above is the postMessage() method - which is used to 
+post messages back to the HTML page.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3>Create a Web Worker Object</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p>Once we have created the .js web worker file, we can call it from an HTML page.</p>
 
-<p>The following lines checks if a worker (w) already exists, if not - it creates a new web worker object and points to the .js file: "demo_workers.js":</p>
+<p>The following lines checks if a worker (w) already exists, if not - it creates a new 
+web worker object and points to the .js file: "demo_workers.js":</p>
 
 <pre>
 if (typeof(w) == "undefined") {
@@ -9611,7 +9632,8 @@ w.terminate();
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3>Reuse the Web Worker</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<p>If you set the web worker variable to undefined, after it has been terminated, you can reuse the worker/code:</p>
+<p>If you set the web worker variable to undefined, after it has been terminated, you 
+can reuse the worker/code:</p>
 
 <pre>
 w = undefined;
@@ -9735,7 +9757,7 @@ if(typeof(EventSource) !== "undefined") {
 <p>For the example above to work, you need a server capable of sending data updates (like 
 PHP or ASP).</p>
 
-<pThe server-side event stream syntax is simple. Set the "Content-Type" header to 
+<p>The server-side event stream syntax is simple. Set the "Content-Type" header to 
 "text/event-stream". Now you can start sending event streams.</p>
 
 <p>Code in PHP (demo_sse.php):</p>
@@ -9816,7 +9838,7 @@ Response.Flush()
   Last editted: 5/6/2025 +12pm<br>
   Last editted: 5/9/2025 +9am<br>
   Last editted: 5/11/2025 +3pm<br>
-  Last editted: 5/20/2025 +1am</h6>
+  Last editted: 5/20/2025 +10am</h6>
   <p>The End...</p>
   
 <div align="right">
