@@ -601,71 +601,48 @@ attribute specified.</i></p>
 markup?</h2>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <ul>
-<li>
-&lt;header&gt; is used to contain introductory and navigational
-information about a section of the page. This can include the section
-heading, the author's name, time and date of publication, table of
-contents, or other navigational information.
-</li>
-<li>
-&lt;article&gt; is meant to house a self-contained composition that can
-logically be independently recreated outside of the page without losing
-it's meaining. Individual blog posts or news stories are good examples.
-</li>
-<li>
-&lt;section&gt; is a flexible container for holding content that shares
-a common informational theme or purpose.
-</li>
-<li>
-&lt;footer&gt; is used to hold information that should appear at the end
-of a section of content and contain additional information about the
-section. Author's name, copyright information, and related links are
-typical examples of such content.
-</li>
+  <li>&lt;header&gt; is used to contain introductory and navigational information about a 
+    section of the page. This can include the section heading, the author's name, time and 
+	date of publication, table of contents, or other navigational information.</li>
+  <li>&lt;article&gt; is meant to house a self-contained composition that can logically be 
+    independently recreated outside of the page without losing it's meaining. Individual 
+	blog posts or news stories are good examples.</li>
+  <li>&lt;section&gt; is a flexible container for holding content that shares a common 
+    informational theme or purpose.</li>
+  <li>&lt;footer&gt; is used to hold information that should appear at the end of a section 
+    of content and contain additional information about the section. Author's name, copyright 
+	information, and related links are typical examples of such content.</li>
 </ul>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h2>Q. When should you use <mark><b>section</b></mark>, <mark><b>div</b></mark> or 
 <mark><b>article</b></mark>?</h2>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <ul>
-<li>
-<b><mark>&lt;section&gt;</mark></b>, group of content inside is related
-to a single theme, and should appear as an entry in an outline of the
-page. It's a chunk of related content, like a subsection of a long
-article, a major part of the page (eg the news section on the homepage),
-or a page in a webapp's tabbed interface. A section normally has a
-heading (title) and maybe a footer too.
-</li>
-<li>
-<b><mark>&lt;article&gt;</mark></b>, represents a complete, or
-self-contained, composition in a document, page, application, or site
-and that is, in principle, independently distributable or reusable,
-e.g. in syndication. This could be a forum post, a magazine or newspaper
-article, a blog entry, a user-submitted comment, an interactive widget
-or gadget, or any other independent item of content.
-</li>
-<li>
-<b><mark>&lt;div&gt;</mark></b>, on the other hand, does not convey any
-meaning, aside from any found in its class, lang and title attributes.
-</li>
+  <li><b><mark>&lt;section&gt;</mark></b>, group of content inside is related to a single 
+    theme, and should appear as an entry in an outline of the page. It's a chunk of related 
+	content, like a subsection of a long article, a major part of the page (eg the news 
+	section on the homepage), or a page in a webapp's tabbed interface. A section normally 
+	has a heading (title) and maybe a footer too.</li>
+  <li><b><mark>&lt;article&gt;</mark></b>, represents a complete, or self-contained, composition 
+    in a document, page, application, or site and that is, in principle, independently 
+	distributable or reusable, e.g. in syndication. This could be a forum post, a magazine 
+	or newspaper article, a blog entry, a user-submitted comment, an interactive widget or 
+	gadget, or any other independent item of content.</li>
+  <li><b><mark>&lt;div&gt;</mark></b>, on the other hand, does not convey any meaning, aside 
+    from any found in its class, lang and title attributes.</li>
 </ul>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h2>Q. Can a web page contain multiple &lt;header&gt; elements? What about &lt;footer&gt; elements?</h2>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<p>
-Yes, header elements can be used multiple times in documents. A
-&lt;header&gt; tag must be present for all articles, sections, and
-pages, although a &lt;footer&gt; tag is not necessary.
-</p>
+<p>Yes, header elements can be used multiple times in documents. A &lt;header&gt; tag 
+must be present for all articles, sections, and pages, although a &lt;footer&gt; tag is 
+not necessary.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h4>From W3C standards</h4>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<p>
-A header element is intended to usually contain the section’s heading
-(an h1–h6 element or an hgroup element), but this is not required. The
-header element can also be used to wrap a section’s table of contents, a
-search form, or any relevant logos.
-</p>
+<p>A header element is intended to usually contain the section’s heading (an h1–h6 element 
+or an hgroup element), but this is not required. The header element can also be used to wrap 
+a section’s table of contents, a search form, or any relevant logos.</p>
 <div class="sourceCode" id="cb12"><pre
 class="sourceCode html"><code class="sourceCode html"><span id="cb12-1"><a href="#cb12-1" aria-hidden="true" tabindex="-1"></a>The footer element represents a footer for its nearest ancestor sectioning content or sectioning root </span>
 <span id="cb12-2"><a href="#cb12-2" aria-hidden="true" tabindex="-1"></a>element. A footer typically contains information about its section such as who wrote it, links to related </span>
@@ -683,164 +660,93 @@ etc.</p>
 <h5>Example:</h5>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <div role="region" tabindex="0">
-<table>
-<caption>
-Physical Tags
-</caption>
-<thead>
-<tr>
-<th>
-Tags
-</th>
-<th>
-Description
-</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>
-&lt;sup&gt;
-</td>
-<td>
-Superscript is usually used for showing elements above base-line.
-</td>
-</tr>
-<tr>
-<td>
-&lt;sub&gt;
-</td>
-<td>
-The subscript is used for alternate baseline.
-</td>
-</tr>
-<tr>
-<td>
-&lt;i&gt;
-</td>
-<td>
-An Italic tag is used to define a text with a special meaning.
-</td>
-</tr>
-<tr>
-<td>
-&lt;big&gt;
-</td>
-<td>
-Big tag increase the font size by 1 (Note: You can not use the big tag
-in HTML 5).
-</td>
-</tr>
-<tr>
-<td>
-&lt;small&gt;
-</td>
-<td>
-A small tag defines the small text, and it is used while writing
-copyright.
-</td>
-</tr>
-<tr>
-<td>
-&lt;b&gt;
-</td>
-<td>
-Bold increases the importance of the text because bold tag covert the
-text into bold size.
-</td>
-</tr>
-<tr>
-<td>
-&lt;u&gt;
-</td>
-<td>
-It is used to underline the text.
-</td>
-</tr>
-<tr>
-<td>
-&lt;tt&gt;
-</td>
-<td>
-Teletype text gives the default font-family which is monospace.
-</td>
-</tr>
-<tr>
-<td>
-&lt;strike&gt;
-</td>
-<td>
-It is an editing markup that tells the reader to ignore the text
-passage.
-</td>
-</tr>
-</tbody>
-</table>
+  <table>
+    <caption>Physical Tags</caption>
+    <thead>
+      <tr>
+        <th>Tags</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>&lt;sup&gt;</td>
+        <td>Superscript is usually used for showing elements above base-line.</td>
+      </tr>
+      <tr>
+        <td>&lt;sub&gt;</td>
+        <td>The subscript is used for alternate baseline.</td>
+      </tr>
+      <tr>
+      <td>&lt;i&gt;</td>
+        <td>An Italic tag is used to define a text with a special meaning.</td>
+      </tr>
+      <tr>
+        <td>&lt;big&gt;</td>
+        <td>Big tag increase the font size by 1 (Note: You can not use the big tag in HTML 5).</td>
+      </tr>
+      <tr>
+        <td>&lt;small&gt;</td>
+        <td>A small tag defines the small text, and it is used while writing copyright.</td>
+      </tr>
+      <tr>
+        <td>&lt;b&gt;</td>
+        <td>Bold increases the importance of the text because bold tag covert the text into 
+	      bold size.</td>
+      </tr>
+      <tr>
+        <td>&lt;u&gt;</td>
+        <td>It is used to underline the text.</td>
+      </tr>
+      <tr>
+        <td>&lt;tt&gt;</td>
+        <td>Teletype text gives the default font-family which is monospace.</td>
+      </tr>
+      <tr>
+        <td>&lt;strike&gt;</td>
+        <td>It is an editing markup that tells the reader to ignore the text passage.</td>
+      </tr>
+    </tbody>
+  </table>
 </div>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h4><ol start="2" type="1"><li>Logical Tags:</h4>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<p>
-Logical tags are used to tell the browser what kind of text is written
-inside the tags. Logical tags are also known as Structural tags because
-they specify the structure of the document. Logical tags are used to
-indicate to the visually impaired person that there is something more
-important in the text or to emphasize the text ie, logical tags can be
-used for styling purposes as well as to give special importance to text
-content.
-</p>
+<p>Logical tags are used to tell the browser what kind of text is written inside the 
+tags. Logical tags are also known as Structural tags because they specify the structure 
+of the document. Logical tags are used to indicate to the visually impaired person that 
+there is something more important in the text or to emphasize the text ie, logical tags 
+can be used for styling purposes as well as to give special importance to text content.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h5>Example:</h5>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <div role="region" tabindex="0">
-<table>
-<caption>
-Logical Tags
-</caption>
-<thead>
-<tr>
-<th>
-Tags
-</th>
-<th>
-Description
-</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>
-&lt;abbr&gt;
-</td>
-<td>
-Defines the abbreviation of text.
-</td>
-</tr>
-<tr>
-<td>
-&lt;acronym&gt;
-</td>
-<td>
-Defines the acronym.
-</td>
-</tr>
-<tr>
-<td>
-&lt;address&gt;
-</td>
-<td>
-Contact information of a person or an organization.
-</td>
-</tr>
-<tr>
-<td>
-&lt;cite&gt;
-</td>
-<td>
-Defines citation. It displays the text in italic format.
-</td>
-</tr>
-<tr>
+  <table>
+    <caption>Logical Tags</caption>
+    <thead>
+      <tr>
+        <th>Tags</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>&lt;abbr&gt;</td>
+        <td>Defines the abbreviation of text.</td>
+      </tr>
+      <tr>
+        <td>&lt;acronym&gt;</td>
+        <td>Defines the acronym.</td>
+      </tr>
+      <tr>
+        <td>&lt;address&gt;</td>
+        <td>Contact information of a person or an organization.</td>
+      </tr>
+      <tr>
+        <td>&lt;cite&gt;</td>
+        <td>Defines citation. It displays the text in italic format.</td>
+      </tr>
+      <tr>
 <td>
 &lt;code&gt;
 </td>
@@ -1021,10 +927,8 @@ class="sourceCode html"><code class="sourceCode html"><span id="cb14-1"><a href=
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h4><ol type="1"><li>Async:</h4>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<p>
-Downloads the script file during HTML parsing and will pause the HTML
-parser to execute it when it has finished downloading.
-</p>
+<p>Downloads the script file during HTML parsing and will pause the HTML parser to 
+execute it when it has finished downloading.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h5>Example:</h5>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~--></li>
@@ -1039,11 +943,8 @@ class="sourceCode html"><code class="sourceCode html"><span id="cb15-1"><a href=
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h4><ol start="2" type="1"><li>Defer:</h4>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<p>
-Defer downloads the script file during HTML parsing and will only
-execute it after the HTML parser has completed. Not all browsers support
-this.
-</p>
+<p>Defer downloads the script file during HTML parsing and will only execute it after 
+the HTML parser has completed. Not all browsers support this.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h5>Example:</h5>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~--></li>
@@ -1054,17 +955,13 @@ class="sourceCode html"><code class="sourceCode html"><span id="cb16-1"><a href=
 <span id="cb16-3"><a href="#cb16-3" aria-hidden="true" tabindex="-1"></a><span class="co">    (not necessary finishing downloading all image files. This is good.) </span></span>
 <span id="cb16-4"><a href="#cb16-4" aria-hidden="true" tabindex="-1"></a><span class="co">--&gt;</span></span>
 <span id="cb16-5"><a href="#cb16-5" aria-hidden="true" tabindex="-1"></a><span class="dt">&lt;</span><span class="kw">script</span><span class="ot"> defer src</span><span class="op">=</span><span class="st">&quot;myscript.js&quot;</span><span class="dt">&gt;&lt;/</span><span class="kw">script</span><span class="dt">&gt;</span></span></code></pre></div>
-<p>
-The async attribute is used to indicate to the browser that the script
+<p>The async attribute is used to indicate to the browser that the script
 file can be executed asynchronously. The HTML parser does not need to
 pause at the point it reaches the script tag to fetch and execute, the
 execution can happen whenever the script becomes ready after being
-fetched in parallel with the document parsing.
-</p>
-<p>
-The defer attribute tells the browser to only execute the script file
-once the HTML document has been fully parsed.
-</p>
+fetched in parallel with the document parsing.</p>
+<p>The defer attribute tells the browser to only execute the script file
+once the HTML document has been fully parsed.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h5>Example:</h5>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -1077,11 +974,9 @@ class="sourceCode html"><code class="sourceCode html"><span id="cb17-1"><a href=
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h2>Q. What is <mark><b>localStorage</b></mark> in html5?</h2>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<p>
-The <mark><b>localStorage</b></mark> read-only property of the window
+<p>The <mark><b>localStorage</b></mark> read-only property of the window
 interface allows you to access a Storage object for the Document's
-origin; the stored data is saved across browser sessions.
-</p>
+origin; the stored data is saved across browser sessions.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h5>Example:</h5>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -1094,12 +989,9 @@ class="sourceCode js"><code class="sourceCode javascript"><span id="cb18-1"><a h
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h2>Q. What is sessionStorage in html5?</h2>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<p>
-The <mark><b>sessionStorage</b></mark> object is equal to the
-localStorage object, except that it stores the data for only one
-session. The data is deleted when the user closes the specific browser
-tab.
-</p>
+<p>The <b><mark>sessionStorage</mark></b> object is equal to the localStorage object, 
+except that it stores the data for only one session. The data is deleted when the user 
+closes the specific browser tab.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h5>Example:</h5>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -1118,16 +1010,11 @@ class="sourceCode js"><code class="sourceCode javascript"><span id="cb19-1"><a h
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h2>Q. What is cookies in html5?</h2>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<p>
-A cookie is an amount of information that persists between a server-side
-and a client-side. A web browser stores this information at the time of
-browsing.
-</p>
-<p>
-A cookie contains the information as a string generally in the form of a
-name-value pair separated by semi-colons. It maintains the state of a
-user and remembers the user's information among all the web pages.
-</p>
+<p>A cookie is an amount of information that persists between a server-side and a 
+client-side. A web browser stores this information at the time of browsing.</p>
+<p>A cookie contains the information as a string generally in the form of a name-value 
+pair separated by semi-colons. It maintains the state of a user and remembers the user's 
+information among all the web pages.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h5>Example 01: Create a Cookie</h5>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -1325,12 +1212,10 @@ class="sourceCode js"><code class="sourceCode javascript"><span id="cb26-1"><a h
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3><ol type="1"><li>WebSQL</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<p>
-It is an API that is only supported in Chrome and Safari (and Android
+<p>It is an API that is only supported in Chrome and Safari (and Android
 and iOS by extension). It provides an asynchronous, transactional
 interface to <mark>SQLite</mark>. Since 2010, it has been deprecated in
-favor of <mark><b>IndexedDB</b></mark>.
-</p>
+favor of <mark><b>IndexedDB</b></mark>.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h4>Advantages</h4>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -1416,9 +1301,7 @@ Decent browser support: Chrome, Firefox, mobile FF, IE10.
 </li>
 </ul>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<h4>
-Disadvantages
-</h4>
+<h4>Disadvantages</h4>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <ul>
 <li>
@@ -1460,67 +1343,49 @@ resources that have changed from the server.
 class="sourceCode html"><code class="sourceCode html"><span id="cb27-1"><a href="#cb27-1" aria-hidden="true" tabindex="-1"></a><span class="dt">&lt;</span><span class="kw">html</span><span class="ot"> manifest</span><span class="op">=</span><span class="st">&quot;example.appcache&quot;</span><span class="dt">&gt;</span></span>
 <span id="cb27-2"><a href="#cb27-2" aria-hidden="true" tabindex="-1"></a>  ...</span>
 <span id="cb27-3"><a href="#cb27-3" aria-hidden="true" tabindex="-1"></a><span class="dt">&lt;/</span><span class="kw">html</span><span class="dt">&gt;</span></span></code></pre></div>
-<p>
-<i>Note: Using the application caching feature described here is at this
+<p><i>Note: Using the application caching feature described here is at this
 point highly discouraged; it's in the process of being removed from the
 Web platform. Use <mark><b>Service Workers</b></mark> instead. In fact
 as of Firefox 44, when AppCache is used to provide offline support for a
 page a warning message is now displayed in the console advising
-developers to use Service workers instead (bug 1204581).</i>
-</p>
+developers to use Service workers instead (bug 1204581).</i></p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h2>Q. What is the purpose of cache busting and how can you achieve it?</h2>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<p>
-Browsers have a cache to temporarily store files on websites so they
+<p>Browsers have a cache to temporarily store files on websites so they
 don't need to be re-downloaded again when switching between pages or
 reloading the same page. The server is set up to send headers that tell
 the browser to store the file for a given amount of time. This greatly
-increases website speed and preserves bandwidth.
-</p>
-<p>
-However, it can cause problems when the website has been changed by
+increases website speed and preserves bandwidth.</p>
+<p>However, it can cause problems when the website has been changed by
 developers because the user’s cache still references old files. This can
 either leave them with old functionality or break a website if the
 cached CSS and JavaScript files are referencing elements that no longer
-exist, have moved or have been renamed.
-</p>
-<p>
-<b><mark>Cache busting</mark></b> is the process of forcing the browser
+exist, have moved or have been renamed.</p>
+<p><b><mark>Cache busting</mark></b> is the process of forcing the browser
 to download the new files. This is done by naming the file something
-different to the old file.
-</p>
-<p>
-A common technique to force the browser to re-download the file is to
-append a query string to the end of the file.
-</p>
+different to the old file.</p>
+<p>A common technique to force the browser to re-download the file is to
+append a query string to the end of the file.</p>
 <div class="sourceCode" id="cb28"><pre
 class="sourceCode html"><code class="sourceCode html"><span id="cb28-1"><a href="#cb28-1" aria-hidden="true" tabindex="-1"></a><span class="co">&lt;!-- src=&quot;js/script.js&quot; =&gt; src=&quot;js/script.js?v=2&quot; --&gt;</span></span>
 <span id="cb28-2"><a href="#cb28-2" aria-hidden="true" tabindex="-1"></a><span class="dt">&lt;</span><span class="kw">script</span><span class="ot"> src</span><span class="op">=</span><span class="st">&quot;js/script.js?v=2&quot;</span><span class="dt">&gt;&lt;/</span><span class="kw">script</span><span class="dt">&gt;</span></span></code></pre></div>
-<p>
-The browser considers it a different file but prevents the need to
-change the file name.
-</p>
+<p>The browser considers it a different file but prevents the need to
+change the file name.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h2>Q. What ARIA and screenreaders are, and how to make a website accessible?</h2>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<p>
-Screen readers are software programs that provide assistive technologies
-that allow people with disabilities (such as no sight, sound or
-mouse-ing ability) to use web applications. You can make your sites more
-accessible by following ARIA standards such as semantic HTML, alt
-attributes and using [role=button] in the expected ways.
-</p>
+<p>Screen readers are software programs that provide assistive technologies that allow 
+people with disabilities (such as no sight, sound or mouse-ing ability) to use web 
+applications. You can make your sites more accessible by following ARIA standards such 
+as semantic HTML, alt attributes and using [role=button] in the expected ways.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h2>Q. How to use <b>data-</b> attribute in html5?</h2>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<p>
-Any attribute on any element whose attribute name starts with
-<mark><b>data-</b></mark> is a data attribute. The <b>data-*</b>
-attributes gives us the ability to embed custom data attributes on all
-HTML elements. The stored (custom) data can then be used in the page's
-JavaScript to create a more engaging user experience.
-</p>
+<p>Any attribute on any element whose attribute name starts with <mark><b>data-</b></mark> 
+is a data attribute. The <b>data-*</b> attributes gives us the ability to embed custom data 
+attributes on all HTML elements. The stored (custom) data can then be used in the page's
+JavaScript to create a more engaging user experience.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h5>Example:</h5>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -1542,23 +1407,17 @@ class="sourceCode js"><code class="sourceCode javascript"><span id="cb30-1"><a h
 <span id="cb30-6"><a href="#cb30-6" aria-hidden="true" tabindex="-1"></a>article<span class="op">.</span><span class="at">dataset</span><span class="op">.</span><span class="at">columns</span><span class="op">;</span> <span class="co">// &quot;10&quot;</span></span>
 <span id="cb30-7"><a href="#cb30-7" aria-hidden="true" tabindex="-1"></a>article<span class="op">.</span><span class="at">dataset</span><span class="op">.</span><span class="at">indexNumber</span><span class="op">;</span> <span class="co">// &quot;100&quot;</span></span>
 <span id="cb30-8"><a href="#cb30-8" aria-hidden="true" tabindex="-1"></a>article<span class="op">.</span><span class="at">dataset</span><span class="op">.</span><span class="at">parent</span><span class="op">;</span> <span class="co">// &quot;cars&quot;</span></span></code></pre></div>
-<p>
-<b>⚝
+<p><b>⚝
 <a href="https://codesandbox.io/s/html-data-attribute-llxlkn?file=/script.js">
-Try this example on CodeSandbox</a></b>
-</p>
+Try this example on CodeSandbox</a></b></p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h2>Q. What is the purpose of the <mark>alt</mark> attribute on images?</h2>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<p>
-The <b><mark>alt</mark></b> attribute provides alternative information
-for an image if a user cannot view it.
-</p>
-<p>
-The <b><mark>alt</mark></b> attribute should be used to describe any
+<p>The <b><mark>alt</mark></b> attribute provides alternative information
+for an image if a user cannot view it.</p>
+<p>The <b><mark>alt</mark></b> attribute should be used to describe any
 images except those which only serve a decorative purposes, in which
-case it should be left empty.
-</p>
+case it should be left empty.</p>
 <div class="sourceCode" id="cb31"><pre
 class="sourceCode html"><code class="sourceCode html"><span id="cb31-1"><a href="#cb31-1" aria-hidden="true" tabindex="-1"></a><span class="dt">&lt;</span><span class="kw">img</span><span class="ot"> src</span><span class="op">=</span><span class="st">&quot;pancakes.png&quot;</span><span class="ot"> alt</span><span class="op">=</span><span class="st">&quot;Stack of blueberry pancakes with powdered sugar&quot;</span><span class="dt">&gt;</span></span></code></pre></div>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -1655,12 +1514,10 @@ encoded.
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h2>Q. What is difference between Select and Datalist?</h2>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<p>
-For the select element, the user is required to select one of the
+<p>For the select element, the user is required to select one of the
 options you've given. For the datalist element, it is suggested that the
 user select one of the options you've given, but he can actually enter
-anything he wants in the input.
-</p>
+anything he wants in the input.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h4><ol type="1"><li>Select:</h4>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~--></li>
@@ -1689,10 +1546,8 @@ class="sourceCode html"><code class="sourceCode html"><span id="cb36-1"><a href=
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h2>Q. Explain some of the pros and cons for CSS animations versus JavaScript animations?</h2>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<p>
-Regarding optimization and responsiveness the debate bounces back and
-forth but, the concept is:
-</p>
+<p>Regarding optimization and responsiveness the debate bounces back and
+forth but, the concept is:</p>
 <ul>
 <li><p>CSS animations allows the browser to choose where the animation
 processing is done, CPU or the GPU. (Central or Graphics Processing
@@ -1709,13 +1564,11 @@ limited in capability.</p></li>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h2>Q. What does CORS stand for and what issue does it address?</h2>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<p>
-Cross-Origin Resource Sharing (CORS) is a W3C spec that allows
+<p>Cross-Origin Resource Sharing (CORS) is a W3C spec that allows
 cross-domain communication from the browser. By building on top of the
 XMLHttpRequest object, CORS allows developers to work with the same
 idioms as same-domain requests. CORS gives web servers cross-domain
-access controls, which enable secure cross-domain data transfers.
-</p>
+access controls, which enable secure cross-domain data transfers.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h2>Q. Can you describe the difference between progressive enhancement and graceful degradation?</h2>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -1738,15 +1591,13 @@ In this case a simple form with full-page refresh will do what you need.
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h2>Q. What is the DOM? How does the DOM work?</h2>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<p>
-The DOM (Document Object Model) is a cross-platform API that treats HTML
+<p>The DOM (Document Object Model) is a cross-platform API that treats HTML
 documents as a tree structure consisting of nodes. These nodes (such as
 elements and text nodes) are objects that can be programmatically
 manipulated and any visible changes made to them are reflected live in
 the document. In a browser, this API is available to JavaScript where
 DOM nodes can be manipulated to change their styles, contents, placement
-in the document, or interacted with through event listeners.
-</p>
+in the document, or interacted with through event listeners.</p>
 <ul>
 <li>
 The DOM was designed to be independent of any particular programming
@@ -1766,45 +1617,28 @@ a node.
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h2>Q. How does the browser rendering engine work?</h2>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<p>
-In order to render content the browser has to go through a series of
-steps:
-</p>
+<p>In order to render content the browser has to go through a series of steps:</p>
 <ul>
-<li>
-Document Object Model(DOM)
-</li>
-<li>
-CSS object model(CSSOM)
-</li>
-<li>
-Render Tree
-</li>
-<li>
-Layout
-</li>
-<li>
-Paint
-</li>
+  <li>Document Object Model(DOM)</li>
+  <li>CSS object model(CSSOM)</li>
+  <li>Render Tree</li>
+  <li>Layout</li>
+  <li>Paint</li>
 </ul>
 <p align="center">
-<img src="assets/images/layers.png" alt="Browser Rendering Engine" />
+  <img src="assets/images/layers.png" alt="Browser Rendering Engine" />
 </p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h2>Q. What is the difference between standards mode and quirks mode?</h2>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<p>
-In <b>Quirks mode</b>, layout emulates nonstandard behavior in Navigator
+<p>In <b>Quirks mode</b>, layout emulates nonstandard behavior in Navigator
 4 and Internet Explorer 5. This is essential in order to support
 websites that were built before the widespread adoption of web
 standards. In <b>Standards mode</b>, the behavior is described by the
-HTML and CSS specifications.
-</p>
-<p>
-For HTML documents, browsers use a &lt;!DOCTYPE html&gt; in the
+HTML and CSS specifications.</p>
+<p>For HTML documents, browsers use a &lt;!DOCTYPE html&gt; in the
 beginning of the document to decide whether to handle it in quirks mode
-or standards mode.
-</p>
+or standards mode.</p>
 <div class="sourceCode" id="cb37"><pre
 class="sourceCode html"><code class="sourceCode html"><span id="cb37-1"><a href="#cb37-1" aria-hidden="true" tabindex="-1"></a><span class="dt">&lt;!DOCTYPE</span> html<span class="dt">&gt;</span></span>
 <span id="cb37-2"><a href="#cb37-2" aria-hidden="true" tabindex="-1"></a><span class="dt">&lt;</span><span class="kw">html</span><span class="ot"> lang</span><span class="op">=</span><span class="st">&quot;en&quot;</span><span class="dt">&gt;</span></span>
@@ -2156,11 +1990,9 @@ written with respect to min-width.
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h2>Q. What are <mark>data-</mark> attributes good for?</h2>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<p>
-The HTML5 data attribute lets you assign custom data to an element. When
+<p>The HTML5 data attribute lets you assign custom data to an element. When
 we want to store more information/data about the element when no
-suitable HTML5 element or attribute exists.
-</p>
+suitable HTML5 element or attribute exists.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h2>Q. Explain the difference between layout, painting and compositing?</h2>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -2168,52 +2000,42 @@ suitable HTML5 element or attribute exists.
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h4><ol type="1"><li>JavaScript:</h4>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<p>
-Typically JavaScript is used to handle work that will result in visual
+<p>Typically JavaScript is used to handle work that will result in visual
 changes, whether it's jQuery's animate function, sorting a data set, or
 adding DOM elements to the page. It doesn't have to be JavaScript that
 triggers a visual change, though: CSS Animations, Transitions, and the
-Web Animations API are also commonly used.
-</p>
+Web Animations API are also commonly used.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h4><ol start="2" type="1"><li>Style:</h4>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<p>
-This is the process of figuring out which CSS rules apply to which
+<p>This is the process of figuring out which CSS rules apply to which
 elements based on matching selectors, for example, .headline or .nav
 &gt; .nav__item. From there, once rules are known, they are applied and
-the final styles for each element are calculated.
-</p>
+the final styles for each element are calculated.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h4><ol start="3" type="1"><li>Layout:</h4>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<p>
-Once the browser knows which rules apply to an element it can begin to
+<p>Once the browser knows which rules apply to an element it can begin to
 calculate how much space it takes up and where it is on screen. The
 web's layout model means that one element can affect others, for example
 the width of the &lt;body&gt; element typically affects its children's
 widths and so on all the way up and down the tree, so the process can be
-quite involved for the browser.
-</p>
+quite involved for the browser.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h4><ol start="4" type="1"><li>Paint:</h4>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<p>
-Painting is the process of filling in pixels. It involves drawing out
+<p>Painting is the process of filling in pixels. It involves drawing out
 text, colors, images, borders, and shadows, essentially every visual
 part of the elements. The drawing is typically done onto multiple
-surfaces, often called layers.
-</p>
+surfaces, often called layers.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h4><ol start="5" type="1"><li>Compositing:</h4>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<p>
-Since the parts of the page were drawn into potentially multiple layers
+<p>Since the parts of the page were drawn into potentially multiple layers
 they need to be drawn to the screen in the correct order so that the
 page renders correctly. This is especially important for elements that
 overlap another, since a mistake could result in one element appearing
-over the top of another incorrectly.
-</p></li>
+over the top of another incorrectly.</p></li>
 </ol></li>
 </ol></li>
 </ol></li>
@@ -2304,43 +2126,28 @@ Internet Explorer browser and Microsoft Outlook email client.
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h2>Q. How to make page responsive?</h2>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<p>
-Responsive Web Design is about using HTML and CSS to automatically
+<p>Responsive Web Design is about using HTML and CSS to automatically
 resize, hide, shrink, or enlarge, a website, to make it look good on all
-devices (desktops, tablets, and phones).
-</p>
+devices (desktops, tablets, and phones).</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<h4>
-<ol type="1">
-<li>Setting the viewport:
-</h4>
+<h4><ol type="1"><li>Setting the viewport:</h4>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~--></li>
 </ol>
 <div class="sourceCode" id="cb42"><pre
 class="sourceCode html"><code class="sourceCode html"><span id="cb42-1"><a href="#cb42-1" aria-hidden="true" tabindex="-1"></a><span class="dt">&lt;</span><span class="kw">meta</span><span class="ot"> name</span><span class="op">=</span><span class="st">&quot;viewport&quot;</span><span class="ot"> content</span><span class="op">=</span><span class="st">&quot;width=device-width, initial-scale=1.0&quot;</span><span class="dt">&gt;</span></span></code></pre></div>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<h4>
-<ol start="2" type="1">
-<li>Responsive Images:
-</h4>
+<h4><ol start="2" type="1"><li>Responsive Images:</h4>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<p>
-If the CSS width property is set to 100%, the image will be responsive
-and scale up and down.
-</p></li>
+<p>If the CSS width property is set to 100%, the image will be responsive
+and scale up and down.</p></li>
 </ol>
 <div class="sourceCode" id="cb43"><pre
 class="sourceCode html"><code class="sourceCode html"><span id="cb43-1"><a href="#cb43-1" aria-hidden="true" tabindex="-1"></a><span class="dt">&lt;</span><span class="kw">img</span><span class="ot"> src</span><span class="op">=</span><span class="st">&quot;img.png&quot;</span><span class="ot"> style</span><span class="op">=</span><span class="st">&quot;width:100%;&quot;</span><span class="dt">&gt;</span></span></code></pre></div>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<h4>
-<ol start="3" type="1">
-<li>Show different Images depending on Browser Width:
-</h4>
+<h4><ol start="3" type="1"><li>Show different Images depending on Browser Width:</h4>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<p>
-The HTML &lt;picture&gt; element allows you to define different images
-for different browser window sizes.
-</p></li>
+<p>The HTML &lt;picture&gt; element allows you to define different images
+for different browser window sizes.</p></li>
 </ol>
 <div class="sourceCode" id="cb44"><pre
 class="sourceCode html"><code class="sourceCode html"><span id="cb44-1"><a href="#cb44-1" aria-hidden="true" tabindex="-1"></a><span class="dt">&lt;</span><span class="kw">picture</span><span class="dt">&gt;</span></span>
@@ -2350,10 +2157,7 @@ class="sourceCode html"><code class="sourceCode html"><span id="cb44-1"><a href=
 <span id="cb44-5"><a href="#cb44-5" aria-hidden="true" tabindex="-1"></a>  <span class="dt">&lt;</span><span class="kw">img</span><span class="ot"> src</span><span class="op">=</span><span class="st">&quot;img_small.jpg&quot;</span><span class="ot"> alt</span><span class="op">=</span><span class="st">&quot;Image&quot;</span><span class="dt">&gt;</span></span>
 <span id="cb44-6"><a href="#cb44-6" aria-hidden="true" tabindex="-1"></a><span class="dt">&lt;/</span><span class="kw">picture</span><span class="dt">&gt;</span></span></code></pre></div>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<h4>
-<ol start="4" type="1">
-<li>Responsive Text Size:
-</h4>
+<h4><ol start="4" type="1"><li>Responsive Text Size:</h4>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p>
 The text size can be set with a “vw” unit, which means the “viewport
@@ -2364,15 +2168,11 @@ window.
 <div class="sourceCode" id="cb45"><pre
 class="sourceCode html"><code class="sourceCode html"><span id="cb45-1"><a href="#cb45-1" aria-hidden="true" tabindex="-1"></a><span class="dt">&lt;</span><span class="kw">h1</span><span class="ot"> style</span><span class="op">=</span><span class="st">&quot;font-size:10vw&quot;</span><span class="dt">&gt;</span>Hello World<span class="dt">&lt;/</span><span class="kw">h1</span><span class="dt">&gt;</span></span></code></pre></div>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<h4>
-<ol start="5" type="1">
-<li>Media Queries:
-</h4>
+<h4><ol start="5" type="1"><li>Media Queries:</h4>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<p>
-Using media queries you can define completely different styles for
-different browser sizes.
-</p></li>
+<p>Using media queries you can define completely different styles for
+different browser sizes.</p>
+</li>
 </ol>
 <div class="sourceCode" id="cb46"><pre
 class="sourceCode css"><code class="sourceCode css"><span id="cb46-1"><a href="#cb46-1" aria-hidden="true" tabindex="-1"></a><span class="co">/* Use a media query to add a breakpoint at 800px: */</span></span>
@@ -12438,11 +12238,12 @@ Response.Flush()
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <footer>
 <h6>Date created: ~ 4/1/2025<br/>
-<h6>Prior editted: 5/1/2025 +6pm<br/>
-<h6>Last editted: 5/2/2025 +11am<br/>
-<h6>Last editted: 5/4/2025 +12pm</h6>
-<h6>Last editted: 5/6/2025 +12pm</h6>
-<h6>Last editted: 5/9/2025 +9am</h6>
+Prior editted: 5/1/2025 +6pm<br/>
+Last editted: 5/2/2025 +11am<br/>
+Last editted: 5/4/2025 +12pm<br/>
+Last editted: 5/6/2025 +12pm<br/>
+Last editted: 5/9/2025 +9am<br/>
+Last editted: 5/19/2025 +11pm</h6>
 <p>The End…</p>
 </li>
 </ol>
