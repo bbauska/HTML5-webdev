@@ -11087,86 +11087,60 @@ window.onload = draw;</code></pre>
 </ol>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h2 id="12-html-apis">
-<ol start="12" type="1">
-<li>HTML APIs
+  <ol start="12" type="1">
+    <li>HTML APIs</li>
+  </ol>
 </h2>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<p>
-All browsers have a set of built-in Web APIs to support complex
-operations, and to help accessing data.
-</p></li>
-</ol>
-<p>
-Here are some of the main HTML5 APIs:
-</p>
-<ol>
-<li>
+<p>All browsers have a set of built-in Web APIs to support complex operations, and to 
+help accessing data.</p>
+<p>Here are some of the main HTML5 APIs:</p>
 <ol type="1">
-<li>Geolocation API - This API is used to access the current location of
-a user (with latitude and longitude).
-</li>
-<li>
-<ol start="2" type="1">
-<li>Drag and Drop API - This API enables you to use drag-and-drop
-features in browsers.
-</li>
-<li>
-<ol start="3" type="1">
-<li>Web Storage API - This API has mechanisms to let browsers store
-key/value pairs (in a more intuitive way than cookies).
-</li>
-<li>
-<ol start="4" type="1">
-<li>Web Workers API - This API allows a JavaScript to run in the
-background, without affecting the performance of the page. Users can
-continue to do whatever they want: clicking, selecting things, etc.,
-while the web worker runs in the background.
-</li>
-<li>
-<ol start="5" type="1">
-<li>Server-Sent Events API - This API allows a web page to automatically
-get updates from a server.
-</li>
-<li>
-<ol start="6" type="1">
-<li>Canvas API - This API lets you draw graphics, on the fly, via
-JavaScript.
-</li>
-</ol>
+  <li>Geolocation API - This API is used to access the current location of a user 
+    (with latitude and longitude).</li>
+  <li>
+    <ol start="2" type="1">
+      <li>Drag and Drop API - This API enables you to use drag-and-drop features in browsers.</li>
+      <li>
+	    <ol start="3" type="1">
+          <li>Web Storage API - This API has mechanisms to let browsers store key/value 
+		    pairs (in a more intuitive way than cookies).</li>
+          <li>
+		    <ol start="4" type="1">
+              <li>Web Workers API - This API allows a JavaScript to run in the background, 
+			    without affecting the performance of the page. Users can continue to do 
+				whatever they want: clicking, selecting things, etc., while the web worker 
+				runs in the background.</li>
+              <li>
+			    <ol start="5" type="1">
+                  <li>Server-Sent Events API - This API allows a web page to automatically 
+				    get updates from a server.</li>
+              <li>
+                <ol start="6" type="1">
+                  <li>Canvas API - This API lets you draw graphics, on the fly, via JavaScript.</li>
+                </ol>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3>Third Party APIs</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<p>
-Third party APIs are not built into your browser.
-</p></li>
+<p>Third party APIs are not built into your browser.</p></li>
 </ol></li>
 </ol></li>
 </ol></li>
 </ol></li>
 </ol></li>
 </ol>
-<p>
-To use these APIs, you will have to download the code from the Web.
-</p>
+<p>To use these APIs, you will have to download the code from the Web.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h4>Examples:</h4>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <ul>
-<li>
-YouTube API - Allows you to display videos on a web site.
-</li>
-<li>
-Twitter API - Allows you to display Tweets on a web site.
-</li>
-<li>
-Facebook API - Allows you to display Facebook info on a web site.
-</li>
+  <li>YouTube API - Allows you to display videos on a web site.</li>
+  <li>Twitter API - Allows you to display Tweets on a web site.</li>
+  <li>Facebook API - Allows you to display Facebook info on a web site.</li>
 </ul>
-<p>
-<b>HTML Geolocation API</b> - The Geolocation API is used to access the
+<p><b>HTML Geolocation API</b> - The Geolocation API is used to access the
 user’s current location. Since this can compromise privacy, the location
-is not available unless the user approves it.
-</p>
+is not available unless the user approves it.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h4>Example</h4>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -11194,27 +11168,14 @@ function error() {
 <h4>Example explained:</h4>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <ul>
-<li>
-Check if Geolocation is supported
-</li>
-<li>
-If Geolocation is supported, run the getCurrentPosition() method. If
-not, display a message to the user
-</li>
-<li>
-The success() function outputs the user’s location in latitude and
-longitude
-</li>
-<li>
-The error() function alerts a text if the browser retrieves an error in
-getCurrentPosition()
-</li>
+  <li>Check if Geolocation is supported</li>
+  <li>If Geolocation is supported, run the getCurrentPosition() method. If 
+    not, display a message to the user</li>
+  <li>The success() function outputs the user’s location in latitude and longitude</li>
+  <li>The error() function alerts a text if the browser retrieves an error in getCurrentPosition()</li>
 </ul>
-<p>
-The second parameter of the getCurrentPosition() method is used to
-handle errors. It specifies a function to run if it fails to get the
-user’s location.
-</p>
+<p>The second parameter of the getCurrentPosition() method is used to handle errors. It 
+specifies a function to run if it fails to get the user’s location.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h4>Example</h4>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -11283,131 +11244,74 @@ function error(error) {
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3>Location-specific Information</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<p>
-Geolocation is also very useful for location-specific information, like:
-</p>
+<p>Geolocation is also very useful for location-specific information, like:</p>
 <ul>
-<li>
-Up-to-date local information
-</li>
-<li>
-Showing Points-of-interest near the user
-</li>
-<li>
-Turn-by-turn navigation (GPS)
-</li>
+  <li>Up-to-date local information</li>
+  <li>Showing Points-of-interest near the user</li>
+  <li>Turn-by-turn navigation (GPS)</li>
 </ul>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3>The getCurrentPosition() Method - Return Data</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<p>
-The getCurrentPosition() method returns an object on success. The
-latitude, longitude and accuracy properties are always returned. The
-other properties are returned if available:
-</p>
+<p>The getCurrentPosition() method returns an object on success. The latitude, longitude 
+and accuracy properties are always returned. The other properties are returned if 
+available:</p>
 <div role="region" tabindex="0">
-<table>
-<caption>
-The getCurrentPosition() Method - Return Data
-</caption>
-<thead>
-<tr>
-<th>
-Property
-</th>
-<th>
-Returns
-</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>
-coords.latitude
-</td>
-<td>
-The latitude as a decimal number (always returned)
-</td>
-</tr>
-<tr>
-<td>
-coords.longitude
-</td>
-<td>
-The longitude as a decimal number (always returned)
-</td>
-</tr>
-<tr>
-<td>
-coords.accuracy
-</td>
-<td>
-The accuracy of position (always returned)
-</td>
-</tr>
-<tr>
-<td>
-coords.altitude
-</td>
-<td>
-The altitude in meters above the mean sea level (returned if available)
-</td>
-</tr>
-<tr>
-<td>
-coords.altitudeAccuracy
-</td>
-<td>
-The altitude accuracy of position (returned if available)
-</td>
-</tr>
-<tr>
-<td>
-coords.heading
-</td>
-<td>
-The heading as degrees clockwise from North (returned if available)
-</td>
-</tr>
-<tr>
-<td>
-coords.speed
-</td>
-<td>
-The speed in meters per second (returned if available)
-</td>
-</tr>
-<tr>
-<td>
-timestamp
-</td>
-<td>
-The date/time of the response (returned if available).
-</td>
-</tr>
-</tbody>
-</table>
+  <table>
+    <caption>The getCurrentPosition() Method - Return Data</caption>
+    <thead>
+      <tr>
+        <th>Property</th>
+        <th>Returns</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+	    <td>coords.latitude</td>
+        <td>The latitude as a decimal number (always returned)</td>
+      </tr>
+      <tr>
+        <td>coords.longitude</td>
+        <td>The longitude as a decimal number (always returned)</td>
+      </tr>
+      <tr>
+        <td>coords.accuracy</td>
+        <td>The accuracy of position (always returned)</td>
+      </tr>
+      <tr>
+        <td>coords.altitude</td>
+        <td>The altitude in meters above the mean sea level (returned if available)</td>
+      </tr>
+      <tr>
+        <td>coords.altitudeAccuracy</td>
+        <td>The altitude accuracy of position (returned if available)</td>
+      </tr>
+      <tr>
+        <td>coords.heading</td>
+        <td>The heading as degrees clockwise from North (returned if available)</td>
+      </tr>
+      <tr>
+        <td>coords.speed</td>
+        <td>The speed in meters per second (returned if available)</td>
+      </tr>
+      <tr>
+        <td>timestamp</td>
+        <td>The date/time of the response (returned if available).</td>
+      </tr>
+    </tbody>
+  </table>
 </div>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3>Geolocation Object - Other interesting Methods</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<p>
-The Geolocation object also has other interesting methods:
-</p>
+<p>The Geolocation object also has other interesting methods:</p>
 <ul>
-<li>
-<b>watchPosition()</b> - Returns the current location of the user and
-continues to return updated location as the user moves (like the GPS in
-a car).
-</li>
-<li>
-<b>clearWatch()</b> - Stops the watchPosition() method.
-</li>
+  <li><b>watchPosition()</b> - Returns the current location of the user and continues to 
+    return updated location as the user moves (like the GPS in a car).</li>
+  <li><b>clearWatch()</b> - Stops the watchPosition() method.</li>
 </ul>
-<p>
-The example below shows the watchPosition() method. You need an accurate
-GPS device to test this (like a smartphone):
-</p>
+<p>The example below shows the watchPosition() method. You need an accurate GPS device 
+to test this (like a smartphone):</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h4>Example</h4>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -11446,23 +11350,19 @@ function error(error) {
 &lt;/script&gt;</code></pre>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h2 id="13-html-dragndrop">
-<ol start="13" type="1">
-<li>HTML Drag and Drop API
+  <ol start="13" type="1">
+    <li>HTML Drag and Drop API</li>
+  </ol>
 </h2>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<p>
-The HTML Drag and Drop API enables an element to be dragged and dropped.
-</p>
+<p>The HTML Drag and Drop API enables an element to be dragged and dropped.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h4>HTML Drag and Drop API Example</h4>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<p>
-The example below is a simple drag and drop example:
-</p>
+<p>The example below is a simple drag and drop example:</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h4>Example</h4>
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~--></li>
-</ol>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <pre><code>&lt;!DOCTYPE HTML&gt;
 &lt;html&gt;
 &lt;head&gt;
@@ -11493,68 +11393,40 @@ function dropHandler(ev) {
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h4>Make an Element Draggable</h4>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<p>
-First of all: To make an element draggable, set the draggable attribute
-to true:
-</p>
+<p>First of all: To make an element draggable, set the draggable attribute to true:</p>
 <pre><code>&lt;img id=&quot;img1&quot; draggable=&quot;true&quot;&gt;</code></pre>
-<p>
-or:
-</p>
+<p>or:</p>
 <pre><code>&lt;p id=&quot;p1&quot; draggable=&quot;true&quot;&gt;Draggable text&lt;/p&gt;</code></pre>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h4>What to Drag - ondragstart and setData()</h4>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<p>
-Then, specify what should happen when the element is dragged.
-</p>
-<p>
-In the example above, the ondragstart attribute of the <img> element
-calls a function (dragstartHandler(ev)), that specifies what data to be
-dragged.
-</p>
-<p>
-The dataTransfer.setData() method sets the data type and the value of
-the dragged data:
-</p>
+<p>Then, specify what should happen when the element is dragged.</p>
+<p>In the example above, the ondragstart attribute of the &lt;img&gt; element calls a 
+function (dragstartHandler(ev)), that specifies what data to be dragged.</p>
+<p>The dataTransfer.setData() method sets the data type and the value of the dragged 
+data:</p>
 <pre><code>function dragstartHandler(ev) {
   ev.dataTransfer.setData(&quot;text&quot;, ev.target.id);
 }</code></pre>
-<p>
-In this case, the data type is “text” and the value is the id of the
-draggable element (“img1”).
-</p>
+<p>In this case, the data type is “text” and the value is the id of the draggable element 
+(“img1”).</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h4>Where to Drop - ondragover</h4>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<p>
-The ondragover attrribute of the
-<div>
-element calls a function (dragoverHandler(ev)), that specifies where the
-dragged data can be dropped.
-</p>
-<p>
-By default, data/elements cannot be dropped in other elements. To allow
-a drop, we must prevent the default handling of the element.
-</p>
-<p>
-This is done by calling the preventDefault() method for the ondragover
-event:
-</p>
+<p>The ondragover attrribute of the element calls a function (dragoverHandler(ev)), that 
+specifies where the dragged data can be dropped.</p>
+<p>By default, data/elements cannot be dropped in other elements. To allow a drop, we 
+must prevent the default handling of the element.</p>
+<p>This is done by calling the preventDefault() method for the ondragover event:</p>
 <pre><code>function dragoverHandler(ev) {
   ev.preventDefault();
 }</code></pre>
-<h4>
-Do the Drop - ondrop
-</h4>
-<p>
-When the dragged data is dropped, a drop event occurs.
-</p>
-<p>
-In the example above, the ondrop attribute of the
-<div>
-element calls a function, dropHandler(event):
-</p>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<h4>Do the Drop - ondrop</h4>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<p>When the dragged data is dropped, a drop event occurs.</p>
+<p>In the example above, the ondrop attribute of the element calls a function, 
+dropHandler(event):</p>
 <pre><code>function dropHandler(ev) {
   ev.preventDefault();
   const data = ev.dataTransfer.getData(&quot;text&quot;);
@@ -11564,28 +11436,17 @@ element calls a function, dropHandler(event):
 <h4>Code explained:</h4>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <ul>
-<li>
-Call preventDefault() to prevent the browser default handling of the
-data (default is open as link on drop)
-</li>
-<li>
-Get the dragged data with the dataTransfer.getData() method. This method
-will return any data that was set to the same type in the setData()
-method
-</li>
-<li>
-The dragged data is the id of the dragged element (“img1”)
-</li>
-<li>
-Append the dragged element into the drop element
-</li>
+  <li>Call preventDefault() to prevent the browser default handling of the data (default 
+    is open as link on drop)</li>
+  <li>Get the dragged data with the dataTransfer.getData() method. This method will 
+    return any data that was set to the same type in the setData() method</li>
+  <li>The dragged data is the id of the dragged element (“img1”)</li>
+  <li>Append the dragged element into the drop element</li>
 </ul>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h4>Example</h4>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<p>
-How to drag and drop an &lt;h1&gt; element to a &lt;div&gt; element:
-</p>
+<p>How to drag and drop an &lt;h1&gt; element to a &lt;div&gt; element:</p>
 <pre><code>&lt;script&gt;
 function dragstartHandler(ev) {
   ev.dataTransfer.setData(&quot;text&quot;, ev.target.id);
@@ -11612,30 +11473,23 @@ function dropHandler(ev) {
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3>What is HTML Web Storage?</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<p>
-With web storage, applications can store data locally within the user’s
-browser.
-</p>
-<p>
-Before HTML5, application data had to be stored in cookies, included in
-every server request. Web storage is more secure, and large amounts of
-data can be stored locally, without affecting website performance.
-</p>
-<p>
-Unlike cookies, the storage limit is far larger (at least 5MB) and
-information is never transferred to the server.
-</p>
-<p>
-Web storage is per origin (per domain and protocol). All pages, from one
-origin, can store and access the same data.
-</p>
+<p>With web storage, applications can store data locally within the user’s browser.</p>
+<p>Before HTML5, application data had to be stored in cookies, included in every server 
+request. Web storage is more secure, and large amounts of data can be stored locally, 
+without affecting website performance.</p>
+<p>Unlike cookies, the storage limit is far larger (at least 5MB) and information is 
+never transferred to the server.</p>
+<p>Web storage is per origin (per domain and protocol). All pages, from one origin, can 
+store and access the same data.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h2>Web Storage API Objects</h2>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p>Web storage provides two objects for storing data in the browser:</p>
 <ul>
-  <li><b>window.localStorage</b> - stores data with no expiration date (data is not lost when the browser tab is closed)</li>
-  <li><b>window.sessionStorage</b> - stores data for one session (data is lost when the browser tab is closed)</li>
+  <li><b>window.localStorage</b> - stores data with no expiration date (data is not lost 
+    when the browser tab is closed)</li>
+  <li><b>window.sessionStorage</b> - stores data for one session (data is lost when the 
+    browser tab is closed)</li>
 </ul>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h4>Example</h4>
@@ -11651,8 +11505,8 @@ if (typeof(Storage) !== &quot;undefined&quot;) {
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3>The localStorage Object</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<p>The localStorage object stores the data with no expiration date. The data will not be lost when 
-the browser is closed, and will be available the next day, week, or year.</p>
+<p>The localStorage object stores the data with no expiration date. The data will not be 
+lost when the browser is closed, and will be available the next day, week, or year.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h4>Example - Use <b>localStorage to set and retrieve name and value pairs:</h4>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -11662,18 +11516,16 @@ the browser is closed, and will be available the next day, week, or year.</p>
   <li>Use the localStorage.setItem() method to create name/value pairs</li>
   <li>Use the localStorage.getItem() method to retrieve the values set</li>
   <li>Retrieve the value of “lastname” and insert it into an element with id=“result”</li>
-  <li>Retrieve the value of “bgcolor” and insert it into the style backgroundColor of the element with id=“result”</li>
+  <li>Retrieve the value of “bgcolor” and insert it into the style backgroundColor of the 
+    element with id=“result”</li>
 </ul>
 <p>The syntax for removing the “lastname” localStorage item is as follows:</p>
 <pre>localStorage.removeItem("lastname");</pre>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3>Counting Clicks with localStorage</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<p>
-The following example counts the number of times a user has clicked a
-button. In this code the value string is converted to a number to be
-able to increase the counter:
-</p>
+<p>The following example counts the number of times a user has clicked a button. In this 
+code the value string is converted to a number to be able to increase the counter:</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h4>Example</h4>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -11712,18 +11564,14 @@ if (typeof(Storage) !== &quot;undefined&quot;) {
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3>The sessionStorage Object</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<p>
-The sessionStorage object is equal to the localStorage object, except
-that it stores the data for only one session! The data is deleted when
-the user closes the specific browser tab.
-</p>
+<p>The sessionStorage object is equal to the localStorage object, except that it stores 
+the data for only one session! The data is deleted when the user closes the specific 
+browser tab.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3>Counting Clicks with sessionStorage</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<p>
-The following example counts the number of times a user has clicked a
-button, in the current session:
-</p>
+<p>The following example counts the number of times a user has clicked a button, in the 
+current session:</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h4>Example</h4>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -11744,39 +11592,28 @@ function clickCounter() {
 &lt;/script&gt;</code></pre>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h2 id="14-html-webworker">
-<ol start="14" type="1">
-<li>HTML Web Workers API
+  <ol start="14" type="1">
+    <li>HTML Web Workers API</li>
+  </ol>
 </h2>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<p>
-A web worker is an external JavaScript file that runs in the background,
-without affecting the performance of the page.
-</p>
+<p>A web worker is an external JavaScript file that runs in the background, without 
+affecting the performance of the page.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3>What is a Web Worker?</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<p>
-When executing scripts in an HTML page, the page becomes unresponsive
-until the script is finished.
-</p></li>
-</ol>
-<p>
-A web worker is an external JavaScript file that runs in the background,
-independently of other scripts, without affecting the performance of the
-page. You can continue to do whatever you want: clicking, selecting
-things, etc., while the web worker runs in the background.
-</p>
-<p>
-Web workers are useful for heavy code that can’t be run on the main
-thread, without causing long tasks that make the page unresponsive.
-</p>
+<p>When executing scripts in an HTML page, the page becomes unresponsive until the script 
+is finished.</p>
+<p>A web worker is an external JavaScript file that runs in the background, independently 
+of other scripts, without affecting the performance of the page. You can continue to do 
+whatever you want: clicking, selecting things, etc., while the web worker runs in the 
+background.</p>
+<p>Web workers are useful for heavy code that can’t be run on the main thread, without 
+causing long tasks that make the page unresponsive.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h4>Web Workers API Example</h4>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<p>
-The example below creates a simple web worker that count numbers in the
-background:
-</p>
+<p>The example below creates a simple web worker that count numbers in the background:</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h4>Example</h4>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -11818,9 +11655,7 @@ function stopWorker() {
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h4>Check Web Worker API Support</h4>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<p>
-Before using web worker, we can quickly check browser support:
-</p>
+<p>Before using web worker, we can quickly check browser support:</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h4>Example</h4>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -11852,18 +11687,16 @@ which is used to post messages back to the HTML page.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3>Create a Web Worker Object</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<p>Once we have created the .js web worker file, we can call it from an
-HTML page.</p>
-<p>The following lines checks if a worker (w) already exists, if not - it
-creates a new web worker object and points to the .js file:
-“demo_workers.js”:</p>
+<p>Once we have created the .js web worker file, we can call it from an HTML page.</p>
+<p>The following lines checks if a worker (w) already exists, if not - it creates a new 
+web worker object and points to the .js file: “demo_workers.js”:</p>
 <pre><code>if (typeof(w) == &quot;undefined&quot;) {
   w = new Worker(&quot;demo_workers.js&quot;);
 }</code></pre>
 <p>Then we can SEND and RETRIEVE messages from the web worker.</p>
-<p>Data is sent between web workers and the main thread via a system of
-messages - both sides send their messages using the postMessage()
-method, and respond to messages via the onmessage event handler.</p>
+<p>Data is sent between web workers and the main thread via a system of messages - both 
+sides send their messages using the postMessage() method, and respond to messages via the 
+onmessage event handler.</p>
 <p>Add an onmessage event listener to the web worker object.</p>
 <pre><code>w.onmessage = function(event){
   document.getElementById(&quot;result&quot;).innerHTML = event.data;
@@ -11871,16 +11704,16 @@ method, and respond to messages via the onmessage event handler.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3>Terminate a Web Worker</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<p>When a web worker object is created, it will continue to listen for
-messages until it is terminated.</p>
-<p>To terminate a web worker object, and free browser/computer resources,
-use the terminate() method:</p>
+<p>When a web worker object is created, it will continue to listen for messages until it 
+is terminated.</p>
+<p>To terminate a web worker object, and free browser/computer resources, use the 
+terminate() method:</p>
 <pre><code>w.terminate();</code></pre>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3>Reuse the Web Worker</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<p>If you set the web worker variable to undefined, after it has been
-terminated, you can reuse the worker/code:</p>
+<p>If you set the web worker variable to undefined, after it has been terminated, you 
+can reuse the worker/code:</p>
 <pre><code>w = undefined;</code></pre>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3>Full Web Worker Example</h3>
@@ -12025,10 +11858,11 @@ Response.Flush()
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h4>The EventSource Object</h4>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<p>In the examples above we used the onmessage event to get messages. But other events are also available:</p>
+<p>In the examples above we used the onmessage event to get messages. But other events 
+are also available:</p>
 <div role="region" tabindex="0">
-<table>
-  <caption>The EventSource Object</caption>
+  <table>
+    <caption>The EventSource Object</caption>
     <thead>
       <tr>
         <th>Event</th>
@@ -12086,14 +11920,16 @@ Response.Flush()
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h2 id="15-html-access">
   <ol start="15" type="1">
-    <li>HTML Accessibility
+    <li>HTML Accessibility</li>
+  </ol>
 </h2>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~--></li>
 </ol>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h2 id="16-misc">
-<ol start="16" type="1">
-  <li>Miscellaneous
+  <ol start="16" type="1">
+    <li>Miscellaneous</li>
+  </ol>
 </h2>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <footer>
@@ -12104,7 +11940,8 @@ Last editted: 5/4/2025 +12pm<br>
 Last editted: 5/6/2025 +12pm<br>
 Last editted: 5/9/2025 +9am<br>
 Last editted: 5/19/2025 +11pm<br>
-Last editted: 5/26/2025 +12pm</h6>
+Last editted: 5/26/2025 +12pm<br>
+Last editted: 6/16/2025 +12am</h6>
 <p>The End…</p>
 </li>
 </ol>
