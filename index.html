@@ -25,12 +25,18 @@
 <h2 id="#topics">Related Topics</h2>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <ul>
-  <li><a href="#html5-events.md">HTML5 Events List</a></li>
-  <li><a href="#html5-tags.md">HTML5 Tags</a></li>
+  <li><a href="#html5-events.md" 
+    target="_blank" rel="noopener noreferrer">
+	HTML5 Events List</a></li>
+  <li><a href="#html5-tags.md" 
+    target="_blank" rel="noopener noreferrer">
+	HTML5 Tags</a></li>
   <li><a href="https://github.com/learning-zone/css-basics" 
-    target="_blank" rel="noopener noreferrer">CSS Basics</a></li>
+    target="_blank" rel="noopener noreferrer">
+	CSS Basics</a></li>
   <li><a href="https://github.com/learning-zone/javascript-basics" 
-    target="_blank" rel="noopener noreferrer">JavaScript Basics</a></li>
+    target="_blank" rel="noopener noreferrer">
+	JavaScript Basics</a></li>
 </ul>
 <br/>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -57,19 +63,20 @@
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h2 id="1-intro">
   <ol type="1">
-    <li>Introduction</h2>
-      <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-      <h2>Q. What is difference between HTML and XHTML?</h2>
-      <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-      <p>The Extensible Hypertext Markup Language, or XHTML, has two important
-        notes for front end developers.</p></li>
+    <li>Introduction</li>
   </ol>
-  <ol type="1">
-    <li>It needs to be well formed, meaning all elements need to be closed and
-      nested correctly or you will return errors.</li>
-    <li>Since it is more strict than HTML is requires less pre-processing by the
-      browser, which may improve your sites performance.</li>
-  </ol>
+</h2>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<h2>Q. What is difference between HTML and XHTML?</h2>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<p>The Extensible Hypertext Markup Language, or XHTML, has two important
+notes for front end developers.</p>
+<ol type="1">
+  <li>It needs to be well formed, meaning all elements need to be closed and
+    nested correctly or you will return errors.</li>
+  <li>Since it is more strict than HTML is requires less pre-processing by the
+    browser, which may improve your sites performance.</li>
+</ol>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h2>Q. What are the building blocks of HTML5?</h2>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -1388,20 +1395,13 @@ the document. In a browser, this API is available to JavaScript where
 DOM nodes can be manipulated to change their styles, contents, placement
 in the document, or interacted with through event listeners.</p>
 <ul>
-<li>
-The DOM was designed to be independent of any particular programming
-language, making the structural representation of the document available
-from a single, consistent API.
-</li>
-<li>
-document.getElementById() and document.querySelector() are common
-functions for selecting DOM nodes.
-</li>
-<li>
-Setting the innerHTML property to a new value runs the string through
-the HTML parser, offering an easy way to append dynamic HTML content to
-a node.
-</li>
+  <li>The DOM was designed to be independent of any particular programming language, 
+    making the structural representation of the document available from a single, 
+	consistent API.</li>
+  <li>document.getElementById() and document.querySelector() are common functions 
+    for selecting DOM nodes.</li>
+  <li>Setting the innerHTML property to a new value runs the string through the HTML 
+    parser, offering an easy way to append dynamic HTML content to a node.</li>
 </ul>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h2>Q. How does the browser rendering engine work?</h2>
@@ -1580,18 +1580,15 @@ class="sourceCode html"><code class="sourceCode html"><span id="cb37-1"><a href=
     </ul>
   </li>
   <li><b><mark>Use get to ajax request:</mark></b>
-<ul>
-<li>
-POST is implemented in the browsers as a two-step process: sending the
-headers first, then sending data. So it’s best to use GET, which only
-takes one TCP packet to send (unless you have a lot of cookies).
-</li>
-</ul>
-</li>
-<li>
-<b><mark>No 404s:</mark></b>
-<ul>
-<li>
+  <ul>
+    <li>POST is implemented in the browsers as a two-step process: sending the headers 
+      first, then sending data. So it’s best to use GET, which only takes one TCP packet 
+      to send (unless you have a lot of cookies).</li>
+  </ul>
+  </li>
+  <li><b><mark>No 404s:</mark></b>
+    <ul>
+      <li>
 HTTP requests are expensive so making an HTTP request and getting a
 useless response (i.e. 404 Not Found) is totally unnecessary and will
 slow down the user experience without any benefit.
@@ -1766,7 +1763,11 @@ suitable HTML5 element or attribute exists.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <img src="assets/lib/img/frame-full.jpg" alt="Browser Engine" />
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<h4><ol type="1"><li>JavaScript:</h4>
+<h4>
+  <ol type="1">
+    <li>JavaScript:</li>
+  </ol>
+</h4>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p>Typically JavaScript is used to handle work that will result in visual
 changes, whether it's jQuery's animate function, sorting a data set, or
@@ -1774,14 +1775,22 @@ adding DOM elements to the page. It doesn't have to be JavaScript that
 triggers a visual change, though: CSS Animations, Transitions, and the
 Web Animations API are also commonly used.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<h4><ol start="2" type="1"><li>Style:</h4>
+<h4>
+  <ol start="2" type="1">
+    <li>Style:</li>
+  </ol>
+</h4>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p>This is the process of figuring out which CSS rules apply to which
 elements based on matching selectors, for example, .headline or .nav
 &gt; .nav__item. From there, once rules are known, they are applied and
 the final styles for each element are calculated.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<h4><ol start="3" type="1"><li>Layout:</h4>
+<h4>
+  <ol start="3" type="1">
+    <li>Layout:</li>
+  </ol>
+</h4>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p>Once the browser knows which rules apply to an element it can begin to
 calculate how much space it takes up and where it is on screen. The
@@ -1790,7 +1799,11 @@ the width of the &lt;body&gt; element typically affects its children's
 widths and so on all the way up and down the tree, so the process can be
 quite involved for the browser.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<h4><ol start="4" type="1"><li>Paint:</h4>
+<h4>
+  <ol start="4" type="1">
+    <li>Paint:</li>
+  </ol>
+</h4>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p>Painting is the process of filling in pixels. It involves drawing out
 text, colors, images, borders, and shadows, essentially every visual
@@ -7976,171 +7989,101 @@ Characters</a>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h5>Syntax:</h5>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<p>
-A web address follows these syntax rules:
-</p>
-<pre>
-scheme://prefix.domain:port/path/filename
-</pre>
+<p>A web address follows these syntax rules:</p>
+<pre>scheme://prefix.domain:port/path/filename</pre>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h4>Example</h4>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <pre>https://www.geeksforgeeks.org/</pre>
 
 <ul>
-<li>
-<b>Scheme:</b> It specifies the protocol used for communication, such as
-<b>“https://”</b> for secure communication or <b>“http://”</b> for
-unsecured communication.
-</li>
-<li>
-<b>Prefix:</b> It is an optional subdomain or www indicating the
-location of the resource within the domain.
-</li>
-<li>
-<b>Domain:</b> Identifies the website’s primary address, like
-“example.com”, indicating its unique location on the Internet.
-</li>
-<li>
-<b>Port:</b> Optional and signifies a specific endpoint for
-communication. Common values are 80 for HTTP and 443 for HTTPS.
-</li>
-<li>
-<b>Path:</b> It specifies the location or directory on the server where
-the resource is located.
-</li>
-<li>
-<b>Filename:</b> It refers to the specific file or resource within the
-specified path.
-</li>
+  <li><b>Scheme:</b> It specifies the protocol used for communication, such as 
+    <b>“https://”</b> for secure communication or <b>“http://”</b> for unsecured 
+	communication.</li>
+  <li><b>Prefix:</b> It is an optional subdomain or www indicating the location of 
+    the resource within the domain.</li>
+  <li><b>Domain:</b> Identifies the website’s primary address, like “example.com”, 
+    indicating its unique location on the Internet.</li>
+  <li><b>Port:</b> Optional and signifies a specific endpoint for communication. 
+    Common values are 80 for HTTP and 443 for HTTPS.</li>
+  <li><b>Path:</b> It specifies the location or directory on the server where the 
+    resource is located.</li>
+  <li><b>Filename:</b> It refers to the specific file or resource within the specified 
+    path.</li>
 </ul>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h2 id="9-html-svg">
-<ol start="9" type="1">
-<li>HTML SVG Basics
+  <ol start="9" type="1">
+    <li>HTML SVG Basics</li>
+  </ol>
 </h2>
 <!-- geeks 4 geeks - https://www.geeksforgeeks.org/html-svg-basics/ -->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3>SVG stands for Scalable Vector Graphics.</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <ul>
-<li>
-<p>
-<a href="https://www.geeksforgeeks.org/html-svg-basics/">Geeks 4 Geeks
-SVG Tutorial</a>
-</p>
-</li>
-<li>
-<p>
-<a href="https://www.w3schools.com/graphics/svg_intro.asp">W3 SVG
-Tutorial</a>
-</p>
-</li>
-<li>
-<p>
-<a href="https://developer.mozilla.org/en-US/docs/Web/SVG/Guides/SVG_in_HTML">MDN’s
-SVG in HTML Tutorial</a>
-</p>
+  <li><p><a href="https://www.geeksforgeeks.org/html-svg-basics/">Geeks 4 Geeks SVG 
+    Tutorial</a></p></li>
+  <li><p><a href="https://www.w3schools.com/graphics/svg_intro.asp">W3 SVG Tutorial</a></p></li>
+  <li><p><a href="https://developer.mozilla.org/en-US/docs/Web/SVG/Guides/SVG_in_HTML">MDN’s 
+    SVG in HTML Tutorial</a></p></li>
 </ul>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<p>
-SVG stands for Scalable Vector Graphics. It defines vector-based
+<p>SVG stands for Scalable Vector Graphics. It defines vector-based
 graphics in XML format. SVG graphics do not lose any quality when zoomed
 or resized, and every element and attribute in SVG files can be
-animated.
-</p>
+animated.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3>Advantages of SVG:</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<p>
-The advantages of using SVG over other image formats (like JPEG and GIF)
-are:
-</p>
+<p>The advantages of using SVG over other image formats (like JPEG and GIF) are:</p>
 <ul>
-<li>
-SVG images scale without losing quality, making them perfect for
-responsive designs.
-</li>
-<li>
-SVG files are often smaller than bitmap images, reducing load times.
-</li>
-<li>
-SVG images can be edited easily with text editors, allowing for quick
-changes.
-</li>
-<li>
-SVG content is accessible to screen readers, enhancing web
-accessibility.
-</li>
-<li>
-SVG supports CSS and JavaScript animations, allowing for interactive and
-dynamic graphics.
-</li>
+  <li>SVG images scale without losing quality, making them perfect for responsive designs.</li>
+  <li>SVG files are often smaller than bitmap images, reducing load times.</li>
+  <li>SVG images can be edited easily with text editors, allowing for quick changes.</li>
+  <li>SVG content is accessible to screen readers, enhancing web accessibility.</li>
+  <li>SVG supports CSS and JavaScript animations, allowing for interactive and dynamic 
+    graphics.</li>
 </ul>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3>Differences between SVG and Canvas</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <div role="region" tabindex="0">
-<table>
-<caption>
-Differences between SVG and Canvas
-</caption>
-<thead>
-<tr>
-<th>
-SVG
-</th>
-<th>
-Canvas
-</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>
-SVG is a language for describing 2D graphics in XML
-</td>
-<td>
-Canvas draws 2D graphics, on the fly with JavaScript.
-</td>
-</tr>
-<tr>
-<td>
-If attributes of an SVG object are changed, the browser can
-automatically re-render the shape
-</td>
-<td>
-Canvas is rendered pixel by pixel. In Canvas, once the graphic is drawn,
-it is forgotten by the browser.
-</td>
-</tr>
-<tr>
-<td>
-SVG is resolution-independent
-</td>
-<td>
-CANVAS is resolution-dependent.
-</td>
-</tr>
-<tr>
-<td>
-SVG supports event handlers
-</td>
-<td>
-CANVAS doesn’t have support for event handlers.
-</td>
-</tr>
-</tbody>
-</table>
+  <table>
+    <caption>Differences between SVG and Canvas</caption>
+    <thead>
+      <tr>
+        <th>SVG</th>
+        <th>Canvas</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>SVG is a language for describing 2D graphics in XML</td>
+        <td>Canvas draws 2D graphics, on the fly with JavaScript.</td>
+      </tr>
+      <tr>
+        <td>If attributes of an SVG object are changed, the browser can automatically 
+		  re-render the shape</td>
+        <td>Canvas is rendered pixel by pixel. In Canvas, once the graphic is drawn,
+		  it is forgotten by the browser.</td>
+      </tr>
+      <tr>
+        <td>SVG is resolution-independent</td>
+        <td>CANVAS is resolution-dependent.</td>
+      </tr>
+      <tr>
+        <td>SVG supports event handlers</td>
+        <td>CANVAS doesn’t have support for event handlers.</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h4>Example 1: Drawing a Line</h4>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<p>
-In this example we displays an SVG line on a webpage. It includes an
-&lt;h2&gt; header and a blue line drawn diagonally within an SVG
-element.
-</p></li>
-</ol>
+<p>In this example we displays an SVG line on a webpage. It includes an &lt;h2&gt; header 
+and a blue line drawn diagonally within an SVG element.</p>
 <pre><code>&lt;!DOCTYPE html&gt;
 &lt;html&gt;
 
@@ -8162,7 +8105,6 @@ element.
 &lt;/html&gt;</code></pre>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h5>Output:</h5>
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ svg 01 - svg line drawing ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center">
@@ -8176,11 +8118,9 @@ element.
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h4>Example 2: Drawing a Circle</h4>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<p>
-In this example we uses the <mark>&lt;svg&gt;</mark> tag to draw a grey
+<p>In this example we uses the <mark>&lt;svg&gt;</mark> tag to draw a grey
 circle with a black border. The circle has a center at (80, 80) and a
-radius of 50.
-</p>
+radius of 50.</p>
 <pre><code>&lt;!DOCTYPE html&gt;
 &lt;html&gt;
 
@@ -8216,10 +8156,8 @@ radius of 50.
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h4>Example 3: Drawing a Rectangle</h4>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<p>
-In this example we ses the &lt;svg&gt; tag to draw a blue rectangle with
-a black border. The rectangle has a width of 400 and a height of 100.
-</p>
+<p>In this example we ses the &lt;svg&gt; tag to draw a blue rectangle with
+a black border. The rectangle has a width of 400 and a height of 100.</p>
 <pre><code>&lt;!DOCTYPE html&gt;
 &lt;html&gt;
 
@@ -8240,7 +8178,6 @@ a black border. The rectangle has a width of 400 and a height of 100.
 &lt;/html&gt;</code></pre>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h5>Output:</h5>
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ svg 03 - svg rectangle drawing ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center">
@@ -8254,11 +8191,8 @@ a black border. The rectangle has a width of 400 and a height of 100.
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h4>Example 4: Drawing a Rounded Rectangle</h4>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<p>
-In this example we uses the &lt;svg&gt; tag to draw an orange rectangle
-with rounded corners, a black border, and 50% opacity, positioned at
-coordinates (80, 20).
-</p>
+<p>In this example we uses the &lt;svg&gt; tag to draw an orange rectangle with rounded 
+corners, a black border, and 50% opacity, positioned at coordinates (80, 20).</p>
 <pre><code>&lt;!DOCTYPE html&gt;
 &lt;html&gt;
 
@@ -8284,7 +8218,6 @@ coordinates (80, 20).
 &lt;/html&gt;</code></pre>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h5>Output:</h5>
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~ svg 04 - svg rounded rectangle drawing ~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center">
@@ -8298,11 +8231,9 @@ coordinates (80, 20).
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h4>Example 5: Drawing a Star</h4>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<p>
-In this example we uses the &lt;svg&gt; tag to draw a grey polygon with
+<p>In this example we uses the &lt;svg&gt; tag to draw a grey polygon with
 an orange border. The polygon is defined by a series of points and has a
-5-pixel stroke width.
-</p>
+5-pixel stroke width.</p>
 <pre><code>&lt;!DOCTYPE html&gt;
 &lt;html&gt;
 
@@ -8322,7 +8253,6 @@ an orange border. The polygon is defined by a series of points and has a
 &lt;/html&gt;</code></pre>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h5>Output:</h5>
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ svg 05 - svg star drawing ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center">
@@ -8336,11 +8266,9 @@ an orange border. The polygon is defined by a series of points and has a
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h4>Example 6: Drawing a Logo</h4>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<p>
-In this example we create an ellipse filled with a linear gradient from
-white to green. It also includes text overlaid in white with the content
-“GeeksforGeeks” using the ARIAL font family.
-</p>
+<p>In this example we create an ellipse filled with a linear gradient from white to 
+green. It also includes text overlaid in white with the content “GeeksforGeeks” using 
+the ARIAL font family.</p>
 <pre><code>&lt;!DOCTYPE html&gt;
 &lt;html&gt;
 
@@ -8370,7 +8298,6 @@ white to green. It also includes text overlaid in white with the content
 &lt;/html&gt;</code></pre>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h5>Output:</h5>
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~ svg 06 - geeks-for-geeks logo using svg ~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center">
@@ -8384,12 +8311,9 @@ white to green. It also includes text overlaid in white with the content
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3>SVG &lt;a&gt; Element</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<p>
-The SVG <mark>&lt;a&gt;</mark> element creates a hyperlink within SVG
-graphics. It functions similarly to the HTML <mark>&lt;a&gt;</mark>
-element. It links to external resources or other parts of the SVG
-document.
-</p>
+<p>The SVG <mark>&lt;a&gt;</mark> element creates a hyperlink within SVG graphics. It 
+functions similarly to the HTML <mark>&lt;a&gt;</mark> element. It links to external 
+resources or other parts of the SVG document.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h5>Syntax:</h5>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -8403,94 +8327,78 @@ document.
 <h4>SVG &lt;a&gt; Attributes</h4>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <div role="region" tabindex="0">
-<table>
-<caption>
-SVG &lt;a&gt; Attributes
-</caption>
-<thead>
-<tr>
-<th>
+  <table>
+    <caption>SVG &lt;a&gt; Attributes</caption>
+    <thead>
+      <tr>
+        <th>
 Name
 </th>
-<th>
+        <th>
 Description
 </th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td>
+        <td>
 href
 </td>
-<td>
+        <td>
 It stands for hypertext reference and take the link to the other
 documents.
 </td>
 </tr>
 <tr>
-<td>
+        <td>
 download
 </td>
-<td>
+        <td>
 It instructs the browser to download a file.
 </td>
 </tr>
 <tr>
-<td>
+        <td>
 hreflang
 </td>
-<td>
+        <td>
 It is the human language of the ULR or in simple words the URL fragment
 that hyperlink point is the hreflang
 </td>
 </tr>
 <tr>
-<td>
+        <td>
 rel
 </td>
-<td>
+        <td>
 It tells the relationship between the target and source documents.
 </td>
 </tr>
 <tr>
-<td>
+        <td>
 target
 </td>
-<td>
-It tells about where the webpage is to be displayed.
-</td>
-</tr>
-<tr>
-<td>
-type
-</td>
-<td>
-I tells about the MIME type of the doucment linked with URL.
-</td>
-</tr>
-<tr>
-<td>
-ping
-</td>
-<td>
-It is the space-separated list of URLs.
-</td>
-</tr>
-</tbody>
-</table>
+        <td>It tells about where the webpage is to be displayed.</td>
+      </tr>
+      <tr>
+        <td>type</td>
+        <td>I tells about the MIME type of the doucment linked with URL.</td>
+      </tr>
+      <tr>
+        <td>ping</td>
+        <td>It is the space-separated list of URLs.</td>
+      </tr>
+    </tbody>
+  </table>
 </div>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<h4>
-Examples of SVG &lt;a&gt; Element
-</h4>
+<h4>Examples of SVG &lt;a&gt; Element</h4>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h5>Example 1:</h5>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<p>
-In this example we creates a green circle inside an SVG element. It’s
+<p>In this example we creates a green circle inside an SVG element. It’s
 wrapped with an anchor (&lt;a&gt;) tag, making it a clickable link that
-redirects to “geeksforgeeks.org” upon click.
-</p>
+redirects to “geeksforgeeks.org” upon click.</p>
 <pre><code>&lt;!DOCTYPE html&gt;
 &lt;html lang=&quot;en&quot;&gt;
 
@@ -8517,7 +8425,6 @@ redirects to “geeksforgeeks.org” upon click.
 &lt;/html&gt;</code></pre>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h5>Output</h5>
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ svg 07 - svg a tag example ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center">
@@ -8531,12 +8438,10 @@ redirects to “geeksforgeeks.org” upon click.
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h5>Example 2:</h5>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<p>
-In this example we defines a green rectangle within an SVG element. It’s
+<p>In this example we defines a green rectangle within an SVG element. It’s
 encapsulated by an anchor (&lt;a&gt;) tag, creating a clickable area
 that redirects to another tab at “geeksforgeeks.org” using target blank
-upon click.
-</p>
+upon click.</p>
 <pre><code>&lt;!DOCTYPE html&gt;
 &lt;html lang=&quot;en&quot;&gt;
 
@@ -8564,7 +8469,6 @@ upon click.
 &lt;/html&gt;</code></pre>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h5>Output:</h5>
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ svg 08 - svg a tag example ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center">
@@ -8578,15 +8482,11 @@ upon click.
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3>SVG &lt;animate&gt; Element</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<p>
-SVG stands for Scalable Vector Graphic. It can be used to make graphics
-and animations like in HTML canvas.
-</p>
-<p>
-The &lt;animate&gt; SVG element is used to animate an attribute or
+<p>SVG stands for Scalable Vector Graphic. It can be used to make graphics
+and animations like in HTML canvas.</p>
+<p>The &lt;animate&gt; SVG element is used to animate an attribute or
 property of an element over time. It’s normally inserted inside the
-element which we want to animate.
-</p>
+element which we want to animate.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h5>Syntax:</h5>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -8595,18 +8495,12 @@ element which we want to animate.
 <h5>Attributes:</h5>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <ul>
-<li>
-<b>Animation Attributes</b>: Attributes used to give animation effects,
-exp timing attributes, event attributes, and value attributes, etc.
-</li>
-<li>
-<b>Global Attributes</b>: some global attributes used like core
-attributes and styling attributes, etc.
-</li>
+  <li><b>Animation Attributes</b>: Attributes used to give animation effects, exp timing 
+    attributes, event attributes, and value attributes, etc.</li>
+  <li><b>Global Attributes</b>: some global attributes used like core attributes and 
+    styling attributes, etc.</li>
 </ul>
-<p>
-Below given are a few examples of the above element:
-</p>
+<p>Below given are a few examples of the above element:</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h5>Example 1:</h5>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -8625,7 +8519,6 @@ Below given are a few examples of the above element:
 &lt;/html&gt;</code></pre>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h5>Output:</h5>
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~ svg 09 - svg animate - rectangle to circle ~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center">
@@ -8660,7 +8553,6 @@ Below given are a few examples of the above element:
 &lt;/html&gt;</code></pre>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h5>Output:</h5>
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~ svg 10 - svg animate - dark to light green ~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center">
@@ -8690,26 +8582,15 @@ along a motion path.
 <h5>Attributes:</h5>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <ul>
-<li>
-<b>keyPoints</b>: This attribute indicates in the range [0, 1], how far
-is the object along the path for each keyTimes associated values.
-</li>
-<li>
-<b>path</b>: This attribute defines the path of the motion.
-</li>
-<li>
-<b>rotate</b>: This attribute defines a rotation applied to the element
-animated along a path, usually to make it point in the direction of the
-animation.
-</li>
-<li>
-<b>Animation Attributes</b>: Attributes used to give animation effects,
-exp timing attributes, event attributes, and value attributes, etc.
-</li>
-<li>
-Global Attributes</b>: some global attributes used like core attributes
-and styling attributes, etc.
-</li>
+  <li><b>keyPoints</b>: This attribute indicates in the range [0, 1], how far is the 
+    object along the path for each keyTimes associated values.</li>
+  <li><b>path</b>: This attribute defines the path of the motion.</li>
+  <li><b>rotate</b>: This attribute defines a rotation applied to the element animated 
+    along a path, usually to make it point in the direction of the animation.</li>
+  <li><b>Animation Attributes</b>: Attributes used to give animation effects, exp 
+    timing attributes, event attributes, and value attributes, etc.</li>
+  <li>Global Attributes</b>: some global attributes used like core attributes and 
+    styling attributes, etc.</li>
 </ul>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h5>Example:</h5>
@@ -8732,7 +8613,6 @@ and styling attributes, etc.
 &lt;/html&gt;</code></pre>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h5>Output:</h5>
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ svg 11 - svg infinity ball ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center">
@@ -8746,15 +8626,11 @@ and styling attributes, etc.
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3>SVG &lt;animateTransform&gt; Element</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<p>
-SVG stands for Scalable Vector Graphics. It defines vector-based
-graphics and animation like in HTML Canvas.
-</p>
-<p>
-The animateTransform element animates a transformation attribute on its
+<p>SVG stands for Scalable Vector Graphics. It defines vector-based
+graphics and animation like in HTML Canvas.</p>
+<p>The animateTransform element animates a transformation attribute on its
 target element, thereby allowing animations to control translation,
-scaling, rotation, and/or skewing.
-</p>
+scaling, rotation, and/or skewing.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h5>Syntax:</h5>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -8763,31 +8639,13 @@ scaling, rotation, and/or skewing.
 <h5>Attribute:</h5>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <ul>
-<li>
-<b>from</b>: Initial value of the attribute that will be modified during
-the animation.
-</li>
-<li>
-<b>to</b>: Final value of the attribute that will be modified during the
-animation.
-</li>
-<li>
-<b>type</b>: It defines the type of transformation, whose values change
-over time.
-</li>
-<li>
-<b>dur</b>: Duration of the animation.
-</li>
-<li>
-<b>repeatCount</b>: The number of times an animation will take place.
-</li>
-<li>
-<b>repeatDur</b>: The total duration for repeating an animation.
-</li>
-<li>
-<b>attributeName</b>: The name of the CSS property that is going to be
-animated.
-</li>
+  <li><b>from</b>: Initial value of the attribute that will be modified during the animation.</li>
+  <li><b>to</b>: Final value of the attribute that will be modified during the animation.</li>
+  <li><b>type</b>: It defines the type of transformation, whose values change over time.</li>
+  <li><b>dur</b>: Duration of the animation.</li>
+  <li><b>repeatCount</b>: The number of times an animation will take place.</li>
+  <li><b>repeatDur</b>: The total duration for repeating an animation.</li>
+  <li><b>attributeName</b>: The name of the CSS property that is going to be animated.</li>
 </ul>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h5>Example:</h5>
@@ -8809,7 +8667,6 @@ animated.
 &lt;/html&gt;</code></pre>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h5>Output:</h5>
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~ svg 12 - svg rotating rectangle ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center">
@@ -8823,11 +8680,9 @@ animated.
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3>SVG Circle</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<p>
-SVG Circle facilitates the &lt;circle&gt; element which can be utilized
+<p>SVG Circle facilitates the &lt;circle&gt; element which can be utilized
 to create a circle. Basically, the &lt;circle&gt; element wrapped inside
-the &lt;svg&gt; element.
-</p>
+the &lt;svg&gt; element.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h5>Syntax</h5>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -8842,43 +8697,22 @@ the &lt;svg&gt; element.
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h4>Attributes</h4
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<p>
-The below are the attributes that can be used with the &lt;svg&gt;
-element
-</p>
+<p>The below are the attributes that can be used with the &lt;svg&gt; element;</p>
 <ul>
-<li>
-cx</b>: It defines the x-coordinate of the center of the circle.
-</li>
-<li>
-<b>cy</b>: It defines the y-coordinate of the center of the circle.
-</li>
-<li>
-<b>r</b>: It defines the radius of the circle.
-</li>
-<li>
-<b>fill</b>: It specifies the color used to fill the circle (in this
-case, yellow).
-</li>
-<li>
-<b>stroke-width</b>: It defines the width of the stroke (outline) of the
-circle.
-</li>
-<li>
-<b>stroke</b>: It specifies the color of the stroke.
-</li>
-<li>
-<b>Default Behavior</b>: If no fill parameter is used, the circle is
-filled with a default color (generally black).
-</li>
+  <li>cx</b>: It defines the x-coordinate of the center of the circle.</li>
+  <li><b>cy</b>: It defines the y-coordinate of the center of the circle.</li>
+  <li><b>r</b>: It defines the radius of the circle.</li>
+  <li><b>fill</b>: It specifies the color used to fill the circle (in this case, yellow).</li>
+  <li><b>stroke-width</b>: It defines the width of the stroke (outline) of the circle.</li>
+  <li><b>stroke</b>: It specifies the color of the stroke.</li>
+  <li><b>Default Behavior</b>: If no fill parameter is used, the circle is filled with a 
+    default color (generally black).</li>
 </ul>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h5>Example 1:</h5>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<p>
-In this example, we will implement code to see the SVG circle with the
-the help of above attributes.
-</p>
+<p>In this example, we will implement code to see the SVG circle with the
+the help of above attributes.</p>
 <pre><code>&lt;!DOCTYPE html&gt;
 &lt;html lang=&quot;en&quot;&gt;
 
@@ -8922,7 +8756,6 @@ the help of above attributes.
 &lt;/html&gt;</code></pre>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h5>Output:</h5>
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~ svg 13 - example svg circle from geeks-for-geeks ~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center">
@@ -8936,10 +8769,8 @@ the help of above attributes.
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h5>Example 2:</h5>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<p>
-In this example, we will show an SVG circle in HTML with the help of
-JavaScript.
-</p>
+<p>In this example, we will show an SVG circle in HTML with the help of
+JavaScript.</p>
 <pre><code>&lt;!DOCTYPE html&gt;
 &lt;html lang=&quot;en&quot;&gt;
 
@@ -8981,7 +8812,6 @@ JavaScript.
 &lt;/html&gt;</code></pre>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h5>Output:</h5>
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~ svg 14 -  black circle w/blue outer circle ~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center">
@@ -8995,13 +8825,10 @@ JavaScript.
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3>SVG &lt;clipPath&gt; Element</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<p>
-The &lt;clipPath&gt; SVG element is used to define a clipping path that
-is to be used by the clip-path property. It works the same as clip-path
-in CSS. The clipPath element is used to put some restriction on a region
-such that anything drawn outside that region will neither be visible nor
-be drawn.
-</p>
+<p>The &lt;clipPath&gt; SVG element is used to define a clipping path that is to be used 
+by the clip-path property. It works the same as clip-path in CSS. The clipPath element is 
+used to put some restriction on a region such that anything drawn outside that region will 
+neither be visible nor be drawn.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h5>Syntax</h5>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -9009,11 +8836,9 @@ be drawn.
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h5>Attributes</h5>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<p>
-<b>clipPathUnits</b>: This attribute defines the coordinate system for
+<p><b>clipPathUnits</b>: This attribute defines the coordinate system for
 the &lt;clipPath&gt; element’s content. Below given are a few examples
-of the function given above.
-</p>
+of the function given above.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h5>Example 1:</h5>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -9074,7 +8899,6 @@ of the function given above.
 &lt;/html&gt;</code></pre>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h5>Output:</h5>
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~ svg 15 -  svg heart change blue to green ~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center">
@@ -9151,7 +8975,6 @@ of the function given above.
 &lt;/html&gt;</code></pre>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h5>Output</h5>
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~ svg 16 -  svg transform star black to red ~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center">
@@ -9165,11 +8988,10 @@ of the function given above.
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3>SVG defs Element</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<p>The <mark>&lt;defs&gt;</mark> in SVG is used whenever we want a 
-particular element to render only when required or when it is called.
-objects that are created inside <mark>&lt;defs&gt;</mark> element are
-not rendered directly they are needed to be called by
-<mark>&lt;use&gt;</mark> element to render them on the browser.</p>
+<p>The <mark>&lt;defs&gt;</mark> in SVG is used whenever we want a particular element to 
+render only when required or when it is called. objects that are created inside 
+<mark>&lt;defs&gt;</mark> element are not rendered directly they are needed to be called 
+by <mark>&lt;use&gt;</mark> element to render them on the browser.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h5>Syntax:</h5>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -9179,9 +9001,7 @@ not rendered directly they are needed to be called by
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h5>Example 1:</h5>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<p>
-When &lt;defs&gt; is not called thus it is not executed.
-</p>
+<p>When &lt;defs&gt; is not called thus it is not executed.</p>
 <pre><code>&lt;!DOCTYPE html&gt;
 &lt;html lang=&quot;en&quot;&gt;
 &lt;head&gt;
@@ -9212,7 +9032,6 @@ When &lt;defs&gt; is not called thus it is not executed.
 &lt;/html&gt;</code></pre>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h5>Output:</h5>
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~ 17. svg no output only svg of zie 100*100 is visible ~~~~~~~~~~~~~~~~~~~-->
 <p align="center">
