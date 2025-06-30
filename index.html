@@ -1599,170 +1599,92 @@ class="sourceCode html"><code class="sourceCode html"><span id="cb37-1"><a href=
   </li>
   <li><b><mark>No 404s:</mark></b>
     <ul>
-      <li>
-HTTP requests are expensive so making an HTTP request and getting a
-useless response (i.e. 404 Not Found) is totally unnecessary and will
-slow down the user experience without any benefit.
-</li>
-</ul>
-</li>
-<li>
-<b><mark>Reduce Cookie Size:</mark></b>
-<ul>
-<li>
-HTTP cookies are used for a variety of reasons such as authentication
-and personalization. Information about cookies is exchanged in the HTTP
-headers between web servers and browsers. It’s important to keep the
-size of cookies as low as possible to minimize the impact on the user’s
-response time.
-</li>
-</ul>
-</li>
-</ul>
-<ul>
-<li>
-<b><mark>Reduce DNS Lookups</mark></b>
-<ul>
-<li>
-This can be achieved through various strategies, including;
-<ul>
-<li>
-using a fast DNS provider,
-</li>
-<li>
-reducing the number of hostnames, and
-<li>
-<li>
-leveraging DNS caching and prefetching.
-</li>
-</ul>
-</li>
-<pre><code>&lt;/ul&gt;</code></pre>
-</li>
-<li>
-<b><mark>Minify JavaScript and CSS</mark></b>
-</li>
-<li>
-<b><mark>Avoid Redirects</mark></b>
-</li>
-<li>
-<b><mark>Remove Duplicate Scripts</mark></b>
-</li>
-<li>
-<b><mark>Configure Etags</mark></b>
-</li>
-<li>
-<b><mark>Make Ajax Cacheable</mark></b>
-</li>
-<li>
-<b><mark>Post-load Components</mark></b>
-</li>
-<li>
-<b><mark>Preload Components</mark></b>
-</li>
-<li>
-<b><mark>Reduce the Number of DOM Elements</mark></b>
-</li>
-<li>
-<b><mark>Minimize the Number of iframes</mark></b>
-</li>
-<li>
-<b><mark>Minimize DOM Access</mark></b>
-</li>
-<li>
-<b><mark>Optimize CSS Sprites</mark></b>
-</li>
-<li>
-<b><mark>Don’t Scale Images in HTML</mark></b>
-</li>
-<li>
-<b><mark>Make favicon.ico Small and Cacheable</mark></b>
-</li>
-<li>
-<b><mark>Avoid Empty Image src</mark></b>
-</li>
+      <li>HTTP requests are expensive so making an HTTP request and getting a useless 
+	    response (i.e. 404 Not Found) is totally unnecessary and will slow down the user 
+		experience without any benefit.</li>
+    </ul>
+  </li>
+  <li><b><mark>Reduce Cookie Size:</mark></b>
+    <ul>
+      <li>HTTP cookies are used for a variety of reasons such as authentication and 
+	    personalization. Information about cookies is exchanged in the HTTP headers 
+		between web servers and browsers. It’s important to keep the size of cookies as 
+		low as possible to minimize the impact on the user’s response time.</li>
+    </ul>
+  </li>
+  <li><b><mark>Reduce DNS Lookups</mark></b>
+    <ul>
+      <li>This can be achieved through various strategies, including;
+      <li>using a fast DNS provider,</li>
+      <li>reducing the number of hostnames, and<li>
+      <li>leveraging DNS caching and prefetching.</li>
+    </ul>
+  </li>
+  <li><pre><code>&lt;/ul&gt;</code></pre></li>
+  <li><b><mark>Minify JavaScript and CSS</mark></b></li>
+  <li><b><mark>Avoid Redirects</mark></b></li>
+  <li><b><mark>Remove Duplicate Scripts</mark></b></li>
+  <li><b><mark>Configure Etags</mark></b></li>
+  <li><b><mark>Make Ajax Cacheable</mark></b></li>
+  <li><b><mark>Post-load Components</mark></b></li>
+  <li><b><mark>Preload Components</mark></b></li>
+  <li><b><mark>Reduce the Number of DOM Elements</mark></b></li>
+  <li><b><mark>Minimize the Number of iframes</mark></b></li>
+  <li><b><mark>Minimize DOM Access</mark></b></li>
+  <li><b><mark>Optimize CSS Sprites</mark></b></li>
+  <li><b><mark>Don’t Scale Images in HTML</mark></b></li>
+  <li><b><mark>Make favicon.ico Small and Cacheable</mark></b></li>
+  <li><b><mark>Avoid Empty Image src</mark></b></li>
 </ul>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h2>Q. Comparison of browsers engines like Chrome, Firefox, Internet explorer, Safari?</h2>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <ul>
-<li>
-Chrome:
-<ul>
-<li>
-Layout rendering engine <b>Webkit</b>.
-</li>
-<li>
-JavaScript engine <b>V8</b>
-</li>
-</ul>
-</li>
-<li>
-Firefox:
-<ul>
-<li>
-Layout rendering engine <b>Gecko</b>.
-</li>
-<li>
-JavaScript engine <b>Spider monkey</b>
-</li>
-</ul>
-</li>
-<li>
-Internet explorer:
-<ul>
-<li>
-Layout rendering engine <b>Trident</b>.
-</li>
-<li>
-JavaScript engine <b>Chakra</b>
-</li>
-</ul>
-</li>
-<li>
-Safari:
-<ul>
-<li>
-Layout rendering engine <b>Webkit</b>.
-</li>
-<li>
-JavaScript engine JavascriptCore i.e <b>Nitro</b>
-</li>
-</ul>
-</li>
+  <li>Chrome:
+    <ul>
+      <li>Layout rendering engine <b>Webkit</b>.</li>
+      <li>JavaScript engine <b>V8</b></li>
+    </ul>
+  </li>
+  <li>Firefox:
+    <ul>
+      <li>Layout rendering engine <b>Gecko</b>.</li>
+      <li>JavaScript engine <b>Spider monkey</b></li>
+    </ul>
+  </li>
+  <li>Internet explorer:
+    <ul>
+      <li>Layout rendering engine <b>Trident</b>.</li>
+      <li>JavaScript engine <b>Chakra</b></li>
+    </ul>
+  </li>
+  <li>Safari:
+    <ul>
+	  <li>Layout rendering engine <b>Webkit</b>.</li>
+      <li>JavaScript engine JavascriptCore i.e <b>Nitro</b></li>
+    </ul>
+  </li>
 </ul>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h2>Q. What does the lang attribute in html do?</h2>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <ul>
-<li>
-Helps in styling pages by using them in css <mark>:lang()</mark> pseudo
-class Spelling and grammar checkers Languade detection by search
-engines.
-</li>
+  <li>Helps in styling pages by using them in css <mark>:lang()</mark> pseudo class 
+    Spelling and grammar checkers Languade detection by search engines.</li>
 </ul>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h2>Q. What is desktop first and mobile first design approach?</h2>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <ul>
-<li>
-Desktop first :<br> General selectors and styles designed to make the
-site look good on DESKTOP screens defined globally. But they affect all
-devices, and must be overridden by max-width media queries targeting
-minimum screen size.
-</li>
-<li>
-Mobile First :<br> General selectors and styles designed to make the
-site look good on small MOBILE screens go here. But they affect all
-devices, and must be overridden by min-width media queries targeting
-maximum screen size.
-</li>
+  <li>Desktop first :<br> General selectors and styles designed to make the site look 
+    good on DESKTOP screens defined globally. But they affect all devices, and must be 
+	overridden by max-width media queries targeting minimum screen size.</li>
+  <li>Mobile First :<br> General selectors and styles designed to make the site look good 
+    on small MOBILE screens go here. But they affect all devices, and must be overridden 
+	by min-width media queries targeting maximum screen size.</li>
 </ul>
-<p>
-In desktop first approach the media queries will be written with respect
-to max-width whereas in mobile first approach media queries will be
-written with respect to min-width.
-</p>
+<p>In desktop first approach the media queries will be written with respect to max-width 
+whereas in mobile first approach media queries will be written with respect to min-width.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h2>Q. What are <mark>data-</mark> attributes good for?</h2>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -1780,11 +1702,10 @@ suitable HTML5 element or attribute exists.</p>
   </ol>
 </h4>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<p>Typically JavaScript is used to handle work that will result in visual
-changes, whether it's jQuery's animate function, sorting a data set, or
-adding DOM elements to the page. It doesn't have to be JavaScript that
-triggers a visual change, though: CSS Animations, Transitions, and the
-Web Animations API are also commonly used.</p>
+<p>Typically JavaScript is used to handle work that will result in visual changes, 
+whether it's jQuery's animate function, sorting a data set, or adding DOM elements to the 
+page. It doesn't have to be JavaScript that triggers a visual change, though: CSS 
+Animations, Transitions, and the Web Animations API are also commonly used.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h4>
   <ol start="2" type="1">
@@ -1792,10 +1713,9 @@ Web Animations API are also commonly used.</p>
   </ol>
 </h4>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<p>This is the process of figuring out which CSS rules apply to which
-elements based on matching selectors, for example, .headline or .nav
-&gt; .nav__item. From there, once rules are known, they are applied and
-the final styles for each element are calculated.</p>
+<p>This is the process of figuring out which CSS rules apply to which elements based on 
+matching selectors, for example, .headline or .nav &gt; .nav__item. From there, once rules 
+are known, they are applied and the final styles for each element are calculated.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h4>
   <ol start="3" type="1">
@@ -1803,12 +1723,11 @@ the final styles for each element are calculated.</p>
   </ol>
 </h4>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<p>Once the browser knows which rules apply to an element it can begin to
-calculate how much space it takes up and where it is on screen. The
-web's layout model means that one element can affect others, for example
-the width of the &lt;body&gt; element typically affects its children's
-widths and so on all the way up and down the tree, so the process can be
-quite involved for the browser.</p>
+<p>Once the browser knows which rules apply to an element it can begin to calculate how 
+much space it takes up and where it is on screen. The web's layout model means that one 
+element can affect others, for example the width of the &lt;body&gt; element typically 
+affects its children's widths and so on all the way up and down the tree, so the process 
+can be quite involved for the browser.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h4>
   <ol start="4" type="1">
@@ -4334,27 +4253,25 @@ accessible to people with disabilities. It especially helps with dynamic
 content and advanced user interface controls developed with HTML,
 JavaScript, and related technologies.</p>
 
-<p>Screen readers work with regular HTML, but adding ARIA can provide
-screen reader users with greater context and interactivity with the
-content on the page. ARIA has no effect on how elements are displayed or
-behave in browsers. It does not add new functionality, and is meant to
-act only as an extra descriptive layer for screen readers.</p>
+<p>Screen readers work with regular HTML, but adding ARIA can provide screen reader 
+users with greater context and interactivity with the content on the page. ARIA has no 
+effect on how elements are displayed or behave in browsers. It does not add new 
+functionality, and is meant to act only as an extra descriptive layer for screen readers.</p>
 
-<p>Without WAI-ARIA certain functionality used in Web sites is not
-available to some users with disabilities, especially people who rely on
-screen readers and people who cannot use a mouse. WAI-ARIA addresses
-these accessibility challenges, for example, by defining ways for
-functionality to be provided to assistive technology. With WAI-ARIA,
-developers can make advanced Web applications accessible and usable to
-people with disabilities.</p>
+<p>Without WAI-ARIA certain functionality used in Web sites is not available to some 
+users with disabilities, especially people who rely on screen readers and people who 
+cannot use a mouse. WAI-ARIA addresses these accessibility challenges, for example, by 
+defining ways for functionality to be provided to assistive technology. With WAI-ARIA,
+developers can make advanced Web applications accessible and usable to people with 
+disabilities.</p>
 
 <p>ARIA attributes are divided into two categories: roles, and states &amp; properties.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3>ARIA Roles:</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<p>An ARIA role is added via a <mark><b>role=“&lt;ROLE TYPE&gt;”</b></mark>
-attribute, and does not ever change for an element once it is set. There
-are four categories of ARIA roles:</p>
+<p>An ARIA role is added via a <mark><b>role=“&lt;ROLE TYPE&gt;”</b></mark> attribute, 
+and does not ever change for an element once it is set. There are four categories of ARIA 
+roles:</p>
 
 <ul>
   <li>landmark</li>
@@ -4365,9 +4282,9 @@ are four categories of ARIA roles:</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3>Landmark ARIA Roles:</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<p>Much like semantic HTML elements, landmark ARIA Roles are used to give
-users of assistive technology a better way to navigate and identify the
-different parts of a web page.</p>
+<p>Much like semantic HTML elements, landmark ARIA Roles are used to give users of 
+assistive technology a better way to navigate and identify the different parts of a web 
+page.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h5>Example:</h5>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -4431,196 +4348,97 @@ including in your HTML.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3>Widget ARIA Roles:</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<p>Widget Roles are used to describe what are often javascript-based
-interfaces, or the more complicated parts of your web page's interface.
-The roles that are starred are the ones we think are the most common
-elements widget aria roles, and the ones which are useful useful to
-think about including in your HTML.</p>
+<p>Widget Roles are used to describe what are often javascript-based interfaces, or the 
+more complicated parts of your web page's interface. The roles that are starred are the 
+ones we think are the most common elements widget aria roles, and the ones which are 
+useful useful to think about including in your HTML.</p>
 
 <ul>
-<li>
-<b>alert</b>: A message with important, and usually time-sensitive,
-information.
-</li>
-<li>
-<b>alertdialog</b>: A type of dialog that contains an alert message,
-where initial focus goes to an element within the dialog.
-</li>
-<li>
-<b>button</b>: An input that allows for user-triggered actions when
-clicked or pressed.
-</li>
-<li>
-<b>checkbox</b>: A checkable input that has three possible values: true,
-false, or mixed.
-</li>
-<li>
-<b>dialog</b>: A dialog is an application window that is designed to
-interrupt the current processing of an application in order to prompt
-the user to enter information or require a response.
-</li>
-<li>
-<b>gridcell</b>:
-</li>
-<li>
-<b>link</b>:
-</li>
-<li>
-<b>log</b>:
-</li>
-<li>
-<b>marquee</b>:
-</li>
-<li>
-<b>menuitem</b>:
-</li>
-<li>
-<b>menuitemcheckbox</b>:
-</li>
-<li>
-<b>menuitemradio</b>:
-</li>
-<li>
-<b>option</b>:
-</li>
-<li>
-<b>progressbar</b>:
-</li>
-<li>
-<b>radio</b>: A checkable input in a group of radio roles, only one of
-which can be checked at a time.
-</li>
-<li>
-<b>scrollbar</b>:
-</li>
-<li>
-<b>slider</b>:
-</li>
-<li>
-<b>spinbutton</b>:
-</li>
-<li>
-<b>status</b>:
-</li>
-<li>
-<b>tab</b>: A grouping label providing a mechanism for selecting the tab
-content that is to be rendered to the user.
-</li>
-<li>
-<b>tabpanel</b>: A container for the resources associated with a tab,
-where each tab is contained in a tablist.
-</li>
-<li>
-<b>textbox</b>: Input that allows free-form text as its value.
-</li>
-<li>
-<b>timer</b>:
-</li>
-<li>
-<b>tooltip</b>:
-</li>
-<li>
-<b>treeitem</b>:
-</li>
+  <li><b>alert</b>: A message with important, and usually time-sensitive, information.</li>
+  <li><b>alertdialog</b>: A type of dialog that contains an alert message, where initial 
+    focus goes to an element within the dialog.</li>
+  <li><b>button</b>: An input that allows for user-triggered actions when clicked or 
+    pressed.</li>
+  <li><b>checkbox</b>: A checkable input that has three possible values: true, false, or 
+    mixed.</li>
+  <li><b>dialog</b>: A dialog is an application window that is designed to interrupt the 
+    current processing of an application in order to prompt the user to enter information 
+	or require a response.</li>
+  <li><b>gridcell</b>:</li>
+  <li><b>link</b>:</li>
+  <li><b>log</b>:</li>
+  <li><b>marquee</b>:</li>
+  <li><b>menuitem</b>:</li>
+  <li><b>menuitemcheckbox</b>:</li>
+  <li><b>menuitemradio</b>:</li>
+  <li><b>option</b>:</li>
+  <li><b>progressbar</b>:</li>
+  <li><b>radio</b>: A checkable input in a group of radio roles, only one of which can be 
+    checked at a time.</li>
+  <li><b>scrollbar</b>:</li>
+  <li><b>slider</b>:</li>
+  <li><b>spinbutton</b>:</li>
+  <li><b>status</b>:</li>
+  <li><b>tab</b>: A grouping label providing a mechanism for selecting the tab content 
+    that is to be rendered to the user.</li>
+  <li><b>tabpanel</b>: A container for the resources associated with a tab, where each 
+    tab is contained in a tablist.</li>
+  <li><b>textbox</b>: Input that allows free-form text as its value.</li>
+  <li><b>timer</b>:</li>
+  <li><b>tooltip</b>:</li>
+  <li><b>treeitem</b>:</li>
 </ul>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<h3>
-Abstract ARIA Roles:
-</h3>
+<h3>Abstract ARIA Roles:</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<p>
-Abstract aria roles are the basis of how the other ARIA roles are
-defined. These are not to be used in HTML.
-</p>
+<p>Abstract aria roles are the basis of how the other ARIA roles are defined. These are 
+not to be used in HTML.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3>ARIA States &amp; Properties:</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<p>
-ARIA states and properties are often used to support ARIA roles that
+<p>ARIA states and properties are often used to support ARIA roles that
 exist on a page. ARIA Properties often describe relationships with other
-elements, and for the most part, do not change once they're set.
-</p>
-<p>
-ARIA States are more dynamic and are typically updated with JavaScript
-as a user interacts with a page. Screen readers are notified when these
-states change, and can announce these changes to users after an
-interaction takes place.
-</p>
-<p>
-While there are 35 aria properties and states the W3C defines and which
-you can read more about on the W3C site, here are the ones we believe to
-most commonly used and practical for most web pages/applications.
-</p>
+elements, and for the most part, do not change once they're set.</p>
+
+<p>ARIA States are more dynamic and are typically updated with JavaScript as a user 
+interacts with a page. Screen readers are notified when these states change, and can 
+announce these changes to users after an interaction takes place.</p>
+<p>While there are 35 aria properties and states the W3C defines and which you can read 
+more about on the W3C site, here are the ones we believe to most commonly used and 
+practical for most web pages/applications.</p>
+
 <ul>
-<li>
-<b>aria-activedescendant</b>: Identifies the currently active descendant
-of a composite widget. Use with autofill search suggestions.
-</li>
-<li>
-<b>aria-autocomplete</b>: Indicates whether user input completion
-suggestions are provided. Use with autofill search suggestions.
-</li>
-<li>
-<b>aria-checked (state)</b>: Indicates the current “checked” state of
-checkboxes, radio buttons, and other widgets. You can set this to true,
-false, or mixed state.
-</li>
-<li>
-<b>aria-controls</b>: Identifies the element (or elements) whose
-contents or presence are controlled by the current element.
-</li>
-<li>
-<b>aria-describedby</b>: Identifies the element (or elements) that
-describes the object.
-</li>
-<li>
-<b>aria-disabled (state)</b>: Indicates that the element is perceivable
-but disabled, so it is not editable or otherwise operable.
-</li>
-<li>
-<b>aria-expanded (state)</b>: Indicates whether the element, or another
-grouping element it controls, is currently expanded or collapsed.
-</li>
-<li>
-<b>aria-hidden (state)</b>: Indicates that the element and all of its
-descendants are not visible or perceivable to any user as implemented by
-the author.
-</li>
-<li>
-<b>aria-invalid (state)</b>: Indicates the entered value does not
-conform to the format expected by the application.
-</li>
-<li>
-<b>aria-label</b>: Defines a string value that labels the current
-element.
-</li>
-<li>
-<b>aria-labelledby</b>: Identifies the element (or elements) that labels
-the current element.
-</li>
-<li>
-<b>aria-live</b>: Indicates that an element is dynamic, changing, and
-will be updated, and describes the types of updates the user can expect
-from the live region.
-</li>
-<li>
-<b>aria-owns</b>: Identifies an element (or elements) in order to define
-a visual, functional, or contextual parent/child relationship between
-DOM elements where the DOM hierarchy cannot be used to represent the
-relationship.
-</li>
-<li>
-<b>aria-pressed (state)</b>: Indicates the current “pressed” state of
-toggle buttons.
-</li>
-<li>
-<b>aria-required</b>: Indicates that user input is required on the
-element before a form may be submitted.
-</li>
-<li>
-<b>aria-selected (state)</b>: Indicates the current “selected” state of
-various widgets.
-</li>
+  <li><b>aria-activedescendant</b>: Identifies the currently active descendant of a 
+    composite widget. Use with autofill search suggestions.</li>
+  <li><b>aria-autocomplete</b>: Indicates whether user input completion suggestions are 
+    provided. Use with autofill search suggestions.</li>
+  <li><b>aria-checked (state)</b>: Indicates the current “checked” state of checkboxes, 
+    radio buttons, and other widgets. You can set this to true, false, or mixed state.</li>
+  <li><b>aria-controls</b>: Identifies the element (or elements) whose contents or 
+    presence are controlled by the current element.</li>
+  <li><b>aria-describedby</b>: Identifies the element (or elements) that describes the 
+    object.</li>
+  <li><b>aria-disabled (state)</b>: Indicates that the element is perceivable but 
+    disabled, so it is not editable or otherwise operable.</li>
+  <li><b>aria-expanded (state)</b>: Indicates whether the element, or another grouping 
+    element it controls, is currently expanded or collapsed.</li>
+  <li><b>aria-hidden (state)</b>: Indicates that the element and all of its descendants 
+    are not visible or perceivable to any user as implemented by the author.</li>
+  <li><b>aria-invalid (state)</b>: Indicates the entered value does not conform to the 
+    format expected by the application.</li>
+  <li><b>aria-label</b>: Defines a string value that labels the current element.</li>
+  <li><b>aria-labelledby</b>: Identifies the element (or elements) that labels the 
+    current element.</li>
+  <li><b>aria-live</b>: Indicates that an element is dynamic, changing, and will be 
+    updated, and describes the types of updates the user can expect from the live region.</li>
+  <li><b>aria-owns</b>: Identifies an element (or elements) in order to define a visual, 
+    functional, or contextual parent/child relationship between DOM elements where the 
+	DOM hierarchy cannot be used to represent the relationship.</li>
+  <li><b>aria-pressed (state)</b>: Indicates the current “pressed” state of toggle 
+    buttons.</li>
+  <li><b>aria-required</b>: Indicates that user input is required on the element before a 
+    form may be submitted.</li>
+  <li><b>aria-selected (state)</b>: Indicates the current “selected” state of various widgets.</li>
 </ul>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h2>Q. Create a traffic signal light in html?</h2>
@@ -5613,10 +5431,8 @@ such as username and password with the button to submit the form.</p>
   &lt;form&gt;
     &lt;label for=&quot;username&quot;&gt;Username:&lt;/label&gt;&lt;br&gt;
     &lt;input type=&quot;text&quot; id=&quot;username&quot; name=&quot;username&quot;&gt;&lt;br&gt;&lt;br&gt;
-    
     &lt;label for=&quot;password&quot;&gt;Password:&lt;/label&gt;&lt;br&gt;
     &lt;input type=&quot;password&quot; id=&quot;password&quot; name=&quot;password&quot;&gt;&lt;br&gt;&lt;br&gt;
-    
     &lt;input type=&quot;submit&quot; value=&quot;Submit&quot;&gt;
   &lt;/form&gt;
 &lt;/body&gt; 
@@ -5656,7 +5472,6 @@ features proper styling for input fields and submission button.</p>
         margin: 0;
         background-color: #f0f0f0;
       }
-
       form {
         width: 400px;
         background-color: #fff;
@@ -5665,23 +5480,19 @@ features proper styling for input fields and submission button.</p>
         box-shadow: 0 0 10px
         rgba(0, 0, 0, 0.1);
       }
-
       fieldset {
         border: 1px solid black;
         padding: 10px;
         margin: 0;
       }
-
       legend {
         font-weight: bold;
         margin-bottom: 10px;
       }
-
       label {
         display: block;
         margin-bottom: 5px;
       }
-
       input[type=&quot;text&quot;],
       input[type=&quot;email&quot;],
       input[type=&quot;password&quot;],
@@ -5694,11 +5505,9 @@ features proper styling for input fields and submission button.</p>
         border: 1px solid #ccc;
         border-radius: 4px;
       }
-
       input[type=&quot;radio&quot;] {
         margin-left: 20px;
       }
-
       input[type=&quot;submit&quot;] {
         padding: 10px 20px;
         border-radius: 5px;
@@ -5828,7 +5637,6 @@ of data. Tables are also used to create databases.</p>
 <pre><code>&lt;!-- index.html --&gt;
 &lt;!DOCTYPE html&gt;
 &lt;html&gt;
-
 &lt;body&gt;
   &lt;table&gt;
     &lt;caption&gt;HTML Table Code Example&lt;/caption&gt;
@@ -5964,7 +5772,6 @@ tags.</p>
 <pre><code>&lt;!-- index.html --&gt;
 &lt;!DOCTYPE html&gt;
 &lt;html&gt;
-
 &lt;body&gt;
   &lt;table&gt;
     &lt;caption&gt;HTML Table Tags&lt;/caption&gt;
@@ -5990,7 +5797,6 @@ tags.</p>
     &lt;/tr&gt;
   &lt;/table&gt;
 &lt;/body&gt;
-
 &lt;/html&gt;</code></pre>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h5>Output:</h5>
@@ -6020,7 +5826,6 @@ table, it will be displayed without borders.</p>
 <pre><code>&lt;!-- index.html --&gt;
 &lt;!DOCTYPE html&gt;
 &lt;html&gt;
-
 &lt;head&gt;
   &lt;style&gt;
     table,
@@ -6030,7 +5835,6 @@ table, it will be displayed without borders.</p>
     }
   &lt;/style&gt;
 &lt;/head&gt;
-
 &lt;body&gt;
   &lt;table style=&quot;width:100%&quot;&gt;
     &lt;tr&gt;
@@ -6055,7 +5859,6 @@ table, it will be displayed without borders.</p>
     &lt;/tr&gt;
   &lt;/table&gt;
 &lt;/body&gt;
-
 &lt;/html&gt;</code></pre>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h5>Output:</h5>
@@ -6085,7 +5888,6 @@ table, it will be displayed without borders.</p>
 <pre><code>&lt;!-- index.html --&gt;
 &lt;!DOCTYPE html&gt;
 &lt;html&gt;
-
 &lt;head&gt;
   &lt;style&gt;
     table,
@@ -6096,7 +5898,6 @@ table, it will be displayed without borders.</p>
     }
   &lt;/style&gt;
 &lt;/head&gt;
-
 &lt;body&gt;
   &lt;table style=&quot;width:100%&quot;&gt;
     &lt;tr&gt;
@@ -6121,7 +5922,6 @@ table, it will be displayed without borders.</p>
     &lt;/tr&gt;
   &lt;/table&gt;
 &lt;/body&gt;
-
 &lt;/html&gt;</code></pre>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h5>Output:</h5>
@@ -6151,7 +5951,6 @@ not specify a padding, the table cells will be displayed without padding.</p>
 <pre><code>&lt;!-- index.html --&gt;
 &lt;!DOCTYPE html&gt;
 &lt;html&gt;
-
 &lt;head&gt;
   &lt;style&gt;
     table,
@@ -6160,14 +5959,12 @@ not specify a padding, the table cells will be displayed without padding.</p>
       border: 1px solid black;
       border-collapse: collapse;
     }
-    
     th,
     td {
       padding: 20px;
     }
   &lt;/style&gt;
 &lt;/head&gt;
-
 &lt;body&gt;
   &lt;table style=&quot;width:100%&quot;&gt;
     &lt;tr&gt;
@@ -6192,7 +5989,6 @@ not specify a padding, the table cells will be displayed without padding.</p>
     &lt;/tr&gt;
   &lt;/table&gt;
 &lt;/body&gt;
-
 &lt;/html&gt;</code></pre>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h5>Output:</h5>
@@ -6222,7 +6018,6 @@ we must use the CSS text-align property.</p>
 <pre><code>&lt;!-- index.html --&gt;
 &lt;!DOCTYPE html&gt;
 &lt;html&gt;
-
 &lt;head&gt;
   &lt;style&gt;
     table,
@@ -6231,18 +6026,15 @@ we must use the CSS text-align property.</p>
       border: 1px solid black;
       border-collapse: collapse;
     }
-
     th,
     td {
       padding: 20px;
     }
-
     th {
       text-align: left;
     }
   &lt;/style&gt;
 &lt;/head&gt;
-
 &lt;body&gt;
   &lt;table style=&quot;width:100%&quot;&gt;
     &lt;tr&gt;
@@ -6267,7 +6059,6 @@ we must use the CSS text-align property.</p>
     &lt;/tr&gt;
   &lt;/table&gt;
 &lt;/body&gt;
-
 &lt;/html&gt;</code></pre>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h5>Output:</h5>
@@ -6298,7 +6089,6 @@ between the Table cells.</p>
 <pre><code>&lt;!-- index.html --&gt;
 &lt;!DOCTYPE html&gt;
 &lt;html&gt;
-
 &lt;head&gt;
   &lt;style&gt;
     table,
@@ -6306,13 +6096,11 @@ between the Table cells.</p>
     td {
       border: 1px solid black;
     }
-
     table {
       border-spacing: 5px;
     }
   &lt;/style&gt;
 &lt;/head&gt;
-
 &lt;body&gt;
   &lt;table style=&quot;width:100%&quot;&gt;
     &lt;tr&gt;
@@ -6337,7 +6125,6 @@ between the Table cells.</p>
     &lt;/tr&gt;
   &lt;/table&gt;
 &lt;/body&gt;
-
 &lt;/html&gt;</code></pre>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h5>Output:</h5>
@@ -6360,7 +6147,6 @@ between the Table cells.</p>
 <pre><code>&lt;!-- index.html --&gt;
 &lt;!DOCTYPE html&gt;
 &lt;html&gt;
-
 &lt;head&gt;
   &lt;style&gt;
     table,
@@ -6369,7 +6155,6 @@ between the Table cells.</p>
       border: 1px solid black;
       border-collapse: collapse;
     }
-
     th,
     td {
       padding: 5px;
@@ -6377,7 +6162,6 @@ between the Table cells.</p>
     }
   &lt;/style&gt;
 &lt;/head&gt;
-
 &lt;body&gt;
   &lt;h2&gt;Cell that spans two columns:&lt;/h2&gt;
   &lt;table style=&quot;width:100%&quot;&gt;
@@ -6392,7 +6176,6 @@ between the Table cells.</p>
     &lt;/tr&gt;
   &lt;/table&gt;
 &lt;/body&gt;
-
 &lt;/html&gt;</code></pre>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h5>Output:</h5>
@@ -6415,7 +6198,6 @@ between the Table cells.</p>
 <pre><code>&lt;!-- index.html --&gt;
 &lt;!DOCTYPE html&gt;
 &lt;html&gt;
-
 &lt;head&gt;
   &lt;style&gt;
     table,
@@ -6424,7 +6206,6 @@ between the Table cells.</p>
       border: 1px solid black;
       border-collapse: collapse;
     }
-
     th,
     td {
       padding: 5px;
@@ -6432,7 +6213,6 @@ between the Table cells.</p>
     }
   &lt;/style&gt;
 &lt;/head&gt;
-
 &lt;body&gt;
   &lt;h2&gt;Cell that spans two rows:&lt;/h2&gt;
   &lt;table style=&quot;width:100%&quot;&gt;
@@ -6449,7 +6229,6 @@ between the Table cells.</p>
     &lt;/tr&gt;
   &lt;/table&gt;
 &lt;/body&gt;
-
 &lt;/html&gt;</code></pre>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h5>Output:</h5>
@@ -6477,7 +6256,6 @@ between the Table cells.</p>
 <pre><code>&lt;!-- index.html --&gt;
 &lt;!DOCTYPE html&gt;
 &lt;html&gt;
-
 &lt;head&gt;
   &lt;style&gt;
     table,
@@ -6495,7 +6273,6 @@ between the Table cells.</p>
     }
   &lt;/style&gt;
 &lt;/head&gt;
-
 &lt;body&gt;
   &lt;table style=&quot;width:100%&quot;&gt;
     &lt;caption&gt;DETAILS&lt;/caption&gt;
@@ -6521,7 +6298,6 @@ between the Table cells.</p>
     &lt;/tr&gt;
   &lt;/table&gt;
 &lt;/body&gt;
-
 &lt;/html&gt;</code></pre>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h5>Output:</h5>
@@ -6551,7 +6327,6 @@ between the Table cells.</p>
 <pre><code>&lt;!-- index.html --&gt;
 &lt;!DOCTYPE html&gt;
 &lt;html&gt;
-
 &lt;head&gt;
   &lt;style&gt;
     table,
@@ -6571,7 +6346,6 @@ between the Table cells.</p>
     }
   &lt;/style&gt;
 &lt;/head&gt;
-
 &lt;body&gt;
   &lt;table style=&quot;width:100%&quot;&gt;
     &lt;tr&gt;
@@ -6620,7 +6394,6 @@ between the Table cells.</p>
     &lt;/tr&gt;
   &lt;/table&gt;
 &lt;/body&gt;
-
 &lt;/html&gt;</code></pre>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h5>Output:</h5>
@@ -6645,7 +6418,6 @@ introducing errors.</p>
 <pre><code>&lt;!-- index.html --&gt;
 &lt;!DOCTYPE html&gt;
 &lt;html&gt;
-
 &lt;body&gt;
   &lt;table border=5 bordercolor=black&gt;
     &lt;tr&gt;
@@ -6663,7 +6435,6 @@ introducing errors.</p>
     &lt;/tr&gt;
   &lt;/table&gt;
 &lt;/body&gt;
-
 &lt;/html&gt;</code></pre>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h5>Output:</h5>
@@ -6693,11 +6464,9 @@ information on web pages in the ordered or unordered form.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <pre><code>&lt;!DOCTYPE html&gt;
 &lt;html&gt;
-
 &lt;head&gt;
   &lt;title&gt;GeeksforGeeks&lt;/title&gt;
 &lt;/head&gt;
-
 &lt;body&gt;
   &lt;h2&gt;Welcome To GeeksforGeeks Learning&lt;/h2&gt;
   &lt;h5&gt;List of available courses&lt;/h5&gt;
@@ -6717,7 +6486,6 @@ information on web pages in the ordered or unordered form.</p>
     &lt;li&gt;Graphs&lt;/li&gt;
   &lt;/ol&gt;
 &lt;/body&gt;
-
 &lt;/html&gt;</code></pre>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h5>Output:</h5>
@@ -6804,7 +6572,6 @@ tag.</p>
 
 <pre><code>&lt;!DOCTYPE html&gt;
 &lt;html&gt;
-
 &lt;body&gt;
   &lt;h2&gt;Grocery list&lt;/h2&gt;
   &lt;ul&gt;
@@ -6814,7 +6581,6 @@ tag.</p>
     &lt;li&gt;Coffee&lt;/li&gt;
   &lt;/ul&gt;
 &lt;/body&gt;
-
 &lt;/html&gt;</code></pre>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h5>Output:</h5>
@@ -6857,40 +6623,31 @@ list counting &amp; type attribute.</p>
 
 <pre><code>&lt;!DOCTYPE html&gt;
 &lt;html&gt;
-
 &lt;head&gt;
   &lt;title&gt;HTML ol tag&lt;/title&gt;
 &lt;/head&gt;
-
 &lt;body&gt;
   &lt;h1 style=&quot;color: green&quot;&gt;GeeksforGeeks&lt;/h1&gt;
   &lt;h3&gt;HTML ol tag&lt;/h3&gt;
-
   &lt;p&gt;reversed attribute&lt;/p&gt;
-
   &lt;ol reversed&gt;
     &lt;li&gt;HTML&lt;/li&gt;
     &lt;li&gt;CSS&lt;/li&gt;
     &lt;li&gt;JS&lt;/li&gt;
   &lt;/ol&gt;
-    
   &lt;p&gt;start attribute&lt;/p&gt;
-
   &lt;ol start=&quot;5&quot;&gt;
     &lt;li&gt;HTML&lt;/li&gt;
     &lt;li&gt;CSS&lt;/li&gt;
     &lt;li&gt;JS&lt;/li&gt;
   &lt;/ol&gt;
-    
   &lt;p&gt;type attribute&lt;/p&gt;
-
   &lt;ol type=&quot;i&quot;&gt;
     &lt;li&gt;HTML&lt;/li&gt;
     &lt;li&gt;CSS&lt;/li&gt;
     &lt;li&gt;JS&lt;/li&gt;
   &lt;/ol&gt;
 &lt;/body&gt;
-
 &lt;/html&gt;</code></pre>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h5>Output:</h5>
@@ -6920,7 +6677,6 @@ HTML? article</i> for further details.</p>
 
 <pre><code>&lt;!DOCTYPE html&gt;
 &lt;html&gt;
-
 &lt;body&gt;
   &lt;h2&gt;A Description List&lt;/h2&gt;
   &lt;dl&gt; 
@@ -6930,7 +6686,6 @@ HTML? article</i> for further details.</p>
     &lt;dd&gt;- 1 ltr Tetra Pack&lt;/dd&gt;
   &lt;/dl&gt;
 &lt;/body&gt;
-
 &lt;/html&gt;</code></pre>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h5>Output:</h5>
@@ -7091,11 +6846,9 @@ and a blue line drawn diagonally within an SVG element.</p>
 
 <pre><code>&lt;!DOCTYPE html&gt;
 &lt;html&gt;
-
 &lt;head&gt;
   &lt;title&gt;HTML SVG&lt;/title&gt;
 &lt;/head&gt;
-
 &lt;body&gt;
   &lt;h2&gt;&lt;/h2&gt;
   &lt;svg height=&quot;250&quot; width=&quot;600&quot;&gt;
@@ -7106,7 +6859,6 @@ and a blue line drawn diagonally within an SVG element.</p>
       style=&quot;stroke:rgb(0,0,255);stroke-width:3&quot; /&gt;
   &lt;/svg&gt;
 &lt;/body&gt;
-
 &lt;/html&gt;</code></pre>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h5>Output:</h5>
@@ -7128,11 +6880,9 @@ black border. The circle has a center at (80, 80) and a radius of 50.</p>
 
 <pre><code>&lt;!DOCTYPE html&gt;
 &lt;html&gt;
-
 &lt;head&gt;
   &lt;title&gt;HTML SVG&lt;/title&gt;
 &lt;/head&gt;
-
 &lt;body&gt;
   &lt;!-- html svg tag is used here --&gt;
   &lt;svg width=&quot;200&quot; height=&quot;200&quot;&gt;
@@ -7143,7 +6893,6 @@ black border. The circle has a center at (80, 80) and a radius of 50.</p>
     fill=&quot;grey&quot; /&gt;
   &lt;/svg&gt;
 &lt;/body&gt;
-
 &lt;/html&gt;</code></pre>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h5>Output</h5>
@@ -7165,11 +6914,9 @@ black border. The circle has a center at (80, 80) and a radius of 50.</p>
 a black border. The rectangle has a width of 400 and a height of 100.</p>
 <pre><code>&lt;!DOCTYPE html&gt;
 &lt;html&gt;
-
 &lt;head&gt;
   &lt;title&gt;HTML SVG&lt;/title&gt;
 &lt;/head&gt;
-
 &lt;body&gt;
   &lt;!-- html svg tag is used here --&gt;
   &lt;svg width=&quot;400&quot; height=&quot;100&quot;&gt;
@@ -7179,7 +6926,6 @@ a black border. The rectangle has a width of 400 and a height of 100.</p>
       stroke: rgb(0, 0, 0)&quot; /&gt;
   &lt;/svg&gt;
 &lt;/body&gt;
-
 &lt;/html&gt;</code></pre>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h5>Output:</h5>
@@ -7201,13 +6947,11 @@ corners, a black border, and 50% opacity, positioned at coordinates (80, 20).</p
 
 <pre><code>&lt;!DOCTYPE html&gt;
 &lt;html&gt;
-
 &lt;head&gt;
   &lt;title&gt;
     HTML SVG
   &lt;/title&gt;
 &lt;/head&gt;
-
 &lt;body&gt;
   &lt;!-- html svg tag is used here --&gt;
   &lt;svg width=&quot;400&quot; height=&quot;380&quot;&gt;
@@ -7220,7 +6964,6 @@ corners, a black border, and 50% opacity, positioned at coordinates (80, 20).</p
       opacity: 0.5&quot; /&gt;
   &lt;/svg&gt;
 &lt;/body&gt;
-
 &lt;/html&gt;</code></pre>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h5>Output:</h5>
@@ -7243,11 +6986,9 @@ an orange border. The polygon is defined by a series of points and has a
 
 <pre><code>&lt;!DOCTYPE html&gt;
 &lt;html&gt;
-
 &lt;head&gt;
   &lt;title&gt;HTML SVG&lt;/title&gt;
 &lt;/head&gt;
-
 &lt;body&gt;
   &lt;!-- html svg tag is used here --&gt;
   &lt;svg width=&quot;300&quot; height=&quot;200&quot;&gt;
@@ -7256,7 +6997,6 @@ an orange border. The polygon is defined by a series of points and has a
       stroke-width: 5; fill-rule: evenodd&quot; /&gt;
   &lt;/svg&gt;
 &lt;/body&gt;
-
 &lt;/html&gt;</code></pre>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h5>Output:</h5>
@@ -7279,7 +7019,6 @@ the ARIAL font family.</p>
 
 <pre><code>&lt;!DOCTYPE html&gt;
 &lt;html&gt;
-
 &lt;body&gt;
   &lt;!-- html svg tag is used here --&gt;
   &lt;svg height=&quot;300&quot; width=&quot;700&quot;&gt;
@@ -7302,7 +7041,6 @@ the ARIAL font family.</p>
     &lt;/text&gt;
   &lt;/svg&gt;
 &lt;/body&gt;
-  
 &lt;/html&gt;</code></pre>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h5>Output:</h5>
@@ -7387,18 +7125,15 @@ upon click.</p>
 
 <pre><code>&lt;!DOCTYPE html&gt;
 &lt;html lang=&quot;en&quot;&gt;
-
 &lt;head&gt;
   &lt;meta charset=&quot;UTF-8&quot; /&gt;
   &lt;title&gt;SVG a Tag&lt;/title&gt;
 &lt;/head&gt;
-
 &lt;body&gt;
   &lt;div style=&quot;width:300px; height:300px;&quot;&gt;
     &lt;h2&gt;
       SVG &amp;lt;a&amp;gt; Tag
     &lt;/h2&gt;
-
     &lt;svg width=&quot;500&quot; height=&quot;500&quot;&gt;
       &lt;a href=&quot;http://geeksforgeeks.org&quot;&gt;
         &lt;circle cx=&quot;150&quot; cy=&quot;100&quot; r=&quot;80&quot; fill=&quot;green&quot;&gt;
@@ -7407,7 +7142,6 @@ upon click.</p>
     &lt;/svg&gt;
   &lt;/div&gt;
 &lt;/body&gt;
-
 &lt;/html&gt;</code></pre>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h5>Output</h5>
@@ -7430,11 +7164,9 @@ by an anchor (&lt;a&gt;) tag, creating a clickable area that redirects to anothe
 
 <pre><code>&lt;!DOCTYPE html&gt;
 &lt;html lang=&quot;en&quot;&gt;
-
 &lt;head&gt;
     &lt;title&gt;SVG a Element&lt;/title&gt;
 &lt;/head&gt;
-
 &lt;body&gt;
   &lt;div style=&quot;width:300px; height:300px;&quot;&gt;
     &lt;h2&gt;
@@ -7451,7 +7183,6 @@ by an anchor (&lt;a&gt;) tag, creating a clickable area that redirects to anothe
     &lt;/svg&gt;
   &lt;/div&gt;
 &lt;/body&gt;
-  
 &lt;/html&gt;</code></pre>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h5>Output:</h5>
@@ -7492,7 +7223,6 @@ element over time. It’s normally inserted inside the element which we want to 
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <pre><code>&lt;!DOCTYPE html&gt;
 &lt;html&gt;
-
 &lt;body&gt;
   &lt;svg viewBox=&quot;0 0 50 50&quot;&gt;
     &lt;rect width=&quot;10&quot; height=&quot;10&quot; fill=&quot;green&quot;&gt;
@@ -7501,7 +7231,6 @@ element over time. It’s normally inserted inside the element which we want to 
     &lt;/rect&gt;
   &lt;/svg&gt;
 &lt;/body&gt;
-
 &lt;/html&gt;</code></pre>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h5>Output:</h5>
@@ -7520,7 +7249,6 @@ element over time. It’s normally inserted inside the element which we want to 
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <pre><code>&lt;!DOCTYPE html&gt;
 &lt;html&gt;
- 
 &lt;body&gt;
   &lt;h1 style=&quot;color:green&quot;&gt;
     GeeksforGeeks
@@ -7535,7 +7263,6 @@ element over time. It’s normally inserted inside the element which we want to 
     &lt;/rect&gt;
   &lt;/svg&gt;
 &lt;/body&gt;
-
 &lt;/html&gt;</code></pre>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h5>Output:</h5>
@@ -7579,7 +7306,6 @@ like in HTML canvas.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <pre><code>&lt;!DOCTYPE html&gt;
 &lt;html&gt;
-
 &lt;body&gt;
   &lt;svg width=&quot;1200&quot; height=&quot;1200&quot;&gt;
     &lt;circle cx=&quot;60&quot; cy=&quot;60&quot; r=&quot;5&quot; fill=&quot;green&quot;&gt;
@@ -7591,7 +7317,6 @@ like in HTML canvas.</p>
     &lt;/circle&gt;
   &lt;/svg&gt;
 &lt;/body&gt;
-
 &lt;/html&gt;</code></pre>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h5>Output:</h5>
@@ -7634,7 +7359,6 @@ thereby allowing animations to control translation, scaling, rotation, and/or sk
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <pre><code>&lt;!DOCTYPE html&gt;
 &lt;html&gt;
-  
 &lt;body&gt;
   &lt;svg width=&quot;120&quot; height=&quot;120&quot;&gt;
     &lt;polygon points=&quot;60,30 90,90 30,90&quot;&gt;
@@ -7645,7 +7369,6 @@ thereby allowing animations to control translation, scaling, rotation, and/or sk
     &lt;/polygon&gt;
   &lt;/svg&gt;
 &lt;/body&gt;
-  
 &lt;/html&gt;</code></pre>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h5>Output:</h5>
@@ -7698,7 +7421,6 @@ above attributes.</p>
 
 <pre><code>&lt;!DOCTYPE html&gt;
 &lt;html lang=&quot;en&quot;&gt;
-
 &lt;head&gt;
   &lt;meta charset=&quot;UTF-8&quot;&gt;
   &lt;meta name=&quot;viewport&quot; 
@@ -7708,7 +7430,6 @@ above attributes.</p>
   &lt;link rel=&quot;stylesheet&quot; 
     href=&quot;style.css&quot;&gt;
 &lt;/head&gt;
-
 &lt;body&gt;
   &lt;div style=&quot;display: flex;
     flex-direction: column;
@@ -7721,7 +7442,6 @@ above attributes.</p>
     &lt;p style=&quot;font-size: 20px&quot;&gt;
       SVG Circle
     &lt;/p&gt;
-
     &lt;svg width=&quot;200&quot;
       height=&quot;200&quot; 
       style=&quot;border: 2px solid black;&quot;&gt;
@@ -7735,7 +7455,6 @@ above attributes.</p>
   &lt;/div&gt;
   &lt;script src=&quot;script.js&quot;&gt;&lt;/script&gt;
 &lt;/body&gt;
-
 &lt;/html&gt;</code></pre>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h5>Output:</h5>
@@ -7756,7 +7475,6 @@ above attributes.</p>
 
 <pre><code>&lt;!DOCTYPE html&gt;
 &lt;html lang=&quot;en&quot;&gt;
-
 &lt;head&gt;
   &lt;meta charset=&quot;UTF-8&quot;&gt;
   &lt;meta name=&quot;viewport&quot; 
@@ -7765,7 +7483,6 @@ above attributes.</p>
   &lt;title&gt;SVG to HTML&lt;/title&gt;
   &lt;link rel=&quot;stylesheet&quot; href=&quot;style.css&quot;&gt;
 &lt;/head&gt;
-
 &lt;body&gt;
   &lt;div style=&quot;display: flex; 
     flex-direction: column;
@@ -7778,7 +7495,6 @@ above attributes.</p>
     &lt;p style=&quot;font-size: 20px&quot;&gt;
       SVG Circle
     &lt;/p&gt;
-
     &lt;svg width=&quot;200&quot; 
       height=&quot;200&quot; 
       style=&quot;border: 2px solid black;&quot;&gt;
@@ -7791,7 +7507,6 @@ above attributes.</p>
   &lt;/div&gt;
   &lt;script src=&quot;script.js&quot;&gt;&lt;/script&gt;
 &lt;/body&gt;
-
 &lt;/html&gt;</code></pre>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h5>Output:</h5>
@@ -7827,43 +7542,35 @@ given above.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <pre><code>&lt;!DOCTYPE html&gt;
 &lt;html lang=&quot;en&quot;&gt;
-
 &lt;head&gt;
   &lt;meta charset=&quot;UTF-8&quot; /&gt;
   &lt;meta property=&quot;viewport&quot; content=
     &quot;width=device-width, initial-scale=1.0&quot; /&gt;
-
   &lt;title&gt;SVG clipPath Element&lt;/title&gt;
-
   &lt;style&gt;
     @keyframes animation1 {
       from {
         width: 4px;
         height: 4px;
       }
-
       to {
         width: 150px;
         height: 150px;
       }
     }
-
     rect {
       animation: animation1 10s ease-in-out;
     }
   &lt;/style&gt;
 &lt;/head&gt;
-
 &lt;body&gt;
   &lt;div style=&quot;width: 300px; height: 300px;&quot;&gt;
-
     &lt;h1 style=&quot;color: green;&quot;&gt;
       GeeksforGeeks
     &lt;/h1&gt;
     &lt;h2&gt;
       SVG clipPath Element
     &lt;/h2&gt;
-
     &lt;svg width=&quot;500&quot; height=&quot;500&quot; 
       transform=&quot;translate(100, 0)&quot;&gt;
       &lt;clipPath id=&quot;gfg&quot;&gt;
@@ -7878,7 +7585,6 @@ given above.</p>
     &lt;/svg&gt;
   &lt;/div&gt;
 &lt;/body&gt;
-
 &lt;/html&gt;</code></pre>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h5>Output:</h5>
@@ -7897,14 +7603,11 @@ given above.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <pre><code>&lt;!DOCTYPE html&gt;
 &lt;html lang=&quot;en&quot;&gt;
-
 &lt;head&gt;
   &lt;meta charset=&quot;UTF-8&quot; /&gt;
   &lt;meta property=&quot;viewport&quot; content=
     &quot;width=device-width, initial-scale=1.0&quot; /&gt;
-
   &lt;title&gt;SVG clipPath Element&lt;/title&gt;
-
   &lt;style&gt;
     @keyframes star {
       from {
@@ -7919,22 +7622,17 @@ given above.</p>
     }
   &lt;/style&gt;
 &lt;/head&gt;
-
 &lt;body&gt;
   &lt;div style=&quot;width:300px; height:300px;&quot;&gt;
     &lt;h1 style=&quot;color:green&quot;&gt;
       GeeksforGeeks
     &lt;/h1&gt;
-
     &lt;h2&gt;SVG clipPath Element&lt;/h2&gt;
-
     &lt;svg width=&quot;500&quot; height=&quot;500&quot;
       transform=&quot;translate(60, -40)&quot;&gt;
-
       &lt;clipPath id=&quot;gfg&quot;&gt;
         &lt;circle /&gt;
       &lt;/clipPath&gt;
-
       &lt;path id=&quot;star&quot; d=&quot;
         M 85.000 105.000
         L 105.000 119.641
@@ -7954,7 +7652,6 @@ given above.</p>
     &lt;/svg&gt;
   &lt;/div&gt;
 &lt;/body&gt;
-
 &lt;/html&gt;</code></pre>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h5>Output</h5>
@@ -8092,13 +7789,11 @@ container or graphic element.</p>
 
 <pre><code>&lt;!DOCTYPE html&gt;
 &lt;html lang=&quot;en&quot;&gt;
-
 &lt;head&gt;
   &lt;meta charset=&quot;UTF-8&quot;&gt;
   &lt;meta name=&quot;viewport&quot; path1tent=
     &quot;width=device-width, initial-scale=1.0&quot;&gt;
   &lt;title&gt;SVG desc Element&lt;/title&gt;
-
   &lt;style&gt;
     svg {
       width: 200px;
@@ -8108,7 +7803,6 @@ container or graphic element.</p>
     }
   &lt;/style&gt;
 &lt;/head&gt;
-
 &lt;body&gt;
   &lt;svg&gt;
     &lt;circle cx=&quot;100&quot; cy=&quot;100&quot; r=&quot;80&quot;&gt;
@@ -8116,7 +7810,6 @@ container or graphic element.</p>
     &lt;/circle&gt;
   &lt;/svg&gt;
 &lt;/body&gt;
-
 &lt;/html&gt;</code></pre>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h5>Output:</h5>
@@ -8139,13 +7832,11 @@ container or graphic element.</p>
 
 <pre><code>&lt;!DOCTYPE html&gt;
 &lt;html lang=&quot;en&quot;&gt;
-
 &lt;head&gt;
   &lt;meta charset=&quot;UTF-8&quot;&gt;
   &lt;meta name=&quot;viewport&quot; path1tent=
     &quot;width=device-width, initial-scale=1.0&quot;&gt;
   &lt;title&gt;SVG desc Element&lt;/title&gt;
-
   &lt;style&gt;
     svg {
       width: 200px;
@@ -8155,7 +7846,6 @@ container or graphic element.</p>
     }
   &lt;/style&gt;
 &lt;/head&gt;
-
 &lt;body&gt;
   &lt;svg&gt;
     &lt;rect aria-describedby=&quot;info&quot; 
@@ -8168,7 +7858,6 @@ container or graphic element.</p>
     &lt;/rect&gt;
   &lt;/svg&gt;
 &lt;/body&gt;
-
 &lt;/html&gt;</code></pre>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h5>Output:</h5>
@@ -8289,7 +7978,6 @@ SVG fragments or images.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <pre><code>&lt;!DOCTYPE html&gt;
 &lt;html&gt;
-
 &lt;body&gt;
   &lt;svg width=&quot;200&quot; height=&quot;200&quot;&gt;
     &lt;defs&gt;
@@ -8314,7 +8002,6 @@ SVG fragments or images.</p>
     &lt;/g&gt;
   &lt;/svg&gt;
 &lt;/body&gt;
-
 &lt;/html&gt;</code></pre>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h5>Output:</h5>
@@ -8333,7 +8020,6 @@ SVG fragments or images.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <pre><code>&lt;!DOCTYPE html&gt; 
 &lt;html&gt; 
-
 &lt;body&gt; 
   &lt;svg width=&quot;200&quot; height=&quot;200&quot;&gt; 
     &lt;defs&gt; 
@@ -8356,7 +8042,6 @@ SVG fragments or images.</p>
     &lt;/g&gt; 
   &lt;/svg&gt; 
 &lt;/body&gt; 
-
 &lt;/html&gt; </code></pre>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h5>Output:</h5>
@@ -8400,7 +8085,6 @@ child element of each type.</p>
 <pre><code>&lt;html&gt;
 &lt;title&gt;SVG Filter&lt;/title&gt;
 &lt;body&gt;
-
   &lt;svg width=&quot;640&quot; height=&quot;550&quot; viewBox=&quot;0 0 640 550&quot;&gt;
     &lt;defs&gt;
       &lt;filter id=&quot;new&quot; filterUnits=&quot;objectBoundingBox&quot; x=&quot;0%&quot; y=&quot;0%&quot; width=&quot;100%&quot; height=&quot;100%&quot;&gt;
@@ -8417,7 +8101,6 @@ child element of each type.</p>
     &lt;image x=&quot;310&quot; y=&quot;10&quot; width=&quot;280&quot; height=&quot;350&quot; preserveAspectRatio=&quot;true&quot;
       filter=&quot;url(#new)&quot; xlink:href=&quot;C:/Users/pc/Desktop/gfg/Capture25.png&quot;/&gt;
   &lt;/svg&gt;
-
 &lt;/body&gt;
 &lt;/html&gt;</code></pre>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -8438,7 +8121,6 @@ child element of each type.</p>
 <pre><code>&lt;html&gt;
 &lt;title&gt;SVG Filter&lt;/title&gt;
 &lt;body&gt;
-
   &lt;svg width=&quot;640&quot; height=&quot;550&quot; viewBox=&quot;0 0 640 550&quot;&gt;
     &lt;defs&gt;
       &lt;filter id=&quot;new&quot; filterUnits=&quot;objectBoundingBox&quot; x=&quot;0%&quot; y=&quot;0%&quot; width=&quot;100%&quot; height=&quot;100%&quot;&gt;
@@ -8450,13 +8132,11 @@ child element of each type.</p>
         &lt;/feComponentTransfer&gt;
       &lt;/filter&gt;
     &lt;/defs&gt;
-
     &lt;image x=&quot;10&quot; y=&quot;10&quot; width=&quot;280&quot; height=&quot;350&quot; preserveAspectRatio=&quot;true&quot;
       xlink:href=&quot;C:/Users/pc/Desktop/gfg/Capture82.png&quot;/&gt;
     &lt;image x=&quot;310&quot; y=&quot;10&quot; width=&quot;280&quot; height=&quot;350&quot; preserveAspectRatio=&quot;true&quot; filter=&quot;url(#new)&quot;
       xlink:href=&quot;C:/Users/pc/Desktop/gfg/Capture82.png&quot;/&gt;
   &lt;/svg&gt;
-
 &lt;/body&gt;
 &lt;/html&gt;</code></pre>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -8477,7 +8157,6 @@ child element of each type.</p>
 <pre><code>&lt;html&gt;
 &lt;title&gt;SVG Filter&lt;/title&gt;
 &lt;body&gt;
-
   &lt;svg width=&quot;640&quot; height=&quot;550&quot; viewBox=&quot;0 0 640 550&quot;&gt;
     &lt;defs&gt;
       &lt;filter id=&quot;new&quot; filterUnits=&quot;objectBoundingBox&quot; x=&quot;0%&quot; y=&quot;0%&quot; width=&quot;100%&quot; height=&quot;100%&quot;&gt;
@@ -8489,13 +8168,11 @@ child element of each type.</p>
         &lt;/feComponentTransfer&gt;
       &lt;/filter&gt; 
     &lt;/defs&gt; 
-
     &lt;image x=&quot;10&quot; y=&quot;10&quot; width=&quot;280&quot; height=&quot;350&quot; preserveAspectRatio=&quot;true&quot;
       xlink:href=&quot;C:/Users/pc/Desktop/gfg/Capture26.png&quot;/&gt;
     &lt;image x=&quot;310&quot; y=&quot;10&quot; width=&quot;280&quot; height=&quot;350&quot; preserveAspectRatio=&quot;true&quot; filter=&quot;url(#new)&quot;
       xlink:href=&quot;C:/Users/pc/Desktop/gfg/Capture26.png&quot;/&gt;
   &lt;/svg&gt;
-
 &lt;/body&gt; 
 &lt;/html&gt; </code></pre>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -8551,7 +8228,6 @@ input image with neighboring pixels to produce a resulting image.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <pre><code>&lt;!DOCTYPE html&gt; 
 &lt;html&gt; 
-
 &lt;body&gt;
   &lt;svg width=&quot;100%&quot; height=&quot;220&quot;&gt; 
     &lt;defs&gt; 
@@ -8560,16 +8236,13 @@ input image with neighboring pixels to produce a resulting image.</p>
           &quot;1 5 -1 -1 0 4 0 0 -1&quot; /&gt; 
       &lt;/filter&gt; 
     &lt;/defs&gt; 
-
     &lt;rect x=&quot;40&quot; y=&quot;40&quot; width=&quot;100&quot;
       height=&quot;100&quot;
       filter: url(#convolve) style= 
       &quot;stroke: #000000; 
       fill: darkgreen;&quot; /&gt; 
-
     &lt;g fill=&quot;#FFFFFF&quot; stroke=&quot;black&quot;
       font-size=&quot;10&quot; font-family=&quot;Verdana&quot;&gt; 
-
       &lt;text x=&quot;50&quot; y=&quot;90&quot;
         filter=&quot;url(#convolve)&quot;&gt; 
         GeeksForGeeks 
@@ -8577,7 +8250,6 @@ input image with neighboring pixels to produce a resulting image.</p>
     &lt;/g&gt; 
   &lt;/svg&gt; 
 &lt;/body&gt; 
-
 &lt;/html&gt; </code></pre>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h5>Output:</h5>
@@ -8597,7 +8269,6 @@ input image with neighboring pixels to produce a resulting image.</p>
 <pre><code>&lt;!DOCTYPE html&gt; 
 &lt;html&gt; 
 &lt;title&gt;SVG Filter&lt;/title&gt; 
-
 &lt;body&gt;
   &lt;svg width=&quot;100%&quot; height=&quot;220&quot;&gt; 
     &lt;defs&gt; 
@@ -8606,18 +8277,15 @@ input image with neighboring pixels to produce a resulting image.</p>
         =&quot;-7 -10 -15 -10 10 -1 0 0 -1&quot; /&gt; 
       &lt;/filter&gt; 
     &lt;/defs&gt; 
-
     &lt;rect x=&quot;1&quot; y=&quot;1&quot; width=&quot;198&quot;
       height=&quot;118&quot;
       style=&quot;stroke: #000000; 
         fill: none; 
         filter: url(#convolve);&quot; /&gt; 
-
     &lt;circle cx=&quot;100&quot; cy=&quot;60&quot; r=&quot;55&quot;
       stroke=&quot;black&quot; stroke-width=&quot;3&quot;
       fill=&quot;Lightgreen&quot;
       filter: url(#convolve) /&gt; 
-
     &lt;g fill=&quot;#FFFFFF&quot; stroke=&quot;black&quot;
       font-size=&quot;10&quot; font-family=&quot;Verdana&quot;&gt; 
       &lt;text x=&quot;60&quot; y=&quot;62&quot; filter=&quot;url(#convolve)&quot;&gt; 
@@ -8625,7 +8293,6 @@ input image with neighboring pixels to produce a resulting image.</p>
     &lt;/g&gt; 
   &lt;/svg&gt; 
 &lt;/body&gt; 
-
 &lt;/html&gt; </code></pre>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h5>Output:</h5>
@@ -8667,31 +8334,25 @@ darker and in shadow.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <pre><code>&lt;!DOCTYPE html&gt; 
 &lt;html&gt; 
-
 &lt;body&gt;
   &lt;svg viewBox=&quot;0 0 1000 1000&quot;&gt; 
     &lt;filter id=&quot;lightMe2&quot;&gt; 
       &lt;feDiffuseLighting in=&quot;SourceGraphic&quot;
         surfaceScale=&quot;1&quot; diffuseConstant=&quot;2&quot;
         kernelUnitLength=&quot;2&quot;&gt; 
-
         &lt;fePointLight x=&quot;80&quot; y=&quot;80&quot; z=&quot;40&quot; /&gt; 
-
         &lt;feDistantLight azimuth=&quot;240&quot;
           elevation=&quot;20&quot; /&gt; 
       &lt;/feDiffuseLighting&gt; 
-
       &lt;feComposite in=&quot;SourceGraphic&quot; in2=&quot;light&quot;
         operator=&quot;arithmetic&quot; k1=&quot;1&quot; k2=&quot;0&quot;
         k3=&quot;0&quot; k4=&quot;0&quot; /&gt; 
     &lt;/filter&gt; 
-
     &lt;rect x=&quot;20&quot; y=&quot;20&quot; width=&quot;200&quot; height=&quot;200&quot;
       fill=&quot;green&quot;
       style=&quot;filter: url(#lightMe2);&quot; /&gt; 
   &lt;/svg&gt; 
 &lt;/body&gt; 
-
 &lt;/html&gt;</code></pre>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h5>Output:</h5>
@@ -8710,33 +8371,27 @@ darker and in shadow.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <pre><code>&lt;!DOCTYPE html&gt;
 &lt;html&gt;
-
 &lt;body&gt;
   &lt;svg viewBox=&quot;0 0 1000 1000&quot;&gt;
     &lt;filter id=&quot;lightMe3&quot;&gt;
       &lt;feDiffuseLighting in=&quot;BackgroundImage&quot;
         surfaceScale=&quot;4&quot; diffuseConstant=&quot;2&quot;
         kernelUnitLength=&quot;2&quot;&gt;
-
         &lt;feSpotLight x=&quot;30&quot; y=&quot;20&quot; z=&quot;30&quot;
           limitingConeAngle=&quot;40&quot;
           pointsAtX=&quot;200&quot; pointsAtY=&quot;200&quot;
           pointsAtZ=&quot;0&quot; /&gt;
-
         &lt;fePointLight x=&quot;80&quot; y=&quot;80&quot; z=&quot;40&quot; /&gt;
       &lt;/feDiffuseLighting&gt;
-
       &lt;feComposite in=&quot;SourceGraphic&quot;
         in2=&quot;light&quot; operator=&quot;arithmetic&quot;
         k1=&quot;1&quot; k2=&quot;0&quot; k3=&quot;0&quot; k4=&quot;0&quot; /&gt;
     &lt;/filter&gt;
-
     &lt;rect x=&quot;20&quot; y=&quot;20&quot; width=&quot;200&quot; height=&quot;200&quot;
       fill=&quot;blue&quot;
       style=&quot;filter: url(#lightMe3);&quot; /&gt;
   &lt;/svg&gt;
 &lt;/body&gt;
-
 &lt;/html&gt;</code></pre>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h5>Output:</h5>
@@ -8784,11 +8439,9 @@ displacement effect is applied is reserved in “in” attribute.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <pre><code>&lt;!DOCTYPE html&gt; 
 &lt;html&gt; 
-
 &lt;body&gt; 
   &lt;svg width=&quot;200&quot; height=&quot;200&quot;
     viewBox=&quot;0 0 220 220&quot;&gt; 
-
     &lt;filter id=&quot;displacementFilter&quot;&gt; 
       &lt;feTurbulence type=&quot;turbulence&quot;
         baseFrequency=&quot;1&quot;
@@ -8799,13 +8452,11 @@ displacement effect is applied is reserved in “in” attribute.</p>
         xChannelSelector=&quot;R&quot;
         yChannelSelector=&quot;B&quot; /&gt; 
     &lt;/filter&gt; 
-
     &lt;circle cx=&quot;100&quot; cy=&quot;100&quot; r=&quot;100&quot;
       stroke=&quot;green&quot; style= 
       &quot;filter: url(#displacementFilter)&quot; /&gt; 
   &lt;/svg&gt; 
 &lt;/body&gt; 
-
 &lt;/html&gt; </code></pre>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h5>Output:</h5>
@@ -8824,28 +8475,22 @@ displacement effect is applied is reserved in “in” attribute.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <pre><code>&lt;!DOCTYPE html&gt;
 &lt;html&gt;
-
 &lt;body&gt;
   &lt;svg width=&quot;200&quot; height=&quot;200&quot;
     viewBox=&quot;0 0 220 220&quot;&gt;
-
     &lt;filter id=&quot;displacementFilter&quot;&gt;
-
       &lt;feTurbulence type=&quot;turbulence&quot;
         baseFrequency=&quot;5&quot; numOctaves=&quot;2&quot;
         result=&quot;turbulence&quot; /&gt;
-
       &lt;feDisplacementMap in2=&quot;abc&quot;
         in=&quot;SourceGraphic&quot; scale=&quot;200&quot;
         xChannelSelector=&quot;B&quot;
         yChannelSelector=&quot;R&quot; /&gt;
     &lt;/filter&gt;
-
     &lt;rect width=&quot;250&quot; height=&quot;250&quot; style
       =&quot;filter: url(#displacementFilter)&quot; /&gt;
   &lt;/svg&gt; 
 &lt;/body&gt; 
-
 &lt;/html&gt; </code></pre>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h5>Output:</h5>
@@ -8891,11 +8536,9 @@ much more.</p>
 <pre><code>&lt;!DOCTYPE html&gt;
 &lt;html&gt;
 &lt;body&gt;
-
 &lt;svg width=&quot;100&quot; height=&quot;100&quot;&gt;
   &lt;circle cx=&quot;50&quot; cy=&quot;50&quot; r=&quot;40&quot; stroke=&quot;green&quot; stroke-width=&quot;4&quot; fill=&quot;yellow&quot; /&gt;
 &lt;/svg&gt;
-
 &lt;/body&gt;
 &lt;/html&gt;</code></pre>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -9006,13 +8649,10 @@ to teach you SVG.</p>
 <pre><code>&lt;!DOCTYPE html&gt;
 &lt;html&gt;
 &lt;body&gt;
-
 &lt;h1&gt;My first SVG&lt;/h1&gt;
-
 &lt;svg width=&quot;100&quot; height=&quot;100&quot; xmlns=&quot;http://www.w3.org/2000/svg&quot;&gt;
   &lt;circle cx=&quot;50&quot; cy=&quot;50&quot; r=&quot;40&quot; stroke=&quot;green&quot; stroke-width=&quot;4&quot; fill=&quot;yellow&quot; /&gt;
 &lt;/svg&gt;
-
 &lt;/body&gt;
 &lt;/html&gt;</code></pre>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -9045,13 +8685,11 @@ attribute values in SVG inside quotes (even if they are numbers)
 <pre><code>&lt;!DOCTYPE html&gt;
 &lt;html&gt;
 &lt;body&gt;
-
 &lt;svg width=&quot;150&quot; height=&quot;100&quot; xmlns=&quot;http://www.w3.org/2000/svg&quot;&gt;
   &lt;rect width=&quot;100%&quot; height=&quot;100%&quot; fill=&quot;green&quot; /&gt;
   &lt;circle cx=&quot;75&quot; cy=&quot;50&quot; r=&quot;40&quot; fill=&quot;yellow&quot; /&gt;
   &lt;text x=&quot;75&quot; y=&quot;60&quot; font-size=&quot;30&quot; text-anchor=&quot;middle&quot; fill=&quot;red&quot;&gt;SVG&lt;/text&gt;
 &lt;/svg&gt;
-
 &lt;/body&gt;
 &lt;/html&gt;</code></pre>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -9227,6 +8865,7 @@ the rectangle:</p>
 <h4>A Rectangle With Rounded Corners</h4>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p>Last example, create a rectangle with rounded corners:</p>
+
 <pre><code>&lt;svg width=&quot;300&quot; height=&quot;170&quot; xmlns=&quot;http://www.w3.org/2000/svg&quot;&gt;
   &lt;rect width=&quot;150&quot; height=&quot;150&quot; x=&quot;10&quot; y=&quot;10&quot; rx=&quot;20&quot; ry=&quot;20&quot;
   style=&quot;fill:red;stroke:black;stroke-width:5;opacity:0.5&quot; /&gt;
@@ -9414,7 +9053,6 @@ is not available unless the user approves it.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <pre><code>&lt;script&gt;
 const x = document.getElementById(&quot;demo&quot;);
-
 function getLocation() {
   if (navigator.geolocation) {
     navigator.geolocation.getCurrentPosition(success, error);
@@ -9468,14 +9106,10 @@ specifies a function to run if it fails to get the user’s location.</p>
 &lt;body&gt;
 &lt;h1&gt;HTML Geolocation&lt;/h1&gt;
 &lt;p&gt;Click the button to get your coordinates.&lt;/p&gt;
-
 &lt;button onclick=&quot;getLocation()&quot;&gt;Try It&lt;/button&gt;
-
 &lt;p id=&quot;demo&quot;&gt;&lt;/p&gt;
-
 &lt;script&gt;
 const x = document.getElementById(&quot;demo&quot;);
-
 function getLocation() {
   if (navigator.geolocation) {
     navigator.geolocation.getCurrentPosition(success, error);
@@ -9483,12 +9117,10 @@ function getLocation() {
     x.innerHTML = &quot;Geolocation is not supported by this browser.&quot;;
   }
 }
-
 function success(position) {
   x.innerHTML = &quot;Latitude: &quot; + position.coords.latitude + 
   &quot;&lt;br&gt;Longitude: &quot; + position.coords.longitude;
 }
-
 function error(error) {
   switch(error.code) {
     case error.PERMISSION_DENIED:
@@ -9506,7 +9138,6 @@ function error(error) {
   }
 }
 &lt;/script&gt;
-
 &lt;/body&gt;
 &lt;/html&gt;</code></pre>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -9589,7 +9220,6 @@ to test this (like a smartphone):</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <pre><code>&lt;script&gt;
 const x = document.getElementById(&quot;demo&quot;);
-
 function getLocation() {
   if (navigator.geolocation) {
     navigator.geolocation.watchPosition(success, error);
@@ -9597,12 +9227,10 @@ function getLocation() {
     x.innerHTML = &quot;Geolocation is not supported by this browser.&quot;;
   }
 }
-
 function success(position) {
   x.innerHTML = &quot;Latitude: &quot; + position.coords.latitude +
   &quot;&lt;br&gt;Longitude: &quot; + position.coords.longitude;
 }
-
 function error(error) {
   switch(error.code) {
     case error.PERMISSION_DENIED:
@@ -9642,11 +9270,9 @@ function error(error) {
 function dragstartHandler(ev) {
   ev.dataTransfer.setData(&quot;text&quot;, ev.target.id);
 }
-
 function dragoverHandler(ev) {
   ev.preventDefault();
 }
-
 function dropHandler(ev) {
   ev.preventDefault();
   const data = ev.dataTransfer.getData(&quot;text&quot;);
@@ -9736,11 +9362,9 @@ dropHandler(event):</p>
 function dragstartHandler(ev) {
   ev.dataTransfer.setData(&quot;text&quot;, ev.target.id);
 }
-
 function dragoverHandler(ev) {
   ev.preventDefault();
 }
-
 function dropHandler(ev) {
   ev.preventDefault();
   const data = ev.dataTransfer.getData(&quot;text&quot;);
@@ -9749,9 +9373,7 @@ function dropHandler(ev) {
 &lt;/script&gt;
 &lt;/head&gt;
 &lt;body&gt;
-
 &lt;div id=&quot;div1&quot; ondrop=&quot;dropHandler(event)&quot; ondragover=&quot;dragoverHandler(event)&quot;&gt;&lt;/div&gt;
-
 &lt;h1 id=&quot;h1&quot; draggable=&quot;true&quot; ondragstart=&quot;dragstartHandler(event)&quot;&gt;W3Schools.com&lt;/h1&gt;</code></pre>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h2>HTML Web Storage API</h2>
@@ -9840,7 +9462,6 @@ function clickCounter() {
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <pre><code>&lt;script&gt;
 const x = document.getElementById(&quot;result&quot;);
-
 if (typeof(Storage) !== &quot;undefined&quot;) {
   // Store
   localStorage.setItem(&quot;lastname&quot;, &quot;Smith&quot;);
@@ -9913,16 +9534,12 @@ causing long tasks that make the page unresponsive.</p>
 <pre><code>&lt;!DOCTYPE html&gt;
 &lt;html&gt;
 &lt;body&gt;
-
 &lt;h1&gt;Web Worker API&lt;/h1&gt;
-
 &lt;p&gt;Count numbers: &lt;output id=&quot;result&quot;&gt;&lt;/output&gt;&lt;/p&gt;
 &lt;button onclick=&quot;startWorker()&quot;&gt;Start Worker&lt;/button&gt; 
 &lt;button onclick=&quot;stopWorker()&quot;&gt;Stop Worker&lt;/button&gt;
-
 &lt;script&gt;
 let w;
-
 function startWorker() {
   const x = document.getElementById(&quot;result&quot;);
   if(typeof(Worker) !== &quot;undefined&quot;) {
@@ -9936,13 +9553,11 @@ function startWorker() {
     x.innerHTML = &quot;Sorry! No Web Worker support.&quot;;
   }
 }
-
 function stopWorker() { 
   w.terminate();
   w = undefined;
 }
 &lt;/script&gt;
-
 &lt;/body&gt;
 &lt;/html&gt;</code></pre>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -9968,13 +9583,11 @@ if(typeof(Worker) !== &quot;undefined&quot;) {
 <p>Here we create a script that counts. The script is stored in the “demo_workers.js” file:</p>
 
 <pre><code>var i = 0;
-
 function timedCount() {
   i = i + 1;
   postMessage(i);
   setTimeout(&quot;timedCount()&quot;,500);
 }
-
 timedCount();
 </code></pre>
 
@@ -10032,14 +9645,11 @@ can reuse the worker/code:</p>
 <pre><code>&lt;!DOCTYPE html&gt;
 &lt;html&gt;
 &lt;body&gt;
-
 &lt;p&gt;Count numbers: &lt;output id=&quot;result&quot;&gt;&lt;/output&gt;&lt;/p&gt;
 &lt;button onclick=&quot;startWorker()&quot;&gt;Start Worker&lt;/button&gt;
 &lt;button onclick=&quot;stopWorker()&quot;&gt;Stop Worker&lt;/button&gt;
-
 &lt;script&gt;
 let w;
-
 function startWorker() {
   const x = document.getElementById(&quot;result&quot;);
   if (typeof(Worker) !== &quot;undefined&quot;) {
@@ -10053,13 +9663,11 @@ function startWorker() {
     x.innerHTML = &quot;Sorry! No Web Worker support.&quot;;
   }
 }
-
 function stopWorker() {
   w.terminate();
   w = undefined;
 }
 &lt;/script&gt;
-
 &lt;/body&gt;
 &lt;/html&gt;</code></pre>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -10140,6 +9748,7 @@ PHP or ASP).</p>
 
 <p>The server-side event stream syntax is simple. Set the “Content-Type” header to 
 “text/event-stream”. Now you can start sending event streams.</p>
+
 <p>Code in PHP (demo_sse.php):</p>
 
 <pre><code>&lt;?php
@@ -10223,7 +9832,8 @@ Last editted: 5/19/2025 +11pm<br>
 Last editted: 5/26/2025 +12pm<br>
 Last editted: 6/16/2025 +12pm<br>
 Last editted: 6/17/2025 +6pm<br>
-Last editted: 6/18/2025 +6am</h6>
+Last editted: 6/18/2025 +6am<br>
+Last editted: 6/29/2025 +7pm</h6>
 <p>The End…</p>
 </footer>
 
