@@ -230,15 +230,6 @@ suggestions with the mouse.</p>
   &lt;option value=&quot;Safari&quot;&gt;
 &lt;/datalist&gt;
 </pre>
-<p>Enter your favorite browser name:</p>
-<input type="text" list="browsers" name="favorite_browser">
-<datalist id="browsers">
-  <option value="Firefox">
-  <option value="Chrome">    
-  <option value="Internet Explorer">
-  <option value="Opera">
-  <option value="Safari">
-</datalist>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h4>
   <ol start="2" type="1">
@@ -269,10 +260,25 @@ element should appear or behave.</p>
     <tr>
       <td>min</td>
       <td>Specifies the lower bound of the range. Default is 0.</td>
-3. low    Specifies the range that is considered to be a "low" value.
-4. high    Specifies the range that is considered to be a "high" value.
-5. max    Specifies the upper bound of the range. Default is 1.
-6. optimum    Specifies the value that is considered to be the "optimum", or best, value. If this value is higher than the "high" value then it indicates that the higher the value, the better. If it's lower than the "low" mark then it indicates that lower values are better. If it is in between then it indicates that neither high nor low values are good.
+    </tr>
+    <tr>
+      <td>low</td>
+	  <td>Specifies the range that is considered to be a "low" value.</td>
+    </tr>
+    <tr>
+      <td>high</td>
+	  <td>Specifies the range that is considered to be a "high" value.</td>
+    </tr>
+    <tr>
+      <td>max</td>
+	  <td>Specifies the upper bound of the range. Default is 1.</td>
+    </tr>
+    <tr>
+      <td>optimum</td>
+	  <td>Specifies the value that is considered to be the "optimum", or best, value. If this value is higher than the "high" value then it indicates that the higher the value, the better. If it's lower than the "low" mark then it indicates that lower values are better. If it is in between then it indicates that neither high nor low values are good.</td>
+    </tr>
+  </tbody>
+</table>
 
 <ul>
   <li><b>max</b>: The maximum possible value of the item.</li>
@@ -293,13 +299,14 @@ element should appear or behave.</p>
 </h4>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p>It indicates a section of the page that can be modified by a script (usually JavaScript).</p>
-
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<form oninput="result.value=parseInt(a.value)+parseInt(b.value)">
-  <input type="range" id="a" value="50"> +
-  <input type="number" id="b" value="100"> =
-  <output name="result" for="a b"></output>
-</form>
+<pre>
+&lt;form oninput="result.value=parseInt(a.value)+parseInt(b.value)"&gt;
+  &lt;input type="range" id="a" value="50"&gt; +
+  &lt;input type="number" id="b" value="100"&gt; =
+  &lt;output name="result" for="a b"&gt;&lt;/output&gt;
+&lt;/form&gt;
+</pre>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h4>
   <ol start="4" type="1">
