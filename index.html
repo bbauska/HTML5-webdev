@@ -13,13 +13,13 @@
   <meta name="title" content="HTML5 for Web Development" />
   <meta name="description" content="HTML stands for HyperText Markup Language. It is the 
     standard language used to create and structure content on the web. It tells the web 
-	browser how to display text, links, images, and other forms of multimedia on a 
-	webpage. HTML sets up the basic structure of a website, and then CSS and JavaScript 
-	add style and interactivity to make it look and function better. How Does HTML Work? 
-	- HTML documents are plain-text files saved with an .html extension. Browsers read 
-	these documents, interpret the markup (tags and attributes), and render the formatted 
-	content on your screen. In a nutshell, HTML is all about organizing and displaying 
-	information on a webpage. We can think of it as the bones or structure of a webpage." />
+    browser how to display text, links, images, and other forms of multimedia on a 
+    webpage. HTML sets up the basic structure of a website, and then CSS and JavaScript 
+    add style and interactivity to make it look and function better. How Does HTML Work? 
+    - HTML documents are plain-text files saved with an .html extension. Browsers read 
+    these documents, interpret the markup (tags and attributes), and render the formatted 
+    content on your screen. In a nutshell, HTML is all about organizing and displaying 
+    information on a webpage. We can think of it as the bones or structure of a webpage." />
   <meta name="keywords" content="HTML,HTML5,Web Development,JS,JavaScript,Silus,Gaming,
     World,Silus Gaming World">
   <title>HTML5 Web Development</title>
@@ -50,16 +50,16 @@
 <ul>
   <li><a href="#html5-events.md" 
     target="_blank" rel="noopener noreferrer">
-	HTML5 Events List</a></li>
+    HTML5 Events List</a></li>
   <li><a href="#html5-tags.md" 
     target="_blank" rel="noopener noreferrer">
-	HTML5 Tags</a></li>
+    HTML5 Tags</a></li>
   <li><a href="https://github.com/learning-zone/css-basics" 
     target="_blank" rel="noopener noreferrer">
-	CSS Basics</a></li>
+    CSS Basics</a></li>
   <li><a href="https://github.com/learning-zone/javascript-basics" 
     target="_blank" rel="noopener noreferrer">
-	JavaScript Basics</a></li>
+    JavaScript Basics</a></li>
 </ul>
 <br/>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -89,9 +89,9 @@
     <li>Introduction</li>
   </ol>
 </h2>
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h2>Q. What is difference between HTML and XHTML?</h2>
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p>The Extensible Hypertext Markup Language, or XHTML, has two important notes for front 
 end developers.</p>
 <ol type="1">
@@ -249,13 +249,11 @@ suggestions with the mouse.</p>
 <p>Indicates a numeric value that falls within a range. The tag supports a number of attributes 
 values: If you don't specify a value, the first numeric value inside the &lt;meter&gt;&lt;/meter&gt; 
 pair becomes the value.</p>
-
 <p>The HTML <mark>&lt;meter&gt;</mark> tag represents a scalar measurement within a known 
 range, or a fractional value.</p>
-Attributes can be added to an HTML element to provide more information about how the 
-element should appear or behave.
-
-The &lt;meter&gt; element accepts the following 6 attributes.
+<p>Attributes can be added to an HTML element to provide more information about how the 
+element should appear or behave.</p>
+<p>The &lt;meter&gt; element accepts the following 6 attributes.</p>
 <table>
   <thead>
     <tr>
@@ -266,15 +264,15 @@ The &lt;meter&gt; element accepts the following 6 attributes.
   <tbody>
     <tr>
       <td>value</td>
-	  <td>Specifies the "measured" value.</td>
-	</tr>
-	<tr>
+      <td>Specifies the "measured" value.</td>
+    </tr>
+    <tr>
       <td>min</td>
-	  <td>Specifies the lower bound of the range. Default is 0.</td>
-3. low	Specifies the range that is considered to be a "low" value.
-4. high	Specifies the range that is considered to be a "high" value.
-5. max	Specifies the upper bound of the range. Default is 1.
-6. optimum	Specifies the value that is considered to be the "optimum", or best, value. If this value is higher than the "high" value then it indicates that the higher the value, the better. If it's lower than the "low" mark then it indicates that lower values are better. If it is in between then it indicates that neither high nor low values are good.
+      <td>Specifies the lower bound of the range. Default is 0.</td>
+3. low    Specifies the range that is considered to be a "low" value.
+4. high    Specifies the range that is considered to be a "high" value.
+5. max    Specifies the upper bound of the range. Default is 1.
+6. optimum    Specifies the value that is considered to be the "optimum", or best, value. If this value is higher than the "high" value then it indicates that the higher the value, the better. If it's lower than the "low" mark then it indicates that lower values are better. If it is in between then it indicates that neither high nor low values are good.
 
 <ul>
   <li><b>max</b>: The maximum possible value of the item.</li>
@@ -313,14 +311,14 @@ The &lt;meter&gt; element accepts the following 6 attributes.
 to be modified through JavaScript code.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <pre>
-<p>Progress: <progress id="bar" value="0" max="100"><span>0</span>%</progress></p>
+&lt;p&gt;Progress: <progress id="bar" value="0" max="100"&gt;&lt;span&gt;0&lt;/span&gt;%&lt;/progress&gt;&lt;/p&gt;
 
-<script type="text/javascript">
+&lt;script type="text/javascript"&gt;
   var i = 0;
   var progressBar = document.getElementById("bar");
 
   function countNumbers() {
-    if(i < 100) {
+    if(i &lt; 100) {
       i = i + 1;
       progressBar.value = i;
       // For browsers that don't support progress tag
@@ -331,7 +329,7 @@ to be modified through JavaScript code.</p>
     setTimeout("countNumbers()", 100);
   }
   countNumbers();
-</script>
+&lt;/script&gt;
 </pre>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3 id="new-form-elements">List New form elements introduced in html5</h3>
@@ -419,25 +417,25 @@ to be modified through JavaScript code.</p>
 <h5>Example:</h5>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <pre>
-<input type="color" value="#b97a57">
-<input type="date" value="2020-06-08">
-<input type="datetime" value="2020-06-09T20:35:34.32">
-<input type="datetime-local" value="2020-06-09T22:41">
-<input type="email" value="robert@robertnyman.com">
-<input type="month" value="2020-06">
-<input type="number" value="4">
-<input type="range" value="15">
+&lt;input type="color" value="#b97a57"&gt;
+&lt;input type="date" value="2020-06-08"&gt;
+&lt;input type="datetime" value="2020-06-09T20:35:34.32"&gt;
+&lt;input type="datetime-local" value="2020-06-09T22:41"&gt;
+&lt;input type="email" value="robert@robertnyman.com"&gt;
+&lt;input type="month" value="2020-06"&gt;
+&lt;input type="number" value="4"&gt;
+&lt;input type="range" value="15"&gt;
 
-<!-- Note: If not set, default attribute values are min="0", max="100", step="1". -->
-<input type="search" value="[Any search text]">
-<input type="tel" value="[Any numeric value]">
+&lt;!-- Note: If not set, default attribute values are min="0", max="100", step="1". --&gt;
+&lt;input type="search" value="[Any search text]"&gt;
+&lt;input type="tel" value="[Any numeric value]"&gt;
 
-<!-- Note: Most web browsers seem to let through any value at this time. -->
-<input type="time" value="22:38">
-<input type="url" value="https://www.google.com/">
+&lt;!-- Note: Most web browsers seem to let through any value at this time. --&gt;
+&lt;input type="time" value="22:38"&gt;
+&lt;input type="url" value="https://www.google.com/"&gt;
 
-<!-- Note: requires a protocol like http://, ftp:// etc in the beginning. -->
-<input type="week" value="2020-W24">
+&lt;!-- Note: requires a protocol like http://, ftp:// etc in the beginning. --&gt;
+&lt;input type="week" value="2020-W24"&gt;
 </pre>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h5>Example to create a HTML form with below constraints</h5>
@@ -450,13 +448,13 @@ to be modified through JavaScript code.</p>
 </ul>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <pre>
-<!DOCTYPE html>
-<html>
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <style>
+&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+&lt;head&gt;
+  &lt;meta charset="UTF-8"&gt;
+  &lt;meta http-equiv="X-UA-Compatible" content="IE=edge"&gt;
+  &lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;
+  &lt;style&gt;
     body {font-family: Arial, Helvetica, sans-serif;}
     * {box-sizing: border-box;}
 
@@ -489,9 +487,9 @@ to be modified through JavaScript code.</p>
       background-color: #f2f2f2;
       padding: 20px;
     }
-  </style>
-</head>
-<body>
+  &lt;/style&gt;
+&lt;/head&gt;
+&lt;body&gt;
 </pre>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3>Contact Form</h3>
@@ -565,7 +563,7 @@ to be modified through JavaScript code.</p>
     content.</li>
 </ul>
 <pre>
-<div>Demo Text, with <span>some other</span> text.</div>
+&lt;div&gt;Demo Text, with &lt;span&gt;some other&lt;/span&gt; text.&lt;/div&gt;
 </pre>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h2>Q. What are optional closing tags?</h2>
@@ -582,9 +580,9 @@ to have specific closing tags are called “self closing” tags.</p>
 (&lt;meta&gt;). This means that the following are both acceptable:</p>
 
 <pre>
-<meta charset="UTF-8">
+&lt;meta charset="UTF-8"&gt;
 ...
-<meta charset="UTF-8" />
+&lt;meta charset="UTF-8" /&gt;
 </pre>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h2>Q. Explain the difference between block elements and inline elements?</h2>
@@ -612,11 +610,11 @@ to have specific closing tags are called “self closing” tags.</p>
 The main content area consists of content that is directly related to or expands upon the central 
 topic of a document, or the central functionality of an application.</p>
 <pre>
-<main role="main">
-  <p>Geckos are a group of usually small, usually nocturnal lizards. 
-    They are found on every continent except Australia.</p>
-  <p>Many species of gecko have adhesive toe pads which enable them to climb walls and even windows.</p>
-</main>
+&gt;main role="main"&gt;
+  &gt;p&gt;Geckos are a group of usually small, usually nocturnal lizards. 
+    They are found on every continent except Australia.&gt;/p&gt;
+  &gt;p&gt;Many species of gecko have adhesive toe pads which enable them to climb walls and even windows.&gt;/p&gt;
+&gt;/main&gt;
 </pre>
 <p><i>Note: A document mustn't have more than one &lt;main&gt; element that doesn’t have the hidden 
 attribute specified.</i></p>
@@ -833,11 +831,11 @@ can be used for styling purposes as well as to give special importance to text c
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h2>Q. What is Character Encoding?</h2>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<p>Character encoding is a method of converting bytes into characters. To
-validate or display an HTML document properly, a program must choose a
-proper character encoding. This is specified in the tag:</p>
+<p>Character encoding is a method of converting bytes into characters. To validate or 
+display an HTML document properly, a program must choose a proper character encoding. 
+This is specified in the tag:</p>
 <pre>
-<meta charset="utf-8"/>
+&lt;meta charset="utf-8"/&gt;
 </pre>
 <ul>
   <li><b><mark>UTF-8</mark></b>: A Unicode Translation Format that comes in 
@@ -851,57 +849,57 @@ proper character encoding. This is specified in the tag:</p>
 properties of the HTML document, such as author, expiry date, a list of
 keywords, document author etc.</p>
 <pre>
-<!DOCTYPE html>
-<html>
-  <head>
-    <!--Recommended Meta Tags-->
-    <meta charset="utf-8">
-    <meta name="language" content="english"> 
-    <meta http-equiv="content-type" content="text/html">
-    <meta name="author" content="Author Name">
-    <meta name="designer" content="Designer Name">
-    <meta name="publisher" content="Publisher Name">
-    <meta name="no-email-collection" content="name@email.com">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+  &lt;head&gt;
+    &lt;!--Recommended Meta Tags--&gt;
+    &lt;meta charset="utf-8"&gt;
+    &lt;meta name="language" content="english"&gt; 
+    &lt;meta http-equiv="content-type" content="text/html"&gt;
+    &lt;meta name="author" content="Author Name"&gt;
+    &lt;meta name="designer" content="Designer Name"&gt;
+    &lt;meta name="publisher" content="Publisher Name"&gt;
+    &lt;meta name="no-email-collection" content="name@email.com"&gt;
+    &lt;meta http-equiv="X-UA-Compatible" content="IE=edge"/&gt;
 
-    <!--Search Engine Optimization Meta Tags-->
-    <meta name="description" content="Project Description">
-    <meta name="keywords" content="Software Engineer,Product Manager,Project Manager,Data Scientist">
-    <meta name="robots" content="index,follow">
-    <meta name="revisit-after" content="7 days">
-    <meta name="distribution" content="web">
-    <meta name="robots" content="noodp">
+    &lt;!--Search Engine Optimization Meta Tags--&gt;
+    &lt;meta name="description" content="Project Description"&gt;
+    &lt;meta name="keywords" content="Software Engineer,Product Manager,Project Manager,Data Scientist"&gt;
+    &lt;meta name="robots" content="index,follow"&gt;
+    &lt;meta name="revisit-after" content="7 days"&gt;
+    &lt;meta name="distribution" content="web"&gt;
+    &lt;meta name="robots" content="noodp"&gt;
         
-    <!--Optional Meta Tags-->
-    <meta name="distribution" content="web">
-    <meta name="web_author" content="">
-    <meta name="rating" content="">
-    <meta name="subject" content="Personal">
-    <meta name="title" content=" - Official Website.">
-    <meta name="copyright" content="Copyright 2020">
-    <meta name="reply-to" content="">
-    <meta name="abstract" content="">
-    <meta name="city" content="Bangalore">
-    <meta name="country" content="INDIA">
-    <meta name="distribution" content="">
-    <meta name="classification" content="">
+    &lt;!--Optional Meta Tags--&gt;
+    &lt;meta name="distribution" content="web"&gt;
+    &lt;meta name="web_author" content=""&gt;
+    &lt;meta name="rating" content=""&gt;
+    &lt;meta name="subject" content="Personal"&gt;
+    &lt;meta name="title" content=" - Official Website."&gt;
+    &lt;meta name="copyright" content="Copyright 2020"&gt;
+    &lt;meta name="reply-to" content=""&gt;
+    &lt;meta name="abstract" content=""&gt;
+    &lt;meta name="city" content="Bangalore"&gt;
+    &lt;meta name="country" content="INDIA"&gt;
+    &lt;meta name="distribution" content=""&gt;
+    &lt;meta name="classification" content=""&gt;
     
-    <!--Meta Tags for HTML pages on Mobile-->
-    <meta name="format-detection" content="telephone=yes"/>
-    <meta name="HandheldFriendly" content="true"/> 
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"/> 
-    <meta name="apple-mobile-web-app-capable" content="yes" />
+    &lt;!--Meta Tags for HTML pages on Mobile--&gt;
+    &lt;meta name="format-detection" content="telephone=yes"/&gt;
+    &lt;meta name="HandheldFriendly" content="true"/&gt; 
+    &lt;meta name="viewport" content="width=device-width, initial-scale=1.0"/&gt; 
+    &lt;meta name="apple-mobile-web-app-capable" content="yes" /&gt;
         
-    <!--http-equiv Tags-->
-    <meta http-equiv="Content-Style-Type" content="text/css">
-    <meta http-equiv="Content-Script-Type" content="text/javascript">
+    &lt;!--http-equiv Tags--&gt;
+    &lt;meta http-equiv="Content-Style-Type" content="text/css"&gt;
+    &lt;meta http-equiv="Content-Script-Type" content="text/javascript"&gt;
       
-    <title>HTML5 Meta Tags</title>
-  </head>
-  <body>
+    &lt;title&gt;HTML5 Meta Tags&lt;/title&gt;
+  &lt;/head&gt;
+  &lt;body&gt;
        ...
-  </body>
-</html>
+  &lt;/body&gt;
+&lt;/html&gt;
 </pre>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h2>Q. What does <mark><b>async</b></mark> and <mark><b>defer</b></mark> refer in script tag?</h2>
@@ -933,8 +931,8 @@ it when it has finished downloading.</p>
   </ol>
 </h4>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<p>Defer downloads the script file during HTML parsing and will only execute it after 
-the HTML parser has completed. Not all browsers support this.</p>
+<p>Defer downloads the script file during HTML parsing and will only execute it after the 
+HTML parser has completed. Not all browsers support this.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h5>Example:</h5>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -945,13 +943,12 @@ the HTML parser has completed. Not all browsers support this.</p>
 -->
 <script defer src="myscript.js"></script>
 </pre>
-<p>The async attribute is used to indicate to the browser that the script
-file can be executed asynchronously. The HTML parser does not need to
-pause at the point it reaches the script tag to fetch and execute, the
-execution can happen whenever the script becomes ready after being
+<p>The async attribute is used to indicate to the browser that the script file can be executed 
+asynchronously. The HTML parser does not need to pause at the point it reaches the script tag 
+to fetch and execute, the execution can happen whenever the script becomes ready after being
 fetched in parallel with the document parsing.</p>
-<p>The defer attribute tells the browser to only execute the script file
-once the HTML document has been fully parsed.</p>
+<p>The defer attribute tells the browser to only execute the script file once the HTML 
+document has been fully parsed.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h5>Example:</h5>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -965,9 +962,9 @@ once the HTML document has been fully parsed.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h2>Q. What is <mark><b>localStorage</b></mark> in html5?</h2>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<p>The <mark><b>localStorage</b></mark> read-only property of the window
-interface allows you to access a Storage object for the Document's
-origin; the stored data is saved across browser sessions.</p>
+<p>The <mark><b>localStorage</b></mark> read-only property of the window interface allows 
+you to access a Storage object for the Document's origin; the stored data is saved across 
+browser sessions.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h5>Example:</h5>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -1100,13 +1097,12 @@ and <b><mark>localStorage</mark></b>?</h2>
     </tbody>
   </table>
 </div>
-<p><i>Note: If the user decides to clear browsing data via whatever
-mechanism provided by the browser, this will clear out any
-<mark><b>cookie</b></mark>, <mark><b>localStorage</b></mark>, or
-<mark><b>sessionStorage</b></mark> stored. It's important to keep this
-in mind when designing for local persistance, especially when comparing
-to alternatives such as server side storing in a database or similar
-(which of course will persist despite user actions).</i></p>
+<p><i>Note: If the user decides to clear browsing data via whatever mechanism provided by 
+the browser, this will clear out any <mark><b>cookie</b></mark>, <mark><b>localStorage</b>
+</mark>, or <mark><b>sessionStorage</b></mark> stored. It's important to keep this in 
+mind when designing for local persistance, especially when comparing to alternatives such 
+as server side storing in a database or similar (which of course will persist despite user 
+actions).</i></p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h2>Q. Does localStorage throw error after reaches maximum limits?</h2>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -1158,10 +1154,9 @@ Exception: QuotaExceededError: Failed to execute 'setItem' on 'Storage':
   </ol>
 </h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<p>It is an API that is only supported in Chrome and Safari (and Android
-and iOS by extension). It provides an asynchronous, transactional
-interface to <mark>SQLite</mark>. Since 2010, it has been deprecated in
-favor of <mark><b>IndexedDB</b></mark>.</p>
+<p>It is an API that is only supported in Chrome and Safari (and Android and iOS by 
+extension). It provides an asynchronous, transactional interface to <mark>SQLite</mark>. 
+Since 2010, it has been deprecated in favor of <mark><b>IndexedDB</b></mark>.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h4>Advantages</h4>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -1192,11 +1187,10 @@ favor of <mark><b>IndexedDB</b></mark>.</p>
   </ol>
 </h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<p>It is the successor to both <b>LocalStorage</b> and <b>WebSQL</b>,
-designed to replace them as the “one true” browser database. It exposes
-an asynchronous API that supposedly avoids blocking the DOM, but as
-we'll see below, it doesn't necessarily live up to the hype. Browser
-support is extremely spotty, with only Chrome and Firefox having fully
+<p>It is the successor to both <b>LocalStorage</b> and <b>WebSQL</b>, designed to replace 
+them as the “one true” browser database. It exposes an asynchronous API that supposedly 
+avoids blocking the DOM, but as we'll see below, it doesn't necessarily live up to the 
+hype. Browser support is extremely spotty, with only Chrome and Firefox having fully
 usable implementations.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h4>Advantages</h4>
@@ -1219,12 +1213,11 @@ usable implementations.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h2>Q. Explain Application Cache in HTML5. OR What is a manifest file in HTML?</h2>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<p>HTML5 provides an application caching mechanism that lets web-based
-applications run offline. Developers can use the Application Cache
-(AppCache) interface to specify resources that the browser should cache
-and make available to offline users. Applications that are cached load
-and work correctly even if users click the refresh button when they are
-offline.</p>
+<p>HTML5 provides an application caching mechanism that lets web-based applications run 
+offline. Developers can use the Application Cache (AppCache) interface to specify 
+resources that the browser should cache and make available to offline users. 
+Applications that are cached load and work correctly even if users click the refresh 
+button when they are offline.</p>
 <p>Using an application cache gives an application the following benefits:</p>
 <ul>
   <li><b><mark>Offline browsing</mark></b>: users can navigate a site even when they are 
@@ -1316,19 +1309,18 @@ Try this example on CodeSandbox</a></b></p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h2>Q. What is the purpose of the <mark>alt</mark> attribute on images?</h2>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<p>The <b><mark>alt</mark></b> attribute provides alternative information
-for an image if a user cannot view it.</p>
-<p>The <b><mark>alt</mark></b> attribute should be used to describe any
-images except those which only serve a decorative purposes, in which
-case it should be left empty.</p>
+<p>The <b><mark>alt</mark></b> attribute provides alternative information for an image if 
+a user cannot view it.</p>
+<p>The <b><mark>alt</mark></b> attribute should be used to describe any images except 
+those which only serve a decorative purposes, in which case it should be left empty.</p>
 <pre>
 &lt;img src="pancakes.png" alt="Stack of blueberry pancakes with powdered sugar"&gt;
 </pre>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h2>Q. What does </mark>enctype=‘multipart/form-data’</mark> mean?</h2>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<p>The enctype attribute specifies how the form-data should be encoded
-when submitting it to the server.</p>
+<p>The enctype attribute specifies how the form-data should be encoded when submitting it 
+to the server.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h5>Example: 01</h5>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -1382,7 +1374,7 @@ when submitting it to the server.</p>
         <td>02.</td>
         <td>multipart/form-data</td>
         <td>No characters are encoded. This value is required when you are using forms 
-          that have a file upload control.</td>
+		  that have a file upload control.</td>
       </tr>
       <tr>
         <td>03.</td>
@@ -1451,10 +1443,9 @@ concept is:</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h2>Q. What does CORS stand for and what issue does it address?</h2>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<p>Cross-Origin Resource Sharing (CORS) is a W3C spec that allows
-cross-domain communication from the browser. By building on top of the
-XMLHttpRequest object, CORS allows developers to work with the same
-idioms as same-domain requests. CORS gives web servers cross-domain
+<p>Cross-Origin Resource Sharing (CORS) is a W3C spec that allows cross-domain communication 
+from the browser. By building on top of the XMLHttpRequest object, CORS allows developers 
+to work with the same idioms as same-domain requests. CORS gives web servers cross-domain 
 access controls, which enable secure cross-domain data transfers.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h2>Q. Can you describe the difference between progressive enhancement and graceful degradation?</h2>
@@ -1472,19 +1463,18 @@ access controls, which enable secure cross-domain data transfers.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h2>Q. What is the DOM? How does the DOM work?</h2>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<p>The DOM (Document Object Model) is a cross-platform API that treats HTML
-documents as a tree structure consisting of nodes. These nodes (such as
-elements and text nodes) are objects that can be programmatically
-manipulated and any visible changes made to them are reflected live in
-the document. In a browser, this API is available to JavaScript where
-DOM nodes can be manipulated to change their styles, contents, placement
-in the document, or interacted with through event listeners.</p>
+<p>The DOM (Document Object Model) is a cross-platform API that treats HTML documents as 
+a tree structure consisting of nodes. These nodes (such as elements and text nodes) are 
+objects that can be programmatically manipulated and any visible changes made to them are 
+reflected live in the document. In a browser, this API is available to JavaScript where
+DOM nodes can be manipulated to change their styles, contents, placement in the document, 
+or interacted with through event listeners.</p>
 <ul>
   <li>The DOM was designed to be independent of any particular programming language, 
     making the structural representation of the document available from a single, 
-	consistent API.</li>
-  <li>document.getElementById() and document.querySelector() are common functions 
-    for selecting DOM nodes.</li>
+    consistent API.</li>
+  <li>document.getElementById() and document.querySelector() are common functions for 
+    selecting DOM nodes.</li>
   <li>Setting the innerHTML property to a new value runs the string through the HTML 
     parser, offering an easy way to append dynamic HTML content to a node.</li>
 </ul>
@@ -1505,14 +1495,12 @@ in the document, or interacted with through event listeners.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h2>Q. What is the difference between standards mode and quirks mode?</h2>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<p>In <b>Quirks mode</b>, layout emulates nonstandard behavior in Navigator
-4 and Internet Explorer 5. This is essential in order to support
-websites that were built before the widespread adoption of web
-standards. In <b>Standards mode</b>, the behavior is described by the
-HTML and CSS specifications.</p>
-<p>For HTML documents, browsers use a &lt;!DOCTYPE html&gt; in the
-beginning of the document to decide whether to handle it in quirks mode
-or standards mode.</p>
+<p>In <b>Quirks mode</b>, layout emulates nonstandard behavior in Navigator 4 and 
+Internet Explorer 5. This is essential in order to support websites that were built 
+before the widespread adoption of web standards. In <b>Standards mode</b>, the 
+behavior is described by the HTML and CSS specifications.</p>
+<p>For HTML documents, browsers use a &lt;!DOCTYPE html&gt; in the beginning of the 
+document to decide whether to handle it in quirks mode or standards mode.</p>
 
 <pre>
 &lt;!DOCTYPE html&gt;
@@ -1630,17 +1618,17 @@ or standards mode.</p>
   <li><b><mark>Add an Expires or a Cache-Control Header</mark></b>
     <ul>
       <li>Web page designs are getting richer and richer, which means more scripts, 
-	    stylesheets, images, and Flash in the page. A first-time visitor to your page 
-		may have to make several HTTP requests, but by using the Expires header you make 
-		those components cacheable. This avoids unnecessary HTTP requests on subsequent 
-		page views. Expires headers are most often used with images, but they should be 
-		used on all components including scripts, stylesheets, and Flash components.</li>
+        stylesheets, images, and Flash in the page. A first-time visitor to your page 
+        may have to make several HTTP requests, but by using the Expires header you make 
+        those components cacheable. This avoids unnecessary HTTP requests on subsequent 
+        page views. Expires headers are most often used with images, but they should be 
+        used on all components including scripts, stylesheets, and Flash components.</li>
     </ul>
   </li>
   <li><b><mark>Gzip Components</mark></b>
     <ul>
       <li>Compression reduces response times by reducing the size of the HTTP response. 
-	    Gzipping generally reduces the response size by about 70%.</li>
+        Gzipping generally reduces the response size by about 70%.</li>
     </ul>
   </li>
   <li><b><mark>Put Stylesheets at the Top:</mark></b>
@@ -1652,18 +1640,18 @@ or standards mode.</p>
   <li><b><mark>Use GET for AJAX Requests:</mark></b>
     <ul>
       <li>Ajax is that it provides instantaneous feedback to the user because it requests 
-	    information asynchronously from the backend web server</li>
+        information asynchronously from the backend web server</li>
     </ul>
   </li>
   <li><b><mark>Make JavaScript and CSS External:</mark></b>
     <ul>
       <li>Using external files in the real world generally produces faster pages because the 
-	    JavaScript and CSS files are cached by the browser. JavaScript and CSS that are inlined 
-		in HTML documents get downloaded every time the HTML document is requested. This reduces 
-		the number of HTTP requests that are needed, but increases the size of the HTML
+        JavaScript and CSS files are cached by the browser. JavaScript and CSS that are inlined 
+        in HTML documents get downloaded every time the HTML document is requested. This reduces 
+        the number of HTTP requests that are needed, but increases the size of the HTML
         document. On the other hand, if the JavaScript and CSS are in external files cached by 
-		the browser, the size of the HTML document is reduced without increasing the number of 
-		HTTP requests.</li>
+        the browser, the size of the HTML document is reduced without increasing the number of 
+        HTTP requests.</li>
     </ul>
   </li>
   <li><b><mark>Use get to ajax request:</mark></b>
@@ -1676,16 +1664,16 @@ or standards mode.</p>
   <li><b><mark>No 404s:</mark></b>
     <ul>
       <li>HTTP requests are expensive so making an HTTP request and getting a useless 
-	    response (i.e. 404 Not Found) is totally unnecessary and will slow down the user 
-		experience without any benefit.</li>
+        response (i.e. 404 Not Found) is totally unnecessary and will slow down the user 
+        experience without any benefit.</li>
     </ul>
   </li>
   <li><b><mark>Reduce Cookie Size:</mark></b>
     <ul>
       <li>HTTP cookies are used for a variety of reasons such as authentication and 
-	    personalization. Information about cookies is exchanged in the HTTP headers 
-		between web servers and browsers. It’s important to keep the size of cookies as 
-		low as possible to minimize the impact on the user’s response time.</li>
+        personalization. Information about cookies is exchanged in the HTTP headers 
+        between web servers and browsers. It’s important to keep the size of cookies as 
+        low as possible to minimize the impact on the user’s response time.</li>
     </ul>
   </li>
   <li><b><mark>Reduce DNS Lookups</mark></b>
@@ -1736,7 +1724,7 @@ or standards mode.</p>
   </li>
   <li>Safari:
     <ul>
-	  <li>Layout rendering engine <b>Webkit</b>.</li>
+      <li>Layout rendering engine <b>Webkit</b>.</li>
       <li>JavaScript engine JavascriptCore i.e <b>Nitro</b></li>
     </ul>
   </li>
@@ -1754,10 +1742,10 @@ or standards mode.</p>
 <ul>
   <li>Desktop first :<br> General selectors and styles designed to make the site look 
     good on DESKTOP screens defined globally. But they affect all devices, and must be 
-	overridden by max-width media queries targeting minimum screen size.</li>
+    overridden by max-width media queries targeting minimum screen size.</li>
   <li>Mobile First :<br> General selectors and styles designed to make the site look good 
     on small MOBILE screens go here. But they affect all devices, and must be overridden 
-	by min-width media queries targeting maximum screen size.</li>
+    by min-width media queries targeting maximum screen size.</li>
 </ul>
 <p>In desktop first approach the media queries will be written with respect to max-width 
 whereas in mobile first approach media queries will be written with respect to min-width.</p>
@@ -2538,7 +2526,7 @@ Clears the specified pixels within a given rectangle.
       <tr>
         <td><b><mark>lineTo()</mark></b></td>
         <td>Adds a new point and creates a line to that point from the last specified 
-		  point in the canvas.</td>
+          point in the canvas.</td>
       </tr>
       <tr>
         <td><b><mark>clip()</mark></b></td>
@@ -3227,7 +3215,7 @@ function is better handled by CSS.</p>
     <tr class="odd">
       <td>align</td>
       <td>caption, iframe, img, input, object, legend, table, hr, div, h1, h2,
-	    h3, h4, h5, h6, p, col, colgroup, tbody, td, tfoot, th, thead and tr.</td>
+        h3, h4, h5, h6, p, col, colgroup, tbody, td, tfoot, th, thead and tr.</td>
     </tr>
     <tr class="even">
       <td>alink</td>
@@ -3589,18 +3577,17 @@ increased memory and other computing resources.</i></p>
   </ol>
 </h4>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<p>When <mark><b>rel=“nofollow”</b></mark> tag is used, it instruct the
-search engines not to pass any PageRank from one page to the other. It
-does not allow it to pass the authority to the specific website. The
-main advantage of using this attribute is to control the spam attack.</p>
-<p>There may be times, when you do not have control over what people
-publish on your websites, for example some blog comments and some kind
-of forum posting.</p>
+<p>When <mark><b>rel=“nofollow”</b></mark> tag is used, it instruct the search engines 
+not to pass any PageRank from one page to the other. It does not allow it to pass the 
+authority to the specific website. The main advantage of using this attribute is to 
+control the spam attack.</p>
+<p>There may be times, when you do not have control over what people publish on your 
+websites, for example some blog comments and some kind of forum posting.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h5>Example:</h5>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <pre>
-<a href="https://www.website.com" rel="nofollow">Link to yoursite.com</a>
+&lt;a href="https://www.website.com" rel="nofollow"&gt;Link to yoursite.com&lt;/a&gt;
 </pre>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h4>
@@ -3616,7 +3603,7 @@ preventing other pages from seeing that traffic came from a click on your link.<
 <h5>Example:</h5>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <pre>
-<a href="https://www.website.com" rel="noreferrer">Link to yoursite.com</a>
+&lt;a href="https://www.website.com" rel="noreferrer"&gt;Link to yoursite.com&lt;/a&gt;
 </pre>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h4>
@@ -3625,44 +3612,48 @@ preventing other pages from seeing that traffic came from a click on your link.<
   </ol>
 </h4>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<p>It prevents the new page from being able to access the
-<mark><b>window.opener</b></mark> property and will make it run in a
-separate process. noopener tag works as a security fix which prevents
-malicious links to take control over an opened tab.</p>
+<p>It prevents the new page from being able to access the <mark><b>window.opener</b></mark> 
+property and will make it run in a separate process. noopener tag works as a security fix 
+which prevents malicious links to take control over an opened tab.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h5>Example:</h5>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <pre>
-
+&lt;a href="https://www.website.com" target="_blank" rel="noopener"&gt;Link to yoursite.com&lt;/a&gt;
 </pre>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h2>Q. How can you highlight text in HTML?</h2>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<p>
-The &lt;mark&gt; HTML element represents text which is marked or
-highlighted for reference or notation purposes, due to the marked
-passage's relevance or importance in the enclosing context.
-</p>
+<p>The &lt;mark&gt; HTML element represents text which is marked or highlighted for reference 
+or notation purposes, due to the marked passage's relevance or importance in the enclosing 
+context.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h5>Example:</h5>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <pre>
-
+&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+  &lt;head&gt;
+    &lt;title&gt;Highlight text in HTML&lt;/title&gt;
+  &lt;/head&gt;
+  &lt;body&gt;
+    &lt;p&gt;Search results for "salamander":&lt;/p&gt;
+    &lt;hr&gt;
+    &lt;p&gt;Several species of &lt;mark&gt;salamander&lt;/mark&gt; inhabit the temperate rainforest of the Pacific Northwest.&lt;/p&gt;
+    &lt;p&gt;Most &lt;mark&gt;salamander&lt;/mark&gt;s are nocturnal, and hunt for insects, worms, and other small creatures.&lt;/p&gt;
+  &lt;/body&gt;
+&lt;/html&gt;
 </pre>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h2>Q. How can I get indexed better by search engines?</h2>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<p>
-HTML tags are used to influence the way our pages appear in search
+<p>HTML tags are used to influence the way our pages appear in search
 results. With the help of certain tags, we can turn regular search
 snippets into rich snippets, and maybe even into featured snippets. And,
 as our search snippets get more advanced, they are able to secure better
 <b>Search Engine Results Pages (SERP)</b> positions and attract more
-traffic.
-</p>
-<p>
-Here are all the HTML tags that still matter:
-</p>
+traffic.</p>
+<p>Here are all the HTML tags that still matter:</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h2 id="2-html-tags">
   <ol start="2" type="1">
@@ -3681,7 +3672,7 @@ and display it in SERP. As a rule of thumb, titles that are under 60
 characters long will fit on most screens. In HTML, a title tag looks like this:</p>
 
 <pre>
-
+&lt;title&gt;Your Title Goes Here&lt;/title&gt;
 </pre>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h5>
@@ -3696,7 +3687,7 @@ title. It provides a little more detail about your page and it helps
 users decide whether to visit your page or not. In HTML, a meta
 description tag looks like this:</p>
 <pre>
-
+&lt;meta name="description" content="Your description goes here"&gt;
 </pre>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h5>
@@ -3710,7 +3701,7 @@ Each heading is like a small title within the page. In HTML, a heading
 looks like this:</p>
 
 <pre>
-
+&lt;h1&gt;Your heading goes here&lt;/h1&gt;
 </pre>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h5>
@@ -3728,7 +3719,7 @@ loaded or by helping screen readers convey images). In HTML it may look
 like this:</p>
 
 <pre>
-
+&lt;img src="url" alt="Your image description goes here"&gt;
 </pre>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h5>
@@ -3744,7 +3735,7 @@ possibility may help you enhance the performance of your links on social media, 
 driving more click-throughs and increasing conversions. In HTML, it can look like this:</p>
 
 <pre>
-
+&lt;meta name="og:title" property="og:title" content="Your Open Graph Title Goes Here"&gt;
 </pre>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h5>
@@ -3759,7 +3750,7 @@ robots.txt, but robots.txt gives suggestions. Whereas robots tags give instructi
 HTML, it can look like this:</p>
 
 <pre>
-
+&lt;meta name="robots" content="index, follow"&gt;
 </pre>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h5>
@@ -3775,7 +3766,7 @@ tells search engines which version of a URL you want to appear in search results
 HTML, it may look like this:</p>
 
 <pre>
-
+&lt;link href="URL" rel="canonical"&gt;
 </pre>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h5>
@@ -3789,10 +3780,11 @@ to syntax that makes the HTML more comprehensible by better defining the differe
 and layout of web pages. It makes web pages more informative and adaptable, allowing browsers 
 and search engines to better interpret content. For example, instead of using &lt;div 
 id=“header”&gt;&lt;/div&gt; you can use a &lt;header&gt;&lt;/hrader&gt; tag.</p>
-
-<p align="center">
-<img src="assets/images/semantic-tags.png" alt="HTML5 semantic tags" width="300px" />
-</p>
+<pre>
+&lt;p align="center"&gt;
+  &lt;img src="assets/images/semantic-tags.png" alt="HTML5 semantic tags" width="300px" /&gt;
+&lt;/p&gt;
+</pre>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h2>Q. What is the difference between an “attribute” and a “property” in HTML?</h2>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -3802,7 +3794,7 @@ accessed from <mark><b>DOM (Document Object Model)</b></mark> nodes.</p>
 <h5>Example:</h5>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <pre>
-
+&lt;input id="inputId" type="text" value="Hello World!" /&gt;
 </pre>
 
 <p>The <b>value</b> property reflects the current text-content inside the input box, 
@@ -3845,7 +3837,15 @@ used by Internet Explorer 8 to specify whether a page should be rendered
 as IE 7 (compatibility view) or IE 8 (standards view).</p>
 
 <pre>
-
+&lt;html&gt;
+  &lt;head&gt;
+    &lt;meta http-equiv="X-UA-Compatible" content="IE=edge" /&gt;
+    &lt;title&gt;My Web Page&lt;/title&gt;
+  &lt;/head&gt;
+  &lt;body&gt;
+    &lt;p&gt;Content goes here.&lt;/p&gt;
+  &lt;/body&gt;
+&lt;/html&gt;
 </pre>
 
 <p>Emulating the version tells the browser to use the DOCTYPE to determine how to render 
@@ -3914,17 +3914,17 @@ page content in future versions of Windows Internet Explorer.</i></p>
     <tr class="odd">
       <td><b>&lt;area&gt;</b></td>
       <td>The &lt;area&gt; tag defines an area inside an image map (an image map is an 
-	    image with clickable areas)</td>
+        image with clickable areas)</td>
     </tr>
     <tr class="even">
       <td><b>&lt;base&gt;</b></td>
       <td>The &lt;base&gt; tag specifies the base URL and/or target for all relative URLs 
-	    in a document.</td>
+        in a document.</td>
     </tr>
     <tr class="odd">
       <td><b>&lt;body&gt;</b></td>
       <td>The &lt;body&gt; tag in HTML is used to define the main content present inside an 
-	    HTML page.</td>
+        HTML page.</td>
     </tr>
     <tr class="even">
       <td><b>&lt;br&gt;</b></td>
@@ -3933,13 +3933,13 @@ page content in future versions of Windows Internet Explorer.</i></p>
     <tr class="odd">
       <td><b>&lt;caption&gt;</b></td>
       <td>The &lt;caption&gt; tag in HTML is used to provide a title or description for a 
-	    &lt;table&gt; element.</td>
+        &lt;table&gt; element.</td>
     </tr>
     <tr class="even">
       <td><b>&lt;col&gt;</b></td>
       <td>The &lt;col&gt; tag defines attributes for table columns within the &lt;colgroup&gt; 
-	    element, allowing styling and formatting of columns, such as width, alignment, and 
-		background color.</td>
+        element, allowing styling and formatting of columns, such as width, alignment, and 
+        background color.</td>
     </tr>
     <tr class="odd">
       <td><b>&lt;colgroup&gt;</b></td>
@@ -3948,8 +3948,8 @@ page content in future versions of Windows Internet Explorer.</i></p>
     <tr class="even">
       <td><b>&lt;dd&gt;</b></td>
       <td>The &lt;dd&gt; tag in HTML is used to define a description or value in a 
-	    description list, which is created using the &lt;dl&gt; (description list) 
-		tag.</td>
+        description list, which is created using the &lt;dl&gt; (description list) 
+        tag.</td>
     </tr>
     <tr class="odd">
       <td><b>&lt;dt&gt;</b></td>
@@ -3958,22 +3958,22 @@ page content in future versions of Windows Internet Explorer.</i></p>
     <tr class="even">
       <td><b>&lt;embed&gt;</b></td>
       <td>The &lt;embed&gt; tag defines a container for an external resource, such as a 
-	    web page, a picture, a media player, or a plug-in application.</td>
+        web page, a picture, a media player, or a plug-in application.</td>
     </tr>
     <tr class="odd">
       <td><b>&lt;head&gt;</b></td>
       <td>The &lt;head&gt; tag in HTML is an essential element used to define the head 
-	    section of an HTML document.</td>
-	</tr>
+        section of an HTML document.</td>
+    </tr>
     <tr class="even">
       <td><b>&lt;hr&gt;</b></td>
       <td>The &lt;hr&gt; tag in HTML is used to create a horizontal rule or line that 
-	    visually separates content.</td>
+        visually separates content.</td>
     </tr>
     <tr class="odd">
       <td><b>&lt;html&gt;</b></td>
       <td>The &lt;html&gt; tag is the root element of an HTML document. It encapsulates 
-	    the entire content of the page.</td>
+        the entire content of the page.</td>
     </tr>
     <tr class="even">
       <td><b>&lt;img&gt;</b></td>
@@ -3982,8 +3982,8 @@ page content in future versions of Windows Internet Explorer.</i></p>
     <tr class="odd">
       <td><b>&lt;input&gt;</b></td>
       <td>The &lt;input&gt; tag in HTML is used to collect user input in web forms. It 
-	    supports various input types such as text, password,checkboxes, radio buttons, 
-		and more.</td>
+        supports various input types such as text, password,checkboxes, radio buttons, 
+        and more.</td>
     </tr>
     <tr class="even">
       <td><b>&lt;li&gt;</b></td>
@@ -4094,7 +4094,11 @@ Hebrew, Pashto, Persian, Urdu, and Sindhi.</p>
 <h5>Example:</h5>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <pre>
+&lt;!-- Syntax --&gt;
+&lt;element dir="ltr|rtl|auto"&gt;
 
+&lt;!-- Example --&gt;
+&lt;textarea dir="rtl"&gt;&lt;/textarea&gt;
 </pre>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h4>Attribute Values:</h4>
@@ -4135,7 +4139,22 @@ from <mark>small</mark> to <mark>x-small</mark>.</p>
 <h5>Example:</h5>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <pre>
-
+&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+  &lt;head&gt;
+      &lt;title&gt;Small Element&lt;/title&gt;
+  &lt;/head&gt;
+  &lt;style&gt;
+    small {
+      font-size: .7em
+    }
+  &lt;/style&gt;
+  &lt;body&gt;
+    &lt;p&gt;Lorem Ipsum is simply dummy text of the printing and typesetting industry.&lt;/p&gt;
+    &lt;hr&gt;
+    &lt;p&gt;&lt;small&gt;The content is licensed under a W3C License.&lt;/small&gt;&lt;/p&gt;
+  &lt;/body&gt;
+&lt;/html&gt;
 </pre>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h2>Q. How do you serve a page with content in multiple languages?</h2>
@@ -4145,7 +4164,23 @@ from <mark>small</mark> to <mark>x-small</mark>.</p>
 <h5>Example:</h5>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <pre>
-
+&lt;!DOCTYPE html&gt;
+&lt;html lang="en"&gt;
+  &lt;head&gt;
+    &lt;meta charset="UTF-8" /&gt;
+    &lt;title&gt;HTML5 Multilanguage Page&lt;/title&gt;
+  &lt;/head&gt;
+  &lt;body&gt;
+      &lt;h2&gt;English&lt;/h2&gt;
+      &lt;p lang="en"&gt;This is demo text&lt;/p&gt;
+     
+      &lt;h2&gt;French&lt;/h2&gt;
+      &lt;p lang="fr"&gt;Ceci est un texte de démonstration&lt;/p&gt;
+     
+      &lt;h2&gt;Spanish&lt;/h2&gt;
+      &lt;p lang="es"&gt;Este es un texto de demostración&lt;/p&gt;
+  &lt;/body&gt;
+&lt;/html&gt;
 </pre>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h2>Q. What is the difference between &lt;section&gt; and &lt;div&gt;?</h2>
@@ -4163,7 +4198,29 @@ It must be an entry in the outline of the page.</p>
 <h5>Example:</h5>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <pre>
-
+&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+  &lt;head&gt;
+    &lt;title&gt;Section Tag Example&lt;/title&gt;
+  &lt;/head&gt;
+  &lt;body&gt;
+    &lt;h1&gt;W3Docs&lt;/h1&gt;
+    &lt;section&gt;
+      &lt;h2&gt;W3Docs Sections&lt;/h2&gt;
+      &lt;ul&gt;
+        &lt;li&gt;Books&lt;/li&gt;
+        &lt;li&gt;Quizzes&lt;/li&gt;
+        &lt;li&gt;Snippets&lt;/li&gt;
+      &lt;/ul&gt;
+    &lt;/section&gt;
+    &lt;section&gt;
+      &lt;h3&gt;Books&lt;/h3&gt;
+      &lt;p&gt;Learn HTML&lt;/p&gt;
+      &lt;p&gt;Learn CSS&lt;/p&gt;
+      &lt;p&gt;Learn Javascript&lt;/p&gt;
+    &lt;/section&gt;
+  &lt;/body&gt;
+&lt;/html&gt;
 </pre>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h4>The <mark><b>&lt;div&gt;</b></mark> Element</h4>
@@ -4177,7 +4234,25 @@ consecutive elements. This element can also be used in a &lt;dl&gt; tag and wrap
 <h5>Example:</h5>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <pre>
-
+&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+  &lt;head&gt;
+    &lt;title&gt;Div Tag Example&lt;/title&gt;
+    &lt;style&gt;
+      div {
+        background-color: #87f5b3
+      }
+    &lt;/style&gt;
+  &lt;/head&gt;
+  &lt;body&gt;
+    &lt;h1&gt;Example&lt;/h1&gt;
+    &lt;div&gt;
+      &lt;h2&gt;A heading in a &lt;div&gt; tag.&lt;/h2&gt;
+      &lt;p&gt;Some text in a &lt;div&gt; tag.&lt;/p&gt;
+    &lt;/div&gt;
+    &lt;p&gt;Here is some other text in a &lt;p&gt; tag.&lt;/p&gt;
+  &lt;/body&gt;
+&lt;/html&gt;
 </pre>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h2>Q. Discuss the differences between an HTML specification and a browser's implementation thereof.</h2>
@@ -4215,7 +4290,13 @@ resolution.</p>
 <h5>Syntax:</h5>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <pre>
-
+&lt;img 
+   srcset=" 
+      url size, 
+      url size, 
+      url size " 
+    src="default url" 
+&gt;
 </pre>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h4>
@@ -4230,7 +4311,10 @@ with display density it should be used, for example1x, 2x etc.</p>
 <h5>Example:</h5>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <pre>
-
+&lt;img src="image.jpg" 
+     srcset="image.jpg,
+             image_2x.jpg 2x"
+/&gt;
 </pre>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h4>
@@ -4245,7 +4329,11 @@ density values, we provide the actual width of the image.</p>
 <h5>Example:</h5>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <pre>
-
+&lt;img src="image.jpg" 
+  srcset="small.jpg 300w,
+          medium.jpg 600w,
+          large.jpg 900w"
+/&gt;
 </pre>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h2>Q. What is accessibility &amp; ARIA role means in a web application?</h2>
@@ -4292,7 +4380,7 @@ page.</p>
 <h5>Example:</h5>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <pre>
-
+  &lt;nav class='mobile-nav' role='navigation' aria-label='Mobile Menu'&gt; List of Links &lt;/nav&gt;
 </pre>
 
 <p>While seeming redundant, is actually useful for screen readers. It wouldn't read the 
@@ -4309,7 +4397,7 @@ visually impaired users, without the <mark><b>role=“navigation”</b></mark>.<
     as copyrights and links to privacy statements.</li>
   <li><b>form</b>: A region of the document that represents a collection of form-associated 
     elements, some of which can represent editable values that can be submitted to a server 
-	for processing.</li>
+    for processing.</li>
   <li><b>main</b>: Main content in a document. In almost all cases a page will have only one 
     <mark><b>role=“main”</b></mark>.</li>
   <li><b>navigation</b>: A collection of links suitable for use when navigating the document 
@@ -4367,7 +4455,7 @@ useful useful to think about including in your HTML.</p>
     mixed.</li>
   <li><b>dialog</b>: A dialog is an application window that is designed to interrupt the 
     current processing of an application in order to prompt the user to enter information 
-	or require a response.</li>
+    or require a response.</li>
   <li><b>gridcell</b>:</li>
   <li><b>link</b>:</li>
   <li><b>log</b>:</li>
@@ -4437,7 +4525,7 @@ practical for most web pages/applications.</p>
     updated, and describes the types of updates the user can expect from the live region.</li>
   <li><b>aria-owns</b>: Identifies an element (or elements) in order to define a visual, 
     functional, or contextual parent/child relationship between DOM elements where the 
-	DOM hierarchy cannot be used to represent the relationship.</li>
+    DOM hierarchy cannot be used to represent the relationship.</li>
   <li><b>aria-pressed (state)</b>: Indicates the current “pressed” state of toggle 
     buttons.</li>
   <li><b>aria-required</b>: Indicates that user input is required on the element before a 
@@ -4448,7 +4536,80 @@ practical for most web pages/applications.</p>
 <h2>Q. Create a traffic signal light in html?</h2>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <pre>
+&lt;!DOCTYPE html&gt;
+&lt;html lang="en"&gt;
+  &lt;head&gt;
+    &lt;meta charset="UTF-8"&gt;
+    &lt;title&gt;Traffic Signal
+    &lt;/title&gt;
+    &lt;style&gt;
+      #green{
+        background-color: green;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    border: 2px solid #333;
+      }
+      #yellow{
+        background-color: yellow;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    border: 2px solid #333;
+      }
+      #red{
+        background-color: red;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    border: 2px solid #333;
+      }
+    &lt;/style&gt;
+  &lt;/head&gt;
+  &lt;body onload="timer;"&gt;
+      &lt;div id="red"&gt;&lt;/div&gt;
+      &lt;div id="yellow"&gt;&lt;/div&gt;
+      &lt;div id="green"&gt;&lt;/div&gt;
+      
+    &lt;script&gt;
+      function startTrafficSignal() {
+        
+        const red = document.getElementById("red");
+        const yellow = document.getElementById("yellow");
+    const green = document.getElementById("green");
+      
+        green.style.opacity = 1;
+      
+    // Red Signal
+        setTimeout(function () {
+          green.style.opacity = 0.3;
+          red.style.opacity = 1;
+          yellow.style.opacity = 0.3;
+        }, 7000);
+        
+        // Yellow Signal
+        setTimeout(function () {
+          green.style.opacity = 1;
+          red.style.opacity = 0.3;
+          yellow.style.opacity = 0.3;
+        }, 5000);
+        
+    // Green Signal
+        setTimeout(function () {
+          green.style.opacity = 0.3;
+          red.style.opacity = 0.3;
+          yellow.style.opacity = 1;
+        }, 12000);
+      }
 
+      const timer = setInterval(function () {
+        startTrafficSignal();
+      }, 12000);
+      
+      startTrafficSignal();
+    &lt;/script&gt;
+  &lt;/body&gt;
+&lt;/html&gt;
 </pre>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h2 id="3-html-events">
@@ -4504,7 +4665,7 @@ to define event actions.</p>
         <td>script</td>
         <td>Script to be run when an error occurs.</td>
       </tr>
-	  <tr>
+      <tr>
         <td>onhashchange</td>
         <td>script</td>
         <td>Script to be run when there has been changes to the anchor part of the a URL.</td>
@@ -5062,13 +5223,13 @@ HTML elements, but is most common in media elements, like &lt;audio&gt;,
         <td>oncanplay</td>
         <td>script</td>
         <td>Script to be run when a file is ready to start playing (when it has 
-		  buffered enough to begin).</td>
+          buffered enough to begin).</td>
       </tr>
       <tr>
         <td>oncaplaythrough</td>
         <td>script</td>
         <td>Script to be run when a file can be played all the way to the end without 
-		  pausing for buffering.</td>
+          pausing for buffering.</td>
       </tr>
       <tr>
         <td>oncuechange</td>
@@ -5084,13 +5245,13 @@ HTML elements, but is most common in media elements, like &lt;audio&gt;,
         <td>onemptied</td>
         <td>script</td>
         <td>Script to be run when something bad happens and the file is suddenly unavailable 
-		  (like unexpectedly disconnects).</td>
+          (like unexpectedly disconnects).</td>
       </tr>
       <tr>
         <td>onended</td>
         <td>script</td>
         <td>Script to be run when the media has reach the end (a useful event for messages 
-		  like “thanks for listening”).</td>
+          like “thanks for listening”).</td>
       </tr>
       <tr>
         <td>onerror</td>
@@ -5136,49 +5297,49 @@ HTML elements, but is most common in media elements, like &lt;audio&gt;,
         <td>onratechange</td>
         <td>script</td>
         <td>Script to be run each time the playback rate changes (like when a user
-		  switches to a slow motion or fast forward mode).</td>
+          switches to a slow motion or fast forward mode).</td>
       </tr>
       <tr>
         <td>onseeked</td>
         <td>script</td>
         <td>Script to be run when the seeking attribute is set to false indicating
-		  that seeking has ended.</td>
+          that seeking has ended.</td>
       </tr>
       <tr>
         <td>onseeking</td>
         <td>script</td>
         <td>Script to be run when the seeking attribute is set to true indicating
-		  that seeking is active.</td>
+          that seeking is active.</td>
       </tr>
       <tr>
         <td>onstalled</td>
         <td>script</td>
         <td>Script to be run when the browser is unable to fetch the media data for
-		  whatever reason.</td>
+          whatever reason.</td>
       </tr>
       <tr>
         <td>onsuspend</td>
         <td>script</td>
         <td>Script to be run when fetching the media data is stopped before it is
-		  completely loaded for whatever reason.</td>
+          completely loaded for whatever reason.</td>
       </tr>
       <tr>
         <td>ontimeupdate</td>
         <td>script</td>
         <td>Script to be run when the playing position has changed (like when the
-		  user fast forwards to a different point in the media).</td>
+          user fast forwards to a different point in the media).</td>
       </tr>
       <tr>
         <td>onvolumechange</td>
         <td>script</td>
         <td>Script to be run each time the volume is changed which (includes setting
-		  the volume to “mute”).</td>
+          the volume to “mute”).</td>
       </tr>
       <tr>
         <td>onwaiting</td>
         <td>script</td>
         <td>Script to be run when the media has paused but is expected to resume (like 
-		  when the media pauses to buffer more data).</td>
+          when the media pauses to buffer more data).</td>
       </tr>
     </tbody>
   </table>
@@ -5237,7 +5398,7 @@ altering its type attribute. Now, let’s all the list of HTML Form Elements one
     <tr class="even">
       <td><mark>&lt;input&gt;</mark></td>
       <td>It is used to get input data from the form in various types such as 
-	    text, password, email, etc by changing its type.</td>
+        text, password, email, etc by changing its type.</td>
     </tr>
     <tr class="odd">
       <td><mark>&lt;button&gt;</mark></td>
@@ -5320,7 +5481,7 @@ of data from users. Here are some commonly used input types:</p>
       <tr>
         <td>&lt;input type=“number”&gt;</td>
         <td>Allows the user to enter a number. You can specify min, max, and step 
-		  attributes for range.</td>
+          attributes for range.</td>
       </tr>
       <tr>
         <td>&lt;input type=“checkbox”&gt;</td>
@@ -5372,12 +5533,12 @@ such as username and password with the button to submit the form.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h5>Output:</h5>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 04-02.  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 04-02. enter/confirm password ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center">
 <img class="displayed"
   src="./images/04-image002.gif"
-  title="Form 02"
-  alt="Form 02."
+  title="Form 02. Enter and confirm password"
+  alt="Form 02. Enter and confirm password"
   style="width:40%" >
 </p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -5501,12 +5662,12 @@ features proper styling for input fields and submission button.</p>
   &lt;/body&gt;
 &lt;/html&gt;</pre>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 04-03. form 03 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 04-03. form 03 html form example ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center">
 <img class="displayed"
   src="./images/04-image003.png"
-  title="Form 03"
-  alt="Form 03."
+  title="Form 03 HTML form example"
+  alt="Form 03. HTML form example."
   style="width:40%" >
 </p>
 
@@ -5519,13 +5680,13 @@ features proper styling for input fields and submission button.</p>
     values can be “get” or “post”.</li>
   <li>target: This attribute specifies where to display the response received after 
     submitting the form. The values can be “_blank”, “_self”, “_parent”, “_top”, or 
-	the name of an iframe.</li>
+    the name of an iframe.</li>
   <li>enctype: This attribute is used when method=“post”. It specifies how the form-data 
     should be encoded when submitting it to the server. The values can be 
-	“application/x-www-form-urlencoded”, “multipart/form-data”, or “text/plain”.</li>
+    “application/x-www-form-urlencoded”, “multipart/form-data”, or “text/plain”.</li>
   <li>autocomplete: This attribute specifies whether a form should have autocomplete on 
     or off. When autocomplete is on, the browser automatically completes values based on 
-	values that the user has entered before.</li>
+    values that the user has entered before.</li>
   <li>novalidate: This Boolean attribute specifies that the form-data should not be 
     validated on submission.</li>
 </ol>
@@ -5653,12 +5814,12 @@ of data. Tables are also used to create databases.</p>
       <tr>
         <td>&lt;col&gt;</td>
         <td>Defines attributes for table columns that can be applied to multiple columns 
-		  at once.</td>
+          at once.</td>
       </tr>
       <tr>
         <td>&lt;colgroup&gt;</td>
         <td>Groups together a set of columns in a table to which you can apply formatting 
-		  or properties collectively.</td>
+          or properties collectively.</td>
       </tr>
     </tbody>
   </table>
@@ -6667,10 +6828,10 @@ sign while encoding. Similarly, a $ sign is replaced by ‘%24’.</p>
 <ul>
   <li><p><a href="https://www.w3schools.com/tags/ref_urlencode.ASP" 
     target="_blank" rel="noopener noreferrer">
-	HTML URL Encoding Reference</a></p></li>
+    HTML URL Encoding Reference</a></p></li>
   <li><p><a href="https://mateam.net/html-escape-characters/" 
     target="_blank" rel="noopener noreferrer">
-	HTML Escape Characters</a></p></li>
+    HTML Escape Characters</a></p></li>
 </ul>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h5>Syntax:</h5>
@@ -6686,7 +6847,7 @@ sign while encoding. Similarly, a $ sign is replaced by ‘%24’.</p>
 <ul>
   <li><b>Scheme:</b> It specifies the protocol used for communication, such as 
     <b>“https://”</b> for secure communication or <b>“http://”</b> for unsecured 
-	communication.</li>
+    communication.</li>
   <li><b>Prefix:</b> It is an optional subdomain or www indicating the location of 
     the resource within the domain.</li>
   <li><b>Domain:</b> Identifies the website’s primary address, like “example.com”, 
@@ -6711,13 +6872,13 @@ sign while encoding. Similarly, a $ sign is replaced by ‘%24’.</p>
 <ul>
   <li><p><a href="https://www.geeksforgeeks.org/html-svg-basics/" 
     target="_blank" rel="noopener noreferrer">
-	Geeks 4 Geeks SVG Tutorial</a></p></li>
+    Geeks 4 Geeks SVG Tutorial</a></p></li>
   <li><p><a href="https://www.w3schools.com/graphics/svg_intro.asp" target="_blank" 
     rel="noopener noreferrer">
-	W3 SVG Tutorial</a></p></li>
+    W3 SVG Tutorial</a></p></li>
   <li><p><a href="https://developer.mozilla.org/en-US/docs/Web/SVG/Guides/SVG_in_HTML" 
     target="_blank" rel="noopener noreferrer">
-	MDN’s SVG in HTML Tutorial</a></p></li>
+    MDN’s SVG in HTML Tutorial</a></p></li>
 </ul>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p>SVG stands for Scalable Vector Graphics. It defines vector-based
@@ -6755,9 +6916,9 @@ animated.</p>
       </tr>
       <tr>
         <td>If attributes of an SVG object are changed, the browser can automatically 
-		  re-render the shape</td>
+          re-render the shape</td>
         <td>Canvas is rendered pixel by pixel. In Canvas, once the graphic is drawn,
-		  it is forgotten by the browser.</td>
+          it is forgotten by the browser.</td>
       </tr>
       <tr>
         <td>SVG is resolution-independent</td>
@@ -7025,7 +7186,7 @@ resources or other parts of the SVG document.</p>
       <tr>
         <td>hreflang</td>
         <td>It is the human language of the ULR or in simple words the URL fragment that 
-		  hyperlink point is the hreflang</td>
+          hyperlink point is the hreflang</td>
       </tr>
       <tr>
         <td>rel</td>
