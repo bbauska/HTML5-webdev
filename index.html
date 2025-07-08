@@ -917,12 +917,12 @@ it when it has finished downloading.</p>
 <h5>Example:</h5>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <pre>
-<!-- 
+&lt;!-- 
     With async (asynchronous), browser will continue to load the HTML 
     page and render it while the browser load and execute the script at the same time. 
--->
-<!-- Google Analytics is usually added like this -->
-<script async src="https://google-analytics.com/analytics.js"></script>
+--&gt;
+&lt;!-- Google Analytics is usually added like this --&gt;
+&lt;script async src="https://google-analytics.com/analytics.js"&gt;&lt;/script&gt;
 </pre>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h4>
@@ -937,11 +937,11 @@ HTML parser has completed. Not all browsers support this.</p>
 <h5>Example:</h5>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <pre>
-<!-- 
+&lt;!-- 
     With defer, browser will run your script when the page finished parsing. 
     (not necessary finishing downloading all image files. This is good.) 
--->
-<script defer src="myscript.js"></script>
+--&gt;
+&lt;script defer src="myscript.js"&gt;&lt;/script&gt;
 </pre>
 <p>The async attribute is used to indicate to the browser that the script file can be executed 
 asynchronously. The HTML parser does not need to pause at the point it reaches the script tag 
@@ -953,11 +953,11 @@ document has been fully parsed.</p>
 <h5>Example:</h5>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <pre>
-<!-- 
+&lt;!-- 
     Without async or defer, browser will run your script immediately, 
     before rendering the elements. 
--->
-<script src="myscript.js"></script>
+--&gt;
+&lt;script src="myscript.js"&gt;&lt;/script&gt;
 </pre>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h2>Q. What is <mark><b>localStorage</b></mark> in html5?</h2>
@@ -4961,124 +4961,62 @@ Fires when a form is submitted.
 <h4 id="mouse-events">Mouse Events</h4>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <div role="region" tabindex="0">
-<table>
-<caption>
-Clipboard Mouse Events
-</caption>
-<thead>
-<tr>
-<th>
-Attribute
-</th>
-<th>
-Value
-</th>
-<th>
-Description
-</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>
-onclick
-</td>
-<td>
-script
-</td>
-<td>
-Fires on a mouse click on the element.
-</td>
-</tr>
-<tr>
-<td>
-ondblclick
-</td>
-<td>
-script
-</td>
-<td>
-Fires on a mouse double-click on the element.
-</td>
-</tr>
-<tr>
-<td>
-onmousedown
-</td>
-<td>
-script
-</td>
-<td>
-Fires when a mouse button is pressed down on an element.
-</td>
-</tr>
-<tr>
-<td>
-onmousemove
-</td>
-<td>
-script
-</td>
-<td>
-Fires when the mouse pointer is moving while it is over an element.
-</td>
-</tr>
-<tr>
-<td>
-onmouseout
-</td>
-<td>
-script
-</td>
-<td>
-Fires when the mouse pointer moves over an element.
-</td>
-</tr>
-<tr>
-<td>
-onmouseover
-</td>
-<td>
-script
-</td>
-<td>
-.
-</td>
-</tr>
-<tr>
-<td>
-onmouseup
-</td>
-<td>
-script
-</td>
-<td>
-Fires when a mouse button is released over an element.
-</td>
-</tr>
-<tr>
-<td>
-onmousewheel
-</td>
-<td>
-script
-</td>
-<td>
-Deprecated. Use the onwheel attribute instead.
-</td>
-</tr>
-<tr>
-<td>
-onwheel
-</td>
-<td>
-script
-</td>
-<td>
-Fires when the mouse wheel rolls up or down over an element.
-</td>
-</tr>
-</tbody>
+  <table>
+    <caption>Clipboard Mouse Events</caption>
+    <thead>
+      <tr>
+        <th>Attribute</th>
+        <th>Value</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>onclick</td>
+        <td>script</td>
+        <td>Fires on a mouse click on the element.</td>
+      </tr>
+      <tr>
+        <td>ondblclick</td>
+        <td>script</td>
+        <td>Fires on a mouse double-click on the element.</td>
+      </tr>
+      <tr>
+        <td>onmousedown</td>
+        <td>script</td>
+        <td>Fires when a mouse button is pressed down on an element.</td>
+      </tr>
+      <tr>
+        <td>onmousemove</td>
+        <td>script</td>
+        <td>Fires when the mouse pointer is moving while it is over an element.</td>
+      </tr>
+      <tr>
+        <td>onmouseout</td>
+        <td>script</td>
+        <td>Fires when the mouse pointer moves over an element.</td>
+      </tr>
+      <tr>
+        <td>onmouseover</td>
+        <td>script</td>
+        <td>.</td>
+      </tr>
+      <tr>
+        <td>onmouseup</td>
+        <td>script</td>
+        <td>Fires when a mouse button is released over an element.</td>
+      </tr>
+      <tr>
+        <td>onmousewheel</td>
+        <td>script</td>
+        <td>Deprecated. Use the onwheel attribute instead.</td>
+      </tr>
+      <tr>
+        <td>onwheel</td>
+        <td>script</td>
+        <td>Fires when the mouse wheel rolls up or down over an element.</td>
+    </tr>
+  </tbody>
 </table>
 </div>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -5142,59 +5080,33 @@ Fires when the mouse wheel rolls up or down over an element.
 <h4 id="clipboard-events">Clipboard Events</h4>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <div role="region" tabindex="0">
-<table>
-<caption>
-Clipboard Events
-</caption>
-<thead>
-<tr>
-<th>
-Attribute
-</th>
-<th>
-Value
-</th>
-<th>
-Description
-</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>
-oncopy
-</td>
-<td>
-script
-</td>
-<td>
-Fires when the user copies the content of an element.
-</td>
-</tr>
-<tr>
-<td>
-oncut
-</td>
-<td>
-script
-</td>
-<td>
-Fires when the user cuts the content of an element.
-</td>
-</tr>
-<tr>
-<td>
-onpaste
-</td>
-<td>
-script
-</td>
-<td>
-Fires when the user pastes some content in an element.
-</td>
-</tr>
-</tbody>
-</table>
+  <table>
+    <caption>Clipboard Events</caption>
+    <thead>
+      <tr>
+        <th>Attribute</th>
+        <th>Value</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>oncopy</td>
+        <td>script</td>
+        <td>Fires when the user copies the content of an element.</td>
+      </tr>
+      <tr>
+        <td>oncut</td>
+        <td>script</td>
+        <td>Fires when the user cuts the content of an element.</td>
+      </tr>
+      <tr>
+        <td>onpaste</td>
+        <td>script</td>
+        <td>Fires when the user pastes some content in an element.</td>
+      </tr>
+    </tbody>
+  </table>
 </div>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h4 id="media-events">Media Events</h4>
