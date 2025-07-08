@@ -845,9 +845,9 @@ This is specified in the tag:</p>
 &lt;meta charset="utf-8"/&gt;
 </pre>
 <ul>
-  <li><b><mark>UTF-8</mark></b>: A Unicode Translation Format that comes in 
-  8-bit units that is, it comes in bytes. A character in UTF8 can be from
-  1 to 4 bytes long, making UTF8 variable width.</li>
+  <li><b><mark>UTF-8</mark></b>: A Unicode Translation Format that comes in 8-bit units 
+    that is, it comes in bytes. A character in UTF8 can be from 1 to 4 bytes long, making 
+	UTF8 variable width.</li>
 </ul>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h2>Q. What is the purpose of meta tags?</h2>
@@ -4298,11 +4298,11 @@ resolution.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <pre>
 &lt;img 
-   srcset=" 
-      url size, 
-      url size, 
-      url size " 
-    src="default url" 
+  srcset=" 
+    url size, 
+    url size, 
+    url size " 
+  src="default url" 
 &gt;
 </pre>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -4319,8 +4319,8 @@ with display density it should be used, for example1x, 2x etc.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <pre>
 &lt;img src="image.jpg" 
-     srcset="image.jpg,
-             image_2x.jpg 2x"
+  srcset="image.jpg,
+          image_2x.jpg 2x"
 /&gt;
 </pre>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -4387,7 +4387,7 @@ page.</p>
 <h5>Example:</h5>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <pre>
-  &lt;nav class='mobile-nav' role='navigation' aria-label='Mobile Menu'&gt; List of Links &lt;/nav&gt;
+&lt;nav class='mobile-nav' role='navigation' aria-label='Mobile Menu'&gt; List of Links &lt;/nav&gt;
 </pre>
 
 <p>While seeming redundant, is actually useful for screen readers. It wouldn't read the 
@@ -4577,16 +4577,16 @@ practical for most web pages/applications.</p>
       &lt;div id="red"&gt;&lt;/div&gt;
       &lt;div id="yellow"&gt;&lt;/div&gt;
       &lt;div id="green"&gt;&lt;/div&gt;
-      
+
     &lt;script&gt;
       function startTrafficSignal() {
-        
+
         const red = document.getElementById("red");
         const yellow = document.getElementById("yellow");
     const green = document.getElementById("green");
-      
+
         green.style.opacity = 1;
-      
+
     // Red Signal
         setTimeout(function () {
           green.style.opacity = 0.3;
@@ -4600,7 +4600,7 @@ practical for most web pages/applications.</p>
           red.style.opacity = 0.3;
           yellow.style.opacity = 0.3;
         }, 5000);
-        
+
     // Green Signal
         setTimeout(function () {
           green.style.opacity = 0.3;
@@ -4612,7 +4612,7 @@ practical for most web pages/applications.</p>
       const timer = setInterval(function () {
         startTrafficSignal();
       }, 12000);
-      
+
       startTrafficSignal();
     &lt;/script&gt;
   &lt;/body&gt;
@@ -5758,7 +5758,7 @@ with &lt;td&gt; as a start tag &amp; &lt;/td&gt; as a end tag.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h5>Syntax</h5>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<pre>&lt;td&gt; Content...&lt;/td&gt; </pre>
+<pre>&lt;td&gt; Content...&lt;/td&gt;</pre>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h4>Table Rows</h4>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -5767,7 +5767,7 @@ is denoted by &lt;tr&gt; and &lt;/tr&gt; tag as a start &amp; end tags.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h5>Syntax</h5>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<pre>&lt;tr&gt; Content...&lt;/tr&gt; </pre>
+<pre>&lt;tr&gt; Content...&lt;/tr&gt;</pre>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h4>Table Headers</h4>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -5777,7 +5777,7 @@ tags.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h5>Syntax</h5>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<pre>&lt;th&gt; Content...&lt;/th&gt; </pre>
+<pre>&lt;th&gt; Content...&lt;/th&gt;</pre>
 
 <p><b>Example 1:</b> Creating a simple table in HTML using a table tag.</p>
 
@@ -7935,9 +7935,8 @@ other, while a circle has equal x and y radius:</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h5>Example:</h5>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<p>
-Change the opacity.
-</h5>
+<p>Change the opacity.</p>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <pre>&lt;html&gt;
   &lt;title&gt;SVG Ellipse&lt;/title&gt;
   &lt;body&gt;
