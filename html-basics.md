@@ -18,7 +18,7 @@
 <h2><a id="toc">Table of Contents</a></h2>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <ol>
-  <li><a href="#1-intro">Introduction</a></li>
+  <li id="#1-intro">Introduction</a></li>
   <li><a href="#2-html-tags">HTML Tags</a></li>
   <li><a href="#3-html-events">HTML Events</a></li>
   <li><a href="#4-html-forms">HTML Events</a></li>
@@ -9826,7 +9826,8 @@ Response.Flush()
   Last editted: 5/6/2025 +12pm<br>
   Last editted: 5/9/2025 +9am<br>
   Last editted: 5/11/2025 +3pm<br>
-  Last editted: 5/20/2025 +10am</h6>
+  Last editted: 5/20/2025 +10am<br>
+  Last editted: 7/17/2025 +11am</h6>
   <p>The End...</p>
   
 <div align="right">
