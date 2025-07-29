@@ -1973,93 +1973,47 @@ subject to limitation and bandwidth usage, and false otherwise.</p>
 
 <div role="region" tabindex="0">
 <table>
-<caption>
-Attribute Values: Network Information API
-</caption>
-<thead>
-<tr>
-<th>
-S1.No
-</th>
-<th>
-API
-</th>
-<th>
-Description
-</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>
-01.
-</td>
-<td>
-navigator.connection.type
-</td>
-<td>
-Network Type
-</td>
-</tr>
-<tr>
-<td>
-02.
-</td>
-<td>
-navigator.connection.downlink
-</td>
-<td>
-Effective bandwidth estimate ( downlink )
-</td>
-</tr>
-<tr>
-<td>
-03.
-</td>
-<td>
-navigator.connection.rtt
-</td>
-<td>
-Effective round-trip time estimate ( rtt )
-</td>
-</tr>
-<tr>
-<td>
-04.
-</td>
-<td>
-navigator.connection.downlinkMax
-</td>
-<td>
-Upper bound on the downlink speed of the first network hop ( downlinkMax
-)
-</td>
-</tr>
-<tr>
-<td>
-05.
-</td>
-<td>
-navigator.connection.effectiveType
-</td>
-<td>
-Effective connection type
-</td>
-</tr>
-<tr>
-<td>
-06.
-</td>
-<td>
-navigator.connection.saveData
-</td>
-<td>
-True if the user has requested a reduced data usage mode from the user
-agent ( saveData )
-</td>
-</tr>
-</tbody>
-</table>
+  <caption>Attribute Values: Network Information API</caption>
+  <thead>
+    <tr>
+      <th>S1.No</th>
+      <th>API</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>01.</td>
+      <td>navigator.connection.type</td>
+      <td>Network Type</td>
+    </tr>
+    <tr>
+      <td>02.</td>
+      <td>navigator.connection.downlink</td>
+      <td>Effective bandwidth estimate ( downlink )</td>
+    </tr>
+    <tr>
+      <td>03.</td>
+      <td>navigator.connection.rtt</td>
+        <td>Effective round-trip time estimate ( rtt )</td>
+      </tr>
+      <tr>
+        <td>04.</td>
+        <td>navigator.connection.downlinkMax</td>
+        <td>Upper bound on the downlink speed of the first network hop ( downlinkMax )</td>
+      </tr>
+      <tr>
+        <td>05.</td>
+      <td>navigator.connection.effectiveType</td>
+      <td>Effective connection type</td>
+      </tr>
+      <tr>
+        <td>06.</td>
+        <td>navigator.connection.saveData</td>
+        <td>True if the user has requested a reduced data usage mode from the user agent ( saveData )</td>
+      </tr>
+    </tbody>
+  </table>
 </div>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h4>
@@ -2200,72 +2154,42 @@ function geoFindMe() {
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h2>Q. What is the use of WebSocket API?</h2>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<p>
-The <b>WebSocket API</b> is an advanced technology that makes it
-possible to open a two-way interactive communication session between the
-user's browser and a server. With this API, you can send messages to a
-server and receive event-driven responses without having to poll the
-server for a reply.
-</p>
+<p>The <b>WebSocket API</b> is an advanced technology that makes it possible to open a 
+two-way interactive communication session between the user's browser and a server. With 
+this API, you can send messages to a server and receive event-driven responses without 
+having to poll the server for a reply.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h5>Interfaces:</h5>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <div role="region" tabindex="0">
-<table>
-<caption>
-Attribute Values: Interfaces
-</caption>
-<thead>
-<tr>
-<th>
-S1.No
-</th>
-<th>
-API
-</th>
-<th>
-Description
-</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>
-01.
-</td>
-<td>
-WebSocket
-</td>
-<td>
-The primary interface for connecting to a WebSocket server and then
-sending and receiving data on the connection.
-</td>
-</tr>
-<tr>
-<td>
-02.
-</td>
-<td>
-CloseEvent
-</td>
-<td>
-The event sent by the WebSocket object when the connection closes.
-</td>
-</tr>
-<tr>
-<td>
-03.
-</td>
-<td>
-MessageEvent
-</td>
-<td>
-The event sent by the WebSocket object when a message is received from
-the server.
-</td>
-</tr>
-</tbody>
-</table>
+  <table>
+    <caption>Attribute Values: Interfaces</caption>
+    <thead>
+      <tr>
+        <th>S1.No</th>
+        <th>API</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>01.</td>
+        <td>WebSocket</td>
+        <td>The primary interface for connecting to a WebSocket server and then sending 
+		and receiving data on the connection.</td>
+      </tr>
+      <tr>
+        <td>02.</td>
+        <td>CloseEvent</td>
+        <td>The event sent by the WebSocket object when the connection closes.</td>
+      </tr>
+      <tr>
+        <td>03.</td>
+        <td>MessageEvent</td>
+        <td>The event sent by the WebSocket object when a message is received from the server.</td>
+      </tr>
+    </tbody>
+  </table>
 </div>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h5>Example</h5>
@@ -2286,9 +2210,8 @@ socket.addEventListener('message', function(event) {
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h2>Q. Explain about HTML Canvas?</h2>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<p><b>canvas</b> is an HTML element which can be used to draw graphics via
-JavaScript. This can, for instance, be used to draw graphs, combine
-photos, or create animations.</p>
+<p><b>canvas</b> is an HTML element which can be used to draw graphics via JavaScript. 
+This can, for instance, be used to draw graphs, combine photos, or create animations.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h4>
   <ol type="1">
@@ -2297,46 +2220,42 @@ photos, or create animations.</p>
 </h4>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <table>
-<colgroup>
-<col style="width: 14%" />
-<col style="width: 85%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th>Property</th>
-<th>Description</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><mark>fillStyle</mark></td>
-<td>Sets or returns the color, gradient, or pattern used to fill the
-drawing.</td>
-</tr>
-<tr class="even">
-<td><mark>strokeStyle</mark></td>
-<td>Sets or returns the color, gradient, or pattern used for
-strokes.</td>
-</tr>
-<tr class="odd">
-<td><mark>shadowColor</mark></td>
-<td>Sets or returns the color to use for shadows.</td>
-</tr>
-<tr class="even">
-<td><mark>shadowBlur</mark></td>
-<td>Sets or returns the blur level for shadows.</td>
-</tr>
-<tr class="odd">
-<td><mark>shadowOffsetX</mark></td>
-<td>Sets or returns the horizontal distance of the shadow from the
-shape.</td>
-</tr>
-<tr class="even">
-<td><mark>shadowOffsetY</mark></td>
-<td>Sets or returns the vertical distance of the shadow from the
-shape.</td>
-</tr>
-</tbody>
+  <colgroup>
+    <col style="width: 14%" />
+    <col style="width: 85%" />
+  </colgroup>
+  <thead>
+    <tr class="header">
+      <th>Property</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr class="odd">
+      <td><mark>fillStyle</mark></td>
+      <td>Sets or returns the color, gradient, or pattern used to fill the drawing.</td>
+    </tr>
+    <tr class="even">
+      <td><mark>strokeStyle</mark></td>
+      <td>Sets or returns the color, gradient, or pattern used for strokes.</td>
+    </tr>
+    <tr class="odd">
+      <td><mark>shadowColor</mark></td>
+      <td>Sets or returns the color to use for shadows.</td>
+    </tr>
+    <tr class="even">
+      <td><mark>shadowBlur</mark></td>
+      <td>Sets or returns the blur level for shadows.</td>
+    </tr>
+    <tr class="odd">
+      <td><mark>shadowOffsetX</mark></td>
+      <td>Sets or returns the horizontal distance of the shadow from the shape.</td>
+    </tr>
+    <tr class="even">
+      <td><mark>shadowOffsetY</mark></td>
+      <td>Sets or returns the vertical distance of the shadow from the shape.</td>
+    </tr>
+  </tbody>
 </table>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h4>
@@ -2346,55 +2265,33 @@ shape.</td>
 </h4>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <div role="region" tabindex="0">
-<table>
-<caption>
-Line styles
-</caption>
-<thead>
-<tr>
-<th>
-tableHead
-</th>
-<th>
-tableDesc
-</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>
-<b><mark>lineCap</mark></b>
-</td>
-<td>
-Sets or returns the style of the end caps for a line.
-</td>
-</tr>
-<tr>
-<td>
-<b><mark>lineJoin</mark></b>
-</td>
-<td>
-Sets or returns the type of corner created, when two lines meet.
-</td>
-</tr>
-<tr>
-<td>
-<b><mark>lineWidth</mark></b>
-</td>
-<td>
-Sets or returns the current line width.
-</td>
-</tr>
-<tr>
-<td>
-<b><mark>miterLimit</mark></b>
-</td>
-<td>
-Sets or returns the maximum miter length..
-</td>
-</tr>
-</tbody>
-</table>
+  <table>
+    <caption>Line styles</caption>
+    <thead>
+      <tr>
+        <th>tableHead</th>
+        <th>tableDesc</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><b><mark>lineCap</mark></b></td>
+        <td>Sets or returns the style of the end caps for a line.</td>
+      </tr>
+      <tr>
+        <td><b><mark>lineJoin</mark></b></td>
+        <td>Sets or returns the type of corner created, when two lines meet.</td>
+      </tr>
+      <tr>
+        <td><b><mark>lineWidth</mark></b></td>
+        <td>Sets or returns the current line width.</td>
+      </tr>
+      <tr>
+        <td><b><mark>miterLimit</mark></b></td>
+        <td>Sets or returns the maximum miter length..</td>
+      </tr>
+    </tbody>
+  </table>
 </div>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h4>
@@ -2404,55 +2301,33 @@ Sets or returns the maximum miter length..
 </h4>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <div role="region" tabindex="0">
-<table>
-<caption>
-Rectangles
-</caption>
-<thead>
-<tr>
-<th>
-tableHead
-</th>
-<th>
-tableDesc
-</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>
-<b><mark>rect()</mark></b>
-</td>
-<td>
-Creates a rectangle.
-</td>
-</tr>
-<tr>
-<td>
-<b><mark>fillRect()</mark></b>
-</td>
-<td>
-Draw a “filled” rectangle.
-</td>
-</tr>
-<tr>
-<td>
-<b><mark>strokeRect()</mark></b>
-</td>
-<td>
-Draws a rectangle (no fill).
-</td>
-</tr>
-<tr>
-<td>
-<b><mark>clearRect()</mark></b>
-</td>
-<td>
-Clears the specified pixels within a given rectangle.
-</td>
-</tr>
-</tbody>
-</table>
+  <table>
+    <caption>Rectangles</caption>
+    <thead>
+      <tr>
+        <th>tableHead</th>
+        <th>tableDesc</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><b><mark>rect()</mark></b></td>
+        <td>Creates a rectangle.</td>
+      </tr>
+      <tr>
+        <td><b><mark>fillRect()</mark></b></td>
+        <td>Draw a “filled” rectangle.</td>
+      </tr>
+      <tr>
+        <td><b><mark>strokeRect()</mark></b></td>
+        <td>Draws a rectangle (no fill).</td>
+      </tr>
+      <tr>
+        <td><b><mark>clearRect()</mark></b></td>
+        <td>Clears the specified pixels within a given rectangle.</td>
+      </tr>
+    </tbody>
+  </table>
 </div>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h4>
@@ -2663,13 +2538,13 @@ Clears the specified pixels within a given rectangle.
   </ol>
 </h4>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<p>The Scalable Vector Graphics (SVG) is an XML-based image format that is
-used to define two-dimensional vector based graphics for the web. Unlike
-raster image (e.g. .jpg, .gif, .png, etc.), a vector image can be scaled
-up or down to any extent without losing the image quality.</p>
+<p>The Scalable Vector Graphics (SVG) is an XML-based image format that is used to define 
+two-dimensional vector based graphics for the web. Unlike raster image (e.g. .jpg, .gif, 
+.png, etc.), a vector image can be scaled up or down to any extent without losing the 
+image quality.</p>
 
-<p>There are following advantages of using SVG over other image formats
-like JPEG, GIF, PNG, etc.</p>
+<p>There are following advantages of using SVG over other image formats like JPEG, GIF, 
+PNG, etc.</p>
 
 <ul>
   <li>SVG images can be searched, indexed, scripted, and compressed.</li>
@@ -2710,11 +2585,10 @@ like JPEG, GIF, PNG, etc.</p>
   </ol>
 </h4>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<p>Canvas is a HTML element is used to draw graphics on a web page. It is a
-bitmap with an “immediate mode” graphics application programming
-interface (API) for drawing on it. The &lt;canvas&gt; element is only a
-container for graphics. In order to draw the graphics, you are supposed
-to use a script. Canvas has several strategies when it comes to drawing
+<p>Canvas is a HTML element is used to draw graphics on a web page. It is a bitmap with 
+an “immediate mode” graphics application programming interface (API) for drawing on it. 
+The &lt;canvas&gt; element is only a container for graphics. In order to draw the graphics, 
+you are supposed to use a script. Canvas has several strategies when it comes to drawing
 paths, boxes, circles, text &amp; adding images.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h5>Example:</h5>
@@ -2725,7 +2599,8 @@ paths, boxes, circles, text &amp; adding images.</p>
     &lt;title&gt;HTML5 Canvas Tag&lt;/title&gt;
   &lt;/head&gt;
   &lt;body&gt;
-    &lt;canvas id="newCanvas" width="200" height="100" style="border:1px solid #000000;"&gt;&lt;/canvas&gt;
+    &lt;canvas id="newCanvas" width="200" height="100" 
+	  style="border:1px solid #000000;"&gt;&lt;/canvas&gt;
     &lt;script&gt;
       var c = document.getElementById('newCanvas');
       var ctx = c.getContext('2d');
@@ -2739,174 +2614,97 @@ paths, boxes, circles, text &amp; adding images.</p>
 <h5>Differences:</h5>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <div role="region" tabindex="0">
-<table>
-<caption>
-Differences
-</caption>
-<thead>
-<tr>
-<th>
-SVG
-</th>
-<th>
-Canvas
-</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>
-Vector based (composed of shapes)
-</td>
-<td>
-Raster based (composed of pixel)
-</td>
-</tr>
-<tr>
-<td>
-Multiple graphical elements, which become the part of the page’s DOM
-tree.
-</td>
-<td>
-Single element similar to &lt;img&gt; in behavior. Canvas diagram can be
-saved to PNG or JPG format.
-</td>
-</tr>
-<tr>
-<td>
-Modified through script and CSS.
-</td>
-<td>
-Modified through script only.
-</td>
-</tr>
-<tr>
-<td>
-Good text rendering capabilities.
-</td>
-<td>
-Poor text rendering capabilities.
-</td>
-</tr>
-<tr>
-<td>
-Give better performance with smaller number of objects or larger
-surface, or both.
-</td>
-<td>
-Give better performance with larger number of objects or smaller
-surface, or both.
-</td>
-</tr>
-<tr>
-<td>
-Better scalability. Can be printed with high quality at any resolution.
-Pixelation does not occur.
-</td>
-<td>
-Poor scalability. Not suitable for printing on higher resolution.
-Pixelation may occur.
-</td>
-</tr>
-</tbody>
-</table>
+  <table>
+    <caption>Differences</caption>
+    <thead>
+      <tr>
+        <th>SVG</th>
+        <th>Canvas</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>Vector based (composed of shapes)</td>
+        <td>Raster based (composed of pixel)</td>
+      </tr>
+      <tr>
+        <td>Multiple graphical elements, which become the part of the page’s DOMtree.</td>
+        <td>Single element similar to &lt;img&gt; in behavior. Canvas diagram can be saved 
+		  to PNG or JPG format.</td>
+      </tr>
+      <tr>
+        <td>Modified through script and CSS.</td>
+        <td>Modified through script only.</td>
+      </tr>
+      <tr>
+        <td>Good text rendering capabilities.</td>
+        <td>Poor text rendering capabilities.</td>
+      </tr>
+      <tr>
+        <td>Give better performance with smaller number of objects or larger surface, or both.</td>
+        <td>Give better performance with larger number of objects or smaller surface, or both.</td>
+      </tr>
+      <tr>
+        <td>Better scalability. Can be printed with high quality at any resolution. Pixelation 
+		  does not occur.</td>
+        <td>Poor scalability. Not suitable for printing on higher resolution. Pixelation 
+		  may occur.</td>
+      </tr>
+    </tbody>
+  </table>
 </div>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h2>Q. Explain Drag ’n Drop in HTML5?</h2>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<p>
-HTML5 drag-and-drop uses the <mark>DOM event model</mark> and <mark>drag
-events</mark> inherited from <mark>mouse events</mark>. A typical drag
-operation begins when a user selects a draggable element, drags the
-element to a droppable element, and then releases the dragged element.
-</p>
+<p>HTML5 drag-and-drop uses the <mark>DOM event model</mark> and <mark>drag events</mark> 
+inherited from <mark>mouse events</mark>. A typical drag operation begins when a user 
+selects a draggable element, drags the element to a droppable element, and then releases 
+the dragged element.</p>
+
 <div role="region" tabindex="0">
-<table>
-<caption>
-Event Drag ’n Drop
-</caption>
-<thead>
-<tr>
-<th>
-Event
-</th>
-<th>
-Description
-</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>
-<b><mark>Drag</mark></b>
-</td>
-<td>
-It fires every time when the mouse is moved while the object is being
-dragged.
-</td>
-</tr>
-<tr>
-<td>
-<b><mark>Dragstart</mark></b>
-</td>
-<td>
-It is a very initial stage. It fires when the user starts dragging
-object.
-</td>
-</tr>
-<tr>
-<td>
-<b><mark>Dragstart</mark></b>
-</td>
-<td>
-It is a very initial stage. It fires when the user starts dragging
-object.
-</td>
-</tr>
-<tr>
-<td>
-<b><mark>Dragenter</mark></b>
-</td>
-<td>
-It fires when the user moves his/her mouse cursur over the target
-element.
-</td>
-</tr>
-<tr>
-<td>
-<b><mark>Dragover</mark></b>
-</td>
-<td>
-This event is fired when the mouse moves over an element.
-</td>
-</tr>
-<tr>
-<td>
-<b><mark>Dragleave</mark></b>
-</td>
-<td>
-This event is fired when the mouse leaves an element.
-</td>
-</tr>
-<tr>
-<td>
-<b><mark>Drop</mark></b>
-</td>
-<td>
-Drop It fires at the end of the drag operation.
-</td>
-</tr>
-<tr>
-<td>
-<b><mark>Dragend</mark></b>
-</td>
-<td>
-It fires when user releases the mouse button to complete the drag
-operation.
-</td>
-</tr>
-</tbody>
-</table>
+  <table>
+    <caption>Event Drag ’n Drop</caption>
+    <thead>
+      <tr>
+        <th>Event</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><b><mark>Drag</mark></b></td>
+        <td>It fires every time when the mouse is moved while the object is being dragged.</td>
+      </tr>
+      <tr>
+        <td><b><mark>Dragstart</mark></b></td>
+        <td>It is a very initial stage. It fires when the user starts dragging object.</td>
+      </tr>
+      <tr>
+        <td><b><mark>Dragstart</mark></b></td>
+        <td>It is a very initial stage. It fires when the user starts dragging object.</td>
+      </tr>
+      <tr>
+        <td><b><mark>Dragenter</mark></b></td>
+        <td>It fires when the user moves his/her mouse cursur over the target element.</td>
+      </tr>
+      <tr>
+        <td><b><mark>Dragover</mark></b></td>
+        <td>This event is fired when the mouse moves over an element.</td>
+      </tr>
+      <tr>
+        <td><b><mark>Dragleave</mark></b></td>
+        <td>This event is fired when the mouse leaves an element.</td>
+      </tr>
+      <tr>
+        <td><b><mark>Drop</mark></b></td>
+        <td>Drop It fires at the end of the drag operation.</td>
+      </tr>
+      <tr>
+        <td><b><mark>Dragend</mark></b></td>
+        <td>It fires when user releases the mouse button to complete the drag operation.</td>
+      </tr>
+    </tbody>
+  </table>
 </div>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h5>Example</h5>
@@ -2932,23 +2730,25 @@ operation.
 &lt;/head&gt;
 &lt;body&gt;
   &lt;div id="div1" ondrop="drop(event)" ondragover="allowDrop(event)"&gt;&lt;/div&gt;
-  &lt;img id="drag1" src="img_logo.gif" draggable="true" ondragstart="drag(event)" width="336" height="69"&gt;
+  &lt;img id="drag1" src="img_logo.gif" draggable="true" ondragstart="drag(event)" 
+    width="336" height="69"&gt;
 &lt;/body&gt;
 &lt;/html&gt;
 </pre>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h2>Q. Explain Microdata in HTML5?</h2>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<p>Microdata is a standardized way to provide additional semantics in web
-pages. Microdata lets you define your own customized elements and start
-embedding custom properties in your web pages. At a high level,
-microdata consists of a group of name-value pairs.</p>
-<p>The groups are called <b>items</b>, and each name-value pair is a
-<b>property</b>. Items and properties are represented by regular
-elements. Search engines benefit greatly from direct access to this
-structured data because it allows search engines to understand the
-information on web pages and provide more relevant results to users.</p>
+<p>Microdata is a standardized way to provide additional semantics in web pages. Microdata 
+lets you define your own customized elements and start embedding custom properties in your 
+web pages. At a high level, microdata consists of a group of name-value pairs.</p>
+
+<p>The groups are called <b>items</b>, and each name-value pair is a <b>property</b>. 
+Items and properties are represented by regular elements. Search engines benefit greatly 
+from direct access to this structured data because it allows search engines to understand 
+the information on web pages and provide more relevant results to users.</p>
+
 <p>At a high level, microdata consists of a group of name-value pairs</p>
+
 <ul>
   <li><b>itemscope</b>:- To create an item</li>
   <li><b>itemprop</b>:- To add a property to an item</li>
@@ -2973,8 +2773,8 @@ information on web pages and provide more relevant results to users.</p>
   </ol>
 </h4>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<p>The following elements are not available in HTML5 anymore and their
-function is better handled by CSS.</p>
+<p>The following elements are not available in HTML5 anymore and their function is better 
+handled by CSS.</p>
 
 <div role="region" tabindex="0">
   <table>
@@ -3612,9 +3412,9 @@ traffic.</p>
   </ol>
 </h5>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<p>Title tags are used by search engines to determine the subject of a page
-and display it in SERP. As a rule of thumb, titles that are under 60
-characters long will fit on most screens. In HTML, a title tag looks like this:</p>
+<p>Title tags are used by search engines to determine the subject of a page and display it 
+in SERP. As a rule of thumb, titles that are under 60 characters long will fit on most 
+screens. In HTML, a title tag looks like this:</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <pre>&lt;title&gt;Your Title Goes Here&lt;/title&gt;</pre>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -4058,10 +3858,9 @@ Hebrew, Pashto, Persian, Urdu, and Sindhi.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h2>Q. When is it appropriate to use the small element?</h2>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<p>The &lt;small&gt; HTML element represents side-comments and small print,
-like copyright and legal text, independent of its styled presentation.
-By default, it renders text within it one font-size smaller, such as
-from <mark>small</mark> to <mark>x-small</mark>.</p>
+<p>The &lt;small&gt; HTML element represents side-comments and small print, like copyright 
+and legal text, independent of its styled presentation. By default, it renders text within 
+it one font-size smaller, such as from <mark>small</mark> to <mark>x-small</mark>.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h5>Example:</h5>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -4110,9 +3909,9 @@ from <mark>small</mark> to <mark>x-small</mark>.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h2>Q. What is the difference between &lt;section&gt; and &lt;div&gt;?</h2>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<p>The &lt;section&gt; tag creates independent sections within a webpage
-having logically connected content. And the &lt;div&gt; tag is an empty
-container specifying a division or a section.</p>
+<p>The &lt;section&gt; tag creates independent sections within a webpage having logically 
+connected content. And the &lt;div&gt; tag is an empty container specifying a division or 
+a section.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h4>The <mark><b>&lt;section&gt;</b></mark> Element</h4>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -4607,240 +4406,120 @@ to define event actions.</p>
 </div>
 
 <div role="region" tabindex="0">
-<table>
-<caption>
-Form Events
-</caption>
-<thead>
-<tr>
-<th>
-Attribute
-</th>
-<th>
-Value
-</th>
-<th>
-Description
-</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>
-ononline
-</td>
-<td>
-script
-</td>
-<td>
-Script to be run when the browser starts to work online.
-</td>
-</tr>
-<tr>
-<td>
-onpagehide
-</td>
-<td>
-script
-</td>
-<td>
-Script to be run when a user navigates away from a page.
-</td>
-</tr>
-<tr>
-<td>
-onpageshow
-</td>
-<td>
-script
-</td>
-<td>
-Script to be run when a user navigates to a page.
-</td>
-</tr>
-<td>
-onpopstate
-</td>
-<td>
-script
-</td>
-<td>
-Script to be run when the window’s history changes.
-</td>
-</tr>
-<tr>
-<td>
-onresize
-</td>
-<td>
-script
-</td>
-<td>
-Fires when the browser window is resized.
-</td>
-</tr>
-<tr>
-<td>
-onstorage
-</td>
-<td>
-script
-</td>
-<td>
-Script to be run when a Web Storage area is updated.
-</td>
-</tr>
-<tr>
-<td>
-onunload
-</td>
-<td>
-script
-</td>
-<td>
-Fires once a page has unloaded (or the browser window has been closed).
-</td>
-</tr>
-</tbody>
-</table>
+  <table>
+    <caption>Form Events</caption>
+    <thead>
+      <tr>
+        <th>Attribute</th>
+        <th>Value</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>ononline</td>
+        <td>script</td>
+        <td>Script to be run when the browser starts to work online.</td>
+      </tr>
+      <tr>
+        <td>onpagehide</td>
+        <td>script</td>
+        <td>Script to be run when a user navigates away from a page.</td>
+      </tr>
+      <tr>
+        <td>onpageshow</td>
+        <td>script</td>
+        <td>Script to be run when a user navigates to a page.</td>
+      </tr>
+        <td>onpopstate</td>
+        <td>script</td>
+        <td>Script to be run when the window’s history changes.</td>
+      </tr>
+      <tr>
+        <td>onresize</td>
+        <td>script</td>
+        <td>Fires when the browser window is resized.</td>
+      </tr>
+      <tr>
+        <td>onstorage</td>
+        <td>script</td>
+        <td>Script to be run when a Web Storage area is updated.</td>
+      </tr>
+      <tr>
+        <td>onunload</td>
+        <td>script</td>
+        <td>Fires once a page has unloaded (or the browser window has been closed).</td>
+      </tr>
+    </tbody>
+  </table>
 </div>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h4 id="form-events">Form Events</h4>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<p>
-Events triggered by actions inside a HTML form (applies to almost all
-HTML elements, but is most used in form elements):
-</p>
+<p>Events triggered by actions inside a HTML form (applies to almost all
+HTML elements, but is most used in form elements):</p>
+
 <div role="region" tabindex="0">
-<table>
-<caption>
-Form Events
-</caption>
-<thead>
-<tr>
-<th>
-Attribute
-</th>
-<th>
-Value
-</th>
-<th>
-Description
-</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>
-onblur
-</td>
-<td>
-script
-</td>
-<td>
-Fires the moment that the element loses focus.
-</td>
-</tr>
-<tr>
-<td>
-onchange
-</td>
-<td>
-script
-</td>
-<td>
-Fires the moment when the value of the element is changed.
-</td>
-</tr>
-<tr>
-<td>
-oncontextmenu
-</td>
-<td>
-script
-</td>
-<td>
-Script to be run when a context menu is triggered.
-</td>
-</tr>
-<td>
-onfocus
-</td>
-<td>
-script
-</td>
-<td>
-Fires the moment when the element gets focus.
-</td>
-</tr>
-<tr>
-<td>
-oninput
-</td>
-<td>
-script
-</td>
-<td>
-Script to be run when an element gets user input.
-</td>
-</tr>
-<tr>
-<td>
-oninvalid
-</td>
-<td>
-script
-</td>
-<td>
-Script to be run when an element is invalid.
-</td>
-</tr>
-<td>
-onreset
-</td>
-<td>
-script
-</td>
-<td>
-Fires when the Reset button in a form is clicked.
-</td>
-</tr>
-<tr>
-<td>
-onsearch
-</td>
-<td>
-script
-</td>
-<td>
-Fires when the user writes something in a search field (for
-&lt;input=“search”&gt;).
-</td>
-</tr>
-<tr>
-<td>
-onselect
-</td>
-<td>
-script
-</td>
-        <td>
-Fires after some text has been selected in an element.
-</td>
-</tr>
-<tr>
-        <td>
-onsubmit
-</td>
-        <td>
-script
-</td>
-        <td>
-Fires when a form is submitted.
-</td>
-</tr>
-</tbody>
-</table>
+  <table>
+    <caption>Form Events</caption>
+    <thead>
+      <tr>
+        <th>Attribute</th>
+        <th>Value</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>onblur</td>
+        <td>script</td>
+        <td>Fires the moment that the element loses focus.</td>
+      </tr>
+      <tr>
+        <td>onchange</td>
+        <td>script</td>
+        <td>Fires the moment when the value of the element is changed.</td>
+      </tr>
+      <tr>
+        <td>oncontextmenu</td>
+        <td>script</td>
+        <td>Script to be run when a context menu is triggered.</td>
+      </tr>
+        <td>onfocus</td>
+        <td>script</td>
+        <td>Fires the moment when the element gets focus.</td>
+      </tr>
+      <tr>
+        <td>oninput</td>
+        <td>script</td>
+        <td>Script to be run when an element gets user input.</td>
+      </tr>
+      <tr>
+        <td>oninvalid</td>
+        <td>script</td>
+        <td>Script to be run when an element is invalid.</td>
+      </tr>
+        <td>onreset</td>
+        <td>script</td>
+        <td>Fires when the Reset button in a form is clicked.</td>
+      </tr>
+      <tr>
+        <td>onsearch</td>
+        <td>script</td>
+        <td>Fires when the user writes something in a search field (for &lt;input=“search”&gt;).</td>
+      </tr>
+      <tr>
+        <td>onselect</td>
+        <td>script</td>
+        <td>Fires after some text has been selected in an element.</td>
+      </tr>
+      <tr>
+        <td>onsubmit</td>
+        <td>script</td>
+        <td>Fires when a form is submitted.</td>
+      </tr>
+    </tbody>
+  </table>
 </div>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h4 id="keyboard-events">Keyboard Events</h4>
