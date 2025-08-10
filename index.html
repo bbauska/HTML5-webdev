@@ -43,7 +43,30 @@
   <meta name="theme-color" content="#ffffff">
 </head>
 <body>
-<h1 id="#html-basics&quot;">HTML Basics</h1>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~ script function: scrollFunction() ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<script>
+  <!-- Get the button -->
+  var mybutton = document.getElementById("myBtn");
+
+  <!-- When the user scrolls down 10px from the top of the document, show the button -->
+  window.onscroll = function() {scrollFunction()};
+
+  function scrollFunction() {
+    if (document.body.scrollTop > 10 || document.documentElement.scrollTop > 10) {
+      mybutton.style.display = "block";
+    } else {
+      mybutton.style.display = "none";
+    }
+  }
+
+  // When the user clicks on the button, scroll to the table of contents near top of document.
+  function topFunction() {
+    document.getElementById('table-of-contents').scrollIntoView();
+  }
+</script>
+<h1 id="table-of-contents">HTML5 Basics: Table of Contents</h1>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h2 id="#topics">Related Topics</h2>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -65,6 +88,7 @@
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h2><a id="toc">Table of Contents</a></h2>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<h3>
 <ol>
   <li><a href="#1-intro">Introduction</a></li>
   <li><a href="#2-html-tags">HTML Tags</a></li>
@@ -83,6 +107,7 @@
   <li><a href="#15-html-access">HTML Accessibility</a></li>
   <li><a href="#16-misc">Miscellaneous</a></li>
 </ol>
+</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h2 id="1-intro">
   <ol type="1">
@@ -207,11 +232,11 @@ id names are case insensitive. In standards mode they are case sensitive.</p>
 <p>There are five new form elements in the HTML5 forms specification: &lt;datalist&gt;, 
 &lt;meter&gt;, &lt;output&gt;, &lt;progress&gt;, and &lt;meter&gt;.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<h4>
+<h3>
   <ol type="1">
     <li>Datalist Tag</li>
   </ol>
-</h4>
+</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p>Allows to attach a list of suggestions to a text input element. As soon as the user begins to 
 type in the text field, the list of suggestions appears and the user can choose from the 
@@ -229,11 +254,11 @@ suggestions with the mouse.</p>
 &lt;/datalist&gt;
 </pre>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<h4>
+<h3>
   <ol start="2" type="1">
     <li>Meter Tag</li>
   </ol>
-</h4>
+</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p>Indicates a numeric value that falls within a range. The tag supports a number of attributes 
 values: If you don't specify a value, the first numeric value inside the &lt;meter&gt;&lt;/meter&gt; 
@@ -290,11 +315,11 @@ element should appear or behave.</p>
 <p>Total Score: <meter value="6" min="0" max="10">6 out of 10</meter></p>
 <p>Pollution Level: <meter low="60" high="80" max="100" value="85">Very High</meter></p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<h4>
+<h3>
   <ol start="3" type="1">
     <li>Output Tag</li>
   </ol>
-</h4>
+</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p>It indicates a section of the page that can be modified by a script (usually JavaScript).</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -305,11 +330,11 @@ element should appear or behave.</p>
 &lt;/form&gt;
 </pre>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<h4>
+<h3>
   <ol start="4" type="1">
     <li>Progress Tag</li>
   </ol>
-</h4>
+</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p>Indicates how much of a task has been completed (often marked as a percentage). It is expected 
 to be modified through JavaScript code.</p>
@@ -666,7 +691,7 @@ markup?</h2>
 must be present for all articles, sections, and pages, although a &lt;footer&gt; tag is 
 not necessary.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<h4>From W3C standards</h4>
+<h3>From W3C standards</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p>A header element is intended to usually contain the section’s heading (an h1–h6 element 
 or an hgroup element), but this is not required. The header element can also be used to wrap 
@@ -910,11 +935,11 @@ keywords, document author etc.</p>
 <h2>Q. What does <mark><span class="makeKnown">async</span></mark> and <mark><span class="makeKnown">defer</span></mark> refer in script tag?</h2>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<h4>
+<h3>
   <ol type="1">
     <li>Async:</li>
   </ol>
-</h4>
+</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p>Downloads the script file during HTML parsing and will pause the HTML parser to execute 
 it when it has finished downloading.</p>
@@ -929,11 +954,11 @@ it when it has finished downloading.</p>
 &lt;script async src="https://google-analytics.com/analytics.js"&gt;&lt;/script&gt;
 </pre>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<h4>
+<h3>
   <ol start="2" type="1">
     <li>Defer:</li>
   </ol>
-</h4>
+</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p>Defer downloads the script file during HTML parsing and will only execute it after the 
 HTML parser has completed. Not all browsers support this.</p>
@@ -1376,11 +1401,11 @@ to the server.</p>
 For the datalist element, it is suggested that the user select one of the options you've 
 given, but he can actually enter anything he wants in the input.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<h4>
+<h3>
   <ol type="1">
     <li>Select:</li>
   </ol>
-</h4>
+</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <pre>&lt;select name="browser"&gt;
   &lt;option value="firefox"&gt;Firefox&lt;/option&gt;
@@ -1391,11 +1416,11 @@ given, but he can actually enter anything he wants in the input.</p>
 &lt;/select&gt;
 </pre>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<h4>
+<h3>
   <ol start="2" type="1">
     <li>Datalist:</li>
   </ol>
-</h4>
+</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <pre>&lt;input type="text" list="browsers"&gt;
 &lt;datalist id="browsers"&gt;
@@ -1742,32 +1767,32 @@ suitable HTML5 element or attribute exists.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <img src="assets/lib/img/frame-full.jpg" alt="Browser Engine" />
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<h4>
+<h3>
   <ol type="1">
     <li>JavaScript:</li>
   </ol>
-</h4>
+</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p>Typically JavaScript is used to handle work that will result in visual changes, 
 whether it's jQuery's animate function, sorting a data set, or adding DOM elements to the 
 page. It doesn't have to be JavaScript that triggers a visual change, though: CSS 
 Animations, Transitions, and the Web Animations API are also commonly used.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<h4>
+<h3>
   <ol start="2" type="1">
     <li>Style:</li>
   </ol>
-</h4>
+</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p>This is the process of figuring out which CSS rules apply to which elements based on 
 matching selectors, for example, .headline or .nav &gt; .nav__item. From there, once rules 
 are known, they are applied and the final styles for each element are calculated.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<h4>
+<h3>
   <ol start="3" type="1">
     <li>Layout:</li>
   </ol>
-</h4>
+</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p>Once the browser knows which rules apply to an element it can begin to calculate how 
 much space it takes up and where it is on screen. The web's layout model means that one 
@@ -1775,22 +1800,22 @@ element can affect others, for example the width of the &lt;body&gt; element typ
 affects its children's widths and so on all the way up and down the tree, so the process 
 can be quite involved for the browser.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<h4>
+<h3>
   <ol start="4" type="1">
     <li>Paint:</li>
   </ol>
-</h4>
+</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p>Painting is the process of filling in pixels. It involves drawing out
 text, colors, images, borders, and shadows, essentially every visual
 part of the elements. The drawing is typically done onto multiple
 surfaces, often called layers.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<h4>
+<h3>
   <ol start="5" type="1">
     <li>Compositing:</li>
   </ol>
-</h4>
+</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p>Since the parts of the page were drawn into potentially multiple layers
 they need to be drawn to the screen in the correct order so that the
@@ -1846,30 +1871,30 @@ over the top of another incorrectly.</p>
 shrink, or enlarge, a website, to make it look good on all devices (desktops, tablets, 
 and phones).</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<h4>
+<h3>
   <ol type="1">
     <li>Setting the viewport:</li>
   </ol>
-</h4>
+</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <pre>&lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;</pre>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<h4>
+<h3>
   <ol start="2" type="1">
     <li>Responsive Images:</li>
   </ol>
-</h4>
+</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p>If the CSS width property is set to 100%, the image will be responsive and scale up 
 and down.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <pre>&lt;img src="img.png" style="width:100%;"&gt;</pre>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<h4>
+<h3>
   <ol start="3" type="1">
     <li>Show different Images depending on Browser Width:</li>
   </ol>
-</h4>
+</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p>The HTML &lt;picture&gt; element allows you to define different images for different 
 browser window sizes.</p>
@@ -1882,22 +1907,22 @@ browser window sizes.</p>
 &lt;/picture&gt;
 </pre>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<h4>
+<h3>
   <ol start="4" type="1">
     <li>Responsive Text Size:</li>
   </ol>
-</h4>
+</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p>The text size can be set with a “vw” unit, which means the “viewport width”. That way 
 the text size will follow the size of the browser window.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <pre>&lt;h1 style="font-size:10vw"&gt;Hello World&lt;/h1&gt;</pre>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<h4>
+<h3>
   <ol start="5" type="1">
     <li>Media Queries:</li>
   </ol>
-</h4>
+</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p>Using media queries you can define completely different styles for
 different browser sizes.</p>
@@ -1923,11 +1948,11 @@ different browser sizes.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h2>Q. List the API available in HTML5?</h2>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<h4>
+<h3>
   <ol type="1">
     <li>High Resolution Time API</li>
   </ol>
-</h4>
+</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p>The High Resolution Time API provides the current time in sub-millisecond resolution 
 and such that it is not subject to system clock skew or adjustments.</p>
@@ -1940,11 +1965,11 @@ performance of our code.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <pre>var time = performance.now();</pre>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<h4>
+<h3>
   <ol start="2" type="1">
     <li>User Timing API</li>
   </ol>
-</h4>
+</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p>It allows us to accurately measure and report the performance of a section of JavaScript 
 code. It deals with two main concepts: mark and measure. The former represents an instant 
@@ -1958,11 +1983,11 @@ performance.mark("endFoo");
 performance.measure("durationFoo", "startFoo", "endFoo");
 </pre>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<h4>
+<h3>
   <ol start="3" type="1">
     <li>Network Information API</li>
   </ol>
-</h4>
+</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p>This API belongs to the connection property of the
 <mark>window.navigator</mark> object. It exposes two read-only
@@ -2016,11 +2041,11 @@ subject to limitation and bandwidth usage, and false otherwise.</p>
   </table>
 </div>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<h4>
+<h3>
   <ol start="4" type="1">
     <li>Vibration API</li>
   </ol>
-</h4>
+</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p>It exposes only one method, <mark>vibrate()</mark>, that belongs to the
 <mark>window.navigator</mark> object. This method accepts one parameter
@@ -2032,11 +2057,11 @@ it's interpreted as alternating vibration times and pauses.</p>
 navigator.vibrate(2000);
 </pre>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<h4>
+<h3>
   <ol start="5" type="1">
     <li>Battery Status API</li>
   </ol>
-</h4>
+</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p>The Battery Status API exposes four properties (<mark>charging</mark>,
 <mark>chargingTime</mark>, <mark>discharingTime</mark>, and
@@ -2051,11 +2076,11 @@ object.</p>
 var percentageLevel = navigator.battery.level * 100;
 </pre>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<h4>
+<h3>
   <ol start="6" type="1">
     <li>Page Visibility API</li>
   </ol>
-</h4>
+</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p>The Page Visibility API enables us to determine the current visibility
 state of the page. The Page Visibility API is especially useful for
@@ -2066,11 +2091,11 @@ performing unnecessary tasks when the document isn't visible.</p>
 console.log('Page Visibility: '+document.hidden); 
 </pre>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<h4>
+<h3>
   <ol start="7" type="1">
     <li>Fullscreen API</li>
   </ol>
-</h4>
+</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p>
 The Fullscreen API provides a way to request fullscreen display from the
@@ -2213,11 +2238,11 @@ socket.addEventListener('message', function(event) {
 <p><span class="makeKnown">canvas</span> is an HTML element which can be used to draw graphics via JavaScript. 
 This can, for instance, be used to draw graphs, combine photos, or create animations.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<h4>
+<h3>
   <ol type="1">
     <li>Colors, Styles, and Shadows:</li>
   </ol>
-</h4>
+</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <table>
   <colgroup>
@@ -2258,11 +2283,11 @@ This can, for instance, be used to draw graphs, combine photos, or create animat
   </tbody>
 </table>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<h4>
+<h3>
   <ol start="2" type="1">
     <li>Line Styles:</li>
   </ol>
-</h4>
+</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <div role="region" tabindex="0">
   <table>
@@ -2294,11 +2319,11 @@ This can, for instance, be used to draw graphs, combine photos, or create animat
   </table>
 </div>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<h4>
+<h3>
   <ol start="3" type="1">
     <li>Rectangles:</li>
   </ol>
-</h4>
+</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <div role="region" tabindex="0">
   <table>
@@ -2330,11 +2355,11 @@ This can, for instance, be used to draw graphs, combine photos, or create animat
   </table>
 </div>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<h4>
+<h3>
   <ol start="4" type="1">
     <li>Paths:</li>
   </ol>
-</h4>
+</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <div role="region" tabindex="0">
   <table>
@@ -2387,11 +2412,11 @@ This can, for instance, be used to draw graphs, combine photos, or create animat
   </table>
 </div>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<h4>
+<h3>
   <ol start="5" type="1">
     <li>Transformations:</li>
   </ol>
-</h4>
+</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <div role="region" tabindex="0">
   <table>
@@ -2427,11 +2452,11 @@ This can, for instance, be used to draw graphs, combine photos, or create animat
   </table>
 </div>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<h4>
+<h3>
   <ol start="6" type="1">
     <li>Text:</li>
   </ol>
-</h4>
+</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <div role="region" tabindex="0">
   <table>
@@ -2471,7 +2496,7 @@ This can, for instance, be used to draw graphs, combine photos, or create animat
   </table>
 </div>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<h4>Example 01: HTML5 Canvas for Text</h4>
+<h3>Example 01: HTML5 Canvas for Text</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <pre>&lt;div&gt;Text&lt;/div&gt;
 &lt;canvas id="text" width="200" height="100" &gt;&lt;/canvas&gt;
@@ -2486,7 +2511,7 @@ This can, for instance, be used to draw graphs, combine photos, or create animat
 &lt;/script&gt;
 </pre>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<h4>Example 02: HTML5 Canvas for Straight Line</h4>
+<h3>Example 02: HTML5 Canvas for Straight Line</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <pre>&lt;div&gt;Straight Line&lt;/div&gt;
 &lt;canvas id="line" width="300" height="0" style="border: 1px solid #333;"&gt;&lt;/canvas&gt;
@@ -2501,7 +2526,7 @@ This can, for instance, be used to draw graphs, combine photos, or create animat
 &lt;/script&gt;
 </pre>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<h4>Example 03: HTML5 Canvas for Rectangle</h4>
+<h3>Example 03: HTML5 Canvas for Rectangle</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <pre>&lt;div&gt;Rectangle with Style&lt;/div&gt;
 &lt;canvas id="rectangle" width="300" height="200" style="border: 1px solid #999;"&gt;&lt;/canvas&gt;
@@ -2515,7 +2540,7 @@ This can, for instance, be used to draw graphs, combine photos, or create animat
 &lt;/script&gt;
 </pre>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<h4>Example 04: HTML5 Canvas for Circle</h4>
+<h3>Example 04: HTML5 Canvas for Circle</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <pre>&lt;div&gt;Circle&lt;/div&gt;
 &lt;canvas id="circle"&gt;This browser does not support Canvas!&lt;/canvas&gt;
@@ -2532,11 +2557,11 @@ This can, for instance, be used to draw graphs, combine photos, or create animat
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h2>Q. What is difference between SVG and Canvas?</h2>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<h4>
+<h3>
   <ol type="1">
     <li>SVG:</li>
   </ol>
-</h4>
+</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p>The Scalable Vector Graphics (SVG) is an XML-based image format that is used to define 
 two-dimensional vector based graphics for the web. Unlike raster image (e.g. .jpg, .gif, 
@@ -2579,11 +2604,11 @@ PNG, etc.</p>
 &lt;/html&gt;
 </pre>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<h4>
+<h3>
   <ol start="2" type="1">
     <li>Canvas:</li>
   </ol>
-</h4>
+</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p>Canvas is a HTML element is used to draw graphics on a web page. It is a bitmap with 
 an “immediate mode” graphics application programming interface (API) for drawing on it. 
@@ -2767,11 +2792,11 @@ the information on web pages and provide more relevant results to users.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h2>Q. What are the HTML tags which deprecated in HTML5?</h2>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<h4>
+<h3>
   <ol type="1">
     <li>Deprecated Tags:</li>
   </ol>
-</h4>
+</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p>The following elements are not available in HTML5 anymore and their function is better 
 handled by CSS.</p>
@@ -2866,11 +2891,11 @@ handled by CSS.</p>
   </table>
 </div>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<h4>
+<h3>
   <ol start="2" type="1">
     <li>Deprecated Attributes:</li>
   </ol>
-</h4>
+</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <table>
   <colgroup>
@@ -3104,11 +3129,11 @@ to test for some of the new technologies and then provide fallbacks for browsers
 not support them. This is called <span class="makeKnown">feature detection</span> and is much more efficient than 
 browser sniffing.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<h4>
+<h3>
   <ol type="1">
     <li>Using Modernizr with CSS:</li>
   </ol>
-</h4>
+</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p>By default, <mark>Modernizr</mark> sets classes for all of your tests on the root 
 element (&lt;html&gt; for websites). This means adding the class for each feature when it 
@@ -3124,11 +3149,11 @@ or <mark>.no-feature</mark>).</p>
 }
 </pre>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<h4>
+<h3>
   <ol start="2" type="1">
     <li>Using Modernizr with JavaScript:</li>
   </ol>
-</h4>
+</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p><mark>Modernizr</mark> keeps track of the results of all of it's feature detections 
 via the <mark>Modernizr</mark> object.</p>
@@ -3151,11 +3176,11 @@ you may stream it to the client without having to wait for non-critical
 stuff to be displayed. It combines the advantages of both CSR (Client
 Side Rendering) and SSR (Server Side Rendering) (Server Side Rendering).</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<h4>
+<h3>
   <ol type="1">
     <li>Client Side Rendering:</li>
   </ol>
-</h4>
+</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p>Client Side Rendering (CSR) is a technique in which content is rendered
 in the browser using JavaScript. Instead of getting all the content from
@@ -3178,11 +3203,11 @@ JavaScript, it takes a longer time to show any content on the page. If
 the user is on a slow network, the content is blocked for an even longer
 time due to lower bandwidth and higher latency.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<h4>
+<h3>
   <ol start="2" type="1">
     <li>Server Side Rendering:</li>
   </ol>
-</h4>
+</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p>When rendering on the server side, the HTML is rendered on the server
 and sent to the client. The content that we need to display on the
@@ -3272,7 +3297,7 @@ parent — is usually the browser window, represented by the <span class="makeKn
 &lt;/html&gt;
 </pre>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<h4>The Iframe Tag Attributes:</h4>
+<h3>The Iframe Tag Attributes:</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <div role="region" tabindex="0">
   <table>
@@ -3323,11 +3348,11 @@ increased memory and other computing resources.</i></p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h2>Q. Explain the use of rel=“nofollow”, rel=“noreferrer”, rel=“noopener” attribute?</h2>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<h4>
+<h3>
   <ol type="1">
     <li>rel=“nofollow”</li>
   </ol>
-</h4>
+</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p>When <mark><span class="makeKnown">rel=“nofollow”</span></mark> tag is used, it instruct the search engines 
 not to pass any PageRank from one page to the other. It does not allow it to pass the 
@@ -3340,11 +3365,11 @@ websites, for example some blog comments and some kind of forum posting.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <pre>&lt;a href="https://www.website.com" rel="nofollow"&gt;Link to yoursite.com&lt;/a&gt;</pre>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<h4>
+<h3>
   <ol start="2" type="1">
     <li>rel=“noreferrer”</li>
   </ol>
-</h4>
+</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p>Noreferrer is related to analytics and tracking. The referrer value shows the previous 
 page where a user came from. By using the noreferrer attribute on a link, you are 
@@ -3354,11 +3379,11 @@ preventing other pages from seeing that traffic came from a click on your link.<
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <pre>&lt;a href="https://www.website.com" rel="noreferrer"&gt;Link to yoursite.com&lt;/a&gt;</pre>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<h4>
+<h3>
   <ol start="3" type="1">
     <li>rel=“noopener”</li>
   </ol>
-</h4>
+</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p>It prevents the new page from being able to access the <mark><span class="makeKnown">window.opener</span></mark> 
 property and will make it run in a separate process. noopener tag works as a security fix 
@@ -3581,7 +3606,7 @@ content. pages without a DOCTYPE will be rendered in quirks mode. Edge mode tell
 Internet Explorer to display content in the highest mode available, which actually breaks 
 the “lock-in” paradigm. With Internet Explorer 8, this is equivalent to IE8 mode.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<h4>Setting the Meta Element:</h4>
+<h3>Setting the Meta Element:</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p>The meta element includes a content attribute that enables you to specify the mode 
 that content is rendered in for the webpage, as the following table shows.</p>
@@ -3828,7 +3853,7 @@ Hebrew, Pashto, Persian, Urdu, and Sindhi.</p>
 &lt;textarea dir="rtl"&gt;&lt;/textarea&gt;
 </pre>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<h4>Attribute Values:</h4>
+<h3>Attribute Values:</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <div role="region" tabindex="0">
   <table>
@@ -3913,7 +3938,7 @@ it one font-size smaller, such as from <mark>small</mark> to <mark>x-small</mark
 connected content. And the &lt;div&gt; tag is an empty container specifying a division or 
 a section.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<h4>The <mark><span class="makeKnown">&lt;section&gt;</span></mark> Element</h4>
+<h3>The <mark><span class="makeKnown">&lt;section&gt;</span></mark> Element</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p>According to the W3C specification, the &lt;section&gt; tag means that the content 
 inside this element is grouped. In other words, the content relates to a single theme. 
@@ -3946,7 +3971,7 @@ It must be an entry in the outline of the page.</p>
 &lt;/html&gt;
 </pre>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<h4>The <mark><span class="makeKnown">&lt;div&gt;</span></mark> Element</h4>
+<h3>The <mark><span class="makeKnown">&lt;div&gt;</span></mark> Element</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p>The &lt;div&gt; element only represents its child elements and doesn't have a special 
 meaning. It can be used with the <mark><span class="makeKnown">lang</span></mark>, <mark><span class="makeKnown">title</span></mark>, and
@@ -4002,7 +4027,7 @@ browser.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h2>Q. Why you would use a <mark><span class="makeKnown">srcset</span></mark> attribute in an image tag?</h2>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<h4>Explain the process the browser used when evaluating the content of this attribute.</h4>
+<h3>Explain the process the browser used when evaluating the content of this attribute.</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p>The <mark><span class="makeKnown">srcset</span></mark> attribute allows to define a list of
 different image resources along with size information so that browser
@@ -4020,11 +4045,11 @@ resolution.</p>
 &gt;
 </pre>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<h4>
+<h3>
   <ol type="1">
     <li>Using display density descriptor:</li>
   </ol>
-</h4>
+</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p><mark><span class="makeKnown">srcset</span></mark> provides a comma-separated list of image resources along 
 with display density it should be used, for example1x, 2x etc.</p>
@@ -4037,11 +4062,11 @@ with display density it should be used, for example1x, 2x etc.</p>
 /&gt;
 </pre>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<h4>
+<h3>
   <ol start="2" type="1">
     <li>Using width descriptor:</li>
   </ol>
-</h4>
+</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p>The syntax is similar to the display density descriptor, but instead of display 
 density values, we provide the actual width of the image.</p>
@@ -4338,7 +4363,7 @@ practical for most web pages/applications.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h4>There are muliple types; Window, Form, Keyboard, Mouse, Drag, Clipboard, Media, &amp; Miscellaneous.</h4>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<h4 id="global-events">Global Event Attributes</h4>
+<h3 id="global-events">Global Event Attributes</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p>HTML has the ability to let events trigger actions in a browser, like
 starting a JavaScript when a user clicks on an element.</p>
@@ -4346,7 +4371,7 @@ starting a JavaScript when a user clicks on an element.</p>
 <p>Below are the global event attributes that can be added to HTML elements
 to define event actions.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<h4 id="window-events">Window Event Attributes</h4>
+<h3 id="window-events">Window Event Attributes</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p>Events triggered for the window object (applies to the &lt;body&gt; tag):</p>
 
@@ -4454,7 +4479,7 @@ to define event actions.</p>
   </table>
 </div>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<h4 id="form-events">Form Events</h4>
+<h3 id="form-events">Form Events</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p>Events triggered by actions inside a HTML form (applies to almost all
 HTML elements, but is most used in form elements):</p>
@@ -4522,7 +4547,7 @@ HTML elements, but is most used in form elements):</p>
   </table>
 </div>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<h4 id="keyboard-events">Keyboard Events</h4>
+<h3 id="keyboard-events">Keyboard Events</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <div role="region" tabindex="0">
   <table>
@@ -4554,7 +4579,7 @@ HTML elements, but is most used in form elements):</p>
   </table>
 </div>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<h4 id="mouse-events">Mouse Events</h4>
+<h3 id="mouse-events">Mouse Events</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <div role="region" tabindex="0">
   <table>
@@ -4616,7 +4641,7 @@ HTML elements, but is most used in form elements):</p>
 </table>
 </div>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<h4 id="drag-events">Drag Events</h4>
+<h3 id="drag-events">Drag Events</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <div role="region" tabindex="0">
   <table>
@@ -4673,7 +4698,7 @@ HTML elements, but is most used in form elements):</p>
   </table>
 </div>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<h4 id="clipboard-events">Clipboard Events</h4>
+<h3 id="clipboard-events">Clipboard Events</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <div role="region" tabindex="0">
   <table>
@@ -4705,7 +4730,7 @@ HTML elements, but is most used in form elements):</p>
   </table>
 </div>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<h4 id="media-events">Media Events</h4>
+<h3 id="media-events">Media Events</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p>Events triggered by medias like videos, images and audio (applies to all
 HTML elements, but is most common in media elements, like &lt;audio&gt;,
@@ -4853,7 +4878,7 @@ HTML elements, but is most common in media elements, like &lt;audio&gt;,
   </table>
 </div>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<h4 id="misc-events">Misc Events</h4>
+<h3 id="misc-events">Misc Events</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <div role="region" tabindex="0">
   <table>
@@ -9451,7 +9476,8 @@ Last editted: 5/26/2025 +12pm<br>
 Last editted: 6/16/2025 +12pm<br>
 Last editted: 6/17/2025 +6pm<br>
 Last editted: 6/18/2025 +6am<br>
-Last editted: 6/29/2025 +7pm</h6>
+Last editted: 6/29/2025 +7pm<br>
+Last editted: 8/10/2025 +3pm</h6>
 <p>The End…</p>
 </footer>
 
