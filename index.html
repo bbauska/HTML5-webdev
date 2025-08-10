@@ -104,21 +104,21 @@ end developers.</p>
 <h2>Q. What are the building blocks of HTML5?</h2>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <ul>
-  <li><mark><b>Semantics</b></mark>: allowing you to describe more precisely what your 
+  <li><mark><span class="makeKnown">Semantics</span></mark>: allowing you to describe more precisely what your 
     content is.</li>
-  <li><mark><b>Connectivity</b></mark>: allowing you to communicate with the server in 
+  <li><mark><span class="makeKnown">Connectivity</span></mark>: allowing you to communicate with the server in 
     new and innovative ways.</li>
-  <li><mark><b>Offline and storage</b></mark>: allowing webpages to store data on the 
+  <li><mark><span class="makeKnown">Offline and storage</span></mark>: allowing webpages to store data on the 
     client-side locally and operate offline more efficiently.</li>
-  <li><mark><b>Multimedia</b></mark>: making video and audio first-class citizens in the 
+  <li><mark><span class="makeKnown">Multimedia</span></mark>: making video and audio first-class citizens in the 
     Open Web.</li>
-  <li><mark><b>2D/3D graphics and effects</b></mark>: allowing a much more diverse range 
+  <li><mark><span class="makeKnown">2D/3D graphics and effects</span></mark>: allowing a much more diverse range 
     of presentation options.</li>
-  <li><mark><b>Performance and integration</b></mark>: providing greater speed 
+  <li><mark><span class="makeKnown">Performance and integration</span></mark>: providing greater speed 
     optimization and better usage of computer hardware.</li>
-  <li><mark><b>Device access</b></mark>: allowing for the usage of various input and 
+  <li><mark><span class="makeKnown">Device access</span></mark>: allowing for the usage of various input and 
     output devices.</li>
-  <li><mark><b>Styling</b></mark>: letting authors write more sophisticated themes.</li>
+  <li><mark><span class="makeKnown">Styling</span></mark>: letting authors write more sophisticated themes.</li>
 </ul>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h2>Q. What are the semantic tags available in html5?</h2>
@@ -127,19 +127,19 @@ end developers.</p>
 for browsers and search engines, as well as developers.</p>
 <p>HTML5 offers new semantic elements to define different parts of a web page:</p>
 <ul>
-  <li><b><mark>&lt;article&gt;</mark></b></li>
-  <li><b><mark>&lt;aside&gt;</mark></b></li>
-  <li><b><mark>&lt;details&gt;</mark></b></li>
-  <li><b><mark>&lt;figcaption&gt;</mark></b></li>
-  <li><b><mark>&lt;figure&gt;</mark></b></li>
-  <li><b><mark>&lt;footer&gt;</mark></b></li>
-  <li><b><mark>&lt;header&gt;</mark></b></li>
-  <li><b><mark>&lt;main&gt;</mark></b></li>
-  <li><b><mark>&lt;mark&gt;</mark></b></li>
-  <li><b><mark>&lt;nav&gt;</mark></b></li>
-  <li><b><mark>&lt;section&gt;</mark></b></li>
-  <li><b><mark>&lt;summary&gt;</mark></b></li>
-  <li><b><mark>&lt;time&gt;</mark></b></li>
+  <li><span class="makeKnown"><mark>&lt;article&gt;</mark></span></li>
+  <li><span class="makeKnown"><mark>&lt;aside&gt;</mark></span></li>
+  <li><span class="makeKnown"><mark>&lt;details&gt;</mark></span></li>
+  <li><span class="makeKnown"><mark>&lt;figcaption&gt;</mark></span></li>
+  <li><span class="makeKnown"><mark>&lt;figure&gt;</mark></span></li>
+  <li><span class="makeKnown"><mark>&lt;footer&gt;</mark></span></li>
+  <li><span class="makeKnown"><mark>&lt;header&gt;</mark></span></li>
+  <li><span class="makeKnown"><mark>&lt;main&gt;</mark></span></li>
+  <li><span class="makeKnown"><mark>&lt;mark&gt;</mark></span></li>
+  <li><span class="makeKnown"><mark>&lt;nav&gt;</mark></span></li>
+  <li><span class="makeKnown"><mark>&lt;section&gt;</mark></span></li>
+  <li><span class="makeKnown"><mark>&lt;summary&gt;</mark></span></li>
+  <li><span class="makeKnown"><mark>&lt;time&gt;</mark></span></li>
 </ul>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h4>Syntax:</h4>
@@ -185,21 +185,21 @@ for browsers and search engines, as well as developers.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h2>Q. What does a &lt;DOCTYPE html&gt; do?</h2>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<p>A DOCTYPE is always associated to a <mark><b>DTD</b></mark> (<mark><b>Document Type 
-Definition</b></mark> ). A DTD defines how documents of a certain type should be structured 
-(i.e. a <mark><b>button</b></mark> can contain a <mark><b>span</b></mark> but not a 
-<mark><b>div</b></mark>), whereas a DOCTYPE declares what DTD a document supposedly respects 
+<p>A DOCTYPE is always associated to a <mark><span class="makeKnown">DTD</span></mark> (<mark><span class="makeKnown">Document Type 
+Definition</span></mark> ). A DTD defines how documents of a certain type should be structured 
+(i.e. a <mark><span class="makeKnown">button</span></mark> can contain a <mark><span class="makeKnown">span</span></mark> but not a 
+<mark><span class="makeKnown">div</span></mark>), whereas a DOCTYPE declares what DTD a document supposedly respects 
 (i.e. this document respects the HTML DTD). For webpages, the DOCTYPE declaration is required. 
 It is used to tell user agents what version of the HTML specifications your document respects.</p>
 
 <p>Once a user agent has recognized a correct DOCTYPE, it will trigger the 
-<mark><b>no-quirks mode</b></mark> matching this DOCTYPE forreading the document. If a user agent 
+<mark><span class="makeKnown">no-quirks mode</span></mark> matching this DOCTYPE forreading the document. If a user agent 
 doesn’t recognize a correct DOCTYPE, it will trigger the <mark>quirks mode</mark>.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h2>Q. What happens when DOCTYPE is not given?</h2>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p>The web page is rendered in quirks mode. The web browsers engines use quirks mode to support 
-older browsers which does not follow the <b>W3C specifications</b>. In quirks mode CSS class and 
+older browsers which does not follow the <span class="makeKnown">W3C specifications</span>. In quirks mode CSS class and 
 id names are case insensitive. In standards mode they are case sensitive.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h2>Q. What are the form elements in HTML5?</h2>  <!-- all, not just new -->
@@ -279,11 +279,11 @@ element should appear or behave.</p>
 </table>
 
 <ul>
-  <li><b>max</b>: The maximum possible value of the item.</li>
-  <li><b>min</b>: The minimum possible value of the item.</li>
-  <li><b>high</b>: If the value can be defined as a range, this is the highend of the range.</li>
-  <li><b>low</b>: If the value can defined as a range, this is the low end of that range.</li>
-  <li><b>optimum</b>: The optimal value of the element.</li>
+  <li><span class="makeKnown">max</span>: The maximum possible value of the item.</li>
+  <li><span class="makeKnown">min</span>: The minimum possible value of the item.</li>
+  <li><span class="makeKnown">high</span>: If the value can be defined as a range, this is the highend of the range.</li>
+  <li><span class="makeKnown">low</span>: If the value can defined as a range, this is the low end of that range.</li>
+  <li><span class="makeKnown">optimum</span>: The optimal value of the element.</li>
 </ul>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p>Disk Usage: <meter value="0.2">20%</meter></p>
@@ -557,14 +557,14 @@ to be modified through JavaScript code.</p>
 &lt;/body&gt;
 &lt;/html&gt;</pre>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<h2>Q. What is the difference between <mark><b>span</b></mark> tag and <mark><b>div</b></mark> tag?</h2>
+<h2>Q. What is the difference between <mark><span class="makeKnown">span</span></mark> tag and <mark><span class="makeKnown">div</span></mark> tag?</h2>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p>The primary difference between div and span tag is their default behavior. By default, a 
-&lt;div&gt; is a <b>block-level-element</b> and a &lt;span&gt; is an <b>inline element</b>.</p>
+&lt;div&gt; is a <span class="makeKnown">block-level-element</span> and a &lt;span&gt; is an <span class="makeKnown">inline element</span>.</p>
 <ul>
-  <li><b>&lt;div&gt;</b> is a block level element which means it will render it on it's own line 
+  <li><span class="makeKnown">&lt;div&gt;</span> is a block level element which means it will render it on it's own line 
     with a width of a 100% of the parent element.</li>
-  <li><b>&lt;span&gt;</b> is an inline element which means it will render on the same line as the 
+  <li><span class="makeKnown">&lt;span&gt;</span> is an inline element which means it will render on the same line as the 
     previous element, if it is also an inline element, and it’s width will be determined by it's 
     content.</li>
 </ul>
@@ -599,12 +599,12 @@ to have specific closing tags are called “self closing” tags.</p>
 <h2>Q. What are semantic and non-semantic elements?</h2>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <ul>
-  <li><b><mark>Semantic elements</mark></b>: clearly describes its meaning to both the browser 
+  <li><span class="makeKnown"><mark>Semantic elements</mark></span>: clearly describes its meaning to both the browser 
     and the developer.<br> For example: &lt;form&gt;, &lt;table&gt;, &lt;article&gt;, 
     &lt;aside&gt;, &lt;details&gt;, &lt;figcaption&gt;, &lt;figure&gt;, &lt;footer&gt;, 
     &lt;header&gt;, &lt;main&gt;, &lt;mark&gt;, &lt;nav&gt;, &lt;section&gt;, &lt;summary&gt;, 
     &lt;time&gt; clearly defines its content.</li>
-  <li><b><mark>Non-semantic elements</mark></b>: &lt;div&gt; and &lt;span&gt; tells nothing about 
+  <li><span class="makeKnown"><mark>Non-semantic elements</mark></span>: &lt;div&gt; and &lt;span&gt; tells nothing about 
     its content.</li>
 </ul>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -642,21 +642,21 @@ markup?</h2>
     information, and related links are typical examples of such content.</li>
 </ul>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<h2>Q. When should you use <mark><b>section</b></mark>, <mark><b>div</b></mark> or 
-<mark><b>article</b></mark>?</h2>
+<h2>Q. When should you use <mark><span class="makeKnown">section</span></mark>, <mark><span class="makeKnown">div</span></mark> or 
+<mark><span class="makeKnown">article</span></mark>?</h2>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <ul>
-  <li><b><mark>&lt;section&gt;</mark></b>, group of content inside is related to a single 
+  <li><span class="makeKnown"><mark>&lt;section&gt;</mark></span>, group of content inside is related to a single 
     theme, and should appear as an entry in an outline of the page. It's a chunk of related 
     content, like a subsection of a long article, a major part of the page (eg the news 
     section on the homepage), or a page in a webapp's tabbed interface. A section normally 
     has a heading (title) and maybe a footer too.</li>
-  <li><b><mark>&lt;article&gt;</mark></b>, represents a complete, or self-contained, composition 
+  <li><span class="makeKnown"><mark>&lt;article&gt;</mark></span>, represents a complete, or self-contained, composition 
     in a document, page, application, or site and that is, in principle, independently 
     distributable or reusable, e.g. in syndication. This could be a forum post, a magazine 
     or newspaper article, a blog entry, a user-submitted comment, an interactive widget or 
     gadget, or any other independent item of content.</li>
-  <li><b><mark>&lt;div&gt;</mark></b>, on the other hand, does not convey any meaning, aside 
+  <li><span class="makeKnown"><mark>&lt;div&gt;</mark></span>, on the other hand, does not convey any meaning, aside 
     from any found in its class, lang and title attributes.</li>
 </ul>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -843,7 +843,7 @@ This is specified in the tag:</p>
 <pre>&lt;meta charset="utf-8"/&gt;</pre>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <ul>
-  <li><b><mark>UTF-8</mark></b>: A Unicode Translation Format that comes in 8-bit units 
+  <li><span class="makeKnown"><mark>UTF-8</mark></span>: A Unicode Translation Format that comes in 8-bit units 
     that is, it comes in bytes. A character in UTF8 can be from 1 to 4 bytes long, making 
 	UTF8 variable width.</li>
 </ul>
@@ -907,7 +907,7 @@ keywords, document author etc.</p>
 &lt;/html&gt;
 </pre>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<h2>Q. What does <mark><b>async</b></mark> and <mark><b>defer</b></mark> refer in script tag?</h2>
+<h2>Q. What does <mark><span class="makeKnown">async</span></mark> and <mark><span class="makeKnown">defer</span></mark> refer in script tag?</h2>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h4>
@@ -962,9 +962,9 @@ document has been fully parsed.</p>
 &lt;script src="myscript.js"&gt;&lt;/script&gt;
 </pre>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<h2>Q. What is <mark><b>localStorage</b></mark> in html5?</h2>
+<h2>Q. What is <mark><span class="makeKnown">localStorage</span></mark> in html5?</h2>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<p>The <mark><b>localStorage</b></mark> read-only property of the window interface allows 
+<p>The <mark><span class="makeKnown">localStorage</span></mark> read-only property of the window interface allows 
 you to access a Storage object for the Document's origin; the stored data is saved across 
 browser sessions.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -979,7 +979,7 @@ localStorage.getItem("name"); // Kanti Ahluwalia
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h2>Q. What is sessionStorage in html5?</h2>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<p>The <b><mark>sessionStorage</mark></b> object is equal to the localStorage object, 
+<p>The <span class="makeKnown"><mark>sessionStorage</mark></span> object is equal to the localStorage object, 
 except that it stores the data for only one session. The data is deleted when the user 
 closes the specific browser tab.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -1036,8 +1036,8 @@ console.log(myCookies);
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <pre>document.cookie = "username=; expires=Thu, 01 Jan 1970 00:00:00 UTC; path=/;";</pre>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<h2>Q. Describe the difference between a <b><mark>cookie</mark></b>, <b><mark>sessionStorage</mark></b> 
-and <b><mark>localStorage</mark></b>?</h2>
+<h2>Q. Describe the difference between a <span class="makeKnown"><mark>cookie</mark></span>, <span class="makeKnown"><mark>sessionStorage</mark></span> 
+and <span class="makeKnown"><mark>localStorage</mark></span>?</h2>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <div role="region" tabindex="0">
   <table>
@@ -1091,8 +1091,8 @@ and <b><mark>localStorage</mark></b>?</h2>
   </table>
 </div>
 <p><i>Note: If the user decides to clear browsing data via whatever mechanism provided by 
-the browser, this will clear out any <mark><b>cookie</b></mark>, <mark><b>localStorage</b>
-</mark>, or <mark><b>sessionStorage</b></mark> stored. It's important to keep this in 
+the browser, this will clear out any <mark><span class="makeKnown">cookie</span></mark>, <mark><span class="makeKnown">localStorage</span>
+</mark>, or <mark><span class="makeKnown">sessionStorage</span></mark> stored. It's important to keep this in 
 mind when designing for local persistance, especially when comparing to alternatives such 
 as server side storing in a database or similar (which of course will persist despite user 
 actions).</i></p>
@@ -1147,7 +1147,7 @@ actions).</i></p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p>It is an API that is only supported in Chrome and Safari (and Android and iOS by 
 extension). It provides an asynchronous, transactional interface to <mark>SQLite</mark>. 
-Since 2010, it has been deprecated in favor of <mark><b>IndexedDB</b></mark>.</p>
+Since 2010, it has been deprecated in favor of <mark><span class="makeKnown">IndexedDB</span></mark>.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h4>Advantages</h4>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -1178,7 +1178,7 @@ Since 2010, it has been deprecated in favor of <mark><b>IndexedDB</b></mark>.</p
   </ol>
 </h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<p>It is the successor to both <b>LocalStorage</b> and <b>WebSQL</b>, designed to replace 
+<p>It is the successor to both <span class="makeKnown">LocalStorage</span> and <span class="makeKnown">WebSQL</span>, designed to replace 
 them as the “one true” browser database. It exposes an asynchronous API that supposedly 
 avoids blocking the DOM, but as we'll see below, it doesn't necessarily live up to the 
 hype. Browser support is extremely spotty, with only Chrome and Firefox having fully
@@ -1211,10 +1211,10 @@ Applications that are cached load and work correctly even if users click the ref
 button when they are offline.</p>
 <p>Using an application cache gives an application the following benefits:</p>
 <ul>
-  <li><b><mark>Offline browsing</mark></b>: users can navigate a site even when they are 
+  <li><span class="makeKnown"><mark>Offline browsing</mark></span>: users can navigate a site even when they are 
     offline.<li>
-  <b><mark>Speed</mark></b>: cached resources are local, and therefore load faster.<li>
-  <b><mark>Reduced server load</mark></b>: the browser only downloads resources that have 
+  <span class="makeKnown"><mark>Speed</mark></span>: cached resources are local, and therefore load faster.<li>
+  <span class="makeKnown"><mark>Reduced server load</mark></span>: the browser only downloads resources that have 
     changed from the server.</li>
 </ul>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -1227,7 +1227,7 @@ button when they are offline.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p><i>Note: Using the application caching feature described here is at this
 point highly discouraged; it's in the process of being removed from the
-Web platform. Use <mark><b>Service Workers</b></mark> instead. In fact
+Web platform. Use <mark><span class="makeKnown">Service Workers</span></mark> instead. In fact
 as of Firefox 44, when AppCache is used to provide offline support for a
 page a warning message is now displayed in the console advising
 developers to use Service workers instead (bug 1204581).</i></p>
@@ -1244,7 +1244,7 @@ developers because the user’s cache still references old files. This can
 either leave them with old functionality or break a website if the
 cached CSS and JavaScript files are referencing elements that no longer
 exist, have moved or have been renamed.</p>
-<p><b><mark>Cache busting</mark></b> is the process of forcing the browser
+<p><span class="makeKnown"><mark>Cache busting</mark></span> is the process of forcing the browser
 to download the new files. This is done by naming the file something
 different to the old file.</p>
 <p>A common technique to force the browser to re-download the file is to
@@ -1263,10 +1263,10 @@ people with disabilities (such as no sight, sound or mouse-ing ability) to use w
 applications. You can make your sites more accessible by following ARIA standards such 
 as semantic HTML, alt attributes and using [role=button] in the expected ways.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<h2>Q. How to use <b>data-</b> attribute in html5?</h2>
+<h2>Q. How to use <span class="makeKnown">data-</span> attribute in html5?</h2>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<p>Any attribute on any element whose attribute name starts with <mark><b>data-</b></mark> 
-is a data attribute. The <b>data-*</b> attributes gives us the ability to embed custom data 
+<p>Any attribute on any element whose attribute name starts with <mark><span class="makeKnown">data-</span></mark> 
+is a data attribute. The <span class="makeKnown">data-*</span> attributes gives us the ability to embed custom data 
 attributes on all HTML elements. The stored (custom) data can then be used in the page's
 JavaScript to create a more engaging user experience.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -1292,15 +1292,15 @@ article.dataset.indexNumber; // "100"
 article.dataset.parent; // "cars"
 </pre>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<p><b>⚝
+<p><span class="makeKnown">⚝
 <a href="https://codesandbox.io/s/html-data-attribute-llxlkn?file=/script.js">
-Try this example on CodeSandbox</a></b></p>
+Try this example on CodeSandbox</a></span></p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h2>Q. What is the purpose of the <mark>alt</mark> attribute on images?</h2>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<p>The <b><mark>alt</mark></b> attribute provides alternative information for an image if 
+<p>The <span class="makeKnown"><mark>alt</mark></span> attribute provides alternative information for an image if 
 a user cannot view it.</p>
-<p>The <b><mark>alt</mark></b> attribute should be used to describe any images except 
+<p>The <span class="makeKnown"><mark>alt</mark></span> attribute should be used to describe any images except 
 those which only serve a decorative purposes, in which case it should be left empty.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <pre>&lt;img src="pancakes.png" alt="Stack of blueberry pancakes with powdered sugar"&gt;</pre>
@@ -1478,9 +1478,9 @@ or interacted with through event listeners.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h2>Q. What is the difference between standards mode and quirks mode?</h2>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<p>In <b>Quirks mode</b>, layout emulates nonstandard behavior in Navigator 4 and 
+<p>In <span class="makeKnown">Quirks mode</span>, layout emulates nonstandard behavior in Navigator 4 and 
 Internet Explorer 5. This is essential in order to support websites that were built 
-before the widespread adoption of web standards. In <b>Standards mode</b>, the 
+before the widespread adoption of web standards. In <span class="makeKnown">Standards mode</span>, the 
 behavior is described by the HTML and CSS specifications.</p>
 <p>For HTML documents, browsers use a &lt;!DOCTYPE html&gt; in the beginning of the 
 document to decide whether to handle it in quirks mode or standards mode.</p>
@@ -1540,7 +1540,7 @@ document to decide whether to handle it in quirks mode or standards mode.</p>
 <h2>Q. Ways to improve website performance</h2>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <ul>
-  <li><b><mark>Minimize HTTP Requests</mark></b>
+  <li><span class="makeKnown"><mark>Minimize HTTP Requests</mark></span>
     <ul>
       <li>Sites are mainly slow because of too many (or too large) HTTP requests.
         We can eliminate unnecessary request;
@@ -1554,7 +1554,7 @@ document to decide whether to handle it in quirks mode or standards mode.</p>
       </li>
     </ul>
   </li>
-  <li><b><mark>Use a Content Delivery Network CDN</mark></b>
+  <li><span class="makeKnown"><mark>Use a Content Delivery Network CDN</mark></span>
     <ul>
       <li>A CDN is essentially many optimized servers around the world that
         deliver web content to users based on their geographic location. This
@@ -1563,7 +1563,7 @@ document to decide whether to handle it in quirks mode or standards mode.</p>
         from a server nearby.</li>
     </ul>
   </li>
-  <li><b><mark>Optimize Images:</mark></b>
+  <li><span class="makeKnown"><mark>Optimize Images:</mark></span>
     <ul>
       <li>image sizes make a huge difference to site speed. The larger
         content/images, the slower the site. we could:
@@ -1577,7 +1577,7 @@ document to decide whether to handle it in quirks mode or standards mode.</p>
       </li>
     </ul>
   </li>
-  <li><b><mark>Put Scripts at the Bottom:</mark></b>
+  <li><span class="makeKnown"><mark>Put Scripts at the Bottom:</mark></span>
     <ul>
       <li>Javascript files can load after the rest of your page. The simplest
         solution is to place your external Javascript files at the bottom of
@@ -1597,7 +1597,7 @@ document to decide whether to handle it in quirks mode or standards mode.</p>
       </li>
     </ul>
   </li>
-  <li><b><mark>Add an Expires or a Cache-Control Header</mark></b>
+  <li><span class="makeKnown"><mark>Add an Expires or a Cache-Control Header</mark></span>
     <ul>
       <li>Web page designs are getting richer and richer, which means more scripts, 
         stylesheets, images, and Flash in the page. A first-time visitor to your page 
@@ -1607,25 +1607,25 @@ document to decide whether to handle it in quirks mode or standards mode.</p>
         used on all components including scripts, stylesheets, and Flash components.</li>
     </ul>
   </li>
-  <li><b><mark>Gzip Components</mark></b>
+  <li><span class="makeKnown"><mark>Gzip Components</mark></span>
     <ul>
       <li>Compression reduces response times by reducing the size of the HTTP response. 
         Gzipping generally reduces the response size by about 70%.</li>
     </ul>
   </li>
-  <li><b><mark>Put Stylesheets at the Top:</mark></b>
+  <li><span class="makeKnown"><mark>Put Stylesheets at the Top:</mark></span>
     <ul>
       <li>This is because putting stylesheets in the HEAD allows the page to render progressively.</li>
     </ul>
   </li>
-  <li><b><mark>Avoid CSS Expressions</mark></b></li>
-  <li><b><mark>Use GET for AJAX Requests:</mark></b>
+  <li><span class="makeKnown"><mark>Avoid CSS Expressions</mark></span></li>
+  <li><span class="makeKnown"><mark>Use GET for AJAX Requests:</mark></span>
     <ul>
       <li>Ajax is that it provides instantaneous feedback to the user because it requests 
         information asynchronously from the backend web server</li>
     </ul>
   </li>
-  <li><b><mark>Make JavaScript and CSS External:</mark></b>
+  <li><span class="makeKnown"><mark>Make JavaScript and CSS External:</mark></span>
     <ul>
       <li>Using external files in the real world generally produces faster pages because the 
         JavaScript and CSS files are cached by the browser. JavaScript and CSS that are inlined 
@@ -1636,21 +1636,21 @@ document to decide whether to handle it in quirks mode or standards mode.</p>
         HTTP requests.</li>
     </ul>
   </li>
-  <li><b><mark>Use get to ajax request:</mark></b>
+  <li><span class="makeKnown"><mark>Use get to ajax request:</mark></span>
   <ul>
     <li>POST is implemented in the browsers as a two-step process: sending the headers 
       first, then sending data. So it’s best to use GET, which only takes one TCP packet 
       to send (unless you have a lot of cookies).</li>
   </ul>
   </li>
-  <li><b><mark>No 404s:</mark></b>
+  <li><span class="makeKnown"><mark>No 404s:</mark></span>
     <ul>
       <li>HTTP requests are expensive so making an HTTP request and getting a useless 
         response (i.e. 404 Not Found) is totally unnecessary and will slow down the user 
         experience without any benefit.</li>
     </ul>
   </li>
-  <li><b><mark>Reduce Cookie Size:</mark></b>
+  <li><span class="makeKnown"><mark>Reduce Cookie Size:</mark></span>
     <ul>
       <li>HTTP cookies are used for a variety of reasons such as authentication and 
         personalization. Information about cookies is exchanged in the HTTP headers 
@@ -1658,7 +1658,7 @@ document to decide whether to handle it in quirks mode or standards mode.</p>
         low as possible to minimize the impact on the user’s response time.</li>
     </ul>
   </li>
-  <li><b><mark>Reduce DNS Lookups</mark></b>
+  <li><span class="makeKnown"><mark>Reduce DNS Lookups</mark></span>
     <ul>
       <li>This can be achieved through various strategies, including;
       <li>using a fast DNS provider,</li>
@@ -1667,20 +1667,20 @@ document to decide whether to handle it in quirks mode or standards mode.</p>
     </ul>
   </li>
   <li>&lt;pre&gt;&lt;/ul&gt;&gt;/pre&gt;</li>
-  <li><b><mark>Minify JavaScript and CSS</mark></b></li>
-  <li><b><mark>Avoid Redirects</mark></b></li>
-  <li><b><mark>Remove Duplicate Scripts</mark></b></li>
-  <li><b><mark>Configure Etags</mark></b></li>
-  <li><b><mark>Make Ajax Cacheable</mark></b></li>
-  <li><b><mark>Post-load Components</mark></b></li>
-  <li><b><mark>Preload Components</mark></b></li>
-  <li><b><mark>Reduce the Number of DOM Elements</mark></b></li>
-  <li><b><mark>Minimize the Number of iframes</mark></b></li>
-  <li><b><mark>Minimize DOM Access</mark></b></li>
-  <li><b><mark>Optimize CSS Sprites</mark></b></li>
-  <li><b><mark>Don’t Scale Images in HTML</mark></b></li>
-  <li><b><mark>Make favicon.ico Small and Cacheable</mark></b></li>
-  <li><b><mark>Avoid Empty Image src</mark></b></li>
+  <li><span class="makeKnown"><mark>Minify JavaScript and CSS</mark></span></li>
+  <li><span class="makeKnown"><mark>Avoid Redirects</mark></span></li>
+  <li><span class="makeKnown"><mark>Remove Duplicate Scripts</mark></span></li>
+  <li><span class="makeKnown"><mark>Configure Etags</mark></span></li>
+  <li><span class="makeKnown"><mark>Make Ajax Cacheable</mark></span></li>
+  <li><span class="makeKnown"><mark>Post-load Components</mark></span></li>
+  <li><span class="makeKnown"><mark>Preload Components</mark></span></li>
+  <li><span class="makeKnown"><mark>Reduce the Number of DOM Elements</mark></span></li>
+  <li><span class="makeKnown"><mark>Minimize the Number of iframes</mark></span></li>
+  <li><span class="makeKnown"><mark>Minimize DOM Access</mark></span></li>
+  <li><span class="makeKnown"><mark>Optimize CSS Sprites</mark></span></li>
+  <li><span class="makeKnown"><mark>Don’t Scale Images in HTML</mark></span></li>
+  <li><span class="makeKnown"><mark>Make favicon.ico Small and Cacheable</mark></span></li>
+  <li><span class="makeKnown"><mark>Avoid Empty Image src</mark></span></li>
 </ul>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h2>Q. Comparison of browsers engines like Chrome, Firefox, Internet explorer, Safari?</h2>
@@ -1688,26 +1688,26 @@ document to decide whether to handle it in quirks mode or standards mode.</p>
 <ul>
   <li>Chrome:
     <ul>
-      <li>Layout rendering engine <b>Webkit</b>.</li>
-      <li>JavaScript engine <b>V8</b></li>
+      <li>Layout rendering engine <span class="makeKnown">Webkit</span>.</li>
+      <li>JavaScript engine <span class="makeKnown">V8</span></li>
     </ul>
   </li>
   <li>Firefox:
     <ul>
-      <li>Layout rendering engine <b>Gecko</b>.</li>
-      <li>JavaScript engine <b>Spider monkey</b></li>
+      <li>Layout rendering engine <span class="makeKnown">Gecko</span>.</li>
+      <li>JavaScript engine <span class="makeKnown">Spider monkey</span></li>
     </ul>
   </li>
   <li>Internet explorer:
     <ul>
-      <li>Layout rendering engine <b>Trident</b>.</li>
-      <li>JavaScript engine <b>Chakra</b></li>
+      <li>Layout rendering engine <span class="makeKnown">Trident</span>.</li>
+      <li>JavaScript engine <span class="makeKnown">Chakra</span></li>
     </ul>
   </li>
   <li>Safari:
     <ul>
-      <li>Layout rendering engine <b>Webkit</b>.</li>
-      <li>JavaScript engine JavascriptCore i.e <b>Nitro</b></li>
+      <li>Layout rendering engine <span class="makeKnown">Webkit</span>.</li>
+      <li>JavaScript engine JavascriptCore i.e <span class="makeKnown">Nitro</span></li>
     </ul>
   </li>
 </ul>
@@ -2154,7 +2154,7 @@ function geoFindMe() {
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h2>Q. What is the use of WebSocket API?</h2>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<p>The <b>WebSocket API</b> is an advanced technology that makes it possible to open a 
+<p>The <span class="makeKnown">WebSocket API</span> is an advanced technology that makes it possible to open a 
 two-way interactive communication session between the user's browser and a server. With 
 this API, you can send messages to a server and receive event-driven responses without 
 having to poll the server for a reply.</p>
@@ -2210,7 +2210,7 @@ socket.addEventListener('message', function(event) {
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h2>Q. Explain about HTML Canvas?</h2>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<p><b>canvas</b> is an HTML element which can be used to draw graphics via JavaScript. 
+<p><span class="makeKnown">canvas</span> is an HTML element which can be used to draw graphics via JavaScript. 
 This can, for instance, be used to draw graphs, combine photos, or create animations.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h4>
@@ -2275,19 +2275,19 @@ This can, for instance, be used to draw graphs, combine photos, or create animat
     </thead>
     <tbody>
       <tr>
-        <td><b><mark>lineCap</mark></b></td>
+        <td><span class="makeKnown"><mark>lineCap</mark></span></td>
         <td>Sets or returns the style of the end caps for a line.</td>
       </tr>
       <tr>
-        <td><b><mark>lineJoin</mark></b></td>
+        <td><span class="makeKnown"><mark>lineJoin</mark></span></td>
         <td>Sets or returns the type of corner created, when two lines meet.</td>
       </tr>
       <tr>
-        <td><b><mark>lineWidth</mark></b></td>
+        <td><span class="makeKnown"><mark>lineWidth</mark></span></td>
         <td>Sets or returns the current line width.</td>
       </tr>
       <tr>
-        <td><b><mark>miterLimit</mark></b></td>
+        <td><span class="makeKnown"><mark>miterLimit</mark></span></td>
         <td>Sets or returns the maximum miter length..</td>
       </tr>
     </tbody>
@@ -2311,19 +2311,19 @@ This can, for instance, be used to draw graphs, combine photos, or create animat
     </thead>
     <tbody>
       <tr>
-        <td><b><mark>rect()</mark></b></td>
+        <td><span class="makeKnown"><mark>rect()</mark></span></td>
         <td>Creates a rectangle.</td>
       </tr>
       <tr>
-        <td><b><mark>fillRect()</mark></b></td>
+        <td><span class="makeKnown"><mark>fillRect()</mark></span></td>
         <td>Draw a “filled” rectangle.</td>
       </tr>
       <tr>
-        <td><b><mark>strokeRect()</mark></b></td>
+        <td><span class="makeKnown"><mark>strokeRect()</mark></span></td>
         <td>Draws a rectangle (no fill).</td>
       </tr>
       <tr>
-        <td><b><mark>clearRect()</mark></b></td>
+        <td><span class="makeKnown"><mark>clearRect()</mark></span></td>
         <td>Clears the specified pixels within a given rectangle.</td>
       </tr>
     </tbody>
@@ -2341,46 +2341,46 @@ This can, for instance, be used to draw graphs, combine photos, or create animat
     <caption>Paths</caption>
     <thead>
       <tr>
-        <th><b><mark>Method</mark></b></th>
-        <th><b><mark>Description</mark></b></th>
+        <th><span class="makeKnown"><mark>Method</mark></span></th>
+        <th><span class="makeKnown"><mark>Description</mark></span></th>
       </tr>
     </thead>
     <tbody>
       <tr>
-        <td><b><mark>fill()</mark></b></td>
+        <td><span class="makeKnown"><mark>fill()</mark></span></td>
         <td>Fills the current drawing (path).</td>
       </tr>
       <tr>
-        <td><b><mark>stroke()</mark></b></td>
+        <td><span class="makeKnown"><mark>stroke()</mark></span></td>
         <td>Actually draws the path you have defined.</td>
       </tr>
       <tr>
-        <td><b><mark>beginPath()</mark></b></td>
+        <td><span class="makeKnown"><mark>beginPath()</mark></span></td>
         <td>Begins a path, or resets the current path.</td>
       </tr>
       <tr>
-        <td><b><mark>moveTo()</mark></b></td>
+        <td><span class="makeKnown"><mark>moveTo()</mark></span></td>
         <td>Moves the path to the specified point in the canvas, without creating a line.</td>
       </tr>
       <tr>
-        <td><b><mark>closePath()</mark></b></td>
+        <td><span class="makeKnown"><mark>closePath()</mark></span></td>
         <td>Creates a path from the current point back to the starting point.</td>
       </tr>
       <tr>
-        <td><b><mark>lineTo()</mark></b></td>
+        <td><span class="makeKnown"><mark>lineTo()</mark></span></td>
         <td>Adds a new point and creates a line to that point from the last specified 
           point in the canvas.</td>
       </tr>
       <tr>
-        <td><b><mark>clip()</mark></b></td>
+        <td><span class="makeKnown"><mark>clip()</mark></span></td>
         <td>Clips a region of any shape and size from the original canvas.</td>
       </tr>
       <tr>
-        <td><b><mark>arc()</mark></b></td>
+        <td><span class="makeKnown"><mark>arc()</mark></span></td>
         <td>Creates an arc/curve (used to create circles, or parts of circles).</td>
       </tr>
       <tr>
-        <td><b><mark>arcTo()</mark></b></td>
+        <td><span class="makeKnown"><mark>arcTo()</mark></span></td>
         <td>Creates an arc/curve between two tangents.</td>
       </tr>
     </tbody>
@@ -2404,23 +2404,23 @@ This can, for instance, be used to draw graphs, combine photos, or create animat
     </thead>
     <tbody>
       <tr>
-        <td><b><mark>scale()</mark></b></td>
+        <td><span class="makeKnown"><mark>scale()</mark></span></td>
         <td>Scales the current drawing bigger or smaller.</td>
       </tr>
       <tr>
-        <td><b><mark>rotate()</mark></b></td>
+        <td><span class="makeKnown"><mark>rotate()</mark></span></td>
         <td>Rotates the current drawing.</td>
       </tr>
       <tr>
-        <td><b><mark>translate()</mark></b></td>
+        <td><span class="makeKnown"><mark>translate()</mark></span></td>
         <td>Remaps the (0,0) position on the canvas.</td>
       </tr>
       <tr>
-        <td><b><mark>transform()</mark></b></td>
+        <td><span class="makeKnown"><mark>transform()</mark></span></td>
         <td>Replaces the current transformation matrix for the drawing.</td>
       </tr>
       <tr>
-        <td><b><mark>setTransform()</mark></b></td>
+        <td><span class="makeKnown"><mark>setTransform()</mark></span></td>
         <td>Resets the current transform to the identity matrix. Then runs transform().</td>
       </tr>
     </tbody>
@@ -2444,27 +2444,27 @@ This can, for instance, be used to draw graphs, combine photos, or create animat
     </thead>
     <tbody>
       <tr>
-        <td><b><mark>font</mark></b></td>
+        <td><span class="makeKnown"><mark>font</mark></span></td>
         <td>Sets or returns the current font properties for text content.</td>
       </tr>
       <tr>
-        <td><b><mark>textAlign</mark></b></td>
+        <td><span class="makeKnown"><mark>textAlign</mark></span></td>
         <td>Sets or returns the current alignment for text content.</td>
       </tr>
       <tr>
-        <td><b><mark>textBaseline</mark></b></td>
+        <td><span class="makeKnown"><mark>textBaseline</mark></span></td>
         <td>Sets or returns the current text baseline used when drawing text.</td>
       </tr>
       <tr>
-        <td><b><mark>fillText()</mark></b></td>
+        <td><span class="makeKnown"><mark>fillText()</mark></span></td>
         <td>Draws “filled” text on the canvas.</td>
       </tr>
       <tr>
-        <td><b><mark>strokeText()</mark></b></td>
+        <td><span class="makeKnown"><mark>strokeText()</mark></span></td>
         <td>Draws text on the canvas (no fill).</td>
       </tr>
       <tr>
-        <td><b><mark>measureText()</mark></b></td>
+        <td><span class="makeKnown"><mark>measureText()</mark></span></td>
         <td>Returns an object that contain the width of the specified text.</td>
       </tr>
     </tbody>
@@ -2672,35 +2672,35 @@ the dragged element.</p>
     </thead>
     <tbody>
       <tr>
-        <td><b><mark>Drag</mark></b></td>
+        <td><span class="makeKnown"><mark>Drag</mark></span></td>
         <td>It fires every time when the mouse is moved while the object is being dragged.</td>
       </tr>
       <tr>
-        <td><b><mark>Dragstart</mark></b></td>
+        <td><span class="makeKnown"><mark>Dragstart</mark></span></td>
         <td>It is a very initial stage. It fires when the user starts dragging object.</td>
       </tr>
       <tr>
-        <td><b><mark>Dragstart</mark></b></td>
+        <td><span class="makeKnown"><mark>Dragstart</mark></span></td>
         <td>It is a very initial stage. It fires when the user starts dragging object.</td>
       </tr>
       <tr>
-        <td><b><mark>Dragenter</mark></b></td>
+        <td><span class="makeKnown"><mark>Dragenter</mark></span></td>
         <td>It fires when the user moves his/her mouse cursur over the target element.</td>
       </tr>
       <tr>
-        <td><b><mark>Dragover</mark></b></td>
+        <td><span class="makeKnown"><mark>Dragover</mark></span></td>
         <td>This event is fired when the mouse moves over an element.</td>
       </tr>
       <tr>
-        <td><b><mark>Dragleave</mark></b></td>
+        <td><span class="makeKnown"><mark>Dragleave</mark></span></td>
         <td>This event is fired when the mouse leaves an element.</td>
       </tr>
       <tr>
-        <td><b><mark>Drop</mark></b></td>
+        <td><span class="makeKnown"><mark>Drop</mark></span></td>
         <td>Drop It fires at the end of the drag operation.</td>
       </tr>
       <tr>
-        <td><b><mark>Dragend</mark></b></td>
+        <td><span class="makeKnown"><mark>Dragend</mark></span></td>
         <td>It fires when user releases the mouse button to complete the drag operation.</td>
       </tr>
     </tbody>
@@ -2742,7 +2742,7 @@ the dragged element.</p>
 lets you define your own customized elements and start embedding custom properties in your 
 web pages. At a high level, microdata consists of a group of name-value pairs.</p>
 
-<p>The groups are called <b>items</b>, and each name-value pair is a <b>property</b>. 
+<p>The groups are called <span class="makeKnown">items</span>, and each name-value pair is a <span class="makeKnown">property</span>. 
 Items and properties are represented by regular elements. Search engines benefit greatly 
 from direct access to this structured data because it allows search engines to understand 
 the information on web pages and provide more relevant results to users.</p>
@@ -2750,8 +2750,8 @@ the information on web pages and provide more relevant results to users.</p>
 <p>At a high level, microdata consists of a group of name-value pairs</p>
 
 <ul>
-  <li><b>itemscope</b>:- To create an item</li>
-  <li><b>itemprop</b>:- To add a property to an item</li>
+  <li><span class="makeKnown">itemscope</span>:- To create an item</li>
+  <li><span class="makeKnown">itemprop</span>:- To add a property to an item</li>
 </ul>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h5>Example</h5>
@@ -3101,7 +3101,7 @@ handled by CSS.</p>
 <p><mark>Modernizr</mark> is a JavaScript library that detects which HTML5 and CSS3 
 features visitor's browser supports. In detecting feature support, it allows developers 
 to test for some of the new technologies and then provide fallbacks for browsers that do 
-not support them. This is called <b>feature detection</b> and is much more efficient than 
+not support them. This is called <span class="makeKnown">feature detection</span> and is much more efficient than 
 browser sniffing.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h4>
@@ -3223,10 +3223,10 @@ web development projects.</p>
 <h3>What are HTML Iframes?</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p>An iframe is an HTML document embedded inside another HTML document. The 
-<mark><b>&lt;iframe&gt;</b></mark><br /> 
+<mark><span class="makeKnown">&lt;iframe&gt;</span></mark><br /> 
 tag specifies the URL of the embedded content, allowing for seamless integration of 
 external resources. This section will guide you through the syntax and attributes of the 
-<mark><b>&lt;iframe&gt;</b></mark> tag, providing a solid foundation for your iframe usage.</p>
+<mark><span class="makeKnown">&lt;iframe&gt;</span></mark> tag, providing a solid foundation for your iframe usage.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h5>Syntax:</h5>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -3239,9 +3239,9 @@ include videos, maps, or entire web pages from other sources.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p>The &lt;iframe&gt; HTML element represents a nested browsing context, embedding 
 another HTML page into the current one. Each embedded browsing context has its own 
-<b>session history</b> and <b>document</b>. The browsing context that embeds the others 
+<span class="makeKnown">session history</span> and <span class="makeKnown">document</span>. The browsing context that embeds the others 
 is called the parent browsing context. The topmost browsing context — the one with no 
-parent — is usually the browser window, represented by the <b>Window</b> object.</p>
+parent — is usually the browser window, represented by the <span class="makeKnown">Window</span> object.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h4>Example</h4>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -3285,32 +3285,32 @@ parent — is usually the browser window, represented by the <b>Window</b> objec
       </thead>
       <tbody>
         <tr>
-          <td><b><mark>allow</mark></b></td>
+          <td><span class="makeKnown"><mark>allow</mark></span></td>
           <td>Indicates what features the iframe is allowed to use (e.g. fullscreen, 
             camera, autoplay).</td>
         </tr>
         <tr>
-          <td><b><mark>allowfullscreen</mark></b></td>
+          <td><span class="makeKnown"><mark>allowfullscreen</mark></span></td>
           <td>Grants or denies permission for the iframe to appear in full-screen mode.</td>
         </tr>
         <tr>
-          <td><b><mark>height</mark></b></td>
+          <td><span class="makeKnown"><mark>height</mark></span></td>
           <td>Sets the height of the iframe (if not specified, the default height is 150 pixels).</td>
         </tr>
         <tr>
-          <td><b><mark>loading</mark></b></td>
+          <td><span class="makeKnown"><mark>loading</mark></span></td>
           <td>Sets lazy loading or eager loading for the iframe.</td>
         </tr>
         <tr>
-          <td><b><mark>referrerpolicy</mark></b></td>
+          <td><span class="makeKnown"><mark>referrerpolicy</mark></span></td>
           <td>Sets what referrer information should be sent in the request for the iframe.</td>
         </tr>
         <tr>
-          <td><b><mark>src</mark></b></td>
+          <td><span class="makeKnown"><mark>src</mark></span></td>
           <td>The address of the resource included in the iframe.</td>
         </tr>
         <tr>
-          <td><b><mark>width</mark></b></td>
+          <td><span class="makeKnown"><mark>width</mark></span></td>
           <td>Sets the width of the iframe (if not specified, the default width is 300 pixels.</td>
       </tr>
     </tbody>
@@ -3318,7 +3318,7 @@ parent — is usually the browser window, represented by the <b>Window</b> objec
 </div>
 
 <p><i>Note: Because each browsing context is a complete document
-environment, every <mark><b>&lt;iframe&gt;</b></mark> in a page requires
+environment, every <mark><span class="makeKnown">&lt;iframe&gt;</span></mark> in a page requires
 increased memory and other computing resources.</i></p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h2>Q. Explain the use of rel=“nofollow”, rel=“noreferrer”, rel=“noopener” attribute?</h2>
@@ -3329,7 +3329,7 @@ increased memory and other computing resources.</i></p>
   </ol>
 </h4>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<p>When <mark><b>rel=“nofollow”</b></mark> tag is used, it instruct the search engines 
+<p>When <mark><span class="makeKnown">rel=“nofollow”</span></mark> tag is used, it instruct the search engines 
 not to pass any PageRank from one page to the other. It does not allow it to pass the 
 authority to the specific website. The main advantage of using this attribute is to 
 control the spam attack.</p>
@@ -3360,7 +3360,7 @@ preventing other pages from seeing that traffic came from a click on your link.<
   </ol>
 </h4>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<p>It prevents the new page from being able to access the <mark><b>window.opener</b></mark> 
+<p>It prevents the new page from being able to access the <mark><span class="makeKnown">window.opener</span></mark> 
 property and will make it run in a separate process. noopener tag works as a security fix 
 which prevents malicious links to take control over an opened tab.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -3396,7 +3396,7 @@ context.</p>
 results. With the help of certain tags, we can turn regular search
 snippets into rich snippets, and maybe even into featured snippets. And,
 as our search snippets get more advanced, they are able to secure better
-<b>Search Engine Results Pages (SERP)</b> positions and attract more
+<span class="makeKnown">Search Engine Results Pages (SERP)</span> positions and attract more
 traffic.</p>
 <p>Here are all the HTML tags that still matter:</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -3449,7 +3449,7 @@ looks like this:</p>
   </ol>
 </h5>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<p>The <b><mark>alt</mark></b> text attribute is a part of an image tag,
+<p>The <span class="makeKnown"><mark>alt</mark></span> text attribute is a part of an image tag,
 and it provides a description for an image. Alt text plays a major role
 in image optimization. It makes your images accessible both to search
 engines (by telling them what a particular image means) and to people
@@ -3519,16 +3519,16 @@ id=“header”&gt;&lt;/div&gt; you can use a &lt;header&gt;&lt;/hrader&gt; tag.
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h2>Q. What is the difference between an “attribute” and a “property” in HTML?</h2>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<p>Attributes are defined by <mark><b>HTML</b></mark>. Properties are
-accessed from <mark><b>DOM (Document Object Model)</b></mark> nodes.</p>
+<p>Attributes are defined by <mark><span class="makeKnown">HTML</span></mark>. Properties are
+accessed from <mark><span class="makeKnown">DOM (Document Object Model)</span></mark> nodes.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h5>Example:</h5>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <pre>&lt;input id="inputId" type="text" value="Hello World!" /&gt;</pre>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<p>The <b>value</b> property reflects the current text-content inside the input box, 
-whereas the <b>value</b> attribute contains the initial text-content of the 
-<b>value</b> attribute from the HTML source code.</p>
+<p>The <span class="makeKnown">value</span> property reflects the current text-content inside the input box, 
+whereas the <span class="makeKnown">value</span> attribute contains the initial text-content of the 
+<span class="makeKnown">value</span> attribute from the HTML source code.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3>Difference between HTML attributes and DOM properties:</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -3560,7 +3560,7 @@ whereas the <b>value</b> attribute contains the initial text-content of the
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h2>Q. How do you set IE compatibility mode?</h2>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<p><b>X-UA-Compatible</b> is a document mode meta tag that allows to choose
+<p><span class="makeKnown">X-UA-Compatible</span> is a document mode meta tag that allows to choose
 what version of Internet Explorer the page should be rendered as. It is
 used by Internet Explorer 8 to specify whether a page should be rendered
 as IE 7 (compatibility view) or IE 8 (standards view).</p>
@@ -3597,23 +3597,23 @@ that content is rendered in for the webpage, as the following table shows.</p>
     </thead>
     <tbody>
       <tr>
-        <td><b><mark>IE=edge</mark></b></td>
+        <td><span class="makeKnown"><mark>IE=edge</mark></span></td>
         <td>Display content in the highest mode available.</td>
       </tr>
       <tr>
-        <td><b><mark>IE=9</mark></b></td>
+        <td><span class="makeKnown"><mark>IE=9</mark></span></td>
         <td>Use the Internet Explorer 9 standards rendering mode.</td>
       </tr>
       <tr>
-        <td><b><mark>IE=8</mark></b></td>
+        <td><span class="makeKnown"><mark>IE=8</mark></span></td>
         <td>Use the Windows Internet Explorer 8 standards rendering mode.</td>
       </tr>
       <tr>
-        <td><b><mark>IE=7</mark></b></td>
+        <td><span class="makeKnown"><mark>IE=7</mark></span></td>
         <td>Use the Windows Internet Explorer 7 standards rendering mode.</td>
       </tr>
       <tr>
-        <td><b><mark>IE=5</mark></b></td>
+        <td><span class="makeKnown"><mark>IE=5</mark></span></td>
         <td>Use the Microsoft Internet Explorer 5 standards rendering mode.</td>
       </tr>
     </tbody>
@@ -3640,149 +3640,149 @@ page content in future versions of Windows Internet Explorer.</i></p>
   </thead>
   <tbody>
     <tr class="odd">
-      <td><b>&lt;area&gt;</b></td>
+      <td><span class="makeKnown">&lt;area&gt;</span></td>
       <td>The &lt;area&gt; tag defines an area inside an image map (an image map is an 
         image with clickable areas)</td>
     </tr>
     <tr class="even">
-      <td><b>&lt;base&gt;</b></td>
+      <td><span class="makeKnown">&lt;base&gt;</span></td>
       <td>The &lt;base&gt; tag specifies the base URL and/or target for all relative URLs 
         in a document.</td>
     </tr>
     <tr class="odd">
-      <td><b>&lt;body&gt;</b></td>
+      <td><span class="makeKnown">&lt;body&gt;</span></td>
       <td>The &lt;body&gt; tag in HTML is used to define the main content present inside an 
         HTML page.</td>
     </tr>
     <tr class="even">
-      <td><b>&lt;br&gt;</b></td>
+      <td><span class="makeKnown">&lt;br&gt;</span></td>
       <td>The &lt;br&gt; HTML element produces a line break in text (carriage-return).</td>
     </tr>
     <tr class="odd">
-      <td><b>&lt;caption&gt;</b></td>
+      <td><span class="makeKnown">&lt;caption&gt;</span></td>
       <td>The &lt;caption&gt; tag in HTML is used to provide a title or description for a 
         &lt;table&gt; element.</td>
     </tr>
     <tr class="even">
-      <td><b>&lt;col&gt;</b></td>
+      <td><span class="makeKnown">&lt;col&gt;</span></td>
       <td>The &lt;col&gt; tag defines attributes for table columns within the &lt;colgroup&gt; 
         element, allowing styling and formatting of columns, such as width, alignment, and 
         background color.</td>
     </tr>
     <tr class="odd">
-      <td><b>&lt;colgroup&gt;</b></td>
+      <td><span class="makeKnown">&lt;colgroup&gt;</span></td>
       <td>The &lt;colgroup&gt; element is used to style specific columns of a table.</td>
     </tr>
     <tr class="even">
-      <td><b>&lt;dd&gt;</b></td>
+      <td><span class="makeKnown">&lt;dd&gt;</span></td>
       <td>The &lt;dd&gt; tag in HTML is used to define a description or value in a 
         description list, which is created using the &lt;dl&gt; (description list) 
         tag.</td>
     </tr>
     <tr class="odd">
-      <td><b>&lt;dt&gt;</b></td>
+      <td><span class="makeKnown">&lt;dt&gt;</span></td>
       <td>The &lt;dt&gt; tag in HTML is used to specify the description list.</td>
     </tr>
     <tr class="even">
-      <td><b>&lt;embed&gt;</b></td>
+      <td><span class="makeKnown">&lt;embed&gt;</span></td>
       <td>The &lt;embed&gt; tag defines a container for an external resource, such as a 
         web page, a picture, a media player, or a plug-in application.</td>
     </tr>
     <tr class="odd">
-      <td><b>&lt;head&gt;</b></td>
+      <td><span class="makeKnown">&lt;head&gt;</span></td>
       <td>The &lt;head&gt; tag in HTML is an essential element used to define the head 
         section of an HTML document.</td>
     </tr>
     <tr class="even">
-      <td><b>&lt;hr&gt;</b></td>
+      <td><span class="makeKnown">&lt;hr&gt;</span></td>
       <td>The &lt;hr&gt; tag in HTML is used to create a horizontal rule or line that 
         visually separates content.</td>
     </tr>
     <tr class="odd">
-      <td><b>&lt;html&gt;</b></td>
+      <td><span class="makeKnown">&lt;html&gt;</span></td>
       <td>The &lt;html&gt; tag is the root element of an HTML document. It encapsulates 
         the entire content of the page.</td>
     </tr>
     <tr class="even">
-      <td><b>&lt;img&gt;</b></td>
+      <td><span class="makeKnown">&lt;img&gt;</span></td>
       <td>The HTML &lt;img&gt; tag is used to embed images in a web page.</td>
     </tr>
     <tr class="odd">
-      <td><b>&lt;input&gt;</b></td>
+      <td><span class="makeKnown">&lt;input&gt;</span></td>
       <td>The &lt;input&gt; tag in HTML is used to collect user input in web forms. It 
         supports various input types such as text, password,checkboxes, radio buttons, 
         and more.</td>
     </tr>
     <tr class="even">
-      <td><b>&lt;li&gt;</b></td>
+      <td><span class="makeKnown">&lt;li&gt;</span></td>
       <td></td>
     </tr>
     <tr class="odd">
-      <td><b>&lt;link&gt;</b></td>
+      <td><span class="makeKnown">&lt;link&gt;</span></td>
       <td></td>
     </tr>
     <tr class="even">
-      <td><b>&lt;meta&gt;</b></td>
+      <td><span class="makeKnown">&lt;meta&gt;</span></td>
       <td></td>
     </tr>
     <tr class="odd">
-      <td><b>&lt;optgroup&gt;</b></td>
+      <td><span class="makeKnown">&lt;optgroup&gt;</span></td>
       <td></td>
     </tr>
     <tr class="even">
-      <td><b>&lt;option&gt;</b></td>
+      <td><span class="makeKnown">&lt;option&gt;</span></td>
       <td></td>
     </tr>
     <tr class="odd">
-      <td><b>&lt;p&gt;</b></td>
+      <td><span class="makeKnown">&lt;p&gt;</span></td>
       <td></td>
     </tr>
     <tr class="even">
-      <td><b>&lt;param&gt;</b></td>
+      <td><span class="makeKnown">&lt;param&gt;</span></td>
       <td></td>
     </tr>
     <tr class="odd">
-      <td><b>&lt;rp&gt;</b></td>
+      <td><span class="makeKnown">&lt;rp&gt;</span></td>
       <td></td>
     </tr>
     <tr class="even">
-      <td><b>&lt;rt&gt;</b></td>
+      <td><span class="makeKnown">&lt;rt&gt;</span></td>
       <td></td>
     </tr>
     <tr class="odd">
-      <td><b>&lt;source&gt;</b></td>
+      <td><span class="makeKnown">&lt;source&gt;</span></td>
       <td></td>
     </tr>
     <tr class="even">
-      <td><b>&lt;tbody&gt;</b></td>
+      <td><span class="makeKnown">&lt;tbody&gt;</span></td>
       <td></td>
     </tr>
     <tr class="odd">
-      <td><b>&lt;td&gt;</b></td>
+      <td><span class="makeKnown">&lt;td&gt;</span></td>
       <td></td>
     </tr>
     <tr class="even">
-      <td><b>&lt;tfoot&gt;</b></td>
+      <td><span class="makeKnown">&lt;tfoot&gt;</span></td>
       <td></td>
     </tr>
     <tr class="odd">
-      <td><b>&lt;th&gt;</b></td>
+      <td><span class="makeKnown">&lt;th&gt;</span></td>
       <td></td>
     </tr>
     <tr class="even">
-      <td><b>&lt;thead&gt;</b></td>
+      <td><span class="makeKnown">&lt;thead&gt;</span></td>
       <td></td>
     </tr>
     <tr class="odd">
-      <td><b>&lt;tr&gt;</b></td>
+      <td><span class="makeKnown">&lt;tr&gt;</span></td>
       <td></td>
     </tr>
     <tr class="even">
-      <td><b>&lt;track&gt;</b></td>
+      <td><span class="makeKnown">&lt;track&gt;</span></td>
       <td></td>
     </tr>
     <tr class="odd">
-      <td><b>&lt;wbr&gt;</b></td>
+      <td><span class="makeKnown">&lt;wbr&gt;</span></td>
       <td></td>
     </tr>
   </tbody>
@@ -3790,7 +3790,7 @@ page content in future versions of Windows Internet Explorer.</i></p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h2>Q. What is an HTML preprocessor? Have you used different HTML templating languages before?</h2>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<p>A <b>HTML preprocessor</b> is a program that takes one type of data and
+<p>A <span class="makeKnown">HTML preprocessor</span> is a program that takes one type of data and
 converts it to another one. In case of HTML and CSS, some of the more
 popular preprocessor languages are Slim and Sass. Slim is processed into
 HTML and Sass is processed into CSS.</p>
@@ -3815,8 +3815,8 @@ Hebrew, Pashto, Persian, Urdu, and Sindhi.</p>
 <p>We can set text direction in HTML in one of two ways:</p>
 
 <ul>
-  <li>With the HTML <b>dir</b> attribute</li>
-  <li>With the CSS <b>direction</b> property</li>
+  <li>With the HTML <span class="makeKnown">dir</span> attribute</li>
+  <li>With the CSS <span class="makeKnown">direction</span> property</li>
 </ul>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h5>Example:</h5>
@@ -3884,7 +3884,7 @@ it one font-size smaller, such as from <mark>small</mark> to <mark>x-small</mark
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h2>Q. How do you serve a page with content in multiple languages?</h2>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<p>The <b>lang</b> attribute specifies the language of the element's content.</p>
+<p>The <span class="makeKnown">lang</span> attribute specifies the language of the element's content.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h5>Example:</h5>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -3913,7 +3913,7 @@ it one font-size smaller, such as from <mark>small</mark> to <mark>x-small</mark
 connected content. And the &lt;div&gt; tag is an empty container specifying a division or 
 a section.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<h4>The <mark><b>&lt;section&gt;</b></mark> Element</h4>
+<h4>The <mark><span class="makeKnown">&lt;section&gt;</span></mark> Element</h4>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p>According to the W3C specification, the &lt;section&gt; tag means that the content 
 inside this element is grouped. In other words, the content relates to a single theme. 
@@ -3946,11 +3946,11 @@ It must be an entry in the outline of the page.</p>
 &lt;/html&gt;
 </pre>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<h4>The <mark><b>&lt;div&gt;</b></mark> Element</h4>
+<h4>The <mark><span class="makeKnown">&lt;div&gt;</span></mark> Element</h4>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p>The &lt;div&gt; element only represents its child elements and doesn't have a special 
-meaning. It can be used with the <mark><b>lang</b></mark>, <mark><b>title</b></mark>, and
-<mark><b>class</b></mark> attributes to add semantics that is common to a group of 
+meaning. It can be used with the <mark><span class="makeKnown">lang</span></mark>, <mark><span class="makeKnown">title</span></mark>, and
+<mark><span class="makeKnown">class</span></mark> attributes to add semantics that is common to a group of 
 consecutive elements. This element can also be used in a &lt;dl&gt; tag and wrap groups of 
 &lt;dt&gt; and &lt;dd&gt; elements.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -4000,11 +4000,11 @@ specification to handle all possibilities comprehensively. Thus, many
 decisions about how to handle malformed documents are left up to the
 browser.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<h2>Q. Why you would use a <mark><b>srcset</b></mark> attribute in an image tag?</h2>
+<h2>Q. Why you would use a <mark><span class="makeKnown">srcset</span></mark> attribute in an image tag?</h2>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h4>Explain the process the browser used when evaluating the content of this attribute.</h4>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<p>The <mark><b>srcset</b></mark> attribute allows to define a list of
+<p>The <mark><span class="makeKnown">srcset</span></mark> attribute allows to define a list of
 different image resources along with size information so that browser
 can pick the most appropriate image based on the actual device's
 resolution.</p>
@@ -4026,7 +4026,7 @@ resolution.</p>
   </ol>
 </h4>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<p><mark><b>srcset</b></mark> provides a comma-separated list of image resources along 
+<p><mark><span class="makeKnown">srcset</span></mark> provides a comma-separated list of image resources along 
 with display density it should be used, for example1x, 2x etc.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h5>Example:</h5>
@@ -4057,7 +4057,7 @@ density values, we provide the actual width of the image.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h2>Q. What is accessibility &amp; ARIA role means in a web application?</h2>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<p>The <mark><b>Accessible Rich Internet Applications (ARIA)</b></mark>
+<p>The <mark><span class="makeKnown">Accessible Rich Internet Applications (ARIA)</span></mark>
 Suite, defines a way to make Web content and Web applications more
 accessible to people with disabilities. It especially helps with dynamic
 content and advanced user interface controls developed with HTML,
@@ -4079,7 +4079,7 @@ disabilities.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3>ARIA Roles:</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<p>An ARIA role is added via a <mark><b>role=“&lt;ROLE TYPE&gt;”</b></mark> attribute, 
+<p>An ARIA role is added via a <mark><span class="makeKnown">role=“&lt;ROLE TYPE&gt;”</span></mark> attribute, 
 and does not ever change for an element once it is set. There are four categories of ARIA 
 roles:</p>
 
@@ -4102,25 +4102,25 @@ page.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p>While seeming redundant, is actually useful for screen readers. It wouldn't read the 
 aria-label on this navigation, which is really helpful for giving greater context to 
-visually impaired users, without the <mark><b>role=“navigation”</b></mark>.</p>
+visually impaired users, without the <mark><span class="makeKnown">role=“navigation”</span></mark>.</p>
 
 <p>The different landmark roles you can use are as follows, copied from the W3C Wiki Page:</p>
 
 <ul>
-  <li><b>banner</b>: A region that contains the prime heading or internal title of a page.</li>
-  <li><b>complementary</b>: Any section of the document that supports the main content, yet 
+  <li><span class="makeKnown">banner</span>: A region that contains the prime heading or internal title of a page.</li>
+  <li><span class="makeKnown">complementary</span>: Any section of the document that supports the main content, yet 
     is separate and meaningful on its own.</li>
-  <li><b>contentinfo</b>: A region that contains information about the parent document such 
+  <li><span class="makeKnown">contentinfo</span>: A region that contains information about the parent document such 
     as copyrights and links to privacy statements.</li>
-  <li><b>form</b>: A region of the document that represents a collection of form-associated 
+  <li><span class="makeKnown">form</span>: A region of the document that represents a collection of form-associated 
     elements, some of which can represent editable values that can be submitted to a server 
     for processing.</li>
-  <li><b>main</b>: Main content in a document. In almost all cases a page will have only one 
-    <mark><b>role=“main”</b></mark>.</li>
-  <li><b>navigation</b>: A collection of links suitable for use when navigating the document 
+  <li><span class="makeKnown">main</span>: Main content in a document. In almost all cases a page will have only one 
+    <mark><span class="makeKnown">role=“main”</span></mark>.</li>
+  <li><span class="makeKnown">navigation</span>: A collection of links suitable for use when navigating the document 
     or related documents.</li>
-  <li><b>search</b>: The search tool of a Web document.</li>
-  <li><b>application</b>: A region declared as a web application, as opposed to a web document.</li>
+  <li><span class="makeKnown">search</span>: The search tool of a Web document.</li>
+  <li><span class="makeKnown">application</span>: A region declared as a web application, as opposed to a web document.</li>
 </ul>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3>Document ARIA Roles:</h3>
@@ -4132,27 +4132,27 @@ document aria roles, and the ones which are useful to think about
 including in your HTML.</p>
 
 <ul>
-  <li><b>article</b>: A section of a page that consists of a composition that forms an 
+  <li><span class="makeKnown">article</span>: A section of a page that consists of a composition that forms an 
     independent part of a document, page, or site.</li>
-  <li><b>columnheader</b></li>
-  <li><b>definition</b>: A definition of a term or concept.</li>
-  <li><b>directory</b></li>
-  <li><b>document</b></li>
-  <li><b>group</b>: A set of user interface objects which are not intended to be included 
+  <li><span class="makeKnown">columnheader</span></li>
+  <li><span class="makeKnown">definition</span>: A definition of a term or concept.</li>
+  <li><span class="makeKnown">directory</span></li>
+  <li><span class="makeKnown">document</span></li>
+  <li><span class="makeKnown">group</span>: A set of user interface objects which are not intended to be included 
     in a page summary or table of contents by assistive technologies.</li>
-  <li><b>heading</b>: A heading for a section of the page.</li>
-  <li><b>img</b></li>
-  <li><b>list</b></li>
-  <li><b>listitem</b></li>
-  <li><b>math</b></li>
-  <li><b>note</b></li>
-  <li><b>presentation</b></li>
-  <li><b>region</b></li>
-  <li><b>row</b></li>
-  <li><b>rowgroup</b></li>
-  <li><b>rowheader</b></li>
-  <li><b>separator</b></li>
-  <li><b>toolbar</b></li>
+  <li><span class="makeKnown">heading</span>: A heading for a section of the page.</li>
+  <li><span class="makeKnown">img</span></li>
+  <li><span class="makeKnown">list</span></li>
+  <li><span class="makeKnown">listitem</span></li>
+  <li><span class="makeKnown">math</span></li>
+  <li><span class="makeKnown">note</span></li>
+  <li><span class="makeKnown">presentation</span></li>
+  <li><span class="makeKnown">region</span></li>
+  <li><span class="makeKnown">row</span></li>
+  <li><span class="makeKnown">rowgroup</span></li>
+  <li><span class="makeKnown">rowheader</span></li>
+  <li><span class="makeKnown">separator</span></li>
+  <li><span class="makeKnown">toolbar</span></li>
 </ul>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3>Widget ARIA Roles:</h3>
@@ -4163,39 +4163,39 @@ ones we think are the most common elements widget aria roles, and the ones which
 useful useful to think about including in your HTML.</p>
 
 <ul>
-  <li><b>alert</b>: A message with important, and usually time-sensitive, information.</li>
-  <li><b>alertdialog</b>: A type of dialog that contains an alert message, where initial 
+  <li><span class="makeKnown">alert</span>: A message with important, and usually time-sensitive, information.</li>
+  <li><span class="makeKnown">alertdialog</span>: A type of dialog that contains an alert message, where initial 
     focus goes to an element within the dialog.</li>
-  <li><b>button</b>: An input that allows for user-triggered actions when clicked or 
+  <li><span class="makeKnown">button</span>: An input that allows for user-triggered actions when clicked or 
     pressed.</li>
-  <li><b>checkbox</b>: A checkable input that has three possible values: true, false, or 
+  <li><span class="makeKnown">checkbox</span>: A checkable input that has three possible values: true, false, or 
     mixed.</li>
-  <li><b>dialog</b>: A dialog is an application window that is designed to interrupt the 
+  <li><span class="makeKnown">dialog</span>: A dialog is an application window that is designed to interrupt the 
     current processing of an application in order to prompt the user to enter information 
     or require a response.</li>
-  <li><b>gridcell</b>:</li>
-  <li><b>link</b>:</li>
-  <li><b>log</b>:</li>
-  <li><b>marquee</b>:</li>
-  <li><b>menuitem</b>:</li>
-  <li><b>menuitemcheckbox</b>:</li>
-  <li><b>menuitemradio</b>:</li>
-  <li><b>option</b>:</li>
-  <li><b>progressbar</b>:</li>
-  <li><b>radio</b>: A checkable input in a group of radio roles, only one of which can be 
+  <li><span class="makeKnown">gridcell</span>:</li>
+  <li><span class="makeKnown">link</span>:</li>
+  <li><span class="makeKnown">log</span>:</li>
+  <li><span class="makeKnown">marquee</span>:</li>
+  <li><span class="makeKnown">menuitem</span>:</li>
+  <li><span class="makeKnown">menuitemcheckbox</span>:</li>
+  <li><span class="makeKnown">menuitemradio</span>:</li>
+  <li><span class="makeKnown">option</span>:</li>
+  <li><span class="makeKnown">progressbar</span>:</li>
+  <li><span class="makeKnown">radio</span>: A checkable input in a group of radio roles, only one of which can be 
     checked at a time.</li>
-  <li><b>scrollbar</b>:</li>
-  <li><b>slider</b>:</li>
-  <li><b>spinbutton</b>:</li>
-  <li><b>status</b>:</li>
-  <li><b>tab</b>: A grouping label providing a mechanism for selecting the tab content 
+  <li><span class="makeKnown">scrollbar</span>:</li>
+  <li><span class="makeKnown">slider</span>:</li>
+  <li><span class="makeKnown">spinbutton</span>:</li>
+  <li><span class="makeKnown">status</span>:</li>
+  <li><span class="makeKnown">tab</span>: A grouping label providing a mechanism for selecting the tab content 
     that is to be rendered to the user.</li>
-  <li><b>tabpanel</b>: A container for the resources associated with a tab, where each 
+  <li><span class="makeKnown">tabpanel</span>: A container for the resources associated with a tab, where each 
     tab is contained in a tablist.</li>
-  <li><b>textbox</b>: Input that allows free-form text as its value.</li>
-  <li><b>timer</b>:</li>
-  <li><b>tooltip</b>:</li>
-  <li><b>treeitem</b>:</li>
+  <li><span class="makeKnown">textbox</span>: Input that allows free-form text as its value.</li>
+  <li><span class="makeKnown">timer</span>:</li>
+  <li><span class="makeKnown">tooltip</span>:</li>
+  <li><span class="makeKnown">treeitem</span>:</li>
 </ul>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3>Abstract ARIA Roles:</h3>
@@ -4217,37 +4217,37 @@ more about on the W3C site, here are the ones we believe to most commonly used a
 practical for most web pages/applications.</p>
 
 <ul>
-  <li><b>aria-activedescendant</b>: Identifies the currently active descendant of a 
+  <li><span class="makeKnown">aria-activedescendant</span>: Identifies the currently active descendant of a 
     composite widget. Use with autofill search suggestions.</li>
-  <li><b>aria-autocomplete</b>: Indicates whether user input completion suggestions are 
+  <li><span class="makeKnown">aria-autocomplete</span>: Indicates whether user input completion suggestions are 
     provided. Use with autofill search suggestions.</li>
-  <li><b>aria-checked (state)</b>: Indicates the current “checked” state of checkboxes, 
+  <li><span class="makeKnown">aria-checked (state)</span>: Indicates the current “checked” state of checkboxes, 
     radio buttons, and other widgets. You can set this to true, false, or mixed state.</li>
-  <li><b>aria-controls</b>: Identifies the element (or elements) whose contents or 
+  <li><span class="makeKnown">aria-controls</span>: Identifies the element (or elements) whose contents or 
     presence are controlled by the current element.</li>
-  <li><b>aria-describedby</b>: Identifies the element (or elements) that describes the 
+  <li><span class="makeKnown">aria-describedby</span>: Identifies the element (or elements) that describes the 
     object.</li>
-  <li><b>aria-disabled (state)</b>: Indicates that the element is perceivable but 
+  <li><span class="makeKnown">aria-disabled (state)</span>: Indicates that the element is perceivable but 
     disabled, so it is not editable or otherwise operable.</li>
-  <li><b>aria-expanded (state)</b>: Indicates whether the element, or another grouping 
+  <li><span class="makeKnown">aria-expanded (state)</span>: Indicates whether the element, or another grouping 
     element it controls, is currently expanded or collapsed.</li>
-  <li><b>aria-hidden (state)</b>: Indicates that the element and all of its descendants 
+  <li><span class="makeKnown">aria-hidden (state)</span>: Indicates that the element and all of its descendants 
     are not visible or perceivable to any user as implemented by the author.</li>
-  <li><b>aria-invalid (state)</b>: Indicates the entered value does not conform to the 
+  <li><span class="makeKnown">aria-invalid (state)</span>: Indicates the entered value does not conform to the 
     format expected by the application.</li>
-  <li><b>aria-label</b>: Defines a string value that labels the current element.</li>
-  <li><b>aria-labelledby</b>: Identifies the element (or elements) that labels the 
+  <li><span class="makeKnown">aria-label</span>: Defines a string value that labels the current element.</li>
+  <li><span class="makeKnown">aria-labelledby</span>: Identifies the element (or elements) that labels the 
     current element.</li>
-  <li><b>aria-live</b>: Indicates that an element is dynamic, changing, and will be 
+  <li><span class="makeKnown">aria-live</span>: Indicates that an element is dynamic, changing, and will be 
     updated, and describes the types of updates the user can expect from the live region.</li>
-  <li><b>aria-owns</b>: Identifies an element (or elements) in order to define a visual, 
+  <li><span class="makeKnown">aria-owns</span>: Identifies an element (or elements) in order to define a visual, 
     functional, or contextual parent/child relationship between DOM elements where the 
     DOM hierarchy cannot be used to represent the relationship.</li>
-  <li><b>aria-pressed (state)</b>: Indicates the current “pressed” state of toggle 
+  <li><span class="makeKnown">aria-pressed (state)</span>: Indicates the current “pressed” state of toggle 
     buttons.</li>
-  <li><b>aria-required</b>: Indicates that user input is required on the element before a 
+  <li><span class="makeKnown">aria-required</span>: Indicates that user input is required on the element before a 
     form may be submitted.</li>
-  <li><b>aria-selected (state)</b>: Indicates the current “selected” state of various widgets.</li>
+  <li><span class="makeKnown">aria-selected (state)</span>: Indicates the current “selected” state of various widgets.</li>
 </ul>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h2>Q. Create a traffic signal light in html?</h2>
@@ -5019,7 +5019,7 @@ of data from users. Here are some commonly used input types:</p>
   </ol>
 </h4>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<p><b>Example:</b> This HTML forms collects the user personal information
+<p><span class="makeKnown">Example:</span> This HTML forms collects the user personal information
 such as username and password with the button to submit the form.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <pre>&lt;!DOCTYPE html&gt;
@@ -5056,7 +5056,7 @@ such as username and password with the button to submit the form.</p>
   </ol>
 </h4>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<p><b>Example:</b> This HTML form collects user personal information
+<p><span class="makeKnown">Example:</span> This HTML form collects user personal information
 including name, email, password, gender, date of birth, and address. It
 features proper styling for input fields and submission button.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -5368,7 +5368,7 @@ tags.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <pre>&lt;th&gt; Content...&lt;/th&gt;</pre>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<p><b>Example 1:</b> Creating a simple table in HTML using a table tag.</p>
+<p><span class="makeKnown">Example 1:</span> Creating a simple table in HTML using a table tag.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <pre>&lt;!-- index.html --&gt;
 &lt;!DOCTYPE html&gt;
@@ -5422,7 +5422,7 @@ table, it will be displayed without borders.</p>
   border: 1px solid black;
 }</pre>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<p><b>Example:</b> Addition of the border to the HTML Table.</p>
+<p><span class="makeKnown">Example:</span> Addition of the border to the HTML Table.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <pre>&lt;!-- index.html --&gt;
 &lt;!DOCTYPE html&gt;
@@ -5484,7 +5484,7 @@ table, it will be displayed without borders.</p>
   border-collapse: collapse;
 }</pre>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<p><b>Example:</b> Addition of Collapsed Borders in HTML.</p>
+<p><span class="makeKnown">Example:</span> Addition of Collapsed Borders in HTML.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <pre>&lt;!-- index.html --&gt;
 &lt;!DOCTYPE html&gt;
@@ -5547,7 +5547,7 @@ not specify a padding, the table cells will be displayed without padding.</p>
   padding: 20px;
 }</pre>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<p><b>Example:</b> Addition of Table cell padding in HTML.</p>
+<p><span class="makeKnown">Example:</span> Addition of Table cell padding in HTML.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <pre>&lt;!-- index.html --&gt;
 &lt;!DOCTYPE html&gt;
@@ -5614,7 +5614,7 @@ we must use the CSS text-align property.</p>
   text-align: left;
 }</pre>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<p><b>Example:</b> Explains the text-align property where the text is aligned to the left.</p>
+<p><span class="makeKnown">Example:</span> Explains the text-align property where the text is aligned to the left.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <pre>&lt;!-- index.html --&gt;
 &lt;!DOCTYPE html&gt;
@@ -5684,7 +5684,7 @@ table, we must use the CSS border-spacing property.</p>
   border-spacing: 5px;
 }</pre>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<p><b>Example:</b> Explains the border space property to make the space between the Table 
+<p><span class="makeKnown">Example:</span> Explains the border space property to make the space between the Table 
 cells.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <pre>&lt;!-- index.html --&gt;
@@ -5743,7 +5743,7 @@ cells.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p>To make a cell span more than one column, we must use the colspan attribute.</p>
 
-<p><b>Example:</b> Use of colspan attribute in HTML.</p>
+<p><span class="makeKnown">Example:</span> Use of colspan attribute in HTML.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <pre>&lt;!-- index.html --&gt;
 &lt;!DOCTYPE html&gt;
@@ -5794,7 +5794,7 @@ cells.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p>To make a cell span more than one row, we must use the rowspan attribute.</p>
 
-<p><b>Example:</b> Use of the rowspan attribute in HTML.</p>
+<p><span class="makeKnown">Example:</span> Use of the rowspan attribute in HTML.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <pre>&lt;!-- index.html --&gt;
 &lt;!DOCTYPE html&gt;
@@ -5852,7 +5852,7 @@ cells.</p>
 <pre>&lt;table style=&quot;width:100%&quot;&gt;
 &lt;caption&gt;DETAILS&lt;/caption&gt;</pre>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<p><b>Example:</b> HTML Table caption by specifying the CSS properties for setting its width.</p>
+<p><span class="makeKnown">Example:</span> HTML Table caption by specifying the CSS properties for setting its width.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <pre>&lt;!-- index.html --&gt;
 &lt;!DOCTYPE html&gt;
@@ -5923,7 +5923,7 @@ cells.</p>
   background-color: #f2f2d1;
 }</pre>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<p><b>Example:</b> Addition of the Table background color in HTML.</p>
+<p><span class="makeKnown">Example:</span> Addition of the Table background color in HTML.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <pre>&lt;!-- index.html --&gt;
 &lt;!DOCTYPE html&gt;
@@ -6014,7 +6014,7 @@ cells.</p>
 lead to complex tables layouts, which are visually interesting and have the potential of 
 introducing errors.</p>
 
-<p><b>Example:</b> Nesting of HTML Table.</p>
+<p><span class="makeKnown">Example:</span> Nesting of HTML Table.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <pre>&lt;!-- index.html --&gt;
 &lt;!DOCTYPE html&gt;
@@ -6162,14 +6162,14 @@ tag.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <pre>&lt;ul&gt; list of items &lt;/ul&gt;</pre>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<p><b>Attribute:</b> This tag contains two attributes which are listed below:</p>
+<p><span class="makeKnown">Attribute:</span> This tag contains two attributes which are listed below:</p>
 
 <ul>
   <li>compact: It will render the list smaller.</li>
   <li>type: It specifies which kind of marker is used in the list.</li>
 </ul>
 
-<p><b>Example:</b> This example describes the <b>unordered list</b>.</p>
+<p><span class="makeKnown">Example:</span> This example describes the <span class="makeKnown">unordered list</span>.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <pre>&lt;!DOCTYPE html&gt;
 &lt;html&gt;
@@ -6219,7 +6219,7 @@ starts with the &lt;ol&gt; tag. Each list item starts with the “li” tag.</p>
     of numeric, alphabetic, or roman numbers.</li>
 </ul>
 
-<p><b>Example:</b> This example illustrates the use of the reverse attribute, control 
+<p><span class="makeKnown">Example:</span> This example illustrates the use of the reverse attribute, control 
 list counting &amp; type attribute.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <pre>&lt;!DOCTYPE html&gt;
@@ -6274,7 +6274,7 @@ defines the term name, and the &lt;dd&gt; tag describes each term.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p>Please refer to the <i>How to add description list of an element using
 HTML? article</i> for further details.</p>
-<p><b>Example:</b> This example describes the HTML <b>Description List</b>.</p>
+<p><span class="makeKnown">Example:</span> This example describes the HTML <span class="makeKnown">Description List</span>.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <pre>&lt;!DOCTYPE html&gt;
 &lt;html&gt;
@@ -6318,14 +6318,14 @@ definition list. We have explained all three list types with examples.</p>
   </ol>
 </h2>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<p>A <b>Uniform Resource Locator (URL)</b> is simply the address of a website to access 
+<p>A <span class="makeKnown">Uniform Resource Locator (URL)</span> is simply the address of a website to access 
 the website content like <mark>www.geeksforgeeks.org</mark>. But certain characters are 
 allowed to be used in the URL like alphabets A-Z and a-z, numbers 0-9, and a few special 
 characters. They can be used as is but the rest of the characters that are not in this 
 list are used after encoding them to a suitable form. URL Encoding is the process of 
 converting the URL into a valid format that is accepted by web browsers.</p>
 
-<p><b>URL Encoding</b> takes place by replacing all the characters that are not allowed 
+<p><span class="makeKnown">URL Encoding</span> takes place by replacing all the characters that are not allowed 
 by a <mark>% (percent)</mark> sign followed by two hexadecimal digits. These two 
 hexadecimal values represent the numerical values of the character in the ASCII character 
 set. For example, a space is not acceptable in a URL and is replaced by a ‘%20’ or a ‘+’ 
@@ -6353,18 +6353,18 @@ sign while encoding. Similarly, a $ sign is replaced by ‘%24’.</p>
 <pre>https://www.geeksforgeeks.org/</pre>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <ul>
-  <li><b>Scheme:</b> It specifies the protocol used for communication, such as 
-    <b>“https://”</b> for secure communication or <b>“http://”</b> for unsecured 
+  <li><span class="makeKnown">Scheme:</span> It specifies the protocol used for communication, such as 
+    <span class="makeKnown">“https://”</span> for secure communication or <span class="makeKnown">“http://”</span> for unsecured 
     communication.</li>
-  <li><b>Prefix:</b> It is an optional subdomain or www indicating the location of 
+  <li><span class="makeKnown">Prefix:</span> It is an optional subdomain or www indicating the location of 
     the resource within the domain.</li>
-  <li><b>Domain:</b> Identifies the website’s primary address, like “example.com”, 
+  <li><span class="makeKnown">Domain:</span> Identifies the website’s primary address, like “example.com”, 
     indicating its unique location on the Internet.</li>
-  <li><b>Port:</b> Optional and signifies a specific endpoint for communication. 
+  <li><span class="makeKnown">Port:</span> Optional and signifies a specific endpoint for communication. 
     Common values are 80 for HTTP and 443 for HTTPS.</li>
-  <li><b>Path:</b> It specifies the location or directory on the server where the 
+  <li><span class="makeKnown">Path:</span> It specifies the location or directory on the server where the 
     resource is located.</li>
-  <li><b>Filename:</b> It refers to the specific file or resource within the specified 
+  <li><span class="makeKnown">Filename:</span> It refers to the specific file or resource within the specified 
     path.</li>
 </ul>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -6814,9 +6814,9 @@ element over time. It’s normally inserted inside the element which we want to 
 <h5>Attributes:</h5>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <ul>
-  <li><b>Animation Attributes</b>: Attributes used to give animation effects, exp timing 
+  <li><span class="makeKnown">Animation Attributes</span>: Attributes used to give animation effects, exp timing 
     attributes, event attributes, and value attributes, etc.</li>
-  <li><b>Global Attributes</b>: some global attributes used like core attributes and 
+  <li><span class="makeKnown">Global Attributes</span>: some global attributes used like core attributes and 
     styling attributes, etc.</li>
 </ul>
 <p>Below given are a few examples of the above element:</p>
@@ -6893,14 +6893,14 @@ like in HTML canvas.</p>
 <h5>Attributes:</h5>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <ul>
-  <li><b>keyPoints</b>: This attribute indicates in the range [0, 1], how far is the 
+  <li><span class="makeKnown">keyPoints</span>: This attribute indicates in the range [0, 1], how far is the 
     object along the path for each keyTimes associated values.</li>
-  <li><b>path</b>: This attribute defines the path of the motion.</li>
-  <li><b>rotate</b>: This attribute defines a rotation applied to the element animated 
+  <li><span class="makeKnown">path</span>: This attribute defines the path of the motion.</li>
+  <li><span class="makeKnown">rotate</span>: This attribute defines a rotation applied to the element animated 
     along a path, usually to make it point in the direction of the animation.</li>
-  <li><b>Animation Attributes</b>: Attributes used to give animation effects, exp 
+  <li><span class="makeKnown">Animation Attributes</span>: Attributes used to give animation effects, exp 
     timing attributes, event attributes, and value attributes, etc.</li>
-  <li>Global Attributes</b>: some global attributes used like core attributes and 
+  <li>Global Attributes</span>: some global attributes used like core attributes and 
     styling attributes, etc.</li>
 </ul>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -6948,13 +6948,13 @@ thereby allowing animations to control translation, scaling, rotation, and/or sk
 <h5>Attribute:</h5>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <ul>
-  <li><b>from</b>: Initial value of the attribute that will be modified during the animation.</li>
-  <li><b>to</b>: Final value of the attribute that will be modified during the animation.</li>
-  <li><b>type</b>: It defines the type of transformation, whose values change over time.</li>
-  <li><b>dur</b>: Duration of the animation.</li>
-  <li><b>repeatCount</b>: The number of times an animation will take place.</li>
-  <li><b>repeatDur</b>: The total duration for repeating an animation.</li>
-  <li><b>attributeName</b>: The name of the CSS property that is going to be animated.</li>
+  <li><span class="makeKnown">from</span>: Initial value of the attribute that will be modified during the animation.</li>
+  <li><span class="makeKnown">to</span>: Final value of the attribute that will be modified during the animation.</li>
+  <li><span class="makeKnown">type</span>: It defines the type of transformation, whose values change over time.</li>
+  <li><span class="makeKnown">dur</span>: Duration of the animation.</li>
+  <li><span class="makeKnown">repeatCount</span>: The number of times an animation will take place.</li>
+  <li><span class="makeKnown">repeatDur</span>: The total duration for repeating an animation.</li>
+  <li><span class="makeKnown">attributeName</span>: The name of the CSS property that is going to be animated.</li>
 </ul>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h5>Example:</h5>
@@ -7006,13 +7006,13 @@ circle. Basically, the &lt;circle&gt; element wrapped inside the &lt;svg&gt; ele
 <p>The below are the attributes that can be used with the &lt;svg&gt; element;</p>
 
 <ul>
-  <li>cx</b>: It defines the x-coordinate of the center of the circle.</li>
-  <li><b>cy</b>: It defines the y-coordinate of the center of the circle.</li>
-  <li><b>r</b>: It defines the radius of the circle.</li>
-  <li><b>fill</b>: It specifies the color used to fill the circle (in this case, yellow).</li>
-  <li><b>stroke-width</b>: It defines the width of the stroke (outline) of the circle.</li>
-  <li><b>stroke</b>: It specifies the color of the stroke.</li>
-  <li><b>Default Behavior</b>: If no fill parameter is used, the circle is filled with a 
+  <li>cx</span>: It defines the x-coordinate of the center of the circle.</li>
+  <li><span class="makeKnown">cy</span>: It defines the y-coordinate of the center of the circle.</li>
+  <li><span class="makeKnown">r</span>: It defines the radius of the circle.</li>
+  <li><span class="makeKnown">fill</span>: It specifies the color used to fill the circle (in this case, yellow).</li>
+  <li><span class="makeKnown">stroke-width</span>: It defines the width of the stroke (outline) of the circle.</li>
+  <li><span class="makeKnown">stroke</span>: It specifies the color of the stroke.</li>
+  <li><span class="makeKnown">Default Behavior</span>: If no fill parameter is used, the circle is filled with a 
     default color (generally black).</li>
 </ul>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -7136,7 +7136,7 @@ neither be visible nor be drawn.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h5>Attributes</h5>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<p><b>clipPathUnits</b>: This attribute defines the coordinate system for the 
+<p><span class="makeKnown">clipPathUnits</span>: This attribute defines the coordinate system for the 
 &lt;clipPath&gt; element’s content. Below given are a few examples of the function 
 given above.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -7279,7 +7279,7 @@ by <mark>&lt;use&gt;</mark> element to render them on the browser.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <pre>&lt;defs&gt;&lt;/defs&gt;</pre>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<p><b>Property values:</b> It does not have any property values.</p>
+<p><span class="makeKnown">Property values:</span> It does not have any property values.</p>
 
 <p>Below given are a few examples of the above function.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -7381,7 +7381,7 @@ svg{
 description to any of the available SVG elements whether it is a
 container or graphic element.</p>
 
-<p><b>Property Values</b>: It does not have any property values.</p>
+<p><span class="makeKnown">Property Values</span>: It does not have any property values.</p>
 
 <p>Below given are a few examples of the function given above.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -7492,10 +7492,10 @@ other, while a circle has equal x and y radius:</p>
 <h5>Attributes:</h5>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <ul>
-  <li><b>cx:</b> x-axis co-ordinate of the center.</li>
-  <li><b>cy:</b> y-axis co-ordinate of the center.</li>
-  <li><b>rx:</b> x-axis radius of the ellipse.</li>
-  <li><b>ry:</b> y-axis radius of the ellipse.</li>
+  <li><span class="makeKnown">cx:</span> x-axis co-ordinate of the center.</li>
+  <li><span class="makeKnown">cy:</span> y-axis co-ordinate of the center.</li>
+  <li><span class="makeKnown">rx:</span> x-axis radius of the ellipse.</li>
+  <li><span class="makeKnown">ry:</span> y-axis radius of the ellipse.</li>
 </ul>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h5>Example:</h5>
@@ -7568,10 +7568,10 @@ SVG fragments or images.</p>
 <h5>Attributes:</h5>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <ul>
-  <li><b>in</b> – It identifies input for the given filter primitive.</li>
-  <li><b>in2</b> – It identifies the second input for the given filter primitive. It 
+  <li><span class="makeKnown">in</span> – It identifies input for the given filter primitive.</li>
+  <li><span class="makeKnown">in2</span> – It identifies the second input for the given filter primitive. It 
     takes on the same values as the ‘in’ attribute.</li>
-  <li><b>mode</b> – It defines the blending mode on the <feBlend> filter primitive. If 
+  <li><span class="makeKnown">mode</span> – It defines the blending mode on the <feBlend> filter primitive. If 
     mode is not specified, the normal value is executed.</li>
 </ul>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -7808,21 +7808,21 @@ input image with neighboring pixels to produce a resulting image.</p>
 <h5>Attributes:</h5>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <ul>
-  <li><b>in</b> – It stores input for the given primitive.</li>
-  <li><b>order</b> – It tests the size of the matrix to be used by the filter element. By 
+  <li><span class="makeKnown">in</span> – It stores input for the given primitive.</li>
+  <li><span class="makeKnown">order</span> – It tests the size of the matrix to be used by the filter element. By 
     default, it is 3 X 3.</li>
-  <li><b>kernelMatrix</b> – It defines the list of numbers that form the kernel matrix.</li>
-  <li><b>divisor</b> – It defines the sum of values of the kernel matrix. By default, it 
+  <li><span class="makeKnown">kernelMatrix</span> – It defines the list of numbers that form the kernel matrix.</li>
+  <li><span class="makeKnown">divisor</span> – It defines the sum of values of the kernel matrix. By default, it 
     is set to 1.</li>
-  <li><b>bias</b> – It sets the range of the filter. By default, it is set to 0.</li>
-  <li><b>targetX</b> – It shifts the convolution matrix horizontally. (Range – 0 &lt;= 
+  <li><span class="makeKnown">bias</span> – It sets the range of the filter. By default, it is set to 0.</li>
+  <li><span class="makeKnown">targetX</span> – It shifts the convolution matrix horizontally. (Range – 0 &lt;= 
     targetX &lt; orderX).</li>
-  <li><b>targetY</b> – It shifts the convolution matrix vertically. (Range – 0 &lt;= 
+  <li><span class="makeKnown">targetY</span> – It shifts the convolution matrix vertically. (Range – 0 &lt;= 
     targetY &lt; orderY).</li>
-  <li><b>kernelUnitLength</b> – It tells the intended distance between successive columns 
+  <li><span class="makeKnown">kernelUnitLength</span> – It tells the intended distance between successive columns 
     and rows in the kernelMatrix. The intended distance is represented in current filter 
     units. The default value is 1.</li>
-  <li><b>preserveAlpha</b> – It value is either true or false. It indicates whether the 
+  <li><span class="makeKnown">preserveAlpha</span> – It value is either true or false. It indicates whether the 
     convolution will only apply to the alpha and color channels. The default value is 
     false.</li>
 </ul>
@@ -7924,11 +7924,11 @@ darker and in shadow.</p>
 <h5>Attributes:</h5>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <ul>
-  <li><b>in</b> —The in attribute identifies input for the given filter primitive.</li>
-  <li><b>surfaceScale</b> — It represents the height of the surface. Its value is 
+  <li><span class="makeKnown">in</span> —The in attribute identifies input for the given filter primitive.</li>
+  <li><span class="makeKnown">surfaceScale</span> — It represents the height of the surface. Its value is 
     multiplied by the alpha value. Default value is 1.</li>
-  <li><b>diffuseConstant</b> — It is a non-negative number whose default value is 1.</li>
-  <li><b>kernelUnitLength</b> — It tells the intended distance between successive 
+  <li><span class="makeKnown">diffuseConstant</span> — It is a non-negative number whose default value is 1.</li>
+  <li><span class="makeKnown">kernelUnitLength</span> — It tells the intended distance between successive 
     columns and rows in the kernelMatrix. The intended distance is represented in 
     current filter units. Default value is 1.</li>
 </ul>
@@ -8027,14 +8027,14 @@ displacement effect is applied is reserved in “in” attribute.</p>
 <h5>Attributes:</h5>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <ul>
-  <li><b>in</b> – It identifies input for the given filter primitive.</li>
-  <li><b>in2</b> – It identifies the second input for the given filter primitive. It 
+  <li><span class="makeKnown">in</span> – It identifies input for the given filter primitive.</li>
+  <li><span class="makeKnown">in2</span> – It identifies the second input for the given filter primitive. It 
     works exactly like the in attribute.</li>
-  <li><b>scale</b> – It defines the displacement scale factor to be used on a 
+  <li><span class="makeKnown">scale</span> – It defines the displacement scale factor to be used on a 
     &lt;feDisplacementMap&gt; filter primitive.</li>
-  <li><b>xChannelSelector</b> -It indicates which color channel from in2 to used to 
+  <li><span class="makeKnown">xChannelSelector</span> -It indicates which color channel from in2 to used to 
     displace the pixels in ‘in’ along the x-axis.</li>
-  <li><b>yChannelSelector</b> – Itindicates which color channel from in2 to used to 
+  <li><span class="makeKnown">yChannelSelector</span> – Itindicates which color channel from in2 to used to 
     displace the pixels in ‘in’ along the y-axis.</li>
 </ul>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -8358,11 +8358,11 @@ the rectangle:</p>
     </thead>
     <tbody>
       <tr>
-        <td><b>width</b></td>
+        <td><span class="makeKnown">width</span></td>
         <td>Required. The width of the rectangle.</td>
       </tr>
       <tr>
-        <td><b>height</b></td>
+        <td><span class="makeKnown">height</span></td>
         <td>Required. The height of the rectangle.</td>
       </tr>
       <tr>
@@ -8662,7 +8662,7 @@ help accessing data.</p>
   <li>Facebook API - Allows you to display Facebook info on a web site.</li>
 </ul>
 
-<p><b>HTML Geolocation API</b> - The Geolocation API is used to access the
+<p><span class="makeKnown">HTML Geolocation API</span> - The Geolocation API is used to access the
 user’s current location. Since this can compromise privacy, the location
 is not available unless the user approves it.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -8825,9 +8825,9 @@ available:</p>
 <p>The Geolocation object also has other interesting methods:</p>
 
 <ul>
-  <li><b>watchPosition()</b> - Returns the current location of the user and continues to 
+  <li><span class="makeKnown">watchPosition()</span> - Returns the current location of the user and continues to 
     return updated location as the user moves (like the GPS in a car).</li>
-  <li><b>clearWatch()</b> - Stops the watchPosition() method.</li>
+  <li><span class="makeKnown">clearWatch()</span> - Stops the watchPosition() method.</li>
 </ul>
 
 <p>The example below shows the watchPosition() method. You need an accurate GPS device 
@@ -9014,9 +9014,9 @@ store and access the same data.</p>
 <p>Web storage provides two objects for storing data in the browser:</p>
 
 <ul>
-  <li><b>window.localStorage</b> - stores data with no expiration date (data is not lost 
+  <li><span class="makeKnown">window.localStorage</span> - stores data with no expiration date (data is not lost 
     when the browser tab is closed)</li>
-  <li><b>window.sessionStorage</b> - stores data for one session (data is lost when the 
+  <li><span class="makeKnown">window.sessionStorage</span> - stores data for one session (data is lost when the 
     browser tab is closed)</li>
 </ul>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -9036,7 +9036,7 @@ store and access the same data.</p>
 <p>The localStorage object stores the data with no expiration date. The data will not be 
 lost when the browser is closed, and will be available the next day, week, or year.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<h4>Example - Use <b>localStorage</b> to set and retrieve name and value pairs:</h4>
+<h4>Example - Use <span class="makeKnown">localStorage</span> to set and retrieve name and value pairs:</h4>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h4>Example explained:</h4>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -9466,21 +9466,21 @@ Last editted: 6/29/2025 +7pm</h6>
     <caption>Caption goes here</caption>
     <thead>
       <tr>
-        <th><b><mark></mark></b></th>
-        <th><b><mark></mark></b></th>
+        <th><span class="makeKnown"><mark></mark></span></th>
+        <th><span class="makeKnown"><mark></mark></span></th>
       </tr>
     </thead>
     <tbody>
       <tr>
-        <td><b><mark></mark></b></td>
+        <td><span class="makeKnown"><mark></mark></span></td>
         <td>.</td>
       </tr>
       <tr>
-        <td><b><mark></mark></b></td>
+        <td><span class="makeKnown"><mark></mark></span></td>
         <td>.</td>
       </tr>
       <tr>
-        <td><b><mark></mark></b></td>
+        <td><span class="makeKnown"><mark></mark></span></td>
         <td>.</td>
       </tr>
     </tbody>
