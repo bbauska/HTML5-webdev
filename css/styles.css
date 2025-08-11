@@ -4,26 +4,10 @@
  *
  */
 
-body
-{
-  margin: 0;
-  padding: 0;
-  
-  /* make it look decent enough */
-  background: #232323;
-  color: #cdcdcd;
-  font-family: "Avenir Next", "Avenir", sans-serif;
-}
-
 main {
   width: calc(100% - 240px);
   max-width: 680px;
   margin: 100px auto;
-}
-
-p {
-  font-size: 18px;
-  line-height: 28px;
 }
 
 * {
@@ -31,7 +15,6 @@ p {
 }
 
 /* Menu code starts here */
-
 #menuToggle
 {
   display: block;
@@ -355,16 +338,6 @@ pre .line-number span {
 pre .cl {
   display: block;
   clear: both;
-}
-pre {
-  font:normal normal 10px/12px consolas,Courier,Monospace;
-  background-color:#eee;
-  overflow:auto;
-  margin:0 0 1em;
-  padding:.5em 1em;
-  white-space: pre-wraps;
-  overflow-x: auto;
-  overflow: auto;
 }
 pre[href]:hover  {
   text-decoration: none;
