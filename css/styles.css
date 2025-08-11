@@ -302,12 +302,6 @@ body {
   background-color: #555;  /* very dark gray */
 }
 
-pre > code {
-  display: block;
-  margin-left: 15px;  /* 10px */
-  padding: 1rem;
-  word-wrap: normal;
-}
 pre {
   font: normal normal 10px/12px consolas,Courier,Monospace;
   background-color: #eee;
@@ -317,10 +311,16 @@ pre {
   white-space: pre-wraps;
   overflow-x: auto;
 }
+pre > code {
+  display: block;
+  margin-left: 15px;  /* 10px */
+  padding: 1rem;
+  word-wrap: normal;
+}
 pre code,
 pre .line-number {
   font: normal normal 10px/12px consolas,Courier,Monospace;
-  color: black;
+  color: #000;  /* black */
   display: block;
 }
 pre .line-number {
@@ -329,7 +329,7 @@ pre .line-number {
   margin: 0 1em 0 -1em;
   border-right: 1px solid;
   text-align: right;
-  color: red;
+  color: #ff0000;  /* pure (or mostly pure) red */
 }
 pre .line-number span {
   display: block;
@@ -339,12 +339,17 @@ pre .cl {
   display: block;
   clear: both;
 }
+pre {
+  width: 400px;
+  overflow: auto;
+}
 pre[href]:hover  {
   text-decoration: none;
 }
-pre:hover, pre:focus { 
-  width: 400px; 
+pre:hover, pre:focus {
+  width: 400px;  /* was: 50%, fit-content; before that; width: min-content */
 }
+
 .makeKnown {
   color: red;
   background-color: yellow;
