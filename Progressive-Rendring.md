@@ -2,6 +2,7 @@
 To enhance user experience and web performance, progressive rendering employs several techniques:
 
 | Technique | Description | Use Case |
+|------------|------------|-----------|
 | Lazy Loading | Content (images, scripts, etc.) is only loaded as needed, typically when it enters the viewport or is about to become visible.	| Used for images, videos, or other media-rich content to reduce initial load time. |
 | Skeleton Screens | Placeholder layouts (skeletons) are shown until the content is fully loaded, giving users a sense of what's loading and making the wait feel shorter. | Useful for content-heavy applications like social media, news sites, or e-commerce platforms. |
 | Progressive Image Loading | Low-quality image placeholders are loaded first, and gradually replaced by higher-quality versions as they load. | Ideal for improving the perceived performance of image-heavy websites. |
