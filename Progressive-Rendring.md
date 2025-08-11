@@ -1,4 +1,5 @@
-## Progressive Rendering Techniques
+<!-- Progressive-Rendering.md -->
+<h2>Progressive Rendering Techniques</h2>
 To enhance user experience and web performance, progressive rendering employs several techniques:
 
 | Technique | Description | Use Case |
@@ -12,16 +13,14 @@ To enhance user experience and web performance, progressive rendering employs se
 | Prioritized Loading | Resources are loaded based on their priority, with critical assets loaded first and less important ones later. | Ideal for optimizing critical rendering paths, especially on content-rich or highly interactive sites.
 | Responsive Images | Different image sizes are loaded based on the screen size and resolution, ensuring fast loading without sacrificing quality. | Best for responsive web designs where image quality and load times need to balance across devices. |
 
-
-## Conclusion
+<h2>Conclusion</h2>
 In essence, Progressive rendering transforms the web browsing experience by prioritizing 
 quick and incremental content delivery, ensuring users can engage with content faster 
 than ever before. Through innovative techniques and strategic implementation, progressive 
 rendering is setting new standards for web development, paving the way for a future where 
 slow-loading pages are a relic of the past.
 
-
-## Techniques with Examples
+<h2>Techniques with Examples</h2>
 
 <a href="https://en.wikipedia.org/wiki/Lazy_loading">Lazy loading</a> of images where 
 (typically) some javascript will load an image when it comes into the browsers viewport 
@@ -33,7 +32,7 @@ in the users browser first to display as quickly as possible, you can then use d
 javascript (domready/load) to load in other resources and content.
 
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-# Improve Page Rendering Speed Using Only CSS
+<h1>Improve Page Rendering Speed Using Only CSS</h1>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 
 Users love fast web apps. They expect the page to load fast and to function smoothly. If 
@@ -43,7 +42,7 @@ experience. This article will focus on 4 CSS tips you can use to improve the pag
 rendering speed.
 
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-## 1. Content-visibility
+<h2>1. Content-visibility</h2>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 In general, most web apps have complex UI elements, and it expands beyond what the user 
 sees in the browser view. On such occasions, we can use content-visibility to skip the 
@@ -58,20 +57,33 @@ Let's consider the following page that contains many cards with different info. 
 about 12 cards fit the screen, there are approximately 375 cards in the list. As you 
 can see, the browser has taken 1037ms to render this page.
 
-<image: page-rendering.webp>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ Page Rendering (xx) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<img class="displayed"
+  src="./images/page-rendering.webp"
+  title="Page Rendering"
+  alt="Page Rendering."
+  style="width:500px;" />
+<!-- image: page-rendering.webp -->
 
 As the next step, you can add content-visibility to all cards.
 
 In this example, after adding content-visibility to the page, rendering time dropped to 
 150ms. That's more than 6x performance improvement.
-
-<image: page-rendering-02.webp>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ Page Rendering 2 (xx) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<img class="displayed"
+  src="./images/page-rendering-02.webp"
+  title="Page Rendering 2"
+  alt="Page Rendering 2."
+  style="width:500px;" />
+<!-- image: page-rendering-02.webp -->
 
 As you can see, content-visibility is pretty powerful and highly useful to improve the 
 page rendering time. According to the things we discussed so far, you must be thinking 
 of it as a silver bullet for page rendering.
 
-### Limitations of content-visibility
+<h3>Limitations of content-visibility</h3>
 However, there are few areas content-visibility falls apart. I want to highlight two 
 points for your consideration.
 
@@ -84,8 +96,14 @@ points for your consideration.
 	elements come into the screen. The actual content will be rendered, and the height of 
 	the element will be updated accordingly. This will make the scroll bar behave in 
 	an unintended manner.
-
-<image: page-rendering.gif>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ Page Rendering.gif (xx) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<img class="displayed"
+  src="./images/page-rendering.gif"
+  title="Page Rendering motion"
+  alt="Page Rendering motion."
+  style="width:500px;" />
+<!-- image: page-rendering.gif -->
 
 To fix the scroll bar issue, you can use another CSS property called contain-intrinsic-size. 
 It specifies the natural size of an element. Therefore the element will be rendered with 
@@ -112,7 +130,13 @@ projects. Use it to maximize code reuse, keep a consistent design, collaborate
 as a team, speed delivery, and build apps that scale.
 
 <a href="https://bit.dev/">Bit</a> supports Node, React Native, React, Vue, Angular, and more.
-
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ how-to/example bit (xx) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<img class="displayed"
+  src="./images/bit.gif"
+  title="How-to/Example bit"
+  alt="How-to bit."
+  style="width:500px;" />
 <image: bit.gif>
 
 2. Will-change property
@@ -131,7 +155,7 @@ the rendering of the animation.
 Consider the following CSS class:
 
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-## 2. Will-change property
+<h2>2. Will-change property</h2>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 Animations on the browser aren’t a new thing. Usually, these animations are rendered 
 regularly with other elements. However, browsers can now use GPU to optimize some of 
@@ -165,11 +189,19 @@ According to a performance benchmark done by Maximillian Laumeister, you can see
 has obtained over 120FPS rendering speed with this one-line change, which initially was 
 at roughly 50FPS.
 </blockquote>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 02 Page Rendering (xx) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<a href="https://www.maxlaumeister.com/articles/css-will-change-property-a-performance-case-study/"
+<img class="displayed"
+  src="./images/02-page-rendering.webp"
+  title="02 Page Rendering"
+  alt="02 Page Rendering 2."
+  style="width:500px;" /></a>
+<!-- 02-page-rendering.webp -->
 
-<02-page-rendering.webp>
-<image click goto: https://www.maxlaumeister.com/articles/css-will-change-property-a-performance-case-study/>
+<! image click goto: https://www.maxlaumeister.com/articles/css-will-change-property-a-performance-case-study/ -->
 
-### When not to use will-change
+<h3>When not to use will-change</h3>
 While will-change is intended to improve performance, it also can degrade web app performance if you misuse it.
 
 	- Using will-change indicates that the element will change in the future.<br>
@@ -196,7 +228,7 @@ One last thing to keep in mind is that it is advisable to remove will-change fro
 element after completing all the animations.
 
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-3. Reducing the Render-blocking time
+<h2>3. Reducing the Render-blocking time</h2>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 Today, many web apps must cater to many form factors, including PCs, Tablets, & Mobile 
 Phones, etc. To accomplish this responsive nature, we must write new styles according to 
@@ -216,7 +248,12 @@ a low priority manner.
 <link rel="stylesheet" href="styles.css">
 ```
 
-<single-stylesheet.webp>
+<img class="displayed"
+  src="./images/single-stylesheet.webp"
+  title="Single Stylesheet"
+  alt="Single Stylesheet."
+  style="width:500px;" />
+<!-- single-stylesheet.webp -->
 
 After decomposing it to multiple stylesheets:
 
@@ -231,11 +268,16 @@ After decomposing it to multiple stylesheets:
 <link rel="stylesheet" href="print.css" media="print" />
 ```
 
-<multiple-stylesheet.webp>
+<img class="displayed"
+  src="./images/multiple-stylesheet.webp"
+  title="Multiple stylesheets"
+  alt="Multiple stylesheets."
+  style="width:500px;" />
+<!-- multiple-stylesheet.webp -->
 As you can see, having stylesheets decomposed according to form factors can reduce the 
 render-blocking time.
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-4. Avoiding @import to include multiple stylesheets
+<h2>4. Avoiding @import to include multiple stylesheets</h2>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 With @import, we can include a stylesheet in another stylesheet. When we are working on a 
 large project, having @import makes the code cleaner.
@@ -254,14 +296,24 @@ we have nested @import within stylesheets, it will hinder the rendering performa
 @import url("componenets.css");
 ```
 
-<waterfall-with-imports.webp>
+<img class="displayed"
+  src="./images/waterfall-with-imports.webp"
+  title=""
+  alt="."
+  style="width:500px;" />
+<!-- waterfall-with-imports.webp -->
 
 Instead of using @import we can achieve the same with much better performance by having 
 multiple links as it allows us to load stylesheets in parallel.
 
-<waterfall-with-linking.webp>
+<img class="displayed"
+  src="./images/waterfall-with-linking.webp"
+  title="Waterfall with linking"
+  alt="Waterfall with linking."
+  style="width:500px;" />
+<!-- waterfall-with-linking.webp -->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-## Conclusion
+<h2>Conclusion</h2>
 Apart from the 4 areas we discussed in this article, there are few other ways we can use 
 CSS to improve the performance of the web page. One of the recent features of CSS, 
 content-visibility, looks so promising in the years to come as it gives a multi-fold 
