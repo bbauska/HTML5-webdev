@@ -2,7 +2,7 @@
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--  pandoc -f markdown -t html5 -o index.html html-basics.md -c ./assets/dist/css/styles.css  -->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~ index.html of html-webdev.bauska.org ~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~ index.html of bbauska/HTML5-webdev making https://html-webdev.bauska.org ~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
 <head>
@@ -71,10 +71,10 @@
 <h2 id="#topics">Related Topics</h2>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <ul>
-  <li><a href="#html5-events.md" 
+  <li><a href="https://github.com/bbauska/HTML5-webdev/blob/main/html5-events.md" 
     target="_blank" rel="noopener noreferrer">
     HTML5 Events List</a></li>
-  <li><a href="#html5-tags.md" 
+  <li><a href="https://github.com/bbauska/HTML5-webdev/blob/main/html5-tags.md" 
     target="_blank" rel="noopener noreferrer">
     HTML5 Tags</a></li>
   <li><a href="https://github.com/learning-zone/css-basics" 
@@ -339,13 +339,12 @@ element should appear or behave.</p>
 <p>Indicates how much of a task has been completed (often marked as a percentage). It is expected 
 to be modified through JavaScript code.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<pre>&lt;p&gt;Progress: <progress id="bar" value="0" 
+<pre>&lt;p&gt;Progress: &lt;progress id="bar" value="0" 
   max="100"&gt;&lt;span&gt;0&lt;/span&gt;%&lt;/progress&gt;&lt;/p&gt;
 
 &lt;script type="text/javascript"&gt;
   var i = 0;
   var progressBar = document.getElementById("bar");
-
   function countNumbers() {
     if(i &lt; 100) {
       i = i + 1;
@@ -353,13 +352,11 @@ to be modified through JavaScript code.</p>
       // For browsers that don't support progress tag
       progressBar.getElementsByTagName("span")[0].textContent = i;
     }
-
     // Wait for sometime before running this script again
     setTimeout("countNumbers()", 100);
   }
   countNumbers();
-&lt;/script&gt;
-</pre>
+&lt;/script&gt;</pre>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3 id="new-form-elements">List New form elements introduced in html5</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
