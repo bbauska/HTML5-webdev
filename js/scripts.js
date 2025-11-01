@@ -1,3 +1,4 @@
+/* js/scripts.js for html-webdev.bauska.org */
 (function() {
     var pre = document.getElementsByTagName('pre'),
         pl = pre.length;
