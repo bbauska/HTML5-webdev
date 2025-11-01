@@ -1383,11 +1383,9 @@ to the server.</p>
 For the datalist element, it is suggested that the user select one of the options you've 
 given, but he can actually enter anything he wants in the input.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<h3>
-  <ol type="1">
-    <li>01. Select:</li>
-  </ol>
-</h3>
+<ol type="1" start="1">
+  <li>Select:</li>
+</ol>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <pre>&lt;select name="browser"&gt;
   &lt;option value="firefox"&gt;Firefox&lt;/option&gt;
@@ -1397,11 +1395,9 @@ given, but he can actually enter anything he wants in the input.</p>
   &lt;option value="safari"&gt;Safari&lt;/option&gt;
 &lt;/select&gt;</pre>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<h3>
-  <ol start="2" type="1">
-    <li>02. Datalist:</li>
-  </ol>
-</h3>
+<ol start="2" type="1">
+  <li>Datalist:</li>
+</ol>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <pre>&lt;input type="text" list="browsers"&gt;
 &lt;datalist id="browsers"&gt;
@@ -1746,32 +1742,26 @@ suitable HTML5 element or attribute exists.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <img src="assets/lib/img/frame-full.jpg" alt="Browser Engine" />
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<h3>
-  <ol type="1">
-    <li>01. JavaScript:</li>
-  </ol>
-</h3>
+<ol type="1" start="1">
+  <li>JavaScript:</li>
+</ol>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p>Typically JavaScript is used to handle work that will result in visual changes, 
 whether it's jQuery's animate function, sorting a data set, or adding DOM elements to the 
 page. It doesn't have to be JavaScript that triggers a visual change, though: CSS 
 Animations, Transitions, and the Web Animations API are also commonly used.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<h3>
-  <ol start="2" type="1">
-    <li>02. Style:</li>
-  </ol>
-</h3>
+<ol start="2" type="1">
+  <li>Style:</li>
+</ol>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p>This is the process of figuring out which CSS rules apply to which elements based on 
 matching selectors, for example, .headline or .nav &gt; .nav__item. From there, once rules 
 are known, they are applied and the final styles for each element are calculated.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<h3>
-  <ol start="3" type="1">
-    <li>03. Layout:</li>
-  </ol>
-</h3>
+<ol start="3" type="1">
+  <li>Layout:</li>
+</ol>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p>Once the browser knows which rules apply to an element it can begin to calculate how 
 much space it takes up and where it is on screen. The web's layout model means that one 
@@ -1779,22 +1769,18 @@ element can affect others, for example the width of the &lt;body&gt; element typ
 affects its children's widths and so on all the way up and down the tree, so the process 
 can be quite involved for the browser.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<h3>
-  <ol start="4" type="1">
-    <li>04. Paint:</li>
-  </ol>
-</h3>
+<ol start="4" type="1">
+  <li>Paint:</li>
+</ol>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p>Painting is the process of filling in pixels. It involves drawing out
 text, colors, images, borders, and shadows, essentially every visual
 part of the elements. The drawing is typically done onto multiple
 surfaces, often called layers.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<h3>
-  <ol start="5" type="1">
-    <li>05. Compositing:</li>
-  </ol>
-</h3>
+<ol start="5" type="1">
+  <li>Compositing:</li>
+</ol>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p>Since the parts of the page were drawn into potentially multiple layers
 they need to be drawn to the screen in the correct order so that the
@@ -1850,30 +1836,24 @@ over the top of another incorrectly.</p>
 shrink, or enlarge, a website, to make it look good on all devices (desktops, tablets, 
 and phones).</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<h3>
-  <ol type="1">
-    <li>01. Setting the viewport:</li>
-  </ol>
-</h3>
+<ol type="1" start="1">
+  <li>Setting the viewport:</li>
+</ol>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <pre>&lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;</pre>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<h3>
-  <ol start="2" type="1">
-    <li>02. Responsive Images:</li>
-  </ol>
-</h3>
+<ol start="2" type="1">
+  <li>Responsive Images:</li>
+</ol>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p>If the CSS width property is set to 100%, the image will be responsive and scale up 
 and down.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <pre>&lt;img src="img.png" style="width:100%;"&gt;</pre>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<h3>
-  <ol start="3" type="1">
-    <li>03. Show different Images depending on Browser Width:</li>
-  </ol>
-</h3>
+<ol start="3" type="1">
+  <li>03. Show different Images depending on Browser Width:</li>
+</ol>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p>The HTML &lt;picture&gt; element allows you to define different images for different 
 browser window sizes.</p>
@@ -1885,22 +1865,18 @@ browser window sizes.</p>
   &lt;img src="img_small.jpg" alt="Image"&gt;
 &lt;/picture&gt;</pre>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<h3>
-  <ol start="4" type="1">
-    <li>04. Responsive Text Size:</li>
-  </ol>
-</h3>
+<ol start="4" type="1">
+  <li>Responsive Text Size:</li>
+</ol>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p>The text size can be set with a “vw” unit, which means the “viewport width”. That way 
 the text size will follow the size of the browser window.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <pre>&lt;h1 style="font-size:10vw"&gt;Hello World&lt;/h1&gt;</pre>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<h3>
-  <ol start="5" type="1">
-    <li>05. Media Queries:</li>
-  </ol>
-</h3>
+<ol start="5" type="1">
+  <li>Media Queries:</li>
+</ol>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p>Using media queries you can define completely different styles for
 different browser sizes.</p>
@@ -1924,11 +1900,9 @@ different browser sizes.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h2>Q. List the API available in HTML5?</h2>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<h3>
-  <ol type="1">
-    <li>01. High Resolution Time API</li>
-  </ol>
-</h3>
+<ol type="1" start="1">
+  <li>01. High Resolution Time API</li>
+</ol>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p>The High Resolution Time API provides the current time in sub-millisecond resolution 
 and such that it is not subject to system clock skew or adjustments.</p>
@@ -1941,11 +1915,9 @@ performance of our code.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <pre>var time = performance.now();</pre>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<h3>
-  <ol start="2" type="1">
-    <li>02. User Timing API</li>
-  </ol>
-</h3>
+<ol start="2" type="1">
+  <li>02. User Timing API</li>
+</ol>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p>It allows us to accurately measure and report the performance of a section of JavaScript 
 code. It deals with two main concepts: mark and measure. The former represents an instant 
@@ -1958,11 +1930,9 @@ performance.mark("endFoo");
 
 performance.measure("durationFoo", "startFoo", "endFoo");</pre>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<h3>
-  <ol start="3" type="1">
-    <li>03. Network Information API</li>
-  </ol>
-</h3>
+<ol start="3" type="1">
+  <li>Network Information API</li>
+</ol>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p>This API belongs to the connection property of the <mark>window.navigator</mark> object. It 
 exposes two read-only properties: <mark>bandwidth</mark> and <mark>metered</mark>. The former 
@@ -2016,11 +1986,9 @@ false otherwise.</p>
 </div>
 <!-- problem here - does not <ff>. rather 04. is beside the above table. -->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<h3>
-  <ol start="4" type="1">
-    <li>04. Vibration API</li>
-  </ol>
-</h3>
+<ol start="4" type="1">
+  <li>Vibration API</li>
+</ol>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p>It exposes only one method, <mark>vibrate()</mark>, that belongs to the <mark>window.navigator</mark> 
 object. This method accepts one parameter specifying the duration of the vibration in milliseconds. 
@@ -2030,11 +1998,9 @@ as alternating vibration times and pauses.</p>
 <pre>// Vibrate once for 2 seconds
 navigator.vibrate(2000);</pre>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<h3>
-  <ol start="5" type="1">
-    <li>05. Battery Status API</li>
-  </ol>
-</h3>
+<ol start="5" type="1">
+  <li>Battery Status API</li>
+</ol>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p>The Battery Status API exposes four properties (<mark>charging</mark>, <mark>chargingTime</mark>, 
 <mark>discharingTime</mark>, and <mark>level</mark>) and four events. The properties specify if the 
@@ -2045,11 +2011,9 @@ to the <mark>battery</mark> property of the <mark>window.navigator</mark> object
 <pre>// Retrieves the percentage of the current level of the device's battery
 var percentageLevel = navigator.battery.level * 100;</pre>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<h3>
-  <ol start="6" type="1">
-    <li>06. Page Visibility API</li>
-  </ol>
-</h3>
+<ol start="6" type="1">
+  <li>Page Visibility API</li>
+</ol>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p>The Page Visibility API enables us to determine the current visibility state of the page. The 
 Page Visibility API is especially useful for saving resources and improving performance by letting 
@@ -2058,11 +2022,9 @@ a page avoid performing unnecessary tasks when the document isn't visible.</p>
 <pre>//document.hidden retuns true if page is not visible.
 console.log('Page Visibility: '+document.hidden);</pre>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<h3>
-  <ol start="7" type="1">
-    <li>07. Fullscreen API</li>
-  </ol>
-</h3>
+<ol start="7" type="1">
+  <li>Fullscreen API</li>
+</ol>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p>
 The Fullscreen API provides a way to request fullscreen display from the user, and exit this mode 
@@ -2200,11 +2162,9 @@ socket.addEventListener('message', function(event) {
 <p><span class="makeKnown">canvas</span> is an HTML element which can be used to draw graphics via JavaScript. 
 This can, for instance, be used to draw graphs, combine photos, or create animations.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<h3>
-  <ol type="1">
-    <li>01. Colors, Styles, and Shadows:</li>
-  </ol>
-</h3>
+<ol type="1" start="1">
+  <li>Colors, Styles, and Shadows:</li>
+</ol>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <table>
   <colgroup>
@@ -2245,11 +2205,9 @@ This can, for instance, be used to draw graphs, combine photos, or create animat
   </tbody>
 </table>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<h3>
-  <ol start="2" type="1">
-    <li>02. Line Styles:</li>
-  </ol>
-</h3>
+<ol start="2" type="1">
+  <li>Line Styles:</li>
+</ol>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <div role="region" tabindex="0">
   <table>
@@ -2282,11 +2240,9 @@ This can, for instance, be used to draw graphs, combine photos, or create animat
 </div>
 <!-- next 3 sections are in columns, rather than a <ff> -->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<h3>
-  <ol start="3" type="1">
-    <li>03. Rectangles:</li>
-  </ol>
-</h3>
+<ol start="3" type="1">
+  <li>Rectangles:</li>
+</ol>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <div role="region" tabindex="0">
   <table>
@@ -2318,11 +2274,9 @@ This can, for instance, be used to draw graphs, combine photos, or create animat
   </table>
 </div>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<h3>
-  <ol start="4" type="1">
-    <li>04. Paths:</li>
-  </ol>
-</h3>
+<ol start="4" type="1">
+  <li>Paths:</li>
+</ol>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <div role="region" tabindex="0">
   <table>
@@ -2375,11 +2329,9 @@ This can, for instance, be used to draw graphs, combine photos, or create animat
   </table>
 </div>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<h3>
-  <ol start="5" type="1">
-    <li>05. Transformations:</li>
-  </ol>
-</h3>
+<ol start="5" type="1">
+  <li>Transformations:</li>
+</ol>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <div role="region" tabindex="0">
   <table>
@@ -2415,11 +2367,9 @@ This can, for instance, be used to draw graphs, combine photos, or create animat
   </table>
 </div>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<h3>
-  <ol start="6" type="1">
-    <li>06. Text:</li>
-  </ol>
-</h3>
+<ol start="6" type="1">
+  <li>Text:</li>
+</ol>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <div role="region" tabindex="0">
   <table>
@@ -2516,11 +2466,9 @@ This can, for instance, be used to draw graphs, combine photos, or create animat
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h2>Q. What is difference between SVG and Canvas?</h2>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<h3>
-  <ol type="1">
-    <li>01. SVG:</li>
-  </ol>
-</h3>
+<ol type="1" start="1">
+  <li>SVG:</li>
+</ol>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p>The Scalable Vector Graphics (SVG) is an XML-based image format that is used to define 
 two-dimensional vector based graphics for the web. Unlike raster image (e.g. .jpg, .gif, 
@@ -2562,11 +2510,9 @@ PNG, etc.</p>
   &lt;/body&gt;
 &lt;/html&gt;</pre>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<h3>
-  <ol start="2" type="1">
-    <li>02. Canvas:</li>
-  </ol>
-</h3>
+<ol start="2" type="1">
+  <li>Canvas:</li>
+</ol>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p>Canvas is a HTML element is used to draw graphics on a web page. It is a bitmap with 
 an “immediate mode” graphics application programming interface (API) for drawing on it. 
@@ -2747,11 +2693,9 @@ the information on web pages and provide more relevant results to users.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h2>Q. What are the HTML tags which deprecated in HTML5?</h2>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<h3>
-  <ol type="1">
-    <li>01. Deprecated Tags:</li>
-  </ol>
-</h3>
+<ol type="1" start="1">
+  <li>Deprecated Tags:</li>
+</ol>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p>The following elements are not available in HTML5 anymore and their function is better 
 handled by CSS.</p>
@@ -2846,11 +2790,9 @@ handled by CSS.</p>
   </table>
 </div>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<h3>
-  <ol start="2" type="1">
-    <li>02. Deprecated Attributes:</li>
-  </ol>
-</h3>
+<ol start="2" type="1">
+  <li>Deprecated Attributes:</li>
+</ol>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <table>
   <colgroup>
@@ -3084,11 +3026,9 @@ to test for some of the new technologies and then provide fallbacks for browsers
 not support them. This is called <span class="makeKnown">feature detection</span> and is much more efficient than 
 browser sniffing.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<h3>
-  <ol type="1">
-    <li>01. Using Modernizr with CSS:</li>
-  </ol>
-</h3>
+<ol type="1" start="1">
+  <li>Using Modernizr with CSS:</li>
+</ol>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p>By default, <mark>Modernizr</mark> sets classes for all of your tests on the root 
 element (&lt;html&gt; for websites). This means adding the class for each feature when it 
@@ -3103,11 +3043,9 @@ or <mark>.no-feature</mark>).</p>
   background-image: linear-gradient(cornflowerblue, rebeccapurple);
 }</pre>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<h3>
-  <ol start="2" type="1">
-    <li>02. Using Modernizr with JavaScript:</li>
-  </ol>
-</h3>
+<ol start="2" type="1">
+  <li>Using Modernizr with JavaScript:</li>
+</ol>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p><mark>Modernizr</mark> keeps track of the results of all of it's feature detections 
 via the <mark>Modernizr</mark> object.</p>
