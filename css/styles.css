@@ -163,9 +163,9 @@ img.displayed {
 }
 
 ul,ol li {
-  font-size: 14.5px;
+  font-size: 15px;
   font-family: Bahnschrift, Inter, Helvetic, sans-serif;
-  padding: 14.5px;  /* 10px */
+  padding: 15px;  /* 10px */
   margin-left: 15px; /* was blank */
   line-height: 110%;  /* 110% */
 }
