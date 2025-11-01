@@ -108,7 +108,6 @@
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h2><a id="toc">Table of Contents</a></h2>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<h3>
 <ol>
   <li><a href="#1-intro">Introduction</a></li>
   <li><a href="#2-html-tags">HTML Tags</a></li>
@@ -127,7 +126,6 @@
   <li><a href="#15-html-access">HTML Accessibility</a></li>
   <li><a href="#16-misc">Miscellaneous</a></li>
 </ol>
-</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h2 id="1-intro">01. Introduction</h2>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -135,6 +133,7 @@
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p>The Extensible Hypertext Markup Language, or XHTML, has two important notes for front 
 end developers.</p>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <ol type="1">
   <li>It needs to be well formed, meaning all elements need to be closed and nested 
     correctly or you will return errors.</li>
@@ -3067,11 +3066,9 @@ you may stream it to the client without having to wait for non-critical
 stuff to be displayed. It combines the advantages of both CSR (Client
 Side Rendering) and SSR (Server Side Rendering) (Server Side Rendering).</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<h3>
-  <ol type="1">
-    <li>01. Client Side Rendering:</li>
-  </ol>
-</h3>
+<ol type="1" start="1">
+  <li>Client Side Rendering:</li>
+</ol>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p>Client Side Rendering (CSR) is a technique in which content is rendered
 in the browser using JavaScript. Instead of getting all the content from
@@ -3094,11 +3091,9 @@ JavaScript, it takes a longer time to show any content on the page. If
 the user is on a slow network, the content is blocked for an even longer
 time due to lower bandwidth and higher latency.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<h3>
-  <ol start="2" type="1">
-    <li>02. Server Side Rendering:</li>
-  </ol>
-</h3>
+<ol start="2" type="1">
+  <li>Server Side Rendering:</li>
+</ol>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p>When rendering on the server side, the HTML is rendered on the server
 and sent to the client. The content that we need to display on the
@@ -3234,11 +3229,9 @@ increased memory and other computing resources.</i></p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h2>Q. Explain the use of rel=“nofollow”, rel=“noreferrer”, rel=“noopener” attribute?</h2>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<h3>
-  <ol type="1">
-    <li>rel=“nofollow”</li>
-  </ol>
-</h3>
+<ol type="1" start="1">
+  <li>rel=“nofollow”</li>
+</ol>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p>When <mark><span class="makeKnown">rel=“nofollow”</span></mark> tag is used, it instruct the search engines 
 not to pass any PageRank from one page to the other. It does not allow it to pass the 
@@ -3251,11 +3244,9 @@ websites, for example some blog comments and some kind of forum posting.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <pre>&lt;a href="https://www.website.com" rel="nofollow"&gt;Link to yoursite.com&lt;/a&gt;</pre>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<h3>
-  <ol start="2" type="1">
-    <li>rel=“noreferrer”</li>
-  </ol>
-</h3>
+<ol start="2" type="1">
+  <li>rel=“noreferrer”</li>
+</ol>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p>Noreferrer is related to analytics and tracking. The referrer value shows the previous 
 page where a user came from. By using the noreferrer attribute on a link, you are 
@@ -3265,11 +3256,9 @@ preventing other pages from seeing that traffic came from a click on your link.<
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <pre>&lt;a href="https://www.website.com" rel="noreferrer"&gt;Link to yoursite.com&lt;/a&gt;</pre>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<h3>
-  <ol start="3" type="1">
-    <li>rel=“noopener”</li>
-  </ol>
-</h3>
+<ol start="3" type="1">
+  <li>rel=“noopener”</li>
+</ol>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p>It prevents the new page from being able to access the <mark><span class="makeKnown">window.opener</span></mark> 
 property and will make it run in a separate process. noopener tag works as a security fix 
@@ -3312,11 +3301,9 @@ traffic.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h2 id="2-html-tags">02. HTML Tags</h2>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<h3>
-  <ol type="1">
-    <li>01. Title tag:</li>
-  </ol>
-</h3>
+<ol type="1" start="1">
+  <li>Title tag:</li>
+</ol>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p>Title tags are used by search engines to determine the subject of a page and display it 
 in SERP. As a rule of thumb, titles that are under 60 characters long will fit on most 
@@ -3324,11 +3311,9 @@ screens. In HTML, a title tag looks like this:</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <pre>&lt;title&gt;Your Title Goes Here&lt;/title&gt;</pre>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<h5>
-  <ol start="2" type="1">
-    <li>02. Meta description tag:</li>
-  </ol>
-</h5>
+<ol start="2" type="1">
+  <li>Meta description tag:</li>
+</ol>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p>Meta description is a short paragraph of text used to describe your page in search 
 results. The function of meta description is similar to the title. It provides a little 
@@ -3337,11 +3322,9 @@ In HTML, a meta description tag looks like this:</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <pre>&lt;meta name="description" content="Your description goes here"&gt;</pre>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<h5>
-  <ol start="3" type="1">
-    <li>03. Heading tags:</li>
-  </ol>
-</h5>
+<ol start="3" type="1">
+  <li>Heading tags:</li>
+</ol>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p>Headings (H1-H6) are used to split your page into sections or chapters.
 Each heading is like a small title within the page. In HTML, a heading
@@ -3349,11 +3332,9 @@ looks like this:</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <pre>&lt;h1&gt;Your heading goes here&lt;/h1&gt;</pre>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<h5>
-  <ol start="4" type="1">
-    <li>04. Image alt attribute:</li>
-  </ol>
-</h5>
+<ol start="4" type="1">
+  <li>Image alt attribute:</li>
+</ol>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p>The <span class="makeKnown"><mark>alt</mark></span> text attribute is a part of an image tag,
 and it provides a description for an image. Alt text plays a major role
@@ -3365,11 +3346,9 @@ like this:</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <pre>&lt;img src="url" alt="Your image description goes here"&gt;</pre>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<h5>
-  <ol start="5" type="1">
-    <li>05. Open Graph tags:</li>
-  </ol>
-</h5>
+<ol start="5" type="1">
+  <li>Open Graph tags:</li>
+</ol>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p>Open Graph (OG) tags are placed in the &lt;head&gt; section of a page and allow any 
 webpage to become a rich object in social networks. OG tags let you control how the 
@@ -3379,11 +3358,9 @@ driving more click-throughs and increasing conversions. In HTML, it can look lik
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <pre>&lt;meta name="og:title" property="og:title" content="Your Open Graph Title Goes Here"&gt;</pre>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<h5>
-  <ol start="6" type="1">
-    <li>06. Robots tag:</li>
-  </ol>
-</h5>
+<ol start="6" type="1">
+  <li>Robots tag:</li>
+</ol>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p>A robots tag is an element in the HTML of a page that informs search engines which 
 pages on your site should be indexed and which should not. Its functions are similar to 
@@ -3392,11 +3369,9 @@ HTML, it can look like this:</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <pre>&lt;meta name="robots" content="index, follow"&gt;</pre>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<h5>
-  <ol start="7" type="1">
-    <li>07. Canonical tag:</li>
-  </ol>
-</h5>
+<ol start="7" type="1">
+  <li>Canonical tag:</li>
+</ol>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p>A canonical tag is a way of telling search engines that a specific URL represents the 
 master copy of a page. Using the canonical tag prevents problems caused by identical or 
@@ -3406,11 +3381,9 @@ HTML, it may look like this:</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <pre>&lt;link href="URL" rel="canonical"&gt;</pre>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<h5>
-  <ol start="8" type="1">
-    <li>08. HTML5 semantic tags:</li>
-  </ol>
-</h5>
+<ol start="8" type="1">
+  <li>HTML5 semantic tags:</li>
+</ol>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p>One of the most important features of HTML5 is its semantics tags. Semantic tags refers 
 to syntax that makes the HTML more comprehensible by better defining the different sections 
@@ -3918,11 +3891,9 @@ resolution.</p>
   src="default url" 
 &gt;</pre>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<h3>
-  <ol type="1">
-    <li>01. Using display density descriptor:</li>
-  </ol>
-</h3>
+<ol type="1" start="1">
+  <li>Using display density descriptor:</li>
+</ol>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p><mark><span class="makeKnown">srcset</span></mark> provides a comma-separated list of image resources along 
 with display density it should be used, for example1x, 2x etc.</p>
@@ -3934,11 +3905,9 @@ with display density it should be used, for example1x, 2x etc.</p>
           image_2x.jpg 2x"
 /&gt;</pre>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<h3>
-  <ol start="2" type="1">
-    <li>02. Using width descriptor:</li>
-  </ol>
-</h3>
+<ol start="2" type="1">
+  <li>Using width descriptor:</li>
+</ol>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p>The syntax is similar to the display density descriptor, but instead of display 
 density values, we provide the actual width of the image.</p>
@@ -4900,11 +4869,9 @@ of data from users. Here are some commonly used input types:</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3>HTML Forms Example</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<h4>
-  <ol type="1">
-    <li>01. Basic HTML Forms Example:</li>
-  </ol>
-</h4>
+<ol type="1" start="1">
+  <li>Basic HTML Forms Example:</li>
+</ol>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p><span class="makeKnown">Example:</span> This HTML forms collects the user personal information
 such as username and password with the button to submit the form.</p>
@@ -4937,11 +4904,9 @@ such as username and password with the button to submit the form.</p>
   style="width:40%" >
 </p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<h4>
-  <ol start="2" type="1">
-    <li>02. HTML Forms Example:</li>
-  </ol>
-</h4>
+<ol start="2" type="1">
+  <li>HTML Forms Example:</li>
+</ol>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p><span class="makeKnown">Example:</span> This HTML form collects user personal information
 including name, email, password, gender, date of birth, and address. It
@@ -8471,35 +8436,25 @@ window.onload = draw;</pre>
 <!-- image 10-image001.png -->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h2 id="11-html-storage">11. HTML Storage</h2>
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~--></li>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h2 id="12-html-apis">12. HTML APIs</h2>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p>All browsers have a set of built-in Web APIs to support complex operations, and to 
 help accessing data.</p>
 
 <p>Here are some of the main HTML5 APIs:</p>
-
-<ol type="1">
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<ol type="1" start="1">
   <li>Geolocation API - This API is used to access the current location of a user 
     (with latitude and longitude).</li>
-</ol>
-<ol start="2" type="1">
   <li>Drag and Drop API - This API enables you to use drag-and-drop features in browsers.</li>
-</ol>
-<ol start="3" type="1">
   <li>Web Storage API - This API has mechanisms to let browsers store key/value pairs (in 
     a more intuitive way than cookies).</li>
-</ol>
-<ol start="4" type="1">
   <li>Web Workers API - This API allows a JavaScript to run in the background, without 
     affecting the performance of the page. Users can continue to do whatever they want: 
     clicking, selecting things, etc., while the web worker runs in the background.</li>
-</ol>
-<ol start="5" type="1">
   <li>Server-Sent Events API - This API allows a web page to automatically get updates 
     from a server.</li>
-</ol>
-<ol start="6" type="1">
   <li>Canvas API - This API lets you draw graphics, on the fly, via JavaScript.</li>
 </ol>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -9148,7 +9103,7 @@ JavaScript objects:</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h2 id="html-serversent-events">
   <ol start="20" type="i">
-    <li>20. HTML Server-Sent Events API</li>
+    <li>HTML Server-Sent Events API</li>
   </ol>
 </h2>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
