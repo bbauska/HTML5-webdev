@@ -1,7 +1,5 @@
 /*
  * css/styles.css of html5-webdev 
- * creates hamburger fold-out menu 
- *
  */
 
 main {
@@ -68,12 +66,10 @@ main {
               background 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
               opacity 0.55s ease;
 }
-
 #menuToggle span:first-child
 {
   transform-origin: 0% 0%;
 }
-
 #menuToggle span:nth-last-child(2)
 {
   transform-origin: 0% 100%;
@@ -150,8 +146,7 @@ main {
   transform: none;
 }
 
-/* above added 7-15-2025
-   Following original css/styles.css of w3cx-1of5 */
+/* above added 7-15-2025 */
 img.displayed {
   display: block;
   margin: 0 auto; 
@@ -163,7 +158,7 @@ img.displayed {
 }
 
 ul,ol li {
-  font-size: 15px;
+  font-size: 2em;  /* 15px; */
   font-family: Bahnschrift, Inter, Helvetic, sans-serif;
   padding: 15px;  /* 10px */
   margin-left: 15px; /* was blank */
