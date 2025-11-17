@@ -158,7 +158,7 @@ img.displayed {
 }
 
 ul,ol li {
-  font-size: 2em;  /* 15px; */
+  font-size: 1.5em;  /* 15px; */
   font-family: Bahnschrift, Inter, Helvetic, sans-serif;
   padding: 15px;  /* 10px */
   margin-left: 15px; /* was blank */
@@ -205,16 +205,19 @@ h2 {
   font-size: 21px;
   font-family: Bahnschrift, Inter, Helvetic, sans-serif, Consolas;
   margin-left: 15px;  /* 10px */
+  margin-right: 15px;
 }
 h3 {
   font-size: 19px;
   font-family: Bahnschrift, Inter, Helvetic, sans-serif, Consolas;
   margin-left: 15px;
+  margin-right: 15px;
 }
 h4 { 
   font-size: 18px;
   font-family: Bahnschrift, Inter, Helvetic, sans-serif, Consolas; 
   margin-left: 15px;
+  margin-right: 15px;
 }
 h5 { 
   font-size: 15px;
@@ -225,6 +228,7 @@ h6 {
   font-size: 13px;
   font-family: Bahnschrift, Inter, Helvetic, sans-serif;
   margin-left: 15px;
+  margin-right: 15px;
 }
 
 details {
