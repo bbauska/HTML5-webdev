@@ -244,15 +244,15 @@ quirks mode CSS class and id names are case insensitive. In standards mode they 
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p>There are five new form elements in the HTML5 forms specification: &lt;datalist&gt;, &lt;meter&gt;, 
 &lt;output&gt;, &lt;progress&gt;, and &lt;meter&gt;.</p>
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+
 <ol type="1">
   <li>Datalist Tag</li>
 </ol>
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+
 <p>Allows to attach a list of suggestions to a text input element. As soon as the user begins to 
 type in the text field, the list of suggestions appears and the user can choose from the suggestions 
 with the mouse.</p>
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+
 <pre>&lt;p&gt;Enter your favorite browser name:&lt;/p&gt;
 &lt;input type=&quot;text&quot; list=&quot;browsers&quot; 
   name=&quot;favorite_browser&quot;&gt;
@@ -263,7 +263,7 @@ with the mouse.</p>
   &lt;option value=&quot;Opera&quot;&gt;
   &lt;option value=&quot;Safari&quot;&gt;
 &lt;/datalist&gt;</pre>
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+
 <ol start="2" type="1">
   <li>Meter Tag</li>
 </ol>
@@ -328,29 +328,32 @@ appear or behave.</p>
     the low end of that range.</li>
   <li><span class="makeKnown">optimum</span>: The optimal value of the element.</li>
 </ul>
+
 <p>Disk Usage: <meter value="0.2">20%</meter></p>
+
 <p>Total Score: <meter value="6" min="0" max="10">6 out of 10</meter></p>
+
 <p>Pollution Level: <meter low="60" high="80" max="100" value="85">Very High</meter></p>
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+
 <ol start="3" type="1">
   <li>Output Tag</li>
 </ol>
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<p>It indicates a section of the page that can be modified by a script (usually 
-JavaScript).</p>
+
+<p>It indicates a section of the page that can be modified by a script (usually JavaScript).</p>
+
 <pre>&lt;form oninput="result.value=parseInt(a.value)+parseInt(b.value)"&gt;
   &lt;input type="range" id="a" value="50"&gt; +
   &lt;input type="number" id="b" value="100"&gt; =
   &lt;output name="result" for="a b"&gt;&lt;/output&gt;
 &lt;/form&gt;</pre>
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+
 <ol start="4" type="1">
   <li>Progress Tag</li>
 </ol>
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<p>Indicates how much of a task has been completed (often marked as a percentage). It is 
-expected to be modified through JavaScript code.</p>
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+
+<p>Indicates how much of a task has been completed (often marked as a percentage). It is expected 
+to be modified through JavaScript code.</p>
+
 <pre>&lt;p&gt;Progress: &lt;progress id="bar" value="0" 
   max="100"&gt;&lt;span&gt;0&lt;/span&gt;%&lt;/progress&gt;&lt;/p&gt;
 
@@ -451,6 +454,7 @@ expected to be modified through JavaScript code.</p>
     </tbody>
   </table>
 </div>
+<br>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h5>Example:</h5>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -483,7 +487,7 @@ expected to be modified through JavaScript code.</p>
   <li>Store data into local Storage,</li>
   <li>Fetch user data and display on right side of the page.</li>
 </ul>
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+
 <pre>&lt;!DOCTYPE html&gt;
 &lt;html&gt;
 &lt;head&gt;
@@ -600,7 +604,7 @@ expected to be modified through JavaScript code.</p>
     previous element, if it is also an inline element, and it’s width will be determined by it's 
     content.</li>
 </ul>
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+
 <pre>&lt;div&gt;Demo Text, with &lt;span&gt;some other&lt;/span&gt; text.&lt;/div&gt;</pre>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h2>Q. What are optional closing tags?</h2>
@@ -615,7 +619,7 @@ previous tag.</p>
 to have specific closing tags are called “self closing” tags.</p>
 <p>An example of a self closing tag is something like a line break (&lt;br /&gt;) or the meta tag 
 (&lt;meta&gt;). This means that the following are both acceptable:</p>
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+
 <pre>&lt;meta charset="UTF-8"&gt;
 ...
 &lt;meta charset="UTF-8" /&gt;</pre>
@@ -646,14 +650,14 @@ to have specific closing tags are called “self closing” tags.</p>
 a document. The main content area consists of content that is directly related to or 
 expands upon the central topic of a document, or the central functionality of an 
 application.</p>
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+
 <pre>&gt;main role="main"&gt;
   &gt;p&gt;Geckos are a group of usually small, usually nocturnal lizards. 
     They are found on every continent except Australia.&gt;/p&gt;
   &gt;p&gt;Many species of gecko have adhesive toe pads which enable 
     them to climb walls and even windows.&gt;/p&gt;
 &gt;/main&gt;</pre>
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+
 <p><i>Note: A document mustn't have more than one &lt;main&gt; element that doesn’t have 
 the hidden attribute specified.</i></p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -775,6 +779,7 @@ images, line breaks, etc.</p>
     </tbody>
   </table>
 </div>
+<br>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <ol start="2" type="1">
   <li>Logical Tags:</li>
@@ -864,15 +869,16 @@ can be used for styling purposes as well as to give special importance to text c
     </tbody>
   </table>
 </div>
+<br>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h2>Q. What is Character Encoding?</h2>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p>Character encoding is a method of converting bytes into characters. To validate or 
 display an HTML document properly, a program must choose a proper character encoding. 
 This is specified in the tag:</p>
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+
 <pre>&lt;meta charset="utf-8"/&gt;</pre>
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+
 <ul>
   <li><span class="makeKnown"><mark>UTF-8</mark></span>: A Unicode Translation Format 
     that comes in 8-bit units that is, it comes in bytes. A character in UTF8 can be 
@@ -883,7 +889,7 @@ This is specified in the tag:</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p>The META elements can be used to include name/value pairs describing properties of the 
 HTML document, such as author, expiry date, a list of keywords, document author etc.</p>
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+
 <pre>&lt;!DOCTYPE html&gt;
 &lt;html&gt;
   &lt;head&gt;
@@ -938,11 +944,10 @@ HTML document, such as author, expiry date, a list of keywords, document author 
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h2>Q. What does <mark><span class="makeKnown">async</span></mark> and <mark><span class="makeKnown">defer</span></mark> refer in script tag?</h2>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <ol type="1" start="1">
   <li>Async:</li>
 </ol>
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+
 <p>Downloads the script file during HTML parsing and will pause the HTML parser to execute 
 it when it has finished downloading.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -954,11 +959,11 @@ it when it has finished downloading.</p>
 --&gt;
 &lt;!-- Google Analytics is usually added like this --&gt;
 &lt;script async src="https://google-analytics.com/analytics.js"&gt;&lt;/script&gt;</pre>
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+
 <ol start="2" type="1">
   <li>Defer:</li>
 </ol>
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+
 <p>Defer downloads the script file during HTML parsing and will only execute it after the 
 HTML parser has completed. Not all browsers support this.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -969,12 +974,14 @@ HTML parser has completed. Not all browsers support this.</p>
     (not necessary finishing downloading all image files. This is good.) 
 --&gt;
 &lt;script defer src="myscript.js"&gt;&lt;/script&gt;</pre>
+
 <p>The async attribute is used to indicate to the browser that the script file can be executed 
-asynchronously. The HTML parser does not need to pause at the point it reaches the script tag 
-to fetch and execute, the execution can happen whenever the script becomes ready after being
-fetched in parallel with the document parsing.</p>
-<p>The defer attribute tells the browser to only execute the script file once the HTML 
-document has been fully parsed.</p>
+asynchronously. The HTML parser does not need to pause at the point it reaches the script tag to 
+fetch and execute, the execution can happen whenever the script becomes ready after being fetched 
+in parallel with the document parsing.</p>
+
+<p>The defer attribute tells the browser to only execute the script file once the HTML document has 
+been fully parsed.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h5>Example:</h5>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -1053,8 +1060,8 @@ console.log(myCookies);</pre>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <pre>document.cookie = "username=; expires=Thu, 01 Jan 1970 00:00:00 UTC; path=/;";</pre>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<h2>Q. Describe the difference between a <span class="makeKnown"><mark>cookie</mark></span>, <span class="makeKnown"><mark>sessionStorage</mark></span> 
-and <span class="makeKnown"><mark>localStorage</mark></span>?</h2>
+<h2>Q. Describe the difference between a <span class="makeKnown"><mark>cookie</mark></span>, <span class="makeKnown"><mark>sessionStorage</mark></span> and <span class="makeKnown"> 
+<mark>localStorage</mark></span>?</h2>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <div role="region" tabindex="0">
   <table>
@@ -1107,6 +1114,8 @@ and <span class="makeKnown"><mark>localStorage</mark></span>?</h2>
     </tbody>
   </table>
 </div>
+<br>
+
 <p><i>Note: If the user decides to clear browsing data via whatever mechanism provided by 
 the browser, this will clear out any <mark><span class="makeKnown">cookie</span></mark>, <mark><span class="makeKnown">localStorage</span>
 </mark>, or <mark><span class="makeKnown">sessionStorage</span></mark> stored. It's important to keep this in 
@@ -1153,11 +1162,10 @@ actions).</i></p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h2>Q. Why use IndexedDB instead of WebSQL in HTML5?</h2>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <ol type="1" start="1">
   <li>WebSQL</li>
 </ol>
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+
 <p>It is an API that is only supported in Chrome and Safari (and Android and iOS by 
 extension). It provides an asynchronous, transactional interface to <mark>SQLite</mark>. 
 Since 2010, it has been deprecated in favor of <mark><span class="makeKnown">IndexedDB</span></mark>.</p>
@@ -1234,7 +1242,7 @@ button when they are offline.</p>
 <pre>&lt;html manifest="example.appcache"&gt;
   ...
 &lt;/html&gt;</pre>
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+
 <p><i>Note: Using the application caching feature described here is at this
 point highly discouraged; it's in the process of being removed from the
 Web platform. Use <mark><span class="makeKnown">Service Workers</span></mark> instead. In fact
@@ -1259,7 +1267,7 @@ to download the new files. This is done by naming the file something
 different to the old file.</p>
 <p>A common technique to force the browser to re-download the file is to
 append a query string to the end of the file.</p>
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+
 <pre>&lt;!-- src="js/script.js" =&gt; src="js/script.js?v=2" --&gt;
 &lt;script src="js/script.js?v=2"&gt;&lt;/script&gt;</pre>
 <p>The browser considers it a different file but prevents the need to change the file name.</p>
@@ -1288,7 +1296,7 @@ JavaScript to create a more engaging user experience.</p>
 
   &lt;h1&gt;Electric Cars&lt;/h1&gt;
 &lt;/article&gt;</pre>
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+
 <pre>/**
  * Access data attribute
  */
@@ -1297,7 +1305,7 @@ const article = document.getElementById("electric-cars");
 article.dataset.columns; // "10"
 article.dataset.indexNumber; // "100"
 article.dataset.parent; // "cars"</pre>
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+
 <p><span class="makeKnown">⚝
 <a href="https://codesandbox.io/s/html-data-attribute-llxlkn?file=/script.js">
 Try this example on CodeSandbox</a></span></p>
@@ -1340,7 +1348,7 @@ to the server.</p>
   Phone: &lt;input type="number" name="phone" /&gt;
   &lt;input type="submit" value="Submit" /&gt;
 &lt;/form&gt;</pre>
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+
 <div role="region" tabindex="0">
   <table>
     <caption>The EventSource Object</caption>
@@ -1372,17 +1380,18 @@ to the server.</p>
     </tbody>
   </table>
 </div>
+<br>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h2>Q. What is difference between Select and Datalist?</h2>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<p>For the select element, the user is required to select one of the options you've given. 
-For the datalist element, it is suggested that the user select one of the options you've 
-given, but he can actually enter anything he wants in the input.</p>
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<p>For the select element, the user is required to select one of the options you've given. For the 
+datalist element, it is suggested that the user select one of the options you've given, but he can 
+actually enter anything he wants in the input.</p>
+
 <ol type="1" start="1">
   <li>Select:</li>
 </ol>
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+
 <pre>&lt;select name="browser"&gt;
   &lt;option value="firefox"&gt;Firefox&lt;/option&gt;
   &lt;option value="ie"&gt;IE&lt;/option&gt;
@@ -1390,11 +1399,11 @@ given, but he can actually enter anything he wants in the input.</p>
   &lt;option value="opera"&gt;Opera&lt;/option&gt;
   &lt;option value="safari"&gt;Safari&lt;/option&gt;
 &lt;/select&gt;</pre>
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+
 <ol start="2" type="1">
   <li>Datalist:</li>
 </ol>
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+
 <pre>&lt;input type="text" list="browsers"&gt;
 &lt;datalist id="browsers"&gt;
   &lt;option value="Firefox"&gt;
@@ -1481,7 +1490,7 @@ before the widespread adoption of web standards. In <span class="makeKnown">Stan
 behavior is described by the HTML and CSS specifications.</p>
 <p>For HTML documents, browsers use a &lt;!DOCTYPE html&gt; in the beginning of the 
 document to decide whether to handle it in quirks mode or standards mode.</p>
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+
 <pre>&lt;!DOCTYPE html&gt;
 &lt;html lang="en"&gt;
   &lt;head&gt;
@@ -1825,58 +1834,57 @@ over the top of another incorrectly.</p>
     </tbody>
   </table>
 </div>
+<br>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h2>Q. How to make page responsive?</h2>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p>Responsive Web Design is about using HTML and CSS to automatically resize, hide, 
 shrink, or enlarge, a website, to make it look good on all devices (desktops, tablets, 
 and phones).</p>
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+
 <ol type="1" start="1">
   <li>Setting the viewport:</li>
 </ol>
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+
 <pre>&lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;</pre>
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+
 <ol start="2" type="1">
   <li>Responsive Images:</li>
 </ol>
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<p>If the CSS width property is set to 100%, the image will be responsive and scale up 
-and down.</p>
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+
+<p>If the CSS width property is set to 100%, the image will be responsive and scale up and down.</p>
+
 <pre>&lt;img src="img.png" style="width:100%;"&gt;</pre>
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+
 <ol start="3" type="1">
   <li>03. Show different Images depending on Browser Width:</li>
 </ol>
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+
 <p>The HTML &lt;picture&gt; element allows you to define different images for different 
 browser window sizes.</p>
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+
 <pre>&lt;picture&gt;
   &lt;source srcset="img_small.jpg" media="(max-width: 600px)"&gt;
   &lt;source srcset="img_large.jpg" media="(max-width: 1500px)"&gt;
   &lt;source srcset="img.jpg"&gt;
   &lt;img src="img_small.jpg" alt="Image"&gt;
 &lt;/picture&gt;</pre>
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+
 <ol start="4" type="1">
   <li>Responsive Text Size:</li>
 </ol>
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+
 <p>The text size can be set with a “vw” unit, which means the “viewport width”. That way 
 the text size will follow the size of the browser window.</p>
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+
 <pre>&lt;h1 style="font-size:10vw"&gt;Hello World&lt;/h1&gt;</pre>
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+
 <ol start="5" type="1">
   <li>Media Queries:</li>
 </ol>
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<p>Using media queries you can define completely different styles for
-different browser sizes.</p>
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+
+<p>Using media queries you can define completely different styles for different browser sizes.</p>
+
 <pre>/* Use a media query to add a breakpoint at 800px: */
 @media screen and (max-width: 800px) {
   .left, .main, .right {
@@ -1891,7 +1899,7 @@ different browser sizes.</p>
 &lt;div style="display: none;"&gt;
   &lt;img src="mypic.jpg" alt="My photo"&gt;
 &lt;/div&gt;</pre>
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+
 <p>Yes</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h2>Q. List the API available in HTML5?</h2>
@@ -1899,7 +1907,7 @@ different browser sizes.</p>
 <ol type="1" start="1">
   <li>01. High Resolution Time API</li>
 </ol>
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+
 <p>The High Resolution Time API provides the current time in sub-millisecond resolution 
 and such that it is not subject to system clock skew or adjustments.</p>
 
@@ -1908,28 +1916,28 @@ object, called <mark>now()</mark>. It returns a <mark>DOMHighResTimeStamp</mark>
 representing the current time in milliseconds. The timestamp is very accurate, with 
 precision to a thousandth of a millisecond, allowing for accurate tests of the
 performance of our code.</p>
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+
 <pre>var time = performance.now();</pre>
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+
 <ol start="2" type="1">
   <li>02. User Timing API</li>
 </ol>
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+
 <p>It allows us to accurately measure and report the performance of a section of JavaScript 
 code. It deals with two main concepts: mark and measure. The former represents an instant 
 (timestamp), while the latter represents the time elapsed between two marks.</p>
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+
 <pre>performance.mark("startFoo");
 // A time consuming function
 foo();
 performance.mark("endFoo");
 
 performance.measure("durationFoo", "startFoo", "endFoo");</pre>
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+
 <ol start="3" type="1">
   <li>Network Information API</li>
 </ol>
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+
 <p>This API belongs to the connection property of the <mark>window.navigator</mark> object. It 
 exposes two read-only properties: <mark>bandwidth</mark> and <mark>metered</mark>. The former 
 is a number representing an estimation of the current bandwidth, while the latter is a Boolean 
@@ -1980,33 +1988,34 @@ false otherwise.</p>
     </tbody>
   </table>
 </div>
+<br>
 <!-- problem here - does not <ff>. rather 04. is beside the above table. -->
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+
 <ol start="4" type="1">
   <li>Vibration API</li>
 </ol>
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+
 <p>It exposes only one method, <mark>vibrate()</mark>, that belongs to the <mark>window.navigator</mark> 
 object. This method accepts one parameter specifying the duration of the vibration in milliseconds. 
 The parameter can be either an integer or an array of integers. In the second case, it's interpreted 
 as alternating vibration times and pauses.</p>
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+
 <pre>// Vibrate once for 2 seconds
 navigator.vibrate(2000);</pre>
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+
 <ol start="5" type="1">
   <li>Battery Status API</li>
 </ol>
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+
 <p>The Battery Status API exposes four properties (<mark>charging</mark>, <mark>chargingTime</mark>, 
 <mark>discharingTime</mark>, and <mark>level</mark>) and four events. The properties specify if the 
 battery is in charge, the seconds remaining until the battery is fully charged, the seconds remaining 
 until the battery is fully discharged, and the current level of the battery. These properties belongs 
 to the <mark>battery</mark> property of the <mark>window.navigator</mark> object.</p>
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<pre>// Retrieves the percentage of the current level of the device's battery
-var percentageLevel = navigator.battery.level * 100;</pre>
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+
+<pre>// Retrieves the percentage of the current level of the device's battery var percentageLevel 
+= navigator.battery.level * 100;</pre>
+
 <ol start="6" type="1">
   <li>Page Visibility API</li>
 </ol>
@@ -2014,19 +2023,18 @@ var percentageLevel = navigator.battery.level * 100;</pre>
 <p>The Page Visibility API enables us to determine the current visibility state of the page. The 
 Page Visibility API is especially useful for saving resources and improving performance by letting 
 a page avoid performing unnecessary tasks when the document isn't visible.</p>
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+
 <pre>//document.hidden retuns true if page is not visible.
 console.log('Page Visibility: '+document.hidden);</pre>
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+
 <ol start="7" type="1">
   <li>Fullscreen API</li>
 </ol>
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<p>
-The Fullscreen API provides a way to request fullscreen display from the user, and exit this mode 
+
+<p>The Fullscreen API provides a way to request fullscreen display from the user, and exit this mode 
 when desired. This API exposes two methods, <mark>requestFullscreen()</mark> and <mark>exitFullscreen()</mark>, 
 allowing us to request an element to become fullscreen and to exit fullscreen.</p>
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+
 <pre>document.addEventListener("keypress", function(e) {
   if (e.keyCode === 13) { // Enter Key
     toggleFullScreen();
@@ -2049,7 +2057,7 @@ function toggleFullScreen() {
 applications if they so desire. For privacy reasons, the user is asked
 for permission to report location information.</p>
 <p>The Geolocation API is published through the <mark>navigator.geolocation</mark> object.</p>
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+
 <pre>if ("geolocation" in navigator) {
   /* geolocation is available */
 } else {
@@ -2136,6 +2144,7 @@ having to poll the server for a reply.</p>
     </tbody>
   </table>
 </div>
+<br>
 <!-- next section with no <ff>. Rather, is beside the above table. -->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h5>Example</h5>
@@ -2234,12 +2243,13 @@ This can, for instance, be used to draw graphs, combine photos, or create animat
     </tbody>
   </table>
 </div>
+<br>
 <!-- next 3 sections are in columns, rather than a <ff> -->
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+
 <ol start="3" type="1">
   <li>Rectangles:</li>
 </ol>
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+
 <div role="region" tabindex="0">
   <table>
     <caption>Rectangles</caption>
@@ -2269,11 +2279,12 @@ This can, for instance, be used to draw graphs, combine photos, or create animat
     </tbody>
   </table>
 </div>
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<br>
+
 <ol start="4" type="1">
   <li>Paths:</li>
 </ol>
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+
 <div role="region" tabindex="0">
   <table>
     <caption>Paths</caption>
@@ -2324,11 +2335,12 @@ This can, for instance, be used to draw graphs, combine photos, or create animat
     </tbody>
   </table>
 </div>
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<br>
+
 <ol start="5" type="1">
   <li>Transformations:</li>
 </ol>
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+
 <div role="region" tabindex="0">
   <table>
     <caption>Transformations</caption>
@@ -2362,11 +2374,12 @@ This can, for instance, be used to draw graphs, combine photos, or create animat
     </tbody>
   </table>
 </div>
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<br>
+
 <ol start="6" type="1">
   <li>Text:</li>
 </ol>
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+
 <div role="region" tabindex="0">
   <table>
     <caption>Text</caption>
@@ -2404,6 +2417,7 @@ This can, for instance, be used to draw graphs, combine photos, or create animat
     </tbody>
   </table>
 </div>
+<br>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3>Example 01: HTML5 Canvas for Text</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -2577,6 +2591,7 @@ paths, boxes, circles, text &amp; adding images.</p>
     </tbody>
   </table>
 </div>
+<br>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h2>Q. Explain Drag ’n Drop in HTML5?</h2>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -2629,6 +2644,7 @@ element, drags the element to a droppable element, and then releases the dragged
     </tbody>
   </table>
 </div>
+<br>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h5>Example</h5>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -2784,11 +2800,12 @@ handled by CSS.</p>
     </tbody>
   </table>
 </div>
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<br>
+
 <ol start="2" type="1">
   <li>Deprecated Attributes:</li>
 </ol>
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+
 <table>
   <colgroup>
     <col style="width: 48%" />
@@ -3015,21 +3032,20 @@ handled by CSS.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h2>Q. How you can Use Modernizr in HTML5 (created: 2019)?</h2>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<p><mark>Modernizr</mark> is a JavaScript library that detects which HTML5 and CSS3 
-features visitor's browser supports. In detecting feature support, it allows developers 
-to test for some of the new technologies and then provide fallbacks for browsers that do 
-not support them. This is called <span class="makeKnown">feature detection</span> and is much more efficient than 
+<p><mark>Modernizr</mark> is a JavaScript library that detects which HTML5 and CSS3 features 
+visitor's browser supports. In detecting feature support, it allows developers to test for some 
+of the new technologies and then provide fallbacks for browsers that do not support them. This 
+is called <span class="makeKnown">feature detection</span> and is much more efficient than 
 browser sniffing.</p>
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+
 <ol type="1" start="1">
   <li>Using Modernizr with CSS:</li>
 </ol>
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<p>By default, <mark>Modernizr</mark> sets classes for all of your tests on the root 
-element (&lt;html&gt; for websites). This means adding the class for each feature when it 
-is supported, and adding it with a no-prefix when it is not (e.g. <mark>.feature</mark> 
-or <mark>.no-feature</mark>).</p>
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+
+<p>By default, <mark>Modernizr</mark> sets classes for all of your tests on the root element 
+(&lt;html&gt; for websites). This means adding the class for each feature when it is supported, 
+and adding it with a no-prefix when it is not (e.g. <mark>.feature</mark> or <mark>.no-feature</mark>).</p>
+
 <pre>.no-cssgradients .header {
   background: url("images/glossybutton.png");
 }
@@ -3037,14 +3053,14 @@ or <mark>.no-feature</mark>).</p>
 .cssgradients .header {
   background-image: linear-gradient(cornflowerblue, rebeccapurple);
 }</pre>
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+
 <ol start="2" type="1">
   <li>Using Modernizr with JavaScript:</li>
 </ol>
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+
 <p><mark>Modernizr</mark> keeps track of the results of all of it's feature detections 
 via the <mark>Modernizr</mark> object.</p>
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+
 <pre>if (Modernizr.canvas) {
   alert("This browser supports HTML5 canvas!");
 } else {
@@ -3134,7 +3150,7 @@ external resources. This section will guide you through the syntax and attribute
 <h5>Syntax:</h5>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <pre>&lt;iframe src="URL" title="description"&gt;&lt;/iframe&gt;</pre>
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+
 <p>The src attribute specifies the URL of the document you want to embed. Iframes can 
 include videos, maps, or entire web pages from other sources.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -3218,6 +3234,7 @@ parent — is usually the browser window, represented by the <span class="makeKn
     </tbody>
   </table>
 </div>
+<br>
 
 <p><i>Note: Because each browsing context is a complete document
 environment, every <mark><span class="makeKnown">&lt;iframe&gt;</span></mark> in a page requires
@@ -3228,7 +3245,7 @@ increased memory and other computing resources.</i></p>
 <ol type="1" start="1">
   <li>rel=“nofollow”</li>
 </ol>
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+
 <p>When <mark><span class="makeKnown">rel=“nofollow”</span></mark> tag is used, it instruct the search engines 
 not to pass any PageRank from one page to the other. It does not allow it to pass the 
 authority to the specific website. The main advantage of using this attribute is to 
@@ -3243,7 +3260,7 @@ websites, for example some blog comments and some kind of forum posting.</p>
 <ol start="2" type="1">
   <li>rel=“noreferrer”</li>
 </ol>
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+
 <p>Noreferrer is related to analytics and tracking. The referrer value shows the previous 
 page where a user came from. By using the noreferrer attribute on a link, you are 
 preventing other pages from seeing that traffic came from a click on your link.</p>
@@ -3251,11 +3268,11 @@ preventing other pages from seeing that traffic came from a click on your link.<
 <h5>Example:</h5>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <pre>&lt;a href="https://www.website.com" rel="noreferrer"&gt;Link to yoursite.com&lt;/a&gt;</pre>
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+
 <ol start="3" type="1">
   <li>rel=“noopener”</li>
 </ol>
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+
 <p>It prevents the new page from being able to access the <mark><span class="makeKnown">window.opener</span></mark> 
 property and will make it run in a separate process. noopener tag works as a security fix 
 which prevents malicious links to take control over an opened tab.</p>
@@ -3300,38 +3317,38 @@ traffic.</p>
 <ol type="1" start="1">
   <li>Title tag:</li>
 </ol>
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+
 <p>Title tags are used by search engines to determine the subject of a page and display it 
 in SERP. As a rule of thumb, titles that are under 60 characters long will fit on most 
 screens. In HTML, a title tag looks like this:</p>
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+
 <pre>&lt;title&gt;Your Title Goes Here&lt;/title&gt;</pre>
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+
 <ol start="2" type="1">
   <li>Meta description tag:</li>
 </ol>
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+
 <p>Meta description is a short paragraph of text used to describe your page in search 
 results. The function of meta description is similar to the title. It provides a little 
 more detail about your page and it helps users decide whether to visit your page or not. 
 In HTML, a meta description tag looks like this:</p>
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+
 <pre>&lt;meta name="description" content="Your description goes here"&gt;</pre>
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+
 <ol start="3" type="1">
   <li>Heading tags:</li>
 </ol>
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+
 <p>Headings (H1-H6) are used to split your page into sections or chapters.
 Each heading is like a small title within the page. In HTML, a heading
 looks like this:</p>
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+
 <pre>&lt;h1&gt;Your heading goes here&lt;/h1&gt;</pre>
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+
 <ol start="4" type="1">
   <li>Image alt attribute:</li>
 </ol>
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+
 <p>The <span class="makeKnown"><mark>alt</mark></span> text attribute is a part of an image tag,
 and it provides a description for an image. Alt text plays a major role
 in image optimization. It makes your images accessible both to search
@@ -3339,54 +3356,54 @@ engines (by telling them what a particular image means) and to people
 (by displaying an alternative text in case a particular image cannot be
 loaded or by helping screen readers convey images). In HTML it may look
 like this:</p>
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+
 <pre>&lt;img src="url" alt="Your image description goes here"&gt;</pre>
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+
 <ol start="5" type="1">
   <li>Open Graph tags:</li>
 </ol>
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+
 <p>Open Graph (OG) tags are placed in the &lt;head&gt; section of a page and allow any 
 webpage to become a rich object in social networks. OG tags let you control how the 
 information about your page is represented when shared via social channels. This 
 possibility may help you enhance the performance of your links on social media, thus 
 driving more click-throughs and increasing conversions. In HTML, it can look like this:</p>
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+
 <pre>&lt;meta name="og:title" property="og:title" content="Your Open Graph Title Goes Here"&gt;</pre>
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+
 <ol start="6" type="1">
   <li>Robots tag:</li>
 </ol>
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+
 <p>A robots tag is an element in the HTML of a page that informs search engines which 
 pages on your site should be indexed and which should not. Its functions are similar to 
 robots.txt, but robots.txt gives suggestions. Whereas robots tags give instructions. In 
 HTML, it can look like this:</p>
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+
 <pre>&lt;meta name="robots" content="index, follow"&gt;</pre>
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+
 <ol start="7" type="1">
   <li>Canonical tag:</li>
 </ol>
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+
 <p>A canonical tag is a way of telling search engines that a specific URL represents the 
 master copy of a page. Using the canonical tag prevents problems caused by identical or 
 “duplicate” content appearing on multiple URLs. Practically speaking, the canonical tag 
 tells search engines which version of a URL you want to appear in search results. In
 HTML, it may look like this:</p>
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+
 <pre>&lt;link href="URL" rel="canonical"&gt;</pre>
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+
 <ol start="8" type="1">
   <li>HTML5 semantic tags:</li>
 </ol>
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+
 <p>One of the most important features of HTML5 is its semantics tags. Semantic tags refers 
 to syntax that makes the HTML more comprehensible by better defining the different sections 
 and layout of web pages. It makes web pages more informative and adaptable, allowing browsers 
 and search engines to better interpret content. For example, instead of using &lt;div 
 id=“header”&gt;&lt;/div&gt; you can use a &lt;header&gt;&lt;/hrader&gt; tag.</p>
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+
 <pre>&lt;p align="center"&gt;
   &lt;img src="assets/images/semantic-tags.png" alt="HTML5 semantic tags" width="300px" /&gt;
 &lt;/p&gt;</pre>
@@ -3431,13 +3448,13 @@ whereas the <span class="makeKnown">value</span> attribute contains the initial 
     </tbody>
   </table>
 </div>
+<br>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h2>Q. How do you set IE compatibility mode?</h2>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p><span class="makeKnown">X-UA-Compatible</span> is a document mode meta tag that allows to choose
-what version of Internet Explorer the page should be rendered as. It is
-used by Internet Explorer 8 to specify whether a page should be rendered
-as IE 7 (compatibility view) or IE 8 (standards view).</p>
+what version of Internet Explorer the page should be rendered as. It is used by Internet Explorer 8 
+to specify whether a page should be rendered as IE 7 (compatibility view) or IE 8 (standards view).</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <pre>&lt;html&gt;
   &lt;head&gt;
@@ -3492,6 +3509,8 @@ that content is rendered in for the webpage, as the following table shows.</p>
     </tbody>
   </table>
 </div>
+<br>
+
 <p><i>Note: It is recommended that Web developers restrict their use of Edge mode to test 
 pages and other non-production uses because of the possible unexpected results of rendering 
 page content in future versions of Windows Internet Explorer.</i></p>
@@ -3727,6 +3746,7 @@ Hebrew, Pashto, Persian, Urdu, and Sindhi.</p>
     </tbody>
   </table>
 </div>
+<br>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h2>Q. When is it appropriate to use the small element?</h2>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -4296,6 +4316,7 @@ a user clicks on an element.</p>
     </tbody>
   </table>
 </div>
+<br>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3 id="form-events">Form Events</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -4364,6 +4385,7 @@ used in form elements):</p>
     </tbody>
   </table>
 </div>
+<br>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3 id="keyboard-events">Keyboard Events</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -4396,6 +4418,7 @@ used in form elements):</p>
     </tbody>
   </table>
 </div>
+<br>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3 id="mouse-events">Mouse Events</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -4458,6 +4481,7 @@ used in form elements):</p>
   </tbody>
 </table>
 </div>
+<br>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3 id="drag-events">Drag Events</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -4515,6 +4539,7 @@ used in form elements):</p>
     </tbody>
   </table>
 </div>
+<br>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3 id="clipboard-events">Clipboard Events</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -4547,6 +4572,7 @@ used in form elements):</p>
     </tbody>
   </table>
 </div>
+<br>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3 id="media-events">Media Events</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -4695,6 +4721,7 @@ and &lt;video&gt;).</p>
     </tbody>
   </table>
 </div>
+<br>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3 id="misc-events">Misc Events</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -4717,6 +4744,7 @@ and &lt;video&gt;).</p>
     </tbody>
   </table>
 </div>
+<br>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h2 id="4-html-forms">04. Form Elements</h2>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -4849,6 +4877,7 @@ of data from users. Here are some commonly used input types:</p>
     </tbody>
   </table>
 </div>
+<br>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3>HTML Forms Example</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -4858,7 +4887,7 @@ of data from users. Here are some commonly used input types:</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p><span class="makeKnown">Example:</span> This HTML forms collects the user personal information
 such as username and password with the button to submit the form.</p>
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+
 <pre>&lt;!DOCTYPE html&gt;
 &lt;html lang=&quot;en&quot;&gt;
 &lt;head&gt;
@@ -5162,6 +5191,7 @@ of data. Tables are also used to create databases.</p>
     </tbody>
   </table>
 </div>
+<br>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3>Defining Tables in HTML</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -5976,6 +6006,7 @@ information on web pages in the ordered or unordered form.</p>
     </tbody>
   </table>
 </div>
+<br>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3>The HTML Unordered List or Bulleted List</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -6096,7 +6127,7 @@ defines the term name, and the &lt;dd&gt; tag describes each term.</p>
 <h5>Syntax:</h5>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <pre>&lt;dl&gt; Contents... &lt;/dl&gt;</pre>
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+
 <p>Please refer to the <i>How to add description list of an element using
 HTML? article</i> for further details.</p>
 <p><span class="makeKnown">Example:</span> This example describes the HTML <span class="makeKnown">Description List</span>.</p>
@@ -6252,6 +6283,7 @@ animated.</p>
     </tbody>
   </table>
 </div>
+<br>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h4>Example 1: Drawing a Line</h4>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -6291,7 +6323,7 @@ and a blue line drawn diagonally within an SVG element.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p>In this example we uses the <mark>&lt;svg&gt;</mark> tag to draw a grey circle with a 
 black border. The circle has a center at (80, 80) and a radius of 50.</p>
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+
 <pre>&lt;!DOCTYPE html&gt;
 &lt;html&gt;
 &lt;head&gt;
@@ -6359,7 +6391,7 @@ a black border. The rectangle has a width of 400 and a height of 100.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p>In this example we uses the &lt;svg&gt; tag to draw an orange rectangle with rounded 
 corners, a black border, and 50% opacity, positioned at coordinates (80, 20).</p>
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+
 <pre>&lt;!DOCTYPE html&gt;
 &lt;html&gt;
 &lt;head&gt;
@@ -6431,7 +6463,7 @@ an orange border. The polygon is defined by a series of points and has a
 <p>In this example we create an ellipse filled with a linear gradient from white to 
 green. It also includes text overlaid in white with the content “GeeksforGeeks” using 
 the ARIAL font family.</p>
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+
 <pre>&lt;!DOCTYPE html&gt;
 &lt;html&gt;
 &lt;body&gt;
@@ -6529,6 +6561,7 @@ resources or other parts of the SVG document.</p>
     </tbody>
   </table>
 </div>
+<br>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h4>Examples of SVG &lt;a&gt; Element</h4>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -7201,7 +7234,7 @@ container or graphic element.</p>
 <h5>Example 1:</h5>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p>The text inside the desc element is given in a circle element.</p>
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+
 <pre>&lt;!DOCTYPE html&gt;
 &lt;html lang=&quot;en&quot;&gt;
 &lt;head&gt;
@@ -7948,7 +7981,7 @@ much more.</p>
 <h3>SVG Circle</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p>&lt;svg 09-w3-image001&gt;</p>
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+
 <pre>&lt;!DOCTYPE html&gt;
 &lt;html&gt;
 &lt;body&gt;
@@ -7961,7 +7994,7 @@ much more.</p>
 <h3>SVG Rectangle</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p>&lt;svg 09-w3-image002&gt;</p>
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+
 <pre>&lt;svg width=&quot;400&quot; height=&quot;120&quot;&gt;
   &lt;rect x=&quot;10&quot; y=&quot;10&quot; width=&quot;200&quot; height=&quot;100&quot; stroke=&quot;red&quot; stroke-width=&quot;6&quot; fill=&quot;blue&quot; /&gt;
 &lt;/svg&gt;</pre>
@@ -7969,7 +8002,7 @@ much more.</p>
 <h3>SVG Rectangle with Opacity and Rounded Corners</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p>&lt;svg 09-w3-image003&gt;</p>
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+
 <pre>&lt;svg width=&quot;400&quot; height=&quot;180&quot;&gt;
   &lt;rect x=&quot;50&quot; y=&quot;20&quot; rx=&quot;20&quot; ry=&quot;20&quot; width=&quot;150&quot; height=&quot;150&quot;
   style=&quot;fill:red;stroke:black;stroke-width:5;opacity:0.5&quot; /&gt;
@@ -7978,7 +8011,7 @@ much more.</p>
 <h3>SVG Star</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p>&lt;svg 09-w3-image004&gt;</p>
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+
 <pre>&lt;svg width=&quot;300&quot; height=&quot;200&quot;&gt;
   &lt;polygon points=&quot;100,10 40,198 190,78 10,78 160,198&quot;
   style=&quot;fill:lime;stroke:purple;stroke-width:5;fill-rule:evenodd;&quot; /&gt;
@@ -7987,7 +8020,7 @@ much more.</p>
 <h3>SVG Gradient Ellipse and Text</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p>&lt;svg 09-w3-image005&gt;</p>
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+
 <pre>&lt;svg height=&quot;130&quot; width=&quot;500&quot;&gt;
   &lt;defs&gt;
     &lt;linearGradient id=&quot;grad1&quot;&gt;
@@ -8051,6 +8084,7 @@ much more.</p>
     </tbody>
   </table>
 </div>
+<br>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h4>Creating SVG Images</h4>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -8061,7 +8095,7 @@ Inkscape.</p>
 to teach you SVG.</p>
 
 <p>The next page shows how to embed an SVG image directly into an HTML page!</p>
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+
 <pre>&lt;!DOCTYPE html&gt;
 &lt;html&gt;
 &lt;body&gt;
@@ -8097,7 +8131,7 @@ All elements must be properly closed XML is case-sensitive, so write all
 SVG elements and attributes in same case. We prefer lower-case Place all
 attribute values in SVG inside quotes (even if they are numbers)
 </blockquote>
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+
 <pre>&lt;!DOCTYPE html&gt;
 &lt;html&gt;
 &lt;body&gt;
@@ -8149,6 +8183,7 @@ attribute values in SVG inside quotes (even if they are numbers)
   <li>Polygon <mark>&lt;polygon&gt;</mark></li>
   <li>Path <mark>&lt;path&gt;</mark></li>
 </ul>
+
 <p>The following chapters will explain each element, starting with the <mark>&lt;rect&gt;</mark> 
 element.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -8199,11 +8234,12 @@ the rectangle:</p>
     </tbody>
   </table>
 </div>
+<br>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h4>An SVG Rectangle</h4>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p>This example creates a rectangle with the six basic attributes and a fill color:</p>
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+
 <pre>&lt;svg width=&quot;300&quot; height=&quot;130&quot; xmlns=&quot;http://www.w3.org/2000/svg&quot;&gt;
   &lt;rect width=&quot;200&quot; height=&quot;100&quot; x=&quot;10&quot; y=&quot;10&quot; rx=&quot;20&quot; ry=&quot;20&quot; fill=&quot;blue&quot; /&gt;
 &lt;/svg&gt;</pre>
@@ -8225,7 +8261,7 @@ the rectangle:</p>
 <h4>A Rectangle With Border</h4>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p>Let’s look at another example that contains some new attributes:</p>
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+
 <pre>&lt;svg width=&quot;320&quot; height=&quot;130&quot; 
   xmlns=&quot;http://www.w3.org/2000/svg&quot;&gt;
   &lt;rect width=&quot;300&quot; height=&quot;100&quot; x=&quot;10&quot; y=&quot;10&quot; style=&quot;fill:rgb(0,0,255);stroke-width:3;stroke:red&quot; /&gt;
@@ -8244,7 +8280,7 @@ the rectangle:</p>
 <h4>A Rectangle With Opacity</h4>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p>Let’s look at another example that contains some new attributes:</p>
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+
 <pre>&lt;svg width=&quot;300&quot; height=&quot;170&quot; 
   xmlns=&quot;http://www.w3.org/2000/svg&quot;&gt;
   &lt;rect width=&quot;150&quot; height=&quot;150&quot; x=&quot;10&quot; y=&quot;10&quot;
@@ -8265,7 +8301,7 @@ the rectangle:</p>
 <h4>Another Rectangle With Opacity</h4>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p>Define the opacity for the whole element:</p>
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+
 <pre>&lt;svg width=&quot;300&quot; height=&quot;170&quot; 
   xmlns=&quot;http://www.w3.org/2000/svg&quot;&gt;
   &lt;rect width=&quot;150&quot; height=&quot;150&quot; x=&quot;10&quot; y=&quot;10&quot;
@@ -8284,7 +8320,7 @@ the rectangle:</p>
 <h4>A Rectangle With Rounded Corners</h4>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p>Last example, create a rectangle with rounded corners:</p>
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+
 <pre>&lt;svg width=&quot;300&quot; height=&quot;170&quot; 
   xmlns=&quot;http://www.w3.org/2000/svg&quot;&gt;
   &lt;rect width=&quot;150&quot; height=&quot;150&quot; 
@@ -8326,11 +8362,12 @@ circle:</p>
     </tbody>
   </table>
 </div>
+<br>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h4>An SVG Circle</h4>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p>The following example creates a circle:</p>
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+
 <pre>&lt;svg height=&quot;100&quot; width=&quot;100&quot; 
   xmlns=&quot;http://www.w3.org/2000/svg&quot;&gt;
   &lt;circle r=&quot;45&quot; cx=&quot;50&quot; cy=&quot;50&quot; fill=&quot;red&quot; /&gt;
@@ -8350,7 +8387,7 @@ circle:</p>
 <h4>An SVG Circle with Border</h4>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p>The following example creates a circle with border:</p>
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+
 <pre>&lt;svg height=&quot;100&quot; width=&quot;100&quot; 
   xmlns=&quot;http://www.w3.org/2000/svg&quot;&gt;
   &lt;circle r=&quot;45&quot; cx=&quot;50&quot; cy=&quot;50&quot; 
@@ -8370,7 +8407,7 @@ circle:</p>
 <h4>An SVG Circle with Opacity</h4>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p>The following example creates a circle with opacity:</p>
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+
 <pre>&lt;svg height=&quot;100&quot; width=&quot;100&quot; 
   xmlns=&quot;http://www.w3.org/2000/svg&quot;&gt;
   &lt;circle r=&quot;45&quot; cx=&quot;50&quot; cy=&quot;50&quot; 
@@ -8390,7 +8427,7 @@ circle:</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p>Using &lt;canvas&gt;, here’s how you might draw a black box with rounded corners and a 2-pixel 
 white stroke:</p>
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+
 <pre>function draw() {
   var canvas = document.getElementById(&#39;draw-in-me&#39;);
   if (canvas.getContext) {
@@ -8423,7 +8460,7 @@ window.onload = draw;</pre>
 accessing data.</p>
 
 <p>Here are some of the main HTML5 APIs:</p>
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+
 <ol type="1" start="1">
   <li>Geolocation API - This API is used to access the current location of a user (with latitude 
     and longitude).</li>
@@ -8507,7 +8544,7 @@ a function to run if it fails to get the user’s location.</p>
       break;
   }
 }</pre>
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+
 <pre>&lt;!DOCTYPE html&gt;
 &lt;html&gt;
 &lt;body&gt;
@@ -8608,6 +8645,7 @@ accuracy properties are always returned. The other properties are returned if av
     </tbody>
   </table>
 </div>
+<br>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3>Geolocation Object - Other interesting Methods</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -8694,11 +8732,11 @@ function error(error) {
 <h4>Make an Element Draggable</h4>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p>First of all: To make an element draggable, set the draggable attribute to true:</p>
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+
 <pre>&lt;img id=&quot;img1&quot; draggable=&quot;true&quot;&gt;</pre>
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+
 <p>or:</p>
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+
 <pre>&lt;p id=&quot;p1&quot; draggable=&quot;true&quot;&gt;Draggable text&lt;/p&gt;</pre>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h4>What to Drag - ondragstart and setData()</h4>
@@ -8710,11 +8748,11 @@ function error(error) {
 
 <p>The dataTransfer.setData() method sets the data type and the value of the dragged 
 data:</p>
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+
 <pre>function dragstartHandler(ev) {
   ev.dataTransfer.setData(&quot;text&quot;, ev.target.id);
 }</pre>
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+
 <p>In this case, the data type is “text” and the value is the id of the draggable element (“img1”).</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h4>Where to Drop - ondragover</h4>
@@ -8726,7 +8764,7 @@ where the dragged data can be dropped.</p>
 the default handling of the element.</p>
 
 <p>This is done by calling the preventDefault() method for the ondragover event:</p>
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+
 <pre>function dragoverHandler(ev) {
   ev.preventDefault();
 }</pre>
@@ -8736,7 +8774,7 @@ the default handling of the element.</p>
 <p>When the dragged data is dropped, a drop event occurs.</p>
 
 <p>In the example above, the ondrop attribute of the element calls a function, dropHandler(event):</p>
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+
 <pre>function dropHandler(ev) {
   ev.preventDefault();
   const data = ev.dataTransfer.getData(&quot;text&quot;);
@@ -8757,7 +8795,7 @@ the default handling of the element.</p>
 <h4>Example</h4>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p>How to drag and drop an &lt;h1&gt; element to a &lt;div&gt; element:</p>
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+
 <pre>&lt;script&gt;
   function dragstartHandler(ev) {
     ev.dataTransfer.setData(&quot;text&quot;, ev.target.id);
@@ -8833,7 +8871,7 @@ pairs:</h4>
 </ul>
 
 <p>The syntax for removing the “lastname” localStorage item is as follows:</p>
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+
 <pre>localStorage.removeItem("lastname");</pre>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3>Counting Clicks with localStorage</h3>
@@ -8976,7 +9014,7 @@ tasks that make the page unresponsive.</p>
 <p>Now, let’s create a web worker in an external JavaScript file.</p>
 
 <p>Here we create a script that counts. The script is stored in the “demo_workers.js” file:</p>
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+
 <pre>var i = 0;
 function timedCount() {
   i = i + 1;
@@ -8984,7 +9022,7 @@ function timedCount() {
   setTimeout(&quot;timedCount()&quot;,500);
 }
 timedCount();</pre>
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+
 <p>Note: The important part of the code above is the postMessage() method - which is used to post 
 messages back to the HTML page.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -8994,7 +9032,7 @@ messages back to the HTML page.</p>
 
 <p>The following lines checks if a worker (w) already exists, if not - it creates a new web worker 
 object and points to the .js file: “demo_workers.js”:</p>
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+
 <pre>if (typeof(w) == &quot;undefined&quot;) {
   w = new Worker(&quot;demo_workers.js&quot;);
 }</pre>
@@ -9006,7 +9044,7 @@ their messages using the postMessage() method, and respond to messages via the o
 handler.</p>
 
 <p>Add an onmessage event listener to the web worker object.</p>
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+
 <pre>w.onmessage = function(event){
   document.getElementById(&quot;result&quot;).innerHTML = event.data;
 };</pre>
@@ -9016,14 +9054,14 @@ handler.</p>
 <p>When a web worker object is created, it will continue to listen for messages until it is terminated.</p>
 
 <p>To terminate a web worker object, and free browser/computer resources, use the terminate() method:</p>
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+
 <pre>w.terminate();</pre>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3>Reuse the Web Worker</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p>If you set the web worker variable to undefined, after it has been terminated, you can reuse the 
 worker/code:</p>
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+
 <pre>w = undefined;</pre>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3>Full Web Worker Example</h3>
@@ -9125,7 +9163,7 @@ the updates are pushed automatically.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p>In the tryit example above there were some extra lines of code to check browser support 
 for server-sent events:</p>
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+
 <pre>if(typeof(EventSource) !== &quot;undefined&quot;) {
   // Yes! Server-sent events support!
   // Some code.....
@@ -9142,7 +9180,7 @@ PHP or ASP).</p>
 “text/event-stream”. Now you can start sending event streams.</p>
 
 <p>Code in PHP (demo_sse.php):</p>
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+
 <pre>&lt;?php
   header(&#39;Content-Type: text/event-stream&#39;);
   header(&#39;Cache-Control: no-cache&#39;);
@@ -9153,7 +9191,7 @@ PHP or ASP).</p>
 ?&gt;</pre>
 
 <p>Code in ASP (VB) (demo_sse.asp):</p>
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+
 <pre>&lt;%
   Response.ContentType = &quot;text/event-stream&quot;
   Response.Expires = -1
@@ -9200,6 +9238,7 @@ are also available:</p>
     </tbody>
   </table>
 </div>
+<br>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h2 id="15-html-access">15. HTML Accessibility</h2>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
