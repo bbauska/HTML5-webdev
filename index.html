@@ -105,7 +105,7 @@
 </ul>
 <br>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<h2><a id="toc">Table of Contents</a></h2>
+<h2><a id="toc">Table of Contents</a> HTML Basics in Web Development</h2>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <ol>
   <li><a href="#01-intro">Introduction</a></li>
@@ -2675,9 +2675,9 @@ element, drags the element to a droppable element, and then releases the dragged
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h2>Q. Explain Microdata in HTML5?</h2>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<p>Microdata is a standardized way to provide additional semantics in web pages. Microdata 
-lets you define your own customized elements and start embedding custom properties in your 
-web pages. At a high level, microdata consists of a group of name-value pairs.</p>
+<p>Microdata is a standardized way to provide additional semantics in web pages. Microdata lets 
+you define your own customized elements and start embedding custom properties in your web pages. At 
+a high level, microdata consists of a group of name-value pairs.</p>
 
 <p>The groups are called <span class="makeKnown">items</span>, and each name-value pair is a <span class="makeKnown">property</span>. 
 Items and properties are represented by regular elements. Search engines benefit greatly 
@@ -2707,8 +2707,8 @@ the information on web pages and provide more relevant results to users.</p>
   <li>Deprecated Tags:</li>
 </ol>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<p>The following elements are not available in HTML5 anymore and their function is better 
-handled by CSS.</p>
+<p>The following elements are not available in HTML5 anymore and their function is better handled 
+by CSS.</p>
 
 <div role="region" tabindex="0">
   <table>
@@ -2907,8 +2907,8 @@ handled by CSS.</p>
     </tr>
     <tr class="odd">
       <td>align</td>
-      <td>caption, iframe, img, input, object, legend, table, hr, div, h1, h2,
-        h3, h4, h5, h6, p, col, colgroup, tbody, td, tfoot, th, thead and tr.</td>
+      <td>caption, iframe, img, input, object, legend, table, hr, div, h1, h2, h3, h4, h5, h6, p, 
+	  col, colgroup, tbody, td, tfoot, th, thead and tr.</td>
     </tr>
     <tr class="even">
       <td>alink</td>
@@ -3057,8 +3057,8 @@ and adding it with a no-prefix when it is not (e.g. <mark>.feature</mark> or <m
   <li>Using Modernizr with JavaScript:</li>
 </ol>
 
-<p><mark>Modernizr</mark> keeps track of the results of all of it's feature detections 
-via the <mark>Modernizr</mark> object.</p>
+<p><mark>Modernizr</mark> keeps track of the results of all of it's feature detections via the 
+<mark>Modernizr</mark> object.</p>
 
 <pre>if (Modernizr.canvas) {
   alert("This browser supports HTML5 canvas!");
@@ -3068,24 +3068,21 @@ via the <mark>Modernizr</mark> object.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h2>Q. What is progressive rendering?</h2>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<p>Progressive Rendering is the technique of sequentially rendering
-portions of a webpage in the server and streaming it to the client in
-parts without waiting for the whole page to rendered.</p>
+<p>Progressive Rendering is the technique of sequentially rendering portions of a webpage in the 
+server and streaming it to the client in parts without waiting for the whole page to rendered.</p>
 
-<p>It implies that once the important material is produced on the server,
-you may stream it to the client without having to wait for non-critical
-stuff to be displayed. It combines the advantages of both CSR (Client
-Side Rendering) and SSR (Server Side Rendering) (Server Side Rendering).</p>
+<p>It implies that once the important material is produced on the server, you may stream it to the 
+client without having to wait for non-critical stuff to be displayed. It combines the advantages of 
+both CSR (Client Side Rendering) and SSR (Server Side Rendering) (Server Side Rendering).</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <ol type="1" start="1">
   <li>Client Side Rendering:</li>
 </ol>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<p>Client Side Rendering (CSR) is a technique in which content is rendered
-in the browser using JavaScript. Instead of getting all the content from
-the HTML file itself, the server sends HTML with an empty body and
-script tags that contain links to JavaScript bundles that the browser
-will use to render the content.</p>
+<p>Client Side Rendering (CSR) is a technique in which content is rendered in the browser using 
+JavaScript. Instead of getting all the content from the HTML file itself, the server sends HTML 
+with an empty body and script tags that contain links to JavaScript bundles that the browser will 
+use to render the content.</p>
 
 <p>Typical page load behaviour in CSR —</p>
 
@@ -3093,14 +3090,13 @@ will use to render the content.</p>
   <li>Browser requests the server for HTML,</li>
   <li>Server sends HTML with script tags in head and no content in body,</li>
   <li>Browser parses the HTML and makes http requests to load the scripts,</li>
-  <li>Once the scripts are loaded, the browser parses them and makes API requests and 
-    loads all the content asynchronously.</li>
+  <li>Once the scripts are loaded, the browser parses them and makes API requests and loads all 
+    the content asynchronously.</li>
 </ul>
 
-<p>Since the all the content starts loading only after loading the initial
-JavaScript, it takes a longer time to show any content on the page. If
-the user is on a slow network, the content is blocked for an even longer
-time due to lower bandwidth and higher latency.</p>
+<p>Since the all the content starts loading only after loading the initial JavaScript, it takes a 
+longer time to show any content on the page. If the user is on a slow network, the content is 
+blocked for an even longer time due to lower bandwidth and higher latency.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <ol start="2" type="1">
   <li>Server Side Rendering:</li>
@@ -3131,7 +3127,7 @@ content load as the HTML sent by the server already has the content.</p>
 <img src="assets/images/progressive-rendering.png" alt="Progressive Rendering" width="500px" />
 </p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<h2 id="7-html-iframe">07. HTML iFrame</h2>
+<h2 id="07-html-iframe">07. HTML iFrame</h2>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p>HTML iFrames offer a powerful way to embed external content, such as videos, maps, or 
 other webpages, directly into your own webpage. This article provides an in-depth 
@@ -3311,7 +3307,7 @@ as our search snippets get more advanced, they are able to secure better
 traffic.</p>
 <p>Here are all the HTML tags that still matter:</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<h2 id="2-html-tags">02. HTML Tags</h2>
+<h2 id="02-html-tags">02. HTML Tags</h2>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <ol type="1" start="1">
   <li>Title tag:</li>
@@ -4194,7 +4190,7 @@ pages/applications.</p>
   &lt;/body&gt;
 &lt;/html&gt;</pre>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<h2 id="3-html-events">03. HTML Events</h2>
+<h2 id="03-html-events">03. HTML Events</h2>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3>Types of Events</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -4745,7 +4741,7 @@ and &lt;video&gt;).</p>
 </div>
 <br>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<h2 id="4-html-forms">04. Form Elements</h2>
+<h2 id="04-html-forms">04. Form Elements</h2>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p>The HTML &lt;form&gt; comprises several elements, each serving a unique purpose. For instance, 
 the &lt;label&gt; element is used to define labels for other &lt;form&gt; elements. The &lt;input&gt; 
@@ -5083,7 +5079,7 @@ syntax, key attributes, and various form elements. By mastering HTML forms, you 
 create more engaging, user-friendly, and accessible web applications.</p>
 &lt;!- end of html-forms –&gt;
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<h2 id="5-html-tables">05. Tables</h2>
+<h2 id="05-html-tables">05. Tables</h2>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3>What is an HTML Table?</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -5908,7 +5904,7 @@ introducing errors.</p>
 </p>
 <!-- end of html tables -->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<h2 id="6-html-lists">06. HTML Lists</h2>
+<h2 id="06-html-lists">06. HTML Lists</h2>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p>An HTML list is a record of related information used to display the data or any 
 information on web pages in the ordered or unordered form.</p>
@@ -6161,9 +6157,9 @@ HTML? article</i> for further details.</p>
 tutorial, we have explained three types of lists- ordered lists, unordered lists, and 
 definition list. We have explained all three list types with examples.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<h2 id="7-html-iframes">07. HTML iFrames</h2>
+<h2 id="07-html-iframes">07. HTML iFrames</h2>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<h2 id="8-html-url">08. HTML URL</h2>
+<h2 id="08-html-url">08. HTML URL</h2>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p>A <span class="makeKnown">Uniform Resource Locator (URL)</span> is simply the address of a website to access 
 the website content like <mark>www.geeksforgeeks.org</mark>. But certain characters are 
@@ -6215,7 +6211,7 @@ sign while encoding. Similarly, a $ sign is replaced by ‘%24’.</p>
     path.</li>
 </ul>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<h2 id="9-html-svg">09. HTML SVG Basics</h2>
+<h2 id="09-html-svg">09. HTML SVG Basics</h2>
 <!-- geeks 4 geeks - https://www.geeksforgeeks.org/html-svg-basics/ -->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3>SVG stands for Scalable Vector Graphics.</h3>
