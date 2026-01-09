@@ -108,15 +108,15 @@
 <h2><a id="toc">Table of Contents</a></h2>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <ol>
-  <li><a href="#1-intro">Introduction</a></li>
-  <li><a href="#2-html-tags">HTML Tags</a></li>
-  <li><a href="#3-html-events">HTML Events</a></li>
-  <li><a href="#4-html-forms">HTML Events</a></li>
-  <li><a href="#5-html-tables">HTML Tables</a></li>
-  <li><a href="#6-html-lists">HTML Lists</a></li>
-  <li><a href="#7-html-iframe">HTML iFrame</a></li>
-  <li><a href="#8-html-url">HTML URL</a></li>
-  <li><a href="#9-html-svg">HTML SVG</a></li>
+  <li><a href="#01-intro">Introduction</a></li>
+  <li><a href="#02-html-tags">HTML Tags</a></li>
+  <li><a href="#03-html-events">HTML Events</a></li>
+  <li><a href="#04-html-forms">HTML Events</a></li>
+  <li><a href="#05-html-tables">HTML Tables</a></li>
+  <li><a href="#06-html-lists">HTML Lists</a></li>
+  <li><a href="#07-html-iframe">HTML iFrame</a></li>
+  <li><a href="#08-html-url">HTML URL</a></li>
+  <li><a href="#09-html-svg">HTML SVG</a></li>
   <li><a href="#10-html-canvas">HTML Canvas</a></li>
   <li><a href="#11-html-storage">HTML Storage</a></li>
   <li><a href="#12-html-apis">HTML APIs</a></li>
@@ -126,12 +126,12 @@
   <li><a href="#16-misc">Miscellaneous</a></li>
 </ol>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<h2 id="1-intro">01. Introduction</h2>
+<h2 id="01-intro">01. Introduction</h2>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h2>Q. What is difference between HTML and XHTML?</h2>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<p>The Extensible Hypertext Markup Language, or XHTML, has two important notes for front 
-end developers.</p>
+<p>The Extensible Hypertext Markup Language, or XHTML, has two important notes for front end 
+developers.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <ol type="1">
   <li>It needs to be well formed, meaning all elements need to be closed and nested correctly or you 
@@ -165,7 +165,9 @@ end developers.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p>HTML5 semantic tags define the function and the category of your text, simplifying the work for 
 browsers and search engines, as well as developers.</p>
+
 <p>HTML5 offers new semantic elements to define different parts of a web page:</p>
+
 <ul>
   <li><span class="makeKnown"><mark>&lt;article&gt;</mark></span></li>
   <li><span class="makeKnown"><mark>&lt;aside&gt;</mark></span></li>
@@ -597,12 +599,13 @@ to be modified through JavaScript code.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p>The primary difference between div and span tag is their default behavior. By default, a 
 &lt;div&gt; is a <span class="makeKnown">block-level-element</span> and a &lt;span&gt; is an <span class="makeKnown">inline element</span>.</p>
+
 <ul>
-  <li><span class="makeKnown">&lt;div&gt;</span> is a block level element which means it will render it on it's own line 
-    with a width of a 100% of the parent element.</li>
-  <li><span class="makeKnown">&lt;span&gt;</span> is an inline element which means it will render on the same line as the 
-    previous element, if it is also an inline element, and it’s width will be determined by it's 
-    content.</li>
+  <li><span class="makeKnown">&lt;div&gt;</span> is a block level element which means it will render 
+    it on it's own line with a width of a 100% of the parent element.</li>
+  <li><span class="makeKnown">&lt;span&gt;</span> is an inline element which means it will render 
+    on the same line as the previous element, if it is also an inline element, and it’s width will 
+	be determined by it's content.</li>
 </ul>
 
 <pre>&lt;div&gt;Demo Text, with &lt;span&gt;some other&lt;/span&gt; text.&lt;/div&gt;</pre>
@@ -617,6 +620,7 @@ previous tag.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p>In HTML5 it is not strictly necessary to close certain HTML tags. The tags that aren't required 
 to have specific closing tags are called “self closing” tags.</p>
+
 <p>An example of a self closing tag is something like a line break (&lt;br /&gt;) or the meta tag 
 (&lt;meta&gt;). This means that the following are both acceptable:</p>
 
@@ -646,10 +650,9 @@ to have specific closing tags are called “self closing” tags.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h2>Q. What is the purpose of <mark>main</mark> element?</h2>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<p>The HTML &lt;main&gt; element represents the dominant content of the &lt;body&gt; of 
-a document. The main content area consists of content that is directly related to or 
-expands upon the central topic of a document, or the central functionality of an 
-application.</p>
+<p>The HTML &lt;main&gt; element represents the dominant content of the &lt;body&gt; of a document. 
+The main content area consists of content that is directly related to or expands upon the central 
+topic of a document, or the central functionality of an application.</p>
 
 <pre>&gt;main role="main"&gt;
   &gt;p&gt;Geckos are a group of usually small, usually nocturnal lizards. 
@@ -658,59 +661,57 @@ application.</p>
     them to climb walls and even windows.&gt;/p&gt;
 &gt;/main&gt;</pre>
 
-<p><i>Note: A document mustn't have more than one &lt;main&gt; element that doesn’t have 
-the hidden attribute specified.</i></p>
+<p><i>Note: A document mustn't have more than one &lt;main&gt; element that doesn’t have the hidden 
+attribute specified.</i></p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h2>Q. What are the semantic meanings for &lt;section&gt;, &lt;article&gt;, &lt;aside&gt;, 
 &lt;nav&gt;, &lt;header&gt;, &lt;footer&gt; and how should each be used in structuring html 
 markup?</h2>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <ul>
-  <li>&lt;header&gt; is used to contain introductory and navigational information about a 
-    section of the page. This can include the section heading, the author's name, time and 
-    date of publication, table of contents, or other navigational information.</li>
+  <li>&lt;header&gt; is used to contain introductory and navigational information about a section 
+    of the page. This can include the section heading, the author's name, time and date of publication, 
+	table of contents, or other navigational information.</li>
   <li>&lt;article&gt; is meant to house a self-contained composition that can logically be 
-    independently recreated outside of the page without losing it's meaining. Individual 
-    blog posts or news stories are good examples.</li>
-  <li>&lt;section&gt; is a flexible container for holding content that shares a common 
-    informational theme or purpose.</li>
-  <li>&lt;footer&gt; is used to hold information that should appear at the end of a 
-    section of content and contain additional information about the section. Author's 
-    name, copyright information, and related links are typical examples of such content.</li>
+    independently recreated outside of the page without losing it's meaining. Individual blog posts 
+	or news stories are good examples.</li>
+  <li>&lt;section&gt; is a flexible container for holding content that shares a common informational 
+    theme or purpose.</li>
+  <li>&lt;footer&gt; is used to hold information that should appear at the end of a section of 
+    content and contain additional information about the section. Author's name, copyright information, 
+	and related links are typical examples of such content.</li>
 </ul>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h2>Q. When should you use <mark><span class="makeKnown">section</span></mark>, <mark><span class="makeKnown">div</span></mark> or 
 <mark><span class="makeKnown">article</span></mark>?</h2>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <ul>
-  <li><span class="makeKnown"><mark>&lt;section&gt;</mark></span>, group of content 
-    inside is related to a single theme, and should appear as an entry in an outline 
-    of the page. It's a chunk of related content, like a subsection of a long article, 
-    a major part of the page (eg the news section on the homepage), or a page in a 
-    webapp's tabbed interface. A section normally has a heading (title) and maybe a 
-    footer too.</li>
-  <li><span class="makeKnown"><mark>&lt;article&gt;</mark></span>, represents a complete, 
-    or self-contained, composition in a document, page, application, or site and that is, 
-    in principle, independently distributable or reusable, e.g. in syndication. This 
-    could be a forum post, a magazine or newspaper article, a blog entry, a user-
-    submitted comment, an interactive widget or gadget, or any other independent item of 
-    content.</li>
-  <li><span class="makeKnown"><mark>&lt;div&gt;</mark></span>, on the other hand, does 
-    not convey any meaning, aside from any found in its class, lang and title attributes.</li>
+  <li><span class="makeKnown"><mark>&lt;section&gt;</mark></span>, group of content inside is 
+    related to a single theme, and should appear as an entry in an outline of the page. It's a 
+	chunk of related content, like a subsection of a long article, a major part of the page (eg the 
+	news section on the homepage), or a page in a webapp's tabbed interface. A section normally has 
+	a heading (title) and maybe a footer too.</li>
+  <li><span class="makeKnown"><mark>&lt;article&gt;</mark></span>, represents a complete, or self-
+    contained, composition in a document, page, application, or site and that is, in principle, 
+	independently distributable or reusable, e.g. in syndication. This could be a forum post, a 
+	magazine or newspaper article, a blog entry, a user-submitted comment, an interactive widget 
+	or gadget, or any other independent item of content.</li>
+  <li><span class="makeKnown"><mark>&lt;div&gt;</mark></span>, on the other hand, does not convey 
+    any meaning, aside from any found in its class, lang and title attributes.</li>
 </ul>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h2>Q. Can a web page contain multiple &lt;header&gt; elements? What about &lt;footer&gt; 
 elements?</h2>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<p>Yes, header elements can be used multiple times in documents. A &lt;header&gt; tag 
-must be present for all articles, sections, and pages, although a &lt;footer&gt; tag is 
-not necessary.</p>
+<p>Yes, header elements can be used multiple times in documents. A &lt;header&gt; tag must be 
+present for all articles, sections, and pages, although a &lt;footer&gt; tag is not necessary.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3>From W3C standards</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<p>A header element is intended to usually contain the section’s heading (an h1–h6 
-element or an hgroup element), but this is not required. The header element can also be 
-used to wrap a section’s table of contents, a search form, or any relevant logos.</p>
+<p>A header element is intended to usually contain the section’s heading (an h1–h6 element or an 
+hgroup element), but this is not required. The header element can also be used to wrap a section’s 
+table of contents, a search form, or any relevant logos.</p>
+
 <blockquote>
 The footer element represents a footer for its nearest ancestor sectioning content or 
 sectioning root element. A footer typically contains information about its section such 
@@ -723,9 +724,9 @@ as who wrote it, links to related documents, copyright data, and the like.
   <li>Physical Tags:</li>
 </ol>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<p>Physical tags are used to indicate how a particular character is to be formatted. Any 
-physical style tag may contain any item allowed in text, including conventional text, 
-images, line breaks, etc.</p>
+<p>Physical tags are used to indicate how a particular character is to be formatted. Any physical 
+style tag may contain any item allowed in text, including conventional text, images, line breaks, 
+etc.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h5>Example:</h5>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -785,11 +786,11 @@ images, line breaks, etc.</p>
   <li>Logical Tags:</li>
 </ol>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<p>Logical tags are used to tell the browser what kind of text is written inside the 
-tags. Logical tags are also known as Structural tags because they specify the structure 
-of the document. Logical tags are used to indicate to the visually impaired person that 
-there is something more important in the text or to emphasize the text ie, logical tags 
-can be used for styling purposes as well as to give special importance to text content.</p>
+<p>Logical tags are used to tell the browser what kind of text is written inside the tags. Logical 
+tags are also known as Structural tags because they specify the structure of the document. Logical 
+tags are used to indicate to the visually impaired person that there is something more important 
+in the text or to emphasize the text ie, logical tags can be used for styling purposes as well as 
+to give special importance to text content.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h5>Example:</h5>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -829,8 +830,8 @@ can be used for styling purposes as well as to give special importance to text c
       </tr>
       <tr>
         <td>&lt;del&gt;</td>
-        <td>Defines the deleted text and is used to mark a portion of text which has
-        been deleted from the document.</td>
+        <td>Defines the deleted text and is used to mark a portion of text which has been deleted 
+		from the document.</td>
       </tr>
       <tr>
         <td>&lt;dfn&gt;</td>
@@ -846,9 +847,8 @@ can be used for styling purposes as well as to give special importance to text c
       </tr>
       <tr>
         <td>&lt;pre&gt;</td>
-        <td>Defines the block of preformatted text which preserves the text spaces,
-        line breaks, tabs, and other formatting characters which are ignored by
-        web browsers.</td>
+        <td>Defines the block of preformatted text which preserves the text spaces, line breaks, 
+		tabs, and other formatting characters which are ignored by web browsers.</td>
       </tr>
       <tr>
         <td>&lt;q&gt;</td>
@@ -873,22 +873,22 @@ can be used for styling purposes as well as to give special importance to text c
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h2>Q. What is Character Encoding?</h2>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<p>Character encoding is a method of converting bytes into characters. To validate or 
-display an HTML document properly, a program must choose a proper character encoding. 
-This is specified in the tag:</p>
+<p>Character encoding is a method of converting bytes into characters. To validate or display an 
+HTML document properly, a program must choose a proper character encoding. This is specified in the 
+tag:</p>
 
 <pre>&lt;meta charset="utf-8"/&gt;</pre>
 
 <ul>
-  <li><span class="makeKnown"><mark>UTF-8</mark></span>: A Unicode Translation Format 
-    that comes in 8-bit units that is, it comes in bytes. A character in UTF8 can be 
-    from 1 to 4 bytes long, making UTF8 variable width.</li>
+  <li><span class="makeKnown"><mark>UTF-8</mark></span>: A Unicode Translation Format that comes in 
+    8-bit units that is, it comes in bytes. A character in UTF8 can be from 1 to 4 bytes long, making 
+	UTF8 variable width.</li>
 </ul>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h2>Q. What is the purpose of meta tags?</h2>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<p>The META elements can be used to include name/value pairs describing properties of the 
-HTML document, such as author, expiry date, a list of keywords, document author etc.</p>
+<p>The META elements can be used to include name/value pairs describing properties of the HTML 
+document, such as author, expiry date, a list of keywords, document author etc.</p>
 
 <pre>&lt;!DOCTYPE html&gt;
 &lt;html&gt;
@@ -942,14 +942,14 @@ HTML document, such as author, expiry date, a list of keywords, document author 
   &lt;/body&gt;
 &lt;/html&gt;</pre>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<h2>Q. What does <mark><span class="makeKnown">async</span></mark> and <mark><span class="makeKnown">defer</span></mark> refer in script tag?</h2>
+<h2>Q. What does <mark><span class="makeKnown">async</span></mark> and <mark><span class="makeKnown"> defer</span></mark> refer in script tag?</h2>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <ol type="1" start="1">
   <li>Async:</li>
 </ol>
 
-<p>Downloads the script file during HTML parsing and will pause the HTML parser to execute 
-it when it has finished downloading.</p>
+<p>Downloads the script file during HTML parsing and will pause the HTML parser to execute it when 
+it has finished downloading.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h5>Example:</h5>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -964,8 +964,8 @@ it when it has finished downloading.</p>
   <li>Defer:</li>
 </ol>
 
-<p>Defer downloads the script file during HTML parsing and will only execute it after the 
-HTML parser has completed. Not all browsers support this.</p>
+<p>Defer downloads the script file during HTML parsing and will only execute it after the HTML 
+parser has completed. Not all browsers support this.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h5>Example:</h5>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -993,9 +993,9 @@ been fully parsed.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h2>Q. What is <mark><span class="makeKnown">localStorage</span></mark> in html5?</h2>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<p>The <mark><span class="makeKnown">localStorage</span></mark> read-only property of the 
-window interface allows you to access a Storage object for the Document's origin; the 
-stored data is saved across browser sessions.</p>
+<p>The <mark><span class="makeKnown">localStorage</span></mark> read-only property of the window 
+interface allows you to access a Storage object for the Document's origin; the stored data is saved 
+across browser sessions.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h5>Example:</h5>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -1007,9 +1007,9 @@ localStorage.getItem("name"); // Kanti Ahluwalia</pre>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h2>Q. What is sessionStorage in html5?</h2>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<p>The <span class="makeKnown"><mark>sessionStorage</mark></span> object is equal to the 
-localStorage object, except that it stores the data for only one session. The data is 
-deleted when the user closes the specific browser tab.</p>
+<p>The <span class="makeKnown"><mark>sessionStorage</mark></span> object is equal to the localStorage 
+object, except that it stores the data for only one session. The data is deleted when the user closes 
+the specific browser tab.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h5>Example:</h5>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -1027,11 +1027,12 @@ sessionStorage.clear();</pre>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h2>Q. What is cookies in html5?</h2>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<p>A cookie is an amount of information that persists between a server-side and a client-
-side. A web browser stores this information at the time of browsing.</p>
-<p>A cookie contains the information as a string generally in the form of a name-value 
-pair separated by semi-colons. It maintains the state of a user and remembers the user's 
-information among all the web pages.</p>
+<p>A cookie is an amount of information that persists between a server-side and a client-side. A 
+web browser stores this information at the time of browsing.</p>
+
+<p>A cookie contains the information as a string generally in the form of a name-value pair separated 
+by semi-colons. It maintains the state of a user and remembers the user's information among all the 
+web pages.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h5>Example 01: Create a Cookie</h5>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -1116,12 +1117,11 @@ console.log(myCookies);</pre>
 </div>
 <br>
 
-<p><i>Note: If the user decides to clear browsing data via whatever mechanism provided by 
-the browser, this will clear out any <mark><span class="makeKnown">cookie</span></mark>, <mark><span class="makeKnown">localStorage</span>
-</mark>, or <mark><span class="makeKnown">sessionStorage</span></mark> stored. It's important to keep this in 
-mind when designing for local persistance, especially when comparing to alternatives such 
-as server side storing in a database or similar (which of course will persist despite user 
-actions).</i></p>
+<p><i>Note: If the user decides to clear browsing data via whatever mechanism provided by the 
+browser, this will clear out any <mark><span class="makeKnown">cookie</span></mark>, <mark><span class="makeKnown">localStorage</span></mark>, or <mark><span class="makeKnown">sessionStorage</span>
+</mark> stored. It's important to keep this in mind when designing for local persistance, especially 
+when comparing to alternatives such as server side storing in a database or similar (which of course 
+will persist despite user actions).</i></p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h2>Q. Does localStorage throw error after reaches maximum limits?</h2>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -1166,17 +1166,17 @@ actions).</i></p>
   <li>WebSQL</li>
 </ol>
 
-<p>It is an API that is only supported in Chrome and Safari (and Android and iOS by 
-extension). It provides an asynchronous, transactional interface to <mark>SQLite</mark>. 
-Since 2010, it has been deprecated in favor of <mark><span class="makeKnown">IndexedDB</span></mark>.</p>
+<p>It is an API that is only supported in Chrome and Safari (and Android and iOS by extension). It 
+provides an asynchronous, transactional interface to <mark>SQLite</mark>. Since 2010, it has been 
+deprecated in favor of <mark><span class="makeKnown">IndexedDB</span></mark>.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h4>Advantages</h4>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <ul>
-  <li>Supported on major mobile browsers (Android Browser, Mobile Safari, Opera Mobile) 
-    as well as several desktop browsers (Chrome, Safari, Opera).</li>
-  <li>Good performance generally, being an asynchronous API. Database interaction won’t 
-    lock up the user interface. (Synchronous API is also available for WebWorkers.)</li>
+  <li>Supported on major mobile browsers (Android Browser, Mobile Safari, Opera Mobile) as well as 
+    several desktop browsers (Chrome, Safari, Opera).</li>
+  <li>Good performance generally, being an asynchronous API. Database interaction won’t lock up the 
+    user interface. (Synchronous API is also available for WebWorkers.)</li>
   <li>Good search performance, since data can be indexed according to search keys.</li>
   <li>Robust, since it supports a transactional database model.</li>
   <li>Easier to maintain integrity of data, due to rigid data structure.</li>
@@ -1185,29 +1185,28 @@ Since 2010, it has been deprecated in favor of <mark><span class="makeKnown">Ind
 <h4>Disadvantages</h4>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <ul>
-  <li>Deprecated. Will not be supported on IE or Firefox, and will probably be phased out 
-    from the other browsers at some stage.</li>
+  <li>Deprecated. Will not be supported on IE or Firefox, and will probably be phased out from the 
+    other browsers at some stage.</li>
   <li>Steep learning curve, requiring knowledge of relational databases and SQL.</li>
   <li>Suffers from object-relational impedance mismatch.</li>
-  <li>Diminishes agility, as database schema must be defined upfront, with all records 
-    in a table matching the same structure.</li>
+  <li>Diminishes agility, as database schema must be defined upfront, with all records in a table 
+    matching the same structure.</li>
 </ul>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <ol start="2" type="1">
   <li>IndexedDB</li>
 </ol>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<p>It is the successor to both <span class="makeKnown">LocalStorage</span> and <span class="makeKnown">WebSQL</span>, designed to replace 
-them as the “one true” browser database. It exposes an asynchronous API that supposedly 
-avoids blocking the DOM, but as we'll see below, it doesn't necessarily live up to the 
-hype. Browser support is extremely spotty, with only Chrome and Firefox having fully
-usable implementations.</p>
+<p>It is the successor to both <span class="makeKnown">LocalStorage</span> and <span class="makeKnown"> WebSQL</span>, designed to replace them as the “one true” browser database. It exposes an asynchronous 
+API that supposedly avoids blocking the DOM, but as we'll see below, it doesn't necessarily live up 
+to the hype. Browser support is extremely spotty, with only Chrome and Firefox having fully usable 
+implementations.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h4>Advantages</h4>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <ul>
-  <li>Good performance generally, being an asynchronous API. Database interaction won’t 
-    lock up the user interface. (Synchronous API is also available for WebWorkers.)</li>
+  <li>Good performance generally, being an asynchronous API. Database interaction won’t lock up the 
+    user interface. (Synchronous API is also available for WebWorkers.)</li>
   <li>Good search performance, since data can be indexed according to search keys.</li>
   <li>Supports versioning.</li>
   <li>Robust, since it supports a transactional database model.</li>
@@ -1223,18 +1222,20 @@ usable implementations.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h2>Q. Explain Application Cache in HTML5. OR What is a manifest file in HTML?</h2>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<p>HTML5 provides an application caching mechanism that lets web-based applications run 
-offline. Developers can use the Application Cache (AppCache) interface to specify 
-resources that the browser should cache and make available to offline users. 
-Applications that are cached load and work correctly even if users click the refresh 
-button when they are offline.</p>
+<p>HTML5 provides an application caching mechanism that lets web-based applications run offline. 
+Developers can use the Application Cache (AppCache) interface to specify resources that the browser 
+should cache and make available to offline users. Applications that are cached load and work correctly 
+even if users click the refresh button when they are offline.</p>
+
 <p>Using an application cache gives an application the following benefits:</p>
+
 <ul>
-  <li><span class="makeKnown"><mark>Offline browsing</mark></span>: users can navigate a site even when they are 
-    offline.<li>
-  <span class="makeKnown"><mark>Speed</mark></span>: cached resources are local, and therefore load faster.<li>
-  <span class="makeKnown"><mark>Reduced server load</mark></span>: the browser only downloads resources that have 
-    changed from the server.</li>
+  <li><span class="makeKnown"><mark>Offline browsing</mark></span>: users can navigate a site even 
+    when they are  offline.</li>
+  <li><span class="makeKnown"><mark>Speed</mark></span>: cached resources are local, and therefore 
+    load faster.</li>
+  <li><span class="makeKnown"><mark>Reduced server load</mark></span>: the browser only downloads 
+    resources that have changed from the server.</li>
 </ul>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h5>Syntax:</h5>
@@ -1243,48 +1244,47 @@ button when they are offline.</p>
   ...
 &lt;/html&gt;</pre>
 
-<p><i>Note: Using the application caching feature described here is at this
-point highly discouraged; it's in the process of being removed from the
-Web platform. Use <mark><span class="makeKnown">Service Workers</span></mark> instead. In fact
-as of Firefox 44, when AppCache is used to provide offline support for a
-page a warning message is now displayed in the console advising
-developers to use Service workers instead (bug 1204581).</i></p>
+<p><i>Note: Using the application caching feature described here is at this point highly discouraged; 
+it's in the process of being removed from the Web platform. Use <mark><span class="makeKnown">
+Service Workers</span></mark> instead. In fact as of Firefox 44, when AppCache is used to provide 
+offline support for a page a warning message is now displayed in the console advising developers to 
+use Service workers instead (bug 1204581).</i></p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h2>Q. What is the purpose of cache busting and how can you achieve it?</h2>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<p>Browsers have a cache to temporarily store files on websites so they
-don't need to be re-downloaded again when switching between pages or
-reloading the same page. The server is set up to send headers that tell
-the browser to store the file for a given amount of time. This greatly
-increases website speed and preserves bandwidth.</p>
-<p>However, it can cause problems when the website has been changed by
-developers because the user’s cache still references old files. This can
-either leave them with old functionality or break a website if the
-cached CSS and JavaScript files are referencing elements that no longer
-exist, have moved or have been renamed.</p>
+<p>Browsers have a cache to temporarily store files on websites so they don't need to be re-downloaded 
+again when switching between pages or reloading the same page. The server is set up to send headers 
+that tell the browser to store the file for a given amount of time. This greatly increases website 
+speed and preserves bandwidth.</p>
+
+<p>However, it can cause problems when the website has been changed by developers because the user’s 
+cache still references old files. This can either leave them with old functionality or break a website 
+if the cached CSS and JavaScript files are referencing elements that no longer exist, have moved or 
+have been renamed.</p>
+
 <p><span class="makeKnown"><mark>Cache busting</mark></span> is the process of forcing the browser
-to download the new files. This is done by naming the file something
-different to the old file.</p>
-<p>A common technique to force the browser to re-download the file is to
-append a query string to the end of the file.</p>
+to download the new files. This is done by naming the file something different to the old file.</p>
+
+<p>A common technique to force the browser to re-download the file is to append a query string to the 
+end of the file.</p>
 
 <pre>&lt;!-- src="js/script.js" =&gt; src="js/script.js?v=2" --&gt;
 &lt;script src="js/script.js?v=2"&gt;&lt;/script&gt;</pre>
+
 <p>The browser considers it a different file but prevents the need to change the file name.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h2>Q. What ARIA and screenreaders are, and how to make a website accessible?</h2>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<p>Screen readers are software programs that provide assistive technologies that allow 
-people with disabilities (such as no sight, sound or mouse-ing ability) to use web 
-applications. You can make your sites more accessible by following ARIA standards such 
-as semantic HTML, alt attributes and using [role=button] in the expected ways.</p>
+<p>Screen readers are software programs that provide assistive technologies that allow people with 
+disabilities (such as no sight, sound or mouse-ing ability) to use web applications. You can make 
+your sites more accessible by following ARIA standards such as semantic HTML, alt attributes and 
+using [role=button] in the expected ways.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h2>Q. How to use <span class="makeKnown">data-</span> attribute in html5?</h2>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<p>Any attribute on any element whose attribute name starts with <mark><span class="makeKnown">data-</span></mark> 
-is a data attribute. The <span class="makeKnown">data-*</span> attributes gives us the ability to embed custom data 
-attributes on all HTML elements. The stored (custom) data can then be used in the page's
-JavaScript to create a more engaging user experience.</p>
+<p>Any attribute on any element whose attribute name starts with <mark><span class="makeKnown"> data-</span></mark> is a data attribute. The <span class="makeKnown">data-*</span> attributes gives 
+us the ability to embed custom data attributes on all HTML elements. The stored (custom) data can 
+then be used in the page's JavaScript to create a more engaging user experience.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h5>Example:</h5>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -1312,17 +1312,18 @@ Try this example on CodeSandbox</a></span></p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h2>Q. What is the purpose of the <mark>alt</mark> attribute on images?</h2>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<p>The <span class="makeKnown"><mark>alt</mark></span> attribute provides alternative information for an image if 
-a user cannot view it.</p>
-<p>The <span class="makeKnown"><mark>alt</mark></span> attribute should be used to describe any images except 
-those which only serve a decorative purposes, in which case it should be left empty.</p>
+<p>The <span class="makeKnown"><mark>alt</mark></span> attribute provides alternative information 
+for an image if a user cannot view it.</p>
+
+<p>The <span class="makeKnown"><mark>alt</mark></span> attribute should be used to describe any 
+images except those which only serve a decorative purposes, in which case it should be left empty.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <pre>&lt;img src="pancakes.png" alt="Stack of blueberry pancakes with powdered sugar"&gt;</pre>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h2>Q. What does </mark>enctype=‘multipart/form-data’</mark> mean?</h2>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<p>The enctype attribute specifies how the form-data should be encoded when submitting it 
-to the server.</p>
+<p>The enctype attribute specifies how the form-data should be encoded when submitting it to the 
+server.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h5>Example: 01</h5>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -1415,19 +1416,17 @@ actually enter anything he wants in the input.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h2>Q. Explain some of the pros and cons for CSS animations versus JavaScript animations?</h2>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<p>Regarding optimization and responsiveness the debate bounces back and forth but, the 
-concept is:</p>
+<p>Regarding optimization and responsiveness the debate bounces back and forth but, the concept 
+is:</p>
+
 <ul>
-  <li><p>CSS animations allows the browser to choose where the animation processing is 
-    done, CPU or the GPU. (Central or Graphics Processing Unit)</p></li>
-  <li><p>That said, adding many layers to a document will eventually have a performance 
-    hit.</p></li>
-  <li><p>JS animation means more code for the user to download and for the developer to 
-    maintain.</p></li>
-  <li><p>Applying multiple animation types on an element is harder with CSS since all 
-    transforming power is in one property transform</p></li>
-  <li><p>CSS animations being declarative are not programmable therefore limited in 
-    capability.</p></li>
+  <li><p>CSS animations allows the browser to choose where the animation processing is done, CPU or 
+    the GPU. (Central or Graphics Processing Unit)</p></li>
+  <li><p>That said, adding many layers to a document will eventually have a performance hit.</p></li>
+  <li><p>JS animation means more code for the user to download and for the developer to maintain.</p></li>
+  <li><p>Applying multiple animation types on an element is harder with CSS since all transforming 
+    power is in one property transform</p></li>
+  <li><p>CSS animations being declarative are not programmable therefore limited in capability.</p></li>
 </ul>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h2>Q. What does CORS stand for and what issue does it address?</h2>
@@ -9171,16 +9170,15 @@ objects:</p>
   </ol>
 </h2>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<p>The Server-Sent Events (SSE) API enables pushing messages/updates from a server to the web 
-page via HTTP connection.</p>
+<p>The Server-Sent Events (SSE) API enables pushing messages/updates from a server to the web page 
+via HTTP connection.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3>Server-Sent Events - One Way Messaging</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<p>A server-sent event is when a web page automatically gets messages/updates from a 
-server.</p>
+<p>A server-sent event is when a web page automatically gets messages/updates from a server.</p>
 
-<p>Normally, a web page has to request data from the server, but with server-sent events, 
-the updates are pushed automatically.</p>
+<p>Normally, a web page has to request data from the server, but with server-sent events, the updates 
+are pushed automatically.</p>
 
 <p>Examples: Facebook/Twitter updates, stock market updates, news feeds, sport results, etc.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -9206,16 +9204,15 @@ the updates are pushed automatically.</p>
 <h4>Example explained:</h4>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <ul>
-  <li>Create a new EventSource object, and specify the URL of the page sending the updates 
-    (in this example “demo_sse.php”)</li>
+  <li>Create a new EventSource object, and specify the URL of the page sending the updates (in this 
+    example “demo_sse.php”)</li>
   <li>Each time an update is received, the onmessage event occurs</li>
   <li>When an onmessage event occurs, put the received data into the element with id=“result”</li>
 </ul>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h4>Check Browser Support</h4>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<p>In the tryit example above there were some extra lines of code to check browser support 
-for server-sent events:</p>
+<p>In the tryit example above there were some extra lines of code to check browser support for server-sent events:</p>
 
 <pre>if(typeof(EventSource) !== &quot;undefined&quot;) {
   // Yes! Server-sent events support!
@@ -9226,11 +9223,10 @@ for server-sent events:</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h4>Server-Side Code Example</h4>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<p>For the example above to work, you need a server capable of sending data updates (like 
-PHP or ASP).</p>
+<p>For the example above to work, you need a server capable of sending data updates (like PHP or ASP).</p>
 
-<p>The server-side event stream syntax is simple. Set the “Content-Type” header to 
-“text/event-stream”. Now you can start sending event streams.</p>
+<p>The server-side event stream syntax is simple. Set the “Content-Type” header to “text/event-stream”. 
+Now you can start sending event streams.</p>
 
 <p>Code in PHP (demo_sse.php):</p>
 
@@ -9263,8 +9259,8 @@ PHP or ASP).</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h4>The EventSource Object</h4>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<p>In the examples above we used the onmessage event to get messages. But other events 
-are also available:</p>
+<p>In the examples above we used the onmessage event to get messages. But other events are also 
+available:</p>
 
 <div role="region" tabindex="0">
   <table>
@@ -9311,7 +9307,8 @@ Last editted: 6/17/2025 +6pm<br>
 Last editted: 6/18/2025 +6am<br>
 Last editted: 6/29/2025 +7pm<br>
 Last editted: 8/10/2025 +3pm<br>
-Last editted: 11/02/2025 +5pm</h6>
+Last editted: 11/02/2025 +5pm<br>
+Last editted: 1/09/2026 +9am</h6>
 <p>The End…</p>
 </footer>
 
